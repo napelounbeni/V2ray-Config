@@ -59,19 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_9"
-    type: vless
-    server: "167.234.255.2"
-    port: 34045
-    uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA"
-      short-id: "e8ab71d0"
   - name: "🇧🇷_10"
     type: vless
     server: "45.194.53.30"
@@ -85,42 +72,56 @@ proxies:
         Host: "vms.lifetime19.workers.dev"
   - name: "🇧🇷_11"
     type: ss
-    server: "137.131.170.42"
+    server: "137.131.232.59"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_12"
     type: ss
-    server: "163.176.59.72"
+    server: "147.15.42.184"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_13"
     type: ss
-    server: "144.22.183.254"
+    server: "147.15.111.219"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_14"
     type: ss
-    server: "144.22.183.254"
+    server: "147.15.42.184"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_15"
     type: ss
-    server: "137.131.170.42"
+    server: "163.176.167.251"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_16"
     type: ss
-    server: "163.176.59.72"
+    server: "163.176.242.53"
+    port: 59319
+    cipher: "chacha20-ietf-poly1305"
+    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
+  - name: "🇧🇷_17"
+    type: ss
+    server: "137.131.142.15"
+    port: 59319
+    cipher: "chacha20-ietf-poly1305"
+    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
+  - name: "🇧🇷_18"
+    type: ss
+    server: "163.176.222.120"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
@@ -167,7 +168,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -175,6 +175,8 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -184,7 +186,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -192,6 +193,8 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -201,7 +204,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -209,6 +211,8 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -217,7 +221,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -225,6 +228,8 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -234,7 +239,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -242,12 +246,13 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇷_9"
       - "🇧🇷_10"
       - "🇧🇷_11"
       - "🇧🇷_12"
@@ -255,6 +260,8 @@ proxy-groups:
       - "🇧🇷_14"
       - "🇧🇷_15"
       - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
 rules:
   - MATCH,PROXY-BEST

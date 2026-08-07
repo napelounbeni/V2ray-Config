@@ -59,30 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇽_3"
+  - name: "🇬🇷_2"
     type: vless
-    server: "45.134.9.133"
-    port: 8443
-    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
+    server: "217.12.194.249"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ul-mexico1.09vpn.com"
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇲🇽_4"
-    type: vless
-    server: "ul-mexico1.09vpn.com"
-    port: 8443
-    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ul-mexico1.09vpn.com"
-    network: ws
-    ws-opts:
-      path: "/vless/"
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -125,8 +115,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -136,8 +125,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -147,8 +135,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -157,8 +144,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -168,15 +154,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇬🇷_2"
 
 rules:
   - MATCH,PROXY-BEST

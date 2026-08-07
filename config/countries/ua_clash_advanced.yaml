@@ -59,7 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_7"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "78.159.240.215"
+    port: 2053
+    uuid: "9b4c96f9-60e8-4694-b069-c46992390555"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "31.56.188.26.fwqfw783rg2dad.website"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/websocket?ed=2560"
+  - name: "🇺🇦_6"
     type: vless
     server: "194.152.44.30"
     port: 8880
@@ -70,42 +83,20 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime55.workers.dev"
-  - name: "🇺🇦_8"
+  - name: "🇺🇦_7"
     type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_9"
-    type: vless
-    server: "45.135.235.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime07.workers.dev"
-  - name: "🇺🇦_10"
-    type: vless
-    server: "91.236.248.20"
-    port: 20071
-    uuid: "65c56e1f-5c41-40bc-b0b5-9346772476ca"
+    server: "78.159.240.215"
+    port: 8443
+    uuid: "9b4c96f9-60e8-4694-b069-c46992390555"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.lamer.com"
-    reality-opts:
-      public-key: "zX5dT9fA8VRXb3XSB8olbacIR1Dq69juoC7US2paR08"
-      short-id: "a02bf9"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_11"
+    servername: "2.26.148.147.tyr-agentstvo.tech"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/websocket?ed=2560"
+  - name: "🇺🇦_8"
     type: trojan
     server: "89.116.180.49"
     port: 443
@@ -116,14 +107,6 @@ proxies:
     network: ws
     ws-opts:
       path: "/sync"
-  - name: "🇺🇦_12"
-    type: trojan
-    server: "130.0.236.88"
-    port: 443
-    password: "d2adff89-5143-4d67-921f-3478464de5bb"
-    sni: "ua.freeguard.org"
-    skip-cert-verify: true
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -166,12 +149,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -181,12 +162,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -196,12 +175,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -210,12 +187,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -225,23 +200,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇺🇦_5"
+      - "🇺🇦_6"
       - "🇺🇦_7"
       - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
-      - "🇺🇦_11"
-      - "🇺🇦_12"
 
 rules:
   - MATCH,PROXY-BEST

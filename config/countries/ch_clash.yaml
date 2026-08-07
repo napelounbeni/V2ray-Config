@@ -72,12 +72,28 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "storage.yandex.net"
-    client-fingerprint: "qq"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
       short-id: "d515d6cfdfe60b02"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
+    type: vless
+    server: "45.143.200.166"
+    port: 2096
+    uuid: "131f4c88-7f4f-4f45-a35a-db333c523ea0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free01.tunnely.space"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130"
+      short-id: "2e40144ddc07e8e1"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇨🇭_3"
     type: vless
     server: "178.83.226.55"
     port: 443
@@ -90,55 +106,36 @@ proxies:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_3"
-    type: vless
-    server: "194.135.22.141"
-    port: 443
-    uuid: "9b4c96f9-60e8-4694-b069-c46992390555"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cloudflare.vhub.pro"
-    network: ws
-    ws-opts:
-      path: "/websocket"
-      headers:
-        Host: "cloudflare.vhub.pro"
   - name: "🇨🇭_4"
     type: vless
-    server: "45.59.119.36"
-    port: 8464
-    uuid: "2224085c-ab5e-48ac-bcdb-c67a983f70e2"
+    server: "free01.tunnely.space"
+    port: 2096
+    uuid: "131f4c88-7f4f-4f45-a35a-db333c523ea0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "free01.tunnely.space"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "TGyAcC_Doy-9s59Fra8U5M-9bQCrULrJWNxfMR9mZjE"
-      short-id: "bfd331f9"
-    flow: "xtls-rprx-vision"
+      public-key: "mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130"
+      short-id: "2e40144ddc07e8e1"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "🇨🇭_5"
-    type: vless
-    server: "edges.api-gateway-dev.top"
-    port: 8464
-    uuid: "2224085c-ab5e-48ac-bcdb-c67a983f70e2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "TGyAcC_Doy-9s59Fra8U5M-9bQCrULrJWNxfMR9mZjE"
-      short-id: "bfd331f9"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
     type: trojan
     server: "86.106.84.195"
     port: 53261
     password: "y3b03zx3tznhyo538p4c"
     sni: "86.106.84.195"
     skip-cert-verify: true
+    udp: true
+  - name: "🇨🇭_6"
+    type: ss
+    server: "146.70.26.156"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "XF0klw7870vXn3uQIxe19Q"
     udp: true
 
 proxy-groups:
