@@ -65,15 +65,15 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "31.57.27.180"
-    port: 2083
-    uuid: "d7e9b7e6-b704-49f5-aa9a-2db7382d0443"
-    udp: true
-  - name: "🇱🇻_2"
-    type: vless
     server: "217.145.79.102"
     port: 24478
     uuid: "f937575c-35c2-4889-832e-b67935d565d8"
+    udp: true
+  - name: "🇱🇻_2"
+    type: vless
+    server: "85.159.228.250"
+    port: 25703
+    uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
     udp: true
   - name: "🇱🇻_3"
     type: vless
@@ -84,11 +84,25 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "auto.cendora.ru"
-    client-fingerprint: "chrome"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇻_4"
+    type: vless
+    server: "31.57.27.180"
+    port: 2083
+    uuid: "d7e9b7e6-b704-49f5-aa9a-2db7382d0443"
+    udp: true
+  - name: "🇱🇻_5"
+    type: trojan
+    server: "31.57.61.76"
+    port: 2053
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -106,6 +120,8 @@ proxy-groups:
       - "🇱🇻_1"
       - "🇱🇻_2"
       - "🇱🇻_3"
+      - "🇱🇻_4"
+      - "🇱🇻_5"
 
 
 rules:

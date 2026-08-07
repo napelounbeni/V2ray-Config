@@ -61,14 +61,15 @@ dns:
 proxies:
   - name: "🇱🇹_3"
     type: vless
-    server: "ddc-chr-lt2.astralweb.tech"
-    port: 443
-    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
-    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
   - name: "🇱🇹_4"
     type: vless
     server: "84.32.209.7"
@@ -78,7 +79,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "dartsearch-cn.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""

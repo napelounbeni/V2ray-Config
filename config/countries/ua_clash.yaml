@@ -65,28 +65,28 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "78.159.240.215"
-    port: 2053
-    uuid: "9b4c96f9-60e8-4694-b069-c46992390555"
+    server: "91.236.248.20"
+    port: 20071
+    uuid: "65c56e1f-5c41-40bc-b0b5-9346772476ca"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "31.56.188.26.fwqfw783rg2dad.website"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/websocket?ed=2560"
+    servername: "www.lamer.com"
+    reality-opts:
+      public-key: "zX5dT9fA8VRXb3XSB8olbacIR1Dq69juoC7US2paR08"
+      short-id: "a02bf9"
+    flow: "xtls-rprx-vision"
   - name: "🇺🇦_2"
     type: vless
-    server: "194.152.44.30"
+    server: "45.135.235.30"
     port: 8880
     uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?ed=2560"
       headers:
-        Host: "vms.lifetime55.workers.dev"
+        Host: "vms.lifetime07.workers.dev"
   - name: "🇺🇦_3"
     type: vless
     server: "78.159.240.215"
@@ -101,6 +101,33 @@ proxies:
     ws-opts:
       path: "/websocket?ed=2560"
   - name: "🇺🇦_4"
+    type: vless
+    server: "ukraine.xiaomaimai.dpdns.org"
+    port: 20071
+    uuid: "65c56e1f-5c41-40bc-b0b5-9346772476ca"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.lamer.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "zX5dT9fA8VRXb3XSB8olbacIR1Dq69juoC7US2paR08"
+      short-id: "a02bf9"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "78.159.240.215"
+    port: 2053
+    uuid: "9b4c96f9-60e8-4694-b069-c46992390555"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "31.56.188.26.fwqfw783rg2dad.website"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/websocket?ed=2560"
+  - name: "🇺🇦_6"
     type: trojan
     server: "89.116.180.49"
     port: 443
@@ -111,6 +138,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/sync"
+  - name: "🇺🇦_7"
+    type: trojan
+    server: "130.0.236.88"
+    port: 443
+    password: "d2adff89-5143-4d67-921f-3478464de5bb"
+    sni: "ua.freeguard.org"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -129,6 +164,9 @@ proxy-groups:
       - "🇺🇦_2"
       - "🇺🇦_3"
       - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
 
 
 rules:

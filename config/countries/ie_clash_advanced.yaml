@@ -59,30 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_11"
-    type: trojan
-    server: "54.216.124.178"
-    port: 443
-    password: "UO36402987"
-    sni: "warm-bass.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇪_12"
-    type: trojan
-    server: "definite-ladybird.rooster465.autos"
-    port: 443
-    password: "UO36402987"
-    sni: "definite-ladybird.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇪_13"
-    type: trojan
-    server: "skilled-lioness.rooster465.autos"
-    port: 443
-    password: "ND91608427"
-    sni: "skilled-lioness.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
   - name: "🇮🇪_14"
     type: trojan
     server: "34.251.228.118"
@@ -93,10 +69,10 @@ proxies:
     udp: true
   - name: "🇮🇪_15"
     type: trojan
-    server: "warm-bass.rooster465.autos"
+    server: "equipped-moth.rooster465.autos"
     port: 443
-    password: "UO36402987"
-    sni: "warm-bass.rooster465.autos"
+    password: "CF68213490"
+    sni: "equipped-moth.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇮🇪_16"
@@ -108,32 +84,80 @@ proxies:
     skip-cert-verify: true
     udp: true
   - name: "🇮🇪_17"
+    type: trojan
+    server: "warm-bass.rooster465.autos"
+    port: 443
+    password: "NQ26071394"
+    sni: "warm-bass.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_18"
+    type: trojan
+    server: "equipped-moth.rooster465.autos"
+    port: 443
+    password: "XG59623478"
+    sni: "equipped-moth.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_19"
+    type: trojan
+    server: "54.216.124.178"
+    port: 443
+    password: "UO36402987"
+    sni: "warm-bass.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_20"
+    type: trojan
+    server: "touching-turtle.rooster465.autos"
+    port: 443
+    password: "HW85960347"
+    sni: "touching-turtle.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_21"
+    type: trojan
+    server: "warm-bass.rooster465.autos"
+    port: 443
+    password: "UO36402987"
+    sni: "warm-bass.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_22"
+    type: trojan
+    server: "funny-hen.rooster465.autos"
+    port: 443
+    password: "CF68213490"
+    sni: "funny-hen.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_23"
     type: ss
     server: "20.223.129.129"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "SNkhYx9ST5pUf1og"
     udp: true
-  - name: "🇮🇪_18"
+  - name: "🇮🇪_24"
     type: ss
     server: "20.223.129.129"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "tDa0Zpm4cAYkoc9r"
+    password: "6tm0kmbdnzS1XoLC"
     udp: true
-  - name: "🇮🇪_19"
+  - name: "🇮🇪_25"
     type: ss
     server: "20.223.129.129"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "BNXte27zByuNvTsQ"
     udp: true
-  - name: "🇮🇪_20"
+  - name: "🇮🇪_26"
     type: ss
     server: "20.223.129.129"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "6tm0kmbdnzS1XoLC"
+    password: "tDa0Zpm4cAYkoc9r"
     udp: true
 
 proxy-groups:
@@ -177,9 +201,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -187,6 +208,12 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -196,9 +223,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -206,6 +230,12 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -215,9 +245,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -225,6 +252,12 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -233,9 +266,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -243,6 +273,12 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -252,9 +288,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -262,14 +295,17 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_11"
-      - "🇮🇪_12"
-      - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
       - "🇮🇪_16"
@@ -277,6 +313,12 @@ proxy-groups:
       - "🇮🇪_18"
       - "🇮🇪_19"
       - "🇮🇪_20"
+      - "🇮🇪_21"
+      - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
+      - "🇮🇪_25"
+      - "🇮🇪_26"
 
 rules:
   - MATCH,PROXY-BEST
