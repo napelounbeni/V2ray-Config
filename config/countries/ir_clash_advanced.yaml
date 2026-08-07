@@ -59,40 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_21"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "worker3.gigak25604.workers.dev"
-  - name: "🇮🇷_22"
-    type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_23"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
-  - name: "🇮🇷_24"
+  - name: "🇮🇷_18"
     type: trojan
     server: "193.151.134.182"
     port: 443
@@ -100,51 +67,93 @@ proxies:
     sni: "iprostable.enterprises"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇷_25"
-    type: ss
-    server: "185.188.105.11"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_26"
-    type: ss
-    server: "185.188.105.10"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_27"
-    type: ss
-    server: "185.188.104.10"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_28"
+  - name: "🇮🇷_19"
     type: ss
     server: "185.188.104.11"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
     udp: true
-  - name: "🇮🇷_29"
+  - name: "🇮🇷_20"
     type: ss
     server: "185.188.106.10"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
     udp: true
-  - name: "🇮🇷_30"
+  - name: "🇮🇷_21"
+    type: ss
+    server: "185.188.106.10"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_22"
+    type: ss
+    server: "185.188.104.10"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_23"
+    type: ss
+    server: "185.188.105.11"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_24"
+    type: ss
+    server: "185.188.105.11"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_25"
+    type: ss
+    server: "185.188.104.12"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_26"
+    type: ss
+    server: "185.188.104.12"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_27"
     type: ss
     server: "185.188.105.10"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
     udp: true
+  - name: "🇮🇷_28"
+    type: ss
+    server: "185.188.105.10"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_29"
+    type: ss
+    server: "185.188.107.10"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
+  - name: "🇮🇷_30"
+    type: ss
+    server: "185.188.107.10"
+    port: 443
+    cipher: "none"
+    password: "RSzEIkk2EsHEAVj15N5E/A=="
+    udp: true
   - name: "🇮🇷_31"
     type: ss
-    server: "dkstatics-public.digikala.com"
+    server: "185.188.104.10"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
@@ -158,7 +167,7 @@ proxies:
     udp: true
   - name: "🇮🇷_33"
     type: ss
-    server: "185.188.107.10"
+    server: "dkstatics-public.digikala.com"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
@@ -166,48 +175,6 @@ proxies:
   - name: "🇮🇷_34"
     type: ss
     server: "185.188.104.11"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_35"
-    type: ss
-    server: "185.188.107.10"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_36"
-    type: ss
-    server: "185.188.105.11"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_37"
-    type: ss
-    server: "185.188.104.12"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_38"
-    type: ss
-    server: "185.188.106.10"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_39"
-    type: ss
-    server: "185.188.104.10"
-    port: 443
-    cipher: "none"
-    password: "RSzEIkk2EsHEAVj15N5E/A=="
-    udp: true
-  - name: "🇮🇷_40"
-    type: ss
-    server: "185.188.104.12"
     port: 443
     cipher: "none"
     password: "RSzEIkk2EsHEAVj15N5E/A=="
@@ -254,6 +221,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -268,12 +238,6 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
   - name: "LB-CDN"
     type: load-balance
@@ -283,6 +247,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -297,12 +264,6 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -312,6 +273,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -326,12 +290,6 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
   - name: "FAST-CDN"
     type: url-test
@@ -340,6 +298,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -354,12 +315,6 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -369,6 +324,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -383,17 +341,14 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇷_18"
+      - "🇮🇷_19"
+      - "🇮🇷_20"
       - "🇮🇷_21"
       - "🇮🇷_22"
       - "🇮🇷_23"
@@ -408,12 +363,6 @@ proxy-groups:
       - "🇮🇷_32"
       - "🇮🇷_33"
       - "🇮🇷_34"
-      - "🇮🇷_35"
-      - "🇮🇷_36"
-      - "🇮🇷_37"
-      - "🇮🇷_38"
-      - "🇮🇷_39"
-      - "🇮🇷_40"
 
 rules:
   - MATCH,PROXY-BEST

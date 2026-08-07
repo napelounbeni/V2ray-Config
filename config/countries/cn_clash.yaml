@@ -72,24 +72,13 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ov186.ochmaybrooooo.online"
-    client-fingerprint: "edge"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: "ov186.ochmaybrooooo.online"
   - name: "🇨🇳_2"
-    type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇨🇳_3"
     type: trojan
     server: "117.149.198.190"
     port: 10051
@@ -113,7 +102,6 @@ proxy-groups:
     proxies:
       - "🇨🇳_1"
       - "🇨🇳_2"
-      - "🇨🇳_3"
 
 
 rules:

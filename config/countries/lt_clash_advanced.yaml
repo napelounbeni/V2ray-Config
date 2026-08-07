@@ -59,18 +59,16 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_3"
+  - name: "🇱🇹_6"
     type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "ddc-chr-lt2.astralweb.tech"
+    port: 443
+    uuid: "5dc56757-458e-4df2-9e71-2a14ce47e8af"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇱🇹_4"
+    tls: true
+    skip-cert-verify: true
+    servername: "ddc-chr-lt2.astralweb.tech"
+  - name: "🇱🇹_7"
     type: vless
     server: "84.32.209.7"
     port: 443
@@ -79,10 +77,44 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "dartsearch-cn.net"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_8"
+    type: vless
+    server: "46.166.167.222"
+    port: 443
+    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ddc-chr-lt2.astralweb.tech"
+    client-fingerprint: "firefox"
+  - name: "🇱🇹_9"
+    type: vless
+    server: "ddc-chr-lt2.astralweb.tech"
+    port: 443
+    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ddc-chr-lt2.astralweb.tech"
+    client-fingerprint: "firefox"
+  - name: "🇱🇹_10"
+    type: vless
+    server: "ltu-01.node.lumixnet.com"
+    port: 443
+    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ltu-01.node.lumixnet.com"
+    client-fingerprint: "hellochrome_120"
+    reality-opts:
+      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
+      short-id: "bd8a588cebc3395a"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -126,8 +158,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -137,8 +172,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -148,8 +186,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -158,8 +199,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -169,15 +213,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇹_3"
-      - "🇱🇹_4"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
 rules:
   - MATCH,PROXY-BEST

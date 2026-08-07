@@ -59,20 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇱_80"
+  - name: "🇵🇱_100"
     type: vless
-    server: "18.244.146.6"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    server: "188.119.123.112"
+    port: 49001
+    uuid: "41784775-8846-4579-9d9d-9ad6ea802e2e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
+    servername: "de-7.techprovide.icu"
     client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_81"
+    reality-opts:
+      public-key: "_LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo"
+      short-id: "1a6b1f9d0e"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_101"
     type: vless
     server: "18.244.146.24"
     port: 443
@@ -85,115 +86,22 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇵🇱_82"
+  - name: "🇵🇱_102"
     type: vless
-    server: "2.59.163.45"
-    port: 59992
-    uuid: "9a9fe945-246a-431e-bd05-1cb981464c8d"
-    udp: true
-  - name: "🇵🇱_83"
-    type: vless
-    server: "31.76.22.141"
+    server: "34.116.216.59"
     port: 443
-    uuid: "9500cf8b-020a-4a70-906c-e14bb5375875"
+    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.sciencedirect.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0"
-      short-id: "a1b2c4d4a1b2c5d5"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_84"
-    type: vless
-    server: "144.31.113.56"
-    port: 28663
-    uuid: "e2cbcf20-e57d-44ab-bd8e-8834c83314b8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ymail.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "9KQZrX1kgUPGV-ChDKJLYQarHB1rMX-9fxe7-eG4P1U"
-      short-id: "91be886b71a6e4"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇵🇱_85"
-    type: vless
-    server: "83.168.91.239"
-    port: 8443
-    uuid: "41da9cd0-b02c-427a-b74e-7e402c610ae4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ads.x5.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg"
-      short-id: "844352756c1fabba"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-yandex"
-  - name: "🇵🇱_86"
-    type: vless
-    server: "185.16.36.200"
-    port: 43439
-    uuid: "03446511-2806-4fc0-b02f-f10d2d3a33c6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn-up.perecbass.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
-      short-id: "ae99c61853e8a6ae"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "ws"
-  - name: "🇵🇱_87"
-    type: vless
-    server: "18.244.146.80"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
+    servername: "workspace.evan00.dpdns.org"
+    client-fingerprint: "randomized"
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇵🇱_88"
-    type: vless
-    server: "18.244.146.94"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_89"
-    type: vless
-    server: "144.31.113.56"
-    port: 58427
-    uuid: "f6a2cd4a-b755-4b9f-b854-40101e28e217"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ymail.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "NCqZzVFlyDITdXB28eEHBgHVqlqpllm1BoJ4wImYHl4"
-      short-id: "6a58"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_90"
+      headers:
+        Host: "workspace.evan00.dpdns.org"
+  - name: "🇵🇱_103"
     type: vless
     server: "201.3.225.13"
     port: 443
@@ -207,167 +115,107 @@ proxies:
       public-key: "EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo"
       short-id: "143627f1"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_91"
+  - name: "🇵🇱_104"
     type: vless
-    server: "77.83.246.233"
-    port: 2053
-    uuid: "8624ba0f-d03e-48de-9df6-b7fcff482ea2"
+    server: "18.244.146.94"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "x1htl81r.njcdoaw.workers.dev"
-    client-fingerprint: "chrome"
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "x1htl81r.njcdoaw.workers.dev"
-  - name: "🇵🇱_92"
+  - name: "🇵🇱_105"
     type: vless
-    server: "128.204.223.94"
+    server: "18.244.146.6"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_106"
+    type: vless
+    server: "nl3.levikogjgfdd.ir"
+    port: 443
+    uuid: "76713d07-5a6b-49c2-abd8-bc450a2fa7fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "uwu.spectrumproxy.shop"
+    reality-opts:
+      public-key: "EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo"
+      short-id: "143627f1"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_107"
+    type: vless
+    server: "18.244.146.80"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_108"
+    type: vless
+    server: "support.zoom.us.beichuan.serv00.net"
     port: 9815
     uuid: "37a0bd7c-8b9f-4693-8916-bd1e2da0a817"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇵🇱_93"
-    type: trojan
-    server: "dear-ferret.rooster465.autos"
-    port: 443
-    password: "IQ68037294"
-    sni: "dear-ferret.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_94"
-    type: trojan
-    server: "202.78.163.156"
-    port: 443
-    password: "WG39087154"
-    sni: "primary-leech.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_95"
-    type: trojan
-    server: "dear-ferret.rooster465.autos"
-    port: 443
-    password: "FC60532879"
-    sni: "dear-ferret.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_96"
-    type: trojan
-    server: "202.78.163.237"
-    port: 443
-    password: "JT80563429"
-    sni: "cheerful-swan.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_97"
-    type: trojan
-    server: "discrete-basilisk.rooster465.autos"
-    port: 443
-    password: "ND91608427"
-    sni: "discrete-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_98"
-    type: trojan
-    server: "202.78.163.148"
-    port: 443
-    password: "ND91608427"
-    sni: "discrete-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_99"
-    type: trojan
-    server: "202.78.163.175"
-    port: 443
-    password: "FC60532879"
-    sni: "optimal-urchin.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_100"
-    type: trojan
-    server: "discrete-basilisk.rooster465.autos"
-    port: 443
-    password: "FC60532879"
-    sni: "discrete-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_101"
-    type: trojan
-    server: "202.78.163.175"
-    port: 443
-    password: "WG39087154"
-    sni: "optimal-urchin.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_102"
-    type: trojan
-    server: "202.78.163.146"
-    port: 443
-    password: "KV63147582"
-    sni: "electric-sturgeon.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_103"
-    type: trojan
-    server: "202.78.163.172"
-    port: 443
-    password: "IQ68037294"
-    sni: "more-trout.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_104"
-    type: trojan
-    server: "202.78.163.206"
-    port: 443
-    password: "JT80563429"
-    sni: "enabling-snipe.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_105"
-    type: trojan
-    server: "202.78.163.206"
-    port: 443
-    password: "FC60532879"
-    sni: "enabling-snipe.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_106"
-    type: trojan
-    server: "patient-gannet.rooster465.autos"
-    port: 443
-    password: "WG39087154"
-    sni: "patient-gannet.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_107"
-    type: trojan
-    server: "202.78.163.237"
-    port: 443
-    password: "WG39087154"
-    sni: "cheerful-swan.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_108"
-    type: trojan
-    server: "202.78.163.47"
-    port: 443
-    password: "JT80563429"
-    sni: "patient-gannet.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
+      headers:
+        Host: "support.zoom.us.beichuan.serv00.net"
   - name: "🇵🇱_109"
-    type: trojan
-    server: "202.78.163.146"
+    type: vless
+    server: "31.76.251.127.cdn-one.org"
     port: 443
-    password: "FC60532879"
-    sni: "electric-sturgeon.rooster465.autos"
+    uuid: "4f375fb4-3c95-425f-bc7b-8085487a6f3c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "31.76.251.127.cdn-one.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/10336/2GCOqG7bvA"
+      headers:
+        Host: "31.76.251.127.cdn-one.org"
+  - name: "🇵🇱_110"
+    type: vless
+    server: "2.59.163.45"
+    port: 59992
+    uuid: "9a9fe945-246a-431e-bd05-1cb981464c8d"
+    udp: true
+  - name: "🇵🇱_111"
+    type: trojan
+    server: "62.112.222.76"
+    port: 443
+    password: "WF42809561"
+    sni: "top-goshawk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_110"
+  - name: "🇵🇱_112"
+    type: trojan
+    server: "dear-ferret.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "dear-ferret.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_113"
     type: trojan
     server: "202.78.163.173"
     port: 443
@@ -375,92 +223,68 @@ proxies:
     sni: "top-goshawk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_111"
-    type: trojan
-    server: "202.78.163.113"
-    port: 443
-    password: "JT80563429"
-    sni: "distinct-ibex.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_112"
-    type: trojan
-    server: "202.78.163.172"
-    port: 443
-    password: "OD90375861"
-    sni: "more-trout.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_113"
-    type: trojan
-    server: "217.182.76.235"
-    port: 443
-    password: "05003b7a-8f03-41d5-b696-0119e8376a20"
-    sni: "t6.teslacdn2.live"
-    skip-cert-verify: true
-    udp: true
   - name: "🇵🇱_114"
     type: trojan
-    server: "electric-sturgeon.rooster465.autos"
+    server: "game-firefly.rooster465.autos"
     port: 443
-    password: "FC60532879"
-    sni: "electric-sturgeon.rooster465.autos"
+    password: "KV63147582"
+    sni: "game-firefly.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_115"
     type: trojan
-    server: "202.78.163.19"
+    server: "202.78.163.146"
     port: 443
-    password: "FC60532879"
-    sni: "game-firefly.rooster465.autos"
+    password: "KV63147582"
+    sni: "electric-sturgeon.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_116"
     type: trojan
-    server: "202.78.163.100"
+    server: "pretty-mollusk.rooster465.autos"
     port: 443
     password: "IQ68037294"
-    sni: "enough-basilisk.rooster465.autos"
+    sni: "pretty-mollusk.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_117"
     type: trojan
-    server: "202.78.163.172"
+    server: "202.78.163.237"
     port: 443
-    password: "JT80563429"
-    sni: "more-trout.rooster465.autos"
+    password: "WG39087154"
+    sni: "cheerful-swan.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_118"
     type: trojan
-    server: "202.78.163.248"
+    server: "relaxed-gull.rooster465.autos"
     port: 443
-    password: "ND91608427"
+    password: "JT80563429"
     sni: "relaxed-gull.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_119"
     type: trojan
-    server: "202.78.163.148"
+    server: "relaxed-gull.rooster465.autos"
     port: 443
-    password: "JT80563429"
-    sni: "discrete-basilisk.rooster465.autos"
+    password: "FC60532879"
+    sni: "relaxed-gull.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_120"
     type: trojan
-    server: "pretty-mollusk.rooster465.autos"
+    server: "more-trout.rooster465.autos"
     port: 443
-    password: "NQ26071394"
-    sni: "pretty-mollusk.rooster465.autos"
+    password: "KV63147582"
+    sni: "more-trout.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_121"
     type: trojan
-    server: "202.78.163.206"
+    server: "more-trout.rooster465.autos"
     port: 443
-    password: "JA96378052"
-    sni: "enabling-snipe.rooster465.autos"
+    password: "OD90375861"
+    sni: "more-trout.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_122"
@@ -473,69 +297,13 @@ proxies:
     udp: true
   - name: "🇵🇱_123"
     type: trojan
-    server: "202.78.163.156"
-    port: 443
-    password: "SX95078263"
-    sni: "primary-leech.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_124"
-    type: trojan
-    server: "202.78.163.206"
-    port: 443
-    password: "WG39087154"
-    sni: "enabling-snipe.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_125"
-    type: trojan
-    server: "202.78.163.164"
-    port: 443
-    password: "WG39087154"
-    sni: "pretty-mollusk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_126"
-    type: trojan
-    server: "enough-basilisk.rooster465.autos"
-    port: 443
-    password: "JT80563429"
-    sni: "enough-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_127"
-    type: trojan
     server: "202.78.163.164"
     port: 443
     password: "IQ68037294"
     sni: "pretty-mollusk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_128"
-    type: trojan
-    server: "202.78.163.227"
-    port: 443
-    password: "FC60532879"
-    sni: "dear-ferret.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_129"
-    type: trojan
-    server: "202.78.163.19"
-    port: 443
-    password: "JT80563429"
-    sni: "game-firefly.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_130"
-    type: trojan
-    server: "202.78.163.164"
-    port: 443
-    password: "ON38567014"
-    sni: "pretty-mollusk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_131"
+  - name: "🇵🇱_124"
     type: trojan
     server: "146.59.3.14"
     port: 443
@@ -543,55 +311,47 @@ proxies:
     sni: "146.59.3.14"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_132"
-    type: trojan
-    server: "patient-gannet.rooster465.autos"
-    port: 443
-    password: "IQ68037294"
-    sni: "patient-gannet.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_133"
-    type: trojan
-    server: "202.78.163.237"
-    port: 443
-    password: "FC60532879"
-    sni: "cheerful-swan.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_134"
-    type: trojan
-    server: "202.78.163.100"
-    port: 443
-    password: "JT80563429"
-    sni: "enough-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_135"
+  - name: "🇵🇱_125"
     type: trojan
     server: "202.78.163.248"
+    port: 443
+    password: "JT80563429"
+    sni: "relaxed-gull.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_126"
+    type: trojan
+    server: "202.78.163.156"
+    port: 443
+    password: "WG39087154"
+    sni: "primary-leech.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_127"
+    type: trojan
+    server: "202.78.163.172"
+    port: 443
+    password: "JT80563429"
+    sni: "more-trout.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_128"
+    type: trojan
+    server: "relaxed-gull.rooster465.autos"
     port: 443
     password: "WG39087154"
     sni: "relaxed-gull.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_136"
+  - name: "🇵🇱_129"
     type: trojan
-    server: "202.78.163.248"
+    server: "202.78.163.19"
     port: 443
-    password: "IQ68037294"
-    sni: "relaxed-gull.rooster465.autos"
+    password: "FC60532879"
+    sni: "game-firefly.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_137"
-    type: trojan
-    server: "202.78.163.175"
-    port: 443
-    password: "JT80563429"
-    sni: "optimal-urchin.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_138"
+  - name: "🇵🇱_130"
     type: trojan
     server: "202.78.163.148"
     port: 443
@@ -599,87 +359,39 @@ proxies:
     sni: "discrete-basilisk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_139"
-    type: trojan
-    server: "discrete-basilisk.rooster465.autos"
-    port: 443
-    password: "WG39087154"
-    sni: "discrete-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_140"
-    type: trojan
-    server: "electric-sturgeon.rooster465.autos"
-    port: 443
-    password: "KV63147582"
-    sni: "electric-sturgeon.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_141"
-    type: trojan
-    server: "202.78.163.173"
-    port: 443
-    password: "HW85960347"
-    sni: "top-goshawk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_142"
-    type: trojan
-    server: "62.112.222.76"
-    port: 443
-    password: "WF42809561"
-    sni: "top-goshawk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_143"
-    type: trojan
-    server: "202.78.163.47"
-    port: 443
-    password: "WG39087154"
-    sni: "patient-gannet.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_144"
-    type: trojan
-    server: "enough-basilisk.rooster465.autos"
-    port: 443
-    password: "IQ68037294"
-    sni: "enough-basilisk.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_145"
+  - name: "🇵🇱_131"
     type: trojan
     server: "202.78.163.248"
     port: 443
-    password: "JT80563429"
+    password: "ND91608427"
     sni: "relaxed-gull.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_146"
+  - name: "🇵🇱_132"
     type: trojan
-    server: "202.78.163.164"
+    server: "202.78.163.47"
     port: 443
     password: "JT80563429"
-    sni: "pretty-mollusk.rooster465.autos"
+    sni: "patient-gannet.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_147"
+  - name: "🇵🇱_133"
     type: trojan
-    server: "64.176.75.215"
-    port: 443
-    password: "nsKBtW4V7LPHG5.iSySU8_pNM88Gkxz7eE"
-    sni: "64.176.75.215"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_148"
-    type: trojan
-    server: "202.78.163.156"
+    server: "202.78.163.19"
     port: 443
     password: "JT80563429"
-    sni: "primary-leech.rooster465.autos"
+    sni: "game-firefly.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_149"
+  - name: "🇵🇱_134"
+    type: trojan
+    server: "202.78.163.248"
+    port: 443
+    password: "IQ68037294"
+    sni: "relaxed-gull.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_135"
     type: trojan
     server: "pretty-mollusk.rooster465.autos"
     port: 443
@@ -687,23 +399,167 @@ proxies:
     sni: "pretty-mollusk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_150"
+  - name: "🇵🇱_136"
+    type: trojan
+    server: "202.78.163.175"
+    port: 443
+    password: "FC60532879"
+    sni: "optimal-urchin.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_137"
+    type: trojan
+    server: "discrete-basilisk.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "discrete-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_138"
+    type: trojan
+    server: "202.78.163.164"
+    port: 443
+    password: "JT80563429"
+    sni: "pretty-mollusk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_139"
+    type: trojan
+    server: "202.78.163.248"
+    port: 443
+    password: "WG39087154"
+    sni: "relaxed-gull.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_140"
+    type: trojan
+    server: "relaxed-gull.rooster465.autos"
+    port: 443
+    password: "IQ68037294"
+    sni: "relaxed-gull.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_141"
+    type: trojan
+    server: "optimal-urchin.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "optimal-urchin.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_142"
+    type: trojan
+    server: "217.182.76.235"
+    port: 443
+    password: "05003b7a-8f03-41d5-b696-0119e8376a20"
+    sni: "t6.teslacdn2.live"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_143"
+    type: trojan
+    server: "relaxed-gull.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "relaxed-gull.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_144"
     type: trojan
     server: "202.78.163.173"
+    port: 443
+    password: "HW85960347"
+    sni: "top-goshawk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_145"
+    type: trojan
+    server: "cheerful-swan.rooster465.autos"
+    port: 443
+    password: "IQ68037294"
+    sni: "cheerful-swan.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_146"
+    type: trojan
+    server: "202.78.163.227"
+    port: 443
+    password: "FC60532879"
+    sni: "dear-ferret.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_147"
+    type: trojan
+    server: "202.78.163.148"
+    port: 443
+    password: "JT80563429"
+    sni: "discrete-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_148"
+    type: trojan
+    server: "enabling-snipe.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_149"
+    type: trojan
+    server: "top-goshawk.rooster465.autos"
     port: 443
     password: "ON38567014"
     sni: "top-goshawk.rooster465.autos"
     skip-cert-verify: true
     udp: true
+  - name: "🇵🇱_150"
+    type: trojan
+    server: "game-firefly.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "game-firefly.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
   - name: "🇵🇱_151"
     type: trojan
-    server: "enough-basilisk.rooster465.autos"
+    server: "optimal-urchin.rooster465.autos"
     port: 443
-    password: "PD07395842"
-    sni: "enough-basilisk.rooster465.autos"
+    password: "FC60532879"
+    sni: "optimal-urchin.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇵🇱_152"
+    type: trojan
+    server: "cheerful-swan.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "cheerful-swan.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_153"
+    type: trojan
+    server: "202.78.163.206"
+    port: 443
+    password: "WG39087154"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_154"
+    type: trojan
+    server: "electric-sturgeon.rooster465.autos"
+    port: 443
+    password: "KV63147582"
+    sni: "electric-sturgeon.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_155"
+    type: trojan
+    server: "202.78.163.148"
+    port: 443
+    password: "ND91608427"
+    sni: "discrete-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_156"
     type: trojan
     server: "202.78.163.248"
     port: 443
@@ -711,7 +567,119 @@ proxies:
     sni: "relaxed-gull.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_153"
+  - name: "🇵🇱_157"
+    type: trojan
+    server: "pretty-mollusk.rooster465.autos"
+    port: 443
+    password: "NQ26071394"
+    sni: "pretty-mollusk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_158"
+    type: trojan
+    server: "202.78.163.237"
+    port: 443
+    password: "JT80563429"
+    sni: "cheerful-swan.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_159"
+    type: trojan
+    server: "top-goshawk.rooster465.autos"
+    port: 443
+    password: "WF42809561"
+    sni: "top-goshawk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_160"
+    type: trojan
+    server: "202.78.163.156"
+    port: 443
+    password: "JT80563429"
+    sni: "primary-leech.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_161"
+    type: trojan
+    server: "202.78.163.164"
+    port: 443
+    password: "ON38567014"
+    sni: "pretty-mollusk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_162"
+    type: trojan
+    server: "more-trout.rooster465.autos"
+    port: 443
+    password: "JT80563429"
+    sni: "more-trout.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_163"
+    type: trojan
+    server: "202.78.163.237"
+    port: 443
+    password: "FC60532879"
+    sni: "cheerful-swan.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_164"
+    type: trojan
+    server: "pretty-mollusk.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "pretty-mollusk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_165"
+    type: trojan
+    server: "enabling-snipe.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_166"
+    type: trojan
+    server: "202.78.163.113"
+    port: 443
+    password: "JT80563429"
+    sni: "distinct-ibex.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_167"
+    type: trojan
+    server: "202.78.163.206"
+    port: 443
+    password: "JA96378052"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_168"
+    type: trojan
+    server: "discrete-basilisk.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "discrete-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_169"
+    type: trojan
+    server: "202.78.163.47"
+    port: 443
+    password: "WG39087154"
+    sni: "patient-gannet.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_170"
+    type: trojan
+    server: "distinct-ibex.rooster465.autos"
+    port: 443
+    password: "FC60532879"
+    sni: "distinct-ibex.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_171"
     type: trojan
     server: "primary-leech.rooster465.autos"
     port: 443
@@ -719,7 +687,71 @@ proxies:
     sni: "primary-leech.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_154"
+  - name: "🇵🇱_172"
+    type: trojan
+    server: "enabling-snipe.rooster465.autos"
+    port: 443
+    password: "JT80563429"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_173"
+    type: trojan
+    server: "202.78.163.175"
+    port: 443
+    password: "JT80563429"
+    sni: "optimal-urchin.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_174"
+    type: trojan
+    server: "202.78.163.164"
+    port: 443
+    password: "WG39087154"
+    sni: "pretty-mollusk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_175"
+    type: trojan
+    server: "202.78.163.206"
+    port: 443
+    password: "FC60532879"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_176"
+    type: trojan
+    server: "primary-leech.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "primary-leech.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_177"
+    type: trojan
+    server: "distinct-ibex.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "distinct-ibex.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_178"
+    type: trojan
+    server: "patient-gannet.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "patient-gannet.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_179"
+    type: trojan
+    server: "202.78.163.156"
+    port: 443
+    password: "SX95078263"
+    sni: "primary-leech.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_180"
     type: trojan
     server: "202.78.163.113"
     port: 443
@@ -727,15 +759,103 @@ proxies:
     sni: "distinct-ibex.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_155"
+  - name: "🇵🇱_181"
     type: trojan
-    server: "top-goshawk.rooster465.autos"
+    server: "electric-sturgeon.rooster465.autos"
     port: 443
-    password: "HW85960347"
+    password: "FC60532879"
+    sni: "electric-sturgeon.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_182"
+    type: trojan
+    server: "discrete-basilisk.rooster465.autos"
+    port: 443
+    password: "WG39087154"
+    sni: "discrete-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_183"
+    type: trojan
+    server: "202.78.163.100"
+    port: 443
+    password: "JT80563429"
+    sni: "enough-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_184"
+    type: trojan
+    server: "suitable-feline.rooster465.autos"
+    port: 443
+    password: "HK78346019"
+    sni: "suitable-feline.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_185"
+    type: trojan
+    server: "202.78.163.173"
+    port: 443
+    password: "ON38567014"
     sni: "top-goshawk.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_156"
+  - name: "🇵🇱_186"
+    type: trojan
+    server: "202.78.163.172"
+    port: 443
+    password: "IQ68037294"
+    sni: "more-trout.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_187"
+    type: trojan
+    server: "202.78.163.172"
+    port: 443
+    password: "OD90375861"
+    sni: "more-trout.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_188"
+    type: trojan
+    server: "dear-ferret.rooster465.autos"
+    port: 443
+    password: "IQ68037294"
+    sni: "dear-ferret.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_189"
+    type: trojan
+    server: "202.78.163.206"
+    port: 443
+    password: "JT80563429"
+    sni: "enabling-snipe.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_190"
+    type: trojan
+    server: "64.176.75.215"
+    port: 443
+    password: "nsKBtW4V7LPHG5.iSySU8_pNM88Gkxz7eE"
+    sni: "64.176.75.215"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_191"
+    type: trojan
+    server: "202.78.163.100"
+    port: 443
+    password: "IQ68037294"
+    sni: "enough-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_192"
+    type: trojan
+    server: "202.78.163.146"
+    port: 443
+    password: "FC60532879"
+    sni: "electric-sturgeon.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_193"
     type: trojan
     server: "202.78.163.113"
     port: 443
@@ -743,14 +863,38 @@ proxies:
     sni: "distinct-ibex.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇵🇱_157"
+  - name: "🇵🇱_194"
+    type: trojan
+    server: "enough-basilisk.rooster465.autos"
+    port: 443
+    password: "PD07395842"
+    sni: "enough-basilisk.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_195"
+    type: trojan
+    server: "202.78.163.175"
+    port: 443
+    password: "WG39087154"
+    sni: "optimal-urchin.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_196"
+    type: trojan
+    server: "patient-gannet.rooster465.autos"
+    port: 443
+    password: "IQ68037294"
+    sni: "patient-gannet.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇵🇱_197"
     type: ss
     server: "92.118.205.211"
     port: 5600
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
-  - name: "🇵🇱_158"
+  - name: "🇵🇱_198"
     type: ss
     server: "92.118.205.211"
     port: 5600
@@ -799,26 +943,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -878,6 +1002,46 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
   - name: "LB-CDN"
     type: load-balance
@@ -887,26 +1051,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -966,6 +1110,46 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -975,26 +1159,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -1054,6 +1218,46 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
   - name: "FAST-CDN"
     type: url-test
@@ -1062,26 +1266,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -1141,6 +1325,46 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -1150,26 +1374,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -1229,31 +1433,51 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇵🇱_80"
-      - "🇵🇱_81"
-      - "🇵🇱_82"
-      - "🇵🇱_83"
-      - "🇵🇱_84"
-      - "🇵🇱_85"
-      - "🇵🇱_86"
-      - "🇵🇱_87"
-      - "🇵🇱_88"
-      - "🇵🇱_89"
-      - "🇵🇱_90"
-      - "🇵🇱_91"
-      - "🇵🇱_92"
-      - "🇵🇱_93"
-      - "🇵🇱_94"
-      - "🇵🇱_95"
-      - "🇵🇱_96"
-      - "🇵🇱_97"
-      - "🇵🇱_98"
-      - "🇵🇱_99"
       - "🇵🇱_100"
       - "🇵🇱_101"
       - "🇵🇱_102"
@@ -1313,6 +1537,46 @@ proxy-groups:
       - "🇵🇱_156"
       - "🇵🇱_157"
       - "🇵🇱_158"
+      - "🇵🇱_159"
+      - "🇵🇱_160"
+      - "🇵🇱_161"
+      - "🇵🇱_162"
+      - "🇵🇱_163"
+      - "🇵🇱_164"
+      - "🇵🇱_165"
+      - "🇵🇱_166"
+      - "🇵🇱_167"
+      - "🇵🇱_168"
+      - "🇵🇱_169"
+      - "🇵🇱_170"
+      - "🇵🇱_171"
+      - "🇵🇱_172"
+      - "🇵🇱_173"
+      - "🇵🇱_174"
+      - "🇵🇱_175"
+      - "🇵🇱_176"
+      - "🇵🇱_177"
+      - "🇵🇱_178"
+      - "🇵🇱_179"
+      - "🇵🇱_180"
+      - "🇵🇱_181"
+      - "🇵🇱_182"
+      - "🇵🇱_183"
+      - "🇵🇱_184"
+      - "🇵🇱_185"
+      - "🇵🇱_186"
+      - "🇵🇱_187"
+      - "🇵🇱_188"
+      - "🇵🇱_189"
+      - "🇵🇱_190"
+      - "🇵🇱_191"
+      - "🇵🇱_192"
+      - "🇵🇱_193"
+      - "🇵🇱_194"
+      - "🇵🇱_195"
+      - "🇵🇱_196"
+      - "🇵🇱_197"
+      - "🇵🇱_198"
 
 rules:
   - MATCH,PROXY-BEST
