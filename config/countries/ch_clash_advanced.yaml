@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇭_9"
+  - name: "🇨🇭_7"
+    type: vless
+    server: "45.195.2.114"
+    port: 443
+    uuid: "7c0ae486-6e09-465c-9232-67a50f329eb9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
+      short-id: "d515d6cfdfe60b02"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_8"
     type: vless
     server: "45.85.93.92"
     port: 443
@@ -73,7 +87,7 @@ proxies:
       public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
       short-id: "f5420efbe305d354"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_10"
+  - name: "🇨🇭_9"
     type: vless
     server: "193.151.108.156"
     port: 443
@@ -89,21 +103,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "fi1cosmos"
-  - name: "🇨🇭_11"
-    type: vless
-    server: "45.195.2.114"
-    port: 443
-    uuid: "7c0ae486-6e09-465c-9232-67a50f329eb9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
-      short-id: "d515d6cfdfe60b02"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_12"
+  - name: "🇨🇭_10"
     type: vless
     server: "178.83.226.55"
     port: 443
@@ -116,11 +116,11 @@ proxies:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_13"
+  - name: "🇨🇭_11"
     type: vless
     server: "free.ch1.laodavip.com"
     port: 443
-    uuid: "89281585-8bde-4ef2-8807-96c603281ef8"
+    uuid: "2f3a2a4d-ca46-4012-a472-b559d379ad0a"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -130,36 +130,13 @@ proxies:
       public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
       short-id: "f5420efbe305d354"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_14"
-    type: vless
-    server: "ch1.fi1-cosmostechnology.ru"
-    port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
-  - name: "🇨🇭_15"
+  - name: "🇨🇭_12"
     type: trojan
     server: "86.106.84.195"
     port: 53261
     password: "y3b03zx3tznhyo538p4c"
     sni: "86.106.84.195"
     skip-cert-verify: true
-    udp: true
-  - name: "🇨🇭_16"
-    type: ss
-    server: "146.70.26.156"
-    port: 1080
-    cipher: "chacha20-ietf-poly1305"
-    password: "XF0klw7870vXn3uQIxe19Q"
     udp: true
 
 proxy-groups:
@@ -203,14 +180,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -220,14 +195,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -237,14 +210,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -253,14 +224,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -270,27 +239,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇭_7"
+      - "🇨🇭_8"
       - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
-      - "🇨🇭_13"
-      - "🇨🇭_14"
-      - "🇨🇭_15"
-      - "🇨🇭_16"
 
 rules:
   - MATCH,PROXY-BEST
