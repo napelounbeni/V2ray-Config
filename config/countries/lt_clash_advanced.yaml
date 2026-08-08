@@ -59,16 +59,127 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_6"
+  - name: "🇱🇹_12"
     type: vless
-    server: "ddc-chr-lt2.astralweb.tech"
+    server: "144.31.243.240"
     port: 443
-    uuid: "5dc56757-458e-4df2-9e71-2a14ce47e8af"
+    uuid: "f692629b-3557-488a-9c9b-60775331e423"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fi1-cosmostechnology.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "fi1cosmos"
+  - name: "🇱🇹_13"
+    type: vless
+    server: "84.32.110.58"
+    port: 2443
+    uuid: "cfae13ae-5f59-42dc-a6cd-a2736dd9dca9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lao10.enterquality.online"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_14"
+    type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_15"
+    type: vless
+    server: "46.166.167.222"
+    port: 443
+    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "ddc-chr-lt2.astralweb.tech"
-  - name: "🇱🇹_7"
+    client-fingerprint: "firefox"
+  - name: "🇱🇹_16"
+    type: vless
+    server: "ddc-chr-lt2.astralweb.tech"
+    port: 443
+    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ddc-chr-lt2.astralweb.tech"
+    client-fingerprint: "firefox"
+  - name: "🇱🇹_17"
+    type: vless
+    server: "89.116.250.8"
+    port: 443
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "gj2rf.mlrb.tyr.hh.vavava.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "gj2rf.mlrb.tyr.hh.vavava.kdns.fr"
+  - name: "🇱🇹_18"
+    type: vless
+    server: "46.29.234.210"
+    port: 443
+    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tradingview.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "II9Tn-HPL7xcENiybDfQ_bSw31rSzQbIGYn-hCxdb2w"
+      short-id: "ccda00cc"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇱🇹_19"
+    type: vless
+    server: "144.31.243.37"
+    port: 443
+    uuid: "f692629b-3557-488a-9c9b-60775331e423"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fi1-cosmostechnology.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "fi1cosmos"
+  - name: "🇱🇹_20"
+    type: vless
+    server: "144.31.243.119"
+    port: 443
+    uuid: "f692629b-3557-488a-9c9b-60775331e423"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fi1-cosmostechnology.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "fi1cosmos"
+  - name: "🇱🇹_21"
     type: vless
     server: "84.32.209.7"
     port: 443
@@ -82,40 +193,22 @@ proxies:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_8"
+  - name: "🇱🇹_22"
     type: vless
-    server: "46.166.167.222"
+    server: "144.31.243.105"
     port: 443
-    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    uuid: "f692629b-3557-488a-9c9b-60775331e423"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
+    servername: "fi1-cosmostechnology.ru"
     client-fingerprint: "firefox"
-  - name: "🇱🇹_9"
-    type: vless
-    server: "ddc-chr-lt2.astralweb.tech"
-    port: 443
-    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
-    client-fingerprint: "firefox"
-  - name: "🇱🇹_10"
-    type: vless
-    server: "ltu-01.node.lumixnet.com"
-    port: 443
-    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ltu-01.node.lumixnet.com"
-    client-fingerprint: "hellochrome_120"
     reality-opts:
-      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
-      short-id: "bd8a588cebc3395a"
-    flow: "xtls-rprx-vision"
+      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "fi1cosmos"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -158,11 +251,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
   - name: "LB-CDN"
     type: load-balance
@@ -172,11 +271,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -186,11 +291,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
   - name: "FAST-CDN"
     type: url-test
@@ -199,11 +310,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -213,21 +330,33 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
+      - "🇱🇹_12"
+      - "🇱🇹_13"
+      - "🇱🇹_14"
+      - "🇱🇹_15"
+      - "🇱🇹_16"
+      - "🇱🇹_17"
+      - "🇱🇹_18"
+      - "🇱🇹_19"
+      - "🇱🇹_20"
+      - "🇱🇹_21"
+      - "🇱🇹_22"
 
 rules:
   - MATCH,PROXY-BEST

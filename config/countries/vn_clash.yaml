@@ -64,17 +64,6 @@ dns:
 
 proxies:
   - name: "🇻🇳_1"
-    type: vless
-    server: "103.173.155.212"
-    port: 443
-    uuid: "5d02517f-63d5-3e9f-b467-1bcf4d4e25d3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "b67c99c6s591.csgfw.top"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇻🇳_2"
     type: trojan
     server: "103.72.96.55"
     port: 443
@@ -82,20 +71,12 @@ proxies:
     sni: "hanoiidc2.5gsieutocdo.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇻🇳_3"
+  - name: "🇻🇳_2"
     type: trojan
     server: "160.30.160.134"
     port: 443
     password: "25a0ffa0-725c-4d6f-b0d5-c74579753075"
     sni: "cmc5.5gsieuvip.vn"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇻🇳_4"
-    type: trojan
-    server: "36.50.134.29"
-    port: 443
-    password: "94d219c9-1afc-4d42-b090-8b3794764380"
-    sni: "36.50.134.29"
     skip-cert-verify: true
     udp: true
 
@@ -114,8 +95,6 @@ proxy-groups:
     proxies:
       - "🇻🇳_1"
       - "🇻🇳_2"
-      - "🇻🇳_3"
-      - "🇻🇳_4"
 
 
 rules:

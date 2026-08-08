@@ -59,16 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_8"
-    type: vless
-    server: "185.39.204.155"
-    port: 8443
-    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇹🇷_9"
+  - name: "🇹🇷_10"
     type: vless
     server: "201.50.115.23"
     port: 443
@@ -82,7 +73,46 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_10"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "185.227.138.54"
+    port: 8443
+    uuid: "16ab4d4a-fd81-4535-9b7b-346677226ce8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sony.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Lq1xwc-Qd0Te8sV-NxrJLQO6JbvPkknki6inkKj5_WQ"
+      short-id: "22c6f049621c44ec"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_12"
+    type: vless
+    server: "185.39.204.155"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇹🇷_13"
+    type: vless
+    server: "83.217.9.154"
+    port: 443
+    uuid: "f692629b-3557-488a-9c9b-60775331e423"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fi1-cosmostechnology.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "fi1cosmos"
+  - name: "🇹🇷_14"
     type: vless
     server: "45.74.178.41"
     port: 719
@@ -93,15 +123,7 @@ proxies:
       path: "/api/v2/xtrnwqjbkr?ed=2560"
       headers:
         Host: "play.google.com"
-  - name: "🇹🇷_11"
-    type: trojan
-    server: "45.67.202.101"
-    port: 8443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇹🇷_12"
+  - name: "🇹🇷_15"
     type: trojan
     server: "195.162.69.238"
     port: 9443
@@ -109,19 +131,27 @@ proxies:
     sni: "apple.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇹🇷_13"
-    type: ss
-    server: "38.180.113.194"
-    port: 8119
-    cipher: "aes-256-gcm"
-    password: "cdBIDV42DCwnfIN"
+  - name: "🇹🇷_16"
+    type: trojan
+    server: "45.67.202.101"
+    port: 8443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
     udp: true
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_17"
     type: ss
     server: "185.123.101.64"
     port: 2376
     cipher: "aes-256-gcm"
     password: "faBAoD54k87UJG7"
+    udp: true
+  - name: "🇹🇷_18"
+    type: ss
+    server: "38.180.113.194"
+    port: 8119
+    cipher: "aes-256-gcm"
+    password: "cdBIDV42DCwnfIN"
     udp: true
 
 proxy-groups:
@@ -165,13 +195,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -181,13 +213,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -197,13 +231,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -212,13 +248,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -228,25 +266,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_8"
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
 rules:
   - MATCH,PROXY-BEST
