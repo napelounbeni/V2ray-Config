@@ -65,18 +65,7 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇱🇹_2"
-    type: vless
-    server: "84.32.209.7"
+    server: "lat1.levikogjgfdd.ir"
     port: 443
     uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
     udp: true
@@ -88,48 +77,20 @@ proxies:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_3"
+  - name: "🇱🇹_2"
     type: vless
-    server: "46.29.234.210"
+    server: "84.32.209.7"
     port: 443
-    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
+    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.tradingview.com"
+    servername: "dartsearch-cn.net"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "II9Tn-HPL7xcENiybDfQ_bSw31rSzQbIGYn-hCxdb2w"
-      short-id: "ccda00cc"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇱🇹_4"
-    type: trojan
-    server: "195.181.244.216"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇱🇹_5"
-    type: trojan
-    server: "194.135.80.192"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
+      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -146,9 +107,6 @@ proxy-groups:
     proxies:
       - "🇱🇹_1"
       - "🇱🇹_2"
-      - "🇱🇹_3"
-      - "🇱🇹_4"
-      - "🇱🇹_5"
 
 
 rules:

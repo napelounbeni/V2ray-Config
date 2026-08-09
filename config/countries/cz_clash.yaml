@@ -80,7 +80,7 @@ proxies:
   - name: "🇨🇿_2"
     type: trojan
     server: "178.208.75.155"
-    port: 8443
+    port: 2053
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
@@ -92,20 +92,15 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇨🇿_3"
     type: trojan
-    server: "178.208.75.155"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
+    server: "46.8.113.142"
+    port: 443
+    password: "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu"
+    sni: "ch-2.bexum.fun"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
   - name: "🇨🇿_4"
     type: trojan
-    server: "46.8.113.142"
+    server: "ch-2.bexum.fun"
     port: 443
     password: "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu"
     sni: "ch-2.bexum.fun"

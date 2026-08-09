@@ -65,10 +65,18 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "217.145.79.102"
-    port: 24478
-    uuid: "f937575c-35c2-4889-832e-b67935d565d8"
+    server: "195.123.208.92"
+    port: 13443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_2"
     type: vless
     server: "85.159.228.250"
@@ -77,18 +85,10 @@ proxies:
     udp: true
   - name: "🇱🇻_3"
     type: vless
-    server: "195.123.208.92"
-    port: 13443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    server: "217.145.79.102"
+    port: 24478
+    uuid: "f937575c-35c2-4889-832e-b67935d565d8"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
   - name: "🇱🇻_4"
     type: vless
     server: "31.59.45.26"
@@ -119,32 +119,6 @@ proxies:
     sni: "lvhy2.metricpipe.space"
     skip-cert-verify: true
     udp: true
-  - name: "🇱🇻_7"
-    type: trojan
-    server: "188.215.31.110"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇱🇻_8"
-    type: trojan
-    server: "84.21.172.81"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -165,8 +139,6 @@ proxy-groups:
       - "🇱🇻_4"
       - "🇱🇻_5"
       - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
 
 
 rules:

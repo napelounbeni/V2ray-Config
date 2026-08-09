@@ -65,6 +65,19 @@ dns:
 proxies:
   - name: "🇰🇿_1"
     type: vless
+    server: "194.59.5.46"
+    port: 2096
+    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wild-sky-f384.alvlirm3737.workers.dev"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇰🇿_2"
+    type: vless
     server: "178.236.16.98"
     port: 35728
     uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
@@ -76,7 +89,13 @@ proxies:
     reality-opts:
       public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
       short-id: "69a2"
-  - name: "🇰🇿_2"
+  - name: "🇰🇿_3"
+    type: vless
+    server: "193.124.204.145"
+    port: 49853
+    uuid: "5ed7b151-b781-4dba-800d-e3f824f1416f"
+    udp: true
+  - name: "🇰🇿_4"
     type: vless
     server: "83.222.23.81"
     port: 38065
@@ -89,23 +108,7 @@ proxies:
     reality-opts:
       public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
       short-id: "fa"
-  - name: "🇰🇿_3"
-    type: vless
-    server: "111.88.143.139"
-    port: 51940
-    uuid: "03464802-b517-404b-b15c-7750ffc5e78f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y"
-      short-id: "fd7f"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇰🇿_4"
+  - name: "🇰🇿_5"
     type: vless
     server: "77.73.232.61"
     port: 19747
@@ -118,48 +121,7 @@ proxies:
     reality-opts:
       public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
       short-id: "2001"
-  - name: "🇰🇿_5"
-    type: vless
-    server: "31.43.179.0"
-    port: 80
-    uuid: "fcd5a9bf-b5e2-44f2-8bc2-77ef222c7187"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "worker3.dawejoy4544.workers.dev"
   - name: "🇰🇿_6"
-    type: vless
-    server: "185.176.26.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇰🇿_7"
-    type: vless
-    server: "193.124.204.145"
-    port: 49853
-    uuid: "5ed7b151-b781-4dba-800d-e3f824f1416f"
-    udp: true
-  - name: "🇰🇿_8"
-    type: vless
-    server: "194.59.5.46"
-    port: 2096
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wild-sky-f384.alvlirm3737.workers.dev"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇰🇿_9"
     type: trojan
     server: "kzhy2.metricpipe.space"
     port: 9443
@@ -187,9 +149,6 @@ proxy-groups:
       - "🇰🇿_4"
       - "🇰🇿_5"
       - "🇰🇿_6"
-      - "🇰🇿_7"
-      - "🇰🇿_8"
-      - "🇰🇿_9"
 
 
 rules:
