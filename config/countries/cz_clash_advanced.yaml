@@ -75,12 +75,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_6"
     type: trojan
-    server: "46.8.113.142"
-    port: 443
-    password: "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu"
-    sni: "ch-2.bexum.fun"
+    server: "178.208.75.155"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
     udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "🇨🇿_7"
     type: trojan
     server: "178.208.75.155"
@@ -96,17 +101,12 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇨🇿_8"
     type: trojan
-    server: "178.208.75.155"
-    port: 8443
-    password: "humanity"
-    sni: "www.calmlunch.com"
+    server: "46.8.113.142"
+    port: 443
+    password: "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu"
+    sni: "ch-2.bexum.fun"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

@@ -61,49 +61,6 @@ dns:
 proxies:
   - name: "🇹🇷_10"
     type: vless
-    server: "83.217.9.154"
-    port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
-  - name: "🇹🇷_11"
-    type: vless
-    server: "201.50.115.23"
-    port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_12"
-    type: vless
-    server: "varzesh3.com.ironmouse.ir"
-    port: 443
-    uuid: "725cec72-4cf7-414a-a12a-c307e9113167"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "oYzGaAJp6SjTaoQSa-QxNHiIyvdkJ0glN62EPqioMEY"
-      short-id: "197b9a8e622bf2d8"
-  - name: "🇹🇷_13"
-    type: vless
     server: "185.39.204.155"
     port: 8443
     uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
@@ -111,7 +68,20 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "158.94.216.232"
+    port: 9145
+    uuid: "93b2c17b-b745-43b3-bbde-f117881885c3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0"
+      short-id: "5e06032a9c448538"
+  - name: "🇹🇷_12"
     type: vless
     server: "81.177.215.156"
     port: 13868
@@ -125,12 +95,34 @@ proxies:
       public-key: "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko"
       short-id: "e852dc"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_15"
+  - name: "🇹🇷_13"
+    type: vless
+    server: "201.50.115.23"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_14"
     type: trojan
     server: "195.162.69.238"
     port: 9443
     password: "ac8ae2c29cd149eb85cae990572f0d59"
     sni: "apple.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇹🇷_15"
+    type: trojan
+    server: "turkhy2.metricpipe.space"
+    port: 9443
+    password: "cvZSjDw-t2FsubEAfYmGJhGhu6KQ4f7o"
+    sni: "turkhy2.metricpipe.space"
     skip-cert-verify: true
     udp: true
   - name: "🇹🇷_16"

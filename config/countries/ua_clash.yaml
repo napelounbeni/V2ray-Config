@@ -64,6 +64,61 @@ dns:
 
 proxies:
   - name: "🇺🇦_1"
+    type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_2"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "194.152.44.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime55.workers.dev"
+  - name: "🇺🇦_5"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇺🇦_6"
     type: trojan
     server: "130.0.236.88"
     port: 443
@@ -86,6 +141,11 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇺🇦_1"
+      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
 
 rules:

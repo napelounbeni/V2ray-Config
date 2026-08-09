@@ -59,7 +59,62 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_2"
+  - name: "🇺🇦_7"
+    type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_8"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_9"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_10"
+    type: vless
+    server: "194.152.44.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime55.workers.dev"
+  - name: "🇺🇦_11"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇺🇦_12"
     type: trojan
     server: "130.0.236.88"
     port: 443
@@ -109,7 +164,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -119,7 +179,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -129,7 +194,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -138,7 +208,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -148,13 +223,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
 
 rules:
   - MATCH,PROXY-BEST

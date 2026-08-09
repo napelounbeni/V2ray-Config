@@ -65,61 +65,16 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
-    server: "46.166.167.222"
-    port: 443
-    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
-    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
   - name: "🇱🇹_2"
-    type: vless
-    server: "ddc-chr-lt2.astralweb.tech"
-    port: 443
-    uuid: "cd1673b3-7cec-4fe6-bedf-b534eb54e647"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
-    client-fingerprint: "firefox"
-  - name: "🇱🇹_3"
-    type: vless
-    server: "144.31.243.119"
-    port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
-  - name: "🇱🇹_4"
-    type: vless
-    server: "84.32.110.58"
-    port: 2443
-    uuid: "cfae13ae-5f59-42dc-a6cd-a2736dd9dca9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lao10.enterquality.online"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_5"
-    type: vless
-    server: "ddc-chr-lt2.astralweb.tech"
-    port: 443
-    uuid: "5dc56757-458e-4df2-9e71-2a14ce47e8af"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ddc-chr-lt2.astralweb.tech"
-  - name: "🇱🇹_6"
     type: vless
     server: "84.32.209.7"
     port: 443
@@ -128,12 +83,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "dartsearch-cn.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_7"
+  - name: "🇱🇹_3"
     type: vless
     server: "46.29.234.210"
     port: 443
@@ -149,54 +104,32 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇹_8"
-    type: vless
-    server: "144.31.243.105"
+  - name: "🇱🇹_4"
+    type: trojan
+    server: "195.181.244.216"
     port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
-    udp: true
-    tls: true
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
-  - name: "🇱🇹_9"
-    type: vless
-    server: "144.31.243.240"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇱🇹_5"
+    type: trojan
+    server: "194.135.80.192"
     port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
-    udp: true
-    tls: true
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
-  - name: "🇱🇹_10"
-    type: vless
-    server: "144.31.243.37"
-    port: 443
-    uuid: "f692629b-3557-488a-9c9b-60775331e423"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fi1-cosmostechnology.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f3Mwf_vaM2TDw1X8HZORkYPLY0-DE5smNYgHuhrQLTA"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "fi1cosmos"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -216,11 +149,6 @@ proxy-groups:
       - "🇱🇹_3"
       - "🇱🇹_4"
       - "🇱🇹_5"
-      - "🇱🇹_6"
-      - "🇱🇹_7"
-      - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
 
 
 rules:
