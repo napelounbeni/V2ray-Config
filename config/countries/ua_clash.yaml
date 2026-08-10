@@ -65,32 +65,16 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "78.159.240.31"
-    port: 27443
-    uuid: "13eee6d2-5b9f-408c-aaab-07caf8497ea3"
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "api.acquisition-gwe.plus.yandex.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "jOBo4R259-p0H2EcHMPO_R1uPZ8hyM_Yj1K5Nejch2U"
-      short-id: "d681ac08"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "78.159.240.69"
-    port: 8443
-    uuid: "8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "2.26.148.147.tyr-agentstvo.tech"
-    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/websocket?ed=2560"
-  - name: "🇺🇦_3"
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_2"
     type: vless
     server: "78.159.240.69"
     port: 2053
@@ -103,6 +87,17 @@ proxies:
     network: ws
     ws-opts:
       path: "/websocket?ed=2560"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "194.152.44.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime55.workers.dev"
   - name: "🇺🇦_4"
     type: vless
     server: "78.159.240.215"
@@ -118,18 +113,15 @@ proxies:
       path: "/websocket?ed=2560"
   - name: "🇺🇦_5"
     type: vless
-    server: "78.159.240.31"
-    port: 26443
-    uuid: "13eee6d2-5b9f-408c-aaab-07caf8497ea3"
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shopping-api-gateway.cdek.shopping"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "jOBo4R259-p0H2EcHMPO_R1uPZ8hyM_Yj1K5Nejch2U"
-      short-id: "d681ac08"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
   - name: "🇺🇦_6"
     type: vless
     server: "78.159.240.215"
@@ -144,6 +136,30 @@ proxies:
     ws-opts:
       path: "/websocket?ed=2560"
   - name: "🇺🇦_7"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_8"
+    type: vless
+    server: "78.159.240.69"
+    port: 8443
+    uuid: "8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "2.26.148.147.tyr-agentstvo.tech"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/websocket?ed=2560"
+  - name: "🇺🇦_9"
     type: trojan
     server: "130.0.236.88"
     port: 443
@@ -151,6 +167,17 @@ proxies:
     sni: "ua.freeguard.org"
     skip-cert-verify: true
     udp: true
+  - name: "🇺🇦_10"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -172,6 +199,9 @@ proxy-groups:
       - "🇺🇦_5"
       - "🇺🇦_6"
       - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
 
 rules:

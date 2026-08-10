@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_11"
+  - name: "🇹🇷_15"
     type: vless
     server: "81.177.215.156"
     port: 13868
@@ -72,16 +72,73 @@ proxies:
       public-key: "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko"
       short-id: "e852dc"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_12"
+  - name: "🇹🇷_16"
     type: vless
-    server: "185.39.204.155"
-    port: 8443
-    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    server: "vip.overkill.tr"
+    port: 15861
+    uuid: "02a572b7-ac07-425d-b2d2-7e2cca3c2c2a"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇹🇷_13"
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "oa-H5A418o2bozqWfNxvclImctSF0wbxRc73MwURc3c"
+      short-id: "f68910b762547193"
+  - name: "🇹🇷_17"
+    type: vless
+    server: "201.50.115.23"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_18"
+    type: vless
+    server: "216.9.224.42"
+    port: 443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "us.rexten.cc"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_19"
+    type: vless
+    server: "45.74.178.41"
+    port: 719
+    uuid: "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api/v2/xtrnwqjbkr?ed=2560"
+      headers:
+        Host: "play.google.com"
+  - name: "🇹🇷_20"
+    type: vless
+    server: "216.9.224.248"
+    port: 443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "us.rexten.cc"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_21"
     type: vless
     server: "2.56.127.137"
     port: 443
@@ -96,21 +153,29 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "mAhaNrEaliteAm.MaHkHan.iR"
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_22"
     type: vless
-    server: "201.50.115.23"
-    port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    server: "bobopanelsi.jorgotr.ir"
+    port: 20697
+    uuid: "e3a1a6f5-2491-42e8-b2e1-7c84f0c547e8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
+    servername: "mbp.yimg.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_15"
+      public-key: "h6xaCIRMwAA1C5yuIlJS7jfC2i0oa2rzv_axHZqe52c"
+      short-id: "a5c5"
+  - name: "🇹🇷_23"
+    type: vless
+    server: "185.39.204.155"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇹🇷_24"
     type: trojan
     server: "45.67.202.101"
     port: 8443
@@ -118,15 +183,7 @@ proxies:
     sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
     udp: true
-  - name: "🇹🇷_16"
-    type: trojan
-    server: "turkhy2.metricpipe.space"
-    port: 9443
-    password: "cvZSjDw-t2FsubEAfYmGJhGhu6KQ4f7o"
-    sni: "turkhy2.metricpipe.space"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇹🇷_17"
+  - name: "🇹🇷_25"
     type: trojan
     server: "195.162.69.238"
     port: 9443
@@ -134,26 +191,27 @@ proxies:
     sni: "apple.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇹🇷_18"
-    type: ss
-    server: "38.180.113.194"
-    port: 8119
-    cipher: "aes-256-gcm"
-    password: "cdBIDV42DCwnfIN"
-    udp: true
-  - name: "🇹🇷_19"
-    type: ss
+  - name: "🇹🇷_26"
+    type: trojan
     server: "tr-1.stunnel.cc"
-    port: 8444
-    cipher: "chacha20-ietf-poly1305"
-    password: "tunnel-fbrof"
+    port: 8441
+    password: "tunnel-ljlcf"
+    sni: "tr-1.stunnel.cc"
+    skip-cert-verify: true
     udp: true
-  - name: "🇹🇷_20"
+  - name: "🇹🇷_27"
     type: ss
     server: "185.123.101.64"
     port: 2376
     cipher: "aes-256-gcm"
     password: "faBAoD54k87UJG7"
+    udp: true
+  - name: "🇹🇷_28"
+    type: ss
+    server: "38.180.113.194"
+    port: 8119
+    cipher: "aes-256-gcm"
+    password: "cdBIDV42DCwnfIN"
     udp: true
 
 proxy-groups:
@@ -197,16 +255,20 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
   - name: "LB-CDN"
     type: load-balance
@@ -216,16 +278,20 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -235,16 +301,20 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
   - name: "FAST-CDN"
     type: url-test
@@ -253,16 +323,20 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -272,31 +346,39 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
       - "🇹🇷_17"
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
+      - "🇹🇷_21"
+      - "🇹🇷_22"
+      - "🇹🇷_23"
+      - "🇹🇷_24"
+      - "🇹🇷_25"
+      - "🇹🇷_26"
+      - "🇹🇷_27"
+      - "🇹🇷_28"
 
 rules:
   - MATCH,PROXY-BEST

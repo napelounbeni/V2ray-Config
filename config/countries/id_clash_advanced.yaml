@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇩_3"
+  - name: "🇮🇩_4"
     type: vless
     server: "202.155.14.176"
     port: 443
@@ -73,7 +73,15 @@ proxies:
       public-key: "UdeZc5DrXa8lWOET4wlBp55-nXskqsvoU-2kVvd3zBg"
       short-id: "7a3f9e2b1c8d4f6a"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇩_4"
+  - name: "🇮🇩_5"
+    type: trojan
+    server: "qfdfsg.wsone.icu"
+    port: 443
+    password: "M7v%w11Se*"
+    sni: "qfdfsg.wsone.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇩_6"
     type: trojan
     server: "172.232.250.160"
     port: 443
@@ -123,8 +131,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -134,8 +143,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -145,8 +155,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -155,8 +166,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -166,15 +178,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇩_3"
       - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
 rules:
   - MATCH,PROXY-BEST
