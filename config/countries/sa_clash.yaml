@@ -64,14 +64,6 @@ dns:
 
 proxies:
   - name: "🇸🇦_1"
-    type: trojan
-    server: "149.104.104.58"
-    port: 443
-    password: "S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix"
-    sni: "149.104.104.58"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇸🇦_2"
     type: ss
     server: "156.244.8.155"
     port: 5004
@@ -93,7 +85,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇸🇦_1"
-      - "🇸🇦_2"
 
 
 rules:

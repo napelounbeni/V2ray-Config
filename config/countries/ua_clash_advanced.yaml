@@ -59,18 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_11"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_12"
+  - name: "🇺🇦_6"
     type: vless
     server: "78.159.240.69"
     port: 2053
@@ -83,18 +72,20 @@ proxies:
     network: ws
     ws-opts:
       path: "/websocket?ed=2560"
-  - name: "🇺🇦_13"
+  - name: "🇺🇦_7"
     type: vless
-    server: "194.152.44.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "78.159.240.215"
+    port: 8443
+    uuid: "8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "2.26.148.147.tyr-agentstvo.tech"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime55.workers.dev"
-  - name: "🇺🇦_14"
+      path: "/websocket?ed=2560"
+  - name: "🇺🇦_8"
     type: vless
     server: "78.159.240.215"
     port: 2053
@@ -107,42 +98,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/websocket?ed=2560"
-  - name: "🇺🇦_15"
-    type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_16"
-    type: vless
-    server: "78.159.240.215"
-    port: 8443
-    uuid: "8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "2.26.148.147.tyr-agentstvo.tech"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/websocket?ed=2560"
-  - name: "🇺🇦_17"
-    type: vless
-    server: "45.135.235.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime07.workers.dev"
-  - name: "🇺🇦_18"
+  - name: "🇺🇦_9"
     type: vless
     server: "78.159.240.69"
     port: 8443
@@ -155,15 +111,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/websocket?ed=2560"
-  - name: "🇺🇦_19"
-    type: trojan
-    server: "130.0.236.88"
-    port: 443
-    password: "d2adff89-5143-4d67-921f-3478464de5bb"
-    sni: "ua.freeguard.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇺🇦_20"
+  - name: "🇺🇦_10"
     type: trojan
     server: "89.116.180.49"
     port: 443
@@ -216,16 +164,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -235,16 +178,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -254,16 +192,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -272,16 +205,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -291,31 +219,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
 rules:
   - MATCH,PROXY-BEST

@@ -61,15 +61,20 @@ dns:
 proxies:
   - name: "🇱🇹_7"
     type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "46.29.234.210"
+    port: 443
+    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tradingview.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "II9Tn-HPL7xcENiybDfQ_bSw31rSzQbIGYn-hCxdb2w"
+      short-id: "ccda00cc"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "🇱🇹_8"
     type: vless
     server: "84.32.209.7"
@@ -86,23 +91,18 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_9"
     type: vless
-    server: "46.29.234.210"
-    port: 443
-    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.tradingview.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "II9Tn-HPL7xcENiybDfQ_bSw31rSzQbIGYn-hCxdb2w"
-      short-id: "ccda00cc"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
   - name: "🇱🇹_10"
     type: vless
-    server: "lt.xanka.best"
+    server: "2.59.162.170"
     port: 8443
     uuid: "bb3f45ce-3b7f-4efe-8bf1-b16b282d8bc9"
     udp: true
@@ -116,6 +116,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_11"
     type: trojan
+    server: "194.135.80.192"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇱🇹_12"
+    type: trojan
     server: "195.181.244.216"
     port: 443
     password: "humanity"
@@ -127,17 +138,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_12"
-    type: trojan
-    server: "194.135.80.192"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
