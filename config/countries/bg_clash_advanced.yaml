@@ -59,7 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_8"
+  - name: "🇧🇬_6"
+    type: vless
+    server: "185.82.219.152"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇬_7"
     type: vless
     server: "185.82.219.152"
     port: 13443
@@ -73,43 +86,7 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_9"
-    type: vless
-    server: "185.82.219.152"
-    port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇬_10"
-    type: vless
-    server: "89.117.112.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳@VPNine1"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
-  - name: "🇧🇬_11"
-    type: vless
-    server: "89.117.112.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
-  - name: "🇧🇬_12"
+  - name: "🇧🇬_8"
     type: trojan
     server: "193.239.160.134"
     port: 443
@@ -120,16 +97,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇧🇬_13"
+  - name: "🇧🇬_9"
     type: ss
     server: "38.244.132.14"
     port: 5499
     cipher: "aes-256-gcm"
     password: "lGqs95QkFHo2NV"
     udp: true
-  - name: "🇧🇬_14"
+  - name: "🇧🇬_10"
     type: ss
     server: "38.244.132.14"
     port: 5499
@@ -178,13 +153,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -194,13 +167,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -210,13 +181,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -225,13 +194,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -241,25 +208,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇧🇬_6"
+      - "🇧🇬_7"
       - "🇧🇬_8"
       - "🇧🇬_9"
       - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
 
 rules:
   - MATCH,PROXY-BEST

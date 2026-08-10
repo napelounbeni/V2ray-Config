@@ -59,21 +59,37 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇹_12"
+  - name: "🇮🇹_10"
     type: vless
-    server: "116.204.164.27"
-    port: 7443
-    uuid: "4c7480b2-d67b-4bb9-9f33-0700dfcbdee6"
+    server: "57.131.32.191"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/@Marisa_kristi"
+      path: "/vless/"
       headers:
-        Host: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
+        Host: "ov-italy1.09vpn.com"
+  - name: "🇮🇹_11"
+    type: vless
+    server: "ov-italy1.09vpn.com"
+    port: 80
+    uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_12"
+    type: vless
+    server: "ov-italy1.09vpn.com"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "ov-italy1.09vpn.com"
   - name: "🇮🇹_13"
     type: vless
     server: "204.216.216.23"
@@ -106,68 +122,20 @@ proxies:
       headers:
         Host: "OV-Italy1.09vpn.com"
   - name: "🇮🇹_16"
-    type: vless
-    server: "57.131.32.191"
-    port: 80
-    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    type: ss
+    server: "62.76.234.188"
+    port: 10901
+    cipher: "aes-256-gcm"
+    password: "d1fa2f4b98a38bc8"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "OV-Italy1.09vpn.com"
   - name: "🇮🇹_17"
-    type: vless
-    server: "204.216.216.23"
-    port: 1114
-    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
+    type: ss
+    server: "62.76.234.188"
+    port: 10901
+    cipher: "aes-256-gcm"
+    password: "d1fa2f4b98a38bc8"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    reality-opts:
-      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
-      short-id: "79a1e14b"
-    flow: "xtls-rprx-vision"
   - name: "🇮🇹_18"
-    type: vless
-    server: "116.204.164.5"
-    port: 7443
-    uuid: "6eb831ea-8829-457b-a5d1-52f640a97486"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-  - name: "🇮🇹_19"
-    type: vless
-    server: "ov-italy1.09vpn.com"
-    port: 80
-    uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇮🇹_20"
-    type: ss
-    server: "62.76.234.188"
-    port: 10901
-    cipher: "aes-256-gcm"
-    password: "d1fa2f4b98a38bc8"
-    udp: true
-  - name: "🇮🇹_21"
-    type: ss
-    server: "62.76.234.188"
-    port: 10901
-    cipher: "aes-256-gcm"
-    password: "d1fa2f4b98a38bc8"
-    udp: true
-  - name: "🇮🇹_22"
     type: ss
     server: "185.213.20.110"
     port: 7001
@@ -216,6 +184,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -223,10 +193,6 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
   - name: "LB-CDN"
     type: load-balance
@@ -236,6 +202,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -243,10 +211,6 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -256,6 +220,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -263,10 +229,6 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
   - name: "FAST-CDN"
     type: url-test
@@ -275,6 +237,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -282,10 +246,6 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -295,6 +255,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -302,15 +264,13 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇹_10"
+      - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
@@ -318,10 +278,6 @@ proxy-groups:
       - "🇮🇹_16"
       - "🇮🇹_17"
       - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
 
 rules:
   - MATCH,PROXY-BEST

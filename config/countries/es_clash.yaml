@@ -65,6 +65,19 @@ dns:
 proxies:
   - name: "🇪🇸_1"
     type: vless
+    server: "45.196.208.84"
+    port: 443
+    uuid: "d2042070-c247-4226-a3ac-15337923e00d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "28047c78b3f5ee2c"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_2"
+    type: vless
     server: "85.90.217.42"
     port: 443
     uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
@@ -72,44 +85,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "85.90.217.42"
-  - name: "🇪🇸_2"
-    type: vless
-    server: "170.168.97.5"
-    port: 8443
-    uuid: "c6f220ed-41f2-21ba-438c-80f05ebbf92a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "download.nvidia.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
   - name: "🇪🇸_3"
-    type: trojan
-    server: "193.148.19.210"
-    port: 52794
-    password: "2eutknankxtbgkwcajzt"
-    sni: "www.vk.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇪🇸_4"
-    type: trojan
-    server: "185.114.72.31"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_5"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -122,7 +98,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_6"
+  - name: "🇪🇸_4"
     type: trojan
     server: "193.148.19.213"
     port: 52794
@@ -130,41 +106,36 @@ proxies:
     sni: "193.148.19.213"
     skip-cert-verify: true
     udp: true
-  - name: "🇪🇸_7"
+  - name: "🇪🇸_5"
     type: trojan
-    server: "185.18.250.245"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
+    server: "193.148.19.210"
+    port: 52794
+    password: "2eutknankxtbgkwcajzt"
+    sni: "www.vk.com"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_8"
+  - name: "🇪🇸_6"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
+  - name: "🇪🇸_7"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_8"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
   - name: "🇪🇸_9"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_10"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_11"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -194,8 +165,6 @@ proxy-groups:
       - "🇪🇸_7"
       - "🇪🇸_8"
       - "🇪🇸_9"
-      - "🇪🇸_10"
-      - "🇪🇸_11"
 
 
 rules:

@@ -66,6 +66,19 @@ proxies:
   - name: "🇧🇬_1"
     type: vless
     server: "185.82.219.152"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇬_2"
+    type: vless
+    server: "185.82.219.152"
     port: 13443
     uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
     udp: true
@@ -77,43 +90,7 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_2"
-    type: vless
-    server: "185.82.219.152"
-    port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
   - name: "🇧🇬_3"
-    type: vless
-    server: "89.117.112.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳@VPNine1"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
-  - name: "🇧🇬_4"
-    type: vless
-    server: "89.117.112.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
-  - name: "🇧🇬_5"
     type: trojan
     server: "193.239.160.134"
     port: 443
@@ -124,16 +101,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇧🇬_6"
+  - name: "🇧🇬_4"
     type: ss
     server: "38.244.132.14"
     port: 5499
     cipher: "aes-256-gcm"
     password: "lGqs95QkFHo2NV"
     udp: true
-  - name: "🇧🇬_7"
+  - name: "🇧🇬_5"
     type: ss
     server: "38.244.132.14"
     port: 5499
@@ -159,8 +134,6 @@ proxy-groups:
       - "🇧🇬_3"
       - "🇧🇬_4"
       - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
 
 
 rules:

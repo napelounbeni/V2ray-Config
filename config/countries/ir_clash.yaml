@@ -70,16 +70,19 @@ proxies:
     uuid: "01a95af3-a2f6-453e-9f88-b2fc011627cc"
     udp: true
   - name: "🇮🇷_2"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    type: ss
+    server: "e1.cover20.ir"
+    port: 51570
+    cipher: "chacha20-ietf-poly1305"
+    password: "HPUEnuOHOJwQNYX4ZVFt0FOqC9zpEgINB2ibhgf8+jQ="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+  - name: "🇮🇷_3"
+    type: ss
+    server: "e3.cover20.ir"
+    port: 56985
+    cipher: "chacha20-ietf-poly1305"
+    password: "ZAFTgqKMjkPWM47BNc0gJG7ekoLaa+NOgeuUfA2Yb5M="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -96,6 +99,7 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
+      - "🇮🇷_3"
 
 
 rules:

@@ -59,23 +59,26 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_3"
+  - name: "🇮🇷_4"
     type: vless
     server: "92.114.24.35"
     port: 43630
     uuid: "01a95af3-a2f6-453e-9f88-b2fc011627cc"
     udp: true
-  - name: "🇮🇷_4"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+  - name: "🇮🇷_5"
+    type: ss
+    server: "e1.cover20.ir"
+    port: 51570
+    cipher: "chacha20-ietf-poly1305"
+    password: "HPUEnuOHOJwQNYX4ZVFt0FOqC9zpEgINB2ibhgf8+jQ="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+  - name: "🇮🇷_6"
+    type: ss
+    server: "e3.cover20.ir"
+    port: 56985
+    cipher: "chacha20-ietf-poly1305"
+    password: "ZAFTgqKMjkPWM47BNc0gJG7ekoLaa+NOgeuUfA2Yb5M="
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -118,8 +121,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -129,8 +133,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -140,8 +145,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -150,8 +156,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -161,15 +168,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_3"
       - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
 rules:
   - MATCH,PROXY-BEST

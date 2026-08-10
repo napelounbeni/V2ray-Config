@@ -59,15 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_6"
-    type: trojan
-    server: "54.216.124.178"
-    port: 443
-    password: "UO36402987"
-    sni: "warm-bass.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇪_7"
+  - name: "🇮🇪_5"
     type: trojan
     server: "warm-bass.rooster465.autos"
     port: 443
@@ -75,30 +67,25 @@ proxies:
     sni: "warm-bass.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_8"
+  - name: "🇮🇪_6"
     type: trojan
-    server: "54.216.143.197"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇮🇪_9"
-    type: trojan
-    server: "34.251.228.118"
+    server: "definite-ladybird.rooster465.autos"
     port: 443
     password: "UO36402987"
     sni: "definite-ladybird.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_10"
+  - name: "🇮🇪_7"
     type: trojan
     server: "54.217.133.71"
+    port: 443
+    password: "ND91608427"
+    sni: "willing-beagle.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_8"
+    type: trojan
+    server: "willing-beagle.rooster465.autos"
     port: 443
     password: "ND91608427"
     sni: "willing-beagle.rooster465.autos"
@@ -146,11 +133,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -160,11 +146,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -174,11 +159,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -187,11 +171,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -201,21 +184,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
-      - "🇮🇪_9"
-      - "🇮🇪_10"
 
 rules:
   - MATCH,PROXY-BEST

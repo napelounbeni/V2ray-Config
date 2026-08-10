@@ -79,20 +79,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_2"
     type: vless
-    server: "152.53.114.186"
-    port: 443
-    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "as.tunnelx.space"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
-      short-id: "4e9b0c2d1a3f5768"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_3"
-    type: vless
     server: "77.73.131.154"
     port: 443
     uuid: "1f4c983e-382c-d2fa-b2dc-7981f02b34de"
@@ -104,6 +90,20 @@ proxies:
     reality-opts:
       public-key: "5GhMSJXQv1wXHVD999YHRRj83m-7VKH8qb_vTxBGbng"
       short-id: "08"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_3"
+    type: vless
+    server: "152.53.114.186"
+    port: 443
+    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "as.tunnelx.space"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
+      short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
     type: trojan
@@ -118,6 +118,48 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇦🇹_5"
+    type: ss
+    server: "138.124.90.40"
+    port: 25743
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "WnXiPdjhkoQV0Fyw7Lhv5CPXG09+umNuMosorUzyJ8g=:R0kxDUIUkHs+bxQUGPu1RUxkAVTiV0Nzfi8nYAyVqXc="
+    udp: true
+  - name: "🇦🇹_6"
+    type: ss
+    server: "138.124.90.40"
+    port: 43180
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "Lq3MRun4jWekuaH+9UKfHWMhCGzPNdt7g9wAB6QA6ck=:QuZVby253RiXeiKO1RCn6QNhEAW4nNPslfMiccNNyZ4="
+    udp: true
+  - name: "🇦🇹_7"
+    type: ss
+    server: "138.124.90.40"
+    port: 50818
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "gTNiEj5jP5x9iYt9u/NU/8YnMH2hjI6q5yo9jrdSob8=:Ua7mYs+hXlQ6OW47B7WAcgFE0QgEQjVSPT8g2zf1jC8="
+    udp: true
+  - name: "🇦🇹_8"
+    type: ss
+    server: "138.124.90.40"
+    port: 46194
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "CVFi3q6eBelRsnJXXiozPMpRlNOD2bW8K93Cfkcfv4g=:AYTCg2JanyDekOJ7n5pTOFYHFNZvJ8wMrhs377s8/8w="
+    udp: true
+  - name: "🇦🇹_9"
+    type: ss
+    server: "138.124.90.40"
+    port: 40374
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "eRkyDNHEJODVfPq0RD/nENW8FDSYGZngm3nRSO2aPqI=:sz9AuStUkPobl1YlyuqVhEx7K2B1IV7K0+bZ+mvRVH0="
+    udp: true
+  - name: "🇦🇹_10"
+    type: ss
+    server: "138.124.90.40"
+    port: 54052
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "QbQjl3rTL/ktrJ2UVFL8ZBF3BP1tIQyNct/r4ACYKyE=:9469X1Ff4cTpjZM0c1KIi2TSwi6X0xPdMjZAUsqKaKw="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -136,6 +178,12 @@ proxy-groups:
       - "🇦🇹_2"
       - "🇦🇹_3"
       - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
 
 
 rules:

@@ -59,13 +59,16 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇰_20"
-    type: vless
-    server: "182.16.61.4"
-    port: 45647
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
-    udp: true
   - name: "🇭🇰_21"
+    type: vless
+    server: "39.109.117.110"
+    port: 43646
+    uuid: "d92afe21-8e8b-42c7-98c2-8a33da64d28f"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/d92afe21"
+  - name: "🇭🇰_22"
     type: vless
     server: "38.207.177.236"
     port: 443
@@ -79,16 +82,100 @@ proxies:
       public-key: "maES4RMEtsm5emBCixDRa6Y5GvmVwmwZNBL2G4Q03D4"
       short-id: "47de54e71fee3451"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_22"
-    type: vless
-    server: "39.109.117.110"
-    port: 43646
-    uuid: "d92afe21-8e8b-42c7-98c2-8a33da64d28f"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/d92afe21"
   - name: "🇭🇰_23"
+    type: vless
+    server: "35.241.98.220"
+    port: 443
+    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
+      short-id: "ec2c7091fe76336c"
+  - name: "🇭🇰_24"
+    type: vless
+    server: "fv2026.node2.top"
+    port: 21001
+    uuid: "172f8e98-fe41-4006-9b6d-0035cd09ab40"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "itunes.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA"
+      short-id: "dfa28122"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_25"
+    type: vless
+    server: "182.16.61.4"
+    port: 45647
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "🇭🇰_26"
+    type: vless
+    server: "182.16.61.3"
+    port: 45647
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "🇭🇰_27"
+    type: vless
+    server: "18.162.173.112"
+    port: 443
+    uuid: "ed720ae2-e1ab-41d4-8c9c-ca9ab3cfee70"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0EtR_KBpH13wngvWn6rXJjINlWjb2nW8fgXrR46bz3E"
+      short-id: "bd685806015172ca"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_28"
+    type: vless
+    server: "47.83.153.19"
+    port: 59750
+    uuid: "9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amd.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_29"
+    type: vless
+    server: "34.96.200.38"
+    port: 443
+    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
+      short-id: "17d824dd68e24aaf"
+  - name: "🇭🇰_30"
+    type: vless
+    server: "47.86.249.58"
+    port: 41528
+    uuid: "97672a88-ec39-4234-a102-1df6f9236f36"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vSXM6NtiXtPcwqZpXCTpKLBOPewzcEfr9-p18aiywio"
+      short-id: "b4"
+  - name: "🇭🇰_31"
     type: vless
     server: "38.147.173.136"
     port: 443
@@ -103,135 +190,27 @@ proxies:
       path: "/"
       headers:
         Host: "0h3qt.oqwt.pl0.hh.vavava.kdns.fr"
-  - name: "🇭🇰_24"
+  - name: "🇭🇰_32"
     type: vless
-    server: "34.96.200.38"
-    port: 443
-    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
-      short-id: "17d824dd68e24aaf"
-  - name: "🇭🇰_25"
-    type: vless
-    server: "47.83.153.19"
-    port: 59750
-    uuid: "9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_26"
-    type: vless
-    server: "182.16.61.3"
+    server: "182.16.61.2"
     port: 45647
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    uuid: "caec0d8d-ab2f-4247-b97d-7fb1a34ab195"
     udp: true
-  - name: "🇭🇰_27"
+  - name: "🇭🇰_33"
     type: vless
-    server: "47.86.249.58"
-    port: 41528
-    uuid: "97672a88-ec39-4234-a102-1df6f9236f36"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vSXM6NtiXtPcwqZpXCTpKLBOPewzcEfr9-p18aiywio"
-      short-id: "b4"
-  - name: "🇭🇰_28"
-    type: vless
-    server: "fv2026.node2.top"
+    server: "141.11.76.57"
     port: 21001
     uuid: "172f8e98-fe41-4006-9b6d-0035cd09ab40"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "itunes.apple.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA"
       short-id: "dfa28122"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_29"
-    type: vless
-    server: "104.129.167.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @AzadWeb"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
-  - name: "🇭🇰_30"
-    type: vless
-    server: "35.241.98.220"
-    port: 443
-    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
-      short-id: "ec2c7091fe76336c"
-  - name: "🇭🇰_31"
-    type: vless
-    server: "182.16.61.2"
-    port: 45647
-    uuid: "caec0d8d-ab2f-4247-b97d-7fb1a34ab195"
-    udp: true
-  - name: "🇭🇰_32"
-    type: vless
-    server: "141.11.149.200"
-    port: 11650
-    uuid: "2aa2be33-b987-461e-8d0e-2ffe15cb8e4c"
-    udp: true
-  - name: "🇭🇰_33"
-    type: trojan
-    server: "119.246.1.143"
-    port: 443
-    password: "BxceQaOe"
-    sni: "119.246.1.143"
-    skip-cert-verify: true
-    udp: true
   - name: "🇭🇰_34"
-    type: trojan
-    server: "43.249.172.27"
-    port: 443
-    password: "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz"
-    sni: "hongkong.kingonestar.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_35"
-    type: trojan
-    server: "91.199.84.120"
-    port: 443
-    password: "ND91608427"
-    sni: "dynamic-grubworm.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_36"
-    type: trojan
-    server: "upright-hamster.rooster465.autos"
-    port: 443
-    password: "ND91608427"
-    sni: "upright-hamster.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_37"
     type: trojan
     server: "185.244.208.210"
     port: 443
@@ -239,12 +218,52 @@ proxies:
     sni: "upright-hamster.rooster465.autos"
     skip-cert-verify: true
     udp: true
+  - name: "🇭🇰_35"
+    type: trojan
+    server: "dynamic-grubworm.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "dynamic-grubworm.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_36"
+    type: trojan
+    server: "91.199.84.120"
+    port: 443
+    password: "ND91608427"
+    sni: "dynamic-grubworm.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_37"
+    type: trojan
+    server: "ace-starling.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "ace-starling.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
   - name: "🇭🇰_38"
     type: trojan
-    server: "18.163.120.239"
-    port: 32434
+    server: "43.249.172.27"
+    port: 443
+    password: "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz"
+    sni: "hongkong.kingonestar.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_39"
+    type: trojan
+    server: "upright-hamster.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "upright-hamster.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_40"
+    type: trojan
+    server: "119.246.1.143"
+    port: 443
     password: "BxceQaOe"
-    sni: "t.me/ripaojiedian"
+    sni: "119.246.1.143"
     skip-cert-verify: true
     udp: true
 
@@ -289,7 +308,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -308,6 +326,8 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
   - name: "LB-CDN"
     type: load-balance
@@ -317,7 +337,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -336,6 +355,8 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -345,7 +366,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -364,6 +384,8 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
   - name: "FAST-CDN"
     type: url-test
@@ -372,7 +394,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -391,6 +412,8 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -400,7 +423,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -419,12 +441,13 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇭🇰_20"
       - "🇭🇰_21"
       - "🇭🇰_22"
       - "🇭🇰_23"
@@ -443,6 +466,8 @@ proxy-groups:
       - "🇭🇰_36"
       - "🇭🇰_37"
       - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
 
 rules:
   - MATCH,PROXY-BEST

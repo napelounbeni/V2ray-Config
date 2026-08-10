@@ -59,21 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_4"
+  - name: "🇦🇪_5"
     type: vless
-    server: "178.83.121.19"
-    port: 443
-    uuid: "02e2d68f-9982-4467-ad47-00cbeeae30e6"
+    server: "31.57.228.166"
+    port: 20513
+    uuid: "9d328839-6d44-44bb-af3e-075f7f0002d6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "hk.cdn-global.pro"
-    client-fingerprint: "firefox"
+    servername: "updates.cdn-apple.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇪_5"
+      public-key: "CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k"
+      short-id: "9f3921483225ccf8"
+  - name: "🇦🇪_6"
     type: vless
     server: "84.235.244.108"
     port: 22573
@@ -84,21 +83,33 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_6"
+  - name: "🇦🇪_7"
     type: vless
-    server: "94.140.0.100"
-    port: 443
-    uuid: "c9d1b8e6-f28a-419f-2581-97ad3258c320"
+    server: "144.31.128.140"
+    port: 2083
+    uuid: "9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev"
+    servername: "www.booking.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA"
+      short-id: "b4"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇪_8"
+    type: vless
+    server: "31.57.228.166"
+    port: 20513
+    uuid: "eb8c46f5-68ae-46dc-aea3-50c8cef41897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "updates.cdn-apple.com"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/kbapqjwhbsjwoqjhskso"
-      headers:
-        Host: "withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev"
+    reality-opts:
+      public-key: "CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k"
+      short-id: "285db1978fd0d8c1"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +152,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +165,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +178,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +190,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +203,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
 rules:
   - MATCH,PROXY-BEST
