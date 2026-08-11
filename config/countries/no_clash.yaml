@@ -64,26 +64,13 @@ dns:
 
 proxies:
   - name: "🇳🇴_1"
-    type: vless
-    server: "141.227.166.51"
-    port: 6800
-    uuid: "73435d4e-2ac1-4dba-900e-81aac3dc5913"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo"
-      short-id: ""
-  - name: "🇳🇴_2"
     type: ss
     server: "185.213.23.63"
     port: 990
     cipher: "chacha20-ietf-poly1305"
     password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     udp: true
-  - name: "🇳🇴_3"
+  - name: "🇳🇴_2"
     type: ss
     server: "185.213.23.63"
     port: 990
@@ -106,7 +93,6 @@ proxy-groups:
     proxies:
       - "🇳🇴_1"
       - "🇳🇴_2"
-      - "🇳🇴_3"
 
 
 rules:

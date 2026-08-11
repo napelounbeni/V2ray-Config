@@ -64,15 +64,29 @@ dns:
 
 proxies:
   - name: "🇷🇴_1"
+    type: vless
+    server: "87.58.205.109"
+    port: 443
+    uuid: "53db95fa-4ebe-4450-8013-a2b0a5827f3f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.googletagmanager.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "GUYDQKGvNl3_YozhbqG8bvecxjQ7HL5A8iqbuYBUUkw"
+      short-id: "01c1bb79d6a7c6cf"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_2"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_2"
+  - name: "🇷🇴_3"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -93,6 +107,7 @@ proxy-groups:
     proxies:
       - "🇷🇴_1"
       - "🇷🇴_2"
+      - "🇷🇴_3"
 
 
 rules:

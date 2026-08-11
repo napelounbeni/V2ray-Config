@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇼_17"
+  - name: "🇹🇼_16"
     type: vless
     server: "35.187.156.27"
     port: 443
@@ -72,21 +72,21 @@ proxies:
     reality-opts:
       public-key: "HsoG0C19O-NY_EcFpK0ybZv9lFol0MjDJLzjDzWAGXs"
       short-id: "d79d3dc3816c329d"
-  - name: "🇹🇼_18"
+  - name: "🇹🇼_17"
     type: vless
-    server: "59.125.69.20"
+    server: "43.212.99.19"
     port: 443
-    uuid: "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    uuid: "74097ab5-3650-4c6a-95c8-1e9e625e3cd2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_19"
+    servername: "dlcdnets.asus.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM"
+      short-id: "473277e2"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇼_18"
     type: vless
     server: "60.248.219.78"
     port: 443
@@ -100,23 +100,37 @@ proxies:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       headers:
         Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_19"
+    type: vless
+    server: "59.125.69.20"
+    port: 443
+    uuid: "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
   - name: "🇹🇼_20"
     type: ss
-    server: "36.224.154.243"
+    server: "36.224.162.2"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
-    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     udp: true
   - name: "🇹🇼_21"
     type: ss
-    server: "R3MRCG00129437X.cybervena.com"
+    server: "36.224.162.2"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
     password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     udp: true
   - name: "🇹🇼_22"
     type: ss
-    server: "r3mrcg001286ek2.cybervena.com"
+    server: "r3mrcg00129437x.cybervena.com"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
     password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -130,17 +144,17 @@ proxies:
     udp: true
   - name: "🇹🇼_24"
     type: ss
-    server: "r3mrcg00129437x.cybervena.com"
-    port: 50099
-    cipher: "chacha20-ietf-poly1305"
-    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    udp: true
-  - name: "🇹🇼_25"
-    type: ss
-    server: "r3mrcg00129437x.cybervena.com"
+    server: "r3mrcg001286ek2.cybervena.com"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
     password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "🇹🇼_25"
+    type: ss
+    server: "R3MRCG00129437X.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     udp: true
   - name: "🇹🇼_26"
     type: ss
@@ -151,10 +165,10 @@ proxies:
     udp: true
   - name: "🇹🇼_27"
     type: ss
-    server: "r3mrcg00129437x.cybervena.com"
+    server: "36.224.154.243"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
-    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     udp: true
   - name: "🇹🇼_28"
     type: ss
@@ -165,7 +179,7 @@ proxies:
     udp: true
   - name: "🇹🇼_29"
     type: ss
-    server: "36.224.162.2"
+    server: "r3mrcg00129437x.cybervena.com"
     port: 50099
     cipher: "chacha20-ietf-poly1305"
     password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
@@ -176,20 +190,6 @@ proxies:
     port: 50099
     cipher: "chacha20-ietf-poly1305"
     password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    udp: true
-  - name: "🇹🇼_31"
-    type: ss
-    server: "r3mrcg001287h3p.cybervena.com"
-    port: 50099
-    cipher: "chacha20-ietf-poly1305"
-    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    udp: true
-  - name: "🇹🇼_32"
-    type: ss
-    server: "r3mrcg001287h3p.cybervena.com"
-    port: 50099
-    cipher: "chacha20-ietf-poly1305"
-    password: "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     udp: true
 
 proxy-groups:
@@ -233,6 +233,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -247,8 +248,6 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
   - name: "LB-CDN"
     type: load-balance
@@ -258,6 +257,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -272,8 +272,6 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -283,6 +281,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -297,8 +296,6 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
   - name: "FAST-CDN"
     type: url-test
@@ -307,6 +304,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -321,8 +319,6 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -332,6 +328,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -346,13 +343,12 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇼_16"
       - "🇹🇼_17"
       - "🇹🇼_18"
       - "🇹🇼_19"
@@ -367,8 +363,6 @@ proxy-groups:
       - "🇹🇼_28"
       - "🇹🇼_29"
       - "🇹🇼_30"
-      - "🇹🇼_31"
-      - "🇹🇼_32"
 
 rules:
   - MATCH,PROXY-BEST

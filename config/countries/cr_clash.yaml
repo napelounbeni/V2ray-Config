@@ -63,14 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇬🇪_1"
-    type: trojan
-    server: "dc-74-ge.netzrun.at"
-    port: 5222
-    password: "SrELvzRC7y7gMcypgQ8VSSSxzj354XEf"
-    sni: "dc-74-ge.netzrun.at"
-    skip-cert-verify: true
+  - name: "🇨🇷_1"
+    type: vless
+    server: "190.93.245.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -85,7 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇬🇪_1"
+      - "🇨🇷_1"
 
 
 rules:

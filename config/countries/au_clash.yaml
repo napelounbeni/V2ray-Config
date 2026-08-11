@@ -65,17 +65,6 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_2"
-    type: vless
     server: "172.105.169.70"
     port: 443
     uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
@@ -83,7 +72,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "172.105.169.70"
-  - name: "🇦🇺_3"
+  - name: "🇦🇺_2"
     type: vless
     server: "16.176.42.97"
     port: 443
@@ -98,40 +87,40 @@ proxies:
       path: "/"
       headers:
         Host: "zero.csmaster.ggff.net"
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_3"
     type: ss
     server: "103.106.231.82"
     port: 5600
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
-  - name: "🇦🇺_5"
-    type: ss
-    server: "45.77.232.213"
-    port: 15675
-    cipher: "chacha20-ietf-poly1305"
-    password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
-    udp: true
-  - name: "🇦🇺_6"
-    type: ss
-    server: "104.156.233.234"
-    port: 27116
-    cipher: "chacha20-ietf-poly1305"
-    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
-    udp: true
-  - name: "🇦🇺_7"
+  - name: "🇦🇺_4"
     type: ss
     server: "au1.levikogjgfdd.ir"
     port: 27116
     cipher: "chacha20-ietf-poly1305"
     password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
     udp: true
-  - name: "🇦🇺_8"
+  - name: "🇦🇺_5"
+    type: ss
+    server: "104.156.233.234"
+    port: 27116
+    cipher: "chacha20-ietf-poly1305"
+    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
+    udp: true
+  - name: "🇦🇺_6"
     type: ss
     server: "103.106.231.82"
     port: 5600
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇦🇺_7"
+    type: ss
+    server: "45.77.232.213"
+    port: 15675
+    cipher: "chacha20-ietf-poly1305"
+    password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
     udp: true
 
 proxy-groups:
@@ -154,7 +143,6 @@ proxy-groups:
       - "🇦🇺_5"
       - "🇦🇺_6"
       - "🇦🇺_7"
-      - "🇦🇺_8"
 
 
 rules:
