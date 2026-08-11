@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_15"
-    type: vless
-    server: "31.59.102.176"
-    port: 8443
-    uuid: "cf44b733-1ebd-11f1-8cae-c3845d39d2de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-      short-id: "cafe01234567"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_16"
+  - name: "🇱🇻_13"
     type: vless
     server: "72.56.52.30"
     port: 443
@@ -82,34 +68,24 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "lv.rexten.cc"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_17"
+  - name: "🇱🇻_14"
     type: vless
     server: "193.124.254.60"
-    port: 10443
+    port: 443
     uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "lv.rexten.cc"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
       short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "GunService"
-  - name: "🇱🇻_18"
-    type: vless
-    server: "85.159.228.250"
-    port: 25703
-    uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
-    udp: true
-  - name: "🇱🇻_19"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_15"
     type: vless
     server: "195.123.208.92"
     port: 13443
@@ -118,60 +94,50 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "auto.cendora.ru"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_20"
+  - name: "🇱🇻_16"
     type: vless
-    server: "31.57.29.7"
-    port: 8443
-    uuid: "4b056394-2f40-11f1-bffe-46c4782ac1a7"
+    server: "72.56.53.66"
+    port: 443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "lv.rexten.cc"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-      short-id: "cafe01234567"
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_21"
+  - name: "🇱🇻_17"
     type: vless
-    server: "217.145.79.102"
-    port: 24478
-    uuid: "f937575c-35c2-4889-832e-b67935d565d8"
+    server: "85.159.228.250"
+    port: 25703
+    uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
     udp: true
-  - name: "🇱🇻_22"
+  - name: "🇱🇻_18"
+    type: vless
+    server: "72.56.53.66"
+    port: 10443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.rexten.cc"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "GunService"
+  - name: "🇱🇻_19"
     type: vless
     server: "193.124.254.60"
-    port: 443
-    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lv.rexten.cc"
-    reality-opts:
-      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_23"
-    type: vless
-    server: "72.56.53.66"
-    port: 443
-    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lv.rexten.cc"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_24"
-    type: vless
-    server: "72.56.53.66"
     port: 10443
     uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
     udp: true
@@ -185,37 +151,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "GunService"
-  - name: "🇱🇻_25"
-    type: vless
-    server: "31.58.77.127"
-    port: 8443
-    uuid: "e0e44cfe-39b3-11f1-84d1-e6ad33f6a752"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc"
-      short-id: "cafe01234567"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_26"
-    type: vless
-    server: "72.56.52.30"
-    port: 10443
-    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lv.rexten.cc"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "GunService"
-  - name: "🇱🇻_27"
+  - name: "🇱🇻_20"
     type: vless
     server: "lv.rexten.cc"
     port: 10443
@@ -231,7 +167,48 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "GunService"
-  - name: "🇱🇻_28"
+  - name: "🇱🇻_21"
+    type: vless
+    server: "72.56.52.30"
+    port: 10443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.rexten.cc"
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "GunService"
+  - name: "🇱🇻_22"
+    type: vless
+    server: "lv.rexten.cc"
+    port: 443
+    uuid: "f61025f4-7973-4e3e-883c-a0fe85f0489c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.rexten.cc"
+    reality-opts:
+      public-key: "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_23"
+    type: trojan
+    server: "84.21.172.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇱🇻_24"
     type: trojan
     server: "188.215.31.110"
     port: 2053
@@ -242,6 +219,8 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -284,6 +263,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -294,10 +275,6 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
   - name: "LB-CDN"
     type: load-balance
@@ -307,6 +284,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -317,10 +296,6 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -330,6 +305,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -340,10 +317,6 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
   - name: "FAST-CDN"
     type: url-test
@@ -352,6 +325,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -362,10 +337,6 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -375,6 +346,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -385,15 +358,13 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇻_13"
+      - "🇱🇻_14"
       - "🇱🇻_15"
       - "🇱🇻_16"
       - "🇱🇻_17"
@@ -404,10 +375,6 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
-      - "🇱🇻_25"
-      - "🇱🇻_26"
-      - "🇱🇻_27"
-      - "🇱🇻_28"
 
 rules:
   - MATCH,PROXY-BEST

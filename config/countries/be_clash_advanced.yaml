@@ -59,104 +59,14 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇪_8"
-    type: vless
-    server: "109.69.218.206"
-    port: 443
-    uuid: "2a12bb81-f3a3-41bb-99ab-36febf676b4a"
-    udp: true
-    tls: true
+  - name: "🇧🇪_2"
+    type: trojan
+    server: "be-lb-rtt.netzrun.at"
+    port: 5222
+    password: "SrELvzRC7y7gMcypgQ8VSSSxzj354XEf"
+    sni: "be-lb-rtt.netzrun.at"
     skip-cert-verify: true
-    servername: "kind-wolf.cdn.cachefleet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_9"
-    type: vless
-    server: "109.69.218.207"
-    port: 443
-    uuid: "2a12bb81-f3a3-41bb-99ab-36febf676b4a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "crisp-titan.cdn.cachefleet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_10"
-    type: vless
-    server: "109.69.218.208"
-    port: 443
-    uuid: "2a12bb81-f3a3-41bb-99ab-36febf676b4a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kind-wolf.cdn.cachefleet.com"
-    client-fingerprint: "randomized"
-    reality-opts:
-      public-key: "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_11"
-    type: vless
-    server: "109.69.218.217"
-    port: 443
-    uuid: "2a12bb81-f3a3-41bb-99ab-36febf676b4a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kind-wolf.cdn.cachefleet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_12"
-    type: vless
-    server: "109.69.218.216"
-    port: 443
-    uuid: "2a12bb81-f3a3-41bb-99ab-36febf676b4a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kind-wolf.cdn.cachefleet.com"
-    client-fingerprint: "randomized"
-    reality-opts:
-      public-key: "8hse7wRRL-F66rQ-aAeetKTw0MSeJC7Rr6EaDeLzdCU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_13"
-    type: vless
-    server: "109.69.218.164"
-    port: 443
-    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "zealous-vortex.cdn.cachefleet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇪_14"
-    type: vless
-    server: "109.69.218.168"
-    port: 443
-    uuid: "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "agile-raptor.cdn.cachefleet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -199,13 +109,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -215,13 +119,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -231,13 +129,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -246,13 +138,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -262,25 +148,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
-      - "🇧🇪_11"
-      - "🇧🇪_12"
-      - "🇧🇪_13"
-      - "🇧🇪_14"
+      - "🇧🇪_2"
 
 rules:
   - MATCH,PROXY-BEST

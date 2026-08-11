@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "2.59.162.170"
+    port: 8443
+    uuid: "bb3f45ce-3b7f-4efe-8bf1-b16b282d8bc9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lt.xanka.best"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "e2-jEFJ7ALVhZDM_93rJsi4pP9kFvhYJC2iTJ8gu7Es"
+      short-id: "06cbfdd7"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "84.32.209.7"
     port: 443
     uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
@@ -77,7 +91,18 @@ proxies:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
+  - name: "🇱🇹_3"
+    type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_4"
     type: vless
     server: "lt.xanka.best"
     port: 8443
@@ -91,21 +116,7 @@ proxies:
       public-key: "e2-jEFJ7ALVhZDM_93rJsi4pP9kFvhYJC2iTJ8gu7Es"
       short-id: "06cbfdd7"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_3"
-    type: vless
-    server: "2.59.162.170"
-    port: 8443
-    uuid: "bb3f45ce-3b7f-4efe-8bf1-b16b282d8bc9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lt.xanka.best"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "e2-jEFJ7ALVhZDM_93rJsi4pP9kFvhYJC2iTJ8gu7Es"
-      short-id: "06cbfdd7"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_4"
+  - name: "🇱🇹_5"
     type: vless
     server: "46.29.234.210"
     port: 443
@@ -121,7 +132,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇹_5"
+  - name: "🇱🇹_6"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -134,7 +145,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_6"
+  - name: "🇱🇹_7"
     type: trojan
     server: "194.135.80.192"
     port: 443
@@ -145,6 +156,8 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -165,6 +178,7 @@ proxy-groups:
       - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
 
 
 rules:

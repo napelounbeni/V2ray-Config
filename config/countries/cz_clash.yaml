@@ -92,6 +92,41 @@ proxies:
       short-id: "0c"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_3"
+    type: vless
+    server: "78.159.247.253"
+    port: 2027
+    uuid: "851ed0d8-a37b-452d-8ef2-5b6c2d28a060"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
+      short-id: "dc8109baf0f607ea"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_4"
+    type: trojan
+    server: "178.208.75.155"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇨🇿_5"
+    type: trojan
+    server: "dc-69-cz.netzrun.at"
+    port: 5222
+    password: "SrELvzRC7y7gMcypgQ8VSSSxzj354XEf"
+    sni: "dc-69-cz.netzrun.at"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇨🇿_6"
     type: trojan
     server: "178.208.75.155"
     port: 8443
@@ -119,6 +154,9 @@ proxy-groups:
       - "🇨🇿_1"
       - "🇨🇿_2"
       - "🇨🇿_3"
+      - "🇨🇿_4"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
 
 
 rules:

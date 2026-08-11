@@ -77,16 +77,6 @@ proxies:
       public-key: "hl7n2f8wPw8wsZFSBdOv1b0wy5BJc7qOA_ktzVVUGAA"
       short-id: "6546bebc9cfcef14"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇾_2"
-    type: vless
-    server: "136.0.110.35"
-    port: 16865
-    uuid: "08d4e275-eb67-4878-949c-79a39e10cca1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "136.0.110.35"
-    client-fingerprint: "chrome"
 
 proxy-groups:
   - name: "PROXY"
@@ -102,7 +92,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇾_1"
-      - "🇲🇾_2"
 
 
 rules:
