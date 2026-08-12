@@ -65,6 +65,28 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
+    server: "185.143.234.238"
+    port: 2086
+    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "parsi.parsi.sbs"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "185.143.233.238"
+    port: 2086
+    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "parsi.parsi.sbs"
+  - name: "🇮🇷_3"
+    type: vless
     server: "62.60.188.240"
     port: 443
     uuid: "0108346a-e5a8-485f-912c-e5b142cf0a80"
@@ -72,44 +94,16 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "it.nvidia.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "2HZyHolhLXqkOW3A6VGNJeDwC7lStJJmN1GhIVkpYWI"
       short-id: "571a5e8791b284e7"
-  - name: "🇮🇷_2"
-    type: vless
-    server: "185.128.139.11"
-    port: 18244
-    uuid: "0d543aed-4e30-4553-b5ac-211419bb0961"
-    udp: true
-  - name: "🇮🇷_3"
-    type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
   - name: "🇮🇷_4"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
-  - name: "🇮🇷_5"
     type: ss
-    server: "e1.cover20.ir"
-    port: 51570
+    server: "n3.cover20.ir"
+    port: 55129
     cipher: "chacha20-ietf-poly1305"
-    password: "xrE2gXCW88+P0IVUrPn/XBiYnyx0G4q0pJs4WROegmU="
+    password: "UaJaVAvaJopwVa3u9WDpvawFCv9UDhkkr8C/kMm8lKY="
     udp: true
 
 proxy-groups:
@@ -129,7 +123,6 @@ proxy-groups:
       - "🇮🇷_2"
       - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
 
 
 rules:

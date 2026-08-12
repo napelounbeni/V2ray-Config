@@ -64,47 +64,22 @@ dns:
 
 proxies:
   - name: "🇧🇷_1"
-    type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
-  - name: "🇧🇷_2"
-    type: ss
-    server: "163.176.163.158"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_3"
     type: ss
     server: "147.15.39.81"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
-  - name: "🇧🇷_4"
+  - name: "🇧🇷_2"
     type: ss
     server: "163.176.102.141"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
-  - name: "🇧🇷_5"
+  - name: "🇧🇷_3"
     type: ss
     server: "163.176.35.217"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_6"
-    type: ss
-    server: "137.131.218.110"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
@@ -126,9 +101,6 @@ proxy-groups:
       - "🇧🇷_1"
       - "🇧🇷_2"
       - "🇧🇷_3"
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
 
 
 rules:

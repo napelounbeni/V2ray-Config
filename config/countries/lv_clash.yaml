@@ -65,39 +65,17 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
+    server: "31.56.205.47"
+    port: 57705
+    uuid: "7b9a0c53-d488-4f2f-9035-816f2fe01fcd"
+    udp: true
+  - name: "🇱🇻_2"
+    type: vless
     server: "85.159.228.250"
     port: 25703
     uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
     udp: true
-  - name: "🇱🇻_2"
-    type: vless
-    server: "195.123.208.92"
-    port: 13443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
   - name: "🇱🇻_3"
-    type: vless
-    server: "185.236.22.229"
-    port: 12303
-    uuid: "fe5b12dc-08f0-4078-ba02-34d239922a2e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "music.yandex.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ens3hLP8kjd-Zye3nW1Q_CC2kJFo0PdPbplj9VLwkWg"
-      short-id: "c6442fba175fcd79"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_4"
     type: trojan
     server: "188.215.31.110"
     port: 2053
@@ -110,7 +88,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇻_5"
+  - name: "🇱🇻_4"
     type: trojan
     server: "84.21.172.81"
     port: 443
@@ -141,7 +119,6 @@ proxy-groups:
       - "🇱🇻_2"
       - "🇱🇻_3"
       - "🇱🇻_4"
-      - "🇱🇻_5"
 
 
 rules:
