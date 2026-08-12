@@ -65,56 +65,44 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "177.3.213.230"
-    port: 3443
-    uuid: "11b7e901-e970-4491-9c7d-13c153e39e5b"
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "get.wlrus.cfd"
-    client-fingerprint: "edge"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
   - name: "🇧🇷_2"
-    type: vless
-    server: "177.3.213.230"
-    port: 5443
-    uuid: "11b7e901-e970-4491-9c7d-13c153e39e5b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "get.wlrus.cfd"
-    client-fingerprint: "edge"
-  - name: "🇧🇷_3"
     type: ss
     server: "163.176.163.158"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
+  - name: "🇧🇷_3"
+    type: ss
+    server: "147.15.39.81"
+    port: 59319
+    cipher: "chacha20-ietf-poly1305"
+    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
   - name: "🇧🇷_4"
     type: ss
-    server: "163.176.207.161"
+    server: "163.176.102.141"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_5"
     type: ss
-    server: "136.248.79.31"
+    server: "163.176.35.217"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
   - name: "🇧🇷_6"
-    type: ss
-    server: "146.235.28.225"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_7"
     type: ss
     server: "137.131.218.110"
     port: 59319
@@ -141,7 +129,6 @@ proxy-groups:
       - "🇧🇷_4"
       - "🇧🇷_5"
       - "🇧🇷_6"
-      - "🇧🇷_7"
 
 
 rules:

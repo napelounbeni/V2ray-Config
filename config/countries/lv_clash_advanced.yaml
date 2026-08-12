@@ -67,12 +67,6 @@ proxies:
     udp: true
   - name: "🇱🇻_7"
     type: vless
-    server: "46.8.228.91"
-    port: 47424
-    uuid: "6de486c1-dbad-4540-8875-98c35e9cd173"
-    udp: true
-  - name: "🇱🇻_8"
-    type: vless
     server: "195.123.208.92"
     port: 13443
     uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
@@ -85,10 +79,24 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇻_8"
+    type: vless
+    server: "185.236.22.229"
+    port: 12303
+    uuid: "fe5b12dc-08f0-4078-ba02-34d239922a2e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "music.yandex.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ens3hLP8kjd-Zye3nW1Q_CC2kJFo0PdPbplj9VLwkWg"
+      short-id: "c6442fba175fcd79"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_9"
     type: trojan
-    server: "84.21.172.81"
-    port: 443
+    server: "188.215.31.110"
+    port: 2053
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
@@ -100,8 +108,8 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇱🇻_10"
     type: trojan
-    server: "188.215.31.110"
-    port: 2053
+    server: "84.21.172.81"
+    port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true

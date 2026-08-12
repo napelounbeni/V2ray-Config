@@ -59,19 +59,54 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇿_2"
+  - name: "🇮🇷_6"
     type: vless
-    server: "azar-sdvf-sad3qeasdd-fgresedfsadwqewr-rjhgreas-fewrfghjhgwfq.supros.ir"
-    port: 2026
-    uuid: "bf58f3cd-7c8c-4650-bd7a-028df18b3ba0"
+    server: "62.60.188.240"
+    port: 443
+    uuid: "0108346a-e5a8-485f-912c-e5b142cf0a80"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "updates.cdn-apple.com"
+    servername: "it.nvidia.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8"
-      short-id: "ca930e5d4a603c6a"
+      public-key: "2HZyHolhLXqkOW3A6VGNJeDwC7lStJJmN1GhIVkpYWI"
+      short-id: "571a5e8791b284e7"
+  - name: "🇮🇷_7"
+    type: vless
+    server: "185.128.139.11"
+    port: 18244
+    uuid: "0d543aed-4e30-4553-b5ac-211419bb0961"
+    udp: true
+  - name: "🇮🇷_8"
+    type: vless
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇮🇷_9"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇮🇷_10"
+    type: ss
+    server: "e1.cover20.ir"
+    port: 51570
+    cipher: "chacha20-ietf-poly1305"
+    password: "xrE2gXCW88+P0IVUrPn/XBiYnyx0G4q0pJs4WROegmU="
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -114,7 +149,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -124,7 +163,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -134,7 +177,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -143,7 +190,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -153,13 +204,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇿_2"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
 rules:
   - MATCH,PROXY-BEST

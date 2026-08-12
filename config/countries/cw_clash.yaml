@@ -63,19 +63,76 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇦🇿_1"
+  - name: "🇨🇼_1"
     type: vless
-    server: "azar-sdvf-sad3qeasdd-fgresedfsadwqewr-rjhgreas-fewrfghjhgwfq.supros.ir"
-    port: 2026
-    uuid: "bf58f3cd-7c8c-4650-bd7a-028df18b3ba0"
+    server: "5.10.246.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
+  - name: "🇨🇼_2"
+    type: vless
+    server: "62.72.166.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime40.workers.dev"
+  - name: "🇨🇼_3"
+    type: vless
+    server: "88.216.67.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
+  - name: "🇨🇼_4"
+    type: vless
+    server: "88.216.67.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "updates.cdn-apple.com"
+    servername: "speed.dulacloud.store"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8"
-      short-id: "ca930e5d4a603c6a"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇨🇼_5"
+    type: vless
+    server: "88.216.66.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
+  - name: "🇨🇼_6"
+    type: vless
+    server: "88.216.67.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +147,12 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇦🇿_1"
+      - "🇨🇼_1"
+      - "🇨🇼_2"
+      - "🇨🇼_3"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
 
 rules:
