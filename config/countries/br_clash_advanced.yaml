@@ -59,37 +59,96 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_5"
+  - name: "🇧🇷_13"
     type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "38.180.220.203"
+    port: 443
+    uuid: "d4b0cf86-3ea7-4e07-990a-9f9779177a74"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
-  - name: "🇧🇷_6"
+    tls: true
+    skip-cert-verify: true
+    servername: "cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "1JDBQToOCBK5E6xFwMN71vcSovRrwud3IrII4bEjOzU"
+      short-id: "cbb5927ee4"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_14"
+    type: ss
+    server: "163.176.175.199"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "YJJy7dk2gzKOwuowrsJ+v6QZGEy0q0GZyC0n4NHg8pk="
+    udp: true
+  - name: "🇧🇷_15"
+    type: ss
+    server: "137.131.154.109"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "3sN3flK4QS70Seqs/gqSfJg9/N4PVMv7kHbSRtVdWK8="
+    udp: true
+  - name: "🇧🇷_16"
     type: ss
     server: "147.15.39.81"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
-  - name: "🇧🇷_7"
+  - name: "🇧🇷_17"
     type: ss
-    server: "163.176.133.70"
+    server: "163.176.175.199"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "YJJy7dk2gzKOwuowrsJ+v6QZGEy0q0GZyC0n4NHg8pk="
+    udp: true
+  - name: "🇧🇷_18"
+    type: ss
+    server: "163.176.178.88"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
-  - name: "🇧🇷_8"
+  - name: "🇧🇷_19"
     type: ss
     server: "163.176.35.217"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
+  - name: "🇧🇷_20"
+    type: ss
+    server: "147.15.91.100"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "7qKgkFPiuE7SbagJv9Qjyb1QXHPEMi2tuEnVaavwhcM="
+    udp: true
+  - name: "🇧🇷_21"
+    type: ss
+    server: "163.176.1.85"
+    port: 59319
+    cipher: "chacha20-ietf-poly1305"
+    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
+  - name: "🇧🇷_22"
+    type: ss
+    server: "163.176.108.52"
+    port: 59319
+    cipher: "chacha20-ietf-poly1305"
+    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
+    udp: true
+  - name: "🇧🇷_23"
+    type: ss
+    server: "163.176.36.206"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "M1Ha2O5QMCqUpIt8Xgvk42c4NWqsMt6z1tRNZ3gMW/Y="
+    udp: true
+  - name: "🇧🇷_24"
+    type: ss
+    server: "137.131.248.115"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "1HM/x7SUJ1uHRmACfHbU051eV5vmNLtG+fT9AXeoEq0="
     udp: true
 
 proxy-groups:
@@ -133,10 +192,18 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
   - name: "LB-CDN"
     type: load-balance
@@ -146,10 +213,18 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -159,10 +234,18 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
   - name: "FAST-CDN"
     type: url-test
@@ -171,10 +254,18 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -184,19 +275,35 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
+      - "🇧🇷_23"
+      - "🇧🇷_24"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,15 +65,10 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    server: "185.128.139.11"
+    port: 18244
+    uuid: "0d543aed-4e30-4553-b5ac-211419bb0961"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
   - name: "🇮🇷_2"
     type: vless
     server: "185.143.233.238"
@@ -86,50 +81,18 @@ proxies:
       headers:
         Host: "parsi.parsi.sbs"
   - name: "🇮🇷_3"
-    type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇮🇷_4"
-    type: vless
-    server: "185.143.234.238"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_5"
-    type: vless
-    server: "185.128.139.11"
-    port: 18244
-    uuid: "0d543aed-4e30-4553-b5ac-211419bb0961"
-    udp: true
-  - name: "🇮🇷_6"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
-  - name: "🇮🇷_7"
     type: ss
-    server: "e4.cover20.ir"
-    port: 16156
+    server: "79.175.134.49"
+    port: 39880
+    cipher: "aes-256-gcm"
+    password: "PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4="
+    udp: true
+  - name: "🇮🇷_4"
+    type: ss
+    server: "e1.cover20.ir"
+    port: 51570
     cipher: "chacha20-ietf-poly1305"
-    password: "CHwViu5b2i1c8o+tGRWL/nPiBjDBZtyuZj0523sVKkA="
+    password: "IOZik/gkNV2Q4oQNhBF0G0LZLGVtuRIRI2CvM6Ux5JU="
     udp: true
 
 proxy-groups:
@@ -149,9 +112,6 @@ proxy-groups:
       - "🇮🇷_2"
       - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
 
 
 rules:

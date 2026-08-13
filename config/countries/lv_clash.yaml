@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
+    server: "g9.steptofsvo.com"
+    port: 443
+    uuid: "b8f1b61e-d5c4-4765-866d-ece1fc8e590b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "g9.steptofsvo.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
+      short-id: "6d6f13013d3e1d0c"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_2"
+    type: vless
     server: "89.36.161.222"
     port: 2053
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
@@ -77,27 +91,36 @@ proxies:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_2"
+  - name: "🇱🇻_3"
     type: vless
-    server: "195.123.208.92"
-    port: 13443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    server: "laoye.in-gect.fun"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "qq"
+    servername: "vk.ru"
+    client-fingerprint: "edge"
     reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
+      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
+      short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_3"
+  - name: "🇱🇻_4"
     type: vless
     server: "85.159.228.250"
     port: 25703
     uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
     udp: true
-  - name: "🇱🇻_4"
+  - name: "🇱🇻_5"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇱🇻_6"
     type: trojan
     server: "84.21.172.81"
     port: 443
@@ -128,6 +151,8 @@ proxy-groups:
       - "🇱🇻_2"
       - "🇱🇻_3"
       - "🇱🇻_4"
+      - "🇱🇻_5"
+      - "🇱🇻_6"
 
 
 rules:
