@@ -59,7 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_8"
+  - name: "🇦🇺_12"
+    type: vless
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_13"
+    type: vless
+    server: "192.65.217.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    network: ws
+    ws-opts:
+      path: "Telegram-WangCai2"
+      headers:
+        Host: "notls.lukongtou.eu.org"
+  - name: "🇦🇺_14"
     type: vless
     server: "16.176.42.97"
     port: 443
@@ -68,11 +93,13 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "zero.csmaster.ggff.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇦🇺_9"
+      headers:
+        Host: "zero.csmaster.ggff.net"
+  - name: "🇦🇺_15"
     type: vless
     server: "172.105.169.70"
     port: 443
@@ -81,35 +108,51 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "172.105.169.70"
-  - name: "🇦🇺_10"
-    type: ss
-    server: "104.156.233.234"
-    port: 27116
-    cipher: "chacha20-ietf-poly1305"
-    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
+  - name: "🇦🇺_16"
+    type: trojan
+    server: "together-dingo.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "together-dingo.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇦🇺_11"
-    type: ss
-    server: "103.106.231.82"
-    port: 5600
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+  - name: "🇦🇺_17"
+    type: trojan
+    server: "darling-mutt.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "darling-mutt.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇦🇺_12"
-    type: ss
-    server: "au1.levikogjgfdd.ir"
-    port: 27116
-    cipher: "chacha20-ietf-poly1305"
-    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
-    udp: true
-  - name: "🇦🇺_13"
+  - name: "🇦🇺_18"
     type: ss
     server: "45.77.232.213"
     port: 15675
     cipher: "chacha20-ietf-poly1305"
     password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
     udp: true
-  - name: "🇦🇺_14"
+  - name: "🇦🇺_19"
+    type: ss
+    server: "103.106.231.82"
+    port: 5600
+    cipher: "aes-256-gcm"
+    password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇦🇺_20"
+    type: ss
+    server: "au1.levikogjgfdd.ir"
+    port: 27116
+    cipher: "chacha20-ietf-poly1305"
+    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
+    udp: true
+  - name: "🇦🇺_21"
+    type: ss
+    server: "104.156.233.234"
+    port: 27116
+    cipher: "chacha20-ietf-poly1305"
+    password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
+    udp: true
+  - name: "🇦🇺_22"
     type: ss
     server: "103.106.231.82"
     port: 5600
@@ -158,13 +201,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
   - name: "LB-CDN"
     type: load-balance
@@ -174,13 +221,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -190,13 +241,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
   - name: "FAST-CDN"
     type: url-test
@@ -205,13 +260,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -221,25 +280,33 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
-      - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
+      - "🇦🇺_15"
+      - "🇦🇺_16"
+      - "🇦🇺_17"
+      - "🇦🇺_18"
+      - "🇦🇺_19"
+      - "🇦🇺_20"
+      - "🇦🇺_21"
+      - "🇦🇺_22"
 
 rules:
   - MATCH,PROXY-BEST

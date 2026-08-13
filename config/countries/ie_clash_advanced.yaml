@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_4"
+  - name: "🇮🇪_10"
     type: trojan
     server: "definite-ladybird.rooster465.autos"
     port: 443
@@ -67,7 +67,63 @@ proxies:
     sni: "definite-ladybird.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_5"
+  - name: "🇮🇪_11"
+    type: trojan
+    server: "kind-stork.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "kind-stork.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_12"
+    type: trojan
+    server: "healthy-panda.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "healthy-panda.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_13"
+    type: trojan
+    server: "definite-ladybird.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "definite-ladybird.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_14"
+    type: trojan
+    server: "34.251.228.118"
+    port: 443
+    password: "UO36402987"
+    sni: "definite-ladybird.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_15"
+    type: trojan
+    server: "funny-hen.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "funny-hen.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_16"
+    type: trojan
+    server: "worthy-labrador.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "worthy-labrador.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_17"
+    type: trojan
+    server: "unbiased-garfish.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "unbiased-garfish.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_18"
     type: trojan
     server: "54.216.143.197"
     port: 443
@@ -80,14 +136,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇮🇪_6"
-    type: trojan
-    server: "34.251.228.118"
-    port: 443
-    password: "UO36402987"
-    sni: "definite-ladybird.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -130,9 +178,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -142,9 +196,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -154,9 +214,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -165,9 +231,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -177,17 +249,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
 rules:
   - MATCH,PROXY-BEST

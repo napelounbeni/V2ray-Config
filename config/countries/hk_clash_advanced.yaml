@@ -59,79 +59,117 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇰_20"
+  - name: "🇭🇰_44"
     type: vless
-    server: "182.16.61.4"
-    port: 45647
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
-    udp: true
-  - name: "🇭🇰_21"
-    type: vless
-    server: "156.226.168.221"
-    port: 35187
-    uuid: "8924529c-7ced-4ecd-b4ee-40aadf021385"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
-      short-id: "e8daed2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_22"
-    type: vless
-    server: "182.16.61.2"
-    port: 45647
-    uuid: "caec0d8d-ab2f-4247-b97d-7fb1a34ab195"
-    udp: true
-  - name: "🇭🇰_23"
-    type: vless
-    server: "34.96.200.38"
+    server: "219.76.13.177"
     port: 443
-    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "vp10.pages.dev"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
-      short-id: "17d824dd68e24aaf"
-  - name: "🇭🇰_24"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_45"
     type: vless
-    server: "47.83.153.19"
-    port: 59750
-    uuid: "9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b"
+    server: "154.218.15.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_25"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime47.workers.dev"
+  - name: "🇭🇰_46"
     type: vless
-    server: "35.241.98.220"
+    server: "219.76.13.167"
     port: 443
-    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_47"
+    type: vless
+    server: "103.219.194.43"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_48"
+    type: vless
+    server: "156.239.245.134"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_49"
+    type: vless
+    server: "154.38.116.8"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_50"
+    type: vless
+    server: "154.218.15.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime47.workers.dev"
+  - name: "🇭🇰_51"
+    type: vless
+    server: "47.238.210.5"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
-      short-id: "ec2c7091fe76336c"
-  - name: "🇭🇰_26"
-    type: vless
-    server: "182.16.61.3"
-    port: 45647
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
-    udp: true
-  - name: "🇭🇰_27"
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+  - name: "🇭🇰_52"
     type: vless
     server: "38.207.177.236"
     port: 443
@@ -145,30 +183,240 @@ proxies:
       public-key: "maES4RMEtsm5emBCixDRa6Y5GvmVwmwZNBL2G4Q03D4"
       short-id: "47de54e71fee3451"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_28"
+  - name: "🇭🇰_53"
     type: vless
-    server: "www.usyun.cc"
-    port: 443
-    uuid: "4ffafba6-d019-4282-8607-13228b199aaa"
+    server: "156.226.168.221"
+    port: 35187
+    uuid: "8924529c-7ced-4ecd-b4ee-40aadf021385"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "usyun.cc"
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
+      short-id: "e8daed2d"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_54"
+    type: vless
+    server: "38.190.210.250"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/trial-gs-relay"
+      path: "/"
       headers:
-        Host: "usyun.cc"
-  - name: "🇭🇰_29"
-    type: trojan
-    server: "18.162.120.218"
-    port: 11035
-    password: "BxceQaOe"
-    sni: "t.me/ripaojiedian"
-    skip-cert-verify: true
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_55"
+    type: vless
+    server: "182.16.61.2"
+    port: 45647
+    uuid: "caec0d8d-ab2f-4247-b97d-7fb1a34ab195"
     udp: true
-  - name: "🇭🇰_30"
+  - name: "🇭🇰_56"
+    type: vless
+    server: "47.239.4.246"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_57"
+    type: vless
+    server: "47.83.153.19"
+    port: 59750
+    uuid: "9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amd.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_58"
+    type: vless
+    server: "182.16.61.3"
+    port: 45647
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "🇭🇰_59"
+    type: vless
+    server: "35.241.98.220"
+    port: 443
+    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
+      short-id: "ec2c7091fe76336c"
+  - name: "🇭🇰_60"
+    type: vless
+    server: "8.210.29.68"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_61"
+    type: vless
+    server: "182.16.61.4"
+    port: 45647
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "🇭🇰_62"
+    type: vless
+    server: "219.76.13.169"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_63"
+    type: vless
+    server: "219.76.13.181"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_64"
+    type: vless
+    server: "8.218.22.14"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_65"
+    type: vless
+    server: "103.192.179.132"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_66"
+    type: vless
+    server: "34.96.200.38"
+    port: 443
+    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
+      short-id: "17d824dd68e24aaf"
+  - name: "🇭🇰_67"
+    type: vless
+    server: "45.192.224.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime17.workers.dev"
+  - name: "🇭🇰_68"
+    type: vless
+    server: "43.168.16.112"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_69"
+    type: vless
+    server: "219.76.13.166"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_70"
+    type: vless
+    server: "43.154.131.189"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_71"
     type: trojan
     server: "ace-starling.rooster465.autos"
     port: 443
@@ -176,15 +424,23 @@ proxies:
     sni: "ace-starling.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_31"
+  - name: "🇭🇰_72"
     type: trojan
-    server: "185.244.208.210"
+    server: "wealthy-loon.rooster465.autos"
     port: 443
-    password: "ND91608427"
-    sni: "upright-hamster.rooster465.autos"
+    password: "AE62539071"
+    sni: "wealthy-loon.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_32"
+  - name: "🇭🇰_73"
+    type: trojan
+    server: "smiling-ray.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "smiling-ray.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_74"
     type: trojan
     server: "dynamic-grubworm.rooster465.autos"
     port: 443
@@ -192,39 +448,31 @@ proxies:
     sni: "dynamic-grubworm.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_33"
+  - name: "🇭🇰_75"
     type: trojan
-    server: "xiweini.dpdns.org"
-    port: 30101
-    password: "t3re5bgbot4z4z3t"
-    sni: "xiweini.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_34"
-    type: trojan
-    server: "119.246.1.143"
+    server: "magical-kodiak.rooster465.autos"
     port: 443
-    password: "BxceQaOe"
-    sni: "119.246.1.143"
+    password: "AE62539071"
+    sni: "magical-kodiak.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_35"
+  - name: "🇭🇰_76"
     type: trojan
-    server: "91.199.84.120"
+    server: "185.244.208.210"
     port: 443
     password: "ND91608427"
-    sni: "dynamic-grubworm.rooster465.autos"
+    sni: "upright-hamster.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_36"
+  - name: "🇭🇰_77"
     type: trojan
-    server: "185.244.208.13"
+    server: "modest-foal.rooster465.autos"
     port: 443
-    password: "ND91608427"
-    sni: "ace-starling.rooster465.autos"
+    password: "AE62539071"
+    sni: "modest-foal.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_37"
+  - name: "🇭🇰_78"
     type: trojan
     server: "upright-hamster.rooster465.autos"
     port: 443
@@ -232,7 +480,63 @@ proxies:
     sni: "upright-hamster.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_38"
+  - name: "🇭🇰_79"
+    type: trojan
+    server: "185.244.208.13"
+    port: 443
+    password: "ND91608427"
+    sni: "ace-starling.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_80"
+    type: trojan
+    server: "novel-mouse.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "novel-mouse.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_81"
+    type: trojan
+    server: "humorous-parakeet.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "humorous-parakeet.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_82"
+    type: trojan
+    server: "119.246.1.143"
+    port: 443
+    password: "BxceQaOe"
+    sni: "119.246.1.143"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_83"
+    type: trojan
+    server: "18.162.120.218"
+    port: 11035
+    password: "BxceQaOe"
+    sni: "t.me/ripaojiedian"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_84"
+    type: trojan
+    server: "18.167.42.162"
+    port: 41421
+    password: "BxceQaOe"
+    sni: "t.me/ripaojiedian"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_85"
+    type: trojan
+    server: "91.199.84.120"
+    port: 443
+    password: "ND91608427"
+    sni: "dynamic-grubworm.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_86"
     type: ss
     server: "f59607d7e0b46da9.tencent-oss.cn"
     port: 30001
@@ -281,25 +585,49 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
   - name: "LB-CDN"
     type: load-balance
@@ -309,25 +637,49 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -337,25 +689,49 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
   - name: "FAST-CDN"
     type: url-test
@@ -364,25 +740,49 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -392,49 +792,97 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇭🇰_20"
-      - "🇭🇰_21"
-      - "🇭🇰_22"
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
-      - "🇭🇰_31"
-      - "🇭🇰_32"
-      - "🇭🇰_33"
-      - "🇭🇰_34"
-      - "🇭🇰_35"
-      - "🇭🇰_36"
-      - "🇭🇰_37"
-      - "🇭🇰_38"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
+      - "🇭🇰_61"
+      - "🇭🇰_62"
+      - "🇭🇰_63"
+      - "🇭🇰_64"
+      - "🇭🇰_65"
+      - "🇭🇰_66"
+      - "🇭🇰_67"
+      - "🇭🇰_68"
+      - "🇭🇰_69"
+      - "🇭🇰_70"
+      - "🇭🇰_71"
+      - "🇭🇰_72"
+      - "🇭🇰_73"
+      - "🇭🇰_74"
+      - "🇭🇰_75"
+      - "🇭🇰_76"
+      - "🇭🇰_77"
+      - "🇭🇰_78"
+      - "🇭🇰_79"
+      - "🇭🇰_80"
+      - "🇭🇰_81"
+      - "🇭🇰_82"
+      - "🇭🇰_83"
+      - "🇭🇰_84"
+      - "🇭🇰_85"
+      - "🇭🇰_86"
 
 rules:
   - MATCH,PROXY-BEST

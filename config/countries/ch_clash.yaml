@@ -65,16 +65,33 @@ dns:
 proxies:
   - name: "🇨🇭_1"
     type: vless
-    server: "167.17.183.36"
+    server: "free.ch1.laodavip.com"
     port: 443
-    uuid: "124cd7fe-b6e1-466a-9ad1-5953985b377f"
+    uuid: "89281585-8bde-4ef2-8807-96c603281ef8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vchm.mvpm.site"
-    client-fingerprint: "firefox"
+    servername: "free.ch1.laodavip.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
+      short-id: "f5420efbe305d354"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
+    type: vless
+    server: "151.243.190.41"
+    port: 25488
+    uuid: "489b61b6-e7fa-4254-ad2b-6ac989b75d86"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "proxy11.h1guro.ovh"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "z3eHrafcEv7gDkshLVUyR7GOH2eqxUigKB-LOg8-EgI"
+      short-id: "135f036cf30861a5"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_3"
     type: vless
     server: "45.90.56.231"
     port: 443
@@ -83,23 +100,10 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
       short-id: "e2e66f4537770cef"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_3"
-    type: vless
-    server: "45.196.193.123"
-    port: 443
-    uuid: "d2042070-c247-4226-a3ac-15337923e00d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY"
-      short-id: "40ce08cf20c67003"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_4"
     type: vless
@@ -116,6 +120,21 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_5"
     type: vless
+    server: "92.119.165.177"
+    port: 8204
+    uuid: "ed1aaa45-18b3-4c07-a434-ea42e2dfba77"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "zeta.optiklink.com"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/gayporn---gayporn---gayporn---gayporn---gayporn---gayporn---gayporn"
+      headers:
+        Host: "zeta.optiklink.com"
+  - name: "🇨🇭_6"
+    type: vless
     server: "45.85.93.92"
     port: 443
     uuid: "89281585-8bde-4ef2-8807-96c603281ef8"
@@ -124,20 +143,6 @@ proxies:
     skip-cert-verify: true
     servername: "free.ch1.laodavip.com"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
-      short-id: "f5420efbe305d354"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
-    type: vless
-    server: "free.ch1.laodavip.com"
-    port: 443
-    uuid: "2f3a2a4d-ca46-4012-a472-b559d379ad0a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free.ch1.laodavip.com"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
       short-id: "f5420efbe305d354"

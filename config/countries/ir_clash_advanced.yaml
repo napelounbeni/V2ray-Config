@@ -59,18 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_5"
+  - name: "🇮🇷_8"
     type: vless
-    server: "185.143.234.238"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_6"
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
+  - name: "🇮🇷_9"
     type: vless
     server: "185.143.233.238"
     port: 2086
@@ -81,25 +81,51 @@ proxies:
       path: "/"
       headers:
         Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_7"
+  - name: "🇮🇷_10"
     type: vless
-    server: "62.60.188.240"
-    port: 443
-    uuid: "0108346a-e5a8-485f-912c-e5b142cf0a80"
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇮🇷_11"
+    type: vless
+    server: "185.143.234.238"
+    port: 2086
+    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "parsi.parsi.sbs"
+  - name: "🇮🇷_12"
+    type: vless
+    server: "185.128.139.11"
+    port: 18244
+    uuid: "0d543aed-4e30-4553-b5ac-211419bb0961"
+    udp: true
+  - name: "🇮🇷_13"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
     skip-cert-verify: true
-    servername: "it.nvidia.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "2HZyHolhLXqkOW3A6VGNJeDwC7lStJJmN1GhIVkpYWI"
-      short-id: "571a5e8791b284e7"
-  - name: "🇮🇷_8"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇮🇷_14"
     type: ss
-    server: "n3.cover20.ir"
-    port: 55129
+    server: "e4.cover20.ir"
+    port: 16156
     cipher: "chacha20-ietf-poly1305"
-    password: "UaJaVAvaJopwVa3u9WDpvawFCv9UDhkkr8C/kMm8lKY="
+    password: "CHwViu5b2i1c8o+tGRWL/nPiBjDBZtyuZj0523sVKkA="
     udp: true
 
 proxy-groups:
@@ -143,10 +169,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -156,10 +185,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -169,10 +201,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -181,10 +216,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -194,19 +232,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
       - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
+      - "🇮🇷_13"
+      - "🇮🇷_14"
 
 rules:
   - MATCH,PROXY-BEST
