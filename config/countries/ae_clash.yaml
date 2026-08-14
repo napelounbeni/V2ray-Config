@@ -74,6 +74,21 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
+  - name: "🇦🇪_2"
+    type: vless
+    server: "188.72.103.3"
+    port: 443
+    uuid: "8491e506-02d9-4ad7-8fce-73aae002cdf3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn.tracker.yandex.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/api/v1/markets/b35da9c717/stream"
+      headers:
+        Host: "stream.tickerflux.link"
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +104,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇪_1"
+      - "🇦🇪_2"
 
 
 rules:

@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "ltu-01.node.lumixnet.com"
+    port: 443
+    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ltu-01.node.lumixnet.com"
+    client-fingerprint: "hellochrome_120"
+    reality-opts:
+      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
+      short-id: "bd8a588cebc3395a"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "84.32.209.7"
     port: 443
     uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
@@ -77,7 +91,7 @@ proxies:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
+  - name: "🇱🇹_3"
     type: vless
     server: "84.32.209.80"
     port: 443
@@ -107,6 +121,7 @@ proxy-groups:
     proxies:
       - "🇱🇹_1"
       - "🇱🇹_2"
+      - "🇱🇹_3"
 
 
 rules:

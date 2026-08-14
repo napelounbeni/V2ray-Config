@@ -64,78 +64,32 @@ dns:
 
 proxies:
   - name: "🇧🇷_1"
-    type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    type: ss
+    server: "163.176.130.243"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "0s/s2MCl4+gpGdRBqSxP7ruTy1yT3AnLhCyc+8G9H+Y="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
   - name: "🇧🇷_2"
-    type: vless
-    server: "38.180.220.203"
-    port: 443
-    uuid: "d4b0cf86-3ea7-4e07-990a-9f9779177a74"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "1JDBQToOCBK5E6xFwMN71vcSovRrwud3IrII4bEjOzU"
-      short-id: "cbb5927ee4"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_3"
-    type: ss
-    server: "163.176.85.126"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "tmNoITDlBC6uGpvPYjou7PZKAH2MOs9tHjig37+TT/Q="
-    udp: true
-  - name: "🇧🇷_4"
-    type: ss
-    server: "163.176.115.182"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "9jbr4rN/jUHADrXAvzott4jArdE7p9kmG9Ya2DJw/iw="
-    udp: true
-  - name: "🇧🇷_5"
-    type: ss
-    server: "163.176.64.97"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "vm/54x6x1jshW8TH5BPO2MAMtQ1M5esrFpb+DydSbhk="
-    udp: true
-  - name: "🇧🇷_6"
-    type: ss
-    server: "146.235.58.178"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "VCWFK+R5XrEp2qnxSaJqZkFUMo9DphDRU/GnoD8HGi4="
-    udp: true
-  - name: "🇧🇷_7"
     type: ss
     server: "163.176.108.52"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
     udp: true
-  - name: "🇧🇷_8"
+  - name: "🇧🇷_3"
+    type: ss
+    server: "163.176.79.165"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "6ySYjPjJSN1/66LoEc+UICA+LUijRYScDSb6j4/0tqY="
+    udp: true
+  - name: "🇧🇷_4"
     type: ss
     server: "129.148.48.245"
     port: 59319
     cipher: "chacha20-ietf-poly1305"
     password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_9"
-    type: ss
-    server: "163.176.194.183"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "DRFgJf7ZBvgTIJqPTX8UQ4KTuvAw3rsSKbUkAt30dyo="
     udp: true
 
 proxy-groups:
@@ -155,11 +109,6 @@ proxy-groups:
       - "🇧🇷_2"
       - "🇧🇷_3"
       - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
-      - "🇧🇷_9"
 
 
 rules:

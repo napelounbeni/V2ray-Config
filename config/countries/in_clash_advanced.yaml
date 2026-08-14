@@ -59,34 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇳_8"
-    type: vless
-    server: "198.105.113.205"
-    port: 443
-    uuid: "18fd025a-eeb7-4860-b468-299a80b1b2c6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "india-cdn.linus-qanary.lol"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "uFpKFKMzIJcnqfmvL8x7ykGigDW23kPkxpTkvwHJzgo"
-      short-id: "fab4"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_9"
-    type: vless
-    server: "194.61.31.126"
-    port: 2053
-    uuid: "7f1f5848-da44-47df-8581-df83e88ee2b3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0"
-      short-id: "ae3ba555edc1ba0a"
-  - name: "🇮🇳_10"
+  - name: "🇮🇳_7"
     type: vless
     server: "5.253.30.99"
     port: 40443
@@ -100,7 +73,20 @@ proxies:
       public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
       short-id: "88b6"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_11"
+  - name: "🇮🇳_8"
+    type: vless
+    server: "194.61.31.126"
+    port: 2053
+    uuid: "7f1f5848-da44-47df-8581-df83e88ee2b3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0"
+      short-id: "ae3ba555edc1ba0a"
+  - name: "🇮🇳_9"
     type: vless
     server: "5.253.42.164"
     port: 40443
@@ -114,26 +100,26 @@ proxies:
       public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
       short-id: "68a8"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_12"
+  - name: "🇮🇳_10"
     type: ss
     server: "103.120.178.193"
     port: 31348
     cipher: "chacha20-ietf-poly1305"
     password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
     udp: true
-  - name: "🇮🇳_13"
+  - name: "🇮🇳_11"
+    type: ss
+    server: "103.120.178.193"
+    port: 31348
+    cipher: "chacha20-ietf-poly1305"
+    password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
+    udp: true
+  - name: "🇮🇳_12"
     type: ss
     server: "172.105.39.124"
     port: 7002
     cipher: "aes-256-gcm"
     password: "RexnBgU7EV5ADxG"
-    udp: true
-  - name: "🇮🇳_14"
-    type: ss
-    server: "103.120.178.193"
-    port: 31348
-    cipher: "chacha20-ietf-poly1305"
-    password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
     udp: true
 
 proxy-groups:
@@ -177,13 +163,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -193,13 +178,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -209,13 +193,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -224,13 +207,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -240,25 +222,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇳_7"
       - "🇮🇳_8"
       - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
-      - "🇮🇳_13"
-      - "🇮🇳_14"
 
 rules:
   - MATCH,PROXY-BEST
