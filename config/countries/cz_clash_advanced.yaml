@@ -59,33 +59,19 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_5"
-    type: vless
-    server: "195.133.35.81"
-    port: 443
-    uuid: "e2cd1f88-8582-4ab9-9497-de59de37b626"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8R53x47787bPBVJnKyLkOhTztNW6djdTh0WEWph8710"
-      short-id: "7479"
-    flow: "xtls-rprx-vision"
   - name: "🇨🇿_6"
     type: vless
-    server: "78.159.247.253"
-    port: 2027
-    uuid: "851ed0d8-a37b-452d-8ef2-5b6c2d28a060"
+    server: "103.119.18.115"
+    port: 443
+    uuid: "a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandex.net"
+    servername: "ch1.murhost.network"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
-      short-id: "dc8109baf0f607ea"
+      public-key: "V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A"
+      short-id: "91a7a393d805f5c6"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_7"
     type: vless
@@ -102,6 +88,32 @@ proxies:
       short-id: "0c"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_8"
+    type: vless
+    server: "78.159.247.253"
+    port: 2027
+    uuid: "851ed0d8-a37b-452d-8ef2-5b6c2d28a060"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    reality-opts:
+      public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
+      short-id: "dc8109baf0f607ea"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_9"
+    type: trojan
+    server: "178.208.75.155"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇨🇿_10"
     type: trojan
     server: "178.208.75.155"
     port: 8443
@@ -154,10 +166,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -167,10 +180,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -180,10 +194,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -192,10 +207,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -205,19 +221,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
 
 rules:
   - MATCH,PROXY-BEST

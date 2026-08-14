@@ -65,44 +65,41 @@ dns:
 proxies:
   - name: "🇸🇨_1"
     type: vless
-    server: "200.165.228.114"
-    port: 9870
-    uuid: "553e3253-c454-431d-a7e6-42bc06ea5e14"
+    server: "45.130.125.207"
+    port: 443
+    uuid: "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dl.google.com"
+    servername: "terazhediii.info"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
-      short-id: "aabbccdd"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
+    network: ws
+    ws-opts:
+      path: "/hdgrbws"
+      headers:
+        Host: "terazhediii.info"
   - name: "🇸🇨_2"
     type: vless
-    server: "45.130.125.200"
-    port: 2053
-    uuid: "e7961655-9674-4cbd-a36f-ec0d5d7d660c"
+    server: "45.130.125.201"
+    port: 80
+    uuid: "dc8a9493-c54a-459e-d060-81a700000001"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "po.fastbrokencompony.com"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/sync"
+      headers:
+        Host: "nahan-core.netizo09.workers.dev"
   - name: "🇸🇨_3"
     type: vless
-    server: "45.130.125.209"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    server: "200.165.228.47"
+    port: 4100
+    uuid: "6620ef58-9c62-43fe-9596-ff862b200958"
     udp: true
     network: ws
     ws-opts:
-      path: "/http"
+      path: "/v1"
       headers:
-        Host: "de.vpnbase.net"
+        Host: "live.ok.ru"
   - name: "🇸🇨_4"
     type: vless
     server: "45.130.125.207"
@@ -115,20 +112,6 @@ proxies:
       headers:
         Host: "de.vpnbase.net"
   - name: "🇸🇨_5"
-    type: vless
-    server: "45.130.125.158"
-    port: 2053
-    uuid: "e7961655-9674-4cbd-a36f-ec0d5d7d660c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "po.fastbrokencompony.com"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "po.fastbrokencompony.com"
-  - name: "🇸🇨_6"
     type: vless
     server: "45.130.125.162"
     port: 2053
@@ -143,17 +126,30 @@ proxies:
       path: "/"
       headers:
         Host: "po.fastbrokencompony.com"
-  - name: "🇸🇨_7"
+  - name: "🇸🇨_6"
     type: vless
-    server: "200.165.228.47"
-    port: 4100
-    uuid: "6620ef58-9c62-43fe-9596-ff862b200958"
+    server: "45.130.125.114"
+    port: 80
+    uuid: "e2c5f1a9-b3d4-4e78-9f2a-1c3d4e5f6a7b"
     udp: true
     network: ws
     ws-opts:
-      path: "/v1"
+      path: "/"
       headers:
-        Host: "live.ok.ru"
+        Host: "new-scale08-cdn.sabzi.name.ng."
+  - name: "🇸🇨_7"
+    type: vless
+    server: "45.130.125.200"
+    port: 2053
+    uuid: "e7961655-9674-4cbd-a36f-ec0d5d7d660c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "po.fastbrokencompony.com"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇸🇨_8"
     type: vless
     server: "45.130.125.138"
@@ -168,55 +164,30 @@ proxies:
     ws-opts:
       path: "/"
   - name: "🇸🇨_9"
-    type: trojan
-    server: "45.130.125.160"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    type: vless
+    server: "45.130.125.158"
+    port: 2053
+    uuid: "e7961655-9674-4cbd-a36f-ec0d5d7d660c"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "po.fastbrokencompony.com"
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/"
       headers:
-        Host: "www.calmlunch.com"
+        Host: "po.fastbrokencompony.com"
   - name: "🇸🇨_10"
-    type: trojan
-    server: "45.130.125.112"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    type: vless
+    server: "45.130.125.209"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
     udp: true
     network: ws
     ws-opts:
-      path: "/assignment"
-  - name: "🇸🇨_11"
-    type: trojan
-    server: "45.130.125.190"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
+      path: "/http"
       headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_12"
-    type: trojan
-    server: "45.130.125.75"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
+        Host: "de.vpnbase.net"
 
 proxy-groups:
   - name: "PROXY"
@@ -241,8 +212,6 @@ proxy-groups:
       - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
 
 
 rules:

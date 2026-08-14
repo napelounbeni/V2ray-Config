@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_7"
+  - name: "🇱🇻_6"
     type: vless
     server: "g9.steptofsvo.com"
     port: 443
@@ -73,7 +73,7 @@ proxies:
       public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
       short-id: "6d6f13013d3e1d0c"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_8"
+  - name: "🇱🇻_7"
     type: vless
     server: "89.36.161.222"
     port: 2053
@@ -87,48 +87,39 @@ proxies:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_9"
+  - name: "🇱🇻_8"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2053
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    server: "195.123.208.92"
+    port: 13443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
-      short-id: "d26f4703cdd30f4e"
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_10"
+  - name: "🇱🇻_9"
     type: vless
     server: "85.159.228.250"
     port: 25703
     uuid: "7e5964d0-36b8-43ff-885b-86c4d3bfd466"
     udp: true
-  - name: "🇱🇻_11"
+  - name: "🇱🇻_10"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    server: "91.197.3.43"
+    port: 52463
+    uuid: "22696950-587f-42c0-af24-c1ffab17d0cd"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇻_12"
-    type: trojan
-    server: "84.21.172.81"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
+    tls: true
     skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
+    servername: "yahoo.com"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "zOv4BhJVbINHdcULln0vQ_6sxKiGjJPj4uyMttX9pWo"
+      short-id: "cdaed92e1d0c"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -171,12 +162,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -186,12 +176,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -201,12 +190,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -215,12 +203,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -230,23 +217,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
 rules:
   - MATCH,PROXY-BEST
