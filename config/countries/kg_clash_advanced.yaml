@@ -59,34 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_5"
-    type: ss
-    server: "163.176.130.243"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "0s/s2MCl4+gpGdRBqSxP7ruTy1yT3AnLhCyc+8G9H+Y="
+  - name: "🇰🇬_2"
+    type: vless
+    server: "81.85.75.85"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
-  - name: "🇧🇷_6"
-    type: ss
-    server: "163.176.108.52"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_7"
-    type: ss
-    server: "163.176.79.165"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "6ySYjPjJSN1/66LoEc+UICA+LUijRYScDSb6j4/0tqY="
-    udp: true
-  - name: "🇧🇷_8"
-    type: ss
-    server: "129.148.48.245"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "baltic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
+      short-id: "4a46213c935e2ee4"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -129,10 +115,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -142,10 +125,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -155,10 +135,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -167,10 +144,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -180,19 +154,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇷_5"
-      - "🇧🇷_6"
-      - "🇧🇷_7"
-      - "🇧🇷_8"
+      - "🇰🇬_2"
 
 rules:
   - MATCH,PROXY-BEST

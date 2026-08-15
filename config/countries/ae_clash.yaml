@@ -76,19 +76,26 @@ proxies:
         Host: "uae.unixzone.us"
   - name: "🇦🇪_2"
     type: vless
-    server: "188.72.103.3"
-    port: 443
-    uuid: "8491e506-02d9-4ad7-8fce-73aae002cdf3"
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn.tracker.yandex.net"
-    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/api/v1/markets/b35da9c717/stream"
+      path: "/"
       headers:
-        Host: "stream.tickerflux.link"
+        Host: "vms.lifetime18.workers.dev"
+  - name: "🇦🇪_3"
+    type: vless
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,6 +112,7 @@ proxy-groups:
     proxies:
       - "🇦🇪_1"
       - "🇦🇪_2"
+      - "🇦🇪_3"
 
 
 rules:

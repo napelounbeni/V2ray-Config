@@ -63,17 +63,28 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇳_1"
+  - name: "🇧🇿_1"
     type: vless
-    server: "36.248.14.90"
-    port: 33102
-    uuid: "fb957ee2-2ca0-43f3-ab86-724a9ca0b628"
+    server: "45.131.211.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sgg.knhqf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇧🇿_2"
+    type: vless
+    server: "45.131.209.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +99,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇳_1"
+      - "🇧🇿_1"
+      - "🇧🇿_2"
 
 
 rules:

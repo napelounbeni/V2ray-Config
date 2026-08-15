@@ -65,7 +65,7 @@ dns:
 proxies:
   - name: "🇨🇭_1"
     type: vless
-    server: "140.238.208.210"
+    server: "194.147.173.116"
     port: 443
     uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
     udp: true
@@ -80,32 +80,19 @@ proxies:
         Host: "vod.ensf.top"
   - name: "🇨🇭_2"
     type: vless
-    server: "45.90.56.231"
+    server: "31.76.4.103"
     port: 443
-    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
-      short-id: "e2e66f4537770cef"
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_3"
-    type: vless
-    server: "178.83.226.55"
-    port: 443
-    uuid: "2a77a470-315c-493d-b690-59b814a804cb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sellflow.org"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_4"
     type: vless
     server: "45.143.200.245"
     port: 443
@@ -120,14 +107,48 @@ proxies:
       path: "/api/v1/irc"
       headers:
         Host: "vod.ensf.top"
-  - name: "🇨🇭_5"
-    type: trojan
-    server: "86.106.84.195"
-    port: 53261
-    password: "y3b03zx3tznhyo538p4c"
-    sni: "86.106.84.195"
-    skip-cert-verify: true
+  - name: "🇨🇭_4"
+    type: vless
+    server: "140.238.208.210"
+    port: 443
+    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vod.ensf.top"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/api/v1/irc"
+      headers:
+        Host: "vod.ensf.top"
+  - name: "🇨🇭_5"
+    type: vless
+    server: "45.90.56.231"
+    port: 443
+    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
+      short-id: "e2e66f4537770cef"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_6"
+    type: vless
+    server: "178.83.226.55"
+    port: 443
+    uuid: "2a77a470-315c-493d-b690-59b814a804cb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sellflow.org"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -147,6 +168,7 @@ proxy-groups:
       - "🇨🇭_3"
       - "🇨🇭_4"
       - "🇨🇭_5"
+      - "🇨🇭_6"
 
 
 rules:

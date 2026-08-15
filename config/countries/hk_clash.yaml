@@ -65,83 +65,37 @@ dns:
 proxies:
   - name: "🇭🇰_1"
     type: vless
-    server: "35.241.98.220"
-    port: 443
-    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
+    server: "182.16.61.4"
+    port: 45647
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
-      short-id: "ec2c7091fe76336c"
   - name: "🇭🇰_2"
-    type: vless
-    server: "34.96.200.38"
-    port: 443
-    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
-      short-id: "17d824dd68e24aaf"
-  - name: "🇭🇰_3"
-    type: vless
-    server: "103.118.252.45"
-    port: 13131
-    uuid: "bc155a59-a4db-45e7-addf-db634b79757b"
-    udp: true
-  - name: "🇭🇰_4"
     type: vless
     server: "182.16.61.3"
     port: 45647
     uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
     udp: true
-  - name: "🇭🇰_5"
-    type: vless
-    server: "f-hk-th.mtnode.top"
-    port: 443
-    uuid: "06903925-9076-4c6f-bf6c-1bbebeaf2e28"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8"
-      short-id: "67c8cb79"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_6"
-    type: vless
-    server: "182.16.61.4"
-    port: 45647
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
-    udp: true
-  - name: "🇭🇰_7"
+  - name: "🇭🇰_3"
     type: vless
     server: "182.16.61.2"
     port: 45647
     uuid: "caec0d8d-ab2f-4247-b97d-7fb1a34ab195"
     udp: true
-  - name: "🇭🇰_8"
+  - name: "🇭🇰_4"
     type: vless
-    server: "103.149.183.198"
-    port: 13779
-    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    server: "38.180.189.21"
+    port: 443
+    uuid: "191ab0f2-8b19-4b78-a11b-c6107a866978"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "tesla.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
-      short-id: "af1bdd293097b664"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_9"
+    servername: "cm1.jean01.dpdns.org"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "cm1.jean01.dpdns.org"
+  - name: "🇭🇰_5"
     type: vless
     server: "38.207.177.236"
     port: 443
@@ -155,7 +109,34 @@ proxies:
       public-key: "maES4RMEtsm5emBCixDRa6Y5GvmVwmwZNBL2G4Q03D4"
       short-id: "47de54e71fee3451"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_10"
+  - name: "🇭🇰_6"
+    type: vless
+    server: "34.96.200.38"
+    port: 443
+    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
+      short-id: "17d824dd68e24aaf"
+  - name: "🇭🇰_7"
+    type: vless
+    server: "103.149.183.198"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_8"
     type: vless
     server: "47.83.153.19"
     port: 59750
@@ -169,36 +150,68 @@ proxies:
       public-key: "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_11"
-    type: trojan
-    server: "95.40.14.123"
-    port: 50887
-    password: "6ec301428255a78a1d826988d86cc87e"
-    sni: "www.nintendogames.net"
-    skip-cert-verify: true
+  - name: "🇭🇰_9"
+    type: vless
+    server: "35.241.98.220"
+    port: 443
+    uuid: "96563f88-f743-4395-a3b2-27ec462ae45e"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo"
+      short-id: "ec2c7091fe76336c"
+  - name: "🇭🇰_10"
+    type: vless
+    server: "47.238.210.5"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+  - name: "🇭🇰_11"
+    type: vless
+    server: "124.156.182.132"
+    port: 443
+    uuid: "1b6de5d8-3285-422c-b6fe-2989918f528b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "CdNLdccy_ALnjDvwZa14eP31CoJ_BLqJAS2OLCNwogg"
+      short-id: "d19dcb524604e214"
+    flow: "xtls-rprx-vision"
   - name: "🇭🇰_12"
     type: trojan
-    server: "magical-kodiak.rooster465.autos"
+    server: "dynamic-grubworm.rooster465.autos"
     port: 443
-    password: "AE62539071"
-    sni: "magical-kodiak.rooster465.autos"
+    password: "FH72359861"
+    sni: "dynamic-grubworm.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇭🇰_13"
     type: trojan
-    server: "humorous-parakeet.rooster465.autos"
+    server: "185.244.208.69"
     port: 443
     password: "AE62539071"
-    sni: "humorous-parakeet.rooster465.autos"
+    sni: "strong-haddock.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇭🇰_14"
     type: trojan
-    server: "a8zbx9xj.catcat321.com"
-    port: 20088
-    password: "0010996f-3eab-4804-9b3a-3a889d6767fc"
-    sni: "iepl.krz3.cat.bilibili.com"
+    server: "novel-mouse.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "novel-mouse.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇭🇰_15"
@@ -211,93 +224,13 @@ proxies:
     udp: true
   - name: "🇭🇰_16"
     type: trojan
-    server: "upright-bedbug.rooster465.autos"
-    port: 443
-    password: "AE62539071"
-    sni: "upright-bedbug.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_17"
-    type: trojan
-    server: "dynamic-grubworm.rooster465.autos"
-    port: 443
-    password: "ND91608427"
-    sni: "dynamic-grubworm.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_18"
-    type: trojan
-    server: "2c.fast9988.com"
+    server: "18.162.120.218"
     port: 50887
     password: "6ec301428255a78a1d826988d86cc87e"
     sni: "www.nintendogames.net"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_19"
-    type: trojan
-    server: "ace-starling.rooster465.autos"
-    port: 443
-    password: "ND91608427"
-    sni: "ace-starling.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_20"
-    type: trojan
-    server: "185.244.208.210"
-    port: 443
-    password: "ND91608427"
-    sni: "upright-hamster.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_21"
-    type: trojan
-    server: "novel-mouse.rooster465.autos"
-    port: 443
-    password: "AE62539071"
-    sni: "novel-mouse.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_22"
-    type: trojan
-    server: "91.199.84.120"
-    port: 443
-    password: "ND91608427"
-    sni: "dynamic-grubworm.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_23"
-    type: trojan
-    server: "smiling-ray.rooster465.autos"
-    port: 443
-    password: "AE62539071"
-    sni: "smiling-ray.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_24"
-    type: trojan
-    server: "a8zbx9xj.catcat321.com"
-    port: 20056
-    password: "0010996f-3eab-4804-9b3a-3a889d6767fc"
-    sni: "a8zbx9xj.catcat321.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_25"
-    type: trojan
-    server: "modest-foal.rooster465.autos"
-    port: 443
-    password: "AE62539071"
-    sni: "modest-foal.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_26"
-    type: trojan
-    server: "119.246.1.143"
-    port: 443
-    password: "BxceQaOe"
-    sni: "119.246.1.143"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_27"
+  - name: "🇭🇰_17"
     type: trojan
     server: "upright-hamster.rooster465.autos"
     port: 443
@@ -305,23 +238,7 @@ proxies:
     sni: "upright-hamster.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_28"
-    type: trojan
-    server: "wealthy-loon.rooster465.autos"
-    port: 443
-    password: "AE62539071"
-    sni: "wealthy-loon.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_29"
-    type: trojan
-    server: "18.162.120.218"
-    port: 11035
-    password: "BxceQaOe"
-    sni: "t.me/ripaojiedian"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_30"
+  - name: "🇭🇰_18"
     type: trojan
     server: "strong-haddock.rooster465.autos"
     port: 443
@@ -329,7 +246,158 @@ proxies:
     sni: "strong-haddock.rooster465.autos"
     skip-cert-verify: true
     udp: true
+  - name: "🇭🇰_19"
+    type: trojan
+    server: "strong-haddock.rooster465.autos"
+    port: 443
+    password: "FH72359861"
+    sni: "strong-haddock.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_20"
+    type: trojan
+    server: "natural-swan.rooster465.autos"
+    port: 443
+    password: "FH72359861"
+    sni: "natural-swan.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_21"
+    type: trojan
+    server: "smiling-ray.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "smiling-ray.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_22"
+    type: trojan
+    server: "dynamic-grubworm.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "dynamic-grubworm.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_23"
+    type: trojan
+    server: "upright-bedbug.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "upright-bedbug.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_24"
+    type: trojan
+    server: "2c.fast9988.com"
+    port: 50887
+    password: "6ec301428255a78a1d826988d86cc87e"
+    sni: "www.nintendogames.net"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_25"
+    type: trojan
+    server: "18.162.120.218"
+    port: 11035
+    password: "BxceQaOe"
+    sni: "t.me/ripaojiedian"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_26"
+    type: trojan
+    server: "humorous-parakeet.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "humorous-parakeet.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_27"
+    type: trojan
+    server: "magical-kodiak.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "magical-kodiak.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_28"
+    type: trojan
+    server: "smiling-ray.rooster465.autos"
+    port: 443
+    password: "FH72359861"
+    sni: "smiling-ray.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_29"
+    type: trojan
+    server: "91.199.84.120"
+    port: 443
+    password: "ND91608427"
+    sni: "dynamic-grubworm.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_30"
+    type: trojan
+    server: "modest-foal.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "modest-foal.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
   - name: "🇭🇰_31"
+    type: trojan
+    server: "ace-starling.rooster465.autos"
+    port: 443
+    password: "ND91608427"
+    sni: "ace-starling.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_32"
+    type: trojan
+    server: "185.244.208.210"
+    port: 443
+    password: "ND91608427"
+    sni: "upright-hamster.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_33"
+    type: trojan
+    server: "modern-bedbug.rooster465.autos"
+    port: 443
+    password: "FH72359861"
+    sni: "modern-bedbug.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_34"
+    type: trojan
+    server: "119.246.1.143"
+    port: 443
+    password: "BxceQaOe"
+    sni: "119.246.1.143"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_35"
+    type: trojan
+    server: "185.244.208.13"
+    port: 443
+    password: "ND91608427"
+    sni: "ace-starling.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_36"
+    type: trojan
+    server: "wealthy-loon.rooster465.autos"
+    port: 443
+    password: "AE62539071"
+    sni: "wealthy-loon.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇰_37"
+    type: ss
+    server: "f59607d7e0b46da9.tencent-oss.cn"
+    port: 30001
+    cipher: "aes-128-gcm"
+    password: "0e50a57f-f2d0-40cf-a924-847dbd11d899"
+    udp: true
+  - name: "🇭🇰_38"
     type: ss
     server: "sknsdc.hotssid.com"
     port: 10705
@@ -381,6 +449,13 @@ proxy-groups:
       - "🇭🇰_29"
       - "🇭🇰_30"
       - "🇭🇰_31"
+      - "🇭🇰_32"
+      - "🇭🇰_33"
+      - "🇭🇰_34"
+      - "🇭🇰_35"
+      - "🇭🇰_36"
+      - "🇭🇰_37"
+      - "🇭🇰_38"
 
 
 rules:

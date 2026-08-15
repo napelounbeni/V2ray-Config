@@ -63,34 +63,17 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇧🇷_1"
-    type: ss
-    server: "163.176.130.243"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "0s/s2MCl4+gpGdRBqSxP7ruTy1yT3AnLhCyc+8G9H+Y="
+  - name: "🇨🇾_1"
+    type: vless
+    server: "195.85.59.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-  - name: "🇧🇷_2"
-    type: ss
-    server: "163.176.108.52"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
-  - name: "🇧🇷_3"
-    type: ss
-    server: "163.176.79.165"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "6ySYjPjJSN1/66LoEc+UICA+LUijRYScDSb6j4/0tqY="
-    udp: true
-  - name: "🇧🇷_4"
-    type: ss
-    server: "129.148.48.245"
-    port: 59319
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU="
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime58.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,10 +88,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇧🇷_1"
-      - "🇧🇷_2"
-      - "🇧🇷_3"
-      - "🇧🇷_4"
+      - "🇨🇾_1"
 
 
 rules:
