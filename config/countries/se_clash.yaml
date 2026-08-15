@@ -65,32 +65,33 @@ dns:
 proxies:
   - name: "🇸🇪_1"
     type: vless
-    server: "213.21.229.126"
-    port: 12345
-    uuid: "58809ac1-22fe-4372-8d84-ccaca97043fd"
+    server: "129.151.198.3"
+    port: 2053
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+    servername: "forfreeuse.rtqa.ru"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/@Marisa_kristi"
+      path: "/"
       headers:
-        Host: "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        Host: "forfreeuse.rtqa.ru"
   - name: "🇸🇪_2"
     type: vless
-    server: "13.249.8.113"
+    server: "87.121.105.50"
     port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_3"
     type: vless
     server: "2.26.55.164"
@@ -107,45 +108,33 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇸🇪_4"
     type: vless
-    server: "193.232.178.149"
-    port: 8443
-    uuid: "bba95b1f-f48c-454b-897b-a6c6bc307df1"
+    server: "31.76.3.54"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "edge.yzkvm.top"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "edge.yzkvm.top"
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_5"
     type: vless
-    server: "13.249.8.3"
+    server: "150.241.73.137"
     port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_6"
-    type: vless
-    server: "13.249.8.21"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_7"
     type: vless
     server: "41.216.182.105"
     port: 443
@@ -160,51 +149,20 @@ proxies:
       path: "/api/v1/irc"
       headers:
         Host: "vod.ensf.top"
-  - name: "🇸🇪_8"
+  - name: "🇸🇪_7"
     type: vless
-    server: "150.241.72.5"
+    server: "13.249.8.21"
     port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
+    servername: "d1yxsk0zprgivr.cloudfront.net"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_9"
-    type: vless
-    server: "213.176.112.136"
-    port: 5222
-    uuid: "8d955d71-ed5d-4f4c-ae68-42d120f06861"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-  - name: "🇸🇪_10"
-    type: vless
-    server: "77.221.136.148"
-    port: 443
-    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vod.ensf.top"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/api/v1/irc"
-      headers:
-        Host: "vod.ensf.top"
-  - name: "🇸🇪_11"
+      path: "/"
+  - name: "🇸🇪_8"
     type: vless
     server: "13.249.8.83"
     port: 443
@@ -217,7 +175,33 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇸🇪_12"
+  - name: "🇸🇪_9"
+    type: vless
+    server: "13.249.8.3"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_10"
+    type: vless
+    server: "13.249.8.113"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_11"
     type: trojan
     server: "77.221.138.199"
     port: 8443
@@ -230,20 +214,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇪_13"
-    type: ss
-    server: "45.138.103.4"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjM0M"
-    udp: true
-  - name: "🇸🇪_14"
-    type: ss
-    server: "45.138.103.4"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "YjM0M"
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -269,9 +239,6 @@ proxy-groups:
       - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
 
 
 rules:

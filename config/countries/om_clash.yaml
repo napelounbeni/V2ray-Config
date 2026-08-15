@@ -63,17 +63,19 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇾_1"
+  - name: "🇴🇲_1"
     type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "omdr.whooisthebest.ir"
+    port: 33353
+    uuid: "395ee0ee-4342-472a-9d2b-40a562a0eaa1"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime58.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8"
+      short-id: "ad51aa0889b8da46"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +90,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇾_1"
+      - "🇴🇲_1"
 
 
 rules:

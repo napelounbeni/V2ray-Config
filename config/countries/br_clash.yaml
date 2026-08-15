@@ -63,20 +63,62 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇺🇦_1"
+  - name: "🇧🇷_1"
     type: vless
-    server: "193.238.153.15"
+    server: "veilix.ciphero.xyz"
     port: 443
-    uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
+    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "veilix.ciphero.xyz"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
-      short-id: "1ea21a140beaecc5"
+      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
+      short-id: "33b5887524592cad"
     flow: "xtls-rprx-vision"
+  - name: "🇧🇷_2"
+    type: vless
+    server: "200.165.225.174"
+    port: 443
+    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "veilix.ciphero.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
+      short-id: "33b5887524592cad"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_3"
+    type: ss
+    server: "163.176.56.46"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw="
+    udp: true
+  - name: "🇧🇷_4"
+    type: ss
+    server: "163.176.56.46"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw="
+    udp: true
+  - name: "🇧🇷_5"
+    type: ss
+    server: "136.248.80.6"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
+    udp: true
+  - name: "🇧🇷_6"
+    type: ss
+    server: "136.248.80.6"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +133,12 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇺🇦_1"
+      - "🇧🇷_1"
+      - "🇧🇷_2"
+      - "🇧🇷_3"
+      - "🇧🇷_4"
+      - "🇧🇷_5"
+      - "🇧🇷_6"
 
 
 rules:

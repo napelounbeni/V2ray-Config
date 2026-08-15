@@ -72,10 +72,24 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "nordic.cendora.ru"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
       short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇾_2"
+    type: vless
+    server: "191.44.32.103"
+    port: 5000
+    uuid: "ead060e5-21f9-5369-b9f9-175ab7faa20f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.vk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SLrTZEGZV42hDpfoCkqPZwwVK2V57Db3y6LxKbxexGU"
+      short-id: "ec4a18"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -92,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇾_1"
+      - "🇧🇾_2"
 
 
 rules:

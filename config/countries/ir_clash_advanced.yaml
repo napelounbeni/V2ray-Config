@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_11"
+  - name: "🇮🇷_3"
     type: vless
     server: "95.38.102.243"
     port: 443
@@ -74,20 +74,7 @@ proxies:
       path: "/"
       headers:
         Host: "new01.asaltabie.monster"
-  - name: "🇮🇷_12"
-    type: vless
-    server: "new01.asaltabie.monster"
-    port: 443
-    uuid: "d0f4d620-db2b-45e0-8353-a073461b1130"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "new01.asaltabie.monster"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇷_13"
+  - name: "🇮🇷_4"
     type: vless
     server: "185.143.233.238"
     port: 2086
@@ -98,69 +85,6 @@ proxies:
       path: "/"
       headers:
         Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_14"
-    type: vless
-    server: "p01.parsi.sbs"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_15"
-    type: vless
-    server: "185.143.234.238"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_16"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "worker3.gigak25604.workers.dev"
-  - name: "🇮🇷_17"
-    type: vless
-    server: "azadiconfig.myvpsd.ir"
-    port: 20267
-    uuid: "546eeb73-0099-464d-aaa5-141b8b8b934a"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇷_18"
-    type: ss
-    server: "e1.cover20.ir"
-    port: 51570
-    cipher: "chacha20-ietf-poly1305"
-    password: "upOzU42FCC3Ik9UbIymXE49JhyfbRtZWIjjACZ7z9DE="
-    udp: true
-  - name: "🇮🇷_19"
-    type: ss
-    server: "79.175.134.49"
-    port: 39880
-    cipher: "aes-256-gcm"
-    password: "PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4="
-    udp: true
-  - name: "🇮🇷_20"
-    type: ss
-    server: "79.175.134.49"
-    port: 39880
-    cipher: "aes-256-gcm"
-    password: "PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4="
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -203,16 +127,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -222,16 +138,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -241,16 +149,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -259,16 +159,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -278,31 +170,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_11"
-      - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
-      - "🇮🇷_15"
-      - "🇮🇷_16"
-      - "🇮🇷_17"
-      - "🇮🇷_18"
-      - "🇮🇷_19"
-      - "🇮🇷_20"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
 rules:
   - MATCH,PROXY-BEST

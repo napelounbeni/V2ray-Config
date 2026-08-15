@@ -66,48 +66,6 @@ proxies:
   - name: "🇬🇷_1"
     type: vless
     server: "85.90.197.131"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_2"
-    type: vless
-    server: "217.12.194.249"
-    port: 443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_3"
-    type: vless
-    server: "grek.o4ka-internet.com"
-    port: 443
-    uuid: "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "grek.o4ka-internet.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
-      short-id: "5629431325884ff0"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_4"
-    type: vless
-    server: "85.90.197.131"
     port: 13443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
@@ -119,7 +77,63 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
+  - name: "🇬🇷_2"
+    type: vless
+    server: "85.90.197.131"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_3"
+    type: vless
+    server: "185.226.67.182"
+    port: 443
+    uuid: "27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "depa.kupivodku.top"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "JyGDRuOThmoCQ2pYD5VyPnFBKb25RqwqJ6-W-tNHBlY"
+      short-id: "0491f3e34348cb95"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_4"
+    type: vless
+    server: "depa.kupivodku.top"
+    port: 443
+    uuid: "27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "depa.kupivodku.top"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "JyGDRuOThmoCQ2pYD5VyPnFBKb25RqwqJ6-W-tNHBlY"
+      short-id: "0491f3e34348cb95"
+    flow: "xtls-rprx-vision"
   - name: "🇬🇷_5"
+    type: vless
+    server: "grek.o4ka-internet.com"
+    port: 443
+    uuid: "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "grek.o4ka-internet.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+      short-id: "5629431325884ff0"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_6"
     type: vless
     server: "85.90.197.147"
     port: 443
@@ -128,7 +142,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "grek.o4ka-internet.com"
-    client-fingerprint: "edge"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
       short-id: "5629431325884ff0"
@@ -152,6 +166,7 @@ proxy-groups:
       - "🇬🇷_3"
       - "🇬🇷_4"
       - "🇬🇷_5"
+      - "🇬🇷_6"
 
 
 rules:

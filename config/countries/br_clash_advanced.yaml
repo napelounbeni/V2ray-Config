@@ -59,28 +59,62 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇿_3"
+  - name: "🇧🇷_7"
     type: vless
-    server: "45.131.211.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "veilix.ciphero.xyz"
+    port: 443
+    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇧🇿_4"
+    tls: true
+    skip-cert-verify: true
+    servername: "veilix.ciphero.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
+      short-id: "33b5887524592cad"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_8"
     type: vless
-    server: "45.131.209.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "200.165.225.174"
+    port: 443
+    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "veilix.ciphero.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
+      short-id: "33b5887524592cad"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_9"
+    type: ss
+    server: "163.176.56.46"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw="
+    udp: true
+  - name: "🇧🇷_10"
+    type: ss
+    server: "163.176.56.46"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw="
+    udp: true
+  - name: "🇧🇷_11"
+    type: ss
+    server: "136.248.80.6"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
+    udp: true
+  - name: "🇧🇷_12"
+    type: ss
+    server: "136.248.80.6"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -123,8 +157,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -134,8 +172,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -145,8 +187,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -155,8 +201,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -166,15 +216,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇷_7"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
 
 rules:
   - MATCH,PROXY-BEST

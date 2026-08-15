@@ -77,17 +77,6 @@ proxies:
       path: "/id-tksi"
       headers:
         Host: "support.zoom.us.yxls.eu.cc"
-  - name: "🇳🇿_2"
-    type: vless
-    server: "114.129.43.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,7 +92,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇳🇿_1"
-      - "🇳🇿_2"
 
 
 rules:

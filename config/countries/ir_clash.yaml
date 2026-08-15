@@ -80,19 +80,6 @@ proxies:
         Host: "new01.asaltabie.monster"
   - name: "🇮🇷_2"
     type: vless
-    server: "new01.asaltabie.monster"
-    port: 443
-    uuid: "d0f4d620-db2b-45e0-8353-a073461b1130"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "new01.asaltabie.monster"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇷_3"
-    type: vless
     server: "185.143.233.238"
     port: 2086
     uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
@@ -102,69 +89,6 @@ proxies:
       path: "/"
       headers:
         Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_4"
-    type: vless
-    server: "p01.parsi.sbs"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_5"
-    type: vless
-    server: "185.143.234.238"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_6"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "worker3.gigak25604.workers.dev"
-  - name: "🇮🇷_7"
-    type: vless
-    server: "azadiconfig.myvpsd.ir"
-    port: 20267
-    uuid: "546eeb73-0099-464d-aaa5-141b8b8b934a"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇷_8"
-    type: ss
-    server: "e1.cover20.ir"
-    port: 51570
-    cipher: "chacha20-ietf-poly1305"
-    password: "upOzU42FCC3Ik9UbIymXE49JhyfbRtZWIjjACZ7z9DE="
-    udp: true
-  - name: "🇮🇷_9"
-    type: ss
-    server: "79.175.134.49"
-    port: 39880
-    cipher: "aes-256-gcm"
-    password: "PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4="
-    udp: true
-  - name: "🇮🇷_10"
-    type: ss
-    server: "79.175.134.49"
-    port: 39880
-    cipher: "aes-256-gcm"
-    password: "PcOE52lyGO6MFRm6/m5hfuC3NpNockDvcnNYgq18Ni4="
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -181,14 +105,6 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
-      - "🇮🇷_3"
-      - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
 
 
 rules:
