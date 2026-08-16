@@ -65,6 +65,19 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
+    server: "144.31.131.241"
+    port: 8443
+    uuid: "b406bc51-9002-474c-beae-b194b02c91da"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "mold.speedload.online"
+    reality-opts:
+      public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
+      short-id: "a20d3ed244c76426"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
     server: "176.123.2.139"
     port: 443
     uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
@@ -77,18 +90,19 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇩_2"
+  - name: "🇲🇩_3"
     type: vless
-    server: "144.31.131.241"
-    port: 8443
-    uuid: "b406bc51-9002-474c-beae-b194b02c91da"
+    server: "mold.helper-internet.com"
+    port: 443
+    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "mold.speedload.online"
+    servername: "mold.helper-internet.com"
+    client-fingerprint: "random"
     reality-opts:
-      public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
-      short-id: "a20d3ed244c76426"
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -106,6 +120,7 @@ proxy-groups:
     proxies:
       - "🇲🇩_1"
       - "🇲🇩_2"
+      - "🇲🇩_3"
 
 
 rules:

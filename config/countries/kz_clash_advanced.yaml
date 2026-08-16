@@ -59,49 +59,41 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇿_13"
-    type: vless
-    server: "193.124.204.145"
-    port: 49853
-    uuid: "5ed7b151-b781-4dba-800d-e3f824f1416f"
-    udp: true
   - name: "🇰🇿_14"
     type: vless
-    server: "111.88.143.139"
-    port: 51940
-    uuid: "03464802-b517-404b-b15c-7750ffc5e78f"
+    server: "5.180.52.186"
+    port: 8443
+    uuid: "7d641c2e-6897-4b9f-8a82-3f0cc8980db1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y"
-      short-id: "fd7f"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
+    servername: "magazinetut.online"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇰🇿_15"
     type: vless
-    server: "31.43.179.0"
-    port: 80
-    uuid: "fcd5a9bf-b5e2-44f2-8bc2-77ef222c7187"
+    server: "111.88.143.139"
+    port: 8443
+    uuid: "2b8c0574-ff6f-4975-8a06-e24ebefa1d1c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/m10d8k6Ny5XLimc0?ed=2560"
-      headers:
-        Host: "worker3.dawejoy4544.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0"
+      short-id: "ac4b582e"
+    flow: "xtls-rprx-vision"
   - name: "🇰🇿_16"
     type: vless
-    server: "176.100.42.200"
+    server: "176.12.73.145"
     port: 443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nordic.cendora.ru"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
       short-id: "2186a755ed67b034"
@@ -121,18 +113,30 @@ proxies:
       short-id: "2001"
   - name: "🇰🇿_18"
     type: vless
-    server: "83.222.23.81"
-    port: 38065
-    uuid: "4b9063e0-3288-44e9-9aac-80fbfce323a0"
+    server: "magazinetut.online"
+    port: 8443
+    uuid: "7d641c2e-6897-4b9f-8a82-3f0cc8980db1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
-      short-id: "fa"
+    servername: "magazinetut.online"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇰🇿_19"
+    type: vless
+    server: "176.100.42.200"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇿_20"
     type: vless
     server: "178.236.16.98"
     port: 35728
@@ -145,57 +149,36 @@ proxies:
     reality-opts:
       public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
       short-id: "69a2"
-  - name: "🇰🇿_20"
-    type: vless
-    server: "176.12.73.145"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nordic.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
-      short-id: "2186a755ed67b034"
-    flow: "xtls-rprx-vision"
   - name: "🇰🇿_21"
     type: vless
-    server: "185.176.26.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇰🇿_22"
-    type: vless
-    server: "194.76.18.2"
-    port: 8880
-    uuid: "bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "yellow-mouse-fcce.400-318.workers.dev"
-  - name: "🇰🇿_23"
-    type: vless
-    server: "111.88.143.139"
-    port: 8443
-    uuid: "2b8c0574-ff6f-4975-8a06-e24ebefa1d1c"
+    server: "kz.node.goidanet.com"
+    port: 443
+    uuid: "308cf8e0-e922-49bb-9b68-203e5aafcc97"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "kz.node.goidanet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "xXxqDpB8gQjBddOHSOFb52xVS2Odmb63z1PYhMqe0Uo"
+      short-id: "1a55b8fd25417fbf"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇰🇿_22"
+    type: vless
+    server: "83.222.23.81"
+    port: 38065
+    uuid: "4b9063e0-3288-44e9-9aac-80fbfce323a0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0"
-      short-id: "ac4b582e"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇿_24"
+      public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
+      short-id: "fa"
+  - name: "🇰🇿_23"
     type: vless
     server: "194.59.5.46"
     port: 2096
@@ -210,6 +193,42 @@ proxies:
       path: "/proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202"
       headers:
         Host: "wild-sky-f384.alvlirm3737.workers.dev"
+  - name: "🇰🇿_24"
+    type: vless
+    server: "111.88.143.139"
+    port: 51940
+    uuid: "03464802-b517-404b-b15c-7750ffc5e78f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y"
+      short-id: "fd7f"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇰🇿_25"
+    type: vless
+    server: "193.124.204.145"
+    port: 49853
+    uuid: "5ed7b151-b781-4dba-800d-e3f824f1416f"
+    udp: true
+  - name: "🇰🇿_26"
+    type: vless
+    server: "176.100.42.200"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -252,7 +271,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -264,6 +282,8 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -273,7 +293,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -285,6 +304,8 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -294,7 +315,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -306,6 +326,8 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -314,7 +336,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -326,6 +347,8 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -335,7 +358,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -347,12 +369,13 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇰🇿_13"
       - "🇰🇿_14"
       - "🇰🇿_15"
       - "🇰🇿_16"
@@ -364,6 +387,8 @@ proxy-groups:
       - "🇰🇿_22"
       - "🇰🇿_23"
       - "🇰🇿_24"
+      - "🇰🇿_25"
+      - "🇰🇿_26"
 
 rules:
   - MATCH,PROXY-BEST

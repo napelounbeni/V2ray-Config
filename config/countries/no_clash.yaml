@@ -65,33 +65,35 @@ dns:
 proxies:
   - name: "🇳🇴_1"
     type: vless
-    server: "54.240.174.40"
+    server: "31.76.5.26"
     port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
   - name: "🇳🇴_2"
     type: vless
-    server: "54.240.174.77"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    server: "31.76.5.26"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
+    servername: "auto.cendora.ru"
     client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
   - name: "🇳🇴_3"
     type: vless
-    server: "54.240.174.87"
+    server: "54.240.174.40"
     port: 443
     uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     udp: true
@@ -104,18 +106,17 @@ proxies:
       path: "/"
   - name: "🇳🇴_4"
     type: vless
-    server: "31.76.5.26"
+    server: "54.240.174.77"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nordic.cendora.ru"
+    servername: "d1yxsk0zprgivr.cloudfront.net"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
-      short-id: "2186a755ed67b034"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇳🇴_5"
     type: vless
     server: "54.240.174.44"
@@ -130,13 +131,32 @@ proxies:
     ws-opts:
       path: "/"
   - name: "🇳🇴_6"
+    type: vless
+    server: "4.235.112.49"
+    port: 2040
+    uuid: "23a13f14-7f85-4975-8aa8-6f4f21ea97ca"
+    udp: true
+  - name: "🇳🇴_7"
+    type: vless
+    server: "54.240.174.87"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇳🇴_8"
     type: ss
     server: "185.213.23.63"
     port: 990
     cipher: "chacha20-ietf-poly1305"
     password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     udp: true
-  - name: "🇳🇴_7"
+  - name: "🇳🇴_9"
     type: ss
     server: "185.213.23.63"
     port: 990
@@ -164,6 +184,8 @@ proxy-groups:
       - "🇳🇴_5"
       - "🇳🇴_6"
       - "🇳🇴_7"
+      - "🇳🇴_8"
+      - "🇳🇴_9"
 
 
 rules:

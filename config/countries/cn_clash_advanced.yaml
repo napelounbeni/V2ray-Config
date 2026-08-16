@@ -61,35 +61,11 @@ dns:
 proxies:
   - name: "🇨🇳_4"
     type: vless
-    server: "77.105.163.59"
-    port: 443
-    uuid: "7a657573-2b15-7da4-f946-ea01958fc999"
+    server: "jp.sofast.live"
+    port: 52683
+    uuid: "5aaa5259-f924-4682-a4a3-149d472a9dcc"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amz7goecubds.qiz56mebupbs.workers.dev"
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/ea01958fc999/loc-0"
-      headers:
-        Host: "amz7goecubds.qiz56mebupbs.workers.dev"
   - name: "🇨🇳_5"
-    type: vless
-    server: "77.105.163.59"
-    port: 8443
-    uuid: "7a657573-2b15-7da4-f946-ea01958fc999"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amz7goecubds.qiz56mebupbs.workers.dev"
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/ea01958fc999/loc-0"
-      headers:
-        Host: "amz7goecubds.qiz56mebupbs.workers.dev"
-  - name: "🇨🇳_6"
     type: vless
     server: "176.124.223.30"
     port: 8880
@@ -100,6 +76,12 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime38.workers.dev"
+  - name: "🇨🇳_6"
+    type: vless
+    server: "us22.sofast.live"
+    port: 58011
+    uuid: "0afc6426-606c-48e7-bd70-3c424a416842"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

@@ -65,27 +65,19 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "go.ashahan.ir"
+    port: 2036
+    uuid: "440d1fb3-7a10-4569-82c2-71602cef26c7"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "world.ashahan.ir"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime59.workers.dev"
+        Host: "world.ashahan.ir"
   - name: "🇮🇷_2"
-    type: vless
-    server: "185.143.233.238"
-    port: 2086
-    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_3"
     type: vless
     server: "185.143.234.238"
     port: 2086
@@ -96,24 +88,6 @@ proxies:
       path: "/"
       headers:
         Host: "parsi.parsi.sbs"
-  - name: "🇮🇷_4"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
-  - name: "🇮🇷_5"
-    type: ss
-    server: "e1.cover20.ir"
-    port: 51570
-    cipher: "chacha20-ietf-poly1305"
-    password: "Pqv5vBsEVUAN9CSnVESmO9GKjbcyQdvmRH0vZ7KcGnI="
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -130,9 +104,6 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
-      - "🇮🇷_3"
-      - "🇮🇷_4"
-      - "🇮🇷_5"
 
 
 rules:

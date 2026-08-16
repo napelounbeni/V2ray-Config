@@ -59,64 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇿_6"
+  - name: "🇴🇲_3"
     type: vless
-    server: "45.131.208.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
-  - name: "🇧🇿_7"
-    type: vless
-    server: "45.131.6.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇧🇿_8"
-    type: vless
-    server: "45.131.6.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    server: "omdr.whooisthebest.ir"
+    port: 33353
+    uuid: "395ee0ee-4342-472a-9d2b-40a562a0eaa1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    network: ws
-    ws-opts:
-      path: "Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇧🇿_9"
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8"
+      short-id: "ad51aa0889b8da46"
+  - name: "🇴🇲_4"
     type: vless
-    server: "45.131.210.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "38.54.116.211"
+    port: 33353
+    uuid: "395ee0ee-4342-472a-9d2b-40a562a0eaa1"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇧🇿_10"
-    type: vless
-    server: "45.131.209.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8"
+      short-id: "ad51aa0889b8da46"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -159,11 +127,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -173,11 +138,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -187,11 +149,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -200,11 +159,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -214,21 +170,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇿_6"
-      - "🇧🇿_7"
-      - "🇧🇿_8"
-      - "🇧🇿_9"
-      - "🇧🇿_10"
+      - "🇴🇲_3"
+      - "🇴🇲_4"
 
 rules:
   - MATCH,PROXY-BEST
