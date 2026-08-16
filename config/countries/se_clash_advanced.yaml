@@ -59,78 +59,92 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇪_12"
+  - name: "🇸🇪_24"
     type: vless
-    server: "129.151.198.3"
-    port: 2053
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    server: "150.241.86.150"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_25"
+    type: vless
+    server: "77.221.136.148"
+    port: 443
+    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vod.ensf.top"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/api/v1/irc"
+      headers:
+        Host: "vod.ensf.top"
+  - name: "🇸🇪_26"
+    type: vless
+    server: "193.232.178.149"
+    port: 8443
+    uuid: "bba95b1f-f48c-454b-897b-a6c6bc307df1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edge.yzkvm.top"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "forfreeuse.rtqa.ru"
-  - name: "🇸🇪_13"
+  - name: "🇸🇪_27"
     type: vless
-    server: "87.121.105.50"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "109.120.155.155"
+    port: 444
+    uuid: "c325206e-0f0c-4472-9d76-43e9b9b2ef63"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nordic.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
-      short-id: "2186a755ed67b034"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_14"
-    type: vless
-    server: "2.26.55.164"
-    port: 443
-    uuid: "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "swed4.o4ka-internet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
-      short-id: "5629431325884ff0"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_15"
-    type: vless
-    server: "31.76.3.54"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nordic.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
-      short-id: "2186a755ed67b034"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_16"
-    type: vless
-    server: "150.241.73.137"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
+    servername: "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_17"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+  - name: "🇸🇪_28"
+    type: vless
+    server: "213.176.112.136"
+    port: 5222
+    uuid: "8d955d71-ed5d-4f4c-ae68-42d120f06861"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+  - name: "🇸🇪_29"
+    type: vless
+    server: "13.249.8.3"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_30"
     type: vless
     server: "41.216.182.105"
     port: 443
@@ -145,46 +159,35 @@ proxies:
       path: "/api/v1/irc"
       headers:
         Host: "vod.ensf.top"
-  - name: "🇸🇪_18"
+  - name: "🇸🇪_31"
     type: vless
-    server: "13.249.8.21"
+    server: "2.26.101.64"
     port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
+    servername: "nordic.cendora.ru"
     client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_19"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_32"
     type: vless
-    server: "13.249.8.83"
+    server: "185.231.102.219"
     port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
+    servername: "swed1.helper-internet.com"
     client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_20"
-    type: vless
-    server: "13.249.8.3"
-    port: 443
-    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d1yxsk0zprgivr.cloudfront.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_21"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_33"
     type: vless
     server: "13.249.8.113"
     port: 443
@@ -197,7 +200,177 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇸🇪_22"
+  - name: "🇸🇪_34"
+    type: vless
+    server: "109.120.155.155"
+    port: 444
+    uuid: "99ab6748-3d57-4562-9451-843c15960b9b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+  - name: "🇸🇪_35"
+    type: vless
+    server: "13.249.8.21"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_36"
+    type: vless
+    server: "87.121.105.50"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_37"
+    type: vless
+    server: "89.22.224.146"
+    port: 43788
+    uuid: "acc10ba5-a222-44b3-8a1a-4f247ffc6466"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+  - name: "🇸🇪_38"
+    type: vless
+    server: "2.26.55.164"
+    port: 443
+    uuid: "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "swed4.o4ka-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+      short-id: "5629431325884ff0"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_39"
+    type: vless
+    server: "89.22.224.146"
+    port: 43788
+    uuid: "6fbd9bd1-ccd4-4e2f-a918-a0f871965763"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+  - name: "🇸🇪_40"
+    type: vless
+    server: "89.22.224.146"
+    port: 43788
+    uuid: "49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+  - name: "🇸🇪_41"
+    type: vless
+    server: "31.76.3.54"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_42"
+    type: vless
+    server: "150.241.73.137"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_43"
+    type: vless
+    server: "13.249.8.83"
+    port: 443
+    uuid: "7ce54bb3-d612-4aa7-be08-089d3c461d53"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d1yxsk0zprgivr.cloudfront.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_44"
+    type: vless
+    server: "150.241.72.5"
+    port: 443
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_45"
+    type: vless
+    server: "129.151.198.3"
+    port: 2053
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "forfreeuse.rtqa.ru"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "forfreeuse.rtqa.ru"
+  - name: "🇸🇪_46"
     type: trojan
     server: "77.221.138.199"
     port: 8443
@@ -252,17 +425,29 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
   - name: "LB-CDN"
     type: load-balance
@@ -272,17 +457,29 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -292,17 +489,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
   - name: "FAST-CDN"
     type: url-test
@@ -311,17 +520,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -331,33 +552,57 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
+      - "🇸🇪_24"
+      - "🇸🇪_25"
+      - "🇸🇪_26"
+      - "🇸🇪_27"
+      - "🇸🇪_28"
+      - "🇸🇪_29"
+      - "🇸🇪_30"
+      - "🇸🇪_31"
+      - "🇸🇪_32"
+      - "🇸🇪_33"
+      - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
+      - "🇸🇪_45"
+      - "🇸🇪_46"
 
 rules:
   - MATCH,PROXY-BEST

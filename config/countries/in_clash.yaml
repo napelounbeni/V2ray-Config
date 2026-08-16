@@ -65,6 +65,34 @@ dns:
 proxies:
   - name: "🇮🇳_1"
     type: vless
+    server: "217.216.79.6"
+    port: 443
+    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ind2.helper-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_2"
+    type: vless
+    server: "ind2.helper-internet.com"
+    port: 443
+    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ind2.helper-internet.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_3"
+    type: vless
     server: "5.253.42.79"
     port: 443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
@@ -72,39 +100,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "asia.cendora.ru"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU"
       short-id: "e53048e82bb20077"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_2"
-    type: vless
-    server: "4.240.110.47"
-    port: 443
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "bab-6.site"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vws/"
-      headers:
-        Host: "bab-6.site"
-  - name: "🇮🇳_3"
-    type: vless
-    server: "194.61.31.126"
-    port: 2053
-    uuid: "7f1f5848-da44-47df-8581-df83e88ee2b3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0"
-      short-id: "ae3ba555edc1ba0a"
   - name: "🇮🇳_4"
     type: vless
     server: "148.113.5.44"
@@ -121,20 +121,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_5"
     type: vless
-    server: "5.253.30.99"
-    port: 40443
-    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
-      short-id: "88b6"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_6"
-    type: vless
     server: "5.253.42.164"
     port: 40443
     uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
@@ -147,7 +133,63 @@ proxies:
       public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
       short-id: "68a8"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇳_6"
+    type: vless
+    server: "4.240.110.47"
+    port: 443
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
   - name: "🇮🇳_7"
+    type: vless
+    server: "5.253.42.79"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_8"
+    type: vless
+    server: "194.61.31.126"
+    port: 2053
+    uuid: "7f1f5848-da44-47df-8581-df83e88ee2b3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0"
+      short-id: "ae3ba555edc1ba0a"
+  - name: "🇮🇳_9"
+    type: vless
+    server: "5.253.30.99"
+    port: 40443
+    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
+      short-id: "88b6"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_10"
     type: vless
     server: "in1.levikogjgfdd.ir"
     port: 40443
@@ -156,42 +198,17 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "deepl.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
       short-id: "88b6"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_8"
-    type: trojan
-    server: "hyfuuf6.wsone.icu"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇳_9"
-    type: trojan
-    server: "34.131.228.210"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇳_10"
-    type: trojan
-    server: "v1in2.stableq.top"
-    port: 24408
-    password: "41a46e70-7537-46b4-8249-5746055fe05b"
-    sni: "v1in2.stableq.top"
-    skip-cert-verify: true
-    udp: true
   - name: "🇮🇳_11"
-    type: trojan
-    server: "v1in2.stableq.top"
-    port: 24407
-    password: "41a46e70-7537-46b4-8249-5746055fe05b"
-    sni: "v1in2.stableq.top"
-    skip-cert-verify: true
+    type: ss
+    server: "103.120.178.193"
+    port: 31348
+    cipher: "chacha20-ietf-poly1305"
+    password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
     udp: true
   - name: "🇮🇳_12"
     type: ss
@@ -201,13 +218,6 @@ proxies:
     password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
     udp: true
   - name: "🇮🇳_13"
-    type: ss
-    server: "103.120.178.193"
-    port: 31348
-    cipher: "chacha20-ietf-poly1305"
-    password: "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz"
-    udp: true
-  - name: "🇮🇳_14"
     type: ss
     server: "172.105.39.124"
     port: 7002
@@ -241,7 +251,6 @@ proxy-groups:
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
-      - "🇮🇳_14"
 
 
 rules:

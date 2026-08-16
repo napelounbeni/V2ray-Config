@@ -59,22 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_3"
+  - name: "🇮🇷_6"
     type: vless
-    server: "95.38.102.243"
-    port: 443
-    uuid: "d0f4d620-db2b-45e0-8353-a073461b1130"
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "new01.asaltabie.monster"
-    client-fingerprint: "ios"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "new01.asaltabie.monster"
-  - name: "🇮🇷_4"
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇮🇷_7"
     type: vless
     server: "185.143.233.238"
     port: 2086
@@ -85,6 +81,35 @@ proxies:
       path: "/"
       headers:
         Host: "parsi.parsi.sbs"
+  - name: "🇮🇷_8"
+    type: vless
+    server: "185.143.234.238"
+    port: 2086
+    uuid: "1ee1f28d-4975-4d7c-95c7-76172c20eed5"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "parsi.parsi.sbs"
+  - name: "🇮🇷_9"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇮🇷_10"
+    type: ss
+    server: "e1.cover20.ir"
+    port: 51570
+    cipher: "chacha20-ietf-poly1305"
+    password: "Pqv5vBsEVUAN9CSnVESmO9GKjbcyQdvmRH0vZ7KcGnI="
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -127,8 +152,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,8 +166,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,8 +180,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -159,8 +193,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -170,15 +207,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_6"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
 
 rules:
   - MATCH,PROXY-BEST

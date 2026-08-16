@@ -65,18 +65,15 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "veilix.ciphero.xyz"
-    port: 443
-    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "veilix.ciphero.xyz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
-      short-id: "33b5887524592cad"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
   - name: "🇧🇷_2"
     type: vless
     server: "200.165.225.174"
@@ -107,17 +104,10 @@ proxies:
     udp: true
   - name: "🇧🇷_5"
     type: ss
-    server: "136.248.80.6"
+    server: "163.176.56.46"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
-    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
-    udp: true
-  - name: "🇧🇷_6"
-    type: ss
-    server: "136.248.80.6"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "aT6rqN4f04fLRZCT7Dti1VhCvSaxC6C85CUsXPoJqeo="
+    password: "2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw="
     udp: true
 
 proxy-groups:
@@ -138,7 +128,6 @@ proxy-groups:
       - "🇧🇷_3"
       - "🇧🇷_4"
       - "🇧🇷_5"
-      - "🇧🇷_6"
 
 
 rules:
