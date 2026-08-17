@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
+    server: "31.76.69.40"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_2"
+    type: vless
     server: "152.53.114.186"
     port: 443
     uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
@@ -77,18 +91,22 @@ proxies:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_2"
+  - name: "🇦🇹_3"
     type: vless
-    server: "212.183.88.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "152.53.65.148"
+    port: 443
+    uuid: "6705ddbd-04cf-40f6-99b9-36846b08c2a9"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kjgdksgghre466.pages.dev"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/?ed=2560"
+      path: "/"
       headers:
-        Host: "vms.lifetime23.workers.dev"
-  - name: "🇦🇹_3"
+        Host: "kjgdksgghre466.pages.dev"
+  - name: "🇦🇹_4"
     type: vless
     server: "31.76.69.40"
     port: 443
@@ -102,21 +120,21 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_4"
+  - name: "🇦🇹_5"
     type: vless
-    server: "31.76.69.40"
-    port: 13443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "as.tunnelx.space"
+    port: 443
+    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auto.cendora.ru"
+    servername: "as.tunnelx.space"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
+      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
+      short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_5"
+  - name: "🇦🇹_6"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -148,6 +166,7 @@ proxy-groups:
       - "🇦🇹_3"
       - "🇦🇹_4"
       - "🇦🇹_5"
+      - "🇦🇹_6"
 
 
 rules:

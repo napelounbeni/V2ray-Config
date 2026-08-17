@@ -59,46 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇸_17"
+  - name: "🇪🇸_12"
     type: vless
-    server: "185.18.250.245"
+    server: "85.90.217.42"
     port: 443
-    uuid: "f77299ea-e13d-417d-8cdc-ce5566dfc94b"
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "edu.ruangguru.com.r3xxe.eu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/nl-tw"
-      headers:
-        Host: "edu.ruangguru.com.r3xxe.eu.cc"
-  - name: "🇪🇸_18"
+    servername: "85.90.217.42"
+  - name: "🇪🇸_13"
     type: vless
-    server: "193.238.154.78"
-    port: 443
-    uuid: "7ee30a40-d636-44a2-8317-c5ec2b938059"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless"
-  - name: "🇪🇸_19"
-    type: vless
-    server: "185.18.250.252"
-    port: 443
-    uuid: "f77299ea-e13d-417d-8cdc-ce5566dfc94b"
+    server: "212.227.235.66"
+    port: 2053
+    uuid: "855d82bc-8cc6-4037-8da5-df0412f3c063"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "edu.ruangguru.com.r3xxe.eu.cc"
+    servername: "www.apple.com"
+    reality-opts:
+      public-key: "6huZliKELOkP6l-eOIFe7PKP5MCGK2p5KzUeXRiMi00"
+      short-id: "13e0569248e98a05"
+  - name: "🇪🇸_14"
+    type: vless
+    server: "45.147.251.25"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-west.cendora.ru"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/nl-tw"
-      headers:
-        Host: "edu.ruangguru.com.r3xxe.eu.cc"
-  - name: "🇪🇸_20"
+    reality-opts:
+      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
+      short-id: "dd3ff38418d29d22"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_15"
     type: vless
     server: "87.76.179.75"
     port: 443
@@ -112,41 +108,7 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_21"
-    type: vless
-    server: "85.90.217.42"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "85.90.217.42"
-  - name: "🇪🇸_22"
-    type: vless
-    server: "45.147.251.25"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-west.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
-      short-id: "dd3ff38418d29d22"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_23"
-    type: vless
-    server: "185.18.250.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime47.workers.dev"
-  - name: "🇪🇸_24"
+  - name: "🇪🇸_16"
     type: vless
     server: "spain3.helper-internet.com"
     port: 443
@@ -160,44 +122,7 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_25"
-    type: vless
-    server: "212.227.235.66"
-    port: 2053
-    uuid: "855d82bc-8cc6-4037-8da5-df0412f3c063"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "6huZliKELOkP6l-eOIFe7PKP5MCGK2p5KzUeXRiMi00"
-      short-id: "13e0569248e98a05"
-  - name: "🇪🇸_26"
-    type: vless
-    server: "185.18.250.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime47.workers.dev"
-  - name: "🇪🇸_27"
-    type: trojan
-    server: "185.18.250.252"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_28"
+  - name: "🇪🇸_17"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -210,33 +135,46 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_29"
-    type: ss
-    server: "108.181.121.226"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "WSyL4XTwNsdv"
+  - name: "🇪🇸_18"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
     udp: true
-  - name: "🇪🇸_30"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_19"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_31"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_32"
+  - name: "🇪🇸_20"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_21"
+    type: ss
+    server: "108.181.121.226"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_22"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
     udp: true
 
 proxy-groups:
@@ -280,22 +218,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
   - name: "LB-CDN"
     type: load-balance
@@ -305,22 +238,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -330,22 +258,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
   - name: "FAST-CDN"
     type: url-test
@@ -354,22 +277,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -379,43 +297,33 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇸_12"
+      - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
       - "🇪🇸_21"
       - "🇪🇸_22"
-      - "🇪🇸_23"
-      - "🇪🇸_24"
-      - "🇪🇸_25"
-      - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
-      - "🇪🇸_31"
-      - "🇪🇸_32"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,47 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇳_4"
+  - name: "🇸🇰_2"
     type: vless
-    server: "77.105.163.59"
+    server: "185.112.249.201"
     port: 8443
-    uuid: "7a657573-2b15-7da4-f946-ea01958fc999"
+    uuid: "9b18ccef-b9e0-41d1-8990-9d970569e142"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "amz7goecubds.qiz56mebupbs.workers.dev"
-    client-fingerprint: "ios"
+    servername: "web-socket.tgdaosheng.ggff.net"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/stream/PANEL_ZEUS/ea01958fc999/loc-0"
+      path: "/proxyip=bpb.yousef.isegaro.com"
       headers:
-        Host: "amz7goecubds.qiz56mebupbs.workers.dev"
-  - name: "🇨🇳_5"
-    type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇨🇳_6"
-    type: vless
-    server: "77.105.163.59"
-    port: 443
-    uuid: "7a657573-2b15-7da4-f946-ea01958fc999"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amz7goecubds.qiz56mebupbs.workers.dev"
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/ea01958fc999/loc-0"
-      headers:
-        Host: "amz7goecubds.qiz56mebupbs.workers.dev"
+        Host: "web-socket.tgdaosheng.ggff.net"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -142,9 +116,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -154,9 +126,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -166,9 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -177,9 +145,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -189,17 +155,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇸🇰_2"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,54 +65,29 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "veilix.ciphero.xyz"
-    port: 443
-    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "veilix.ciphero.xyz"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
-      short-id: "33b5887524592cad"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_2"
-    type: vless
-    server: "200.165.225.174"
-    port: 443
-    uuid: "b6b92515-13c5-4e6e-9fea-8db2d44628a0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "veilix.ciphero.xyz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4"
-      short-id: "33b5887524592cad"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_3"
-    type: vless
     server: "cave.magazinetut.online"
     port: 443
-    uuid: "0000e293-996d-4c32-99dc-29a8aba80d06"
+    uuid: "a78d6a0b-8751-4e8e-bafa-79a86c5a5fc7"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "cave.magazinetut.online"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇷_4"
-    type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇧🇷_2"
+    type: ss
+    server: "163.176.0.233"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "cHNKqJizxPY1NPZKCwQrCdfZ5GzQ1XAJCrrocG47KDI="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
+  - name: "🇧🇷_3"
+    type: ss
+    server: "129.159.55.129"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -130,7 +105,6 @@ proxy-groups:
       - "🇧🇷_1"
       - "🇧🇷_2"
       - "🇧🇷_3"
-      - "🇧🇷_4"
 
 
 rules:
