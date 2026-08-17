@@ -65,6 +65,31 @@ dns:
 proxies:
   - name: "🇨🇭_1"
     type: vless
+    server: "193.151.108.186"
+    port: 443
+    uuid: "c245122a-f149-4e32-8eaa-e875e88a5ab6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shop.magazinetut.online"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_2"
+    type: vless
+    server: "31.76.4.103"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_3"
+    type: vless
     server: "45.143.200.245"
     port: 443
     uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
@@ -78,34 +103,6 @@ proxies:
       path: "/api/v1/irc"
       headers:
         Host: "vod.ensf.top"
-  - name: "🇨🇭_2"
-    type: vless
-    server: "45.85.93.92"
-    port: 443
-    uuid: "89281585-8bde-4ef2-8807-96c603281ef8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free.ch1.laodavip.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
-      short-id: "f5420efbe305d354"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_3"
-    type: vless
-    server: "45.90.56.231"
-    port: 443
-    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
-      short-id: "e2e66f4537770cef"
-    flow: "xtls-rprx-vision"
   - name: "🇨🇭_4"
     type: vless
     server: "178.83.226.55"
@@ -121,31 +118,33 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_5"
     type: vless
-    server: "83.228.242.53"
+    server: "176.65.144.248"
     port: 443
-    uuid: "805e7df0-139b-4be2-a736-cab10eb4cce0"
+    uuid: "62a08ea5-0564-47b4-a92c-25be07ad6358"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ch2kto.pidoras-dns.xyz"
+    servername: "360.yandex.ru"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "5If1QVt0r8CM8KuKE2LfhILVdGgvawAFhE0iHInKrTM"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+      public-key: "ne8wv6o6AYcQoVvz30PiTjSxviGa3_Kw5ClIEDdg-3A"
+      short-id: "6ba85179e30d4fc2"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "🇨🇭_6"
     type: vless
-    server: "free.ch1.laodavip.com"
+    server: "45.90.56.231"
     port: 443
-    uuid: "2f3a2a4d-ca46-4012-a472-b559d379ad0a"
+    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "free.ch1.laodavip.com"
-    client-fingerprint: "chrome"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k"
-      short-id: "f5420efbe305d354"
+      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
+      short-id: "e2e66f4537770cef"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_7"
     type: vless
@@ -160,33 +159,15 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_8"
     type: vless
-    server: "31.76.4.103"
+    server: "shop.magazinetut.online"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "c245122a-f149-4e32-8eaa-e875e88a5ab6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_9"
-    type: vless
-    server: "194.147.173.116"
-    port: 443
-    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vod.ensf.top"
+    servername: "shop.magazinetut.online"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/api/v1/irc"
-      headers:
-        Host: "vod.ensf.top"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -209,7 +190,6 @@ proxy-groups:
       - "🇨🇭_6"
       - "🇨🇭_7"
       - "🇨🇭_8"
-      - "🇨🇭_9"
 
 
 rules:

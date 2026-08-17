@@ -59,7 +59,35 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇱_4"
+  - name: "🇦🇱_8"
+    type: vless
+    server: "nl6.unlockvpn.online"
+    port: 443
+    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
+      short-id: "7bcfc0bc"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_9"
+    type: vless
+    server: "78.159.131.235"
+    port: 443
+    uuid: "1da18def-6804-44c8-bb6d-83cff995f567"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
+      short-id: "7bcfc0bc"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_10"
     type: vless
     server: "91.239.6.45"
     port: 443
@@ -73,7 +101,21 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_5"
+  - name: "🇦🇱_11"
+    type: vless
+    server: "alban5.helper-internet.com"
+    port: 443
+    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "alban5.helper-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_12"
     type: vless
     server: "130.49.189.41"
     port: 443
@@ -87,7 +129,21 @@ proxies:
       public-key: "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs"
       short-id: "4fa44664f6a566d3"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_6"
+  - name: "🇦🇱_13"
+    type: vless
+    server: "nl6.unlockvpn.online"
+    port: 443
+    uuid: "1da18def-6804-44c8-bb6d-83cff995f567"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
+      short-id: "7bcfc0bc"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_14"
     type: ss
     server: "130.49.189.158"
     port: 10792
@@ -136,9 +192,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -148,9 +208,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -160,9 +224,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -171,9 +239,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -183,17 +255,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇱_4"
-      - "🇦🇱_5"
-      - "🇦🇱_6"
+      - "🇦🇱_8"
+      - "🇦🇱_9"
+      - "🇦🇱_10"
+      - "🇦🇱_11"
+      - "🇦🇱_12"
+      - "🇦🇱_13"
+      - "🇦🇱_14"
 
 rules:
   - MATCH,PROXY-BEST

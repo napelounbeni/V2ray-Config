@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
+    server: "188.127.247.129"
+    port: 443
+    uuid: "33aa2b47-484b-49f6-8f23-fb34602d221f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4"
+      short-id: "0c"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_2"
+    type: vless
     server: "103.119.19.208"
     port: 443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
@@ -72,11 +86,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "eu-central.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_2"
+  - name: "🇨🇿_3"
     type: vless
     server: "78.159.247.253"
     port: 2027
@@ -85,12 +100,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
       short-id: "dc8109baf0f607ea"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_3"
+  - name: "🇨🇿_4"
     type: vless
     server: "5.39.202.65"
     port: 443
@@ -104,7 +119,7 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_5"
     type: vless
     server: "cz.helper-internet.com"
     port: 443
@@ -118,21 +133,22 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_5"
+  - name: "🇨🇿_6"
     type: vless
-    server: "188.127.247.129"
+    server: "195.85.23.120"
     port: 443
-    uuid: "33aa2b47-484b-49f6-8f23-fb34602d221f"
+    uuid: "50414e45-4c5f-5a45-5553-fc68f701cca5"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4"
-      short-id: "0c"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_6"
+    servername: "lwzw2revus0s.bikhabi.workers.dev"
+    client-fingerprint: "unsafe"
+    network: ws
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/fc68f701cca5/loc-4"
+      headers:
+        Host: "lwzw2revus0s.bikhabi.workers.dev"
+  - name: "🇨🇿_7"
     type: trojan
     server: "178.208.75.155"
     port: 8443
@@ -143,7 +159,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇨🇿_7"
+  - name: "🇨🇿_8"
     type: trojan
     server: "178.208.75.155"
     port: 2053
@@ -177,6 +193,7 @@ proxy-groups:
       - "🇨🇿_5"
       - "🇨🇿_6"
       - "🇨🇿_7"
+      - "🇨🇿_8"
 
 
 rules:
