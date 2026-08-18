@@ -63,36 +63,52 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇧🇪_1"
+  - name: "🇨🇾_1"
     type: vless
-    server: "35.210.99.51"
+    server: "154.92.9.10"
     port: 443
-    uuid: "6705ddbd-04cf-40f6-99b9-36846b08c2a9"
+    uuid: "05000d14-abf6-45e0-b51a-16469cdea06a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "kjgdksgghre466.pages.dev"
+    servername: "feijige.rujiao.icu"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "kjgdksgghre466.pages.dev"
-  - name: "🇧🇪_2"
+  - name: "🇨🇾_2"
     type: vless
-    server: "194.71.227.213"
-    port: 443
-    uuid: "6705ddbd-04cf-40f6-99b9-36846b08c2a9"
+    server: "195.85.59.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kjgdksgghre466.pages.dev"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "kjgdksgghre466.pages.dev"
+        Host: "vms.lifetime58.workers.dev"
+  - name: "🇨🇾_3"
+    type: vless
+    server: "195.85.59.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime58.workers.dev"
+  - name: "🇨🇾_4"
+    type: vless
+    server: "77.75.199.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -107,8 +123,10 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇧🇪_1"
-      - "🇧🇪_2"
+      - "🇨🇾_1"
+      - "🇨🇾_2"
+      - "🇨🇾_3"
+      - "🇨🇾_4"
 
 
 rules:

@@ -65,6 +65,29 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
+    server: "201.24.49.62"
+    port: 1
+    uuid: "fa4babae-cea3-49b1-9d6f-342495a46ea9"
+    udp: true
+  - name: "🇧🇷_2"
+    type: vless
+    server: "201.24.49.62"
+    port: 3
+    uuid: "fa4babae-cea3-49b1-9d6f-342495a46ea9"
+    udp: true
+  - name: "🇧🇷_3"
+    type: vless
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
+  - name: "🇧🇷_4"
+    type: vless
     server: "cave.magazinetut.online"
     port: 443
     uuid: "a78d6a0b-8751-4e8e-bafa-79a86c5a5fc7"
@@ -74,19 +97,26 @@ proxies:
     servername: "cave.magazinetut.online"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇷_2"
-    type: ss
-    server: "163.176.0.233"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "cHNKqJizxPY1NPZKCwQrCdfZ5GzQ1XAJCrrocG47KDI="
-    udp: true
-  - name: "🇧🇷_3"
+  - name: "🇧🇷_5"
     type: ss
     server: "129.159.55.129"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
     password: "e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4="
+    udp: true
+  - name: "🇧🇷_6"
+    type: ss
+    server: "129.159.55.129"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4="
+    udp: true
+  - name: "🇧🇷_7"
+    type: ss
+    server: "163.176.0.233"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "cHNKqJizxPY1NPZKCwQrCdfZ5GzQ1XAJCrrocG47KDI="
     udp: true
 
 proxy-groups:
@@ -105,6 +135,10 @@ proxy-groups:
       - "🇧🇷_1"
       - "🇧🇷_2"
       - "🇧🇷_3"
+      - "🇧🇷_4"
+      - "🇧🇷_5"
+      - "🇧🇷_6"
+      - "🇧🇷_7"
 
 
 rules:

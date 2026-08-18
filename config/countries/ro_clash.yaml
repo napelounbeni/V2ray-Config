@@ -72,7 +72,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "1xxZM10W-A8nuj6MOXFd1kA9lS7bEy-5SO5j-jrd_Cg"
       short-id: "b70076439f4a1340"
@@ -88,44 +88,15 @@ proxies:
       path: "/host"
       host: "www.filimo.com"
   - name: "🇷🇴_3"
-    type: vless
-    server: "80.96.112.250"
-    port: 443
-    uuid: "670decfe-68cc-499e-8cb1-22b39c20acbb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "roman3.helper-internet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇴_4"
-    type: vless
-    server: "85.90.196.38"
-    port: 443
-    uuid: "6705ddbd-04cf-40f6-99b9-36846b08c2a9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kjgdksgghre466.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "kjgdksgghre466.pages.dev"
-  - name: "🇷🇴_5"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_6"
+  - name: "🇷🇴_4"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -148,8 +119,6 @@ proxy-groups:
       - "🇷🇴_2"
       - "🇷🇴_3"
       - "🇷🇴_4"
-      - "🇷🇴_5"
-      - "🇷🇴_6"
 
 
 rules:

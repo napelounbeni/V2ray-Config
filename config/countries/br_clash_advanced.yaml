@@ -59,7 +59,30 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_4"
+  - name: "🇧🇷_8"
+    type: vless
+    server: "201.24.49.62"
+    port: 1
+    uuid: "fa4babae-cea3-49b1-9d6f-342495a46ea9"
+    udp: true
+  - name: "🇧🇷_9"
+    type: vless
+    server: "201.24.49.62"
+    port: 3
+    uuid: "fa4babae-cea3-49b1-9d6f-342495a46ea9"
+    udp: true
+  - name: "🇧🇷_10"
+    type: vless
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
+  - name: "🇧🇷_11"
     type: vless
     server: "cave.magazinetut.online"
     port: 443
@@ -70,19 +93,26 @@ proxies:
     servername: "cave.magazinetut.online"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇷_5"
-    type: ss
-    server: "163.176.0.233"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "cHNKqJizxPY1NPZKCwQrCdfZ5GzQ1XAJCrrocG47KDI="
-    udp: true
-  - name: "🇧🇷_6"
+  - name: "🇧🇷_12"
     type: ss
     server: "129.159.55.129"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
     password: "e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4="
+    udp: true
+  - name: "🇧🇷_13"
+    type: ss
+    server: "129.159.55.129"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "e7n6+Uknur6uXiP4zuJYN+n6KACAX9+s17J3MLnzNB4="
+    udp: true
+  - name: "🇧🇷_14"
+    type: ss
+    server: "163.176.0.233"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "cHNKqJizxPY1NPZKCwQrCdfZ5GzQ1XAJCrrocG47KDI="
     udp: true
 
 proxy-groups:
@@ -126,9 +156,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,9 +172,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,9 +188,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,9 +203,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -173,17 +219,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇷_4"
-      - "🇧🇷_5"
-      - "🇧🇷_6"
+      - "🇧🇷_8"
+      - "🇧🇷_9"
+      - "🇧🇷_10"
+      - "🇧🇷_11"
+      - "🇧🇷_12"
+      - "🇧🇷_13"
+      - "🇧🇷_14"
 
 rules:
   - MATCH,PROXY-BEST

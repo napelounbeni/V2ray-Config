@@ -59,52 +59,28 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_5"
+  - name: "🇮🇷_3"
     type: vless
-    server: "pichi.picmusic.ir"
-    port: 15882
-    uuid: "fe28f746-6051-481c-801c-1d153ebc5995"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "arxiv.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "gZT_3S5MB7JX7lYznOoo9CgMXpJtwEy7ChVtybbUjz4"
-      short-id: "f378eb2f"
-  - name: "🇮🇷_6"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "worker3.gigak25604.workers.dev"
+  - name: "🇮🇷_4"
     type: vless
-    server: "94.182.134.139"
-    port: 15882
-    uuid: "88de9f34-576c-472e-bc11-2b1f63ef19e5"
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "arxiv.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gZT_3S5MB7JX7lYznOoo9CgMXpJtwEy7ChVtybbUjz4"
-      short-id: "f378eb2f"
-  - name: "🇮🇷_7"
-    type: vless
-    server: "pichi.picmusic.ir"
-    port: 15882
-    uuid: "88de9f34-576c-472e-bc11-2b1f63ef19e5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "arxiv.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "gZT_3S5MB7JX7lYznOoo9CgMXpJtwEy7ChVtybbUjz4"
-      short-id: "f378eb2f"
-  - name: "🇮🇷_8"
-    type: ss
-    server: "v1.penubit.ir"
-    port: 2086
-    cipher: "chacha20-ietf-poly1305"
-    password: "_YhLB-jwkBpl7AA_c29LhcWzdbmedx_S"
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -147,10 +123,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -160,10 +134,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -173,10 +145,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -185,10 +155,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -198,19 +166,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_5"
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
 rules:
   - MATCH,PROXY-BEST
