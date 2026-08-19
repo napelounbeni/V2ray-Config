@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇭_4"
+  - name: "🇵🇭_3"
     type: vless
     server: "66.253.10.22"
     port: 443
@@ -73,21 +73,7 @@ proxies:
       public-key: "zVJVCkcnyPjMZvx-GMQnnbkEgNiws80sppKB6A0uqBY"
       short-id: "83dee8596e65d99e"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇭_5"
-    type: vless
-    server: "sk1i-il4mxi.sparkra.top"
-    port: 443
-    uuid: "907a940c-bad0-4356-a280-7dec12f1479e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "zVJVCkcnyPjMZvx-GMQnnbkEgNiws80sppKB6A0uqBY"
-      short-id: "83dee8596e65d99e"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇭_6"
+  - name: "🇵🇭_4"
     type: ss
     server: "38.54.80.160"
     port: 16292
@@ -136,9 +122,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -148,9 +133,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -160,9 +144,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -171,9 +154,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -183,17 +165,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇵🇭_3"
       - "🇵🇭_4"
-      - "🇵🇭_5"
-      - "🇵🇭_6"
 
 rules:
   - MATCH,PROXY-BEST

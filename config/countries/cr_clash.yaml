@@ -63,31 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇾_1"
+  - name: "🇨🇷_1"
     type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime58.workers.dev"
-  - name: "🇨🇾_2"
-    type: vless
-    server: "195.85.59.55"
+    server: "190.93.245.7"
     port: 8443
-    uuid: "7a657573-2b15-7da4-f946-ea01958fc999"
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "amz7goecubds.qiz56mebupbs.workers.dev"
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/stream/PANEL_ZEUS/ea01958fc999/loc-0"
+      path: "/dula?Telegram-WangCai2"
       headers:
-        Host: "amz7goecubds.qiz56mebupbs.workers.dev"
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -102,8 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇾_1"
-      - "🇨🇾_2"
+      - "🇨🇷_1"
 
 
 rules:

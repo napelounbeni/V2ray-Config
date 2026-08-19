@@ -59,20 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_7"
+  - name: "🇱🇹_5"
     type: vless
-    server: "185.237.185.182"
-    port: 2053
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    server: "84.32.209.7"
+    port: 443
+    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇹_8"
+    servername: "dartsearch-cn.net"
+    reality-opts:
+      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_6"
     type: vless
     server: "31.76.83.114"
     port: 443
@@ -86,50 +86,22 @@ proxies:
       public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
       short-id: "4a46213c935e2ee4"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_9"
+  - name: "🇱🇹_7"
     type: vless
-    server: "144.31.243.148"
-    port: 443
-    uuid: "9e1d737e-f3c1-4757-84b2-3dcf66a468ed"
+    server: "185.237.185.182"
+    port: 2053
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "3wa3ZmMniymkL-58bPtY7baWPxdJ6n2UaJMG7YiLiGo"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_10"
-    type: vless
-    server: "88.216.69.144"
-    port: 443
-    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-    client-fingerprint: "ios"
+    servername: "forfreeuse.rtqa.ru"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
+      path: "/"
       headers:
-        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-  - name: "🇱🇹_11"
-    type: vless
-    server: "84.32.209.7"
-    port: 443
-    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dartsearch-cn.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_12"
+        Host: "forfreeuse.rtqa.ru"
+  - name: "🇱🇹_8"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -184,12 +156,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -199,12 +169,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -214,12 +182,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -228,12 +194,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -243,23 +207,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇹_5"
+      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
-      - "🇱🇹_9"
-      - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
 
 rules:
   - MATCH,PROXY-BEST

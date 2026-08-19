@@ -59,19 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇪_3"
-    type: vless
-    server: "113.30.152.6"
-    port: 443
-    uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "be2.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇧🇪_4"
     type: vless
     server: "79.127.224.183"
@@ -86,6 +73,32 @@ proxies:
       public-key: "rwR7H9XhX1w-LjcPCZiDnzV_sUUyJRSJvGYhIYHmS3E"
       short-id: "28bf2d7deea465ff"
     flow: "xtls-rprx-vision"
+  - name: "🇧🇪_5"
+    type: vless
+    server: "0u1b-m23jqv.jumpnest.top"
+    port: 443
+    uuid: "4b7a69d9-74cd-4ab2-bfb3-1d2093e8179f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "rwR7H9XhX1w-LjcPCZiDnzV_sUUyJRSJvGYhIYHmS3E"
+      short-id: "28bf2d7deea465ff"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇪_6"
+    type: vless
+    server: "113.30.152.6"
+    port: 443
+    uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "be2.wba-pn.ru"
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -128,8 +141,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +153,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +165,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +176,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +188,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇪_3"
       - "🇧🇪_4"
+      - "🇧🇪_5"
+      - "🇧🇪_6"
 
 rules:
   - MATCH,PROXY-BEST

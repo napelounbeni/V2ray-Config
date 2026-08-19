@@ -65,34 +65,34 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "23.251.55.216"
-    port: 443
-    uuid: "c396fa08-e07a-459b-b894-389456fd6a82"
+    server: "177.3.213.91"
+    port: 8443
+    uuid: "34ff7ad1-b9d6-42e3-b41d-ce4fefc6090c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.amazon.com"
+    servername: "b2.cryptoofarm.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
-      short-id: "9ea177c3c147119b"
+      public-key: "K28I3JdleSg0t7keUUZrS1CgtyC37WA32ViMkSXywHw"
+      short-id: "0c22c11e7224"
     flow: "xtls-rprx-vision"
   - name: "🇧🇷_2"
     type: vless
-    server: "38.180.220.203"
-    port: 443
-    uuid: "a78d6a0b-8751-4e8e-bafa-79a86c5a5fc7"
+    server: "201.24.49.69"
+    port: 4100
+    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cave.magazinetut.online"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇧🇷_3"
     type: vless
-    server: "177.3.213.91"
+    server: "b2.cryptoofarm.com"
     port: 8443
-    uuid: "16ab4d4a-fd81-4535-9b7b-346677226ce8"
+    uuid: "bded43d3-fdad-44eb-a1fb-f3fe86d3550d"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -104,15 +104,18 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇧🇷_4"
     type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "177.3.213.91"
+    port: 8443
+    uuid: "bded43d3-fdad-44eb-a1fb-f3fe86d3550d"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "b2.cryptoofarm.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "K28I3JdleSg0t7keUUZrS1CgtyC37WA32ViMkSXywHw"
+      short-id: "0c22c11e7224"
+    flow: "xtls-rprx-vision"
   - name: "🇧🇷_5"
     type: vless
     server: "23.251.56.78"
@@ -129,42 +132,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇧🇷_6"
     type: vless
-    server: "u234-6njjdk.startora.top"
-    port: 443
-    uuid: "c396fa08-e07a-459b-b894-389456fd6a82"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
-      short-id: "9ea177c3c147119b"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_7"
-    type: vless
-    server: "201.24.49.233"
-    port: 4100
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_8"
-    type: vless
-    server: "38.180.220.203"
-    port: 443
-    uuid: "0000e293-996d-4c32-99dc-29a8aba80d06"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cave.magazinetut.online"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_9"
-    type: vless
     server: "201.24.49.233"
     port: 2200
     uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
@@ -174,30 +141,26 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇧🇷_10"
+  - name: "🇧🇷_7"
     type: vless
-    server: "201.24.49.120"
-    port: 4100
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    server: "23.251.55.216"
+    port: 443
+    uuid: "c396fa08-e07a-459b-b894-389456fd6a82"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_11"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
+      short-id: "9ea177c3c147119b"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_8"
     type: ss
-    server: "147.15.6.172"
+    server: "137.131.249.25"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
-    password: "Yy1Ouk4gNwSCTm1DNEPDlYs6jvInJJgUcRCWpBEVqa8="
-    udp: true
-  - name: "🇧🇷_12"
-    type: ss
-    server: "137.131.241.250"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "57nc7s1vl4rn29kGTk/O1Jr4uirGMxlyXCym0tcPx7s="
+    password: "4cuK1uo09SOhjsm02WOLQY1i4uozWLuipTgFW6s0N1c="
     udp: true
 
 proxy-groups:
@@ -221,10 +184,6 @@ proxy-groups:
       - "🇧🇷_6"
       - "🇧🇷_7"
       - "🇧🇷_8"
-      - "🇧🇷_9"
-      - "🇧🇷_10"
-      - "🇧🇷_11"
-      - "🇧🇷_12"
 
 
 rules:
