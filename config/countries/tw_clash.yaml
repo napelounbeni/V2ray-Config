@@ -65,27 +65,6 @@ dns:
 proxies:
   - name: "🇹🇼_1"
     type: vless
-    server: "60.248.219.52"
-    port: 443
-    uuid: "f265b49a-70a3-407a-b17b-e45dfb9f255c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_2"
-    type: vless
-    server: "220.130.75.248"
-    port: 10000
-    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
-    udp: true
-  - name: "🇹🇼_3"
-    type: vless
     server: "45.121.50.241"
     port: 50159
     uuid: "47a97b7f-044d-43d6-86b0-8b256873d1b5"
@@ -98,20 +77,7 @@ proxies:
       public-key: "E9gCs_C_mSDcHmlCZSMk1kSXpmua48DhgsT_aDpZ1WE"
       short-id: "4c3f80051030ba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇼_4"
-    type: vless
-    server: "35.187.156.27"
-    port: 443
-    uuid: "b8ca2900-3ed7-4b58-970e-060d0a6cbf99"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "HsoG0C19O-NY_EcFpK0ybZv9lFol0MjDJLzjDzWAGXs"
-      short-id: "d79d3dc3816c329d"
-  - name: "🇹🇼_5"
+  - name: "🇹🇼_2"
     type: vless
     server: "60.248.219.78"
     port: 443
@@ -125,12 +91,48 @@ proxies:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       headers:
         Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_6"
+  - name: "🇹🇼_3"
+    type: vless
+    server: "60.248.219.52"
+    port: 443
+    uuid: "f265b49a-70a3-407a-b17b-e45dfb9f255c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_4"
     type: vless
     server: "220.130.75.247"
     port: 10000
     uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
     udp: true
+  - name: "🇹🇼_5"
+    type: vless
+    server: "220.130.75.248"
+    port: 10000
+    uuid: "431fe973-a43a-4fac-bf83-2a772e0d0625"
+    udp: true
+  - name: "🇹🇼_6"
+    type: vless
+    server: "60.248.219.53"
+    port: 443
+    uuid: "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
   - name: "🇹🇼_7"
     type: vless
     server: "59.125.69.19"
@@ -146,6 +148,19 @@ proxies:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       headers:
         Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_8"
+    type: vless
+    server: "35.187.156.27"
+    port: 443
+    uuid: "b8ca2900-3ed7-4b58-970e-060d0a6cbf99"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "HsoG0C19O-NY_EcFpK0ybZv9lFol0MjDJLzjDzWAGXs"
+      short-id: "d79d3dc3816c329d"
 
 proxy-groups:
   - name: "PROXY"
@@ -167,6 +182,7 @@ proxy-groups:
       - "🇹🇼_5"
       - "🇹🇼_6"
       - "🇹🇼_7"
+      - "🇹🇼_8"
 
 
 rules:
