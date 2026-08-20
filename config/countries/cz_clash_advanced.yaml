@@ -59,35 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_7"
-    type: vless
-    server: "103.119.19.208"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_8"
-    type: vless
-    server: "78.159.247.253"
-    port: 2027
-    uuid: "851ed0d8-a37b-452d-8ef2-5b6c2d28a060"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
-      short-id: "dc8109baf0f607ea"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_9"
+  - name: "🇨🇿_5"
     type: vless
     server: "188.127.247.129"
     port: 443
@@ -101,21 +73,21 @@ proxies:
       public-key: "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4"
       short-id: "0c"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_10"
+  - name: "🇨🇿_6"
     type: vless
-    server: "188.130.208.141"
-    port: 13443
-    uuid: "b80b392c-0cf4-42f9-ae54-9f862e3ba276"
+    server: "78.159.247.253"
+    port: 2027
+    uuid: "851ed0d8-a37b-452d-8ef2-5b6c2d28a060"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auto.cendora.ru"
+    servername: "storage.yandex.net"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
+      public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
+      short-id: "8d3293f0066e129a"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_11"
+  - name: "🇨🇿_7"
     type: trojan
     server: "178.208.75.155"
     port: 8443
@@ -126,7 +98,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇨🇿_12"
+  - name: "🇨🇿_8"
     type: trojan
     server: "178.208.75.155"
     port: 2053
@@ -181,12 +153,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -196,12 +166,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -211,12 +179,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -225,12 +191,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -240,23 +204,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇿_5"
+      - "🇨🇿_6"
       - "🇨🇿_7"
       - "🇨🇿_8"
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
 
 rules:
   - MATCH,PROXY-BEST

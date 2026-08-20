@@ -86,26 +86,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "as.tunnelx.space"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_3"
-    type: vless
-    server: "31.76.69.40"
-    port: 13443
-    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_4"
     type: vless
     server: "31.76.69.40"
     port: 443
@@ -119,7 +105,7 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_5"
+  - name: "🇦🇹_4"
     type: vless
     server: "as.tunnelx.space"
     port: 443
@@ -133,21 +119,21 @@ proxies:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_6"
+  - name: "🇦🇹_5"
     type: vless
-    server: "149.33.10.41"
-    port: 48905
-    uuid: "af66c5aa-5500-42d2-a59c-89124532b351"
+    server: "31.76.69.40"
+    port: 13443
+    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.radeon.com"
-    client-fingerprint: "firefox"
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY"
-      short-id: ""
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_7"
+  - name: "🇦🇹_6"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -180,7 +166,6 @@ proxy-groups:
       - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
 
 
 rules:

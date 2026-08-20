@@ -65,17 +65,17 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
-    server: "103.119.19.208"
+    server: "188.127.247.129"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "33aa2b47-484b-49f6-8f23-fb34602d221f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
+    servername: "yahoo.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
+      public-key: "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4"
+      short-id: "0c"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_2"
     type: vless
@@ -89,37 +89,9 @@ proxies:
     client-fingerprint: "firefox"
     reality-opts:
       public-key: "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo"
-      short-id: "dc8109baf0f607ea"
+      short-id: "8d3293f0066e129a"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_3"
-    type: vless
-    server: "188.127.247.129"
-    port: 443
-    uuid: "33aa2b47-484b-49f6-8f23-fb34602d221f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4"
-      short-id: "0c"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_4"
-    type: vless
-    server: "188.130.208.141"
-    port: 13443
-    uuid: "b80b392c-0cf4-42f9-ae54-9f862e3ba276"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_5"
     type: trojan
     server: "178.208.75.155"
     port: 8443
@@ -130,7 +102,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇨🇿_6"
+  - name: "🇨🇿_4"
     type: trojan
     server: "178.208.75.155"
     port: 2053
@@ -161,8 +133,6 @@ proxy-groups:
       - "🇨🇿_2"
       - "🇨🇿_3"
       - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
 
 
 rules:

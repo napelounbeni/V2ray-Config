@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_4"
+  - name: "🇧🇬_5"
+    type: vless
+    server: "108.165.233.223"
+    port: 443
+    uuid: "2388e166-3890-33ae-f77e-efac00000003"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "netlivpn4813.ddhshhshs.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: "netlivpn4813.ddhshhshs.workers.dev"
+  - name: "🇧🇬_6"
     type: vless
     server: "82.118.18.202"
     port: 443
@@ -73,21 +88,22 @@ proxies:
       public-key: "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk"
       short-id: "720148f2fea16d0f"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_5"
+  - name: "🇧🇬_7"
     type: vless
-    server: "38.244.132.227"
-    port: 48905
-    uuid: "af66c5aa-5500-42d2-a59c-89124532b351"
+    server: "108.165.233.223"
+    port: 443
+    uuid: "2388e166-3890-33ae-f77e-efac00000001"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "instinct.radeon.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇬_6"
+    servername: "netlivpn4813.ddhshhshs.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: "netlivpn4813.ddhshhshs.workers.dev"
+  - name: "🇧🇬_8"
     type: trojan
     server: "193.239.160.134"
     port: 443
@@ -142,9 +158,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -154,9 +171,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -166,9 +184,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -177,9 +196,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -189,17 +209,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇬_4"
       - "🇧🇬_5"
       - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
 rules:
   - MATCH,PROXY-BEST

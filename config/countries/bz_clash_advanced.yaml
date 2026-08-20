@@ -59,22 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇿_3"
+  - name: "🇧🇿_6"
     type: vless
-    server: "45.131.6.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    server: "45.131.209.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/dula?Telegram-WangCai2"
+      path: "/"
       headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇧🇿_4"
+        Host: "vms.lifetime04.workers.dev"
+  - name: "🇧🇿_7"
     type: vless
     server: "45.131.7.7"
     port: 8443
@@ -89,6 +85,46 @@ proxies:
       path: "/dula?Telegram-WangCai2"
       headers:
         Host: "speed.dulacloud.store"
+  - name: "🇧🇿_8"
+    type: vless
+    server: "45.131.6.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇧🇿_9"
+    type: vless
+    server: "45.131.7.2"
+    port: 443
+    uuid: "Telegram🇨🇳 @WangCai2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    network: ws
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇧🇿_10"
+    type: vless
+    server: "45.131.208.4"
+    port: 80
+    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "floral-thunder-10d3.82-67d.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -131,8 +167,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -142,8 +181,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -153,8 +195,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -163,8 +208,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -174,15 +222,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇿_3"
-      - "🇧🇿_4"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
+      - "🇧🇿_9"
+      - "🇧🇿_10"
 
 rules:
   - MATCH,PROXY-BEST

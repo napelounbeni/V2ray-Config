@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇹_8"
+  - name: "🇦🇹_7"
     type: vless
     server: "31.76.69.40"
     port: 13443
@@ -73,7 +73,7 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_9"
+  - name: "🇦🇹_8"
     type: vless
     server: "152.53.114.186"
     port: 443
@@ -82,26 +82,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "as.tunnelx.space"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_10"
-    type: vless
-    server: "31.76.69.40"
-    port: 13443
-    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_11"
+  - name: "🇦🇹_9"
     type: vless
     server: "31.76.69.40"
     port: 443
@@ -115,7 +101,7 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_12"
+  - name: "🇦🇹_10"
     type: vless
     server: "as.tunnelx.space"
     port: 443
@@ -129,21 +115,21 @@ proxies:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_13"
+  - name: "🇦🇹_11"
     type: vless
-    server: "149.33.10.41"
-    port: 48905
-    uuid: "af66c5aa-5500-42d2-a59c-89124532b351"
+    server: "31.76.69.40"
+    port: 13443
+    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.radeon.com"
-    client-fingerprint: "firefox"
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY"
-      short-id: ""
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_14"
+  - name: "🇦🇹_12"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -198,13 +184,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -214,13 +199,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -230,13 +214,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -245,13 +228,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -261,25 +243,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
 rules:
   - MATCH,PROXY-BEST

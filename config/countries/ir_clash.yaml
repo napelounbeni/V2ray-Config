@@ -65,17 +65,44 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "188.121.123.147"
-    port: 46153
-    uuid: "4b9ac6db-3e71-409b-ad39-438b0c6027af"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "juzUXIxIbuFscz16cvvS0W7rKiK0P0shJLvKd4Oz-Ro"
-      short-id: "01c39f90eb0455e1"
+    network: ws
+    ws-opts:
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "45.131.4.115"
+    port: 80
+    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "worker3.gigak25604.workers.dev"
+  - name: "🇮🇷_3"
+    type: vless
+    server: "mci.v2plus.ovh"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_4"
+    type: ss
+    server: "e2.cover20.ir"
+    port: 30874
+    cipher: "chacha20-ietf-poly1305"
+    password: "BlRtjyYlj18kYcrEL/8wcbSyqNKSPESiwSDDvisu9+o="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +118,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇷_1"
+      - "🇮🇷_2"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
 
 rules:

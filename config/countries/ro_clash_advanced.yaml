@@ -61,15 +61,33 @@ dns:
 proxies:
   - name: "🇷🇴_6"
     type: vless
-    server: "45.13.151.46"
-    port: 48689
-    uuid: "e25486c7-3342-4777-a82d-89d485f844dc"
+    server: "89.37.192.144"
+    port: 8443
+    uuid: "ef18d810-719c-4bf1-83c6-615d01f217eb"
     udp: true
-    network: httpupgrade
-    httpupgrade-opts:
-      path: "/host"
-      host: "www.filimo.com"
+    tls: true
+    skip-cert-verify: true
+    servername: "lm.cryptoofarm.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "KIDjxj8ZowDdSV9sylX0kWKv09ld-MfJ0bwigTPERHg"
+      short-id: "d760b07dcd39"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇴_7"
+    type: vless
+    server: "lm.cryptoofarm.com"
+    port: 8443
+    uuid: "ef18d810-719c-4bf1-83c6-615d01f217eb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lm.cryptoofarm.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "KIDjxj8ZowDdSV9sylX0kWKv09ld-MfJ0bwigTPERHg"
+      short-id: "d760b07dcd39"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_8"
     type: vless
     server: "82.117.255.87"
     port: 443
@@ -83,30 +101,16 @@ proxies:
       public-key: "1xxZM10W-A8nuj6MOXFd1kA9lS7bEy-5SO5j-jrd_Cg"
       short-id: "b70076439f4a1340"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇴_8"
-    type: vless
-    server: "79.108.161.7"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
   - name: "🇷🇴_9"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
   - name: "🇷🇴_10"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
