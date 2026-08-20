@@ -63,17 +63,13 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇾_1"
-    type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇴🇲_1"
+    type: ss
+    server: "154.205.147.166"
+    port: 11201
+    cipher: "chacha20-ietf-poly1305"
+    password: "93069d226f003fab"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime58.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +84,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇾_1"
+      - "🇴🇲_1"
 
 
 rules:

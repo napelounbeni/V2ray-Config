@@ -61,33 +61,6 @@ dns:
 proxies:
   - name: "🇱🇻_14"
     type: vless
-    server: "91.197.3.43"
-    port: 52463
-    uuid: "22696950-587f-42c0-af24-c1ffab17d0cd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "zOv4BhJVbINHdcULln0vQ_6sxKiGjJPj4uyMttX9pWo"
-      short-id: "cdaed92e1d0c"
-  - name: "🇱🇻_15"
-    type: vless
-    server: "89.36.161.222"
-    port: 2053
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
-      short-id: "d26f4703cdd30f4e"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_16"
-    type: vless
     server: "89.36.161.222"
     port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
@@ -99,25 +72,22 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇻_17"
+  - name: "🇱🇻_15"
     type: vless
-    server: "31.76.62.167"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "89.36.161.222"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-west.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
-      short-id: "dd3ff38418d29d22"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_18"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
+  - name: "🇱🇻_16"
     type: vless
-    server: "195.123.208.92"
+    server: "195.123.210.168"
     port: 13443
-    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -127,6 +97,33 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇻_17"
+    type: vless
+    server: "89.36.161.222"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vk.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
+      short-id: "d26f4703cdd30f4e"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_18"
+    type: vless
+    server: "195.123.209.50.fwqfw783rg2dad.website"
+    port: 443
+    uuid: "5ca83936-136d-4314-8453-4ba10a86cf60"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "195.123.209.50.fwqfw783rg2dad.website"
+    client-fingerprint: "android"
+    network: ws
+    ws-opts:
+      path: "/websocket"
   - name: "🇱🇻_19"
     type: vless
     server: "laoye.in-gect.fun"
@@ -143,22 +140,9 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_20"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2083
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "laoye.in-gect.fun"
-    client-fingerprint: "ios"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇱🇻_21"
-    type: vless
-    server: "195.123.210.168"
+    server: "195.123.208.92"
     port: 13443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "fc1b3bda-b226-452a-8c5c-b0e36a1f8f88"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -168,17 +152,29 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_22"
+  - name: "🇱🇻_21"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2096
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
+  - name: "🇱🇻_22"
+    type: vless
+    server: "31.76.62.167"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-west.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
+      short-id: "dd3ff38418d29d22"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_23"
     type: vless
     server: "195.123.210.168"
@@ -195,13 +191,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_24"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    server: "91.197.3.43"
+    port: 52463
+    uuid: "22696950-587f-42c0-af24-c1ffab17d0cd"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "zOv4BhJVbINHdcULln0vQ_6sxKiGjJPj4uyMttX9pWo"
+      short-id: "cdaed92e1d0c"
   - name: "🇱🇻_25"
     type: trojan
     server: "tr-latvia1.unlimited-access.ru"

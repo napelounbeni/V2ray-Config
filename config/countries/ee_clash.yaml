@@ -65,7 +65,21 @@ dns:
 proxies:
   - name: "🇪🇪_1"
     type: vless
-    server: "217.9.12.233"
+    server: "95.85.224.51"
+    port: 443
+    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
+      short-id: "a696de84963656de"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_2"
+    type: vless
+    server: "217.9.12.14"
     port: 443
     uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
@@ -77,31 +91,40 @@ proxies:
       public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
       short-id: "7a3f9e2b1c8d4f6a"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_2"
-    type: vless
-    server: "94.183.170.231"
-    port: 443
-    uuid: "19f54e37-5fae-47f6-bc10-e71ccbc58389"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇪🇪_3"
     type: vless
-    server: "45.80.108.236"
+    server: "217.9.12.204"
     port: 443
-    uuid: "ef9d2063-0140-472b-8b17-ba02ba4b4435"
+    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip"
-      headers:
-        Host: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
+    servername: "ee.cdn-global.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
   - name: "🇪🇪_4"
+    type: vless
+    server: "94.183.170.231"
+    port: 8443
+    uuid: "19f54e37-5fae-47f6-bc10-e71ccbc58389"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy2.lockdwn.com"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_5"
+    type: vless
+    server: "95.85.224.3"
+    port: 8443
+    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇪🇪_6"
     type: vless
     server: "45.80.108.7"
     port: 8443
@@ -116,33 +139,18 @@ proxies:
       path: "/dula?Telegram-WangCai2"
       headers:
         Host: "speed.dulacloud.store"
-  - name: "🇪🇪_5"
-    type: vless
-    server: "94.183.170.231"
-    port: 8443
-    uuid: "19f54e37-5fae-47f6-bc10-e71ccbc58389"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy2.lockdwn.com"
-    client-fingerprint: "firefox"
-  - name: "🇪🇪_6"
-    type: vless
-    server: "217.9.12.233"
-    port: 443
-    uuid: "f202c7ca-17b7-416d-b3a2-ac71d35afe9c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
   - name: "🇪🇪_7"
     type: vless
-    server: "93.123.39.10"
+    server: "94.183.170.135"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_8"
+    type: vless
+    server: "93.123.39.81"
     port: 443
     uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
@@ -154,32 +162,18 @@ proxies:
       public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
       short-id: "7a3f9e2b1c8d4f6a"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_8"
-    type: vless
-    server: "93.123.39.155"
-    port: 443
-    uuid: "f202c7ca-17b7-416d-b3a2-ac71d35afe9c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
   - name: "🇪🇪_9"
     type: vless
-    server: "95.85.224.3"
-    port: 8443
-    uuid: "7e8f7489-e65f-4be6-93ed-867a74ec6759"
+    server: "94.183.170.231"
+    port: 443
+    uuid: "19f54e37-5fae-47f6-bc10-e71ccbc58389"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇪🇪_10"
     type: vless
-    server: "217.9.12.204"
+    server: "93.123.39.155"
     port: 443
     uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
@@ -193,7 +187,7 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_11"
     type: vless
-    server: "93.123.39.160"
+    server: "93.123.39.161"
     port: 443
     uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
@@ -207,9 +201,9 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_12"
     type: vless
-    server: "93.123.39.161"
+    server: "93.123.39.10"
     port: 443
-    uuid: "f202c7ca-17b7-416d-b3a2-ac71d35afe9c"
+    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -221,29 +215,44 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_13"
     type: vless
-    server: "95.85.224.51"
+    server: "94.183.170.135"
     port: 443
-    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "max.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
-      short-id: "a696de84963656de"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_14"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 8443
     uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_14"
+    type: vless
+    server: "93.123.39.160"
+    port: 443
+    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
+    udp: true
     tls: true
     skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "edge"
+    servername: "ee.cdn-global.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
   - name: "🇪🇪_15"
+    type: vless
+    server: "217.9.12.233"
+    port: 443
+    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ee.cdn-global.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_16"
     type: vless
     server: "64.188.82.152"
     port: 443
@@ -258,115 +267,7 @@ proxies:
       path: "/websocket?ed=2560"
       headers:
         Host: "cloudflare.vhub.pro"
-  - name: "🇪🇪_16"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇪🇪_17"
-    type: vless
-    server: "93.123.39.161"
-    port: 443
-    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_18"
-    type: vless
-    server: "ee.cdn-global.pro"
-    port: 443
-    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_19"
-    type: vless
-    server: "217.9.12.14"
-    port: 443
-    uuid: "f202c7ca-17b7-416d-b3a2-ac71d35afe9c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_20"
-    type: vless
-    server: "94.183.170.135"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_21"
-    type: vless
-    server: "217.9.12.14"
-    port: 443
-    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_22"
-    type: vless
-    server: "93.123.39.155"
-    port: 443
-    uuid: "d96e05a1-18bb-45da-9e9f-ab7caab6952a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ee.cdn-global.pro"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_23"
-    type: vless
-    server: "94.183.170.135"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "firefox"
-  - name: "🇪🇪_24"
-    type: trojan
-    server: "109.206.241.10"
-    port: 449
-    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
-    sni: "russiapower.accesscam.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇪🇪_25"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -379,7 +280,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇪_26"
+  - name: "🇪🇪_18"
     type: trojan
     server: "185.36.141.81"
     port: 443
@@ -390,6 +291,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+  - name: "🇪🇪_19"
+    type: trojan
+    server: "109.206.241.10"
+    port: 449
+    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
+    sni: "russiapower.accesscam.org"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -423,13 +332,6 @@ proxy-groups:
       - "🇪🇪_17"
       - "🇪🇪_18"
       - "🇪🇪_19"
-      - "🇪🇪_20"
-      - "🇪🇪_21"
-      - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
-      - "🇪🇪_25"
-      - "🇪🇪_26"
 
 
 rules:

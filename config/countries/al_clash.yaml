@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
+    server: "youtube.superbuba.top"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "youtube.superbuba.top"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs"
+      short-id: "4fa44664f6a566d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_2"
+    type: vless
     server: "78.159.131.235"
     port: 443
     uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
@@ -77,7 +91,7 @@ proxies:
       public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
       short-id: "7bcfc0bc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_2"
+  - name: "🇦🇱_3"
     type: vless
     server: "130.49.189.41"
     port: 443
@@ -91,20 +105,13 @@ proxies:
       public-key: "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs"
       short-id: "4fa44664f6a566d3"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_3"
-    type: vless
-    server: "youtube.superbuba.top"
-    port: 443
-    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+  - name: "🇦🇱_4"
+    type: ss
+    server: "157.22.240.141"
+    port: 57925
+    cipher: "chacha20-ietf-poly1305"
+    password: "THFFWv7np93DBLKZUvVm7u"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "youtube.superbuba.top"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs"
-      short-id: "4fa44664f6a566d3"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -122,6 +129,7 @@ proxy-groups:
       - "🇦🇱_1"
       - "🇦🇱_2"
       - "🇦🇱_3"
+      - "🇦🇱_4"
 
 
 rules:

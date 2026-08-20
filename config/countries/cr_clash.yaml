@@ -77,6 +77,21 @@ proxies:
       path: "/sg-amz"
       headers:
         Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇨🇷_2"
+    type: vless
+    server: "190.93.247.2"
+    port: 443
+    uuid: "Telegram🇨🇳@WangCai2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +107,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇷_1"
+      - "🇨🇷_2"
 
 
 rules:
