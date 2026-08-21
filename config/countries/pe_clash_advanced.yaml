@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇪_2"
+  - name: "🇵🇪_3"
     type: vless
     server: "107.151.250.183"
     port: 443
@@ -68,7 +68,21 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.bing.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "LDpWYUJjGRJomvaN-gfgY96EJOF2DDHiFcNPEBLtoW0"
+      short-id: "9019bbea8ff8781e"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇪_4"
+    type: vless
+    server: "5r86-tuq187.operix.top"
+    port: 443
+    uuid: "4caaaae0-516b-4026-b2b2-69fea69df19a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "LDpWYUJjGRJomvaN-gfgY96EJOF2DDHiFcNPEBLtoW0"
       short-id: "9019bbea8ff8781e"
@@ -115,7 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇵🇪_2"
+      - "🇵🇪_3"
+      - "🇵🇪_4"
 
 rules:
   - MATCH,PROXY-BEST

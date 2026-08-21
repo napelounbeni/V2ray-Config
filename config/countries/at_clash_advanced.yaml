@@ -59,9 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇹_3"
+  - name: "🇦🇹_5"
     type: vless
-    server: "152.53.114.186"
+    server: "212.183.88.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime23.workers.dev"
+  - name: "🇦🇹_6"
+    type: vless
+    server: "as.tunnelx.space"
     port: 443
     uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
     udp: true
@@ -73,7 +84,21 @@ proxies:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_4"
+  - name: "🇦🇹_7"
+    type: vless
+    server: "152.53.114.186"
+    port: 443
+    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "as.tunnelx.space"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
+      short-id: "4e9b0c2d1a3f5768"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_8"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -128,8 +153,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +166,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +179,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +191,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +204,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇹_3"
-      - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
 rules:
   - MATCH,PROXY-BEST
