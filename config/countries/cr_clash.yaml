@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇨🇷_1"
     type: vless
+    server: "190.93.247.2"
+    port: 443
+    uuid: "Telegram🇨🇳@WangCai2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇨🇷_2"
+    type: vless
     server: "190.93.245.7"
     port: 8443
     uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
@@ -78,7 +93,7 @@ proxies:
       path: "/dula?Telegram-WangCai2"
       headers:
         Host: "speed.dulacloud.store"
-  - name: "🇨🇷_2"
+  - name: "🇨🇷_3"
     type: vless
     server: "190.93.247.2"
     port: 443
@@ -87,21 +102,6 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "support.zoom.us.yxls.eu.cc"
-    network: ws
-    ws-opts:
-      path: "/sg-amz"
-      headers:
-        Host: "support.zoom.us.yxls.eu.cc"
-  - name: "🇨🇷_3"
-    type: vless
-    server: "190.93.247.2"
-    port: 443
-    uuid: "Telegram🇨🇳@WangCai2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "support.zoom.us.yxls.eu.cc"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/sg-amz"

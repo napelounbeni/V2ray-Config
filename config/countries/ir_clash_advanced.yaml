@@ -59,61 +59,24 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_6"
+  - name: "🇮🇷_3"
     type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "bin.fastervip.ir"
+    port: 2052
+    uuid: "a0d3d4ad-0ab9-4f97-ae31-8acfb7c99bbe"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇮🇷_7"
+  - name: "🇮🇷_4"
     type: vless
-    server: "mci.v2plus.ovh"
-    port: 80
-    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
+    server: "bin.fastervip.ir"
+    port: 2052
+    uuid: "3a5771db-f779-47f6-9423-173cd4f952dd"
     udp: true
     network: ws
     ws-opts:
-      path: "/ffEt2nn4iTWiXfi8"
-      headers:
-        Host: "worker3.bobiv63003.workers.dev"
-  - name: "🇮🇷_8"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ffEt2nn4iTWiXfi8"
-      headers:
-        Host: "worker3.bobiv63003.workers.dev"
-  - name: "🇮🇷_9"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "worker3.gigak25604.workers.dev"
-  - name: "🇮🇷_10"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+      path: "/"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -156,11 +119,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -170,11 +130,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -184,11 +141,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -197,11 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -211,21 +162,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_6"
-      - "🇮🇷_7"
-      - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
 rules:
   - MATCH,PROXY-BEST

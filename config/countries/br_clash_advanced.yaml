@@ -59,29 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_23"
+  - name: "🇧🇷_14"
     type: vless
-    server: "201.24.49.120"
-    port: 4100
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    server: "177.3.214.15"
+    port: 8443
+    uuid: "affd36e0-f2f7-441e-944e-33cf5a0f6012"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_24"
-    type: vless
-    server: "201.24.49.237"
-    port: 2200
-    uuid: "af412668-578c-4296-bc8c-8fac6a8d9003"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_25"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wjBCPpdDXJxQhYabEsKQrBH7umpeZYnMOHMviAus1V8"
+      short-id: "086007"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_15"
     type: vless
     server: "wr28-6njjgu.linenheath.site"
     port: 443
@@ -95,79 +87,7 @@ proxies:
       public-key: "E6Y9lNizCXo8tJ6EXwLYQIjyIwmxIs4foyRlY2MgkjA"
       short-id: "59ccabb0a1483c4b"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇷_26"
-    type: vless
-    server: "45.194.53.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime19.workers.dev"
-  - name: "🇧🇷_27"
-    type: vless
-    server: "201.24.49.77"
-    port: 2200
-    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_28"
-    type: vless
-    server: "201.24.49.233"
-    port: 2200
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_29"
-    type: vless
-    server: "201.24.49.233"
-    port: 4100
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_30"
-    type: vless
-    server: "23.251.56.78"
-    port: 443
-    uuid: "9638a83e-f1f7-4cc8-a602-924965d9534f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "E6Y9lNizCXo8tJ6EXwLYQIjyIwmxIs4foyRlY2MgkjA"
-      short-id: "59ccabb0a1483c4b"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_31"
-    type: vless
-    server: "23.251.55.216"
-    port: 443
-    uuid: "c396fa08-e07a-459b-b894-389456fd6a82"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
-      short-id: "9ea177c3c147119b"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇷_32"
+  - name: "🇧🇷_16"
     type: vless
     server: "u234-6njjdk.startora.top"
     port: 443
@@ -181,18 +101,21 @@ proxies:
       public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
       short-id: "9ea177c3c147119b"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇷_33"
+  - name: "🇧🇷_17"
     type: vless
-    server: "201.24.49.69"
-    port: 4100
-    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
+    server: "177.3.214.181"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_34"
+    tls: true
+    skip-cert-verify: true
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_18"
     type: vless
     server: "201.24.49.19"
     port: 2200
@@ -203,75 +126,96 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇧🇷_35"
-    type: ss
-    server: "163.176.6.223"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y="
+  - name: "🇧🇷_19"
+    type: vless
+    server: "23.251.56.78"
+    port: 443
+    uuid: "9638a83e-f1f7-4cc8-a602-924965d9534f"
     udp: true
-  - name: "🇧🇷_36"
-    type: ss
-    server: "129.148.44.181"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0="
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "E6Y9lNizCXo8tJ6EXwLYQIjyIwmxIs4foyRlY2MgkjA"
+      short-id: "59ccabb0a1483c4b"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_20"
+    type: vless
+    server: "23.251.55.216"
+    port: 443
+    uuid: "c396fa08-e07a-459b-b894-389456fd6a82"
     udp: true
-  - name: "🇧🇷_37"
-    type: ss
-    server: "129.148.44.181"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0="
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4"
+      short-id: "9ea177c3c147119b"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_21"
+    type: vless
+    server: "201.24.49.79"
+    port: 2200
+    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
     udp: true
-  - name: "🇧🇷_38"
-    type: ss
-    server: "146.235.45.3"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "V6jpAOIfrkA41zILN5VrEsr9DTvBeeu9TzAL8UGMM3Y="
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_22"
+    type: vless
+    server: "b2.cryptoofarm.com"
+    port: 8443
+    uuid: "b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8"
     udp: true
-  - name: "🇧🇷_39"
-    type: ss
-    server: "129.148.44.181"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0="
+    tls: true
+    skip-cert-verify: true
+    servername: "b2.cryptoofarm.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "K28I3JdleSg0t7keUUZrS1CgtyC37WA32ViMkSXywHw"
+      short-id: "0c22c11e7224"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_23"
+    type: vless
+    server: "201.24.49.79"
+    port: 4100
+    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
     udp: true
-  - name: "🇧🇷_40"
-    type: ss
-    server: "163.176.6.223"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y="
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_24"
+    type: vless
+    server: "201.24.49.69"
+    port: 4100
+    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
     udp: true
-  - name: "🇧🇷_41"
-    type: ss
-    server: "163.176.194.118"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY="
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇧🇷_25"
+    type: vless
+    server: "201.24.49.237"
+    port: 2200
+    uuid: "af412668-578c-4296-bc8c-8fac6a8d9003"
     udp: true
-  - name: "🇧🇷_42"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_26"
     type: ss
-    server: "163.176.6.223"
+    server: "147.15.48.31"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
-    password: "SP1M0IipjvtsuKVyn9U2iK+ZKuuQ0afVhLCicK9pO8Y="
-    udp: true
-  - name: "🇧🇷_43"
-    type: ss
-    server: "163.176.194.118"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY="
-    udp: true
-  - name: "🇧🇷_44"
-    type: ss
-    server: "163.176.194.118"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "lpYNiPiwJ1rV1HSmT5yzHLcLsv9qVgXIXWSuNw3ohhY="
+    password: "qL6rMcKV6hgAOIHMnu0hSGDjLlbojm41Vtoe2/W1PIk="
     udp: true
 
 proxy-groups:
@@ -315,28 +259,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
   - name: "LB-CDN"
     type: load-balance
@@ -346,28 +281,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -377,28 +303,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
   - name: "FAST-CDN"
     type: url-test
@@ -407,28 +324,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -438,55 +346,37 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
+      - "🇧🇷_19"
+      - "🇧🇷_20"
+      - "🇧🇷_21"
+      - "🇧🇷_22"
       - "🇧🇷_23"
       - "🇧🇷_24"
       - "🇧🇷_25"
       - "🇧🇷_26"
-      - "🇧🇷_27"
-      - "🇧🇷_28"
-      - "🇧🇷_29"
-      - "🇧🇷_30"
-      - "🇧🇷_31"
-      - "🇧🇷_32"
-      - "🇧🇷_33"
-      - "🇧🇷_34"
-      - "🇧🇷_35"
-      - "🇧🇷_36"
-      - "🇧🇷_37"
-      - "🇧🇷_38"
-      - "🇧🇷_39"
-      - "🇧🇷_40"
-      - "🇧🇷_41"
-      - "🇧🇷_42"
-      - "🇧🇷_43"
-      - "🇧🇷_44"
 
 rules:
   - MATCH,PROXY-BEST

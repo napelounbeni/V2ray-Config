@@ -63,24 +63,22 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇳_1"
+  - name: "🇮🇱_1"
     type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "83.143.106.5"
+    port: 8443
+    uuid: "69db54f1-a8a6-d3d5-3b21-48af845aed08"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇨🇳_2"
-    type: ss
-    server: "211.91.158.44"
-    port: 21118
-    cipher: "chacha20-ietf-poly1305"
-    password: "9325a345-c72f-4637-a8f4-34f9effb7ba6"
-    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "res.cdn.office.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
 
 proxy-groups:
   - name: "PROXY"
@@ -95,8 +93,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇳_1"
-      - "🇨🇳_2"
+      - "🇮🇱_1"
 
 
 rules:

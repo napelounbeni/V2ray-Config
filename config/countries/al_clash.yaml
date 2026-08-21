@@ -65,21 +65,6 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
-    server: "nl6.unlockvpn.online"
-    port: 8445
-    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nl6.unlockvpn.online"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/api/v1/devices/e1971f0b19/telemetry"
-      headers:
-        Host: "nl6.unlockvpn.online"
-  - name: "🇦🇱_2"
-    type: vless
     server: "78.159.131.235"
     port: 443
     uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
@@ -87,12 +72,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "yahoo.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
       short-id: "7bcfc0bc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_3"
+  - name: "🇦🇱_2"
     type: ss
     server: "157.22.240.141"
     port: 57925
@@ -115,7 +100,6 @@ proxy-groups:
     proxies:
       - "🇦🇱_1"
       - "🇦🇱_2"
-      - "🇦🇱_3"
 
 
 rules:

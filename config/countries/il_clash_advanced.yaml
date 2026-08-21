@@ -59,17 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇷_2"
-    type: trojan
-    server: "213.182.199.137"
-    port: 443
-    password: "MiTiVPN"
-    sni: "66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
-    skip-cert-verify: true
+  - name: "🇮🇱_2"
+    type: vless
+    server: "83.143.106.5"
+    port: 8443
+    uuid: "69db54f1-a8a6-d3d5-3b21-48af845aed08"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+    tls: true
+    skip-cert-verify: true
+    servername: "res.cdn.office.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -112,7 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -122,7 +127,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -132,7 +137,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -141,7 +146,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -151,13 +156,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇭🇷_2"
+      - "🇮🇱_2"
 
 rules:
   - MATCH,PROXY-BEST
