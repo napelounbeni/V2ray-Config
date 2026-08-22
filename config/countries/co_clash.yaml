@@ -63,20 +63,36 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇵🇪_1"
+  - name: "🇨🇴_1"
     type: vless
-    server: "107.151.250.183"
-    port: 443
-    uuid: "4caaaae0-516b-4026-b2b2-69fea69df19a"
+    server: "149.130.189.60"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "LDpWYUJjGRJomvaN-gfgY96EJOF2DDHiFcNPEBLtoW0"
-      short-id: "9019bbea8ff8781e"
-    flow: "xtls-rprx-vision"
+  - name: "🇨🇴_2"
+    type: vless
+    server: "157.137.210.216"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+    udp: true
+  - name: "🇨🇴_3"
+    type: vless
+    server: "149.130.190.81"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+    udp: true
+  - name: "🇨🇴_4"
+    type: vless
+    server: "157.137.229.25"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+    udp: true
+  - name: "🇨🇴_5"
+    type: vless
+    server: "157.137.213.151"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +107,11 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇵🇪_1"
+      - "🇨🇴_1"
+      - "🇨🇴_2"
+      - "🇨🇴_3"
+      - "🇨🇴_4"
+      - "🇨🇴_5"
 
 
 rules:

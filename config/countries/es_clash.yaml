@@ -65,20 +65,30 @@ dns:
 proxies:
   - name: "🇪🇸_1"
     type: vless
-    server: "185.18.250.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    server: "185.18.250.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime47.workers.dev"
+  - name: "🇪🇸_2"
+    type: vless
+    server: "45.196.208.251"
+    port: 443
+    uuid: "dbc43f55-79cd-4331-84ff-d891356d387a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇪🇸_2"
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "48fccabc158a4c22"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_3"
     type: vless
     server: "212.227.235.66"
     port: 2053
@@ -91,29 +101,37 @@ proxies:
     reality-opts:
       public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
       short-id: "866af6e56606f2bc"
-  - name: "🇪🇸_3"
+  - name: "🇪🇸_4"
     type: vless
-    server: "85.90.217.42"
+    server: "185.18.250.245"
     port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    uuid: "f77299ea-e13d-417d-8cdc-ce5566dfc94b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "85.90.217.42"
-  - name: "🇪🇸_4"
-    type: trojan
-    server: "185.18.250.252"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
+    servername: "edu.ruangguru.com.r3xxe.eu.cc"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/nl-tw"
       headers:
-        Host: "www.calmlunch.com"
+        Host: "edu.ruangguru.com.r3xxe.eu.cc"
   - name: "🇪🇸_5"
+    type: vless
+    server: "185.18.250.252"
+    port: 443
+    uuid: "f77299ea-e13d-417d-8cdc-ce5566dfc94b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edu.ruangguru.com.r3xxe.eu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/nl-tw"
+      headers:
+        Host: "edu.ruangguru.com.r3xxe.eu.cc"
+  - name: "🇪🇸_6"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -126,28 +144,62 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_6"
+  - name: "🇪🇸_7"
+    type: trojan
+    server: "172.233.115.40"
+    port: 5443
+    password: "fg20mtCFHy"
+    sni: "www.bing.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇪🇸_8"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "74480619-b6a8-4ab8-94e1-1132fc18b2fa"
+    sni: "unnes.ac.id.r3xxe.eu.cc"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/au-mt"
+      headers:
+        Host: "unnes.ac.id.r3xxe.eu.cc"
+  - name: "🇪🇸_9"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_10"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
-  - name: "🇪🇸_7"
+  - name: "🇪🇸_11"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_8"
+  - name: "🇪🇸_12"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_9"
+  - name: "🇪🇸_13"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -177,6 +229,10 @@ proxy-groups:
       - "🇪🇸_7"
       - "🇪🇸_8"
       - "🇪🇸_9"
+      - "🇪🇸_10"
+      - "🇪🇸_11"
+      - "🇪🇸_12"
+      - "🇪🇸_13"
 
 
 rules:

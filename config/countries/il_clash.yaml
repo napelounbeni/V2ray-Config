@@ -65,20 +65,32 @@ dns:
 proxies:
   - name: "🇮🇱_1"
     type: vless
-    server: "83.143.106.5"
-    port: 8443
-    uuid: "69db54f1-a8a6-d3d5-3b21-48af845aed08"
+    server: "85.209.157.25"
+    port: 443
+    uuid: "20df893e-dcf4-491d-8261-6dbb24f9566b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "res.cdn.office.net"
-    client-fingerprint: "chrome"
+    servername: "732.stream-host.site"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo"
+      public-key: "bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc"
       short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇱_2"
+    type: vless
+    server: "732.stream-host.site"
+    port: 443
+    uuid: "20df893e-dcf4-491d-8261-6dbb24f9566b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "732.stream-host.site"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -94,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇱_1"
+      - "🇮🇱_2"
 
 
 rules:

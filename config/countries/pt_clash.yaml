@@ -63,20 +63,17 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇰🇬_1"
-    type: vless
-    server: "81.85.75.85"
+  - name: "🇵🇹_1"
+    type: trojan
+    server: "156.243.83.240"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
+    password: "MiTiVPN"
+    sni: "8373638-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
     skip-cert-verify: true
-    servername: "baltic.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
-      short-id: "4a46213c935e2ee4"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +88,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇰🇬_1"
+      - "🇵🇹_1"
 
 
 rules:

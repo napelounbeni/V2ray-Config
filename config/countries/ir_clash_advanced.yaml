@@ -59,24 +59,71 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_3"
+  - name: "🇮🇷_7"
     type: vless
-    server: "bin.fastervip.ir"
-    port: 2052
-    uuid: "a0d3d4ad-0ab9-4f97-ae31-8acfb7c99bbe"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇮🇷_4"
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_8"
     type: vless
-    server: "bin.fastervip.ir"
-    port: 2052
-    uuid: "3a5771db-f779-47f6-9423-173cd4f952dd"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "worker3.gigak25604.workers.dev"
+  - name: "🇮🇷_9"
+    type: vless
+    server: "mci.v2plus.ovh"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_10"
+    type: vless
+    server: "adgof.mgodping12.xyz"
+    port: 2086
+    uuid: "c92b67c4-ad81-4000-937f-9d1e6de91192"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "adgof.mgodping12.xyz"
+    client-fingerprint: "chrome"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇮🇷_11"
+    type: trojan
+    server: "37.202.231.202"
+    port: 2376
+    password: "xrVEJA7RH7AKaJfOUVfsLA"
+    sni: "pish-data-03.myket.ir"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇷_12"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -119,8 +166,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -130,8 +181,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -141,8 +196,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -151,8 +210,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -162,15 +225,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇷_3"
-      - "🇮🇷_4"
+      - "🇮🇷_7"
+      - "🇮🇷_8"
+      - "🇮🇷_9"
+      - "🇮🇷_10"
+      - "🇮🇷_11"
+      - "🇮🇷_12"
 
 rules:
   - MATCH,PROXY-BEST
