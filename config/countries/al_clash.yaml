@@ -72,12 +72,26 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "yahoo.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
       short-id: "7bcfc0bc"
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_2"
+    type: vless
+    server: "85.155.228.34"
+    port: 443
+    uuid: "43404518-7c8f-4451-82cb-42716e57f0a5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "github.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "Q0351ApYOgCGCOgSEROnacDdm7xp-kLs9mYddSDFwRQ"
+      short-id: "360881fdb193758d"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_3"
     type: ss
     server: "157.22.240.141"
     port: 57925
@@ -100,6 +114,7 @@ proxy-groups:
     proxies:
       - "🇦🇱_1"
       - "🇦🇱_2"
+      - "🇦🇱_3"
 
 
 rules:

@@ -76,6 +76,19 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
+  - name: "🇮🇪_2"
+    type: trojan
+    server: "54.216.143.197"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +104,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇪_1"
+      - "🇮🇪_2"
 
 
 rules:

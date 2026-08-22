@@ -63,39 +63,32 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇾_1"
+  - name: "🇲🇪_1"
     type: vless
-    server: "77.75.199.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "147.90.26.86"
+    port: 443
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "forfreeuse.rtqa.ru"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇨🇾_2"
+  - name: "🇲🇪_2"
     type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "147.90.229.233"
+    port: 443
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "forfreeuse.rtqa.ru"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "vms.lifetime58.workers.dev"
-  - name: "🇨🇾_3"
-    type: vless
-    server: "154.92.9.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -110,9 +103,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇾_1"
-      - "🇨🇾_2"
-      - "🇨🇾_3"
+      - "🇲🇪_1"
+      - "🇲🇪_2"
 
 
 rules:
