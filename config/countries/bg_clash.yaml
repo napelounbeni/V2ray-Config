@@ -77,17 +77,6 @@ proxies:
       public-key: "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk"
       short-id: "720148f2fea16d0f"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_2"
-    type: trojan
-    server: "193.239.160.134"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,7 +92,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇬_1"
-      - "🇧🇬_2"
 
 
 rules:

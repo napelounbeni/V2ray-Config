@@ -59,7 +59,35 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇻🇳_5"
+  - name: "🇻🇳_6"
+    type: vless
+    server: "103.225.197.237"
+    port: 443
+    uuid: "432ab7a2-6e2b-4f0b-be4a-06bdcc714624"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "mCDHZBY0AYAeY7Aj7COGaegrm7QAwfueYYSC02vqbSY"
+      short-id: "0d8ca7e0b3d26321"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_7"
+    type: vless
+    server: "bftu-stnbal.servora.top"
+    port: 443
+    uuid: "432ab7a2-6e2b-4f0b-be4a-06bdcc714624"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "mCDHZBY0AYAeY7Aj7COGaegrm7QAwfueYYSC02vqbSY"
+      short-id: "0d8ca7e0b3d26321"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_8"
     type: vless
     server: "bc-vn-hn.ray-balance.space"
     port: 443
@@ -73,21 +101,7 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇻🇳_6"
-    type: vless
-    server: "216.133.158.108"
-    port: 443
-    uuid: "c08c499f-21bd-46ba-9146-5c770204342b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Kh1-hdn9zTY5a1-3qP8L_6UTRL2iNZ1pIr_X8U94OQM"
-      short-id: "872303cf1e28389f"
-    flow: "xtls-rprx-vision"
-  - name: "🇻🇳_7"
+  - name: "🇻🇳_9"
     type: vless
     server: "2.27.27.98"
     port: 443
@@ -101,19 +115,19 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇻🇳_8"
+  - name: "🇻🇳_10"
     type: vless
-    server: "103.225.197.237"
+    server: "216.133.158.108"
     port: 443
-    uuid: "432ab7a2-6e2b-4f0b-be4a-06bdcc714624"
+    uuid: "c08c499f-21bd-46ba-9146-5c770204342b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "firefox"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "mCDHZBY0AYAeY7Aj7COGaegrm7QAwfueYYSC02vqbSY"
-      short-id: "0d8ca7e0b3d26321"
+      public-key: "Kh1-hdn9zTY5a1-3qP8L_6UTRL2iNZ1pIr_X8U94OQM"
+      short-id: "872303cf1e28389f"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -157,10 +171,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -170,10 +185,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -183,10 +199,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -195,10 +212,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -208,19 +226,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇻🇳_5"
       - "🇻🇳_6"
       - "🇻🇳_7"
       - "🇻🇳_8"
+      - "🇻🇳_9"
+      - "🇻🇳_10"
 
 rules:
   - MATCH,PROXY-BEST

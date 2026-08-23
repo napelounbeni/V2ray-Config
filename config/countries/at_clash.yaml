@@ -65,17 +65,6 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "212.183.88.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime23.workers.dev"
-  - name: "🇦🇹_2"
-    type: vless
     server: "152.53.114.186"
     port: 443
     uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
@@ -83,11 +72,27 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "as.tunnelx.space"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇹_2"
+    type: vless
+    server: "130.49.219.24"
+    port: 2096
+    uuid: "083904ab-f303-4292-b8d7-958ce296387a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free04.tunnely.space"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130"
+      short-id: "2e40144ddc07e8e1"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "🇦🇹_3"
     type: trojan
     server: "212.183.88.136"

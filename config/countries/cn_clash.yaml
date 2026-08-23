@@ -77,6 +77,20 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
+  - name: "🇨🇳_2"
+    type: vless
+    server: "bc-cn-hn.ray-balance.space"
+    port: 443
+    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ray-balance.space"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇳_1"
+      - "🇨🇳_2"
 
 
 rules:

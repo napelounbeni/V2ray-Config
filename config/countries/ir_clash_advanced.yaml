@@ -59,64 +59,50 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_7"
+  - name: "🇮🇷_5"
     type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
+    server: "185.143.232.245"
+    port: 2052
+    uuid: "60e6320d-60c6-43f5-9f54-686089edd608"
     udp: true
     network: ws
     ws-opts:
-      path: "/ffEt2nn4iTWiXfi8"
+      path: "/path"
       headers:
-        Host: "worker3.bobiv63003.workers.dev"
+        Host: "english.paradiseshop.click"
+  - name: "🇮🇷_6"
+    type: vless
+    server: "vip.paaradiseshop.ir"
+    port: 2052
+    uuid: "60e6320d-60c6-43f5-9f54-686089edd608"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/path"
+      headers:
+        Host: "english.paradiseshop.click"
+  - name: "🇮🇷_7"
+    type: vless
+    server: "185.143.235.245"
+    port: 2052
+    uuid: "60e6320d-60c6-43f5-9f54-686089edd608"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/path"
+      headers:
+        Host: "english.paradiseshop.click"
   - name: "🇮🇷_8"
     type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "185.143.232.253"
+    port: 8080
+    uuid: "904cd6f2-9740-44e5-9353-58207c8e64c7"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇮🇷_9"
-    type: vless
-    server: "mci.v2plus.ovh"
-    port: 80
-    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ffEt2nn4iTWiXfi8"
-      headers:
-        Host: "worker3.bobiv63003.workers.dev"
-  - name: "🇮🇷_10"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
-  - name: "🇮🇷_11"
-    type: ss
-    server: "185.84.158.231"
-    port: 16156
-    cipher: "chacha20-ietf-poly1305"
-    password: "x8UlsAi2oRWQ6DZPL/RNQkAzOgitQAJLn672tmjIXhw="
-    udp: true
-  - name: "🇮🇷_12"
-    type: ss
-    server: "e4.cover20.ir"
-    port: 16156
-    cipher: "chacha20-ietf-poly1305"
-    password: "x8UlsAi2oRWQ6DZPL/RNQkAzOgitQAJLn672tmjIXhw="
-    udp: true
+        Host: "2ja0n7x60a.star2.panelpars.ir"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -159,12 +145,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -174,12 +158,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -189,12 +171,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -203,12 +183,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -218,23 +196,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇷_5"
+      - "🇮🇷_6"
       - "🇮🇷_7"
       - "🇮🇷_8"
-      - "🇮🇷_9"
-      - "🇮🇷_10"
-      - "🇮🇷_11"
-      - "🇮🇷_12"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,53 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇭_19"
+  - name: "🇨🇭_18"
     type: vless
-    server: "132.243.174.112"
-    port: 2054
-    uuid: "4fe19d97-7b1d-4cb2-99ee-4bd8658a4c34"
+    server: "178.83.226.55"
+    port: 443
+    uuid: "2a77a470-315c-493d-b690-59b814a804cb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.swisscom.ch"
-    client-fingerprint: "firefox"
+    servername: "sellflow.org"
     reality-opts:
-      public-key: "JFzd2AbfzZSnMefyKEXNIae_QEZAo5o239pmuHHZsAY"
-      short-id: "b27b172e7453e810"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇨🇭_20"
-    type: vless
-    server: "45.195.2.246"
-    port: 8443
-    uuid: "66824c94-7ba9-4113-908e-bd793f296852"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
-      short-id: "d515d6cfdfe60b02"
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_21"
-    type: vless
-    server: "132.243.174.112"
-    port: 2054
-    uuid: "626c0789-16d1-4815-be8b-bd03959d7d12"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.swisscom.ch"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "JFzd2AbfzZSnMefyKEXNIae_QEZAo5o239pmuHHZsAY"
-      short-id: "b27b172e7453e810"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇨🇭_22"
+  - name: "🇨🇭_19"
     type: vless
     server: "45.195.2.133"
     port: 8443
@@ -119,11 +86,11 @@ proxies:
       public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
       short-id: "445ab326fc7c90ac"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_23"
+  - name: "🇨🇭_20"
     type: vless
     server: "132.243.174.112"
     port: 2054
-    uuid: "0a2988ed-9f42-499e-b4a8-3ed4cbda5457"
+    uuid: "80d02a71-54a5-4c5b-976d-5ee573c502af"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -135,7 +102,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇨🇭_24"
+  - name: "🇨🇭_21"
     type: vless
     server: "132.243.174.112"
     port: 2054
@@ -144,13 +111,55 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.swisscom.ch"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "JFzd2AbfzZSnMefyKEXNIae_QEZAo5o239pmuHHZsAY"
       short-id: "b27b172e7453e810"
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
+  - name: "🇨🇭_22"
+    type: vless
+    server: "31.76.4.103"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_23"
+    type: vless
+    server: "178.83.226.142"
+    port: 8443
+    uuid: "4cb63132-e084-4676-ac67-1ed6b60be05a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "refersion.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "-x9vdxai-qKAzuhxV7H2RIbEmIh_ZgdiFxiUA5q0B1I"
+      short-id: "aa6988d03cc11454"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_24"
+    type: vless
+    server: "193.151.108.89"
+    port: 13443
+    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
   - name: "🇨🇭_25"
     type: vless
     server: "132.243.174.112"
@@ -169,23 +178,9 @@ proxies:
       grpc-service-name: "grpc"
   - name: "🇨🇭_26"
     type: vless
-    server: "193.151.108.89"
-    port: 13443
-    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_27"
-    type: vless
     server: "132.243.174.112"
     port: 2054
-    uuid: "80d02a71-54a5-4c5b-976d-5ee573c502af"
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -197,34 +192,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇨🇭_28"
-    type: vless
-    server: "178.83.226.142"
-    port: 8443
-    uuid: "eace00a6-39df-474d-af49-9ed74d948eba"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "refersion.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-x9vdxai-qKAzuhxV7H2RIbEmIh_ZgdiFxiUA5q0B1I"
-      short-id: "75fa8ffff864069a"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_29"
-    type: vless
-    server: "178.83.226.55"
-    port: 443
-    uuid: "2a77a470-315c-493d-b690-59b814a804cb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sellflow.org"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_30"
+  - name: "🇨🇭_27"
     type: vless
     server: "132.243.174.112"
     port: 2054
@@ -240,19 +208,63 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇨🇭_31"
+  - name: "🇨🇭_28"
     type: vless
-    server: "31.76.4.103"
-    port: 443
+    server: "193.151.108.89"
+    port: 13443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_29"
+    type: vless
+    server: "45.195.2.246"
+    port: 8443
+    uuid: "66824c94-7ba9-4113-908e-bd793f296852"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc"
+      short-id: "d515d6cfdfe60b02"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_30"
+    type: vless
+    server: "132.243.174.112"
+    port: 2054
+    uuid: "0e75f6ee-9a4d-4019-8276-cacf388d2ec6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.swisscom.ch"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "JFzd2AbfzZSnMefyKEXNIae_QEZAo5o239pmuHHZsAY"
+      short-id: "b27b172e7453e810"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇨🇭_31"
+    type: vless
+    server: "193.151.108.89"
+    port: 13443
+    uuid: "b80b392c-0cf4-42f9-ae54-9f862e3ba276"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_32"
     type: vless
@@ -270,24 +282,9 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_33"
     type: vless
-    server: "140.238.208.210"
-    port: 443
-    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vod.ensf.top"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/api/v1/irc"
-      headers:
-        Host: "vod.ensf.top"
-  - name: "🇨🇭_34"
-    type: vless
     server: "132.243.174.112"
     port: 2054
-    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    uuid: "4fe19d97-7b1d-4cb2-99ee-4bd8658a4c34"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -299,25 +296,11 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇨🇭_35"
-    type: vless
-    server: "178.83.226.142"
-    port: 8443
-    uuid: "4cb63132-e084-4676-ac67-1ed6b60be05a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "refersion.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-x9vdxai-qKAzuhxV7H2RIbEmIh_ZgdiFxiUA5q0B1I"
-      short-id: "aa6988d03cc11454"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_36"
+  - name: "🇨🇭_34"
     type: vless
     server: "132.243.174.112"
     port: 2054
-    uuid: "0e75f6ee-9a4d-4019-8276-cacf388d2ec6"
+    uuid: "626c0789-16d1-4815-be8b-bd03959d7d12"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -371,6 +354,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -387,8 +371,6 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
   - name: "LB-CDN"
     type: load-balance
@@ -398,6 +380,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -414,8 +397,6 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -425,6 +406,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -441,8 +423,6 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
   - name: "FAST-CDN"
     type: url-test
@@ -451,6 +431,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -467,8 +448,6 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -478,6 +457,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -494,13 +474,12 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇭_18"
       - "🇨🇭_19"
       - "🇨🇭_20"
       - "🇨🇭_21"
@@ -517,8 +496,6 @@ proxy-groups:
       - "🇨🇭_32"
       - "🇨🇭_33"
       - "🇨🇭_34"
-      - "🇨🇭_35"
-      - "🇨🇭_36"
 
 rules:
   - MATCH,PROXY-BEST

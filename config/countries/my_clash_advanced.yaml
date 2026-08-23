@@ -59,39 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇾_4"
+  - name: "🇲🇾_4"
     type: vless
-    server: "77.75.199.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "my2.miyazono-kaori.com"
+    port: 443
+    uuid: "ef945624-a311-4766-b57a-c19e7e6bb73c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇨🇾_5"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.setel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM"
+      short-id: "ed77ac35a310"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇾_5"
     type: vless
-    server: "154.92.9.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    server: "my1.miyazono-kaori.com"
+    port: 443
+    uuid: "ef945624-a311-4766-b57a-c19e7e6bb73c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
-  - name: "🇨🇾_6"
-    type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.setel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc"
+      short-id: "99f8972e3dd5ed"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇾_6"
+    type: trojan
+    server: "47.250.84.25"
+    port: 443
+    password: "5931134d1cde66bf83a54acdfebe7ab2"
+    sni: "moltbot.doctoroyy.net"
+    skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime58.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -134,9 +137,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -146,9 +149,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -158,9 +161,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -169,9 +172,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -181,17 +184,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇾_4"
-      - "🇨🇾_5"
-      - "🇨🇾_6"
+      - "🇲🇾_4"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
 
 rules:
   - MATCH,PROXY-BEST

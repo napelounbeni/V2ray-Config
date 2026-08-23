@@ -59,71 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_11"
+  - name: "🇺🇦_6"
     type: vless
-    server: "193.238.153.15"
+    server: "nl1.miyazono-kaori.com"
     port: 443
-    uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
+    uuid: "ef945624-a311-4766-b57a-c19e7e6bb73c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    servername: "www.philips.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
-      short-id: "1ea21a140beaecc5"
+      public-key: "AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw"
+      short-id: "92dca6"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_12"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_13"
-    type: vless
-    server: "45.135.235.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime07.workers.dev"
-  - name: "🇺🇦_14"
-    type: vless
-    server: "node-22.optmarketshali.ru"
-    port: 443
-    uuid: "f8ddbec7-05c3-4669-934f-65df92b7694e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "node-22.optmarketshali.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU"
-      short-id: "5d08d7c6e0132d2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_15"
-    type: vless
-    server: "138.249.242.140"
-    port: 443
-    uuid: "fbb74aa8-b89a-4f20-9504-6b25aadf6681"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ukri.freeinternat.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_16"
+  - name: "🇺🇦_7"
     type: vless
     server: "5.34.182.23"
     port: 13443
@@ -137,21 +87,7 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_17"
-    type: vless
-    server: "45.135.235.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    network: ws
-    ws-opts:
-      path: "Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇺🇦_18"
+  - name: "🇺🇦_8"
     type: vless
     server: "5.34.182.23"
     port: 443
@@ -165,9 +101,23 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_19"
+  - name: "🇺🇦_9"
     type: vless
-    server: "88.151.195.213"
+    server: "193.238.153.15"
+    port: 443
+    uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
+      short-id: "1ea21a140beaecc5"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_10"
+    type: vless
+    server: "s282.wagahaha.xyz"
     port: 443
     uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
     udp: true
@@ -176,17 +126,6 @@ proxies:
     servername: "u643766ubdb325a3s274.kukuss.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_20"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -229,16 +168,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -248,16 +182,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -267,16 +196,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -285,16 +209,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -304,31 +223,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
+      - "🇺🇦_9"
+      - "🇺🇦_10"
 
 rules:
   - MATCH,PROXY-BEST

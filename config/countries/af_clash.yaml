@@ -63,19 +63,20 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇭🇷_1"
-    type: trojan
-    server: "213.182.199.137"
+  - name: "🇦🇫_1"
+    type: vless
+    server: "103.161.237.54"
     port: 443
-    password: "MiTiVPN"
-    sni: "66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
-    skip-cert-verify: true
+    uuid: "e911c552-3a98-41e0-b5fb-0dd3879887b7"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vod.ensf.top"
     network: ws
     ws-opts:
-      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      path: "/api/v1/irc"
       headers:
-        Host: "2-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+        Host: "vod.ensf.top"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +91,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇭🇷_1"
+      - "🇦🇫_1"
 
 
 rules:
