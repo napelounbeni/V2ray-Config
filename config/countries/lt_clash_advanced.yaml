@@ -59,33 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_5"
-    type: vless
-    server: "85.206.161.200"
-    port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇹_6"
-    type: vless
-    server: "185.237.185.182"
-    port: 2053
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇱🇹_7"
+    type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_8"
+    type: vless
+    server: "88.119.176.50"
+    port: 443
+    uuid: "fbb74aa8-b89a-4f20-9504-6b25aadf6681"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lit3.freeinternat.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_9"
     type: vless
     server: "84.32.209.7"
     port: 443
@@ -93,13 +92,27 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "doubleclick-cn.net"
-    client-fingerprint: "firefox"
+    servername: "dartsearch-cn.net"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_8"
+  - name: "🇱🇹_10"
+    type: vless
+    server: "144.31.243.148"
+    port: 443
+    uuid: "9e1d737e-f3c1-4757-84b2-3dcf66a468ed"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "3wa3ZmMniymkL-58bPtY7baWPxdJ6n2UaJMG7YiLiGo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_11"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -112,6 +125,13 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇱🇹_12"
+    type: ss
+    server: "144.31.243.2"
+    port: 16015
+    cipher: "chacha20-ietf-poly1305"
+    password: "J1InuU6QRT5JOh1mQfkjU2"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -154,10 +174,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -167,10 +189,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -180,10 +204,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -192,10 +218,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -205,19 +233,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇹_5"
-      - "🇱🇹_6"
       - "🇱🇹_7"
       - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
+      - "🇱🇹_11"
+      - "🇱🇹_12"
 
 rules:
   - MATCH,PROXY-BEST

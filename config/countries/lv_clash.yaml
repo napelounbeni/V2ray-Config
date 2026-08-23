@@ -65,17 +65,15 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2083
+    server: "89.36.161.222"
+    port: 2096
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "laoye.in-gect.fun"
-    client-fingerprint: "ios"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
   - name: "🇱🇻_2"
     type: vless
     server: "89.36.161.222"
@@ -92,17 +90,18 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_3"
     type: vless
-    server: "31.57.28.199"
+    server: "195.123.210.168"
     port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "eu-west.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
+      short-id: "dd3ff38418d29d22"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_4"
     type: vless
     server: "195.123.208.92"
@@ -120,18 +119,32 @@ proxies:
   - name: "🇱🇻_5"
     type: vless
     server: "195.123.210.168"
-    port: 443
+    port: 13443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-west.cendora.ru"
+    servername: "auto.cendora.ru"
     client-fingerprint: "qq"
     reality-opts:
-      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
-      short-id: "dd3ff38418d29d22"
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_6"
+    type: vless
+    server: "195.123.208.170"
+    port: 443
+    uuid: "fbb74aa8-b89a-4f20-9504-6b25aadf6681"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lat.freeinternat.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_7"
     type: vless
     server: "89.36.161.222"
     port: 2083
@@ -140,38 +153,21 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "laoye.in-gect.fun"
-    client-fingerprint: "ios"
+    client-fingerprint: "firefox"
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇻_7"
-    type: vless
-    server: "195.123.210.168"
-    port: 13443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
   - name: "🇱🇻_8"
     type: vless
     server: "laoye.in-gect.fun"
-    port: 2053
+    port: 2096
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
-      short-id: "d26f4703cdd30f4e"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
   - name: "🇱🇻_9"
     type: vless
     server: "31.76.62.167"
@@ -186,39 +182,6 @@ proxies:
       public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
       short-id: "dd3ff38418d29d22"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_10"
-    type: vless
-    server: "89.36.161.222"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
-  - name: "🇱🇻_11"
-    type: vless
-    server: "95.156.205.244"
-    port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇻_12"
-    type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -242,9 +205,6 @@ proxy-groups:
       - "🇱🇻_7"
       - "🇱🇻_8"
       - "🇱🇻_9"
-      - "🇱🇻_10"
-      - "🇱🇻_11"
-      - "🇱🇻_12"
 
 
 rules:

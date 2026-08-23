@@ -72,27 +72,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "eu-central.cendora.ru"
-    client-fingerprint: "edge"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
   - name: "🇩🇰_2"
-    type: vless
-    server: "193.181.213.45"
-    port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "forfreeuse.rtqa.ru"
-  - name: "🇩🇰_3"
     type: vless
     server: "144.31.242.1"
     port: 13443
@@ -106,7 +91,7 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇩🇰_4"
+  - name: "🇩🇰_3"
     type: vless
     server: "46.29.235.9"
     port: 443
@@ -137,7 +122,6 @@ proxy-groups:
       - "🇩🇰_1"
       - "🇩🇰_2"
       - "🇩🇰_3"
-      - "🇩🇰_4"
 
 
 rules:

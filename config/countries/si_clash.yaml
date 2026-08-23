@@ -63,32 +63,48 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇲🇪_1"
+  - name: "🇸🇮_1"
     type: vless
-    server: "147.90.26.86"
+    server: "node-09.usp-vpn.store"
     port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    uuid: "f8ddbec7-05c3-4669-934f-65df92b7694e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇲🇪_2"
+    servername: "node-09.usp-vpn.store"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU"
+      short-id: "88d9dc52ef39c8bd"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇮_2"
     type: vless
-    server: "147.90.229.233"
+    server: "node-04.usp-vpn.store"
     port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
+    uuid: "f8ddbec7-05c3-4669-934f-65df92b7694e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "node-04.usp-vpn.store"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU"
+      short-id: "99dfcb9d097445d0"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇮_3"
+    type: vless
+    server: "node-01.usp-vpn.store"
+    port: 443
+    uuid: "f8ddbec7-05c3-4669-934f-65df92b7694e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "node-01.usp-vpn.store"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU"
+      short-id: "5d08d7c6e0132d2d"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,8 +119,9 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇲🇪_1"
-      - "🇲🇪_2"
+      - "🇸🇮_1"
+      - "🇸🇮_2"
+      - "🇸🇮_3"
 
 
 rules:

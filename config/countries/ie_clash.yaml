@@ -64,19 +64,6 @@ dns:
 
 proxies:
   - name: "🇮🇪_1"
-    type: vless
-    server: "54.229.164.147"
-    port: 2053
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "forfreeuse.rtqa.ru"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇪_2"
     type: trojan
     server: "54.216.143.197"
     port: 443
@@ -104,7 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇪_1"
-      - "🇮🇪_2"
 
 
 rules:

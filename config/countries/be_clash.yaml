@@ -65,18 +65,6 @@ dns:
 proxies:
   - name: "🇧🇪_1"
     type: vless
-    server: "be2.wba-pn.ru"
-    port: 443
-    uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "be2.wba-pn.ru"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇧🇪_2"
-    type: vless
     server: "113.30.152.6"
     port: 443
     uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
@@ -102,7 +90,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇪_1"
-      - "🇧🇪_2"
 
 
 rules:

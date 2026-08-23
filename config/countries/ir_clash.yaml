@@ -63,20 +63,64 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇰🇬_1"
+  - name: "🇮🇷_1"
     type: vless
-    server: "81.85.75.85"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
     udp: true
-    tls: true
+    network: ws
+    ws-opts:
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇮🇷_3"
+    type: vless
+    server: "mci.v2plus.ovh"
+    port: 80
+    uuid: "0c6c9627-95fe-418a-bd4c-50df888c44bd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ffEt2nn4iTWiXfi8"
+      headers:
+        Host: "worker3.bobiv63003.workers.dev"
+  - name: "🇮🇷_4"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
     skip-cert-verify: true
-    servername: "baltic.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
-      short-id: "4a46213c935e2ee4"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+  - name: "🇮🇷_5"
+    type: ss
+    server: "185.84.158.231"
+    port: 16156
+    cipher: "chacha20-ietf-poly1305"
+    password: "x8UlsAi2oRWQ6DZPL/RNQkAzOgitQAJLn672tmjIXhw="
+    udp: true
+  - name: "🇮🇷_6"
+    type: ss
+    server: "e4.cover20.ir"
+    port: 16156
+    cipher: "chacha20-ietf-poly1305"
+    password: "x8UlsAi2oRWQ6DZPL/RNQkAzOgitQAJLn672tmjIXhw="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +135,12 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇰🇬_1"
+      - "🇮🇷_1"
+      - "🇮🇷_2"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
+      - "🇮🇷_5"
+      - "🇮🇷_6"
 
 
 rules:
