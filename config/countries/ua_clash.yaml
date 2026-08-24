@@ -65,34 +65,6 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "nl1.miyazono-kaori.com"
-    port: 443
-    uuid: "ef945624-a311-4766-b57a-c19e7e6bb73c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.philips.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw"
-      short-id: "92dca6"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "5.34.182.23"
-    port: 13443
-    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_3"
-    type: vless
     server: "5.34.182.23"
     port: 443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
@@ -105,7 +77,56 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
+  - name: "🇺🇦_2"
+    type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "s282.wagahaha.xyz"
+    port: 443
+    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "u643766ubdb325a3s274.kukuss.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇺🇦_4"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "91.224.87.22"
+    port: 9873
+    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_6"
     type: vless
     server: "193.238.153.15"
     port: 443
@@ -119,17 +140,17 @@ proxies:
       public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
       short-id: "1ea21a140beaecc5"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_5"
-    type: vless
-    server: "s282.wagahaha.xyz"
+  - name: "🇺🇦_7"
+    type: trojan
+    server: "89.116.180.49"
     port: 443
-    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
-    udp: true
-    tls: true
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
     skip-cert-verify: true
-    servername: "u643766ubdb325a3s274.kukuss.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -149,6 +170,8 @@ proxy-groups:
       - "🇺🇦_3"
       - "🇺🇦_4"
       - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
 
 
 rules:

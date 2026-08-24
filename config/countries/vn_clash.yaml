@@ -65,48 +65,6 @@ dns:
 proxies:
   - name: "🇻🇳_1"
     type: vless
-    server: "103.225.197.237"
-    port: 443
-    uuid: "432ab7a2-6e2b-4f0b-be4a-06bdcc714624"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "mCDHZBY0AYAeY7Aj7COGaegrm7QAwfueYYSC02vqbSY"
-      short-id: "0d8ca7e0b3d26321"
-    flow: "xtls-rprx-vision"
-  - name: "🇻🇳_2"
-    type: vless
-    server: "bftu-stnbal.servora.top"
-    port: 443
-    uuid: "432ab7a2-6e2b-4f0b-be4a-06bdcc714624"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "mCDHZBY0AYAeY7Aj7COGaegrm7QAwfueYYSC02vqbSY"
-      short-id: "0d8ca7e0b3d26321"
-    flow: "xtls-rprx-vision"
-  - name: "🇻🇳_3"
-    type: vless
-    server: "bc-vn-hn.ray-balance.space"
-    port: 443
-    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.ray-balance.space"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇻🇳_4"
-    type: vless
     server: "2.27.27.98"
     port: 443
     uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
@@ -119,19 +77,19 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇻🇳_5"
+  - name: "🇻🇳_2"
     type: vless
-    server: "216.133.158.108"
+    server: "bc-vn-hn.ray-balance.space"
     port: 443
-    uuid: "c08c499f-21bd-46ba-9146-5c770204342b"
+    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "www.ray-balance.space"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Kh1-hdn9zTY5a1-3qP8L_6UTRL2iNZ1pIr_X8U94OQM"
-      short-id: "872303cf1e28389f"
+      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
+      short-id: ""
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -149,9 +107,6 @@ proxy-groups:
     proxies:
       - "🇻🇳_1"
       - "🇻🇳_2"
-      - "🇻🇳_3"
-      - "🇻🇳_4"
-      - "🇻🇳_5"
 
 
 rules:

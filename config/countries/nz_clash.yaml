@@ -65,15 +65,15 @@ dns:
 proxies:
   - name: "🇳🇿_1"
     type: vless
-    server: "185.121.179.11"
-    port: 443
-    uuid: "9647129d-57ff-4fe2-bbd8-4a49d622612a"
+    server: "114.129.43.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "de-01.atlanta-api.com"
-    client-fingerprint: "edge"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   - name: "PROXY"

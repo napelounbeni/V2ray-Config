@@ -59,34 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_6"
-    type: vless
-    server: "nl1.miyazono-kaori.com"
-    port: 443
-    uuid: "ef945624-a311-4766-b57a-c19e7e6bb73c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.philips.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw"
-      short-id: "92dca6"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_7"
-    type: vless
-    server: "5.34.182.23"
-    port: 13443
-    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
   - name: "🇺🇦_8"
     type: vless
     server: "5.34.182.23"
@@ -103,6 +75,55 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇺🇦_9"
     type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_10"
+    type: vless
+    server: "s282.wagahaha.xyz"
+    port: 443
+    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "u643766ubdb325a3s274.kukuss.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_11"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_12"
+    type: vless
+    server: "91.224.87.22"
+    port: 9873
+    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_13"
+    type: vless
     server: "193.238.153.15"
     port: 443
     uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
@@ -115,17 +136,17 @@ proxies:
       public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
       short-id: "1ea21a140beaecc5"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_10"
-    type: vless
-    server: "s282.wagahaha.xyz"
+  - name: "🇺🇦_14"
+    type: trojan
+    server: "89.116.180.49"
     port: 443
-    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
-    udp: true
-    tls: true
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
     skip-cert-verify: true
-    servername: "u643766ubdb325a3s274.kukuss.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -168,11 +189,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -182,11 +205,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -196,11 +221,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -209,11 +236,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -223,21 +252,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_6"
-      - "🇺🇦_7"
       - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
+      - "🇺🇦_11"
+      - "🇺🇦_12"
+      - "🇺🇦_13"
+      - "🇺🇦_14"
 
 rules:
   - MATCH,PROXY-BEST
