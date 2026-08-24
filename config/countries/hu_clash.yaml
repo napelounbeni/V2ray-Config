@@ -78,18 +78,19 @@ proxies:
       short-id: "f4b4a6365558ea2e"
     flow: "xtls-rprx-vision"
   - name: "🇭🇺_2"
-    type: trojan
-    server: "185.225.68.232"
+    type: vless
+    server: "45.195.111.108"
     port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    uuid: "219762a7-b918-4e2b-8a3d-d309ef98bb61"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "f4b4a6365558ea2e"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"

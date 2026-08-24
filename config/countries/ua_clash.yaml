@@ -65,53 +65,6 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "5.34.182.23"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_3"
-    type: vless
-    server: "s282.wagahaha.xyz"
-    port: 443
-    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "u643766ubdb325a3s274.kukuss.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_4"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_5"
-    type: vless
     server: "91.224.87.22"
     port: 9873
     uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
@@ -119,14 +72,14 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "dl.google.com"
-    client-fingerprint: "qq"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
       short-id: ""
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_6"
+  - name: "🇺🇦_2"
     type: vless
     server: "193.238.153.15"
     port: 443
@@ -140,17 +93,74 @@ proxies:
       public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
       short-id: "1ea21a140beaecc5"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_7"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+  - name: "🇺🇦_3"
+    type: vless
+    server: "91.224.86.107"
+    port: 9830
+    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabbccdd"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "91.224.87.22"
+    port: 9882
+    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aa"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "5.34.182.23"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_6"
+    type: vless
+    server: "s282.wagahaha.xyz"
+    port: 443
+    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "u643766ubdb325a3s274.kukuss.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_7"
+    type: vless
+    server: "88.151.195.241"
+    port: 443
+    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "u643766ubdb325a3s274.kukuss.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"

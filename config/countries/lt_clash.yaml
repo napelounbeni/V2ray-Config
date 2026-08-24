@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "88.119.176.50"
+    port: 443
+    uuid: "fbb74aa8-b89a-4f20-9504-6b25aadf6681"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lit3.freeinternat.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "84.32.209.7"
     port: 443
     uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
@@ -77,47 +91,7 @@ proxies:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
-    type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
   - name: "🇱🇹_3"
-    type: vless
-    server: "144.31.243.148"
-    port: 443
-    uuid: "9e1d737e-f3c1-4757-84b2-3dcf66a468ed"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "3wa3ZmMniymkL-58bPtY7baWPxdJ6n2UaJMG7YiLiGo"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_4"
-    type: vless
-    server: "88.216.69.144"
-    port: 443
-    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
-      headers:
-        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-  - name: "🇱🇹_5"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -130,7 +104,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_6"
+  - name: "🇱🇹_4"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -155,8 +129,6 @@ proxy-groups:
       - "🇱🇹_2"
       - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
 
 rules:

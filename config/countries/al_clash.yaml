@@ -65,19 +65,18 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
-    server: "nl6.unlockvpn.online"
-    port: 8445
-    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
+    server: "alban2.freeinternat.com"
+    port: 443
+    uuid: "fbb74aa8-b89a-4f20-9504-6b25aadf6681"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nl6.unlockvpn.online"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/api/v1/devices/e1971f0b19/telemetry"
-      headers:
-        Host: "nl6.unlockvpn.online"
+    servername: "alban2.freeinternat.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
   - name: "🇦🇱_2"
     type: vless
     server: "45.89.60.105"
@@ -94,6 +93,19 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_3"
     type: vless
+    server: "nl6.unlockvpn.online"
+    port: 8445
+    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nl6.unlockvpn.online"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/api/v1/devices/e1971f0b19/telemetry"
+  - name: "🇦🇱_4"
+    type: vless
     server: "78.159.131.235"
     port: 443
     uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
@@ -106,7 +118,7 @@ proxies:
       public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
       short-id: "7bcfc0bc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_4"
+  - name: "🇦🇱_5"
     type: vless
     server: "91.239.6.19"
     port: 443
@@ -115,12 +127,19 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "alban2.freeinternat.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_5"
+  - name: "🇦🇱_6"
+    type: ss
+    server: "157.22.240.141"
+    port: 57925
+    cipher: "chacha20-ietf-poly1305"
+    password: "vDwGqUupXso4i90jdZL0sR"
+    udp: true
+  - name: "🇦🇱_7"
     type: ss
     server: "157.22.240.141"
     port: 57925
@@ -146,6 +165,8 @@ proxy-groups:
       - "🇦🇱_3"
       - "🇦🇱_4"
       - "🇦🇱_5"
+      - "🇦🇱_6"
+      - "🇦🇱_7"
 
 
 rules:

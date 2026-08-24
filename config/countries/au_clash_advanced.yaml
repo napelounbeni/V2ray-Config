@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_9"
+  - name: "🇦🇺_8"
     type: vless
     server: "172.105.169.70"
     port: 443
@@ -68,7 +68,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "172.105.169.70"
-  - name: "🇦🇺_10"
+  - name: "🇦🇺_9"
     type: vless
     server: "16.176.42.97"
     port: 443
@@ -77,22 +77,13 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "zero.csmaster.ggff.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇦🇺_11"
-    type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_12"
+        Host: "zero.csmaster.ggff.net"
+  - name: "🇦🇺_10"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -106,33 +97,33 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_13"
+  - name: "🇦🇺_11"
     type: ss
     server: "au1.levikogjgfdd.ir"
     port: 27116
     cipher: "chacha20-ietf-poly1305"
     password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
     udp: true
-  - name: "🇦🇺_14"
+  - name: "🇦🇺_12"
     type: ss
     server: "104.156.233.234"
     port: 27116
     cipher: "chacha20-ietf-poly1305"
     password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
     udp: true
-  - name: "🇦🇺_15"
-    type: ss
-    server: "45.32.246.180"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "TqkkHRpZTkjbTBrk"
-    udp: true
-  - name: "🇦🇺_16"
+  - name: "🇦🇺_13"
     type: ss
     server: "45.77.232.213"
     port: 15675
     cipher: "chacha20-ietf-poly1305"
     password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
+    udp: true
+  - name: "🇦🇺_14"
+    type: ss
+    server: "45.32.246.180"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "TqkkHRpZTkjbTBrk"
     udp: true
 
 proxy-groups:
@@ -176,14 +167,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -193,14 +183,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -210,14 +199,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -226,14 +214,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -243,27 +230,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇺_8"
       - "🇦🇺_9"
       - "🇦🇺_10"
       - "🇦🇺_11"
       - "🇦🇺_12"
       - "🇦🇺_13"
       - "🇦🇺_14"
-      - "🇦🇺_15"
-      - "🇦🇺_16"
 
 rules:
   - MATCH,PROXY-BEST

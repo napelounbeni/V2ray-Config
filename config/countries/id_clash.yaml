@@ -63,28 +63,19 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇼_1"
-    type: vless
-    server: "5.10.246.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇮🇩_1"
+    type: trojan
+    server: "172.232.249.14"
+    port: 28443
+    password: "e0019b1b-ecbc-4b5f-80c7-0940a8568d65"
+    sni: "vpn-node.internal"
+    skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/xVpnTrojanWsSvc7f3a"
       headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_2"
-    type: vless
-    server: "62.72.166.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime40.workers.dev"
+        Host: "vpn-node.internal"
 
 proxy-groups:
   - name: "PROXY"
@@ -99,8 +90,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇼_1"
-      - "🇨🇼_2"
+      - "🇮🇩_1"
 
 
 rules:

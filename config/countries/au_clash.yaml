@@ -81,22 +81,13 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "zero.csmaster.ggff.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇦🇺_3"
-    type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_4"
+        Host: "zero.csmaster.ggff.net"
+  - name: "🇦🇺_3"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -110,19 +101,26 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_5"
+  - name: "🇦🇺_4"
     type: ss
     server: "au1.levikogjgfdd.ir"
     port: 27116
     cipher: "chacha20-ietf-poly1305"
     password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
     udp: true
-  - name: "🇦🇺_6"
+  - name: "🇦🇺_5"
     type: ss
     server: "104.156.233.234"
     port: 27116
     cipher: "chacha20-ietf-poly1305"
     password: "bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E"
+    udp: true
+  - name: "🇦🇺_6"
+    type: ss
+    server: "45.77.232.213"
+    port: 15675
+    cipher: "chacha20-ietf-poly1305"
+    password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
     udp: true
   - name: "🇦🇺_7"
     type: ss
@@ -130,13 +128,6 @@ proxies:
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "TqkkHRpZTkjbTBrk"
-    udp: true
-  - name: "🇦🇺_8"
-    type: ss
-    server: "45.77.232.213"
-    port: 15675
-    cipher: "chacha20-ietf-poly1305"
-    password: "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
     udp: true
 
 proxy-groups:
@@ -159,7 +150,6 @@ proxy-groups:
       - "🇦🇺_5"
       - "🇦🇺_6"
       - "🇦🇺_7"
-      - "🇦🇺_8"
 
 
 rules:

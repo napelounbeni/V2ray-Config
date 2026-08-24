@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇾_5"
+  - name: "🇧🇾_4"
     type: vless
     server: "45.134.26.97"
     port: 443
@@ -73,23 +73,7 @@ proxies:
       public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
       short-id: "2186a755ed67b034"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇾_6"
-    type: vless
-    server: "144.31.131.28"
-    port: 2053
-    uuid: "bd44419a-02a9-4c03-9cb8-a7f8ffd3ae68"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "api-maps.yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "w92oaftiqLJOMFy47hUWBixZEKwWJpHF4apaFTrh71w"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "MapsYandexAPI"
-  - name: "🇧🇾_7"
+  - name: "🇧🇾_5"
     type: vless
     server: "189.74.124.42"
     port: 443
@@ -98,12 +82,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "nordic.cendora.ru"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
       short-id: "2186a755ed67b034"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇾_8"
+  - name: "🇧🇾_6"
     type: trojan
     server: "by01.botovod.space"
     port: 500
@@ -156,10 +140,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -169,10 +152,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -182,10 +164,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -194,10 +175,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -207,19 +187,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇧🇾_4"
       - "🇧🇾_5"
       - "🇧🇾_6"
-      - "🇧🇾_7"
-      - "🇧🇾_8"
 
 rules:
   - MATCH,PROXY-BEST
