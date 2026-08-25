@@ -79,19 +79,32 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_2"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2053
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    server: "195.123.210.168"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
+    servername: "eu-west.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
-      short-id: "d26f4703cdd30f4e"
+      public-key: "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0"
+      short-id: "dd3ff38418d29d22"
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_3"
+    type: vless
+    server: "lta.mythos-wargame.fun"
+    port: 443
+    uuid: "2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lta.mythos-wargame.fun"
+    client-fingerprint: "chrome"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "edge.sync.v1"
+  - name: "🇱🇻_4"
     type: vless
     server: "89.36.161.222"
     port: 2053
@@ -105,15 +118,6 @@ proxies:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_4"
-    type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇱🇻_5"
     type: vless
     server: "89.36.161.222"
@@ -123,11 +127,50 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
   - name: "🇱🇻_6"
     type: vless
+    server: "195.123.210.168"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_7"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vk.ru"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
+      short-id: "d26f4703cdd30f4e"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_8"
+    type: vless
     server: "89.36.161.222"
+    port: 2083
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "laoye.in-gect.fun"
+    client-fingerprint: "firefox"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇱🇻_9"
+    type: vless
+    server: "laoye.in-gect.fun"
     port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
@@ -138,20 +181,9 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇻_7"
+  - name: "🇱🇻_10"
     type: trojan
-    server: "84.21.172.81"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇱🇻_8"
-    type: trojan
-    server: "tr-latvia1.unlimited-access.ru"
+    server: "85.159.228.28"
     port: 443
     password: "kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi"
     sni: "tr-latvia1.unlimited-access.ru"
@@ -179,6 +211,8 @@ proxy-groups:
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
 
 rules:

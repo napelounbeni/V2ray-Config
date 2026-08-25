@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇦🇪_1"
     type: vless
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_2"
+    type: vless
     server: "84.235.244.108"
     port: 22573
     uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
@@ -74,6 +85,19 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
+  - name: "🇦🇪_3"
+    type: vless
+    server: "uaenoad.whooisthebest.ir"
+    port: 22216
+    uuid: "5c5619e4-0577-48d4-8d0c-6ad9c5cc0ecf"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "sTE0YXI6Pv6OQUNbM-hNpNOhzon0_m2YUd7B1_g-JAU"
+      short-id: "0f4412d42129f080"
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +113,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇪_1"
+      - "🇦🇪_2"
+      - "🇦🇪_3"
 
 
 rules:

@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇸_9"
+  - name: "🇪🇸_10"
     type: vless
     server: "bc-es-hn.ray-balance.space"
     port: 443
@@ -69,20 +69,6 @@ proxies:
     skip-cert-verify: true
     servername: "www.ray-balance.space"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_10"
-    type: vless
-    server: "2.27.26.49"
-    port: 443
-    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.ray-balance.space"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
@@ -101,6 +87,20 @@ proxies:
       public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
       short-id: "866af6e56606f2bc"
   - name: "🇪🇸_12"
+    type: vless
+    server: "2.27.26.49"
+    port: 443
+    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ray-balance.space"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_13"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -111,28 +111,43 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇪🇸_13"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
+      headers:
+        Host: "www.calmlunch.com"
   - name: "🇪🇸_14"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_15"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
-  - name: "🇪🇸_15"
+  - name: "🇪🇸_16"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_16"
+  - name: "🇪🇸_17"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_18"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -181,7 +196,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -189,6 +203,8 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -198,7 +214,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -206,6 +221,8 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -215,7 +232,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -223,6 +239,8 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -231,7 +249,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -239,6 +256,8 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -248,7 +267,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -256,12 +274,13 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇪🇸_9"
       - "🇪🇸_10"
       - "🇪🇸_11"
       - "🇪🇸_12"
@@ -269,6 +288,8 @@ proxy-groups:
       - "🇪🇸_14"
       - "🇪🇸_15"
       - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,20 +59,43 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇬_2"
+  - name: "🇨🇼_4"
     type: vless
-    server: "81.85.75.85"
+    server: "88.216.67.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
+  - name: "🇨🇼_5"
+    type: vless
+    server: "92.60.74.123"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "baltic.cendora.ru"
+    servername: "notls.lukongtou.eu.org"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
-      short-id: "4a46213c935e2ee4"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/Telegram-WangCai2"
+      headers:
+        Host: "notls.lukongtou.eu.org"
+  - name: "🇨🇼_6"
+    type: vless
+    server: "88.216.66.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -115,7 +138,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +150,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +162,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +173,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +185,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇰🇬_2"
+      - "🇨🇼_4"
+      - "🇨🇼_5"
+      - "🇨🇼_6"
 
 rules:
   - MATCH,PROXY-BEST

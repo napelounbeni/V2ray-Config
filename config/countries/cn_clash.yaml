@@ -93,19 +93,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇳_3"
     type: trojan
-    server: "221.181.169.196"
-    port: 46867
-    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇨🇳_4"
-    type: trojan
     server: "221.181.169.52"
     port: 49319
     password: "47c270a9-bce5-450e-8622-f2631070a012"
@@ -117,7 +104,7 @@ proxies:
       path: "/xVpnTrojanWsSvc7f3a"
       headers:
         Host: "vpn-node.internal"
-  - name: "🇨🇳_5"
+  - name: "🇨🇳_4"
     type: trojan
     server: "223.107.155.28"
     port: 41187
@@ -130,11 +117,24 @@ proxies:
       path: "/xVpnTrojanWsSvc7f3a"
       headers:
         Host: "vpn-node.internal"
+  - name: "🇨🇳_5"
+    type: trojan
+    server: "223.107.155.28"
+    port: 43273
+    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
+    sni: "vpn-node.internal"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/xVpnTrojanWsSvc7f3a"
+      headers:
+        Host: "vpn-node.internal"
   - name: "🇨🇳_6"
     type: trojan
-    server: "221.230.19.73"
-    port: 48966
-    password: "1addb6f6-c65a-4652-91e7-cbf3c6fa6f95"
+    server: "221.181.169.196"
+    port: 46867
+    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
     sni: "vpn-node.internal"
     skip-cert-verify: true
     udp: true
@@ -145,9 +145,9 @@ proxies:
         Host: "vpn-node.internal"
   - name: "🇨🇳_7"
     type: trojan
-    server: "223.107.155.28"
-    port: 43273
-    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
+    server: "221.230.19.73"
+    port: 48966
+    password: "1addb6f6-c65a-4652-91e7-cbf3c6fa6f95"
     sni: "vpn-node.internal"
     skip-cert-verify: true
     udp: true

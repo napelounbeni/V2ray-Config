@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_2"
+  - name: "🇧🇬_4"
     type: vless
     server: "82.118.18.202"
     port: 443
@@ -72,6 +72,35 @@ proxies:
     reality-opts:
       public-key: "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk"
       short-id: "720148f2fea16d0f"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇬_5"
+    type: vless
+    server: "108.165.233.223"
+    port: 443
+    uuid: "2388e166-3890-33ae-f77e-efac00000003"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "netlivpn4813.ddhshhshs.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: "netlivpn4813.ddhshhshs.workers.dev"
+  - name: "🇧🇬_6"
+    type: vless
+    server: "84.238.133.104"
+    port: 443
+    uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "swed2.helper-internet.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "6aa2d2e950441a9a"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -115,7 +144,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +156,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +168,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +179,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +191,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
 
 rules:
   - MATCH,PROXY-BEST
