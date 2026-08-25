@@ -59,31 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_6"
-    type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
-  - name: "🇦🇺_7"
-    type: vless
-    server: "16.176.42.97"
-    port: 443
-    uuid: "1bc380b1-cff7-446f-b13f-5c0ad29fc75a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "zero.csmaster.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "zero.csmaster.ggff.net"
-  - name: "🇦🇺_8"
+  - name: "🇦🇺_3"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -92,32 +68,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_9"
+  - name: "🇦🇺_4"
     type: vless
-    server: "192.65.217.123"
+    server: "172.105.169.70"
     port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    network: ws
-    ws-opts:
-      path: "Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇦🇺_10"
-    type: ss
-    server: "45.32.246.180"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "TqkkHRpZTkjbTBrk"
-    udp: true
+    servername: "172.105.169.70"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -160,11 +124,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -174,11 +135,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -188,11 +146,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -201,11 +156,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -215,21 +167,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
-      - "🇦🇺_9"
-      - "🇦🇺_10"
+      - "🇦🇺_3"
+      - "🇦🇺_4"
 
 rules:
   - MATCH,PROXY-BEST

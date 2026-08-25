@@ -76,6 +76,20 @@ proxies:
       public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
       short-id: "a20d3ed244c76426"
     flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
+    server: "france.metricpipe.space"
+    port: 443
+    uuid: "fbc3c88c-4bb3-42ff-9bae-6b391590dc2f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "france.metricpipe.space"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SxNM1vFitjeUuTS1MPk7HeL9FQaMlUg66KPtYVhHPAA"
+      short-id: "6611e920854f4885"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +105,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
 
 
 rules:

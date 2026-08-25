@@ -65,29 +65,32 @@ dns:
 proxies:
   - name: "🇧🇪_1"
     type: vless
-    server: "113.30.152.6"
+    server: "bel1.pandaonline.org"
     port: 443
-    uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
+    uuid: "33ec1638-ef61-4082-bf68-5a0523c15b75"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "be2.wba-pn.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "bel1.pandaonline.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8zwu_JeBAKXJUGgMPKECkOl8IRSRlTKUO5Mnc0fOLkM"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇧🇪_2"
     type: vless
-    server: "be2.wba-pn.ru"
+    server: "bel2.pandaonline.org"
     port: 443
-    uuid: "08f84d53-e262-459c-a15a-26213e7a07c9"
+    uuid: "33ec1638-ef61-4082-bf68-5a0523c15b75"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "be2.wba-pn.ru"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "bel2.pandaonline.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "7o1jjBQhSSkXhRz9TPqvtYBj9GnJAuH3JJVxc7_DTWI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"

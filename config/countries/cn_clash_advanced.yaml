@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇳_8"
+  - name: "🇨🇳_5"
     type: vless
     server: "bc-cn-hn.ray-balance.space"
     port: 443
@@ -73,7 +73,7 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇳_9"
+  - name: "🇨🇳_6"
     type: vless
     server: "2.27.27.168"
     port: 443
@@ -87,7 +87,7 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇳_10"
+  - name: "🇨🇳_7"
     type: trojan
     server: "221.181.169.52"
     port: 49319
@@ -100,46 +100,7 @@ proxies:
       path: "/xVpnTrojanWsSvc7f3a"
       headers:
         Host: "vpn-node.internal"
-  - name: "🇨🇳_11"
-    type: trojan
-    server: "223.107.155.28"
-    port: 41187
-    password: "2b1f78c0-6111-44fe-b023-b70ae5929d71"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇨🇳_12"
-    type: trojan
-    server: "223.107.155.28"
-    port: 43273
-    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇨🇳_13"
-    type: trojan
-    server: "221.181.169.196"
-    port: 46867
-    password: "0fca6e12-4c18-4adb-a6ed-747d3833cb40"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇨🇳_14"
+  - name: "🇨🇳_8"
     type: trojan
     server: "221.230.19.73"
     port: 48966
@@ -194,13 +155,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -210,13 +168,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -226,13 +181,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -241,13 +193,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -257,25 +206,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇳_5"
+      - "🇨🇳_6"
+      - "🇨🇳_7"
       - "🇨🇳_8"
-      - "🇨🇳_9"
-      - "🇨🇳_10"
-      - "🇨🇳_11"
-      - "🇨🇳_12"
-      - "🇨🇳_13"
-      - "🇨🇳_14"
 
 rules:
   - MATCH,PROXY-BEST

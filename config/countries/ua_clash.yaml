@@ -66,33 +66,20 @@ proxies:
   - name: "🇺🇦_1"
     type: vless
     server: "91.224.87.22"
-    port: 9882
-    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
+    port: 9873
+    uuid: "064a967e-0862-4cea-bdbd-9458cb7b6070"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "dl.google.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aa"
+      short-id: "aabb"
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
   - name: "🇺🇦_2"
-    type: vless
-    server: "ukrnoad.whooisthebest.ir"
-    port: 22216
-    uuid: "5c5619e4-0577-48d4-8d0c-6ad9c5cc0ecf"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amp-api-edge.apps.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "sTE0YXI6Pv6OQUNbM-hNpNOhzon0_m2YUd7B1_g-JAU"
-      short-id: "0f4412d42129f080"
-  - name: "🇺🇦_3"
     type: vless
     server: "5.34.182.23"
     port: 443
@@ -106,80 +93,20 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_4"
+  - name: "🇺🇦_3"
     type: vless
-    server: "91.224.86.107"
-    port: 9830
-    uuid: "76186f1e-3062-4a2b-98c2-fab3c61a9511"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabbccdd"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_5"
-    type: vless
-    server: "91.224.86.107"
-    port: 9830
-    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabbccdd"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_6"
-    type: vless
-    server: "91.224.87.22"
-    port: 9873
-    uuid: "14777bd9-56a5-46f6-a94f-826b4800dc05"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_7"
-    type: vless
-    server: "45.135.235.123"
+    server: "193.238.153.15"
     port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇺🇦_8"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
+      short-id: "1ea21a140beaecc5"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -197,11 +124,6 @@ proxy-groups:
       - "🇺🇦_1"
       - "🇺🇦_2"
       - "🇺🇦_3"
-      - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
-      - "🇺🇦_7"
-      - "🇺🇦_8"
 
 
 rules:

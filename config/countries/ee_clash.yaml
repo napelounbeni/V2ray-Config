@@ -79,61 +79,53 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_2"
     type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "edge"
-  - name: "🇪🇪_3"
-    type: vless
-    server: "45.80.108.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    network: ws
-    ws-opts:
-      path: "Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇪🇪_4"
-    type: vless
-    server: "94.183.170.135"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇪🇪_5"
-    type: vless
-    server: "94.183.170.135"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "chrome"
-  - name: "🇪🇪_6"
-    type: vless
-    server: "eeb.webinarly.fun"
+    server: "138.124.4.132"
     port: 443
     uuid: "2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "eeb.webinarly.fun"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     network: grpc
     grpc-opts:
       grpc-service-name: "edge.sync.v1"
-  - name: "🇪🇪_7"
+  - name: "🇪🇪_3"
+    type: vless
+    server: "94.183.170.135"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_4"
+    type: vless
+    server: "77.239.126.62"
+    port: 443
+    uuid: "0ab6b3f5-65f0-4a80-9672-6a311fab1187"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "es.ultraspeed.top"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "WdQ6Bx39POGXpoEpeUeROr1RKv3FtchyVeXwkOii7nc"
+      short-id: "a19afc0b48abf9e8"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_5"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_6"
     type: vless
     server: "94.183.170.231"
     port: 8443
@@ -143,6 +135,17 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy2.lockdwn.com"
     client-fingerprint: "firefox"
+  - name: "🇪🇪_7"
+    type: vless
+    server: "94.183.170.135"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
   - name: "🇪🇪_8"
     type: vless
     server: "132.243.65.4"
@@ -159,58 +162,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_9"
     type: vless
-    server: "es.ultraspeed.top"
-    port: 443
-    uuid: "0ab6b3f5-65f0-4a80-9672-6a311fab1187"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "es.ultraspeed.top"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "WdQ6Bx39POGXpoEpeUeROr1RKv3FtchyVeXwkOii7nc"
-      short-id: "a19afc0b48abf9e8"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_10"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_11"
-    type: vless
-    server: "138.124.4.132"
-    port: 443
-    uuid: "2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eeb.webinarly.fun"
-    client-fingerprint: "firefox"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "edge.sync.v1"
-  - name: "🇪🇪_12"
-    type: vless
-    server: "77.239.126.62"
-    port: 443
-    uuid: "0ab6b3f5-65f0-4a80-9672-6a311fab1187"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "es.ultraspeed.top"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "WdQ6Bx39POGXpoEpeUeROr1RKv3FtchyVeXwkOii7nc"
-      short-id: "a19afc0b48abf9e8"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_13"
-    type: vless
     server: "94.183.170.231"
     port: 443
     uuid: "19f54e37-5fae-47f6-bc10-e71ccbc58389"
@@ -218,7 +169,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇪🇪_14"
+  - name: "🇪🇪_10"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -226,7 +177,7 @@ proxies:
     sni: "russiapower.accesscam.org"
     skip-cert-verify: true
     udp: true
-  - name: "🇪🇪_15"
+  - name: "🇪🇪_11"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -264,10 +215,6 @@ proxy-groups:
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
-      - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
 
 
 rules:
