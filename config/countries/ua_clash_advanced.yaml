@@ -59,51 +59,39 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_11"
+  - name: "🇺🇦_10"
     type: vless
-    server: "45.135.235.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇺🇦_12"
-    type: vless
-    server: "141.105.130.102"
-    port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-  - name: "🇺🇦_13"
-    type: vless
-    server: "91.224.86.107"
-    port: 9830
+    server: "91.224.87.22"
+    port: 9882
     uuid: "76186f1e-3062-4a2b-98c2-fab3c61a9511"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "dl.google.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabbccdd"
+      short-id: "aabb"
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_14"
+  - name: "🇺🇦_11"
+    type: vless
+    server: "91.224.86.107"
+    port: 9830
+    uuid: "064a967e-0862-4cea-bdbd-9458cb7b6070"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aa"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_12"
     type: vless
     server: "91.224.87.22"
     port: 9873
@@ -119,67 +107,18 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_15"
+  - name: "🇺🇦_13"
     type: vless
-    server: "91.224.87.22"
-    port: 9882
-    uuid: "76186f1e-3062-4a2b-98c2-fab3c61a9511"
+    server: "88.151.195.241"
+    port: 18153
+    uuid: "41f4cb15-5a3f-3934-89fe-b4177146adf4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dl.google.com"
+    servername: "u643766ub6f3132bs274.kukuss.top"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabb"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_16"
-    type: vless
-    server: "5.34.182.23"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_17"
-    type: vless
-    server: "193.238.153.15"
-    port: 443
-    uuid: "40cfbd0a-f133-4174-8e03-ab0e587e1099"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "dzknsuwujuOacNHTXzdPxBLNUEJfEImiwLinPPNFmwU"
-      short-id: "1ea21a140beaecc5"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_18"
-    type: vless
-    server: "91.224.86.107"
-    port: 9830
-    uuid: "064a967e-0862-4cea-bdbd-9458cb7b6070"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aa"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_19"
+  - name: "🇺🇦_14"
     type: vless
     server: "91.224.87.22"
     port: 9873
@@ -195,7 +134,50 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_20"
+  - name: "🇺🇦_15"
+    type: vless
+    server: "5.34.182.23"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_16"
+    type: vless
+    server: "91.224.86.107"
+    port: 9830
+    uuid: "76186f1e-3062-4a2b-98c2-fab3c61a9511"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabbccdd"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_17"
+    type: vless
+    server: "141.105.130.102"
+    port: 443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇺🇦_18"
     type: vless
     server: "91.224.87.22"
     port: 9882
@@ -253,6 +235,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -261,8 +244,6 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
   - name: "LB-CDN"
     type: load-balance
@@ -272,6 +253,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -280,8 +262,6 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -291,6 +271,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -299,8 +280,6 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
   - name: "FAST-CDN"
     type: url-test
@@ -309,6 +288,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -317,8 +297,6 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -328,6 +306,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -336,13 +315,12 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
       - "🇺🇦_13"
@@ -351,8 +329,6 @@ proxy-groups:
       - "🇺🇦_16"
       - "🇺🇦_17"
       - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
 
 rules:
   - MATCH,PROXY-BEST

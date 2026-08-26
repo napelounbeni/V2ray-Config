@@ -59,7 +59,35 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_7"
+    type: vless
+    server: "51.161.199.124"
+    port: 443
+    uuid: "643cdd4d-8731-440b-9e46-9496f593aa27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "suetinklerartglass.co.uk"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0"
+      short-id: "0f4d3210977f51a5"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇺_8"
+    type: vless
+    server: "51.161.199.124"
+    port: 443
+    uuid: "61e7c286-6b7d-4667-955c-430d89979c4d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "suetinklerartglass.co.uk"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0"
+      short-id: "0f4d3210977f51a5"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇺_9"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -73,22 +101,21 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_5"
+  - name: "🇦🇺_10"
     type: vless
-    server: "192.65.217.123"
+    server: "51.161.199.124"
     port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    uuid: "aeeff70d-5bf4-48dc-9120-0593eda94cdb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/Telegram-WangCai2"
-      headers:
-        Host: "notls.lukongtou.eu.org"
-  - name: "🇦🇺_6"
+    servername: "suetinklerartglass.co.uk"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0"
+      short-id: "0f4d3210977f51a5"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇺_11"
     type: vless
     server: "172.105.169.70"
     port: 443
@@ -97,6 +124,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "172.105.169.70"
+  - name: "🇦🇺_12"
+    type: vless
+    server: "51.161.199.124"
+    port: 443
+    uuid: "17a8652c-6f1b-4371-9193-8ac4ddd54ba7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "suetinklerartglass.co.uk"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qM0uZ1Gp_Ve59S_iKPyFqQXjfjkUqf6iSHH_fxFt7w0"
+      short-id: "0f4d3210977f51a5"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -139,9 +180,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -151,9 +195,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -163,9 +210,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -174,9 +224,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -186,17 +239,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
+      - "🇦🇺_11"
+      - "🇦🇺_12"
 
 rules:
   - MATCH,PROXY-BEST

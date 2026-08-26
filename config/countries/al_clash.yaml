@@ -65,54 +65,26 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
-    server: "nl6.unlockvpn.online"
-    port: 8445
-    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nl6.unlockvpn.online"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/api/v1/devices/e1971f0b19/telemetry"
-      headers:
-        Host: "nl6.unlockvpn.online"
-  - name: "🇦🇱_2"
-    type: vless
-    server: "78.159.131.235"
+    server: "193.108.112.245"
     port: 443
-    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yahoo.com"
+    servername: "alban.freeinternat.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo"
-      short-id: "7bcfc0bc"
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_3"
-    type: vless
-    server: "78.159.131.235"
-    port: 8445
-    uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nl6.unlockvpn.online"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/api/v1/devices/e1971f0b19/telemetry"
-  - name: "🇦🇱_4"
+  - name: "🇦🇱_2"
     type: ss
     server: "157.22.240.141"
     port: 57925
     cipher: "chacha20-ietf-poly1305"
     password: "vDwGqUupXso4i90jdZL0sR"
     udp: true
-  - name: "🇦🇱_5"
+  - name: "🇦🇱_3"
     type: ss
     server: "157.22.240.141"
     port: 57925
@@ -136,8 +108,6 @@ proxy-groups:
       - "🇦🇱_1"
       - "🇦🇱_2"
       - "🇦🇱_3"
-      - "🇦🇱_4"
-      - "🇦🇱_5"
 
 
 rules:

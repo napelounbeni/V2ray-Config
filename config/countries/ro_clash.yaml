@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇷🇴_1"
     type: vless
+    server: "85.90.196.203"
+    port: 443
+    uuid: "38e1c7e8-fdcd-4396-a84c-550b05737308"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ro1.hat.onl"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
+      short-id: "76132b3b39704c44"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_2"
+    type: vless
     server: "45.13.151.46"
     port: 48689
     uuid: "e25486c7-3342-4777-a82d-89d485f844dc"
@@ -73,7 +87,7 @@ proxies:
     httpupgrade-opts:
       path: "/host"
       host: "www.filimo.com"
-  - name: "🇷🇴_2"
+  - name: "🇷🇴_3"
     type: vless
     server: "82.152.132.14"
     port: 443
@@ -82,22 +96,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-  - name: "🇷🇴_3"
+      path: "/"
+  - name: "🇷🇴_4"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_4"
+  - name: "🇷🇴_5"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -120,6 +132,7 @@ proxy-groups:
       - "🇷🇴_2"
       - "🇷🇴_3"
       - "🇷🇴_4"
+      - "🇷🇴_5"
 
 
 rules:

@@ -59,47 +59,46 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇱_41"
+  - name: "🇵🇱_38"
     type: vless
-    server: "95.85.227.25"
-    port: 443
-    uuid: "2297ea1f-2415-4a2c-be20-4a3a978283a2"
+    server: "31.59.125.49"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl1.hat.onl"
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_39"
+    type: vless
+    server: "217.60.25.51"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pol.freeinternat.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "PL-jIhHOxLpCUmnDvMEsB3YY3n8o7smiAT0P_SV6RCM"
-      short-id: "19d6296d2621d9fa"
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_42"
+  - name: "🇵🇱_40"
     type: vless
-    server: "45.198.96.210"
+    server: "94.183.209.58"
     port: 443
-    uuid: "19b64e79-73b4-4478-bbfc-fb57737b94f8"
+    uuid: "78791f9e-fe09-4d4f-88ec-895764bae0d6"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8"
-      short-id: "764f497dda21c4fc"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_43"
-    type: vless
-    server: "91.149.253.26"
-    port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇵🇱_44"
+      headers:
+        Host: "pl2.lckdwn.ru"
+  - name: "🇵🇱_41"
     type: vless
     server: "94.183.209.43"
     port: 443
@@ -108,21 +107,126 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇵🇱_45"
+  - name: "🇵🇱_42"
     type: vless
-    server: "31.59.125.66"
+    server: "150.251.114.43"
     port: 443
-    uuid: "62611b77-c747-4e39-9cc2-643805a56ccd"
+    uuid: "851b2819-b359-40bc-ad61-a5d41027be2c"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless"
+  - name: "🇵🇱_43"
+    type: vless
+    server: "151.243.182.249"
+    port: 443
+    uuid: "98673856-cd6f-4aa0-b2c9-d2ec90c0f47b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_44"
+    type: vless
+    server: "91.149.253.26"
+    port: 443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "s8.media.anti-zapret.com"
+    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
     client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_45"
+    type: vless
+    server: "45.144.48.191"
+    port: 443
+    uuid: "09c5212b-22d2-4c65-a663-5b33d9f153e8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.lot.com"
+    client-fingerprint: "safari"
     reality-opts:
-      public-key: "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY"
-      short-id: "58fbcddfaae3ade9"
+      public-key: "F3_A4WLO9tSBK8tPgDxOJRqAvGb-2rjcanSI4J-Sclk"
+      short-id: "dc42b0c194236d63"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_46"
+    type: vless
+    server: "beichuan.serv00.net"
+    port: 9815
+    uuid: "37a0bd7c-8b9f-4693-8916-bd1e2da0a817"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "beichuan.serv00.net"
+  - name: "🇵🇱_47"
+    type: vless
+    server: "193.124.41.236"
+    port: 443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_48"
+    type: vless
+    server: "83.168.111.66"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "QdGXMBWibJZdfDmDk3YcCMxNPd0yd_CkHAOt2yDYJCE"
+      short-id: "97ac193c0962477c"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_49"
+    type: vless
+    server: "80.211.249.240"
+    port: 8443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_50"
+    type: vless
+    server: "83.168.108.135"
+    port: 443
+    uuid: "a4ccca8a-dd5a-4935-80ea-53feafe195c9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pol5.helper-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_51"
+    type: vless
+    server: "94.183.209.59"
+    port: 443
+    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_52"
     type: vless
     server: "150.251.113.34"
     port: 443
@@ -135,84 +239,6 @@ proxies:
     reality-opts:
       public-key: "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8"
       short-id: "150a627d15154cf2"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_47"
-    type: vless
-    server: "141.101.120.129"
-    port: 80
-    uuid: "3087ca05-1a7c-45fa-aec9-805adeaedb1b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "tianshu.kevqwkt451.workers.dev"
-  - name: "🇵🇱_48"
-    type: vless
-    server: "91.149.253.249"
-    port: 443
-    uuid: "04c808e2-0b59-47b0-a54b-32fc7ef1c902"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free.cndyw.ggff.net"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_49"
-    type: vless
-    server: "81.90.17.164"
-    port: 443
-    uuid: "cb784d00-d34a-4389-b938-8717f7b28353"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yastatic.net"
-    reality-opts:
-      public-key: "v0XQn6uvyC8q5CThcRYLer1F1OOYpZDn5NLOvDicaWg"
-      short-id: "b31c2b75add2e5fa"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_50"
-    type: vless
-    server: "141.101.120.73"
-    port: 443
-    uuid: "5d8eb33a-2166-4daf-88fe-4be5799c493b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "noisy-term-e657.airdrop2014aa5168.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "noisy-term-e657.airdrop2014aa5168.workers.dev"
-  - name: "🇵🇱_51"
-    type: vless
-    server: "54.37.136.194"
-    port: 2053
-    uuid: "7061b26c-0f6c-49b5-be42-af2c011c04bc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    reality-opts:
-      public-key: "TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8"
-      short-id: "bdc1efeb01044e93"
-  - name: "🇵🇱_52"
-    type: vless
-    server: "2.59.163.203"
-    port: 443
-    uuid: "fd558218-675c-45e2-b65f-2622edc7f66f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl.orpheous.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q"
-      short-id: "9e4eced6e98ed4d4"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_53"
     type: vless
@@ -227,43 +253,19 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_54"
     type: vless
-    server: "141.101.120.231"
+    server: "94.183.157.249"
     port: 443
-    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    servername: "eu-central.cendora.ru"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/sync"
-      headers:
-        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
-  - name: "🇵🇱_55"
-    type: vless
-    server: "31.59.125.67"
-    port: 443
-    uuid: "62611b77-c747-4e39-9cc2-643805a56ccd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "s8.media.anti-zapret.com"
-    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY"
-      short-id: "58fbcddfaae3ade9"
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_56"
-    type: vless
-    server: "150.251.114.43"
-    port: 443
-    uuid: "851b2819-b359-40bc-ad61-a5d41027be2c"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless"
-  - name: "🇵🇱_57"
+  - name: "🇵🇱_55"
     type: vless
     server: "45.198.96.250"
     port: 443
@@ -277,35 +279,7 @@ proxies:
       public-key: "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8"
       short-id: "764f497dda21c4fc"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_58"
-    type: vless
-    server: "31.59.125.49"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_59"
-    type: vless
-    server: "31.59.125.49"
-    port: 13443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_60"
+  - name: "🇵🇱_56"
     type: vless
     server: "144.31.241.47"
     port: 443
@@ -319,9 +293,9 @@ proxies:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_61"
+  - name: "🇵🇱_57"
     type: vless
-    server: "80.211.249.240"
+    server: "45.144.48.193"
     port: 8443
     uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
     udp: true
@@ -331,81 +305,10 @@ proxies:
     client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇵🇱_62"
-    type: vless
-    server: "83.168.111.66"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QdGXMBWibJZdfDmDk3YcCMxNPd0yd_CkHAOt2yDYJCE"
-      short-id: "97ac193c0962477c"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_63"
-    type: vless
-    server: "31.59.125.65"
-    port: 443
-    uuid: "62611b77-c747-4e39-9cc2-643805a56ccd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "s8.media.anti-zapret.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY"
-      short-id: "58fbcddfaae3ade9"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_64"
-    type: vless
-    server: "2.27.244.96"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_65"
-    type: vless
-    server: "193.124.41.236"
-    port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_66"
-    type: vless
-    server: "94.183.209.58"
-    port: 443
-    uuid: "78791f9e-fe09-4d4f-88ec-895764bae0d6"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_67"
-    type: vless
-    server: "151.243.182.249"
-    port: 443
-    uuid: "98673856-cd6f-4aa0-b2c9-d2ec90c0f47b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_68"
+      path: "/pg/10086-dfc816f117c49173"
+      headers:
+        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+  - name: "🇵🇱_58"
     type: vless
     server: "95.85.227.142"
     port: 443
@@ -419,7 +322,32 @@ proxies:
       public-key: "HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_69"
+  - name: "🇵🇱_59"
+    type: vless
+    server: "82.40.62.199"
+    port: 37430
+    uuid: "7eb1d6c1-3121-4d12-bf43-68eac03886f5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "MNKg9Lti8zBudF2zQbCqIZPoqLMSxINa6QwzpODpE20"
+      short-id: ""
+  - name: "🇵🇱_60"
+    type: vless
+    server: "54.37.136.194"
+    port: 2053
+    uuid: "7061b26c-0f6c-49b5-be42-af2c011c04bc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    reality-opts:
+      public-key: "TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8"
+      short-id: "bdc1efeb01044e93"
+  - name: "🇵🇱_61"
     type: vless
     server: "83.168.71.216"
     port: 443
@@ -432,30 +360,35 @@ proxies:
     reality-opts:
       public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
       short-id: "2f49bccf11150ef2"
-  - name: "🇵🇱_70"
+  - name: "🇵🇱_62"
     type: vless
-    server: "94.183.157.249"
+    server: "31.59.125.49"
     port: 443
     uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
       short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_71"
+  - name: "🇵🇱_63"
     type: vless
-    server: "94.183.209.59"
+    server: "45.198.96.210"
     port: 443
-    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
+    uuid: "19b64e79-73b4-4478-bbfc-fb57737b94f8"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_72"
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8"
+      short-id: "764f497dda21c4fc"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_64"
     type: vless
     server: "tg.riotvpn.eu"
     port: 443
@@ -468,6 +401,71 @@ proxies:
     reality-opts:
       public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
       short-id: "2f49bccf11150ef2"
+  - name: "🇵🇱_65"
+    type: vless
+    server: "81.90.17.164"
+    port: 443
+    uuid: "cb784d00-d34a-4389-b938-8717f7b28353"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yastatic.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "v0XQn6uvyC8q5CThcRYLer1F1OOYpZDn5NLOvDicaWg"
+      short-id: "b31c2b75add2e5fa"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_66"
+    type: vless
+    server: "128.204.223.94"
+    port: 9815
+    uuid: "37a0bd7c-8b9f-4693-8916-bd1e2da0a817"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇵🇱_67"
+    type: ss
+    server: "pl134.vpnbook.com"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ytw2awn"
+    udp: true
+  - name: "🇵🇱_68"
+    type: ss
+    server: "54.36.174.140"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ytw2awn"
+    udp: true
+  - name: "🇵🇱_69"
+    type: ss
+    server: "54.36.174.134"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ytw2awn"
+    udp: true
+  - name: "🇵🇱_70"
+    type: ss
+    server: "51.83.192.80"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "itzvpn@321"
+    udp: true
+  - name: "🇵🇱_71"
+    type: ss
+    server: "pl140.vpnbook.com"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ytw2awn"
+    udp: true
+  - name: "🇵🇱_72"
+    type: ss
+    server: "194.61.121.93"
+    port: 7538
+    cipher: "chacha20-ietf-poly1305"
+    password: "U9YAoqBgg5VyGBc6vQv1sN"
+    udp: true
   - name: "🇵🇱_73"
     type: ss
     server: "51.83.192.80"
@@ -477,52 +475,10 @@ proxies:
     udp: true
   - name: "🇵🇱_74"
     type: ss
-    server: "54.36.174.140"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ytw2awn"
-    udp: true
-  - name: "🇵🇱_75"
-    type: ss
-    server: "pl134.vpnbook.com"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ytw2awn"
-    udp: true
-  - name: "🇵🇱_76"
-    type: ss
     server: "31.76.82.131"
     port: 34260
     cipher: "chacha20-ietf-poly1305"
     password: "cTAObwg4OWWXkZJQs0ZdgC"
-    udp: true
-  - name: "🇵🇱_77"
-    type: ss
-    server: "pl140.vpnbook.com"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ytw2awn"
-    udp: true
-  - name: "🇵🇱_78"
-    type: ss
-    server: "194.61.121.93"
-    port: 7538
-    cipher: "chacha20-ietf-poly1305"
-    password: "U9YAoqBgg5VyGBc6vQv1sN"
-    udp: true
-  - name: "🇵🇱_79"
-    type: ss
-    server: "51.83.192.80"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "itzvpn@321"
-    udp: true
-  - name: "🇵🇱_80"
-    type: ss
-    server: "54.36.174.134"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ytw2awn"
     udp: true
 
 proxy-groups:
@@ -566,6 +522,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -600,12 +559,6 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
   - name: "LB-CDN"
     type: load-balance
@@ -615,6 +568,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -649,12 +605,6 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -664,6 +614,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -698,12 +651,6 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
   - name: "FAST-CDN"
     type: url-test
@@ -712,6 +659,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -746,12 +696,6 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -761,6 +705,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -795,17 +742,14 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇵🇱_38"
+      - "🇵🇱_39"
+      - "🇵🇱_40"
       - "🇵🇱_41"
       - "🇵🇱_42"
       - "🇵🇱_43"
@@ -840,12 +784,6 @@ proxy-groups:
       - "🇵🇱_72"
       - "🇵🇱_73"
       - "🇵🇱_74"
-      - "🇵🇱_75"
-      - "🇵🇱_76"
-      - "🇵🇱_77"
-      - "🇵🇱_78"
-      - "🇵🇱_79"
-      - "🇵🇱_80"
 
 rules:
   - MATCH,PROXY-BEST

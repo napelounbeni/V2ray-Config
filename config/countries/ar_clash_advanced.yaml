@@ -59,46 +59,76 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇳_4"
+  - name: "🇦🇷_6"
     type: vless
-    server: "2.27.27.168"
+    server: "38.180.186.202"
     port: 443
-    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
+    uuid: "5695ff2a-d23c-45f8-85f4-19e2a80314cc"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.ray-balance.space"
+    servername: "zvukipro.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
-      short-id: ""
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇳_5"
+  - name: "🇦🇷_7"
     type: vless
-    server: "43.169.19.179"
+    server: "149.33.19.143"
     port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    uuid: "9a40ddea-41a7-441c-9b36-6dd51ee68211"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇨🇳_6"
-    type: trojan
-    server: "221.181.169.52"
-    port: 49319
-    password: "47c270a9-bce5-450e-8622-f2631070a012"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
+    servername: "zvukipro.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇷_8"
+    type: vless
+    server: "149.33.19.143"
+    port: 443
+    uuid: "049b5a3c-3331-4a16-a12a-1f79c5b52d17"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
+    tls: true
+    skip-cert-verify: true
+    servername: "zvukipro.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇷_9"
+    type: vless
+    server: "38.180.186.202"
+    port: 443
+    uuid: "7f32fb1f-9f6f-4e40-a359-de8f0369d981"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "zvukipro.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇷_10"
+    type: vless
+    server: "149.33.19.143"
+    port: 443
+    uuid: "25acff7f-3aff-4c68-bc5e-bbc68589f459"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "zvukipro.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +171,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +185,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +199,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +212,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +226,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇳_4"
-      - "🇨🇳_5"
-      - "🇨🇳_6"
+      - "🇦🇷_6"
+      - "🇦🇷_7"
+      - "🇦🇷_8"
+      - "🇦🇷_9"
+      - "🇦🇷_10"
 
 rules:
   - MATCH,PROXY-BEST
