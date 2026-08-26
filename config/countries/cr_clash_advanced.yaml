@@ -59,7 +59,81 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇷_3"
+  - name: "🇨🇷_7"
+    type: vless
+    server: "190.93.245.255"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_8"
+    type: vless
+    server: "190.93.246.208"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_9"
+    type: vless
+    server: "190.93.245.229"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_10"
+    type: vless
+    server: "190.93.245.225"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_11"
+    type: vless
+    server: "190.93.247.2"
+    port: 443
+    uuid: "Telegram🇨🇳 @WangCai2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    network: ws
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇨🇷_12"
     type: vless
     server: "190.93.247.2"
     port: 443
@@ -69,20 +143,6 @@ proxies:
     skip-cert-verify: true
     servername: "support.zoom.us.yxls.eu.cc"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/sg-amz"
-      headers:
-        Host: "support.zoom.us.yxls.eu.cc"
-  - name: "🇨🇷_4"
-    type: vless
-    server: "190.93.247.2"
-    port: 443
-    uuid: "Telegram🇨🇳 @WangCai2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "support.zoom.us.yxls.eu.cc"
     network: ws
     ws-opts:
       path: "/sg-amz"
@@ -130,8 +190,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -141,8 +205,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -152,8 +220,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -162,8 +234,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -173,15 +249,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇷_3"
-      - "🇨🇷_4"
+      - "🇨🇷_7"
+      - "🇨🇷_8"
+      - "🇨🇷_9"
+      - "🇨🇷_10"
+      - "🇨🇷_11"
+      - "🇨🇷_12"
 
 rules:
   - MATCH,PROXY-BEST

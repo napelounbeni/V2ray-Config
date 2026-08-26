@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_3"
+  - name: "🇦🇺_4"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -73,7 +73,22 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_5"
+    type: vless
+    server: "192.65.217.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/Telegram-WangCai2"
+      headers:
+        Host: "notls.lukongtou.eu.org"
+  - name: "🇦🇺_6"
     type: vless
     server: "172.105.169.70"
     port: 443
@@ -124,8 +139,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -135,8 +151,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -146,8 +163,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -156,8 +174,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -167,15 +186,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_3"
       - "🇦🇺_4"
+      - "🇦🇺_5"
+      - "🇦🇺_6"
 
 rules:
   - MATCH,PROXY-BEST

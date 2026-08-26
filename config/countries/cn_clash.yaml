@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇨🇳_1"
     type: vless
-    server: "bc-cn-hn.ray-balance.space"
-    port: 443
-    uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.ray-balance.space"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇳_2"
-    type: vless
     server: "2.27.27.168"
     port: 443
     uuid: "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
@@ -91,24 +77,24 @@ proxies:
       public-key: "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
       short-id: ""
     flow: "xtls-rprx-vision"
+  - name: "🇨🇳_2"
+    type: vless
+    server: "43.169.19.179"
+    port: 443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇨🇳_3"
     type: trojan
     server: "221.181.169.52"
     port: 49319
     password: "47c270a9-bce5-450e-8622-f2631070a012"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇨🇳_4"
-    type: trojan
-    server: "221.230.19.73"
-    port: 48966
-    password: "1addb6f6-c65a-4652-91e7-cbf3c6fa6f95"
     sni: "vpn-node.internal"
     skip-cert-verify: true
     udp: true
@@ -134,7 +120,6 @@ proxy-groups:
       - "🇨🇳_1"
       - "🇨🇳_2"
       - "🇨🇳_3"
-      - "🇨🇳_4"
 
 
 rules:

@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇩🇰_4"
+  - name: "🇩🇰_7"
+    type: vless
+    server: "195.54.170.66"
+    port: 8443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/pg/10086-dfc816f117c49173"
+      headers:
+        Host: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
+  - name: "🇩🇰_8"
     type: vless
     server: "144.31.242.1"
     port: 13443
@@ -73,21 +88,22 @@ proxies:
       public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
       short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
-  - name: "🇩🇰_5"
+  - name: "🇩🇰_9"
     type: vless
-    server: "144.31.242.1"
+    server: "45.148.31.227"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇩🇰_6"
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/pg/10086-dfc816f117c49173"
+      headers:
+        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+  - name: "🇩🇰_10"
     type: vless
     server: "46.29.235.9"
     port: 443
@@ -100,6 +116,35 @@ proxies:
     reality-opts:
       public-key: "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI"
       short-id: "a1b2c3d4"
+    flow: "xtls-rprx-vision"
+  - name: "🇩🇰_11"
+    type: vless
+    server: "193.180.213.30"
+    port: 2087
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/pg/10086-dfc816f117c49173"
+      headers:
+        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+  - name: "🇩🇰_12"
+    type: vless
+    server: "144.31.242.1"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -143,9 +188,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -155,9 +203,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -167,9 +218,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -178,9 +232,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -190,17 +247,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
+      - "🇩🇰_7"
+      - "🇩🇰_8"
+      - "🇩🇰_9"
+      - "🇩🇰_10"
+      - "🇩🇰_11"
+      - "🇩🇰_12"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,6 +65,35 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "88.216.69.144"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+    client-fingerprint: "ios"
+    network: ws
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
+      headers:
+        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+  - name: "🇱🇹_2"
+    type: vless
+    server: "144.31.243.148"
+    port: 443
+    uuid: "9e1d737e-f3c1-4757-84b2-3dcf66a468ed"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "3wa3ZmMniymkL-58bPtY7baWPxdJ6n2UaJMG7YiLiGo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_3"
+    type: vless
     server: "84.32.209.7"
     port: 443
     uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
@@ -72,12 +101,39 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "dartsearch-cn.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
+  - name: "🇱🇹_4"
+    type: vless
+    server: "185.80.128.115"
+    port: 8443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇱🇹_5"
+    type: vless
+    server: "88.119.176.133"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lit4.freeinternat.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "6aa2d2e950441a9a"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_6"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -90,7 +146,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_3"
+  - name: "🇱🇹_7"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -114,6 +170,10 @@ proxy-groups:
       - "🇱🇹_1"
       - "🇱🇹_2"
       - "🇱🇹_3"
+      - "🇱🇹_4"
+      - "🇱🇹_5"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
 
 
 rules:

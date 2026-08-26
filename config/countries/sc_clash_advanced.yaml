@@ -59,40 +59,44 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇨_15"
+  - name: "🇸🇨_18"
     type: vless
-    server: "45.130.125.209"
+    server: "45.130.125.73"
     port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    uuid: "50414e45-4c5f-5a45-5553-cea58e4acf49"
     udp: true
     network: ws
     ws-opts:
-      path: "/http"
+      path: "/api/ws"
       headers:
-        Host: "de.vpnbase.net"
-  - name: "🇸🇨_16"
+        Host: "web-app-aug8yr.app-f1qsy1.workers.dev"
+  - name: "🇸🇨_19"
     type: vless
-    server: "200.165.234.119"
-    port: 2200
-    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
+    server: "200.165.234.62"
+    port: 4100
+    uuid: "5383fb97-1178-4709-9a25-b767b743e911"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
-        Host: "rzd.ru"
-  - name: "🇸🇨_17"
+        Host: "live.ok.ru"
+  - name: "🇸🇨_20"
     type: vless
-    server: "45.130.125.207"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    server: "45.130.125.126"
+    port: 443
+    uuid: "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/http"
+      path: "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
       headers:
-        Host: "de.vpnbase.net"
-  - name: "🇸🇨_18"
+        Host: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+  - name: "🇸🇨_21"
     type: vless
     server: "45.130.125.207"
     port: 443
@@ -107,7 +111,7 @@ proxies:
       path: "/sg-amz"
       headers:
         Host: "support.zoom.us.yxls.eu.cc"
-  - name: "🇸🇨_19"
+  - name: "🇸🇨_22"
     type: vless
     server: "45.130.125.158"
     port: 443
@@ -122,7 +126,55 @@ proxies:
       path: "/fl?ed"
       headers:
         Host: "mjtbknetmkhremge.ordak.qzz.io"
-  - name: "🇸🇨_20"
+  - name: "🇸🇨_23"
+    type: vless
+    server: "45.130.125.209"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/http"
+      headers:
+        Host: "de.vpnbase.net"
+  - name: "🇸🇨_24"
+    type: vless
+    server: "200.165.234.119"
+    port: 2200
+    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇸🇨_25"
+    type: vless
+    server: "45.130.125.207"
+    port: 8443
+    uuid: "31aa0950-eb19-45ff-94a2-af416deb3b90"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
+      headers:
+        Host: "square-salad-ebde.zdfgvccfguuyggg.workers.dev"
+  - name: "🇸🇨_26"
+    type: vless
+    server: "45.130.125.207"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/http"
+      headers:
+        Host: "de.vpnbase.net"
+  - name: "🇸🇨_27"
     type: vless
     server: "wstg.datasynctrue.online"
     port: 443
@@ -136,65 +188,7 @@ proxies:
       path: "/api/connect"
       headers:
         Host: "wstg.datasynctrue.online"
-  - name: "🇸🇨_21"
-    type: vless
-    server: "200.165.235.98"
-    port: 9892
-    uuid: "064a967e-0862-4cea-bdbd-9458cb7b6070"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
-      short-id: "aabb"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇸🇨_22"
-    type: vless
-    server: "200.165.235.98"
-    port: 9892
-    uuid: "76186f1e-3062-4a2b-98c2-fab3c61a9511"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇸🇨_23"
-    type: trojan
-    server: "45.130.125.75"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_24"
-    type: trojan
-    server: "45.130.125.190"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_25"
+  - name: "🇸🇨_28"
     type: trojan
     server: "45.130.125.76"
     port: 443
@@ -207,7 +201,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_26"
+  - name: "🇸🇨_29"
     type: trojan
     server: "45.130.125.112"
     port: 443
@@ -218,7 +212,20 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇸🇨_27"
+  - name: "🇸🇨_30"
+    type: trojan
+    server: "45.130.125.75"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇸🇨_31"
     type: trojan
     server: "45.130.125.160"
     port: 443
@@ -231,7 +238,18 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_28"
+  - name: "🇸🇨_32"
+    type: trojan
+    server: "45.130.125.18"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇸🇨_33"
     type: trojan
     server: "45.130.125.126"
     port: 443
@@ -242,6 +260,19 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+  - name: "🇸🇨_34"
+    type: trojan
+    server: "45.130.125.190"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -284,9 +315,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -298,6 +326,12 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
   - name: "LB-CDN"
     type: load-balance
@@ -307,9 +341,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -321,6 +352,12 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -330,9 +367,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -344,6 +378,12 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
   - name: "FAST-CDN"
     type: url-test
@@ -352,9 +392,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -366,6 +403,12 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -375,9 +418,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -389,14 +429,17 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇨_15"
-      - "🇸🇨_16"
-      - "🇸🇨_17"
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
@@ -408,6 +451,12 @@ proxy-groups:
       - "🇸🇨_26"
       - "🇸🇨_27"
       - "🇸🇨_28"
+      - "🇸🇨_29"
+      - "🇸🇨_30"
+      - "🇸🇨_31"
+      - "🇸🇨_32"
+      - "🇸🇨_33"
+      - "🇸🇨_34"
 
 rules:
   - MATCH,PROXY-BEST

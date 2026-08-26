@@ -65,17 +65,19 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
-    server: "78.159.131.235"
+    server: "nl6.unlockvpn.online"
     port: 8445
     uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nl6.unlockvpn.online"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
       path: "/api/v1/devices/e1971f0b19/telemetry"
+      headers:
+        Host: "nl6.unlockvpn.online"
   - name: "🇦🇱_2"
     type: vless
     server: "78.159.131.235"
@@ -92,19 +94,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_3"
     type: vless
-    server: "nl6.unlockvpn.online"
+    server: "78.159.131.235"
     port: 8445
     uuid: "1f619326-cd93-4d6b-aebe-e0b5f8831d02"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nl6.unlockvpn.online"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/api/v1/devices/e1971f0b19/telemetry"
-      headers:
-        Host: "nl6.unlockvpn.online"
   - name: "🇦🇱_4"
     type: ss
     server: "157.22.240.141"

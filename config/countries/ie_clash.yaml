@@ -74,13 +74,6 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇮🇪_2"
-    type: ss
-    server: "20.234.20.89"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "2OPuSlR6h3ZHql3h"
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -96,7 +89,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇪_1"
-      - "🇮🇪_2"
 
 
 rules:

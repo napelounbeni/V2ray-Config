@@ -78,6 +78,21 @@ proxies:
       path: "/proxyip=bpb.yousef.isegaro.com"
       headers:
         Host: "web-socket.tgdaosheng.ggff.net"
+  - name: "🇸🇰_2"
+    type: vless
+    server: "89.46.42.141"
+    port: 8443
+    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/pg/10086-dfc816f117c49173"
+      headers:
+        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +108,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇸🇰_1"
+      - "🇸🇰_2"
 
 
 rules:

@@ -79,6 +79,21 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇺_2"
     type: vless
+    server: "192.65.217.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/Telegram-WangCai2"
+      headers:
+        Host: "notls.lukongtou.eu.org"
+  - name: "🇦🇺_3"
+    type: vless
     server: "172.105.169.70"
     port: 443
     uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
@@ -102,6 +117,7 @@ proxy-groups:
     proxies:
       - "🇦🇺_1"
       - "🇦🇺_2"
+      - "🇦🇺_3"
 
 
 rules:
