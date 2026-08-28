@@ -60,16 +60,12 @@ dns:
 
 proxies:
   - name: "🇮🇪_2"
-    type: trojan
-    server: "54.216.143.197"
+    type: ss
+    server: "4.231.221.11"
     port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    cipher: "chacha20-ietf-poly1305"
+    password: "yI1ivWgzRqPnR6FE"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

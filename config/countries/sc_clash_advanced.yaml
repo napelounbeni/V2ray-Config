@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇨_14"
+  - name: "🇸🇨_11"
     type: vless
     server: "200.165.234.45"
     port: 4100
@@ -70,40 +70,7 @@ proxies:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
-  - name: "🇸🇨_15"
-    type: vless
-    server: "200.165.234.62"
-    port: 4100
-    uuid: "5383fb97-1178-4709-9a25-b767b743e911"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇸🇨_16"
-    type: vless
-    server: "200.165.234.119"
-    port: 2200
-    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇸🇨_17"
-    type: vless
-    server: "45.130.125.207"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/http"
-      headers:
-        Host: "de.vpnbase.net"
-  - name: "🇸🇨_18"
+  - name: "🇸🇨_12"
     type: vless
     server: "45.130.125.209"
     port: 80
@@ -114,29 +81,29 @@ proxies:
       path: "/http"
       headers:
         Host: "de.vpnbase.net"
-  - name: "🇸🇨_19"
+  - name: "🇸🇨_13"
     type: vless
-    server: "45.130.125.201"
+    server: "45.130.125.207"
     port: 80
-    uuid: "dc8a9493-c54a-459e-d060-81a700000001"
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
     udp: true
     network: ws
     ws-opts:
-      path: "/sync"
+      path: "/http"
       headers:
-        Host: "nahan-core.netizo09.workers.dev"
-  - name: "🇸🇨_20"
+        Host: "de.vpnbase.net"
+  - name: "🇸🇨_14"
     type: vless
-    server: "45.130.125.73"
-    port: 80
-    uuid: "50414e45-4c5f-5a45-5553-cea58e4acf49"
+    server: "200.165.234.119"
+    port: 2200
+    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
     udp: true
     network: ws
     ws-opts:
-      path: "/api/ws"
+      path: "/v1"
       headers:
-        Host: "web-app-aug8yr.app-f1qsy1.workers.dev"
-  - name: "🇸🇨_21"
+        Host: "rzd.ru"
+  - name: "🇸🇨_15"
     type: trojan
     server: "45.130.125.160"
     port: 443
@@ -149,42 +116,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_22"
-    type: trojan
-    server: "45.130.125.75"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_23"
-    type: trojan
-    server: "45.130.125.126"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇸🇨_24"
-    type: trojan
-    server: "45.130.125.112"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇸🇨_25"
+  - name: "🇸🇨_16"
     type: trojan
     server: "45.130.125.76"
     port: 443
@@ -197,7 +129,42 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_26"
+  - name: "🇸🇨_17"
+    type: trojan
+    server: "45.130.125.75"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇸🇨_18"
+    type: trojan
+    server: "45.130.125.112"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇸🇨_19"
+    type: trojan
+    server: "45.130.125.126"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇸🇨_20"
     type: trojan
     server: "45.130.125.190"
     port: 443
@@ -252,6 +219,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -259,12 +229,6 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -274,6 +238,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -281,12 +248,6 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -296,6 +257,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -303,12 +267,6 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -317,6 +275,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -324,12 +285,6 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -339,6 +294,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -346,17 +304,14 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇸🇨_11"
+      - "🇸🇨_12"
+      - "🇸🇨_13"
       - "🇸🇨_14"
       - "🇸🇨_15"
       - "🇸🇨_16"
@@ -364,12 +319,6 @@ proxy-groups:
       - "🇸🇨_18"
       - "🇸🇨_19"
       - "🇸🇨_20"
-      - "🇸🇨_21"
-      - "🇸🇨_22"
-      - "🇸🇨_23"
-      - "🇸🇨_24"
-      - "🇸🇨_25"
-      - "🇸🇨_26"
 
 rules:
   - MATCH,PROXY-BEST

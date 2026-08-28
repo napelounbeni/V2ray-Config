@@ -59,7 +59,35 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇷🇴_4"
+  - name: "🇷🇴_6"
+    type: vless
+    server: "82.117.255.26"
+    port: 443
+    uuid: "ee9e2135-c444-4adb-aaa5-a0efa1a74fdf"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "gMcijHp0RNZF6l556BaOxu1bKNIFON0_JjXhJzpioAk"
+      short-id: "b395baf965957d93"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_7"
+    type: vless
+    server: "109.104.106.147"
+    port: 443
+    uuid: "e940b5ce-4a76-44f0-ab54-27172b03e34d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d2-ro.cloud-cdn.xyz"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "6HRVYg1i4ah9VhuV5hne2-JA8Z5HTV5jbFi-h3qKsDQ"
+      short-id: "dd4d615422c6424c"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_8"
     type: vless
     server: "45.13.151.46"
     port: 48689
@@ -69,16 +97,16 @@ proxies:
     httpupgrade-opts:
       path: "/host"
       host: "www.filimo.com"
-  - name: "🇷🇴_5"
+  - name: "🇷🇴_9"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_6"
+  - name: "🇷🇴_10"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -125,9 +153,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -137,9 +167,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,9 +181,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,9 +194,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,17 +208,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇷🇴_4"
-      - "🇷🇴_5"
       - "🇷🇴_6"
+      - "🇷🇴_7"
+      - "🇷🇴_8"
+      - "🇷🇴_9"
+      - "🇷🇴_10"
 
 rules:
   - MATCH,PROXY-BEST

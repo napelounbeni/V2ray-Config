@@ -65,21 +65,21 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
-    server: "84.32.209.7"
-    port: 443
-    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
+    server: "31.76.83.114"
+    port: 13443
+    uuid: "5238521b-c5dd-42af-870e-c174a2aaaafe"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dartsearch-cn.net"
+    servername: "auto.cendora.ru"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
-      short-id: ""
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_2"
     type: vless
-    server: "88.119.176.24"
+    server: "lit9.helper-internet.com"
     port: 443
     uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
     udp: true
@@ -93,19 +93,47 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_3"
     type: vless
-    server: "84.32.9.191"
+    server: "84.32.209.7"
     port: 443
-    uuid: "c1d62d53-2fcd-4951-ab96-c81486f59775"
+    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "w-mebel.pro"
+    servername: "www.goo.gl"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "3ioSDy998cS2J-O6M9rzh8fDaybnOJ2PDPfd7ulFpH4"
-      short-id: "51941b7edff5bc55"
+      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
+      short-id: ""
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_4"
+    type: vless
+    server: "84.32.177.5"
+    port: 443
+    uuid: "f73681a4-1654-446f-a7eb-bda3bfd9e521"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "mst15ch.jarvesitw.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg"
+      short-id: "cf41f778"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_5"
+    type: vless
+    server: "88.119.176.24"
+    port: 443
+    uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lit9.helper-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_6"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -118,7 +146,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_5"
+  - name: "🇱🇹_7"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -144,6 +172,8 @@ proxy-groups:
       - "🇱🇹_3"
       - "🇱🇹_4"
       - "🇱🇹_5"
+      - "🇱🇹_6"
+      - "🇱🇹_7"
 
 
 rules:

@@ -63,32 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇬🇪_1"
+  - name: "🇱🇺_1"
     type: vless
-    server: "sub.meli.alirezanawabi.ir"
-    port: 43979
-    uuid: "1d49678d-f622-4f20-ba58-551d2c4d91f4"
-    udp: true
-  - name: "🇬🇪_2"
-    type: vless
-    server: "88.218.94.6"
+    server: "193.239.179.138"
     port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    uuid: "cb10c0a7-b570-4ae8-a40c-2a8e31bc5a26"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nordic.cendora.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
-      short-id: "2186a755ed67b034"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇪_3"
-    type: vless
-    server: "tur.meli.alirezanawabi.ir"
-    port: 43979
-    uuid: "1d49678d-f622-4f20-ba58-551d2c4d91f4"
-    udp: true
+    servername: "sb6anj3uz4gy.bosfiles.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/v1/data/sync"
+      headers:
+        Host: "sb6anj3uz4gy.bosfiles.net"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,9 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇬🇪_1"
-      - "🇬🇪_2"
-      - "🇬🇪_3"
+      - "🇱🇺_1"
 
 
 rules:

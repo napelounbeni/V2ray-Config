@@ -77,18 +77,38 @@ proxies:
       public-key: "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM"
       short-id: "cd0a1986719e44c8"
   - name: "🇦🇱_2"
-    type: ss
-    server: "157.22.240.141"
-    port: 57925
-    cipher: "chacha20-ietf-poly1305"
-    password: "vDwGqUupXso4i90jdZL0sR"
+    type: vless
+    server: "193.108.112.245"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "alban.freeinternat.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
   - name: "🇦🇱_3"
+    type: vless
+    server: "albania-sgood.wopd.butnorwa.butter.silicore.ir"
+    port: 10000
+    uuid: "8ad85ca5-7572-4ee7-8a42-a2e5c9a0e479"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM"
+      short-id: "cd0a1986719e44c8"
+  - name: "🇦🇱_4"
     type: ss
-    server: "157.22.240.141"
-    port: 57925
+    server: "130.49.189.158"
+    port: 10792
     cipher: "chacha20-ietf-poly1305"
-    password: "eGlH93Ix8FwKI0s0Fhebwf"
+    password: "ywnqwonyK1LRGwJibFQ0aM"
     udp: true
 
 proxy-groups:
@@ -107,6 +127,7 @@ proxy-groups:
       - "🇦🇱_1"
       - "🇦🇱_2"
       - "🇦🇱_3"
+      - "🇦🇱_4"
 
 
 rules:

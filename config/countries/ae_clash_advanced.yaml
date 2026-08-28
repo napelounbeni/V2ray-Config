@@ -59,20 +59,9 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_4"
+  - name: "🇦🇪_3"
     type: vless
-    server: "84.235.244.108"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_5"
-    type: vless
-    server: "31.57.228.66"
+    server: "emirates-sgood.wopd.butnorwa.butter.silicore.ir"
     port: 10000
     uuid: "8ad85ca5-7572-4ee7-8a42-a2e5c9a0e479"
     udp: true
@@ -83,9 +72,9 @@ proxies:
     reality-opts:
       public-key: "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM"
       short-id: "cd0a1986719e44c8"
-  - name: "🇦🇪_6"
+  - name: "🇦🇪_4"
     type: vless
-    server: "emirates-sgood.wopd.butnorwa.butter.silicore.ir"
+    server: "31.57.228.66"
     port: 10000
     uuid: "8ad85ca5-7572-4ee7-8a42-a2e5c9a0e479"
     udp: true
@@ -138,9 +127,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -150,9 +138,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -162,9 +149,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -173,9 +159,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -185,17 +170,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
 rules:
   - MATCH,PROXY-BEST
