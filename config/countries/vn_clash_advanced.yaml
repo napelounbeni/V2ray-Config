@@ -59,19 +59,15 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇮_2"
+  - name: "🇻🇳_2"
     type: vless
-    server: "91.132.94.151"
-    port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    server: "171.244.142.193"
+    port: 8080
+    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/v-ws"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -114,7 +110,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -124,7 +120,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -134,7 +130,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -143,7 +139,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -153,13 +149,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇮_2"
+      - "🇻🇳_2"
 
 rules:
   - MATCH,PROXY-BEST

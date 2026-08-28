@@ -65,36 +65,6 @@ dns:
 proxies:
   - name: "🇩🇰_1"
     type: vless
-    server: "193.180.213.30"
-    port: 2087
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-  - name: "🇩🇰_2"
-    type: vless
-    server: "195.54.170.66"
-    port: 8443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
-  - name: "🇩🇰_3"
-    type: vless
     server: "46.29.235.9"
     port: 443
     uuid: "d67af820-f54c-48ab-862c-19086357f276"
@@ -107,19 +77,33 @@ proxies:
       public-key: "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI"
       short-id: "a1b2c3d4"
     flow: "xtls-rprx-vision"
-  - name: "🇩🇰_4"
+  - name: "🇩🇰_2"
     type: vless
-    server: "144.31.242.69"
+    server: "144.31.242.1"
     port: 443
-    uuid: "38e1c7e8-fdcd-4396-a84c-550b05737308"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dk1.hat.onl"
-    client-fingerprint: "firefox"
+    servername: "eu-central.cendora.ru"
+    client-fingerprint: "edge"
     reality-opts:
-      public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
-      short-id: "76132b3b39704c44"
+      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
+      short-id: "00bca5982f82d083"
+    flow: "xtls-rprx-vision"
+  - name: "🇩🇰_3"
+    type: vless
+    server: "144.31.242.1"
+    port: 13443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -138,7 +122,6 @@ proxy-groups:
       - "🇩🇰_1"
       - "🇩🇰_2"
       - "🇩🇰_3"
-      - "🇩🇰_4"
 
 
 rules:

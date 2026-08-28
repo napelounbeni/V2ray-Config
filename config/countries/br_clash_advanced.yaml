@@ -59,18 +59,40 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇷_14"
+  - name: "🇧🇷_33"
     type: vless
-    server: "201.24.49.77"
-    port: 2200
-    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
+    server: "201.24.49.233"
+    port: 4100
+    uuid: "aa7d939b-feaa-4ad3-9615-74216f490807"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_15"
+        Host: "live.ok.ru"
+  - name: "🇧🇷_34"
+    type: vless
+    server: "201.24.49.53"
+    port: 4100
+    uuid: "33965d4f-f9bd-4437-8867-ed705b435518"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_35"
+    type: vless
+    server: "201.24.49.69"
+    port: 4100
+    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_36"
     type: vless
     server: "201.24.49.79"
     port: 2200
@@ -81,51 +103,7 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇧🇷_16"
-    type: vless
-    server: "201.24.49.117"
-    port: 2200
-    uuid: "2e228435-33a0-47d1-a1d8-9a34b5a03c45"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_17"
-    type: vless
-    server: "201.24.49.240"
-    port: 4100
-    uuid: "aa7d939b-feaa-4ad3-9615-74216f490807"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_18"
-    type: vless
-    server: "201.24.49.74"
-    port: 2200
-    uuid: "f0528a17-863f-4160-a5a0-0d9ad03f2ee7"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_19"
-    type: vless
-    server: "201.24.49.233"
-    port: 4100
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_20"
+  - name: "🇧🇷_37"
     type: vless
     server: "201.24.49.233"
     port: 2200
@@ -136,7 +114,56 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇧🇷_21"
+  - name: "🇧🇷_38"
+    type: vless
+    server: "200.165.225.238"
+    port: 9871
+    uuid: "064a967e-0862-4cea-bdbd-9458cb7b6070"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+      short-id: "aabbccdd"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇧🇷_39"
+    type: vless
+    server: "201.24.49.79"
+    port: 4100
+    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_40"
+    type: vless
+    server: "201.24.49.120"
+    port: 4100
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_41"
+    type: vless
+    server: "201.24.49.233"
+    port: 4100
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_42"
     type: vless
     server: "201.24.49.19"
     port: 2200
@@ -147,40 +174,177 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇧🇷_22"
-    type: ss
-    server: "167.234.253.215"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "JFn0KNoigKLbHzExQTV2dls1uRfDtXKrYIgUGGy6gCU="
+  - name: "🇧🇷_43"
+    type: vless
+    server: "201.24.49.120"
+    port: 2200
+    uuid: "b671573f-6303-4cdf-ad50-0401d07e85bf"
     udp: true
-  - name: "🇧🇷_23"
-    type: ss
-    server: "163.176.213.34"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ="
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_44"
+    type: vless
+    server: "201.24.49.228"
+    port: 2200
+    uuid: "09f2e2f4-3225-4342-bc92-cb58ee841f72"
     udp: true
-  - name: "🇧🇷_24"
-    type: ss
-    server: "163.176.213.34"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ="
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇧🇷_45"
+    type: vless
+    server: "201.24.49.233"
+    port: 2200
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
     udp: true
-  - name: "🇧🇷_25"
-    type: ss
-    server: "163.176.213.34"
-    port: 59319
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ="
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_46"
+    type: vless
+    server: "201.24.49.77"
+    port: 2200
+    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
     udp: true
-  - name: "🇧🇷_26"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_47"
+    type: vless
+    server: "201.24.49.74"
+    port: 2200
+    uuid: "f0528a17-863f-4160-a5a0-0d9ad03f2ee7"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_48"
     type: ss
-    server: "129.151.36.160"
+    server: "163.176.246.48"
     port: 59319
     cipher: "2022-blake3-chacha20-poly1305"
-    password: "wN0e81acGsb1w99rzzhp0DuSnVw6j6bc1SHwsNE4O4M="
+    password: "3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs="
+    udp: true
+  - name: "🇧🇷_49"
+    type: ss
+    server: "136.248.67.163"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "qrrclLYQXNRAM7KtEHTEMmSEQfHj9n9QFjDqP1M/B/o="
+    udp: true
+  - name: "🇧🇷_50"
+    type: ss
+    server: "137.131.238.184"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "YUFNTGth40hxyDn2lYg6qbxHsqN2rxrDQqlNHRdS3eE="
+    udp: true
+  - name: "🇧🇷_51"
+    type: ss
+    server: "136.248.67.163"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "qrrclLYQXNRAM7KtEHTEMmSEQfHj9n9QFjDqP1M/B/o="
+    udp: true
+  - name: "🇧🇷_52"
+    type: ss
+    server: "163.176.252.25"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "jjM4FOyAZQX4X8rnAfI+W79Uo9a5BUkmRHKutGpy9Z8="
+    udp: true
+  - name: "🇧🇷_53"
+    type: ss
+    server: "163.176.246.48"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs="
+    udp: true
+  - name: "🇧🇷_54"
+    type: ss
+    server: "163.176.246.48"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs="
+    udp: true
+  - name: "🇧🇷_55"
+    type: ss
+    server: "163.176.173.213"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "rY0YQjB8usfKT9occKUO2NU/jC+vFu6SoPkBCJpKiSA="
+    udp: true
+  - name: "🇧🇷_56"
+    type: ss
+    server: "163.176.156.216"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "tpgVOomrbq6prHPdIl3VVRfPpWwXUCfZCRjIya+RRGw="
+    udp: true
+  - name: "🇧🇷_57"
+    type: ss
+    server: "167.234.235.71"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "Ewcm8cFWgvx3XiB06y46iTgnANcI3QBa4UGGf1OUEJQ="
+    udp: true
+  - name: "🇧🇷_58"
+    type: ss
+    server: "163.176.156.216"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "tpgVOomrbq6prHPdIl3VVRfPpWwXUCfZCRjIya+RRGw="
+    udp: true
+  - name: "🇧🇷_59"
+    type: ss
+    server: "136.248.67.163"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "qrrclLYQXNRAM7KtEHTEMmSEQfHj9n9QFjDqP1M/B/o="
+    udp: true
+  - name: "🇧🇷_60"
+    type: ss
+    server: "147.15.43.161"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "I80GvpH/wc3tSIoWwjSKJAii6a/Bn8l7fUMS5qye9uU="
+    udp: true
+  - name: "🇧🇷_61"
+    type: ss
+    server: "64.181.177.112"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "iS6cGpZwWPQtLvPHo6Q5gMAn7zZdJpD9YoYGn6m9mFw="
+    udp: true
+  - name: "🇧🇷_62"
+    type: ss
+    server: "137.131.187.253"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "syoHUErIIXqk/xwYXjB/fHaW3puNw529eq5eIqtjpq0="
+    udp: true
+  - name: "🇧🇷_63"
+    type: ss
+    server: "167.234.235.71"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "Ewcm8cFWgvx3XiB06y46iTgnANcI3QBa4UGGf1OUEJQ="
+    udp: true
+  - name: "🇧🇷_64"
+    type: ss
+    server: "137.131.187.253"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "syoHUErIIXqk/xwYXjB/fHaW3puNw529eq5eIqtjpq0="
     udp: true
 
 proxy-groups:
@@ -224,19 +388,38 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
   - name: "LB-CDN"
     type: load-balance
@@ -246,19 +429,38 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -268,19 +470,38 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
   - name: "FAST-CDN"
     type: url-test
@@ -289,19 +510,38 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -311,37 +551,75 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇷_14"
-      - "🇧🇷_15"
-      - "🇧🇷_16"
-      - "🇧🇷_17"
-      - "🇧🇷_18"
-      - "🇧🇷_19"
-      - "🇧🇷_20"
-      - "🇧🇷_21"
-      - "🇧🇷_22"
-      - "🇧🇷_23"
-      - "🇧🇷_24"
-      - "🇧🇷_25"
-      - "🇧🇷_26"
+      - "🇧🇷_33"
+      - "🇧🇷_34"
+      - "🇧🇷_35"
+      - "🇧🇷_36"
+      - "🇧🇷_37"
+      - "🇧🇷_38"
+      - "🇧🇷_39"
+      - "🇧🇷_40"
+      - "🇧🇷_41"
+      - "🇧🇷_42"
+      - "🇧🇷_43"
+      - "🇧🇷_44"
+      - "🇧🇷_45"
+      - "🇧🇷_46"
+      - "🇧🇷_47"
+      - "🇧🇷_48"
+      - "🇧🇷_49"
+      - "🇧🇷_50"
+      - "🇧🇷_51"
+      - "🇧🇷_52"
+      - "🇧🇷_53"
+      - "🇧🇷_54"
+      - "🇧🇷_55"
+      - "🇧🇷_56"
+      - "🇧🇷_57"
+      - "🇧🇷_58"
+      - "🇧🇷_59"
+      - "🇧🇷_60"
+      - "🇧🇷_61"
+      - "🇧🇷_62"
+      - "🇧🇷_63"
+      - "🇧🇷_64"
 
 rules:
   - MATCH,PROXY-BEST

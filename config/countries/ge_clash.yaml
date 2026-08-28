@@ -65,19 +65,30 @@ dns:
 proxies:
   - name: "🇬🇪_1"
     type: vless
-    server: "206.53.48.65"
+    server: "sub.meli.alirezanawabi.ir"
+    port: 43979
+    uuid: "1d49678d-f622-4f20-ba58-551d2c4d91f4"
+    udp: true
+  - name: "🇬🇪_2"
+    type: vless
+    server: "88.218.94.6"
     port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇪_3"
+    type: vless
+    server: "tur.meli.alirezanawabi.ir"
+    port: 43979
+    uuid: "1d49678d-f622-4f20-ba58-551d2c4d91f4"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +104,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇬🇪_1"
+      - "🇬🇪_2"
+      - "🇬🇪_3"
 
 
 rules:

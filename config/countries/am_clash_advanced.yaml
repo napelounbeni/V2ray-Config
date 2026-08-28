@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇲_3"
+  - name: "🇦🇲_2"
     type: vless
     server: "77.91.68.70"
     port: 55983
@@ -71,21 +71,6 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
-  - name: "🇦🇲_4"
-    type: vless
-    server: "2.56.206.214"
-    port: 2053
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c491730|亚美尼亚am|evn|2.56.206.214:2053"
-      headers:
-        Host: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -128,8 +113,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +123,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +133,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +142,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +152,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇲_3"
-      - "🇦🇲_4"
+      - "🇦🇲_2"
 
 rules:
   - MATCH,PROXY-BEST

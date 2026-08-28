@@ -63,20 +63,15 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇷🇸_1"
+  - name: "🇻🇳_1"
     type: vless
-    server: "185.48.250.138"
-    port: 443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
+    server: "171.244.142.193"
+    port: 8080
+    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
     network: ws
     ws-opts:
-      path: "/pg/10086-dfc816f117c491730| 塞尔维亚 rs | beg | 185.48.250.138:443"
-      headers:
-        Host: "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr"
+      path: "/v-ws"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +86,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇷🇸_1"
+      - "🇻🇳_1"
 
 
 rules:

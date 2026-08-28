@@ -59,11 +59,25 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_8"
+  - name: "🇱🇹_6"
+    type: vless
+    server: "84.32.209.7"
+    port: 443
+    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dartsearch-cn.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_7"
     type: vless
     server: "88.119.176.24"
     port: 443
-    uuid: "a4ccca8a-dd5a-4935-80ea-53feafe195c9"
+    uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -73,64 +87,21 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇹_8"
+    type: vless
+    server: "84.32.9.191"
+    port: 443
+    uuid: "c1d62d53-2fcd-4951-ab96-c81486f59775"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "w-mebel.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "3ioSDy998cS2J-O6M9rzh8fDaybnOJ2PDPfd7ulFpH4"
+      short-id: "51941b7edff5bc55"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇹_9"
-    type: vless
-    server: "185.80.128.115"
-    port: 8443
-    uuid: "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/pg/10086-dfc816f117c49173"
-      headers:
-        Host: "8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr"
-  - name: "🇱🇹_10"
-    type: vless
-    server: "lit4.freeinternat.com"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lit4.freeinternat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
-      short-id: "6aa2d2e950441a9a"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_11"
-    type: vless
-    server: "84.32.209.7"
-    port: 443
-    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "doubleclick-cn.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "00n9LplaZ0VGvRS57548s7xe0deFC10pw2fkFHFPplM"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_12"
-    type: vless
-    server: "88.119.176.133"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lit4.freeinternat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
-      short-id: "6aa2d2e950441a9a"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_13"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -143,7 +114,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_14"
+  - name: "🇱🇹_10"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -192,13 +163,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -208,13 +177,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -224,13 +191,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -239,13 +204,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -255,25 +218,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇹_6"
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
-      - "🇱🇹_11"
-      - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,19 +65,28 @@ dns:
 proxies:
   - name: "🇪🇸_1"
     type: vless
-    server: "spain4.helper-internet.com"
+    server: "193.238.154.18"
     port: 443
-    uuid: "a4ccca8a-dd5a-4935-80ea-53feafe195c9"
+    uuid: "2297ea1f-2415-4a2c-be20-4a3a978283a2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "spain4.helper-internet.com"
-    client-fingerprint: "firefox"
+    servername: "es1.hat.onl"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-      short-id: "ff776ff77be48b88"
+      public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
+      short-id: "76132b3b39704c44"
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_2"
+    type: vless
+    server: "85.90.217.42"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "85.90.217.42"
+  - name: "🇪🇸_3"
     type: vless
     server: "212.227.235.66"
     port: 2053
@@ -90,21 +99,20 @@ proxies:
     reality-opts:
       public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
       short-id: "866af6e56606f2bc"
-  - name: "🇪🇸_3"
-    type: vless
-    server: "46.28.71.170"
-    port: 443
-    uuid: "a4ccca8a-dd5a-4935-80ea-53feafe195c9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "spain4.helper-internet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
   - name: "🇪🇸_4"
+    type: trojan
+    server: "185.18.250.245"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_5"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -117,13 +125,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_5"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
   - name: "🇪🇸_6"
     type: ss
     server: "140.174.184.5"
@@ -139,6 +140,13 @@ proxies:
     password: "WSyL4XTwNsdv"
     udp: true
   - name: "🇪🇸_8"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_9"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -167,6 +175,7 @@ proxy-groups:
       - "🇪🇸_6"
       - "🇪🇸_7"
       - "🇪🇸_8"
+      - "🇪🇸_9"
 
 
 rules:

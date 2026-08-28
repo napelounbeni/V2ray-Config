@@ -65,10 +65,37 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "5.57.32.153"
+    server: "45.131.4.115"
     port: 80
-    uuid: "49c37551-2843-4cd0-87ff-b75f5938a6d9"
+    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/sVnT0vhrV7WAl52Z"
+      headers:
+        Host: "worker3.gisenoj224.workers.dev"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "45.131.4.115"
+    port: 80
+    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "worker3.gigak25604.workers.dev"
+  - name: "🇮🇷_3"
+    type: vless
+    server: "45.131.4.115"
+    port: 80
+    uuid: "1e78f247-1e3e-400e-bf1f-bb0c908b9a60"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/GXXYmLBSqSttMjgI"
+      headers:
+        Host: "worker3.laton16859.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -84,6 +111,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇷_1"
+      - "🇮🇷_2"
+      - "🇮🇷_3"
 
 
 rules:
