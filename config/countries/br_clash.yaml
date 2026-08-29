@@ -65,9 +65,9 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "201.24.49.79"
+    server: "201.24.49.19"
     port: 2200
-    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
+    uuid: "716903b1-e6bf-4420-9e27-65e4451692e9"
     udp: true
     network: ws
     ws-opts:
@@ -83,13 +83,11 @@ proxies:
     network: ws
     ws-opts:
       path: "/v1"
-      headers:
-        Host: "live.ok.ru"
   - name: "🇧🇷_3"
     type: vless
-    server: "201.24.49.228"
+    server: "201.24.49.120"
     port: 2200
-    uuid: "09f2e2f4-3225-4342-bc92-cb58ee841f72"
+    uuid: "b671573f-6303-4cdf-ad50-0401d07e85bf"
     udp: true
     network: ws
     ws-opts:
@@ -97,6 +95,50 @@ proxies:
       headers:
         Host: "rzd.ru"
   - name: "🇧🇷_4"
+    type: vless
+    server: "201.24.49.77"
+    port: 2200
+    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_5"
+    type: vless
+    server: "201.24.49.69"
+    port: 4100
+    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_6"
+    type: vless
+    server: "201.24.49.120"
+    port: 4100
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_7"
+    type: vless
+    server: "201.24.49.53"
+    port: 4100
+    uuid: "33965d4f-f9bd-4437-8867-ed705b435518"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_8"
     type: vless
     server: "201.24.49.79"
     port: 4100
@@ -107,46 +149,6 @@ proxies:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
-  - name: "🇧🇷_5"
-    type: vless
-    server: "201.24.49.237"
-    port: 2200
-    uuid: "af412668-578c-4296-bc8c-8fac6a8d9003"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-  - name: "🇧🇷_6"
-    type: vless
-    server: "201.24.49.77"
-    port: 2200
-    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-  - name: "🇧🇷_7"
-    type: vless
-    server: "201.24.49.233"
-    port: 2200
-    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇧🇷_8"
-    type: vless
-    server: "201.24.49.117"
-    port: 2200
-    uuid: "2e228435-33a0-47d1-a1d8-9a34b5a03c45"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
   - name: "🇧🇷_9"
     type: vless
     server: "24.152.37.183"
@@ -163,9 +165,9 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇧🇷_10"
     type: vless
-    server: "201.24.49.19"
+    server: "201.24.49.117"
     port: 2200
-    uuid: "716903b1-e6bf-4420-9e27-65e4451692e9"
+    uuid: "2e228435-33a0-47d1-a1d8-9a34b5a03c45"
     udp: true
     network: ws
     ws-opts:
@@ -173,28 +175,6 @@ proxies:
       headers:
         Host: "rzd.ru"
   - name: "🇧🇷_11"
-    type: vless
-    server: "201.24.49.53"
-    port: 4100
-    uuid: "33965d4f-f9bd-4437-8867-ed705b435518"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_12"
-    type: vless
-    server: "201.24.49.69"
-    port: 4100
-    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇧🇷_13"
     type: vless
     server: "201.24.49.74"
     port: 2200
@@ -205,6 +185,80 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
+  - name: "🇧🇷_12"
+    type: vless
+    server: "177.3.214.243"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nordic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU"
+      short-id: "2186a755ed67b034"
+    flow: "xtls-rprx-vision"
+  - name: "🇧🇷_13"
+    type: vless
+    server: "201.24.49.240"
+    port: 4100
+    uuid: "aa7d939b-feaa-4ad3-9615-74216f490807"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_14"
+    type: vless
+    server: "201.24.49.233"
+    port: 4100
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇧🇷_15"
+    type: vless
+    server: "201.24.49.233"
+    port: 2200
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_16"
+    type: vless
+    server: "201.24.49.233"
+    port: 2200
+    uuid: "b671573f-6303-4cdf-ad50-0401d07e85bf"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇧🇷_17"
+    type: vless
+    server: "201.24.49.237"
+    port: 2200
+    uuid: "af412668-578c-4296-bc8c-8fac6a8d9003"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇧🇷_18"
+    type: ss
+    server: "144.22.210.207"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -232,6 +286,11 @@ proxy-groups:
       - "🇧🇷_11"
       - "🇧🇷_12"
       - "🇧🇷_13"
+      - "🇧🇷_14"
+      - "🇧🇷_15"
+      - "🇧🇷_16"
+      - "🇧🇷_17"
+      - "🇧🇷_18"
 
 
 rules:

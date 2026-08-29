@@ -76,6 +76,20 @@ proxies:
       public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
       short-id: "a20d3ed244c76426"
     flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
+    server: "80.96.109.223"
+    port: 5000
+    uuid: "1206bad5-dcc9-410e-9595-d9fe9ee54085"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "special.aeternavpn.space"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo"
+      short-id: "a1b2c3d4"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +105,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
 
 
 rules:

@@ -74,20 +74,6 @@ proxies:
       path: "/"
       headers:
         Host: "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
-  - name: "🇹🇭_2"
-    type: ss
-    server: "102.129.229.85"
-    port: 31700
-    cipher: "chacha20-ietf-poly1305"
-    password: "d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo="
-    udp: true
-  - name: "🇹🇭_3"
-    type: ss
-    server: "102.129.229.85"
-    port: 31700
-    cipher: "chacha20-ietf-poly1305"
-    password: "d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo="
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -103,8 +89,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇹🇭_1"
-      - "🇹🇭_2"
-      - "🇹🇭_3"
 
 
 rules:

@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇭_4"
+  - name: "🇹🇭_2"
     type: vless
     server: "18.239.134.69"
     port: 80
@@ -70,20 +70,6 @@ proxies:
       path: "/"
       headers:
         Host: "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
-  - name: "🇹🇭_5"
-    type: ss
-    server: "102.129.229.85"
-    port: 31700
-    cipher: "chacha20-ietf-poly1305"
-    password: "d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo="
-    udp: true
-  - name: "🇹🇭_6"
-    type: ss
-    server: "102.129.229.85"
-    port: 31700
-    cipher: "chacha20-ietf-poly1305"
-    password: "d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo="
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -126,9 +112,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,9 +122,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,9 +132,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,9 +141,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -173,17 +151,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇭_4"
-      - "🇹🇭_5"
-      - "🇹🇭_6"
+      - "🇹🇭_2"
 
 rules:
   - MATCH,PROXY-BEST

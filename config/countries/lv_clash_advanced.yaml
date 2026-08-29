@@ -59,72 +59,15 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_13"
+  - name: "🇱🇻_17"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2096
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
-  - name: "🇱🇻_14"
-    type: vless
-    server: "185.145.245.179"
-    port: 443
-    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d.tranzit-net.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_15"
-    type: vless
-    server: "lv01.tranzit-net.ru"
-    port: 443
-    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d.tranzit-net.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_16"
-    type: vless
-    server: "lv03.tranzit-net.ru"
-    port: 443
-    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d.tranzit-net.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_17"
-    type: vless
-    server: "89.36.161.222"
-    port: 2083
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "laoye.in-gect.fun"
-    client-fingerprint: "ios"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
   - name: "🇱🇻_18"
     type: vless
     server: "laoye.in-gect.fun"
@@ -141,44 +84,48 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_19"
     type: vless
-    server: "46.28.64.242"
+    server: "31.76.62.223"
     port: 443
-    uuid: "1e560bb6-4d52-4625-a629-54b1282f1b93"
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "lat2.freeinternat.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "2FrYX1NTCe-fnm0kvNLYMPAuOZ8jbsYOSCKu3lY3CBQ"
-      short-id: "64c147592a2f84d9"
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_20"
     type: vless
-    server: "185.145.245.144"
+    server: "89.36.161.222"
+    port: 2083
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "laoye.in-gect.fun"
+    client-fingerprint: "ios"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇱🇻_21"
+    type: vless
+    server: "lv03.tranzit-net.ru"
     port: 443
     uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "d.tranzit-net.ru"
-    client-fingerprint: "qq"
+    client-fingerprint: "safari"
     reality-opts:
       public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_21"
-    type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇱🇻_22"
     type: vless
-    server: "31.76.62.223"
+    server: "lat2.freeinternat.com"
     port: 443
     uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
@@ -192,6 +139,100 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_23"
     type: vless
+    server: "lv01.tranzit-net.ru"
+    port: 443
+    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d.tranzit-net.ru"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_24"
+    type: vless
+    server: "185.145.245.168"
+    port: 443
+    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d.tranzit-net.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_25"
+    type: vless
+    server: "185.145.245.179"
+    port: 443
+    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d.tranzit-net.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_26"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2083
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "laoye.in-gect.fun"
+    client-fingerprint: "ios"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇱🇻_27"
+    type: vless
+    server: "185.145.245.144"
+    port: 443
+    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d.tranzit-net.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_28"
+    type: vless
+    server: "lv02.tranzit-net.ru"
+    port: 443
+    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d.tranzit-net.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_29"
+    type: vless
+    server: "89.36.161.222"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
+  - name: "🇱🇻_30"
+    type: vless
     server: "89.36.161.222"
     port: 2053
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
@@ -204,19 +245,32 @@ proxies:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_24"
+  - name: "🇱🇻_31"
     type: vless
-    server: "185.145.245.168"
+    server: "195.123.212.30.blanesik.space"
     port: 443
-    uuid: "618acefa-2ff1-41b0-a295-f8a08858a897"
+    uuid: "523486c6-c0b5-4e5b-8896-4af2375b41cc"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d.tranzit-net.ru"
+    servername: "195.123.212.30.blanesik.space"
+    client-fingerprint: "qq"
+    network: ws
+    ws-opts:
+      path: "/websocket?ed=2560"
+  - name: "🇱🇻_32"
+    type: vless
+    server: "46.28.64.242"
+    port: 443
+    uuid: "1e560bb6-4d52-4625-a629-54b1282f1b93"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k"
-      short-id: ""
+      public-key: "2FrYX1NTCe-fnm0kvNLYMPAuOZ8jbsYOSCKu3lY3CBQ"
+      short-id: "64c147592a2f84d9"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -260,10 +314,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -272,6 +322,14 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
   - name: "LB-CDN"
     type: load-balance
@@ -281,10 +339,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -293,6 +347,14 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -302,10 +364,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -314,6 +372,14 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
   - name: "FAST-CDN"
     type: url-test
@@ -322,10 +388,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -334,6 +396,14 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -343,10 +413,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -355,15 +421,19 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇻_13"
-      - "🇱🇻_14"
-      - "🇱🇻_15"
-      - "🇱🇻_16"
       - "🇱🇻_17"
       - "🇱🇻_18"
       - "🇱🇻_19"
@@ -372,6 +442,14 @@ proxy-groups:
       - "🇱🇻_22"
       - "🇱🇻_23"
       - "🇱🇻_24"
+      - "🇱🇻_25"
+      - "🇱🇻_26"
+      - "🇱🇻_27"
+      - "🇱🇻_28"
+      - "🇱🇻_29"
+      - "🇱🇻_30"
+      - "🇱🇻_31"
+      - "🇱🇻_32"
 
 rules:
   - MATCH,PROXY-BEST
