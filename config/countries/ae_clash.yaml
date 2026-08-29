@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇦🇪_1"
     type: vless
+    server: "84.235.244.108"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_2"
+    type: vless
     server: "emirates-sgood.wopd.butnorwa.butter.silicore.ir"
     port: 10000
     uuid: "8ad85ca5-7572-4ee7-8a42-a2e5c9a0e479"
@@ -76,7 +87,7 @@ proxies:
     reality-opts:
       public-key: "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM"
       short-id: "cd0a1986719e44c8"
-  - name: "🇦🇪_2"
+  - name: "🇦🇪_3"
     type: vless
     server: "31.57.228.66"
     port: 10000
@@ -105,6 +116,7 @@ proxy-groups:
     proxies:
       - "🇦🇪_1"
       - "🇦🇪_2"
+      - "🇦🇪_3"
 
 
 rules:

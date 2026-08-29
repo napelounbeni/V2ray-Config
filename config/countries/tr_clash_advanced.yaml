@@ -59,31 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_9"
-    type: vless
-    server: "212.87.199.79"
-    port: 8080
-    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v-ws"
-      headers:
-        Host: "tr.cdn.doctor-alan.ir"
   - name: "🇹🇷_10"
-    type: vless
-    server: "turj2.surup.shop"
-    port: 46142
-    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk"
-      short-id: "39feeba3085c"
-  - name: "🇹🇷_11"
     type: vless
     server: "155.103.69.93"
     port: 443
@@ -96,7 +72,30 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "212.87.199.79"
+    port: 8080
+    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v-ws"
+      headers:
+        Host: "tr.cdn.doctor-alan.ir"
   - name: "🇹🇷_12"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    reality-opts:
+      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
+      short-id: "c267be657e1539ea"
+  - name: "🇹🇷_13"
     type: vless
     server: "tr.loadpng.com"
     port: 8443
@@ -109,20 +108,6 @@ proxies:
     reality-opts:
       public-key: "lXt20dNY8LVMkMJc93uCRsDt_PKKFLU90f1gWk0Cwhc"
       short-id: "a005c973fc5aaa53"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_13"
-    type: vless
-    server: "201.50.115.175"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_14"
     type: vless
@@ -139,17 +124,42 @@ proxies:
       short-id: "39feeba3085c"
   - name: "🇹🇷_15"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
+    server: "212.87.199.76"
+    port: 2082
+    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v-ws-de"
+  - name: "🇹🇷_16"
+    type: vless
+    server: "turj2.surup.shop"
+    port: 46142
+    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
-      short-id: "c267be657e1539ea"
-  - name: "🇹🇷_16"
+      public-key: "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk"
+      short-id: "39feeba3085c"
+  - name: "🇹🇷_17"
+    type: vless
+    server: "plan.tabrizonlinemaku.ir"
+    port: 443
+    uuid: "133f016d-81ad-4ed3-8fe1-e431a4134dca"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "plan.tabrizonlinemaku.ir"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "plan.tabrizonlinemaku.ir"
+  - name: "🇹🇷_18"
     type: vless
     server: "212.87.199.76"
     port: 2053
@@ -200,7 +210,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -208,6 +217,8 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -217,7 +228,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -225,6 +235,8 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -234,7 +246,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -242,6 +253,8 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -250,7 +263,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -258,6 +270,8 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -267,7 +281,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -275,12 +288,13 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -288,6 +302,8 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
 
 rules:
   - MATCH,PROXY-BEST
