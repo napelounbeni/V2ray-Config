@@ -63,17 +63,20 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇷_1"
+  - name: "🇨🇷_1"
     type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
+    server: "190.93.245.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
     network: ws
     ws-opts:
-      path: "/sVnT0vhrV7WAl52Z"
+      path: "/dula?Telegram-WangCai2"
       headers:
-        Host: "worker3.gisenoj224.workers.dev"
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +91,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇷_1"
+      - "🇨🇷_1"
 
 
 rules:

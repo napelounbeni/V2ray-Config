@@ -65,20 +65,20 @@ dns:
 proxies:
   - name: "🇸🇨_1"
     type: vless
-    server: "200.165.234.119"
-    port: 2200
-    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
+    server: "45.130.125.209"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
     udp: true
     network: ws
     ws-opts:
-      path: "/v1"
+      path: "/http"
       headers:
-        Host: "rzd.ru"
+        Host: "de.vpnbase.net"
   - name: "🇸🇨_2"
     type: vless
-    server: "200.165.234.62"
+    server: "200.165.234.119"
     port: 4100
-    uuid: "5383fb97-1178-4709-9a25-b767b743e911"
+    uuid: "099f0859-cb81-4a57-b6d8-2c8e18030627"
     udp: true
     network: ws
     ws-opts:
@@ -86,6 +86,20 @@ proxies:
       headers:
         Host: "live.ok.ru"
   - name: "🇸🇨_3"
+    type: vless
+    server: "200.165.231.209"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "200.165.231.209"
+    network: ws
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
+  - name: "🇸🇨_4"
     type: vless
     server: "200.165.234.45"
     port: 4100
@@ -96,32 +110,40 @@ proxies:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
-  - name: "🇸🇨_4"
-    type: vless
-    server: "wstg.datasynctrue.online"
-    port: 443
-    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wstg.datasynctrue.online"
-    network: ws
-    ws-opts:
-      path: "/api/connect"
-      headers:
-        Host: "wstg.datasynctrue.online"
   - name: "🇸🇨_5"
     type: vless
-    server: "45.130.125.207"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    server: "200.165.234.119"
+    port: 2200
+    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
     udp: true
     network: ws
     ws-opts:
-      path: "/http"
+      path: "/v1"
       headers:
-        Host: "de.vpnbase.net"
+        Host: "rzd.ru"
   - name: "🇸🇨_6"
+    type: vless
+    server: "200.165.234.62"
+    port: 4100
+    uuid: "5383fb97-1178-4709-9a25-b767b743e911"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇸🇨_7"
+    type: trojan
+    server: "45.130.125.112"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇸🇨_8"
     type: trojan
     server: "45.130.125.76"
     port: 443
@@ -134,18 +156,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_7"
-    type: trojan
-    server: "45.130.125.126"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇸🇨_8"
+  - name: "🇸🇨_9"
     type: trojan
     server: "45.130.125.190"
     port: 443
@@ -158,7 +169,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_9"
+  - name: "🇸🇨_10"
     type: trojan
     server: "45.130.125.18"
     port: 443
@@ -169,7 +180,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇸🇨_10"
+  - name: "🇸🇨_11"
     type: trojan
     server: "45.130.125.160"
     port: 443
@@ -180,11 +191,9 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_11"
+  - name: "🇸🇨_12"
     type: trojan
-    server: "45.130.125.112"
+    server: "45.130.125.126"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -193,7 +202,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-  - name: "🇸🇨_12"
+  - name: "🇸🇨_13"
     type: trojan
     server: "45.130.125.75"
     port: 443
@@ -232,6 +241,7 @@ proxy-groups:
       - "🇸🇨_10"
       - "🇸🇨_11"
       - "🇸🇨_12"
+      - "🇸🇨_13"
 
 
 rules:
