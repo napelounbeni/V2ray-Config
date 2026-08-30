@@ -63,15 +63,17 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇻🇳_1"
+  - name: "🇮🇷_1"
     type: vless
-    server: "171.244.142.193"
-    port: 8080
-    uuid: "e2c6905e-46ec-434b-8400-0bc5bf0363e6"
+    server: "45.131.4.115"
+    port: 80
+    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
     udp: true
     network: ws
     ws-opts:
-      path: "/v-ws"
+      path: "/sVnT0vhrV7WAl52Z"
+      headers:
+        Host: "worker3.gisenoj224.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -86,7 +88,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇻🇳_1"
+      - "🇮🇷_1"
 
 
 rules:

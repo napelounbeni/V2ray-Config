@@ -65,7 +65,7 @@ dns:
 proxies:
   - name: "🇦🇱_1"
     type: vless
-    server: "alban.freeinternat.com"
+    server: "193.108.112.245"
     port: 443
     uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
@@ -79,7 +79,7 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_2"
     type: vless
-    server: "alblack.vodniki.monster"
+    server: "45.89.60.235"
     port: 443
     uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
@@ -92,19 +92,12 @@ proxies:
       short-id: "946b7ff3ebdd350c"
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_3"
-    type: vless
-    server: "193.108.112.245"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    type: ss
+    server: "130.49.189.158"
+    port: 10792
+    cipher: "chacha20-ietf-poly1305"
+    password: "ywnqwonyK1LRGwJibFQ0aM"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "alban.freeinternat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"

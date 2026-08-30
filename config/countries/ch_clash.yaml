@@ -65,17 +65,17 @@ dns:
 proxies:
   - name: "🇨🇭_1"
     type: vless
-    server: "45.90.56.231"
+    server: "45.90.58.216"
     port: 443
-    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
+    uuid: "2e8077d9-7bd9-444b-b2e3-de940d2eb35e"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
-      short-id: "e2e66f4537770cef"
+      public-key: "PMYLdOtnvW-ca8Zf6u7CFgGXoGXCvmCMPerPjGY3AAc"
+      short-id: "77d7abe2c55892f1"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
     type: vless
@@ -93,34 +93,32 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_3"
     type: vless
-    server: "45.90.58.216"
+    server: "45.90.56.231"
     port: 443
-    uuid: "2e8077d9-7bd9-444b-b2e3-de940d2eb35e"
+    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "PMYLdOtnvW-ca8Zf6u7CFgGXoGXCvmCMPerPjGY3AAc"
-      short-id: "77d7abe2c55892f1"
+      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
+      short-id: "e2e66f4537770cef"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_4"
-    type: trojan
-    server: "tr-switzerlandgopota.unlimited-access.ru"
-    port: 443
-    password: "kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi"
-    sni: "tr-switzerlandgopota.unlimited-access.ru"
-    skip-cert-verify: true
+    type: vless
+    server: "31.76.4.128"
+    port: 1443
+    uuid: "1206bad5-dcc9-410e-9595-d9fe9ee54085"
     udp: true
-  - name: "🇨🇭_5"
-    type: trojan
-    server: "45.95.232.189"
-    port: 443
-    password: "kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi"
-    sni: "tr-switzerlandgopota.unlimited-access.ru"
+    tls: true
     skip-cert-verify: true
-    udp: true
+    servername: "kinopoisk.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "oo5V9WHh_7YUFrbq0yQC19FYbq9kKf1ig1-IiLXvbHk"
+      short-id: "a1b2c3d4"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -139,7 +137,6 @@ proxy-groups:
       - "🇨🇭_2"
       - "🇨🇭_3"
       - "🇨🇭_4"
-      - "🇨🇭_5"
 
 
 rules:
