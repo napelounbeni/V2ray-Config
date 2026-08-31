@@ -59,7 +59,33 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇹🇷_8"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
+      short-id: "c267be657e1539ea"
   - name: "🇹🇷_9"
+    type: vless
+    server: "144.225.65.111"
+    port: 46142
+    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk"
+      short-id: "39feeba3085c"
+  - name: "🇹🇷_10"
     type: vless
     server: "185.123.100.56"
     port: 8443
@@ -73,58 +99,20 @@ proxies:
       public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_10"
-    type: vless
-    server: "86.38.214.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
   - name: "🇹🇷_11"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
+    server: "turj2.surup.shop"
+    port: 46142
+    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
-      short-id: "c267be657e1539ea"
+      public-key: "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk"
+      short-id: "39feeba3085c"
   - name: "🇹🇷_12"
-    type: vless
-    server: "tr1p.soundfiy.ir"
-    port: 1824
-    uuid: "c46c1fa3-194f-4c19-a9ba-690475acb717"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amp-api-edge.apps.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "JIv_D-Lpo1cosiCUgu-qzGSJwOCGciyXSZ8ucNn6aBo"
-      short-id: "8390ee7a5996648b"
-  - name: "🇹🇷_13"
-    type: vless
-    server: "130.185.120.62"
-    port: 1819
-    uuid: "bc85e463-6151-484c-b6af-f96ccf96224a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "130.185.120.62"
-    client-fingerprint: "chrome"
-  - name: "🇹🇷_14"
     type: vless
     server: "premium-tr.geodema.network"
     port: 8443
@@ -138,33 +126,21 @@ proxies:
       public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_15"
+  - name: "🇹🇷_13"
     type: vless
-    server: "144.225.65.111"
-    port: 46142
-    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
+    server: "194.5.206.112"
+    port: 8080
+    uuid: "5d5eb248-264c-4861-873a-50a7cc069448"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk"
-      short-id: "39feeba3085c"
-  - name: "🇹🇷_16"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "mamad"
+  - name: "🇹🇷_14"
     type: vless
-    server: "138.249.20.37"
-    port: 8443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "212.87.199.122"
+    port: 58416
+    uuid: "5626ce32-dad0-468b-952c-e53d609100f1"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -207,14 +183,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -224,14 +199,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -241,14 +215,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -257,14 +230,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -274,27 +246,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
 rules:
   - MATCH,PROXY-BEST

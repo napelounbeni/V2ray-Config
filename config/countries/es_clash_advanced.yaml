@@ -59,76 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇸_18"
-    type: vless
-    server: "212.227.235.66"
-    port: 2053
-    uuid: "6fbdbd3c-7696-4b9a-9a10-bcecc26e0f6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
-      short-id: "866af6e56606f2bc"
-  - name: "🇪🇸_19"
-    type: vless
-    server: "185.18.250.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇪🇸_20"
-    type: vless
-    server: "193.238.154.39"
-    port: 443
-    uuid: "4c1b7e3f-6a2d-493f-b6c4-4ef37db6fcfc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "G7hjy9PEKopcPUP4mQXhwIaKIO9TCra_5LHZWuM_RjM"
-      short-id: "641a87d5ecdfaeb3"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_21"
-    type: vless
-    server: "spt2.milkabebar.ir"
-    port: 10694
-    uuid: "8c2d5e7e-116a-49c4-8437-937f4bfce346"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amp-api-edge.apps.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28"
-      short-id: "a0fbc54d937aaccb"
-  - name: "🇪🇸_22"
-    type: vless
-    server: "185.253.152.198"
-    port: 34710
-    uuid: "dd7429eb-b77b-4a8d-be86-c34cac86faf7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.nvidia.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU"
-      short-id: "14b0eb7919eb7d"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_23"
+  - name: "🇪🇸_17"
     type: vless
     server: "93.189.94.67"
     port: 48296
@@ -142,16 +73,21 @@ proxies:
       public-key: "ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE"
       short-id: "109657bb2dbe99"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_24"
+  - name: "🇪🇸_18"
     type: vless
-    server: "85.90.217.42"
+    server: "193.238.154.39"
     port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    uuid: "4c1b7e3f-6a2d-493f-b6c4-4ef37db6fcfc"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "85.90.217.42"
-  - name: "🇪🇸_25"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "G7hjy9PEKopcPUP4mQXhwIaKIO9TCra_5LHZWuM_RjM"
+      short-id: "641a87d5ecdfaeb3"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_19"
     type: vless
     server: "185.254.205.79"
     port: 19842
@@ -160,12 +96,45 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.tesla.com"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM"
       short-id: "25ebc9e0a912"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_26"
+  - name: "🇪🇸_20"
+    type: vless
+    server: "185.253.152.198"
+    port: 34710
+    uuid: "dd7429eb-b77b-4a8d-be86-c34cac86faf7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.nvidia.com"
+    reality-opts:
+      public-key: "MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU"
+      short-id: "14b0eb7919eb7d"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_21"
+    type: vless
+    server: "212.227.235.66"
+    port: 2053
+    uuid: "6fbdbd3c-7696-4b9a-9a10-bcecc26e0f6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    reality-opts:
+      public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
+      short-id: "866af6e56606f2bc"
+  - name: "🇪🇸_22"
+    type: vless
+    server: "85.90.217.42"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "85.90.217.42"
+  - name: "🇪🇸_23"
     type: vless
     server: "193.238.154.18"
     port: 443
@@ -174,25 +143,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "es1.hat.onl"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
       short-id: "76132b3b39704c44"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_27"
-    type: trojan
-    server: "185.114.72.31"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_28"
+  - name: "🇪🇸_24"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -205,7 +161,33 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_29"
+  - name: "🇪🇸_25"
+    type: trojan
+    server: "185.114.72.31"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_26"
+    type: trojan
+    server: "212.227.144.37"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_27"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -218,6 +200,20 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇪🇸_28"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_29"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
   - name: "🇪🇸_30"
     type: ss
     server: "108.181.121.226"
@@ -238,20 +234,6 @@ proxies:
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_33"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_34"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
     udp: true
 
 proxy-groups:
@@ -295,6 +277,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -310,8 +293,6 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
   - name: "LB-CDN"
     type: load-balance
@@ -321,6 +302,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -336,8 +318,6 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -347,6 +327,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -362,8 +343,6 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
   - name: "FAST-CDN"
     type: url-test
@@ -372,6 +351,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -387,8 +367,6 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -398,6 +376,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -413,13 +392,12 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇸_17"
       - "🇪🇸_18"
       - "🇪🇸_19"
       - "🇪🇸_20"
@@ -435,8 +413,6 @@ proxy-groups:
       - "🇪🇸_30"
       - "🇪🇸_31"
       - "🇪🇸_32"
-      - "🇪🇸_33"
-      - "🇪🇸_34"
 
 rules:
   - MATCH,PROXY-BEST
