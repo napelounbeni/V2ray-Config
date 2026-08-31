@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇾_4"
+  - name: "🇲🇾_5"
+    type: vless
+    server: "my1.miyazono-kaori.com"
+    port: 443
+    uuid: "09558890-0fa4-4d55-96b5-f9a5675c2625"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.setel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc"
+      short-id: "99f8972e3dd5ed"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇾_6"
     type: vless
     server: "56.69.159.191"
     port: 53271
@@ -73,7 +87,7 @@ proxies:
       public-key: "1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc"
       short-id: "0a9bd9db19578964"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇾_5"
+  - name: "🇲🇾_7"
     type: vless
     server: "43.217.16.8"
     port: 21874
@@ -87,7 +101,7 @@ proxies:
       public-key: "75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs"
       short-id: "42e853a5559e1032"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇾_6"
+  - name: "🇲🇾_8"
     type: trojan
     server: "47.250.84.25"
     port: 443
@@ -137,9 +151,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -149,9 +164,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -161,9 +177,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -172,9 +189,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -184,17 +202,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇾_4"
       - "🇲🇾_5"
       - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
 rules:
   - MATCH,PROXY-BEST

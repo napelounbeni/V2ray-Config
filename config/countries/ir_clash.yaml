@@ -64,60 +64,12 @@ dns:
 
 proxies:
   - name: "🇮🇷_1"
-    type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_2"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "a7b22989-6c1f-4b59-b0f3-0605401813c4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "worker3.gigak25604.workers.dev"
-  - name: "🇮🇷_3"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sVnT0vhrV7WAl52Z"
-      headers:
-        Host: "worker3.gisenoj224.workers.dev"
-  - name: "🇮🇷_4"
-    type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "1e78f247-1e3e-400e-bf1f-bb0c908b9a60"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/GXXYmLBSqSttMjgI"
-      headers:
-        Host: "worker3.laton16859.workers.dev"
-  - name: "🇮🇷_5"
-    type: trojan
-    server: "45.131.4.118"
+    type: ss
+    server: "37.32.39.241"
     port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    cipher: "aes-256-gcm"
+    password: "IR-DE-9xK2mP7qL4sT8vN"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -133,10 +85,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇷_1"
-      - "🇮🇷_2"
-      - "🇮🇷_3"
-      - "🇮🇷_4"
-      - "🇮🇷_5"
 
 
 rules:

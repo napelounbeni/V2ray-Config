@@ -65,31 +65,6 @@ dns:
 proxies:
   - name: "🇪🇪_1"
     type: vless
-    server: "94.183.170.135"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "firefox"
-  - name: "🇪🇪_2"
-    type: vless
-    server: "45.80.108.236"
-    port: 443
-    uuid: "ef9d2063-0140-472b-8b17-ba02ba4b4435"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip"
-      headers:
-        Host: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
-  - name: "🇪🇪_3"
-    type: vless
     server: "5.45.117.125"
     port: 443
     uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
@@ -103,6 +78,27 @@ proxies:
       path: "/"
       headers:
         Host: "freeuse.firta.ru"
+  - name: "🇪🇪_2"
+    type: vless
+    server: "94.183.170.135"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_3"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "edge"
   - name: "🇪🇪_4"
     type: vless
     server: "95.85.224.51"
@@ -120,30 +116,14 @@ proxies:
   - name: "🇪🇪_5"
     type: vless
     server: "94.183.170.135"
-    port: 443
+    port: 8443
     uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_6"
-    type: vless
-    server: "64.188.82.152"
-    port: 443
-    uuid: "7836b28e-8451-4596-ad3e-e3601b2335ba"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cloudflare.vhub.pro"
-    client-fingerprint: "safari"
-    network: ws
-    ws-opts:
-      path: "/websocket?ed=2560"
-      headers:
-        Host: "cloudflare.vhub.pro"
-  - name: "🇪🇪_7"
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_6"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -151,6 +131,17 @@ proxies:
     sni: "russiapower.accesscam.org"
     skip-cert-verify: true
     udp: true
+  - name: "🇪🇪_7"
+    type: trojan
+    server: "185.36.141.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
   - name: "🇪🇪_8"
     type: trojan
     server: "80.77.25.142"
@@ -164,17 +155,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇪_9"
-    type: trojan
-    server: "185.36.141.81"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -197,7 +177,6 @@ proxy-groups:
       - "🇪🇪_6"
       - "🇪🇪_7"
       - "🇪🇪_8"
-      - "🇪🇪_9"
 
 
 rules:

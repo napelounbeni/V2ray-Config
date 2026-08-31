@@ -59,35 +59,47 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇳_11"
+  - name: "🇮🇳_10"
     type: vless
-    server: "5.253.42.164"
+    server: "preview.netraidly.ru"
     port: 40443
-    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
+    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "deepl.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
-      short-id: "68a8"
+      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
+      short-id: "84fc"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_12"
+  - name: "🇮🇳_11"
     type: vless
-    server: "4.240.110.47"
-    port: 443
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    server: "5.253.42.163"
+    port: 40443
+    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "bab-6.site"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vws/"
-      headers:
-        Host: "bab-6.site"
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
+      short-id: "84fc"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_12"
+    type: vless
+    server: "194.61.31.126"
+    port: 2053
+    uuid: "0bf89828-484f-4710-9581-12aa961e3bf1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Gy6W0bXf2bpxoG1k3szp8X0ekzoyXlEtzT8V4mYQ3EE"
+      short-id: "29fe4205ddc971a8"
   - name: "🇮🇳_13"
     type: vless
     server: "172.237.44.80"
@@ -104,44 +116,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_14"
     type: vless
-    server: "108.165.152.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇮🇳_15"
-    type: vless
-    server: "194.61.31.126"
-    port: 2053
-    uuid: "0bf89828-484f-4710-9581-12aa961e3bf1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Gy6W0bXf2bpxoG1k3szp8X0ekzoyXlEtzT8V4mYQ3EE"
-      short-id: "29fe4205ddc971a8"
-  - name: "🇮🇳_16"
-    type: vless
-    server: "5.253.42.163"
-    port: 40443
-    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
-      short-id: "84fc"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_17"
-    type: vless
     server: "148.113.5.44"
     port: 443
     uuid: "72ea5a91-ffcc-43d2-9297-5993c3abf186"
@@ -154,7 +128,7 @@ proxies:
       public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
       short-id: "221873918e0bb74d"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_18"
+  - name: "🇮🇳_15"
     type: vless
     server: "5.253.30.99"
     port: 40443
@@ -168,15 +142,36 @@ proxies:
       public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
       short-id: "88b6"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_19"
-    type: trojan
-    server: "34.131.228.210"
+  - name: "🇮🇳_16"
+    type: vless
+    server: "4.240.110.47"
     port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
-    skip-cert-verify: true
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     udp: true
-  - name: "🇮🇳_20"
+    tls: true
+    skip-cert-verify: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
+  - name: "🇮🇳_17"
+    type: vless
+    server: "5.253.42.164"
+    port: 40443
+    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
+      short-id: "68a8"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_18"
     type: ss
     server: "172.105.39.124"
     port: 7002
@@ -225,6 +220,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -233,8 +229,6 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
   - name: "LB-CDN"
     type: load-balance
@@ -244,6 +238,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -252,8 +247,6 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -263,6 +256,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -271,8 +265,6 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
   - name: "FAST-CDN"
     type: url-test
@@ -281,6 +273,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -289,8 +282,6 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -300,6 +291,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -308,13 +300,12 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
       - "🇮🇳_13"
@@ -323,8 +314,6 @@ proxy-groups:
       - "🇮🇳_16"
       - "🇮🇳_17"
       - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
 
 rules:
   - MATCH,PROXY-BEST
