@@ -79,20 +79,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_2"
     type: vless
-    server: "185.254.205.79"
-    port: 19842
-    uuid: "43c23116-1115-4af4-a0f0-56f02841a605"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.tesla.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM"
-      short-id: "25ebc9e0a912"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_3"
-    type: vless
     server: "212.227.235.66"
     port: 2053
     uuid: "6fbdbd3c-7696-4b9a-9a10-bcecc26e0f6f"
@@ -104,6 +90,20 @@ proxies:
     reality-opts:
       public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
       short-id: "866af6e56606f2bc"
+  - name: "🇪🇸_3"
+    type: vless
+    server: "185.253.152.198"
+    port: 34710
+    uuid: "dd7429eb-b77b-4a8d-be86-c34cac86faf7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.nvidia.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU"
+      short-id: "14b0eb7919eb7d"
+    flow: "xtls-rprx-vision"
   - name: "🇪🇸_4"
     type: vless
     server: "193.238.154.18"
@@ -134,31 +134,35 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_6"
     type: vless
-    server: "185.253.152.198"
-    port: 34710
-    uuid: "dd7429eb-b77b-4a8d-be86-c34cac86faf7"
+    server: "185.254.205.79"
+    port: 19842
+    uuid: "43c23116-1115-4af4-a0f0-56f02841a605"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.nvidia.com"
+    servername: "www.tesla.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU"
-      short-id: "14b0eb7919eb7d"
+      public-key: "sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM"
+      short-id: "25ebc9e0a912"
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_7"
-    type: vless
-    server: "85.90.217.42"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
+    type: trojan
+    server: "185.114.72.31"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "85.90.217.42"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "🇪🇸_8"
     type: trojan
-    server: "185.18.250.245"
-    port: 443
+    server: "212.227.144.37"
+    port: 8443
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
@@ -170,8 +174,8 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇪🇸_9"
     type: trojan
-    server: "212.227.144.37"
-    port: 8443
+    server: "185.18.250.245"
+    port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
@@ -195,18 +199,12 @@ proxies:
       headers:
         Host: "www.calmlunch.com"
   - name: "🇪🇸_11"
-    type: trojan
-    server: "185.114.72.31"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    type: ss
+    server: "108.181.121.226"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "WSyL4XTwNsdv"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
   - name: "🇪🇸_12"
     type: ss
     server: "108.181.121.226"
@@ -223,19 +221,12 @@ proxies:
     udp: true
   - name: "🇪🇸_14"
     type: ss
-    server: "108.181.121.226"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_15"
-    type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_16"
+  - name: "🇪🇸_15"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -271,7 +262,6 @@ proxy-groups:
       - "🇪🇸_13"
       - "🇪🇸_14"
       - "🇪🇸_15"
-      - "🇪🇸_16"
 
 
 rules:

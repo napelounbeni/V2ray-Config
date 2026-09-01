@@ -65,73 +65,20 @@ dns:
 proxies:
   - name: "🇪🇪_1"
     type: vless
-    server: "212.87.190.62"
-    port: 2054
-    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    server: "5.45.117.125"
+    port: 443
+    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Ojwlyprfyf5D1an18CW4gwbHOWzHhKZ7Tq9F_W6-EUY"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
+    servername: "freeuse.firta.ru"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "freeuse.firta.ru"
   - name: "🇪🇪_2"
-    type: vless
-    server: "2.26.129.245"
-    port: 443
-    uuid: "015b83b4-53a3-4719-8553-3a7c03c4128d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ukrop.mycdn-me.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "gPTBA-gVUWAK9yziB_v_sGSncm0LwBQvEAsTQZK4jEE"
-      short-id: "5a8e1a04f3d92b67"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_3"
-    type: vless
-    server: "2.26.128.77"
-    port: 443
-    uuid: "015b83b4-53a3-4719-8553-3a7c03c4128d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wombat.mycdn-me.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "w88Ys8dVF9DuslGwUD05J9-FHNoAT9qmPysCvHiEmmg"
-      short-id: "1b40e7c2a1d8f635"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_4"
-    type: vless
-    server: "2.26.135.192"
-    port: 443
-    uuid: "015b83b4-53a3-4719-8553-3a7c03c4128d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "smorodina.mycdn-me.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "09O8bAlIWm9AGnNyxBtHwpYNQxlXPSQeQeKzS3ZMwGE"
-      short-id: "a1f9c0e21d7b6485"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_5"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "edge"
-  - name: "🇪🇪_6"
     type: vless
     server: "95.85.224.51"
     port: 443
@@ -145,7 +92,21 @@ proxies:
       public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
       short-id: "a696de84963656de"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_7"
+  - name: "🇪🇪_3"
+    type: vless
+    server: "31.76.70.31"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "baltic.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
+      short-id: "4a46213c935e2ee4"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_4"
     type: vless
     server: "94.183.170.135"
     port: 8443
@@ -155,47 +116,7 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy4.lockdwn.com"
     client-fingerprint: "firefox"
-  - name: "🇪🇪_8"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_9"
-    type: vless
-    server: "5.45.117.125"
-    port: 443
-    uuid: "c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "freeuse.firta.ru"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "freeuse.firta.ru"
-  - name: "🇪🇪_10"
-    type: vless
-    server: "2.26.135.197"
-    port: 443
-    uuid: "a5eddeef-737a-4126-8d1e-527f85d7ed18"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "smorodina.mycdn-me.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "09O8bAlIWm9AGnNyxBtHwpYNQxlXPSQeQeKzS3ZMwGE"
-      short-id: "a1f9c0e21d7b6485"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_11"
+  - name: "🇪🇪_5"
     type: vless
     server: "94.183.170.135"
     port: 443
@@ -206,7 +127,53 @@ proxies:
       path: "/"
       headers:
         Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_12"
+  - name: "🇪🇪_6"
+    type: vless
+    server: "31.76.70.112"
+    port: 8443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto.cendora.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
+      short-id: "a7f3c91b2e6d84c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_7"
+    type: vless
+    server: "31.76.70.32"
+    port: 443
+    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "baltic.cendora.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
+      short-id: "4a46213c935e2ee4"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_8"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "edge"
+  - name: "🇪🇪_9"
+    type: trojan
+    server: "109.206.241.10"
+    port: 449
+    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
+    sni: "russiapower.accesscam.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇪🇪_10"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -219,14 +186,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇪_13"
-    type: trojan
-    server: "109.206.241.10"
-    port: 449
-    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
-    sni: "russiapower.accesscam.org"
-    skip-cert-verify: true
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -251,9 +210,6 @@ proxy-groups:
       - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
-      - "🇪🇪_11"
-      - "🇪🇪_12"
-      - "🇪🇪_13"
 
 
 rules:

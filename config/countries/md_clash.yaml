@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
-    server: "80.96.109.223"
-    port: 443
-    uuid: "74f73fb2-49cc-4744-bd37-97c5f83963ab"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hotcoals.aeternavpn.space"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI"
-      short-id: "a1b2c3d4"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇩_2"
-    type: vless
     server: "144.31.131.241"
     port: 8443
     uuid: "b406bc51-9002-474c-beae-b194b02c91da"
@@ -105,7 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
-      - "🇲🇩_2"
 
 
 rules:

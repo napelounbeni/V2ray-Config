@@ -65,98 +65,18 @@ dns:
 proxies:
   - name: "🇫🇷_1"
     type: vless
-    server: "194.76.154.31"
-    port: 40443
-    uuid: "9f0baff8-bdee-4de9-9515-bcc4932b41fa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ"
-      short-id: "a8ae"
-  - name: "🇫🇷_2"
-    type: vless
-    server: "62.210.91.2"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_3"
-    type: vless
-    server: "nasnet-162191099-direct.mbghalibaf.com"
+    server: "bab-6.site"
     port: 443
-    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    servername: "bab-6.site"
     client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_4"
-    type: vless
-    server: "usejh2.neobo-tooth.ru"
-    port: 2083
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usejh2.neobo-tooth.ru"
-    client-fingerprint: "ios"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇫🇷_5"
-    type: vless
-    server: "45.144.28.39"
-    port: 2083
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usejh2.neobo-tooth.ru"
-    client-fingerprint: "ios"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇫🇷_6"
-    type: vless
-    server: "136.244.112.46"
-    port: 37710
-    uuid: "4283865b-7145-44d3-9855-96298c47424d"
-    udp: true
-  - name: "🇫🇷_7"
-    type: vless
-    server: "45.154.96.35"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fra3.freeinternat.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_8"
-    type: vless
-    server: "152.228.162.19"
-    port: 80
-    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
-    udp: true
     network: ws
     ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_9"
+      path: "/vws/"
+  - name: "🇫🇷_2"
     type: vless
     server: "149.202.58.99"
     port: 443
@@ -171,18 +91,67 @@ proxies:
       path: "/vws/"
       headers:
         Host: "bab-6.site"
-  - name: "🇫🇷_10"
+  - name: "🇫🇷_3"
     type: vless
-    server: "38.60.168.98"
-    port: 2087
-    uuid: "8a346b7c-5b95-4845-affa-0e5d9929e9ae"
+    server: "45.80.215.68"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "45.80.215.68"
+  - name: "🇫🇷_4"
+    type: vless
+    server: "45.144.28.39"
+    port: 2083
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usejh2.neobo-tooth.ru"
+    client-fingerprint: "ios"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇫🇷_5"
+    type: vless
+    server: "194.76.154.31"
+    port: 40443
+    uuid: "9f0baff8-bdee-4de9-9515-bcc4932b41fa"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ"
+      short-id: "a8ae"
+  - name: "🇫🇷_6"
+    type: vless
+    server: "OV-France1.09vpn.com"
+    port: 80
+    uuid: "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1"
     udp: true
     network: ws
     ws-opts:
-      path: "/db55c40bbc75"
-  - name: "🇫🇷_11"
+      path: "/vless/"
+  - name: "🇫🇷_7"
     type: vless
-    server: "169.58.143.21"
+    server: "104.105.202.38"
+    port: 29239
+    uuid: "14155d8d-14f7-4105-984b-f477e3880943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sony.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "KGI60DoZFcBFTq4yrjFE5C4QitMypVH4HJlkM9VqB1M"
+      short-id: "fd7069bcd5853169"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_8"
+    type: vless
+    server: "finite-node.rtxconfigz.com"
     port: 443
     uuid: "a5d740d3-2af5-49c2-bfca-f0983456f5fc"
     udp: true
@@ -193,22 +162,11 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇫🇷_12"
-    type: vless
-    server: "152.228.162.19"
-    port: 80
-    uuid: "5ce84688-f535-46ad-a512-37b17becf6ea"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "akamaized.net"
-  - name: "🇫🇷_13"
+  - name: "🇫🇷_9"
     type: vless
     server: "169.58.143.21"
     port: 443
-    uuid: "25f3beef-a4b6-40bc-aa74-17a0f89f683c"
+    uuid: "ce2aa2ab-d893-43c2-ae4c-5b45eb74d49f"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -217,33 +175,19 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: "telegram.us"
-  - name: "🇫🇷_14"
+        Host: "tiktok.com"
+  - name: "🇫🇷_10"
     type: vless
-    server: "45.80.215.68"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    server: "152.228.162.19"
+    port: 80
+    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "45.80.215.68"
-  - name: "🇫🇷_15"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇫🇷_11"
     type: vless
-    server: "usejh2.neobo-tooth.ru"
-    port: 2053
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY"
-      short-id: "1eb8ea8dae937ae0"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_16"
-    type: vless
-    server: "nasnet-162191099-direct.mbghalibaf.com"
+    server: "162.19.10.99"
     port: 443
     uuid: "nasnet"
     udp: true
@@ -252,140 +196,21 @@ proxies:
     servername: "nasnet-162191099-direct.mbghalibaf.com"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_17"
+  - name: "🇫🇷_12"
     type: vless
-    server: "sv-fr2.cdnturbo.net"
+    server: "85.204.107.7"
     port: 443
-    uuid: "b4c5a66f-1f66-4262-b72d-c6aa661abc2c"
+    uuid: "21672ca3-da3f-46cd-9b67-2b2d4cb0beb3"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    reality-opts:
-      public-key: "0jolgptjjXxVsUgMPN_mcoyHET2uHQ7onbAMZ7uCc2w"
-      short-id: "8d0a77a398415b0e"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_18"
-    type: vless
-    server: "OV-France1.09vpn.com"
-    port: 80
-    uuid: "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_19"
-    type: vless
-    server: "152.228.162.19"
-    port: 80
-    uuid: "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_20"
-    type: vless
-    server: "141.101.122.147"
-    port: 443
-    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "a.cwvps.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "a.cwvps.eu.org"
-  - name: "🇫🇷_21"
-    type: vless
-    server: "fra3.freeinternat.com"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fra3.freeinternat.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_22"
-    type: vless
-    server: "5.196.243.4"
-    port: 443
-    uuid: "b4c5a66f-1f66-4262-b72d-c6aa661abc2c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "sd755spsps.rucdn.pro"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "0jolgptjjXxVsUgMPN_mcoyHET2uHQ7onbAMZ7uCc2w"
-      short-id: "8d0a77a398415b0e"
+      public-key: "dAzWNLnINcfCwRteXOz4Ip0OIKuSse9Y-iZvJzSKeg8"
+      short-id: "fae1c70f055a8b2a"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_23"
-    type: vless
-    server: "162.19.10.99"
-    port: 443
-    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_24"
-    type: vless
-    server: "ww3.levikogjgfdd.ir"
-    port: 443
-    uuid: "b81b4d1b-7f20-48f1-82dc-d24bef898cab"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "passport.yandex.ru"
-    reality-opts:
-      public-key: "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0"
-      short-id: "e6"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_25"
-    type: vless
-    server: "213.136.92.67"
-    port: 443
-    uuid: "af348651-1624-4710-b55f-0307a22d891f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "status.play.google.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo"
-      short-id: "5030"
-  - name: "🇫🇷_26"
-    type: vless
-    server: "169.58.143.21"
-    port: 443
-    uuid: "ce2aa2ab-d893-43c2-ae4c-5b45eb74d49f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tiktok.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇫🇷_27"
-    type: vless
-    server: "OV-France1.09vpn.com"
-    port: 80
-    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_28"
+  - name: "🇫🇷_13"
     type: vless
     server: "161.97.160.224"
     port: 443
@@ -399,84 +224,33 @@ proxies:
       public-key: "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0"
       short-id: "e6"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_29"
+  - name: "🇫🇷_14"
     type: vless
-    server: "62.210.91.10"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_30"
-    type: vless
-    server: "145.223.68.58"
+    server: "45.154.96.35"
     port: 443
-    uuid: "edb50d20-2d3e-4c1e-8a75-a17168a89aa5"
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    servername: "fra3.freeinternat.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg"
-      short-id: "a44ff7d2e80213c2"
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_31"
+  - name: "🇫🇷_15"
     type: vless
-    server: "162.19.10.99"
+    server: "ww1.levikogjgfdd.ir"
     port: 443
-    uuid: "nasnet"
+    uuid: "af348651-1624-4710-b55f-0307a22d891f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_32"
-    type: vless
-    server: "45.144.28.39"
-    port: 2096
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "usejh2.neobo-tooth.ru"
-  - name: "🇫🇷_33"
-    type: vless
-    server: "51.77.217.70"
-    port: 2053
-    uuid: "fae272a6-a184-4c91-83ed-771abdcff404"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "chrome"
+    servername: "status.play.google.com"
     reality-opts:
-      public-key: "5Me9XEMwr9siyrnV5zPHYfxB3QLqw-OzNAOuzkFu1kw"
-      short-id: "7af95330630a7327"
-  - name: "🇫🇷_34"
-    type: vless
-    server: "104.105.202.38"
-    port: 29239
-    uuid: "14155d8d-14f7-4105-984b-f477e3880943"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sony.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "KGI60DoZFcBFTq4yrjFE5C4QitMypVH4HJlkM9VqB1M"
-      short-id: "fd7069bcd5853169"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_35"
+      public-key: "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo"
+      short-id: "5030"
+  - name: "🇫🇷_16"
     type: vless
     server: "45.144.28.39"
     port: 2053
@@ -490,7 +264,233 @@ proxies:
       public-key: "dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY"
       short-id: "1eb8ea8dae937ae0"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_36"
+  - name: "🇫🇷_17"
+    type: vless
+    server: "169.58.143.21"
+    port: 443
+    uuid: "25f3beef-a4b6-40bc-aa74-17a0f89f683c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "finite-node.rtxconfigz.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "telegram.us"
+  - name: "🇫🇷_18"
+    type: vless
+    server: "5.196.243.4"
+    port: 443
+    uuid: "b4c5a66f-1f66-4262-b72d-c6aa661abc2c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "0jolgptjjXxVsUgMPN_mcoyHET2uHQ7onbAMZ7uCc2w"
+      short-id: "8d0a77a398415b0e"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_19"
+    type: vless
+    server: "169.58.143.21"
+    port: 443
+    uuid: "a5d740d3-2af5-49c2-bfca-f0983456f5fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "finite-node.rtxconfigz.com"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇫🇷_20"
+    type: vless
+    server: "136.244.112.46"
+    port: 37710
+    uuid: "4283865b-7145-44d3-9855-96298c47424d"
+    udp: true
+  - name: "🇫🇷_21"
+    type: vless
+    server: "sd755spsps.rucdn.pro"
+    port: 443
+    uuid: "21672ca3-da3f-46cd-9b67-2b2d4cb0beb3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sd755spsps.rucdn.pro"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "dAzWNLnINcfCwRteXOz4Ip0OIKuSse9Y-iZvJzSKeg8"
+      short-id: "fae1c70f055a8b2a"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_22"
+    type: vless
+    server: "62.210.91.10"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_23"
+    type: vless
+    server: "45.144.28.39"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "usejh2.neobo-tooth.ru"
+  - name: "🇫🇷_24"
+    type: vless
+    server: "162.19.10.99"
+    port: 443
+    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_25"
+    type: vless
+    server: "213.136.92.67"
+    port: 443
+    uuid: "af348651-1624-4710-b55f-0307a22d891f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "status.play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo"
+      short-id: "5030"
+  - name: "🇫🇷_26"
+    type: vless
+    server: "20.33.23.66"
+    port: 443
+    uuid: "79863d42-9f1c-4e8e-a65b-1003090871c1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "coNFIghayE.moKhaBeraTebInZON.workErS.deV"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiUHVXcXFjYTJGVGI3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
+      headers:
+        Host: "confighaye.mokhaberatebinzon.workers.dev"
+  - name: "🇫🇷_27"
+    type: vless
+    server: "62.210.91.2"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_28"
+    type: vless
+    server: "152.228.162.19"
+    port: 80
+    uuid: "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇫🇷_29"
+    type: vless
+    server: "OV-France1.09vpn.com"
+    port: 80
+    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇫🇷_30"
+    type: vless
+    server: "finite-node.rtxconfigz.com"
+    port: 443
+    uuid: "25f3beef-a4b6-40bc-aa74-17a0f89f683c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "finite-node.rtxconfigz.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "telegram.us"
+  - name: "🇫🇷_31"
+    type: vless
+    server: "51.77.217.70"
+    port: 2053
+    uuid: "fae272a6-a184-4c91-83ed-771abdcff404"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5Me9XEMwr9siyrnV5zPHYfxB3QLqw-OzNAOuzkFu1kw"
+      short-id: "7af95330630a7327"
+  - name: "🇫🇷_32"
+    type: vless
+    server: "usejh2.neobo-tooth.ru"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vk.ru"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY"
+      short-id: "1eb8ea8dae937ae0"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_33"
+    type: vless
+    server: "145.223.68.58"
+    port: 443
+    uuid: "edb50d20-2d3e-4c1e-8a75-a17168a89aa5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg"
+      short-id: "a44ff7d2e80213c2"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_34"
+    type: vless
+    server: "fra3.freeinternat.com"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fra3.freeinternat.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_35"
     type: trojan
     server: "194.9.172.236"
     port: 1105
@@ -498,33 +498,19 @@ proxies:
     sni: "194.9.172.236"
     skip-cert-verify: true
     udp: true
+  - name: "🇫🇷_36"
+    type: ss
+    server: "51.255.13.232"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "BqnqToih0PbU"
+    udp: true
   - name: "🇫🇷_37"
     type: ss
     server: "51.255.13.232"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "BqnqToih0PbU"
-    udp: true
-  - name: "🇫🇷_38"
-    type: ss
-    server: "51.77.225.200"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "zRZNBszYyWo5"
-    udp: true
-  - name: "🇫🇷_39"
-    type: ss
-    server: "51.255.13.232"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "BqnqToih0PbU"
-    udp: true
-  - name: "🇫🇷_40"
-    type: ss
-    server: "51.77.225.200"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "zRZNBszYyWo5"
     udp: true
 
 proxy-groups:
@@ -577,9 +563,6 @@ proxy-groups:
       - "🇫🇷_35"
       - "🇫🇷_36"
       - "🇫🇷_37"
-      - "🇫🇷_38"
-      - "🇫🇷_39"
-      - "🇫🇷_40"
 
 
 rules:

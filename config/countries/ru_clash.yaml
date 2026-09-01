@@ -65,77 +65,82 @@ dns:
 proxies:
   - name: "🇷🇺_1"
     type: vless
-    server: "178.72.147.248"
-    port: 4100
-    uuid: "d46b4fca-2352-4557-a6d5-e8c45b27618c"
+    server: "201.24.49.53"
+    port: 2200
+    uuid: "3c5b4526-9f8a-4b99-913e-6549bfd20dc3"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
-        Host: "live.ok.ru"
+        Host: "rzd.ru"
   - name: "🇷🇺_2"
     type: vless
-    server: "5.42.121.52"
+    server: "201.24.54.210"
+    port: 24443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg"
+      short-id: "72ccd4a7563c2953"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "9d30d49278"
+  - name: "🇷🇺_3"
+    type: vless
+    server: "45.9.15.206"
+    port: 443
+    uuid: "a289a3d3-5833-4b28-8809-ae72898a98d0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ru05.abvpn.ru"
+    client-fingerprint: "edge"
+    network: ws
+    ws-opts:
+      path: "/websocket"
+      headers:
+        Host: "ru05.abvpn.ru"
+  - name: "🇷🇺_4"
+    type: vless
+    server: "201.24.49.53"
     port: 4100
-    uuid: "64bd5231-8c49-44f4-8bc0-998eef787d05"
+    uuid: "33965d4f-f9bd-4437-8867-ed705b435518"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
-  - name: "🇷🇺_3"
-    type: vless
-    server: "185.147.27.164"
-    port: 8443
-    uuid: "3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "user-6a8d949a.noooo.win"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_4"
-    type: vless
-    server: "178.72.147.246"
-    port: 2200
-    uuid: "5181e3af-4a0c-47d7-8beb-7e4fa4786cdd"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
   - name: "🇷🇺_5"
     type: vless
-    server: "212.233.121.169"
-    port: 443
-    uuid: "ef794477-149b-46f2-bc27-d51a6e65c859"
+    server: "194.26.229.157"
+    port: 2200
+    uuid: "c05888f0-4029-45c8-bea7-ea5eff564462"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
   - name: "🇷🇺_6"
     type: vless
-    server: "178.72.147.249"
-    port: 2200
-    uuid: "dc988ed2-3fa8-415c-9378-11f3a5421e20"
+    server: "81.200.144.27"
+    port: 4100
+    uuid: "f0528a17-863f-4160-a5a0-0d9ad03f2ee7"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
-        Host: "rzd.ru"
+        Host: "live.ok.ru"
   - name: "🇷🇺_7"
     type: vless
     server: "178.72.147.249"
     port: 4100
-    uuid: "47f2ac7a-7bc6-4d4c-b4f2-c4681da7f231"
+    uuid: "2da8106d-8c6a-4818-9a79-07890f9dd859"
     udp: true
     network: ws
     ws-opts:
@@ -144,64 +149,65 @@ proxies:
         Host: "live.ok.ru"
   - name: "🇷🇺_8"
     type: vless
-    server: "5.42.103.91"
-    port: 2200
-    uuid: "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050"
+    server: "144.31.50.236"
+    port: 443
+    uuid: "1c332eae-7e02-4acd-996d-4eb3e652401c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
+    tls: true
+    skip-cert-verify: true
+    servername: "yandex.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM"
+      short-id: "bbe46bd8f6b96839"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇺_9"
     type: vless
-    server: "85.198.70.200"
-    port: 14406
-    uuid: "237f91bf-102e-4077-8cc3-baebccb42936"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY"
-      short-id: "1a2b3c4d5e6f7a8b"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_10"
-    type: vless
-    server: "185.125.103.62"
-    port: 8082
-    uuid: "b5964796-aafd-431c-914d-102acc312c67"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-  - name: "🇷🇺_11"
-    type: vless
-    server: "80.90.188.104"
+    server: "186.246.48.59"
     port: 2200
-    uuid: "2da8106d-8c6a-4818-9a79-07890f9dd859"
+    uuid: "72c8ea26-8b77-4e31-a23f-79c19b3a2ef1"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_12"
+  - name: "🇷🇺_10"
     type: vless
-    server: "188.225.25.113"
+    server: "201.24.54.241"
+    port: 24443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg"
+      short-id: "72ccd4a7563c2953"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "9d30d49278"
+  - name: "🇷🇺_11"
+    type: vless
+    server: "201.24.49.79"
     port: 4100
-    uuid: "ed1fd11d-cbf7-4a73-9e98-c7f332b37117"
+    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
+  - name: "🇷🇺_12"
+    type: vless
+    server: "201.24.49.237"
+    port: 2200
+    uuid: "af412668-578c-4296-bc8c-8fac6a8d9003"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
   - name: "🇷🇺_13"
     type: vless
     server: "94.228.166.247"
@@ -218,16 +224,41 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇷🇺_14"
     type: vless
-    server: "185.185.69.26"
+    server: "188.225.25.113"
+    port: 4100
+    uuid: "ed1fd11d-cbf7-4a73-9e98-c7f332b37117"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_15"
+    type: vless
+    server: "46.243.234.213"
+    port: 8449
+    uuid: "2dfd0db2-cd4e-4c09-97fc-67c3d8ee9409"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "akashi.vk-portal.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "XF3wXFapd311fC0M0APxbrf3cIaGnyKU7BR4Pv_l7Rs"
+      short-id: "15954a1c5a3d5bfc"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_16"
+    type: vless
+    server: "201.24.49.74"
     port: 2200
-    uuid: "7ee53e03-96ed-4121-9da2-62f3d3374506"
+    uuid: "f0528a17-863f-4160-a5a0-0d9ad03f2ee7"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_15"
+  - name: "🇷🇺_17"
     type: vless
     server: "45.155.52.231"
     port: 443
@@ -240,85 +271,18 @@ proxies:
     reality-opts:
       public-key: "6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ"
       short-id: "0b"
-  - name: "🇷🇺_16"
-    type: vless
-    server: "188.225.33.141"
-    port: 443
-    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "188.225.33.141"
-    network: ws
-    ws-opts:
-      path: "/api/connect"
-      headers:
-        Host: "wstg.datasynctrue.online"
-  - name: "🇷🇺_17"
-    type: vless
-    server: "ru9.aimodelhub.top"
-    port: 443
-    uuid: "ba895ce4-8c24-0003-9f22-81ee227c89d0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ru9.aimodelhub.top"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA"
-      short-id: "a73cf719b624"
-    flow: "xtls-rprx-vision"
   - name: "🇷🇺_18"
     type: vless
-    server: "z0211mq18-z3rk.ru-a1.y-tun.com"
-    port: 40443
-    uuid: "3499f741-a304-4212-8bb9-4d809e154e28"
+    server: "201.24.49.240"
+    port: 4100
+    uuid: "aa7d939b-feaa-4ad3-9615-74216f490807"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "api-maps.yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM"
-      short-id: "a1b2c3d4e5f6789a"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇷🇺_19"
-    type: vless
-    server: "81.200.146.190"
-    port: 4100
-    uuid: "9c2307ba-7972-4ea5-a199-f2c80049be7f"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_20"
-    type: vless
-    server: "80.90.188.160"
-    port: 4100
-    uuid: "f84579d4-3031-47ac-9536-c67d196fb0a3"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_21"
-    type: vless
-    server: "brdg.geodema.network"
-    port: 443
-    uuid: "78eb4455-0d07-1644-93e3-7c8654f11d74"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn.geodema.network"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
-      short-id: "1ed136481e0ede74"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_22"
     type: vless
     server: "91.210.169.181"
     port: 443
@@ -332,44 +296,82 @@ proxies:
       path: "/api/connect"
       headers:
         Host: "wstg.datasynctrue.online"
+  - name: "🇷🇺_20"
+    type: vless
+    server: "31.128.37.67"
+    port: 16560
+    uuid: "6d60c73d-5915-4cf8-b155-e522dfd863bb"
+    udp: true
+  - name: "🇷🇺_21"
+    type: vless
+    server: "212.67.12.194"
+    port: 443
+    uuid: "5812be10-ba11-51cf-a0f4-ddea7ae15db0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sun9-39.userapi.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU"
+      short-id: "08"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_22"
+    type: vless
+    server: "185.147.27.164"
+    port: 8443
+    uuid: "3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "user-6a8d949a.noooo.win"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇺_23"
     type: vless
-    server: "185.185.69.26"
-    port: 4100
-    uuid: "7ee53e03-96ed-4121-9da2-62f3d3374506"
+    server: "201.24.54.210"
+    port: 21443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "M6BT_GEwaoIZqpxPO6vxMqcXSMjmhAYd2Tb4fJO-uC4"
+      short-id: "f6d36e2e08205c67"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇺_24"
     type: vless
-    server: "81.31.246.124"
-    port: 2200
-    uuid: "a4d52fe0-f904-48d3-b579-25d5b79c79b2"
+    server: "45.12.75.242"
+    port: 26424
+    uuid: "633f424e-2b11-48da-a6b3-a849dd71456f"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
+    tls: true
+    skip-cert-verify: true
+    servername: "ya.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0"
+      short-id: "23103e1e"
   - name: "🇷🇺_25"
     type: vless
-    server: "81.200.144.27"
-    port: 4100
-    uuid: "f0528a17-863f-4160-a5a0-0d9ad03f2ee7"
+    server: "31.76.71.140"
+    port: 443
+    uuid: "af00e0c4-decf-48f2-9013-56abe9c9efcd"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
+    tls: true
+    skip-cert-verify: true
+    servername: "rrr.windconnect.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30"
+      short-id: "4da5d1853f04af6d"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇺_26"
     type: vless
-    server: "178.72.147.249"
+    server: "201.24.49.228"
     port: 2200
-    uuid: "6bd3e20b-4be0-41df-a1e0-5c147cc8fbfc"
+    uuid: "09f2e2f4-3225-4342-bc92-cb58ee841f72"
     udp: true
     network: ws
     ws-opts:
@@ -378,83 +380,83 @@ proxies:
         Host: "rzd.ru"
   - name: "🇷🇺_27"
     type: vless
-    server: "45.67.215.233"
-    port: 443
-    uuid: "20e295db-a6af-4006-bfd6-91453f169968"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "057.ElecTRocElLco-Cf-057.wOrKeRs.dEv"
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "057.electrocellco-cf-057.workers.dev"
-  - name: "🇷🇺_28"
-    type: vless
-    server: "178.72.147.249"
-    port: 4100
-    uuid: "1cb011db-0211-4120-8984-13d8510a612b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_29"
-    type: vless
-    server: "83.147.246.153"
-    port: 4100
-    uuid: "85223e1a-f55d-4d0d-b27d-39e8be49d220"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_30"
-    type: vless
-    server: "178.72.147.246"
-    port: 4100
-    uuid: "2e228435-33a0-47d1-a1d8-9a34b5a03c45"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_31"
-    type: vless
-    server: "178.72.147.249"
+    server: "201.24.49.57"
     port: 2200
-    uuid: "d0685701-2fdb-4a50-b1a5-d764c2bb5a43"
+    uuid: "45712903-92af-48b5-8f2f-5482d33e9385"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_32"
+  - name: "🇷🇺_28"
     type: vless
-    server: "201.51.1.84"
-    port: 16923
-    uuid: "ba222add-6ac1-45f1-9a18-f91cb38e324f"
+    server: "wstg.datasynctrue.online"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "api-maps.yandex.ru"
-    client-fingerprint: "edge"
+    servername: "wstg.datasynctrue.online"
+    network: ws
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
+  - name: "🇷🇺_29"
+    type: vless
+    server: "46.243.234.193"
+    port: 2053
+    uuid: "e41dbbf8-b0ca-4328-a237-1520da5246c1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "5post-gate.x5.ru"
+    client-fingerprint: "safari"
     reality-opts:
-      public-key: "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA"
-      short-id: "10ffb85da1c2d986"
+      public-key: "bBKApM5WgpuMsXoaDD2Umv4K7pc-02P_yfmHClQ-Ong"
+      short-id: "daa26763b27edd53"
     network: grpc
     grpc-opts:
-      grpc-service-name: "neurex"
+      grpc-service-name: "grpc-wl"
+  - name: "🇷🇺_30"
+    type: vless
+    server: "178.72.147.249"
+    port: 2200
+    uuid: "7ee53e03-96ed-4121-9da2-62f3d3374506"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_31"
+    type: vless
+    server: "178.72.147.249"
+    port: 4100
+    uuid: "47f2ac7a-7bc6-4d4c-b4f2-c4681da7f231"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_32"
+    type: vless
+    server: "194.26.229.110"
+    port: 4100
+    uuid: "6a726f9a-5753-4113-bfd8-bd845281dca8"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇷🇺_33"
     type: vless
-    server: "178.72.147.248"
+    server: "201.24.49.117"
     port: 2200
-    uuid: "c07eee0c-8a67-4e71-9c39-23f0a7b142c2"
+    uuid: "2e228435-33a0-47d1-a1d8-9a34b5a03c45"
     udp: true
     network: ws
     ws-opts:
@@ -463,56 +465,144 @@ proxies:
         Host: "rzd.ru"
   - name: "🇷🇺_34"
     type: vless
-    server: "bz16.wba-pn.ru"
+    server: "201.24.49.79"
+    port: 2200
+    uuid: "3b4274c1-4744-452e-9903-e11ccc0c9900"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_35"
+    type: vless
+    server: "81.200.146.190"
+    port: 4100
+    uuid: "9c2307ba-7972-4ea5-a199-f2c80049be7f"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_36"
+    type: vless
+    server: "bz2.wba-pn.ru"
     port: 2053
-    uuid: "b712ae49-e20f-44d9-ae80-b81f399c5a3a"
+    uuid: "f62a1751-c1e4-4612-90e7-bd5781c1aede"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "bz16.wba-pn.ru"
-    client-fingerprint: "chrome"
+    servername: "vk.com"
+    client-fingerprint: "android"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "bz16.wba-pn.ru"
-  - name: "🇷🇺_35"
+  - name: "🇷🇺_37"
     type: vless
-    server: "5.129.251.12"
-    port: 443
-    uuid: "c668980f-1ddf-0028-9c9f-de8e68a70d35"
+    server: "200.165.234.45"
+    port: 4100
+    uuid: "39e0f41b-180b-4f7e-a607-37b135f0fd83"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_38"
+    type: vless
+    server: "201.24.49.77"
+    port: 2200
+    uuid: "af60d475-3c13-41cf-af0e-18353d08877a"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇷🇺_39"
+    type: vless
+    server: "85.198.70.200"
+    port: 14406
+    uuid: "237f91bf-102e-4077-8cc3-baebccb42936"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ru.convert-flow.net"
-    client-fingerprint: "qq"
+    servername: "vk.ru"
+    client-fingerprint: "edge"
     reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
+      public-key: "ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY"
+      short-id: "1a2b3c4d5e6f7a8b"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇺_36"
+  - name: "🇷🇺_40"
     type: vless
-    server: "178.72.147.249"
+    server: "201.24.51.241"
+    port: 4100
+    uuid: "5181e3af-4a0c-47d7-8beb-7e4fa4786cdd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_41"
+    type: vless
+    server: "rrr.windconnect.pro"
+    port: 443
+    uuid: "af00e0c4-decf-48f2-9013-56abe9c9efcd"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "rrr.windconnect.pro"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30"
+      short-id: "4da5d1853f04af6d"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_42"
+    type: vless
+    server: "201.24.54.210"
+    port: 23443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "WGIBJ3eoHqBYgaklDehHUZYSAREh5HtFtcUs7MjUfxg"
+      short-id: "a432f464e0d4f65a"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_43"
+    type: vless
+    server: "77.222.53.218"
     port: 2200
-    uuid: "92e20947-b564-4f08-8c1a-c6f3c66f763b"
+    uuid: "1cb011db-0211-4120-8984-13d8510a612b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇷🇺_44"
+    type: vless
+    server: "194.26.229.122"
+    port: 2200
+    uuid: "84d0ff7b-9760-415f-a974-b3e1fe92264f"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_37"
+  - name: "🇷🇺_45"
     type: vless
-    server: "178.72.147.246"
-    port: 2200
-    uuid: "099f0859-cb81-4a57-b6d8-2c8e18030627"
+    server: "85.193.85.93"
+    port: 4100
+    uuid: "45712903-92af-48b5-8f2f-5482d33e9385"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
-        Host: "rzd.ru"
-  - name: "🇷🇺_38"
+        Host: "live.ok.ru"
+  - name: "🇷🇺_46"
     type: vless
     server: "45.12.5.171"
     port: 443
@@ -526,110 +616,25 @@ proxies:
       public-key: "jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA"
       short-id: "a73cf719b624"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇺_39"
-    type: vless
-    server: "201.24.124.99"
-    port: 4100
-    uuid: "d46b4fca-2352-4557-a6d5-e8c45b27618c"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_40"
-    type: vless
-    server: "5.42.121.52"
-    port: 2200
-    uuid: "64bd5231-8c49-44f4-8bc0-998eef787d05"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇷🇺_41"
-    type: vless
-    server: "5.188.141.67"
-    port: 8449
-    uuid: "2dfd0db2-cd4e-4c09-97fc-67c3d8ee9409"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "edge-vk.vpn.partners"
-    client-fingerprint: "qq"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_42"
-    type: vless
-    server: "31.128.37.67"
-    port: 16560
-    uuid: "6d60c73d-5915-4cf8-b155-e522dfd863bb"
-    udp: true
-  - name: "🇷🇺_43"
-    type: vless
-    server: "178.72.147.249"
-    port: 2200
-    uuid: "47f2ac7a-7bc6-4d4c-b4f2-c4681da7f231"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇷🇺_44"
-    type: vless
-    server: "178.72.147.249"
-    port: 4100
-    uuid: "92e20947-b564-4f08-8c1a-c6f3c66f763b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_45"
-    type: vless
-    server: "194.26.229.122"
-    port: 2200
-    uuid: "84d0ff7b-9760-415f-a974-b3e1fe92264f"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇷🇺_46"
-    type: vless
-    server: "5.35.3.111"
-    port: 443
-    uuid: "c668980f-1ddf-0028-9c9f-de8e68a70d35"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ru.convert-flow.net"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
-    flow: "xtls-rprx-vision"
   - name: "🇷🇺_47"
     type: vless
-    server: "45.12.75.242"
-    port: 26424
-    uuid: "633f424e-2b11-48da-a6b3-a849dd71456f"
+    server: "188.225.33.141"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ya.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0"
-      short-id: "23103e1e"
+    servername: "188.225.33.141"
+    network: ws
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
   - name: "🇷🇺_48"
     type: vless
-    server: "178.72.147.249"
+    server: "201.34.137.15"
     port: 4100
-    uuid: "2da8106d-8c6a-4818-9a79-07890f9dd859"
+    uuid: "716903b1-e6bf-4420-9e27-65e4451692e9"
     udp: true
     network: ws
     ws-opts:
@@ -638,46 +643,19 @@ proxies:
         Host: "live.ok.ru"
   - name: "🇷🇺_49"
     type: vless
-    server: "189.74.115.6"
+    server: "212.67.12.194"
     port: 443
-    uuid: "f7bb615a-ea5d-4823-8158-f57dca98a87a"
+    uuid: "2d9684c5-2910-5105-aa0b-c34f2da7ce58"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "api.yandex-dev.online"
-    client-fingerprint: "safari"
+    servername: "sun9-39.userapi.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
-      short-id: "122218f4c1f172e4"
+      public-key: "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU"
+      short-id: "08"
     flow: "xtls-rprx-vision"
   - name: "🇷🇺_50"
-    type: vless
-    server: "46.243.234.72"
-    port: 2053
-    uuid: "24708d62-a508-4c63-a860-7d4e04e440b1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "5post-gate.x5.ru"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "IDjWshY2nmbQJzUme5TMymI-RI99Zku45lO9k1HKyTA"
-      short-id: "20a080af5636a681"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-wl"
-  - name: "🇷🇺_51"
-    type: vless
-    server: "185.147.27.183"
-    port: 8443
-    uuid: "379998c5-2a71-4202-9c74-522e0c3c5404"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "user-6a917f32.noooo.win"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_52"
     type: vless
     server: "168.222.194.138"
     port: 9880
@@ -693,92 +671,77 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇷🇺_53"
+  - name: "🇷🇺_51"
     type: vless
-    server: "189.74.117.13"
-    port: 443
-    uuid: "f7bb615a-ea5d-4823-8158-f57dca98a87a"
+    server: "188.225.47.234"
+    port: 4100
+    uuid: "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇷🇺_52"
+    type: vless
+    server: "201.24.54.241"
+    port: 22443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "chrome"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
-      short-id: "a8"
+      public-key: "V8llhEcbGI7Zqf52Ec0kryrdRv7lvLcKCjHe1Di23yw"
+      short-id: "fdf9d63fcdd6be6a"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "f234981844"
+  - name: "🇷🇺_53"
+    type: vless
+    server: "201.24.54.241"
+    port: 21443
+    uuid: "7ab9fe4f-6699-427f-a828-9fcf2496d714"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "M6BT_GEwaoIZqpxPO6vxMqcXSMjmhAYd2Tb4fJO-uC4"
+      short-id: "f6d36e2e08205c67"
     flow: "xtls-rprx-vision"
   - name: "🇷🇺_54"
     type: vless
-    server: "178.72.147.249"
-    port: 4100
-    uuid: "dc988ed2-3fa8-415c-9378-11f3a5421e20"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_55"
-    type: vless
-    server: "185.125.103.62"
-    port: 8082
-    uuid: "cbdbf318-e010-4fb9-941f-6da4beab70e3"
+    server: "185.147.27.183"
+    port: 8443
+    uuid: "379998c5-2a71-4202-9c74-522e0c3c5404"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-  - name: "🇷🇺_56"
+    servername: "user-6a917f32.noooo.win"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_55"
     type: vless
-    server: "87.228.122.108"
-    port: 4100
-    uuid: "155e8dd4-a559-407a-9ea8-13a5e829f066"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-  - name: "🇷🇺_57"
-    type: vless
-    server: "178.72.147.246"
-    port: 4100
-    uuid: "099f0859-cb81-4a57-b6d8-2c8e18030627"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_58"
-    type: vless
-    server: "201.51.8.235"
+    server: "185.185.69.251"
     port: 2200
-    uuid: "099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc"
+    uuid: "307998ce-9dc2-473b-81bb-6c359817df5c"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_59"
+  - name: "🇷🇺_56"
     type: vless
-    server: "45.9.16.213"
-    port: 443
-    uuid: "c668980f-1ddf-0028-9c9f-de8e68a70d35"
+    server: "201.24.49.233"
+    port: 4100
+    uuid: "aa7d939b-feaa-4ad3-9615-74216f490807"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ru.convert-flow.net"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_60"
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇷🇺_57"
     type: vless
     server: "178.72.147.248"
     port: 4100
@@ -789,30 +752,158 @@ proxies:
       path: "/v1"
       headers:
         Host: "live.ok.ru"
-  - name: "🇷🇺_61"
+  - name: "🇷🇺_58"
     type: vless
-    server: "189.74.106.142"
+    server: "46.8.208.29"
     port: 443
-    uuid: "f7bb615a-ea5d-4823-8158-f57dca98a87a"
+    uuid: "5f922903-69b5-4d99-924d-52ca6337741e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ads.yandex-developer.org"
-    client-fingerprint: "edge"
+    servername: "cdn.okko.tv"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
-      short-id: "122218f4c1f172e4"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_62"
+      public-key: "HHZwsut0m8Z4tTCbU0QdnbyfQMQfk8XuEbBO0wFObis"
+      short-id: "7765b2a4cef1033e"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "🇷🇺_59"
     type: vless
-    server: "178.72.147.249"
-    port: 4100
-    uuid: "7ee53e03-96ed-4121-9da2-62f3d3374506"
+    server: "200.165.234.119"
+    port: 2200
+    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_60"
+    type: vless
+    server: "5.188.141.67"
+    port: 8449
+    uuid: "2dfd0db2-cd4e-4c09-97fc-67c3d8ee9409"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edge-vk.vpn.partners"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇺_61"
+    type: vless
+    server: "201.24.49.213"
+    port: 4100
+    uuid: "6d662736-24ea-4f8e-9e73-acbc14d09cb1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+  - name: "🇷🇺_62"
+    type: vless
+    server: "201.24.49.233"
+    port: 4100
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇷🇺_63"
+    type: vless
+    server: "46.8.208.29"
+    port: 443
+    uuid: "2f39df59-0ec9-4b92-b6f7-10f746942c70"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn.okko.tv"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "HHZwsut0m8Z4tTCbU0QdnbyfQMQfk8XuEbBO0wFObis"
+      short-id: "7765b2a4cef1033e"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "🇷🇺_64"
+    type: vless
+    server: "178.72.147.246"
+    port: 4100
+    uuid: "d4b80eae-4e0d-4211-bec2-2dc03afb3637"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_65"
+    type: vless
+    server: "178.72.147.248"
+    port: 2200
+    uuid: "c07eee0c-8a67-4e71-9c39-23f0a7b142c2"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_66"
+    type: vless
+    server: "201.24.49.19"
+    port: 2200
+    uuid: "716903b1-e6bf-4420-9e27-65e4451692e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_67"
+    type: vless
+    server: "77.222.47.204"
+    port: 4100
+    uuid: "5c43b6d8-f71a-46d6-b804-f86349e6f313"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_68"
+    type: vless
+    server: "178.72.147.249"
+    port: 4100
+    uuid: "d0685701-2fdb-4a50-b1a5-d764c2bb5a43"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_69"
+    type: vless
+    server: "201.24.49.69"
+    port: 4100
+    uuid: "2cd5f052-6455-4153-b7d3-0545184dc64c"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_70"
+    type: vless
+    server: "178.72.147.249"
+    port: 2200
+    uuid: "1cb011db-0211-4120-8984-13d8510a612b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "rzd.ru"
+  - name: "🇷🇺_71"
     type: vless
     server: "178.72.147.246"
     port: 2200
@@ -823,148 +914,42 @@ proxies:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_64"
-    type: vless
-    server: "178.72.147.246"
-    port: 2200
-    uuid: "d4b80eae-4e0d-4211-bec2-2dc03afb3637"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "rzd.ru"
-  - name: "🇷🇺_65"
-    type: vless
-    server: "178.72.147.246"
-    port: 4100
-    uuid: "6d662736-24ea-4f8e-9e73-acbc14d09cb1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_66"
-    type: vless
-    server: "46.8.208.29"
-    port: 443
-    uuid: "2f39df59-0ec9-4b92-b6f7-10f746942c70"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn.okko.tv"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "HHZwsut0m8Z4tTCbU0QdnbyfQMQfk8XuEbBO0wFObis"
-      short-id: "7765b2a4cef1033e"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "UpdateService"
-  - name: "🇷🇺_67"
-    type: vless
-    server: "212.233.121.186"
-    port: 443
-    uuid: "84b6d5f9-7dcb-4aa1-9949-3dbc79ad3aaf"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇺_68"
-    type: vless
-    server: "188.225.47.234"
-    port: 4100
-    uuid: "7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-  - name: "🇷🇺_69"
-    type: vless
-    server: "194.26.229.110"
-    port: 4100
-    uuid: "6a726f9a-5753-4113-bfd8-bd845281dca8"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-  - name: "🇷🇺_70"
-    type: vless
-    server: "178.72.147.246"
-    port: 4100
-    uuid: "5c43b6d8-f71a-46d6-b804-f86349e6f313"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
-  - name: "🇷🇺_71"
-    type: vless
-    server: "212.233.121.169"
-    port: 443
-    uuid: "3642c081-946b-42a3-9593-ac75e207a419"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
   - name: "🇷🇺_72"
     type: vless
-    server: "178.250.186.139"
-    port: 8443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    server: "87.249.54.48"
+    port: 2200
+    uuid: "fe3489e2-6b59-4adb-91f3-e34300a13d5a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM"
-      short-id: "a7f3c91b2e6d84c0"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
   - name: "🇷🇺_73"
     type: vless
-    server: "212.233.121.186"
-    port: 443
-    uuid: "5fb83ac2-cc8d-4f98-9613-1bc89b89ce6e"
+    server: "80.90.188.160"
+    port: 4100
+    uuid: "f84579d4-3031-47ac-9536-c67d196fb0a3"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇷🇺_74"
     type: vless
-    server: "212.233.121.186"
-    port: 443
-    uuid: "1ac65e4a-6e90-40d5-8dd3-827d89e24e25"
+    server: "83.147.246.153"
+    port: 4100
+    uuid: "85223e1a-f55d-4d0d-b27d-39e8be49d220"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
   - name: "🇷🇺_75"
     type: vless
-    server: "178.72.147.248"
+    server: "91.222.237.55"
     port: 2200
-    uuid: "099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc"
+    uuid: "714e1212-6707-471e-9f40-2fbd3d8d3b4b"
     udp: true
     network: ws
     ws-opts:
@@ -973,23 +958,23 @@ proxies:
         Host: "rzd.ru"
   - name: "🇷🇺_76"
     type: vless
-    server: "72.56.34.223"
-    port: 15206
-    uuid: "2b3e8750-b944-42fc-b36e-ec2c64b48a98"
+    server: "ru9.aimodelhub.top"
+    port: 443
+    uuid: "ba895ce4-8c24-0003-9f22-81ee227c89d0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl.routeon.pro"
-    client-fingerprint: "firefox"
+    servername: "ru9.aimodelhub.top"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "9kQGK7IuVFWU9xCb4g9ygL1CEv87QmVZJzWLz74pTSc"
-      short-id: ""
+      public-key: "jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA"
+      short-id: "a73cf719b624"
     flow: "xtls-rprx-vision"
   - name: "🇷🇺_77"
     type: vless
-    server: "83.147.246.153"
+    server: "79.137.192.188"
     port: 2200
-    uuid: "85223e1a-f55d-4d0d-b27d-39e8be49d220"
+    uuid: "106b0505-da24-4ae4-b22c-302ab814f6f4"
     udp: true
     network: ws
     ws-opts:
@@ -998,57 +983,50 @@ proxies:
         Host: "rzd.ru"
   - name: "🇷🇺_78"
     type: vless
-    server: "178.72.147.246"
+    server: "141.8.199.212"
+    port: 4100
+    uuid: "fc72e947-b8dd-4de0-9ec7-2b0050c9f83a"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_79"
+    type: vless
+    server: "200.165.234.62"
+    port: 4100
+    uuid: "5383fb97-1178-4709-9a25-b767b743e911"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "🇷🇺_80"
+    type: vless
+    server: "178.72.147.249"
     port: 2200
-    uuid: "63b5aa71-eb9c-4eed-be36-5c53b97f0bf0"
+    uuid: "47f2ac7a-7bc6-4d4c-b4f2-c4681da7f231"
     udp: true
     network: ws
     ws-opts:
       path: "/v1"
       headers:
         Host: "rzd.ru"
-  - name: "🇷🇺_79"
-    type: trojan
-    server: "90.156.218.126"
-    port: 2223
-    password: "47SXGr72f1wpGNkZzLUUExRDHuVQypaW"
-    sni: "vkc7.secured-by-tenzo.sbs"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇷🇺_80"
-    type: ss
-    server: "45.140.169.123"
-    port: 20101
-    cipher: "aes-256-gcm"
-    password: "6b39ae3234dfd68b"
-    udp: true
   - name: "🇷🇺_81"
-    type: ss
-    server: "46.17.40.234"
-    port: 20201
-    cipher: "aes-256-gcm"
-    password: "bdb313adf74c2ede"
-    udp: true
-  - name: "🇷🇺_82"
-    type: ss
-    server: "195.58.48.97"
-    port: 20201
-    cipher: "aes-256-gcm"
-    password: "d99c422199e62b6b"
-    udp: true
-  - name: "🇷🇺_83"
     type: ss
     server: "194.87.196.208"
     port: 20101
     cipher: "aes-256-gcm"
     password: "8ad9d72a5571df86"
     udp: true
-  - name: "🇷🇺_84"
+  - name: "🇷🇺_82"
     type: ss
-    server: "195.133.23.200"
-    port: 20102
+    server: "194.87.196.208"
+    port: 20101
     cipher: "aes-256-gcm"
-    password: "81a20429165df87e"
+    password: "8ad9d72a5571df86"
     udp: true
 
 proxy-groups:
@@ -1146,8 +1124,6 @@ proxy-groups:
       - "🇷🇺_80"
       - "🇷🇺_81"
       - "🇷🇺_82"
-      - "🇷🇺_83"
-      - "🇷🇺_84"
 
 
 rules:
