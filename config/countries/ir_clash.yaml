@@ -64,12 +64,27 @@ dns:
 
 proxies:
   - name: "🇮🇷_1"
-    type: ss
-    server: "37.32.39.241"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "IR-DE-9xK2mP7qL4sT8vN"
+    type: vless
+    server: "mci.v2plus.ovh"
+    port: 80
+    uuid: "40d36acd-5743-4b96-b8f6-b195e35e7336"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/187o1HyKayf2hitk"
+      headers:
+        Host: "worker3.tacemor185.workers.dev"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "45.131.4.115"
+    port: 80
+    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sVnT0vhrV7WAl52Z"
+      headers:
+        Host: "worker3.gisenoj224.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -85,6 +100,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇷_1"
+      - "🇮🇷_2"
 
 
 rules:

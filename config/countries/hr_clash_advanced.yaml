@@ -59,33 +59,19 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇻🇳_3"
-    type: vless
-    server: "165.154.55.105"
-    port: 20984
-    uuid: "e0aafde7-37e2-486b-eb30-efa71166bf7e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Ns3J1Dc0WBSu560uhGwDfn1kic7IZm3ZHggSpExhyRo"
-      short-id: ""
-  - name: "🇻🇳_4"
-    type: vless
-    server: "wwa.zzymyc.eu.cc"
+  - name: "🇭🇷_2"
+    type: trojan
+    server: "213.182.199.137"
     port: 443
-    uuid: "a44367a4-e8a2-4951-a5e2-0731635b6bbd"
-    udp: true
-    tls: true
+    password: "humanity"
+    sni: "www.pleadcourt.org"
     skip-cert-verify: true
-    servername: "huddles.amazon.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "HE_JCZ2OcEDYb4zeKTEfSHu5pxkXP-ZdKtKi_dNgVW8"
-      short-id: "914ffda13a"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.pleadcourt.org"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -128,8 +114,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +124,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +134,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +143,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +153,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇻🇳_3"
-      - "🇻🇳_4"
+      - "🇭🇷_2"
 
 rules:
   - MATCH,PROXY-BEST

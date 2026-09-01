@@ -63,21 +63,32 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇷_1"
+  - name: "🇧🇿_1"
     type: vless
-    server: "190.93.245.176"
+    server: "45.131.7.123"
     port: 443
-    uuid: "7493883f-6047-46a7-8d95-f59e137ffaec"
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auto-749388.rohawmk.workers.dev"
+    servername: "notls.lukongtou.eu.org"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/?TELEGRAM-TOOTFFARANGI?ed=2560"
-      headers:
-        Host: "auto-749388.rohawmk.workers.dev"
+      path: "/"
+  - name: "🇧🇿_2"
+    type: vless
+    server: "45.131.6.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,7 +103,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇷_1"
+      - "🇧🇿_1"
+      - "🇧🇿_2"
 
 
 rules:

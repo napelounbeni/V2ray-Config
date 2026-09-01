@@ -65,15 +65,15 @@ dns:
 proxies:
   - name: "🇸🇨_1"
     type: vless
-    server: "45.130.125.209"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    server: "200.165.234.119"
+    port: 2200
+    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
     udp: true
     network: ws
     ws-opts:
-      path: "/http"
+      path: "/v1"
       headers:
-        Host: "de.vpnbase.net"
+        Host: "rzd.ru"
   - name: "🇸🇨_2"
     type: vless
     server: "200.165.234.62"
@@ -87,29 +87,31 @@ proxies:
         Host: "live.ok.ru"
   - name: "🇸🇨_3"
     type: vless
-    server: "wstg.datasynctrue.online"
-    port: 443
-    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    server: "45.130.125.201"
+    port: 80
+    uuid: "dc8a9493-c54a-459e-d060-81a700000001"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-core.netizo09.workers.dev"
+  - name: "🇸🇨_4"
+    type: vless
+    server: "200.165.235.43"
+    port: 2053
+    uuid: "41f33146-7eb4-11f1-855a-d60b69bb56c6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "wstg.datasynctrue.online"
-    network: ws
-    ws-opts:
-      path: "/api/connect"
-      headers:
-        Host: "wstg.datasynctrue.online"
-  - name: "🇸🇨_4"
-    type: vless
-    server: "200.165.234.119"
-    port: 4100
-    uuid: "099f0859-cb81-4a57-b6d8-2c8e18030627"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/v1"
-      headers:
-        Host: "live.ok.ru"
+    servername: "dzen.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "j8OW1foMwfeiy3VMbNPHLgTXgy_ZPdFFxv-H3HrbNF0"
+      short-id: "2c60309fa586eb60"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-direct"
   - name: "🇸🇨_5"
     type: vless
     server: "200.165.231.209"
@@ -136,16 +138,18 @@ proxies:
       headers:
         Host: "de.vpnbase.net"
   - name: "🇸🇨_7"
-    type: vless
-    server: "200.165.234.119"
-    port: 2200
-    uuid: "936b7663-a841-4b42-b639-6e3fab1dbf45"
+    type: trojan
+    server: "45.130.125.75"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/v1"
+      path: "/assignment"
       headers:
-        Host: "rzd.ru"
+        Host: "www.calmlunch.com"
   - name: "🇸🇨_8"
     type: trojan
     server: "45.130.125.76"
@@ -174,18 +178,7 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇸🇨_10"
     type: trojan
-    server: "45.130.125.112"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇸🇨_11"
-    type: trojan
-    server: "45.130.125.75"
+    server: "45.130.125.190"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -196,17 +189,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_12"
-    type: trojan
-    server: "45.130.125.18"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -231,8 +213,6 @@ proxy-groups:
       - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
 
 
 rules:
