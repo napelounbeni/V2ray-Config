@@ -59,19 +59,47 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇸_16"
+  - name: "🇪🇸_14"
     type: vless
-    server: "193.238.154.39"
+    server: "193.238.154.18"
     port: 443
-    uuid: "4c1b7e3f-6a2d-493f-b6c4-4ef37db6fcfc"
+    uuid: "2297ea1f-2415-4a2c-be20-4a3a978283a2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "es1.hat.onl"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "G7hjy9PEKopcPUP4mQXhwIaKIO9TCra_5LHZWuM_RjM"
-      short-id: "641a87d5ecdfaeb3"
+      public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
+      short-id: "76132b3b39704c44"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_15"
+    type: vless
+    server: "185.254.205.79"
+    port: 19842
+    uuid: "43c23116-1115-4af4-a0f0-56f02841a605"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tesla.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM"
+      short-id: "25ebc9e0a912"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_16"
+    type: vless
+    server: "93.189.94.67"
+    port: 48296
+    uuid: "898537d9-ce3a-4937-bbef-c0fa61c07791"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sony.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE"
+      short-id: "109657bb2dbe99"
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_17"
     type: vless
@@ -88,74 +116,19 @@ proxies:
       short-id: "866af6e56606f2bc"
   - name: "🇪🇸_18"
     type: vless
-    server: "185.253.152.198"
-    port: 34710
-    uuid: "dd7429eb-b77b-4a8d-be86-c34cac86faf7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.nvidia.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU"
-      short-id: "14b0eb7919eb7d"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_19"
-    type: vless
-    server: "193.238.154.18"
+    server: "193.238.154.39"
     port: 443
-    uuid: "2297ea1f-2415-4a2c-be20-4a3a978283a2"
+    uuid: "4c1b7e3f-6a2d-493f-b6c4-4ef37db6fcfc"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "es1.hat.onl"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc"
-      short-id: "76132b3b39704c44"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_20"
-    type: vless
-    server: "93.189.94.67"
-    port: 48296
-    uuid: "898537d9-ce3a-4937-bbef-c0fa61c07791"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sony.com"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE"
-      short-id: "109657bb2dbe99"
+      public-key: "G7hjy9PEKopcPUP4mQXhwIaKIO9TCra_5LHZWuM_RjM"
+      short-id: "641a87d5ecdfaeb3"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇸_21"
-    type: vless
-    server: "185.254.205.79"
-    port: 19842
-    uuid: "43c23116-1115-4af4-a0f0-56f02841a605"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.tesla.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM"
-      short-id: "25ebc9e0a912"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_22"
-    type: trojan
-    server: "185.114.72.31"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_23"
+  - name: "🇪🇸_19"
     type: trojan
     server: "212.227.144.37"
     port: 8443
@@ -168,7 +141,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_24"
+  - name: "🇪🇸_20"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -181,7 +154,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_25"
+  - name: "🇪🇸_21"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -194,35 +167,35 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇪🇸_22"
+    type: ss
+    server: "108.181.121.226"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_23"
+    type: ss
+    server: "108.181.121.226"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_24"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_25"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
   - name: "🇪🇸_26"
-    type: ss
-    server: "108.181.121.226"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_27"
-    type: ss
-    server: "108.181.121.226"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_28"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_29"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_30"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -271,6 +244,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -282,10 +257,6 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
   - name: "LB-CDN"
     type: load-balance
@@ -295,6 +266,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -306,10 +279,6 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -319,6 +288,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -330,10 +301,6 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
   - name: "FAST-CDN"
     type: url-test
@@ -342,6 +309,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -353,10 +322,6 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -366,6 +331,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -377,15 +344,13 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇸_14"
+      - "🇪🇸_15"
       - "🇪🇸_16"
       - "🇪🇸_17"
       - "🇪🇸_18"
@@ -397,10 +362,6 @@ proxy-groups:
       - "🇪🇸_24"
       - "🇪🇸_25"
       - "🇪🇸_26"
-      - "🇪🇸_27"
-      - "🇪🇸_28"
-      - "🇪🇸_29"
-      - "🇪🇸_30"
 
 rules:
   - MATCH,PROXY-BEST

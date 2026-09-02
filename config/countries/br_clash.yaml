@@ -77,6 +77,13 @@ proxies:
       path: "/api/connect"
       headers:
         Host: "wstg.datasynctrue.online"
+  - name: "🇧🇷_2"
+    type: ss
+    server: "136.248.66.214"
+    port: 59319
+    cipher: "2022-blake3-chacha20-poly1305"
+    password: "iT0ok0KnQN2NvZTAkR7uhTPYZNE9z4vvNZEU2PPMQEU="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +99,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇷_1"
+      - "🇧🇷_2"
 
 
 rules:

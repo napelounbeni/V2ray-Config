@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_5"
+  - name: "🇧🇬_3"
     type: vless
     server: "82.118.18.224"
     port: 443
@@ -73,7 +73,7 @@ proxies:
       public-key: "mx0NhP2x4HYUumJ1r0RV411imRCjKQDfDf5ApSz5cCE"
       short-id: "63499b2eceaee61e"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_6"
+  - name: "🇧🇬_4"
     type: vless
     server: "82.118.18.202"
     port: 443
@@ -86,34 +86,6 @@ proxies:
     reality-opts:
       public-key: "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk"
       short-id: "720148f2fea16d0f"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇬_7"
-    type: vless
-    server: "sof.edgeptr.org"
-    port: 443
-    uuid: "880c9f58-0607-4a11-8c40-1b4e08718c1b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.lovelive-anime.jp"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0"
-      short-id: "f0eb800bd980b00b"
-    flow: "xtls-rprx-vision"
-  - name: "🇧🇬_8"
-    type: vless
-    server: "sof.edgeptr.org"
-    port: 443
-    uuid: "c9fbc5c5-7d61-4687-a27f-253396ce7bb7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.lovelive-anime.jp"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0"
-      short-id: "f0eb800bd980b00b"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -157,10 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -170,10 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -183,10 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -195,10 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -208,19 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇬_5"
-      - "🇧🇬_6"
-      - "🇧🇬_7"
-      - "🇧🇬_8"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
 rules:
   - MATCH,PROXY-BEST

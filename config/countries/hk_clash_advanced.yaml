@@ -59,48 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇰_26"
+  - name: "🇭🇰_31"
     type: vless
-    server: "103.149.183.198"
-    port: 13779
-    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    server: "46b624e6-tkyw00-trnd2c-jjv2.hk3.hyhuawei.com"
+    port: 443
+    uuid: "31676725-b0fd-fed2-c857-2da8ce5a6e4f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "tesla.com"
+    servername: "updates.cdn-apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
-      short-id: "af1bdd293097b664"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_27"
-    type: vless
-    server: "47.239.6.251"
-    port: 13779
-    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tesla.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
-      short-id: "af1bdd293097b664"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_28"
-    type: vless
-    server: "47.238.210.5"
-    port: 13779
-    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tesla.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
-      short-id: "af1bdd293097b664"
-  - name: "🇭🇰_29"
+      public-key: "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+      short-id: ""
+  - name: "🇭🇰_32"
     type: vless
     server: "162.128.157.164"
     port: 443
@@ -114,7 +86,91 @@ proxies:
       public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
       short-id: "14156e3ac23212cc"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_30"
+  - name: "🇭🇰_33"
+    type: vless
+    server: "156.239.245.134"
+    port: 443
+    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vp10.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vp10.pages.dev"
+  - name: "🇭🇰_34"
+    type: vless
+    server: "191.40.32.183"
+    port: 10012
+    uuid: "c2564a65-0821-3241-b090-45d49cef58fd"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sony.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "h8_vz525am29stkvmkCt34ao-3rErjY3rIt-3nsVZ0I"
+      short-id: "c83b"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_35"
+    type: vless
+    server: "34.96.200.38"
+    port: 443
+    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
+      short-id: "17d824dd68e24aaf"
+  - name: "🇭🇰_36"
+    type: vless
+    server: "103.149.183.198"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_37"
+    type: vless
+    server: "nrtcfdns.zone.id"
+    port: 443
+    uuid: "04c808e2-0b59-47b0-a54b-32fc7ef1c902"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free.cndyw.ggff.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇭🇰_38"
+    type: vless
+    server: "27.50.48.8"
+    port: 443
+    uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vless2-8vx.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vless2-8vx.pages.dev"
+  - name: "🇭🇰_39"
     type: vless
     server: "156.226.168.221"
     port: 35193
@@ -127,133 +183,6 @@ proxies:
     reality-opts:
       public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
       short-id: "e8daed2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_31"
-    type: vless
-    server: "82.38.46.66"
-    port: 15006
-    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.adobe.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg"
-      short-id: "029a6cc4"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_32"
-    type: vless
-    server: "212.192.13.233"
-    port: 443
-    uuid: "302cf77d-6fb7-4ac8-ae61-88e286340d59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cathaypacific.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
-      short-id: "1bc2c1ef1c"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_33"
-    type: vless
-    server: "82.38.46.66"
-    port: 15003
-    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8"
-      short-id: "4c517b9e"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_34"
-    type: vless
-    server: "103.180.20.240"
-    port: 8443
-    uuid: "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇭🇰_35"
-    type: vless
-    server: "family.bucket.zjs.h.1.0.kfc-520.com"
-    port: 10023
-    uuid: "c2564a65-0821-3241-b090-45d49cef58fd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.hp.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "sPNVi_cpk51PLxKVWAusfQBokEjYh69B3p5HhDbbLB4"
-      short-id: "fe"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_36"
-    type: vless
-    server: "vj37-1936vtw.fincore.top"
-    port: 443
-    uuid: "5e8e81ac-a1c4-4543-b81e-651bf9872b54"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
-      short-id: "14156e3ac23212cc"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_37"
-    type: vless
-    server: "family.bucket.zjs.s.1.kfc-520.com"
-    port: 10019
-    uuid: "c2564a65-0821-3241-b090-45d49cef58fd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sap.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "pqXjD4or04GC_CbVnjNLFhJkfxcIXSAbxzLsBad2TCI"
-      short-id: "6b4135b5fd"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_38"
-    type: vless
-    server: "82.38.46.66"
-    port: 15007
-    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "qVNutDFjEp3v2wjeUl_Yy6l9TXawXfSjAsFj3iktmRA"
-      short-id: "2c4d005b"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_39"
-    type: vless
-    server: "nian.001.url111.kcloud02.top"
-    port: 15003
-    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8"
-      short-id: "4c517b9e"
     flow: "xtls-rprx-vision"
   - name: "🇭🇰_40"
     type: vless
@@ -270,18 +199,169 @@ proxies:
       short-id: "ec2c7091fe76336c"
   - name: "🇭🇰_41"
     type: vless
-    server: "34.96.200.38"
-    port: 443
-    uuid: "2058418a-7718-4050-bdd5-db7487ffdb3b"
+    server: "47.239.6.251"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_42"
+    type: vless
+    server: "82.38.46.66"
+    port: 15006
+    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.adobe.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg"
+      short-id: "029a6cc4"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_43"
+    type: vless
+    server: "82.38.46.66"
+    port: 15007
+    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qVNutDFjEp3v2wjeUl_Yy6l9TXawXfSjAsFj3iktmRA"
+      short-id: "2c4d005b"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_44"
+    type: vless
+    server: "154.218.15.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime47.workers.dev"
+  - name: "🇭🇰_45"
+    type: vless
+    server: "16.162.23.255"
+    port: 10018
+    uuid: "c2564a65-0821-3241-b090-45d49cef58fd"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sap.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "__YqMje4P5LY575OvzZjKJddTTn3vI6n0tMsMKCgcRY"
+      short-id: "6cfa2459bb"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_46"
+    type: vless
+    server: "47.238.210.5"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+  - name: "🇭🇰_47"
+    type: vless
+    server: "nian.001.url111.kcloud02.top"
+    port: 15003
+    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw"
-      short-id: "17d824dd68e24aaf"
-  - name: "🇭🇰_42"
+      public-key: "R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8"
+      short-id: "4c517b9e"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_48"
+    type: vless
+    server: "82.38.46.66"
+    port: 15003
+    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8"
+      short-id: "4c517b9e"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_49"
+    type: vless
+    server: "103.180.20.240"
+    port: 8443
+    uuid: "f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇭🇰_50"
+    type: vless
+    server: "212.192.13.233"
+    port: 443
+    uuid: "302cf77d-6fb7-4ac8-ae61-88e286340d59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cathaypacific.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
+      short-id: "1bc2c1ef1c"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_51"
+    type: vless
+    server: "nian.001.url111.kcloud02.top"
+    port: 15007
+    uuid: "399c4c9b-27e1-37f1-9dce-22ccc2727a86"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "qVNutDFjEp3v2wjeUl_Yy6l9TXawXfSjAsFj3iktmRA"
+      short-id: "2c4d005b"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_52"
+    type: vless
+    server: "43.161.226.55"
+    port: 443
+    uuid: "04c808e2-0b59-47b0-a54b-32fc7ef1c902"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free.cndyw.ggff.net"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇭🇰_53"
     type: trojan
     server: "119.246.1.143"
     port: 443
@@ -289,7 +369,7 @@ proxies:
     sni: "119.246.1.143"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_43"
+  - name: "🇭🇰_54"
     type: trojan
     server: "hk03.qianmoip.win"
     port: 50222
@@ -297,20 +377,7 @@ proxies:
     sni: "taobao.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_44"
-    type: trojan
-    server: "58.152.46.127"
-    port: 28443
-    password: "0f3963f9-0530-434d-be2c-87e9b61143c8"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇭🇰_45"
+  - name: "🇭🇰_55"
     type: trojan
     server: "hk04.qianmoip.win"
     port: 52224
@@ -318,20 +385,15 @@ proxies:
     sni: "taobao.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_46"
+  - name: "🇭🇰_56"
     type: trojan
-    server: "58.152.46.127"
-    port: 46808
-    password: "b343b7e0-d182-4665-8f3b-7ae170f541f3"
-    sni: "vpn-node.internal"
+    server: "112.120.123.8"
+    port: 50222
+    password: "302cf77d-6fb7-4ac8-ae61-88e286340d59"
+    sni: "taobao.com"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇭🇰_47"
+  - name: "🇭🇰_57"
     type: trojan
     server: "hk03.qianmoip.win"
     port: 50222
@@ -339,28 +401,21 @@ proxies:
     sni: "taobao.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_48"
-    type: trojan
-    server: "hk200m.jiasu.asia"
-    port: 50000
-    password: "8539b07d-4a48-46ca-8ce7-f961f4e35b0c"
-    sni: "hk200m.jiasu.asia"
-    skip-cert-verify: true
+  - name: "🇭🇰_58"
+    type: ss
+    server: "us1002.lunartrace.io"
+    port: 40013
+    cipher: "chacha20-ietf-poly1305"
+    password: "86bf33ea-62d9-49a1-9bd0-73e45f6e1403"
     udp: true
-  - name: "🇭🇰_49"
-    type: trojan
-    server: "152.175.28.15"
-    port: 28443
-    password: "04e30e9f-661a-4a40-9973-4f2961298e99"
-    sni: "vpn-node.internal"
-    skip-cert-verify: true
+  - name: "🇭🇰_59"
+    type: ss
+    server: "212.192.13.36"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "jkNFxj3odXumGzGC"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/xVpnTrojanWsSvc7f3a"
-      headers:
-        Host: "vpn-node.internal"
-  - name: "🇭🇰_50"
+  - name: "🇭🇰_60"
     type: ss
     server: "us1002.lunartrace.io"
     port: 40013
@@ -409,11 +464,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -434,6 +484,16 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
   - name: "LB-CDN"
     type: load-balance
@@ -443,11 +503,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -468,6 +523,16 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -477,11 +542,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -502,6 +562,16 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
   - name: "FAST-CDN"
     type: url-test
@@ -510,11 +580,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -535,6 +600,16 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -544,11 +619,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -569,16 +639,21 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇭🇰_26"
-      - "🇭🇰_27"
-      - "🇭🇰_28"
-      - "🇭🇰_29"
-      - "🇭🇰_30"
       - "🇭🇰_31"
       - "🇭🇰_32"
       - "🇭🇰_33"
@@ -599,6 +674,16 @@ proxy-groups:
       - "🇭🇰_48"
       - "🇭🇰_49"
       - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
+      - "🇭🇰_55"
+      - "🇭🇰_56"
+      - "🇭🇰_57"
+      - "🇭🇰_58"
+      - "🇭🇰_59"
+      - "🇭🇰_60"
 
 rules:
   - MATCH,PROXY-BEST

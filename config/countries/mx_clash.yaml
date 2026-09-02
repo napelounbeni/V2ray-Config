@@ -77,13 +77,23 @@ proxies:
       path: "/vless/"
   - name: "🇲🇽_2"
     type: vless
-    server: "ul-mexico1.09vpn.com"
+    server: "158.23.49.45"
+    port: 8443
+    uuid: "2808bf00-f7af-4b8b-85cb-6bb5cfa4cba6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "mexicotrash.duckdns.org"
+    client-fingerprint: "360"
+  - name: "🇲🇽_3"
+    type: vless
+    server: "UL-Mexico1.09vpn.com"
     port: 8443
     uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ul-mexico1.09vpn.com"
+    servername: "UL-Mexico1.09vpn.com"
     network: ws
     ws-opts:
       path: "/vless/"
@@ -103,6 +113,7 @@ proxy-groups:
     proxies:
       - "🇲🇽_1"
       - "🇲🇽_2"
+      - "🇲🇽_3"
 
 
 rules:

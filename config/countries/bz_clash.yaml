@@ -63,19 +63,32 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇲🇩_1"
+  - name: "🇧🇿_1"
     type: vless
-    server: "144.31.131.241"
-    port: 8443
-    uuid: "b406bc51-9002-474c-beae-b194b02c91da"
+    server: "45.131.7.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "mold.speedload.online"
-    reality-opts:
-      public-key: "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs"
-      short-id: "a20d3ed244c76426"
-    flow: "xtls-rprx-vision"
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇧🇿_2"
+    type: vless
+    server: "45.131.6.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +103,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇲🇩_1"
+      - "🇧🇿_1"
+      - "🇧🇿_2"
 
 
 rules:
