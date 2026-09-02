@@ -59,35 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇱_8"
-    type: vless
-    server: "alblack.vodniki.monster"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "alblack.vodniki.monster"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wTITbZ7gXSeLOTMLOVC4ePziVIyELIgQeaPihXrbqAk"
-      short-id: "946b7ff3ebdd350c"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇱_9"
-    type: vless
-    server: "45.82.13.150"
-    port: 8443
-    uuid: "51231507-67c3-4141-ab08-a69eb121c716"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tradingview.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U"
-      short-id: "1688"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇱_10"
+  - name: "🇦🇱_6"
     type: vless
     server: "45.89.60.235"
     port: 443
@@ -101,35 +73,35 @@ proxies:
       public-key: "wTITbZ7gXSeLOTMLOVC4ePziVIyELIgQeaPihXrbqAk"
       short-id: "946b7ff3ebdd350c"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_11"
+  - name: "🇦🇱_7"
     type: vless
-    server: "151.123.186.124"
-    port: 25026
-    uuid: "62a05f8e-eedf-4500-8c79-c9315f565bcc"
+    server: "45.82.13.150"
+    port: 8443
+    uuid: "51231507-67c3-4141-ab08-a69eb121c716"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "proxy11.h1guro.ovh"
-    client-fingerprint: "firefox"
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "3qBfeZG4LvSGPNSacB-tCpO91TtLVLftWwNeNg5jplU"
-      short-id: "bc1c3578b48ae7cc"
+      public-key: "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U"
+      short-id: "1688"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_12"
-    type: ss
-    server: "157.22.240.141"
-    port: 57925
-    cipher: "chacha20-ietf-poly1305"
-    password: "frcYfFRuQRks932EpCWvX7"
-    udp: true
-  - name: "🇦🇱_13"
+  - name: "🇦🇱_8"
     type: ss
     server: "157.22.240.141"
     port: 57925
     cipher: "chacha20-ietf-poly1305"
     password: "M9puMz34i3ZONQBhAt655Y"
     udp: true
-  - name: "🇦🇱_14"
+  - name: "🇦🇱_9"
+    type: ss
+    server: "157.22.240.141"
+    port: 57925
+    cipher: "chacha20-ietf-poly1305"
+    password: "frcYfFRuQRks932EpCWvX7"
+    udp: true
+  - name: "🇦🇱_10"
     type: ss
     server: "130.49.189.158"
     port: 10792
@@ -178,13 +150,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -194,13 +164,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -210,13 +178,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -225,13 +191,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -241,25 +205,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇱_6"
+      - "🇦🇱_7"
       - "🇦🇱_8"
       - "🇦🇱_9"
       - "🇦🇱_10"
-      - "🇦🇱_11"
-      - "🇦🇱_12"
-      - "🇦🇱_13"
-      - "🇦🇱_14"
 
 rules:
   - MATCH,PROXY-BEST

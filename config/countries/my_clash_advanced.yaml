@@ -61,29 +61,6 @@ dns:
 proxies:
   - name: "🇲🇾_5"
     type: vless
-    server: "43.217.16.8"
-    port: 21874
-    uuid: "85dd8227-0f12-4826-a712-6313211774b5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs"
-      short-id: "42e853a5559e1032"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇾_6"
-    type: vless
-    server: "38.60.168.98"
-    port: 2087
-    uuid: "8a346b7c-5b95-4845-affa-0e5d9929e9ae"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/db55c40bbc75"
-  - name: "🇲🇾_7"
-    type: vless
     server: "56.69.159.191"
     port: 53271
     uuid: "e8358eb5-7210-4cf8-982f-68af141b7694"
@@ -96,6 +73,29 @@ proxies:
       public-key: "1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc"
       short-id: "0a9bd9db19578964"
     flow: "xtls-rprx-vision"
+  - name: "🇲🇾_6"
+    type: vless
+    server: "43.217.16.8"
+    port: 21874
+    uuid: "85dd8227-0f12-4826-a712-6313211774b5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amd.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs"
+      short-id: "42e853a5559e1032"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇾_7"
+    type: vless
+    server: "38.60.168.98"
+    port: 2087
+    uuid: "8a346b7c-5b95-4845-affa-0e5d9929e9ae"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/db55c40bbc75"
   - name: "🇲🇾_8"
     type: trojan
     server: "47.250.84.25"

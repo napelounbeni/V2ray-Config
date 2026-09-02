@@ -59,83 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇭_8"
-    type: vless
-    server: "45.90.56.231"
-    port: 443
-    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
-      short-id: "e2e66f4537770cef"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_9"
-    type: vless
-    server: "45.59.126.91"
-    port: 443
-    uuid: "f0064871-07f6-42d1-a159-81213a52a5c3"
-    udp: true
   - name: "🇨🇭_10"
-    type: vless
-    server: "31.76.4.128"
-    port: 5001
-    uuid: "5a92a9d2-3067-49cd-bfc5-989bbdfc5d52"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fi.aeternavpn.space"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ"
-      short-id: "a1b2c3d4"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_11"
-    type: vless
-    server: "ch.sixseven.network"
-    port: 25301
-    uuid: "62a05f8e-eedf-4500-8c79-c9315f565bcc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "proxy11.h1guro.ovh"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "IrWojZI-Pu5n8iCeKuwgHoI2CQbjJSV7mZ63Tm46bUE"
-      short-id: "d25aa4409e4940d8"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_12"
-    type: vless
-    server: "31.76.4.103"
-    port: 443
-    uuid: "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central.cendora.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI"
-      short-id: "00bca5982f82d083"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_13"
-    type: vless
-    server: "151.243.190.90"
-    port: 25301
-    uuid: "62a05f8e-eedf-4500-8c79-c9315f565bcc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "proxy11.h1guro.ovh"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "IrWojZI-Pu5n8iCeKuwgHoI2CQbjJSV7mZ63Tm46bUE"
-      short-id: "d25aa4409e4940d8"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_14"
     type: vless
     server: "45.90.58.216"
     port: 443
@@ -149,6 +73,78 @@ proxies:
       public-key: "PMYLdOtnvW-ca8Zf6u7CFgGXoGXCvmCMPerPjGY3AAc"
       short-id: "77d7abe2c55892f1"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇭_11"
+    type: vless
+    server: "45.59.126.91"
+    port: 443
+    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
+    udp: true
+  - name: "🇨🇭_12"
+    type: vless
+    server: "45.59.126.91"
+    port: 110
+    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
+    udp: true
+  - name: "🇨🇭_13"
+    type: vless
+    server: "31.76.4.128"
+    port: 5001
+    uuid: "5a92a9d2-3067-49cd-bfc5-989bbdfc5d52"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fi.aeternavpn.space"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ"
+      short-id: "a1b2c3d4"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_14"
+    type: vless
+    server: "151.243.190.90"
+    port: 25301
+    uuid: "62a05f8e-eedf-4500-8c79-c9315f565bcc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "proxy11.h1guro.ovh"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "IrWojZI-Pu5n8iCeKuwgHoI2CQbjJSV7mZ63Tm46bUE"
+      short-id: "d25aa4409e4940d8"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_15"
+    type: vless
+    server: "45.59.126.91"
+    port: 8080
+    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
+    udp: true
+  - name: "🇨🇭_16"
+    type: vless
+    server: "45.90.56.231"
+    port: 443
+    uuid: "e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
+      short-id: "e2e66f4537770cef"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_17"
+    type: vless
+    server: "45.59.126.91"
+    port: 443
+    uuid: "02a96d4d-f2f5-4c0b-ba83-d24aec5defb8"
+    udp: true
+  - name: "🇨🇭_18"
+    type: vless
+    server: "45.59.126.91"
+    port: 17622
+    uuid: "02a96d4d-f2f5-4c0b-ba83-d24aec5defb8"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -191,13 +187,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -207,13 +205,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -223,13 +223,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -238,13 +240,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -254,25 +258,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇭_8"
-      - "🇨🇭_9"
       - "🇨🇭_10"
       - "🇨🇭_11"
       - "🇨🇭_12"
       - "🇨🇭_13"
       - "🇨🇭_14"
+      - "🇨🇭_15"
+      - "🇨🇭_16"
+      - "🇨🇭_17"
+      - "🇨🇭_18"
 
 rules:
   - MATCH,PROXY-BEST

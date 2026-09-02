@@ -65,32 +65,19 @@ dns:
 proxies:
   - name: "🇮🇳_1"
     type: vless
-    server: "194.61.31.126"
-    port: 2053
-    uuid: "0bf89828-484f-4710-9581-12aa961e3bf1"
+    server: "172.237.44.80"
+    port: 19567
+    uuid: "0faaa1ee-f3d2-49ec-92af-3228329f3000"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "www.nvidia.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "Gy6W0bXf2bpxoG1k3szp8X0ekzoyXlEtzT8V4mYQ3EE"
-      short-id: "29fe4205ddc971a8"
-  - name: "🇮🇳_2"
-    type: vless
-    server: "148.113.5.44"
-    port: 443
-    uuid: "72ea5a91-ffcc-43d2-9297-5993c3abf186"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
-      short-id: "221873918e0bb74d"
+      public-key: "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI"
+      short-id: "87714fc3c52a"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_3"
+  - name: "🇮🇳_2"
     type: vless
     server: "5.253.42.164"
     port: 40443
@@ -104,7 +91,36 @@ proxies:
       public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
       short-id: "68a8"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇳_3"
+    type: vless
+    server: "4.240.110.47"
+    port: 443
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
   - name: "🇮🇳_4"
+    type: vless
+    server: "148.113.5.44"
+    port: 443
+    uuid: "72ea5a91-ffcc-43d2-9297-5993c3abf186"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
+      short-id: "221873918e0bb74d"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_5"
     type: vless
     server: "5.253.30.99"
     port: 40443
@@ -118,7 +134,7 @@ proxies:
       public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
       short-id: "88b6"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_5"
+  - name: "🇮🇳_6"
     type: vless
     server: "5.253.42.163"
     port: 40443
@@ -132,31 +148,24 @@ proxies:
       public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
       short-id: "84fc"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_6"
+  - name: "🇮🇳_7"
     type: vless
-    server: "172.237.44.80"
-    port: 19567
-    uuid: "0faaa1ee-f3d2-49ec-92af-3228329f3000"
+    server: "154.198.173.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.nvidia.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI"
-      short-id: "87714fc3c52a"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_7"
-    type: trojan
-    server: "34.131.228.210"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
-    skip-cert-verify: true
-    udp: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
   - name: "🇮🇳_8"
     type: trojan
-    server: "hyfuuf6.wsone.icu"
+    server: "34.131.228.210"
     port: 443
     password: "M7v%w11Se*"
     sni: "hyfuuf6.wsone.icu"
