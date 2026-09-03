@@ -65,6 +65,34 @@ dns:
 proxies:
   - name: "🇧🇿_1"
     type: vless
+    server: "45.131.7.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇧🇿_2"
+    type: vless
+    server: "45.131.7.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇧🇿_3"
+    type: vless
     server: "45.131.6.7"
     port: 8443
     uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
@@ -78,6 +106,19 @@ proxies:
       path: "/dula?Telegram-WangCai2"
       headers:
         Host: "speed.dulacloud.store"
+  - name: "🇧🇿_4"
+    type: vless
+    server: "45.131.6.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +134,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇿_1"
+      - "🇧🇿_2"
+      - "🇧🇿_3"
+      - "🇧🇿_4"
 
 
 rules:

@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇷_2"
+  - name: "🇨🇷_3"
+    type: vless
+    server: "190.93.245.255"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_4"
     type: vless
     server: "190.93.245.7"
     port: 8443
@@ -68,6 +83,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/dula?Telegram-WangCai2"
@@ -115,7 +131,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +142,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +153,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +163,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +174,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇷_3"
+      - "🇨🇷_4"
 
 rules:
   - MATCH,PROXY-BEST

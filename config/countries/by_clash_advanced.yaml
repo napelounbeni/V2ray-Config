@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇾_3"
+  - name: "🇧🇾_4"
     type: vless
     server: "144.31.129.2"
     port: 443
@@ -73,7 +73,18 @@ proxies:
       public-key: "y3EIsxDGDJrBGk3j4YmjI5R_8jiCsEDRDMeL4bv5TTI"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇾_4"
+  - name: "🇧🇾_5"
+    type: trojan
+    server: "by01.botovod.space"
+    port: 500
+    password: "8qCNZU2XdtefT7uB4uPxgRR839btqMG8"
+    sni: "by01.botovod.space"
+    skip-cert-verify: true
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇧🇾_6"
     type: trojan
     server: "178.172.227.178"
     port: 500
@@ -126,8 +137,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -137,8 +149,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -148,8 +161,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -158,8 +172,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -169,15 +184,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇾_3"
       - "🇧🇾_4"
+      - "🇧🇾_5"
+      - "🇧🇾_6"
 
 rules:
   - MATCH,PROXY-BEST

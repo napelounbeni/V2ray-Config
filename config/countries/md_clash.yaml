@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
+    server: "193.36.38.17"
+    port: 443
+    uuid: "2eadb97f-bba4-4471-8d55-bd461525a2dc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "eded-52n.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "eded-52n.pages.dev"
+  - name: "🇲🇩_2"
+    type: vless
     server: "80.96.109.223"
     port: 443
     uuid: "6379673b-197f-4944-ba81-a45c66aefe9c"
@@ -92,6 +107,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
 
 
 rules:

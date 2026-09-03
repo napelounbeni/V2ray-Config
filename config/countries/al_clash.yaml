@@ -79,6 +79,20 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_2"
     type: vless
+    server: "alblack.vodniki.monster"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "alblack.vodniki.monster"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wTITbZ7gXSeLOTMLOVC4ePziVIyELIgQeaPihXrbqAk"
+      short-id: "946b7ff3ebdd350c"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_3"
+    type: vless
     server: "45.82.13.150"
     port: 8443
     uuid: "51231507-67c3-4141-ab08-a69eb121c716"
@@ -86,26 +100,33 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "tradingview.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U"
       short-id: "1688"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_3"
-    type: ss
-    server: "157.22.240.141"
-    port: 57925
-    cipher: "chacha20-ietf-poly1305"
-    password: "M9puMz34i3ZONQBhAt655Y"
-    udp: true
   - name: "🇦🇱_4"
+    type: ss
+    server: "130.49.189.158"
+    port: 10792
+    cipher: "chacha20-ietf-poly1305"
+    password: "EVXeUUW84vJeLkFojcamg4"
+    udp: true
+  - name: "🇦🇱_5"
     type: ss
     server: "157.22.240.141"
     port: 57925
     cipher: "chacha20-ietf-poly1305"
     password: "frcYfFRuQRks932EpCWvX7"
     udp: true
-  - name: "🇦🇱_5"
+  - name: "🇦🇱_6"
+    type: ss
+    server: "157.22.240.141"
+    port: 57925
+    cipher: "chacha20-ietf-poly1305"
+    password: "M9puMz34i3ZONQBhAt655Y"
+    udp: true
+  - name: "🇦🇱_7"
     type: ss
     server: "130.49.189.158"
     port: 10792
@@ -131,6 +152,8 @@ proxy-groups:
       - "🇦🇱_3"
       - "🇦🇱_4"
       - "🇦🇱_5"
+      - "🇦🇱_6"
+      - "🇦🇱_7"
 
 
 rules:

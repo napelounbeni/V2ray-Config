@@ -79,18 +79,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
     type: vless
-    server: "45.59.126.91"
-    port: 443
-    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
-    udp: true
-  - name: "🇨🇭_3"
-    type: vless
-    server: "45.59.126.91"
-    port: 110
-    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
-    udp: true
-  - name: "🇨🇭_4"
-    type: vless
     server: "31.76.4.128"
     port: 5001
     uuid: "5a92a9d2-3067-49cd-bfc5-989bbdfc5d52"
@@ -103,27 +91,7 @@ proxies:
       public-key: "HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ"
       short-id: "a1b2c3d4"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_5"
-    type: vless
-    server: "151.243.190.90"
-    port: 25301
-    uuid: "62a05f8e-eedf-4500-8c79-c9315f565bcc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "proxy11.h1guro.ovh"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "IrWojZI-Pu5n8iCeKuwgHoI2CQbjJSV7mZ63Tm46bUE"
-      short-id: "d25aa4409e4940d8"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
-    type: vless
-    server: "45.59.126.91"
-    port: 8080
-    uuid: "baf36ee9-0e2c-40b9-bf1a-76e542b4da9f"
-    udp: true
-  - name: "🇨🇭_7"
+  - name: "🇨🇭_3"
     type: vless
     server: "45.90.56.231"
     port: 443
@@ -137,18 +105,19 @@ proxies:
       public-key: "KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0"
       short-id: "e2e66f4537770cef"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_8"
-    type: vless
-    server: "45.59.126.91"
-    port: 443
-    uuid: "02a96d4d-f2f5-4c0b-ba83-d24aec5defb8"
+  - name: "🇨🇭_4"
+    type: trojan
+    server: "91.245.225.79"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
     udp: true
-  - name: "🇨🇭_9"
-    type: vless
-    server: "45.59.126.91"
-    port: 17622
-    uuid: "02a96d4d-f2f5-4c0b-ba83-d24aec5defb8"
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -167,11 +136,6 @@ proxy-groups:
       - "🇨🇭_2"
       - "🇨🇭_3"
       - "🇨🇭_4"
-      - "🇨🇭_5"
-      - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
-      - "🇨🇭_9"
 
 
 rules:

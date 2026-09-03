@@ -65,31 +65,20 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "Turkey2vfsdvrwevr32v23v423ccdsrbsdbrsdvsdc.soft421.ir"
-    port: 1152
-    uuid: "d384974a-87c2-430b-a10c-ae367bc7ced8"
+    server: "86.38.214.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yahoo.com"
+    servername: "speed.dulacloud.store"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "24qgQiNdIzdKYtFOQDFtB6kN9WKx0gviKirv8Bb4hhI"
-      short-id: "86a68a48b7d45f43"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
   - name: "🇹🇷_2"
-    type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "e691b034-dfc9-4f22-80aa-6d4f6404a4df"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4"
-      short-id: "9bd613c48251f0db"
-  - name: "🇹🇷_3"
     type: vless
     server: "185.123.100.56"
     port: 8443
@@ -103,7 +92,34 @@ proxies:
       public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
       short-id: ""
     flow: "xtls-rprx-vision"
+  - name: "🇹🇷_3"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "e691b034-dfc9-4f22-80aa-6d4f6404a4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4"
+      short-id: "9bd613c48251f0db"
   - name: "🇹🇷_4"
+    type: vless
+    server: "premium-tr.geodema.network"
+    port: 8443
+    uuid: "78eb4455-0d07-4bc2-93e3-7c8654f11d74"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_5"
     type: vless
     server: "156.67.63.231"
     port: 443
@@ -117,6 +133,16 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
+  - name: "🇹🇷_6"
+    type: vless
+    server: "tr.s.hardvezoo.ir"
+    port: 2052
+    uuid: "01e4f6b0-acfa-4cac-a39d-6779d85eba65"
+    udp: true
+    network: httpupgrade
+    httpupgrade-opts:
+      path: "/"
+      host: "www.speedtest.net"
 
 proxy-groups:
   - name: "PROXY"
@@ -135,6 +161,8 @@ proxy-groups:
       - "🇹🇷_2"
       - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
 
 rules:

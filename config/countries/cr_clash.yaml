@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇨🇷_1"
     type: vless
+    server: "190.93.245.255"
+    port: 443
+    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/sync"
+      headers:
+        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
+  - name: "🇨🇷_2"
+    type: vless
     server: "190.93.245.7"
     port: 8443
     uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
@@ -72,6 +87,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/dula?Telegram-WangCai2"
@@ -92,6 +108,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇷_1"
+      - "🇨🇷_2"
 
 
 rules:
