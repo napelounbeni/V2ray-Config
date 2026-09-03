@@ -61,7 +61,21 @@ dns:
 proxies:
   - name: "🇨🇿_7"
     type: vless
-    server: "78.159.247.123"
+    server: "5.39.202.127"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "czek1.kovsh.lol"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "crRdG3Hd_QtGCJi9fd1rtHpDIB7vnCx1Yexfu6XkIzU"
+      short-id: "2cec07a8614696e5"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_8"
+    type: vless
+    server: "78.159.247.166"
     port: 7444
     uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
     udp: true
@@ -72,20 +86,6 @@ proxies:
     reality-opts:
       public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
       short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_8"
-    type: vless
-    server: "46.28.70.12"
-    port: 443
-    uuid: "aaf8343d-1e78-49f9-92a2-f33136d6f636"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "HlbEJFdMTNcNofda44mGt2RFxnWN0iO6toeMoqiwyF4"
-      short-id: "1c44e37b4134d40f"
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_9"
     type: vless
@@ -131,7 +131,7 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇿_12"
     type: vless
-    server: "78.159.247.166"
+    server: "78.159.247.123"
     port: 7444
     uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
     udp: true

@@ -59,20 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇳_13"
-    type: vless
-    server: "194.61.31.126"
-    port: 2053
-    uuid: "50ddfd92-dc79-4777-a256-41e34d56836e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw"
-      short-id: "c0cb7457deebbc70"
-  - name: "🇮🇳_14"
+  - name: "🇮🇳_7"
     type: vless
     server: "5.253.42.163"
     port: 40443
@@ -86,78 +73,20 @@ proxies:
       public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
       short-id: "84fc"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_15"
+  - name: "🇮🇳_8"
     type: vless
-    server: "154.198.173.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    server: "194.61.31.126"
+    port: 2053
+    uuid: "50ddfd92-dc79-4777-a256-41e34d56836e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇮🇳_16"
-    type: vless
-    server: "preview.netraidly.ru"
-    port: 40443
-    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
-      short-id: "84fc"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_17"
-    type: vless
-    server: "5.253.42.164"
-    port: 40443
-    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
-      short-id: "68a8"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_18"
-    type: vless
-    server: "172.237.44.80"
-    port: 19567
-    uuid: "0faaa1ee-f3d2-49ec-92af-3228329f3000"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.nvidia.com"
+    servername: "www.apple.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI"
-      short-id: "87714fc3c52a"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_19"
-    type: vless
-    server: "5.253.30.99"
-    port: 40443
-    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
-      short-id: "88b6"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_20"
+      public-key: "R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw"
+      short-id: "c0cb7457deebbc70"
+  - name: "🇮🇳_9"
     type: vless
     server: "148.113.5.44"
     port: 443
@@ -171,37 +100,48 @@ proxies:
       public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
       short-id: "221873918e0bb74d"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_21"
-    type: trojan
-    server: "tttyder.wsone.icu"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "tttyder.wsone.icu"
+  - name: "🇮🇳_10"
+    type: vless
+    server: "5.253.30.99"
+    port: 40443
+    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
+    udp: true
+    tls: true
     skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
+      short-id: "88b6"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_11"
+    type: vless
+    server: "5.253.42.164"
+    port: 40443
+    uuid: "e99ba96d-dec8-42eb-be53-19e71eef7cab"
     udp: true
-  - name: "🇮🇳_22"
-    type: trojan
-    server: "34.131.228.210"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
+    tls: true
     skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw"
+      short-id: "68a8"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇳_12"
+    type: vless
+    server: "172.237.44.80"
+    port: 19567
+    uuid: "0faaa1ee-f3d2-49ec-92af-3228329f3000"
     udp: true
-  - name: "🇮🇳_23"
-    type: trojan
-    server: "hyfuuf6.wsone.icu"
-    port: 443
-    password: "M7v%w11Se*"
-    sni: "hyfuuf6.wsone.icu"
+    tls: true
     skip-cert-verify: true
-    udp: true
-  - name: "🇮🇳_24"
-    type: ss
-    server: "172.105.39.124"
-    port: 7002
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
-    udp: true
+    servername: "www.nvidia.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI"
+      short-id: "87714fc3c52a"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -244,18 +184,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -265,18 +199,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -286,18 +214,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -306,18 +228,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -327,35 +243,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇳_13"
-      - "🇮🇳_14"
-      - "🇮🇳_15"
-      - "🇮🇳_16"
-      - "🇮🇳_17"
-      - "🇮🇳_18"
-      - "🇮🇳_19"
-      - "🇮🇳_20"
-      - "🇮🇳_21"
-      - "🇮🇳_22"
-      - "🇮🇳_23"
-      - "🇮🇳_24"
+      - "🇮🇳_7"
+      - "🇮🇳_8"
+      - "🇮🇳_9"
+      - "🇮🇳_10"
+      - "🇮🇳_11"
+      - "🇮🇳_12"
 
 rules:
   - MATCH,PROXY-BEST
