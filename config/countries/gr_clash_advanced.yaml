@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇷_6"
+  - name: "🇬🇷_3"
     type: vless
     server: "85.90.197.91"
     port: 443
@@ -68,26 +68,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "gr.freeinternat.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇷_7"
-    type: vless
-    server: "gr.freeinternat.com"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "gr.freeinternat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_8"
+  - name: "🇬🇷_4"
     type: vless
     server: "185.126.238.87"
     port: 2083
@@ -96,34 +82,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_9"
-    type: vless
-    server: "82.47.62.89"
-    port: 443
-    uuid: "ec972f43-cdfa-4d88-a020-64e17eeabc99"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn-279d4a.vless.monster"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "HUw_49W36g87SNkx7BomL8u7WoATpEwxauwlo84t5Bk"
-      short-id: "b6344cc2ddb26812"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_10"
-    type: vless
-    server: "cdn-279d4a.vless.monster"
-    port: 443
-    uuid: "ec972f43-cdfa-4d88-a020-64e17eeabc99"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn-279d4a.vless.monster"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "HUw_49W36g87SNkx7BomL8u7WoATpEwxauwlo84t5Bk"
-      short-id: "b6344cc2ddb26812"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -166,11 +124,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -180,11 +135,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -194,11 +146,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -207,11 +156,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -221,21 +167,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇬🇷_6"
-      - "🇬🇷_7"
-      - "🇬🇷_8"
-      - "🇬🇷_9"
-      - "🇬🇷_10"
+      - "🇬🇷_3"
+      - "🇬🇷_4"
 
 rules:
   - MATCH,PROXY-BEST

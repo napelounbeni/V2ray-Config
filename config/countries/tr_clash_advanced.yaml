@@ -59,7 +59,24 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "91.228.227.172"
+    port: 8080
+    uuid: "367111be-17b4-4abc-aae0-3d7fe72aa3ec"
+    udp: true
+  - name: "🇹🇷_12"
+    type: vless
+    server: "parta1.api3-max.ru"
+    port: 443
+    uuid: "5999a497-a2da-41d0-92cb-5b758082f83c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "parta1.api3-max.ru"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_13"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -72,34 +89,32 @@ proxies:
     reality-opts:
       public-key: "k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4"
       short-id: "9bd613c48251f0db"
-  - name: "🇹🇷_15"
+  - name: "🇹🇷_14"
     type: vless
-    server: "91.228.227.172"
+    server: "parta3.api3-max.ru"
     port: 443
-    uuid: "1b0a74e1-3c69-4386-ae77-9db408d0687f"
-    udp: true
-  - name: "🇹🇷_16"
-    type: vless
-    server: "91.228.227.172"
-    port: 110
-    uuid: "1b0a74e1-3c69-4386-ae77-9db408d0687f"
-    udp: true
-  - name: "🇹🇷_17"
-    type: vless
-    server: "155.103.70.224"
-    port: 443
-    uuid: "3a09e0c9-4194-4b85-8d7f-fd1fc38f00b2"
+    uuid: "5999a497-a2da-41d0-92cb-5b758082f83c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sinavm.soft10.ir"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM"
-      headers:
-        Host: "sinavm.soft10.ir"
-  - name: "🇹🇷_18"
+    servername: "parta3.api3-max.ru"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_15"
+    type: vless
+    server: "www.d.mobilesari.ir"
+    port: 443
+    uuid: "62bf55a7-ba8b-4e65-aa2f-383d425d57c2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM"
+      short-id: "5002b5329814b487"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_16"
     type: vless
     server: "156.67.63.231"
     port: 443
@@ -113,27 +128,7 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_19"
-    type: vless
-    server: "91.228.227.172"
-    port: 8080
-    uuid: "1b0a74e1-3c69-4386-ae77-9db408d0687f"
-    udp: true
-  - name: "🇹🇷_20"
-    type: vless
-    server: "www.dd.mobilesari.ir"
-    port: 443
-    uuid: "ef1ffeed-f622-494d-8eec-659dd16591f9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amp-api-edge.apps.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM"
-      short-id: "5002b5329814b487"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_21"
+  - name: "🇹🇷_17"
     type: vless
     server: "y347t3784gfh478f4.tr.snapeurop.com"
     port: 666
@@ -144,11 +139,25 @@ proxies:
       path: "/"
       headers:
         Host: "ads.mohsen3.ir"
-  - name: "🇹🇷_22"
+  - name: "🇹🇷_18"
     type: vless
-    server: "www.d.mobilenarges.ir"
+    server: "www.dd.mobilesari.ir"
     port: 443
-    uuid: "d2a8c7bf-e263-4f77-8720-f8888c7c19d1"
+    uuid: "784d2430-124f-4390-b83c-e20c166d9b8a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM"
+      short-id: "5002b5329814b487"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_19"
+    type: vless
+    server: "www.dd.mobilesari.ir"
+    port: 443
+    uuid: "cac70cdf-2dac-45fc-b91f-255b0e21b1bb"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -158,26 +167,7 @@ proxies:
       public-key: "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM"
       short-id: "5002b5329814b487"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_23"
-    type: vless
-    server: "cdn.awexaio.shop"
-    port: 2082
-    uuid: "188c0927-b022-4478-86f7-be53449e2d8b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "icloud.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "BXPU9XO_TPK-mgva2dROYKB7b3LwtBEOVcqbKJLB7HM"
-      short-id: "08"
-  - name: "🇹🇷_24"
-    type: vless
-    server: "91.228.227.172"
-    port: 8080
-    uuid: "367111be-17b4-4abc-aae0-3d7fe72aa3ec"
-    udp: true
-  - name: "🇹🇷_25"
+  - name: "🇹🇷_20"
     type: vless
     server: "185.123.100.56"
     port: 8443
@@ -191,21 +181,6 @@ proxies:
       public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_26"
-    type: vless
-    server: "sinavm.soft10.ir"
-    port: 443
-    uuid: "3a09e0c9-4194-4b85-8d7f-fd1fc38f00b2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sinavm.soft10.ir"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM"
-      headers:
-        Host: "sinavm.soft10.ir"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -248,6 +223,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -255,12 +233,6 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -270,6 +242,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -277,12 +252,6 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -292,6 +261,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -299,12 +271,6 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -313,6 +279,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -320,12 +289,6 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -335,6 +298,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -342,17 +308,14 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
@@ -360,12 +323,6 @@ proxy-groups:
       - "🇹🇷_18"
       - "🇹🇷_19"
       - "🇹🇷_20"
-      - "🇹🇷_21"
-      - "🇹🇷_22"
-      - "🇹🇷_23"
-      - "🇹🇷_24"
-      - "🇹🇷_25"
-      - "🇹🇷_26"
 
 rules:
   - MATCH,PROXY-BEST

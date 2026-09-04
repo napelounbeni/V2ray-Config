@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇳_9"
+  - name: "🇮🇳_10"
     type: vless
     server: "194.61.31.126"
     port: 2053
@@ -72,20 +72,6 @@ proxies:
     reality-opts:
       public-key: "R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw"
       short-id: "c0cb7457deebbc70"
-  - name: "🇮🇳_10"
-    type: vless
-    server: "preview.netraidly.ru"
-    port: 40443
-    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
-      short-id: "84fc"
-    flow: "xtls-rprx-vision"
   - name: "🇮🇳_11"
     type: vless
     server: "5.253.42.164"
@@ -116,20 +102,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_13"
     type: vless
-    server: "5.253.30.99"
-    port: 40443
-    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
-      short-id: "88b6"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇳_14"
-    type: vless
     server: "148.113.5.44"
     port: 443
     uuid: "72ea5a91-ffcc-43d2-9297-5993c3abf186"
@@ -142,7 +114,7 @@ proxies:
       public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
       short-id: "221873918e0bb74d"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇳_15"
+  - name: "🇮🇳_14"
     type: vless
     server: "172.237.44.80"
     port: 19567
@@ -151,12 +123,41 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.nvidia.com"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI"
       short-id: "87714fc3c52a"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇳_15"
+    type: vless
+    server: "5.253.30.99"
+    port: 40443
+    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
+      short-id: "88b6"
+    flow: "xtls-rprx-vision"
   - name: "🇮🇳_16"
+    type: trojan
+    server: "34.131.228.210"
+    port: 443
+    password: "M7v%w11Se*"
+    sni: "hyfuuf6.wsone.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇳_17"
+    type: trojan
+    server: "hyfuuf6.wsone.icu"
+    port: 443
+    password: "M7v%w11Se*"
+    sni: "hyfuuf6.wsone.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇳_18"
     type: ss
     server: "172.105.39.124"
     port: 7002
@@ -205,7 +206,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -213,6 +213,8 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -222,7 +224,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -230,6 +231,8 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -239,7 +242,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -247,6 +249,8 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -255,7 +259,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -263,6 +266,8 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -272,7 +277,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -280,12 +284,13 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇳_9"
       - "🇮🇳_10"
       - "🇮🇳_11"
       - "🇮🇳_12"
@@ -293,6 +298,8 @@ proxy-groups:
       - "🇮🇳_14"
       - "🇮🇳_15"
       - "🇮🇳_16"
+      - "🇮🇳_17"
+      - "🇮🇳_18"
 
 rules:
   - MATCH,PROXY-BEST

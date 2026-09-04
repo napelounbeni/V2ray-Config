@@ -65,18 +65,7 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sVnT0vhrV7WAl52Z"
-      headers:
-        Host: "worker3.gisenoj224.workers.dev"
-  - name: "🇮🇷_2"
-    type: vless
-    server: "185.24.151.109"
+    server: "185.24.151.11"
     port: 443
     uuid: "ef5f6054-61c7-4ce8-a35b-dbcec449f242"
     udp: true
@@ -88,13 +77,20 @@ proxies:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇮🇷_3"
-    type: ss
-    server: "n2.cover20.ir"
-    port: 13641
-    cipher: "chacha20-ietf-poly1305"
-    password: "1IrpHjxlI9E5/aRg5iWKWqVcepVlBRSdj8THnQq4WCg="
+  - name: "🇮🇷_2"
+    type: vless
+    server: "185.24.151.109"
+    port: 443
+    uuid: "ef5f6054-61c7-4ce8-a35b-dbcec449f242"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jobinvest.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -111,7 +107,6 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
-      - "🇮🇷_3"
 
 
 rules:
