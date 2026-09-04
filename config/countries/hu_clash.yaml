@@ -65,6 +65,22 @@ dns:
 proxies:
   - name: "🇭🇺_1"
     type: trojan
+    server: "hu2.vpnjantit.com"
+    port: 4443
+    password: "C0ldyfh-vpnjantit.com"
+    sni: "hu2.vpnjantit.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇺_2"
+    type: trojan
+    server: "46.29.142.57"
+    port: 4443
+    password: "C0ldyfh-vpnjantit.com"
+    sni: "hu2.vpnjantit.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇭🇺_3"
+    type: trojan
     server: "185.225.68.232"
     port: 443
     password: "humanity"
@@ -76,14 +92,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇭🇺_2"
-    type: trojan
-    server: "46.29.142.57"
-    port: 4443
-    password: "C0ldyfh-vpnjantit.com"
-    sni: "hu2.vpnjantit.com"
-    skip-cert-verify: true
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -100,6 +108,7 @@ proxy-groups:
     proxies:
       - "🇭🇺_1"
       - "🇭🇺_2"
+      - "🇭🇺_3"
 
 
 rules:

@@ -59,7 +59,53 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇹_5"
+  - name: "🇦🇹_7"
+    type: vless
+    server: "45.131.215.220"
+    port: 443
+    uuid: "9323430f-0c13-4cd0-a84b-639fabcbe018"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "au.plombir.me"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "zd3QY_x47nF1n4poR_nUDCOyVzaaDBqU1VWF06alCzk"
+      short-id: "ff"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_8"
+    type: vless
+    server: "159.195.244.37"
+    port: 2054
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ibm.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "l6_Nvc_H8uxGpNI3j3MxqlRoPBs313ENeVM4K3uP9BQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇦🇹_9"
+    type: vless
+    server: "159.195.244.171"
+    port: 2054
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ibm.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "0-HIOsSIQTrTYc5PdFT0OSKGBiBUiGrJzgV6ctal8Fg"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇦🇹_10"
     type: vless
     server: "152.53.1.40"
     port: 443
@@ -73,7 +119,7 @@ proxies:
       public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
       short-id: "43dcff53849b81e6"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_6"
+  - name: "🇦🇹_11"
     type: vless
     server: "152.53.114.186"
     port: 443
@@ -87,20 +133,7 @@ proxies:
       public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
       short-id: "4e9b0c2d1a3f5768"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_7"
-    type: trojan
-    server: "46.102.156.144"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇦🇹_8"
+  - name: "🇦🇹_12"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -155,10 +188,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -168,10 +203,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -181,10 +218,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -193,10 +232,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -206,19 +247,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇹_5"
-      - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
+      - "🇦🇹_10"
+      - "🇦🇹_11"
+      - "🇦🇹_12"
 
 rules:
   - MATCH,PROXY-BEST
