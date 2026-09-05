@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇨_9"
-    type: vless
-    server: "45.130.125.126"
-    port: 443
-    uuid: "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
-      headers:
-        Host: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
-  - name: "🇸🇨_10"
+  - name: "🇸🇨_6"
     type: vless
     server: "45.130.125.207"
     port: 80
@@ -84,57 +70,7 @@ proxies:
       path: "/http"
       headers:
         Host: "de.vpnbase.net"
-  - name: "🇸🇨_11"
-    type: vless
-    server: "45.130.125.209"
-    port: 80
-    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/http"
-      headers:
-        Host: "de.vpnbase.net"
-  - name: "🇸🇨_12"
-    type: trojan
-    server: "45.130.125.160"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_13"
-    type: trojan
-    server: "45.130.125.76"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_14"
-    type: trojan
-    server: "45.130.125.75"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_15"
+  - name: "🇸🇨_7"
     type: trojan
     server: "45.130.125.190"
     port: 443
@@ -147,7 +83,33 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇨_16"
+  - name: "🇸🇨_8"
+    type: trojan
+    server: "45.130.125.160"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇸🇨_9"
+    type: trojan
+    server: "45.130.125.75"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇸🇨_10"
     type: trojan
     server: "45.130.125.112"
     port: 443
@@ -200,14 +162,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -217,14 +176,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -234,14 +190,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -250,14 +203,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -267,27 +217,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
       - "🇸🇨_9"
       - "🇸🇨_10"
-      - "🇸🇨_11"
-      - "🇸🇨_12"
-      - "🇸🇨_13"
-      - "🇸🇨_14"
-      - "🇸🇨_15"
-      - "🇸🇨_16"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇰_2"
+  - name: "🇸🇰_3"
+    type: vless
+    server: "89.46.42.141"
+    port: 8443
+    uuid: "95b3eb4a-698f-44a5-a9df-b882148a4ca5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kingniderlands.tolkun-tv.ru"
+    client-fingerprint: "android"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "kingniderlands.tolkun-tv.ru"
+  - name: "🇸🇰_4"
     type: vless
     server: "185.112.249.201"
     port: 8443
@@ -116,7 +131,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +142,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +153,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +163,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +174,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇰_2"
+      - "🇸🇰_3"
+      - "🇸🇰_4"
 
 rules:
   - MATCH,PROXY-BEST

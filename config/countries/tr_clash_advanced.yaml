@@ -61,48 +61,6 @@ dns:
 proxies:
   - name: "🇹🇷_7"
     type: vless
-    server: "185.123.100.56"
-    port: 8443
-    uuid: "78eb4455-0d07-4bc2-93e3-7c8654f11d74"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_8"
-    type: vless
-    server: "198.105.123.79"
-    port: 443
-    uuid: "5999a497-a2da-41d0-92cb-5b758082f83c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "parta3.api3-max.ru"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_9"
-    type: vless
-    server: "91.228.227.172"
-    port: 8080
-    uuid: "367111be-17b4-4abc-aae0-3d7fe72aa3ec"
-    udp: true
-  - name: "🇹🇷_10"
-    type: vless
-    server: "parta3.api3-max.ru"
-    port: 443
-    uuid: "5999a497-a2da-41d0-92cb-5b758082f83c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "parta3.api3-max.ru"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_11"
-    type: vless
     server: "156.67.63.231"
     port: 443
     uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
@@ -115,7 +73,7 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_12"
+  - name: "🇹🇷_8"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -128,6 +86,42 @@ proxies:
     reality-opts:
       public-key: "k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4"
       short-id: "9bd613c48251f0db"
+  - name: "🇹🇷_9"
+    type: vless
+    server: "185.123.100.56"
+    port: 8443
+    uuid: "78eb4455-0d07-4bc2-93e3-7c8654f11d74"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_10"
+    type: vless
+    server: "91.228.227.172"
+    port: 8080
+    uuid: "367111be-17b4-4abc-aae0-3d7fe72aa3ec"
+    udp: true
+  - name: "🇹🇷_11"
+    type: trojan
+    server: "91.228.227.175"
+    port: 39341
+    password: "6BhgajxaHImvlNTlLnkKfLKhvUdxbzgQ"
+    sni: "f.mjbot.ir"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇹🇷_12"
+    type: trojan
+    server: "subtu.charsoulink3.ir"
+    port: 2087
+    password: "v2whz6ahmyy2f84j"
+    sni: "pus.mmdaqaorg2.ir"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

@@ -63,19 +63,12 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇩🇰_1"
+  - name: "🇨🇴_1"
     type: vless
-    server: "193.181.212.80"
-    port: 443
-    uuid: "24916ad0-847d-4522-9e17-f4347dee57fd"
+    server: "149.130.190.95"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kv.074167.xyz"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +83,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇩🇰_1"
+      - "🇨🇴_1"
 
 
 rules:

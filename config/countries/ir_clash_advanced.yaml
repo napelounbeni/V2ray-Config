@@ -59,9 +59,9 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_4"
+  - name: "🇮🇷_3"
     type: vless
-    server: "185.24.151.11"
+    server: "185.24.151.84"
     port: 443
     uuid: "ef5f6054-61c7-4ce8-a35b-dbcec449f242"
     udp: true
@@ -73,20 +73,9 @@ proxies:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇮🇷_5"
+  - name: "🇮🇷_4"
     type: vless
-    server: "45.131.4.115"
-    port: 80
-    uuid: "74ed78f1-4095-47e6-b043-094e494fb7e5"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sVnT0vhrV7WAl52Z"
-      headers:
-        Host: "worker3.gisenoj224.workers.dev"
-  - name: "🇮🇷_6"
-    type: vless
-    server: "185.24.151.109"
+    server: "185.24.151.83"
     port: 443
     uuid: "ef5f6054-61c7-4ce8-a35b-dbcec449f242"
     udp: true
@@ -140,9 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -152,9 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -164,9 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -175,9 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -187,17 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
 rules:
   - MATCH,PROXY-BEST
