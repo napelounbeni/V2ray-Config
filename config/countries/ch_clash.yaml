@@ -78,6 +78,34 @@ proxies:
       short-id: "a1b2c3d4"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
+    type: vless
+    server: "ch-1.kihsuyhf8jkiugsxb.cfd"
+    port: 443
+    uuid: "0dc1fc26-b8e9-4296-9870-0996de3c2333"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ch-1.kihsuyhf8jkiugsxb.cfd"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bnUUlOHnKSj_dwJQP-zMTTVjJ9IierDOleYNKA_kpn4"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_3"
+    type: vless
+    server: "194.154.29.149"
+    port: 443
+    uuid: "0dc1fc26-b8e9-4296-9870-0996de3c2333"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ch-1.kihsuyhf8jkiugsxb.cfd"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bnUUlOHnKSj_dwJQP-zMTTVjJ9IierDOleYNKA_kpn4"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇭_4"
     type: trojan
     server: "91.245.225.79"
     port: 2053
@@ -106,6 +134,8 @@ proxy-groups:
     proxies:
       - "🇨🇭_1"
       - "🇨🇭_2"
+      - "🇨🇭_3"
+      - "🇨🇭_4"
 
 
 rules:

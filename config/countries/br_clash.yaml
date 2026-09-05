@@ -77,6 +77,32 @@ proxies:
       path: "/api/connect"
       headers:
         Host: "wstg.datasynctrue.online"
+  - name: "🇧🇷_2"
+    type: vless
+    server: "109.104.155.119"
+    port: 443
+    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "br.monkora.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+  - name: "🇧🇷_3"
+    type: vless
+    server: "br.monkora.org"
+    port: 443
+    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "br.monkora.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +118,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇷_1"
+      - "🇧🇷_2"
+      - "🇧🇷_3"
 
 
 rules:

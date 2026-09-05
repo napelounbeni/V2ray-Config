@@ -65,32 +65,36 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "152.53.114.186"
-    port: 443
-    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
+    server: "159.195.244.171"
+    port: 2054
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "as.tunnelx.space"
+    servername: "www.ibm.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
-      short-id: "4e9b0c2d1a3f5768"
-    flow: "xtls-rprx-vision"
+      public-key: "0-HIOsSIQTrTYc5PdFT0OSKGBiBUiGrJzgV6ctal8Fg"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
   - name: "🇦🇹_2"
     type: vless
-    server: "152.53.1.40"
-    port: 443
-    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
+    server: "159.195.244.37"
+    port: 2054
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at.quattro-tech.ru"
-    client-fingerprint: "qq"
+    servername: "www.ibm.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-      short-id: "43dcff53849b81e6"
-    flow: "xtls-rprx-vision"
+      public-key: "l6_Nvc_H8uxGpNI3j3MxqlRoPBs313ENeVM4K3uP9BQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
   - name: "🇦🇹_3"
     type: vless
     server: "141.227.164.161"
@@ -106,6 +110,62 @@ proxies:
       short-id: ""
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
+    type: vless
+    server: "152.53.114.186"
+    port: 443
+    uuid: "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "as.tunnelx.space"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA"
+      short-id: "4e9b0c2d1a3f5768"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_5"
+    type: vless
+    server: "152.53.1.40"
+    port: 443
+    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at.quattro-tech.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+      short-id: "43dcff53849b81e6"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_6"
+    type: vless
+    server: "87.251.69.114"
+    port: 443
+    uuid: "cf80b5fc-c445-0008-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at.monkeyisland.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
+      short-id: "ecca56e9a9963ed7"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_7"
+    type: vless
+    server: "147.45.41.193"
+    port: 8443
+    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amazon.de"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "17riEzmqVZyqgLiJkEITsiJc0NcXDfPq6RzQJmH830c"
+      short-id: "ef01859eafef126d"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_8"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -136,6 +196,10 @@ proxy-groups:
       - "🇦🇹_2"
       - "🇦🇹_3"
       - "🇦🇹_4"
+      - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
 
 rules:

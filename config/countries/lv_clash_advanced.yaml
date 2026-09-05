@@ -59,23 +59,23 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_6"
+  - name: "🇱🇻_9"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2053
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "vk.ru"
-    client-fingerprint: "firefox"
+    client-fingerprint: "edge"
     reality-opts:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_7"
+  - name: "🇱🇻_10"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
@@ -86,7 +86,16 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇻_8"
+  - name: "🇱🇻_11"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇱🇻_12"
     type: vless
     server: "138.124.180.137"
     port: 443
@@ -100,16 +109,48 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_9"
+  - name: "🇱🇻_13"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
+    server: "85.159.228.223"
+    port: 443
+    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.monkeyisland.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
+      short-id: "ecca56e9a9963ed7"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_14"
+    type: vless
+    server: "89.36.161.222"
+    port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇻_10"
+    tls: true
+    skip-cert-verify: true
+    servername: "laoye.in-gect.fun"
+    client-fingerprint: "ios"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇱🇻_15"
+    type: vless
+    server: "89.36.161.222"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vk.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
+      short-id: "d26f4703cdd30f4e"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_16"
     type: vless
     server: "89.36.161.222"
     port: 2096
@@ -162,11 +203,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -176,11 +220,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -190,11 +237,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -203,11 +253,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -217,21 +270,27 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇻_6"
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
+      - "🇱🇻_11"
+      - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,6 +65,31 @@ dns:
 proxies:
   - name: "🇸🇨_1"
     type: vless
+    server: "45.130.125.126"
+    port: 443
+    uuid: "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
+      headers:
+        Host: "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+  - name: "🇸🇨_2"
+    type: vless
+    server: "45.130.125.207"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/http"
+      headers:
+        Host: "de.vpnbase.net"
+  - name: "🇸🇨_3"
+    type: vless
     server: "45.130.125.209"
     port: 80
     uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
@@ -74,32 +99,6 @@ proxies:
       path: "/http"
       headers:
         Host: "de.vpnbase.net"
-  - name: "🇸🇨_2"
-    type: trojan
-    server: "45.130.125.75"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇸🇨_3"
-    type: trojan
-    server: "45.130.125.76"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
   - name: "🇸🇨_4"
     type: trojan
     server: "45.130.125.160"
@@ -115,7 +114,7 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "🇸🇨_5"
     type: trojan
-    server: "45.130.125.112"
+    server: "45.130.125.76"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -124,7 +123,22 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "🇸🇨_6"
+    type: trojan
+    server: "45.130.125.75"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇸🇨_7"
     type: trojan
     server: "45.130.125.190"
     port: 443
@@ -137,6 +151,17 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇸🇨_8"
+    type: trojan
+    server: "45.130.125.112"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -157,6 +182,8 @@ proxy-groups:
       - "🇸🇨_4"
       - "🇸🇨_5"
       - "🇸🇨_6"
+      - "🇸🇨_7"
+      - "🇸🇨_8"
 
 
 rules:
