@@ -59,36 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇹_18"
+  - name: "🇮🇹_25"
     type: vless
-    server: "172.238.232.239"
-    port: 32833
-    uuid: "167ed405-7de9-4bff-b1ea-6e3d49c76b0b"
+    server: "57.131.21.102"
+    port: 8443
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.intel.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20"
-      short-id: "a0a305ccc8e94aa8"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇹_19"
+    servername: "milan.adaspoloandco.com"
+    network: ws
+    ws-opts:
+      path: "/RoBeRt"
+  - name: "🇮🇹_26"
     type: vless
-    server: "204.216.216.23"
-    port: 10086
-    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    server: "31.76.113.231"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
     udp: true
-  - name: "🇮🇹_20"
+    tls: true
+    skip-cert-verify: true
+    servername: "it.superbuba.top"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw"
+      short-id: "4fa44664f6a566d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_27"
     type: vless
-    server: "ov-italy1.09vpn.com"
+    server: "OV-Italy1.09vpn.com"
     port: 80
     uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
     udp: true
     network: ws
     ws-opts:
       path: "/vless/"
-  - name: "🇮🇹_21"
+  - name: "🇮🇹_28"
     type: vless
     server: "ov-italy1.09vpn.com"
     port: 80
@@ -99,7 +105,56 @@ proxies:
       path: "/vless/"
       headers:
         Host: "OV-Italy1.09vpn.com"
-  - name: "🇮🇹_22"
+  - name: "🇮🇹_29"
+    type: vless
+    server: "57.131.32.191"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_30"
+    type: vless
+    server: "185.213.20.133"
+    port: 443
+    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "it.monkora.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+  - name: "🇮🇹_31"
+    type: vless
+    server: "it.monkora.org"
+    port: 443
+    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "it.monkora.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+  - name: "🇮🇹_32"
+    type: vless
+    server: "31.77.201.33"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "it.superbuba.top"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw"
+      short-id: "4fa44664f6a566d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_33"
     type: vless
     server: "57.131.38.163"
     port: 2053
@@ -112,7 +167,127 @@ proxies:
     reality-opts:
       public-key: "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc"
       short-id: "5b8a942318178e7b"
-  - name: "🇮🇹_23"
+  - name: "🇮🇹_34"
+    type: vless
+    server: "OV-Italy1.09vpn.com"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_35"
+    type: vless
+    server: "31.77.154.14"
+    port: 8443
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "swscan.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇮🇹_36"
+    type: vless
+    server: "31.76.113.212"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "it.superbuba.top"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw"
+      short-id: "4fa44664f6a566d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_37"
+    type: vless
+    server: "151.241.215.109"
+    port: 443
+    uuid: "699ce9a1-abbb-4525-988e-b940381352e8"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇮🇹_38"
+    type: vless
+    server: "ov-italy1.09vpn.com"
+    port: 8443
+    uuid: "dc0d0eda-2293-4001-aa03-bd6c9431ed24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ov-italy1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "ov-italy1.09vpn.com"
+  - name: "🇮🇹_39"
+    type: vless
+    server: "172.238.232.239"
+    port: 32833
+    uuid: "167ed405-7de9-4bff-b1ea-6e3d49c76b0b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.intel.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20"
+      short-id: "a0a305ccc8e94aa8"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_40"
+    type: vless
+    server: "57.131.32.191"
+    port: 80
+    uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "OV-Italy1.09vpn.com"
+  - name: "🇮🇹_41"
+    type: vless
+    server: "it.superbuba.top"
+    port: 443
+    uuid: "d4cae7df-50a1-428c-bd62-881c8f3bbd90"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "it.superbuba.top"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw"
+      short-id: "4fa44664f6a566d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_42"
+    type: vless
+    server: "204.216.216.23"
+    port: 1114
+    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
+      short-id: "79a1e14b"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_43"
+    type: vless
+    server: "204.216.216.23"
+    port: 10086
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    udp: true
+  - name: "🇮🇹_44"
     type: vless
     server: "57.131.32.191"
     port: 8443
@@ -126,73 +301,16 @@ proxies:
       path: "/vless/"
       headers:
         Host: "ov-italy1.09vpn.com"
-  - name: "🇮🇹_24"
+  - name: "🇮🇹_45"
     type: vless
-    server: "57.131.21.102"
-    port: 8443
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: ws
-    ws-opts:
-      path: "/RoBeRt"
-  - name: "🇮🇹_25"
-    type: vless
-    server: "OV-Italy1.09vpn.com"
-    port: 80
-    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇮🇹_26"
-    type: vless
-    server: "151.241.215.109"
-    port: 443
-    uuid: "699ce9a1-abbb-4525-988e-b940381352e8"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇮🇹_27"
-    type: vless
-    server: "57.131.32.191"
+    server: "ov-italy1.09vpn.com"
     port: 80
     uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
     udp: true
     network: ws
     ws-opts:
       path: "/vless/"
-      headers:
-        Host: "OV-Italy1.09vpn.com"
-  - name: "🇮🇹_28"
-    type: vless
-    server: "158.180.231.216"
-    port: 443
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "bab-6.site"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vws/"
-      headers:
-        Host: "bab-6.site"
-  - name: "🇮🇹_29"
-    type: vless
-    server: "57.131.32.191"
-    port: 80
-    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇮🇹_30"
+  - name: "🇮🇹_46"
     type: vless
     server: "milan.adaspoloandco.com"
     port: 8443
@@ -205,41 +323,19 @@ proxies:
     network: ws
     ws-opts:
       path: "/RoBeRt"
-  - name: "🇮🇹_31"
-    type: vless
-    server: "ov-italy1.09vpn.com"
-    port: 8443
-    uuid: "dc0d0eda-2293-4001-aa03-bd6c9431ed24"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ov-italy1.09vpn.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "ov-italy1.09vpn.com"
-  - name: "🇮🇹_32"
+  - name: "🇮🇹_47"
     type: ss
     server: "57.131.48.45"
     port: 8388
     cipher: "aes-256-gcm"
     password: "itzvpn@321"
     udp: true
-  - name: "🇮🇹_33"
+  - name: "🇮🇹_48"
     type: ss
     server: "57.131.48.45"
     port: 8388
     cipher: "aes-256-gcm"
     password: "itzvpn@321"
-    udp: true
-  - name: "🇮🇹_34"
-    type: ss
-    server: "66.245.207.70"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "qMvJmCbMduKUoeHq"
     udp: true
 
 proxy-groups:
@@ -283,13 +379,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -300,6 +389,20 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
   - name: "LB-CDN"
     type: load-balance
@@ -309,13 +412,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -326,6 +422,20 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -335,13 +445,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -352,6 +455,20 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
   - name: "FAST-CDN"
     type: url-test
@@ -360,13 +477,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -377,6 +487,20 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -386,13 +510,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -403,18 +520,25 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
-      - "🇮🇹_21"
-      - "🇮🇹_22"
-      - "🇮🇹_23"
-      - "🇮🇹_24"
       - "🇮🇹_25"
       - "🇮🇹_26"
       - "🇮🇹_27"
@@ -425,6 +549,20 @@ proxy-groups:
       - "🇮🇹_32"
       - "🇮🇹_33"
       - "🇮🇹_34"
+      - "🇮🇹_35"
+      - "🇮🇹_36"
+      - "🇮🇹_37"
+      - "🇮🇹_38"
+      - "🇮🇹_39"
+      - "🇮🇹_40"
+      - "🇮🇹_41"
+      - "🇮🇹_42"
+      - "🇮🇹_43"
+      - "🇮🇹_44"
+      - "🇮🇹_45"
+      - "🇮🇹_46"
+      - "🇮🇹_47"
+      - "🇮🇹_48"
 
 rules:
   - MATCH,PROXY-BEST

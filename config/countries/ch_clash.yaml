@@ -64,20 +64,6 @@ dns:
 
 proxies:
   - name: "🇨🇭_1"
-    type: vless
-    server: "176.65.144.178"
-    port: 443
-    uuid: "1b5e85e9-fda3-4738-8ff1-1696b2bc994d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI"
-      short-id: "671047edbaa38eef"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_2"
     type: trojan
     server: "91.245.225.79"
     port: 2053
@@ -105,7 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇭_1"
-      - "🇨🇭_2"
 
 
 rules:
