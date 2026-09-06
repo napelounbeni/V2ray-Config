@@ -65,17 +65,18 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
-    server: "br.monkora.org"
+    server: "200.165.231.209"
     port: 443
-    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "br.monkora.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
-      short-id: ""
+    servername: "200.165.231.209"
+    network: ws
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
 
 proxy-groups:
   - name: "PROXY"

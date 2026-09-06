@@ -59,46 +59,38 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_4"
+  - name: "🇺🇦_3"
     type: vless
-    server: "45.135.235.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    server: "91.224.87.22"
+    port: 9873
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇺🇦_5"
-    type: vless
-    server: "78.159.240.41"
-    port: 443
-    uuid: "39d927a4-b8c7-4dc7-91f1-8b2e05d8b6b6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "id.vk.com"
-    client-fingerprint: "chrome"
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: ""
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabb"
     network: grpc
     grpc-opts:
-      grpc-service-name: "vless-grpc-reality"
-  - name: "🇺🇦_6"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "91.224.86.107"
+    port: 9830
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabbccdd"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +133,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +144,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +155,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +165,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +176,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇺🇦_3"
       - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
 
 rules:
   - MATCH,PROXY-BEST

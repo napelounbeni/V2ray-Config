@@ -65,15 +65,22 @@ dns:
 proxies:
   - name: "🇮🇪_1"
     type: vless
-    server: "86.54.83.75"
+    server: "50.7.5.163"
     port: 443
-    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ie.easyemploy.org"
+    servername: "ir-viper.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇪_2"
+    type: ss
+    server: "52.236.93.60"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "gMvuOJ2BhtjWmjjX"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +96,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇪_1"
+      - "🇮🇪_2"
 
 
 rules:

@@ -65,32 +65,18 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "85.159.228.223"
-    port: 443
-    uuid: "cf80b5fc-c445-4373-87e6-f8a22ad10d81"
+    server: "89.36.161.222"
+    port: 2083
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "lv.monkeyisland.xyz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4"
-      short-id: "ecca56e9a9963ed7"
-    flow: "xtls-rprx-vision"
+    servername: "laoye.in-gect.fun"
+    client-fingerprint: "ios"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "🇱🇻_2"
-    type: vless
-    server: "188.130.206.93"
-    port: 443
-    uuid: "4376bba6-f54c-4e1f-a4c6-6e0be6d49042"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8.ymx0516.kdns.fr"
-    client-fingerprint: "edge"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇱🇻_3"
     type: vless
     server: "138.124.180.137"
     port: 443
@@ -104,7 +90,7 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_4"
+  - name: "🇱🇻_3"
     type: vless
     server: "89.36.161.222"
     port: 2096
@@ -115,7 +101,7 @@ proxies:
       path: "/"
       headers:
         Host: "laoye.in-gect.fun"
-  - name: "🇱🇻_5"
+  - name: "🇱🇻_4"
     type: vless
     server: "89.36.161.222"
     port: 2053
@@ -129,9 +115,9 @@ proxies:
       public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
       short-id: "d26f4703cdd30f4e"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_6"
+  - name: "🇱🇻_5"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
@@ -142,6 +128,34 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
+  - name: "🇱🇻_6"
+    type: vless
+    server: "31.76.62.250"
+    port: 443
+    uuid: "14409b0c-2091-4bc7-9845-2485a31ac38a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "latin.roastedtoad.best"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_7"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2053
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vk.ru"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
+      short-id: "d26f4703cdd30f4e"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -162,6 +176,7 @@ proxy-groups:
       - "🇱🇻_4"
       - "🇱🇻_5"
       - "🇱🇻_6"
+      - "🇱🇻_7"
 
 
 rules:
