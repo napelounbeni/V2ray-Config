@@ -78,17 +78,17 @@ proxies:
       short-id: "c0cb7457deebbc70"
   - name: "🇮🇳_2"
     type: vless
-    server: "5.253.42.163"
+    server: "5.253.30.99"
     port: 40443
-    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
+    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "deepl.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
-      short-id: "84fc"
+      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
+      short-id: "88b6"
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_3"
     type: vless
@@ -106,31 +106,42 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_4"
     type: vless
-    server: "5.253.30.99"
+    server: "preview.netraidly.ru"
     port: 40443
-    uuid: "511c1563-2cb6-4064-abc6-a59ee49818a8"
+    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "deepl.com"
     client-fingerprint: "qq"
     reality-opts:
-      public-key: "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0"
-      short-id: "88b6"
+      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
+      short-id: "84fc"
     flow: "xtls-rprx-vision"
   - name: "🇮🇳_5"
     type: vless
-    server: "148.113.5.44"
-    port: 443
-    uuid: "72ea5a91-ffcc-43d2-9297-5993c3abf186"
+    server: "108.165.152.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
+  - name: "🇮🇳_6"
+    type: vless
+    server: "5.253.42.163"
+    port: 40443
+    uuid: "15fd22d1-8931-4d41-af37-8ba6711e93fe"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI"
-      short-id: "221873918e0bb74d"
+      public-key: "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo"
+      short-id: "84fc"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -151,6 +162,7 @@ proxy-groups:
       - "🇮🇳_3"
       - "🇮🇳_4"
       - "🇮🇳_5"
+      - "🇮🇳_6"
 
 
 rules:

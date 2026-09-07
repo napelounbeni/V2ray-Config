@@ -61,20 +61,6 @@ dns:
 proxies:
   - name: "🇬🇷_4"
     type: vless
-    server: "gr.freeinternat.com"
-    port: 443
-    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "gr.freeinternat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
-      short-id: "ff776ff77be48b88"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_5"
-    type: vless
     server: "185.126.238.87"
     port: 2083
     uuid: "7668f678-faee-40cc-9b56-9c39dc773388"
@@ -82,7 +68,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_6"
+  - name: "🇬🇷_5"
     type: vless
     server: "85.90.197.91"
     port: 443
@@ -91,7 +77,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "gr.freeinternat.com"
-    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_6"
+    type: vless
+    server: "gr.freeinternat.com"
+    port: 443
+    uuid: "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "gr.freeinternat.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
       short-id: "ff776ff77be48b88"

@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
-    server: "78.159.247.123"
-    port: 7444
-    uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "akamai.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_2"
-    type: vless
     server: "45.129.142.41"
     port: 49325
     uuid: "68f7465d-6edb-4317-a1a9-ffe87e3a7c38"
@@ -91,21 +77,7 @@ proxies:
       public-key: "T0RmoxSgAtx71kYW_ENHcU1cMHXpz0IzFJYHOn9WZm8"
       short-id: "886921b120b2"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_3"
-    type: vless
-    server: "89.125.106.143"
-    port: 443
-    uuid: "940b0046-36ba-47b9-ba79-2955970361c8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "cAqxuzYKmOgXZNjQGLwPHxp6VTELCWsydmmZAXNodSA"
-      short-id: "00"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_2"
     type: vless
     server: "78.159.247.166"
     port: 7444
@@ -114,18 +86,33 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "akamai.com"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_5"
+  - name: "🇨🇿_3"
+    type: vless
+    server: "78.159.247.123"
+    port: 7444
+    uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "akamai.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_4"
     type: ss
     server: "45.129.142.41"
     port: 47425
     cipher: "chacha20-ietf-poly1305"
     password: "lIoNSMeYLX8QGHnOp0DTBR0W91/CHVDEjPqjMDuYcdQ="
     udp: true
-  - name: "🇨🇿_6"
+  - name: "🇨🇿_5"
     type: ss
     server: "45.129.142.41"
     port: 47425
@@ -151,7 +138,6 @@ proxy-groups:
       - "🇨🇿_3"
       - "🇨🇿_4"
       - "🇨🇿_5"
-      - "🇨🇿_6"
 
 
 rules:

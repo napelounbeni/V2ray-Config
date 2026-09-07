@@ -59,7 +59,79 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇪_12"
+  - name: "🇪🇪_14"
+    type: vless
+    server: "45.80.110.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime51.workers.dev"
+  - name: "🇪🇪_15"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "edge"
+  - name: "🇪🇪_16"
+    type: vless
+    server: "estproxy3.lockdwn.com"
+    port: 8443
+    uuid: "9d9e3421-5652-4804-85ba-238355b948ab"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy3.lockdwn.com"
+    client-fingerprint: "chrome"
+  - name: "🇪🇪_17"
+    type: vless
+    server: "94.183.170.135"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_18"
+    type: vless
+    server: "94.183.170.248"
+    port: 443
+    uuid: "9d9e3421-5652-4804-85ba-238355b948ab"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇪🇪_19"
+    type: vless
+    server: "94.183.170.135"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_20"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_21"
     type: vless
     server: "95.85.224.51"
     port: 443
@@ -73,36 +145,20 @@ proxies:
       public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
       short-id: "a696de84963656de"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_13"
+  - name: "🇪🇪_22"
     type: vless
-    server: "94.183.170.135"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    server: "ee2x.cdn-global.pro"
+    port: 443
+    uuid: "3fc35b21-0530-4fa8-9937-f8b83ab93958"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "firefox"
-  - name: "🇪🇪_14"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
+    servername: "ee2x.cdn-global.pro"
     client-fingerprint: "edge"
-  - name: "🇪🇪_15"
-    type: vless
-    server: "94.183.170.248"
-    port: 443
-    uuid: "9d9e3421-5652-4804-85ba-238355b948ab"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇪🇪_16"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "content.v1.Feed"
+  - name: "🇪🇪_23"
     type: vless
     server: "94.183.170.248"
     port: 8443
@@ -111,49 +167,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "estproxy3.lockdwn.com"
-    client-fingerprint: "chrome"
-  - name: "🇪🇪_17"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_24"
     type: vless
-    server: "estproxy3.lockdwn.com"
-    port: 8443
-    uuid: "9d9e3421-5652-4804-85ba-238355b948ab"
+    server: "45.80.108.236"
+    port: 443
+    uuid: "ef9d2063-0140-472b-8b17-ba02ba4b4435"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "estproxy3.lockdwn.com"
+    servername: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
     client-fingerprint: "chrome"
-  - name: "🇪🇪_18"
-    type: vless
-    server: "estproxy3.lockdwn.com"
-    port: 443
-    uuid: "9d9e3421-5652-4804-85ba-238355b948ab"
-    udp: true
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇪🇪_19"
-    type: vless
-    server: "94.183.170.135"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
+      path: "/proxyip=167.71.48.187"
       headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_20"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_21"
+        Host: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
+  - name: "🇪🇪_25"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -161,7 +191,7 @@ proxies:
     sni: "russiapower.accesscam.org"
     skip-cert-verify: true
     udp: true
-  - name: "🇪🇪_22"
+  - name: "🇪🇪_26"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -216,8 +246,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -227,6 +255,10 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -236,8 +268,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -247,6 +277,10 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -256,8 +290,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -267,6 +299,10 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -275,8 +311,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -286,6 +320,10 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -295,8 +333,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -306,13 +342,15 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇪🇪_12"
-      - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
       - "🇪🇪_16"
@@ -322,6 +360,10 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
+      - "🇪🇪_23"
+      - "🇪🇪_24"
+      - "🇪🇪_25"
+      - "🇪🇪_26"
 
 rules:
   - MATCH,PROXY-BEST
