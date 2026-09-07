@@ -65,7 +65,7 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
-    server: "88.119.176.24"
+    server: "lit9.helper-internet.com"
     port: 443
     uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
     udp: true
@@ -79,7 +79,7 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_2"
     type: vless
-    server: "lit9.helper-internet.com"
+    server: "88.119.176.24"
     port: 443
     uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
     udp: true
@@ -92,19 +92,6 @@ proxies:
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_3"
-    type: trojan
-    server: "195.181.244.216"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇱🇹_4"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -128,7 +115,6 @@ proxy-groups:
       - "🇱🇹_1"
       - "🇱🇹_2"
       - "🇱🇹_3"
-      - "🇱🇹_4"
 
 
 rules:
