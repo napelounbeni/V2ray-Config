@@ -61,15 +61,18 @@ dns:
 proxies:
   - name: "🇵🇹_2"
     type: vless
-    server: "156.243.83.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "171.22.129.141"
+    port: 443
+    uuid: "7a97f64d-5fc7-4011-9028-58d2ba751595"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime54.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "defaultenginedimly.rivetpress.me"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg"
+      short-id: "7505bfa3b6b933e6"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "2.56.124.241"
+    port: 443
+    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
+      short-id: "72104d27a0f5f62e"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "88.119.176.24"
     port: 443
     uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
@@ -76,31 +90,7 @@ proxies:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
-    type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
   - name: "🇱🇹_3"
-    type: trojan
-    server: "195.181.244.216"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇱🇹_4"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -124,7 +114,6 @@ proxy-groups:
       - "🇱🇹_1"
       - "🇱🇹_2"
       - "🇱🇹_3"
-      - "🇱🇹_4"
 
 
 rules:

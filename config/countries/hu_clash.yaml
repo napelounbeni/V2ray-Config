@@ -64,28 +64,6 @@ dns:
 
 proxies:
   - name: "🇭🇺_1"
-    type: vless
-    server: "45.9.168.17"
-    port: 443
-    uuid: "5d4a87fa-16f1-4b65-b217-225a31e36239"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hu.convert-flow.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇺_2"
-    type: trojan
-    server: "hu2.vpnjantit.com"
-    port: 4443
-    password: "C0ldyfh-vpnjantit.com"
-    sni: "hu2.vpnjantit.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇺_3"
     type: trojan
     server: "46.29.142.57"
     port: 4443
@@ -93,7 +71,7 @@ proxies:
     sni: "hu2.vpnjantit.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇺_4"
+  - name: "🇭🇺_2"
     type: trojan
     server: "185.225.68.232"
     port: 443
@@ -122,8 +100,6 @@ proxy-groups:
     proxies:
       - "🇭🇺_1"
       - "🇭🇺_2"
-      - "🇭🇺_3"
-      - "🇭🇺_4"
 
 
 rules:

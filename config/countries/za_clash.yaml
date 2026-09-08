@@ -64,19 +64,12 @@ dns:
 
 proxies:
   - name: "🇿🇦_1"
-    type: vless
-    server: "102.211.56.29"
+    type: ss
+    server: "102.37.156.224"
     port: 443
-    uuid: "5d4a87fa-16f1-4b65-b217-225a31e36239"
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "za.convert-flow.net"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
-    flow: "xtls-rprx-vision"
   - name: "🇿🇦_2"
     type: ss
     server: "102.37.156.224"
@@ -86,17 +79,17 @@ proxies:
     udp: true
   - name: "🇿🇦_3"
     type: ss
-    server: "102.37.156.224"
-    port: 443
+    server: "102.133.165.160"
+    port: 16233
     cipher: "chacha20-ietf-poly1305"
-    password: "aduB9HGxQHjA2SBMRjkHX6"
+    password: "Xsy8Ox4yOV3xLlpxtjzs3X"
     udp: true
   - name: "🇿🇦_4"
     type: ss
-    server: "139.84.247.164"
-    port: 8388
+    server: "20.164.211.25"
+    port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "tfAcRikawhNoZAhu"
+    password: "BhYMkBpjAjE6ixSw"
     udp: true
   - name: "🇿🇦_5"
     type: ss
@@ -104,13 +97,6 @@ proxies:
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "BhYMkBpjAjE6ixSw"
-    udp: true
-  - name: "🇿🇦_6"
-    type: ss
-    server: "102.133.165.160"
-    port: 16233
-    cipher: "chacha20-ietf-poly1305"
-    password: "Xsy8Ox4yOV3xLlpxtjzs3X"
     udp: true
 
 proxy-groups:
@@ -131,7 +117,6 @@ proxy-groups:
       - "🇿🇦_3"
       - "🇿🇦_4"
       - "🇿🇦_5"
-      - "🇿🇦_6"
 
 
 rules:

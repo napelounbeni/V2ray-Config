@@ -62,6 +62,17 @@ proxies:
   - name: "🇱🇻_6"
     type: vless
     server: "89.36.161.222"
+    port: 2096
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
+  - name: "🇱🇻_7"
+    type: vless
+    server: "89.36.161.222"
     port: 2083
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
@@ -72,31 +83,15 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇱🇻_7"
-    type: vless
-    server: "laoye.in-gect.fun"
-    port: 2053
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.ru"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg"
-      short-id: "d26f4703cdd30f4e"
-    flow: "xtls-rprx-vision"
   - name: "🇱🇻_8"
     type: vless
-    server: "89.36.161.222"
+    server: "laoye.in-gect.fun"
     port: 2096
     uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
   - name: "🇱🇻_9"
     type: vless
     server: "138.124.180.137"

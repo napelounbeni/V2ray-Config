@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇪_10"
+  - name: "🇸🇪_7"
+    type: vless
+    server: "213.21.250.193"
+    port: 443
+    uuid: "476d23b8-ab0e-4297-aebf-2c373f7538f0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "api.sream-rutube.shop"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "fn0RLpDpJr5BJvYeX8W7OgGYoW4nARJ6jZg-sWIAozA"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_8"
     type: vless
     server: "79.141.174.147"
     port: 33743
@@ -68,30 +82,14 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.google.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
       short-id: ""
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇸🇪_11"
-    type: vless
-    server: "31.77.111.11"
-    port: 43439
-    uuid: "428e923f-e608-412b-9e51-3b09ffab551f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn.higames.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
-      short-id: "39ad36226f3abec8"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "streaming"
-  - name: "🇸🇪_12"
+  - name: "🇸🇪_9"
     type: vless
     server: "167.104.104.138"
     port: 8443
@@ -104,7 +102,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇸🇪_13"
+  - name: "🇸🇪_10"
     type: vless
     server: "95.85.241.209"
     port: 443
@@ -118,7 +116,7 @@ proxies:
       public-key: "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_14"
+  - name: "🇸🇪_11"
     type: vless
     server: "193.148.59.178"
     port: 443
@@ -132,7 +130,7 @@ proxies:
       public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
       short-id: "e3daad69"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_15"
+  - name: "🇸🇪_12"
     type: vless
     server: "193.42.39.10"
     port: 33743
@@ -148,47 +146,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇸🇪_16"
-    type: vless
-    server: "5.157.10.146"
-    port: 443
-    uuid: "732255eb-8ce9-4cd5-8bdc-376bd3fa0b11"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sweb1.loozerp.wiki"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
-      short-id: "fb442438e2223836"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_17"
-    type: vless
-    server: "84.238.133.188"
-    port: 443
-    uuid: "02f3a6a2-289e-4026-8e26-616d47e0914f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "swegen.gaawg.buzz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
-      short-id: "6aa2d2e950441a9a"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_18"
-    type: trojan
-    server: "77.221.138.199"
-    port: 8443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -231,15 +188,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -249,15 +203,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -267,15 +218,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -284,15 +232,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -302,29 +247,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇸🇪_7"
+      - "🇸🇪_8"
+      - "🇸🇪_9"
       - "🇸🇪_10"
       - "🇸🇪_11"
       - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
-      - "🇸🇪_17"
-      - "🇸🇪_18"
 
 rules:
   - MATCH,PROXY-BEST
