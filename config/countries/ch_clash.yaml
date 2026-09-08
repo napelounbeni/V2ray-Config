@@ -64,21 +64,6 @@ dns:
 
 proxies:
   - name: "🇨🇭_1"
-    type: vless
-    server: "84.234.16.169"
-    port: 443
-    uuid: "56cba26b-efcb-40d0-838a-d66df2dd516f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.868001.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip=tw.william.us.ci?uuid=82bc2875-3fee-49d1-ab29-e108a7b1e5f9"
-      headers:
-        Host: "sni.868001.xyz"
-  - name: "🇨🇭_2"
     type: trojan
     server: "91.245.225.79"
     port: 2053
@@ -106,7 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇭_1"
-      - "🇨🇭_2"
 
 
 rules:

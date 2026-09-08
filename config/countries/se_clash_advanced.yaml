@@ -77,6 +77,63 @@ proxies:
       grpc-service-name: "TunService"
   - name: "🇸🇪_11"
     type: vless
+    server: "31.77.111.11"
+    port: 43439
+    uuid: "428e923f-e608-412b-9e51-3b09ffab551f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn.higames.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
+      short-id: "39ad36226f3abec8"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "streaming"
+  - name: "🇸🇪_12"
+    type: vless
+    server: "167.104.104.138"
+    port: 8443
+    uuid: "a5194487-9b9a-462f-a047-ac7580d80201"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n.tmkkarss.online"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇪_13"
+    type: vless
+    server: "95.85.241.209"
+    port: 443
+    uuid: "14f4be39-cb89-4f2b-8200-704666b6fa4e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_14"
+    type: vless
+    server: "193.148.59.178"
+    port: 443
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_15"
+    type: vless
     server: "193.42.39.10"
     port: 33743
     uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
@@ -91,60 +148,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇸🇪_12"
-    type: vless
-    server: "eu-central-pl-1.hanvpn.biz"
-    port: 443
-    uuid: "d9d0f208-d582-41d5-bb7b-742671402810"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-central-pl-1.hanvpn.biz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY"
-      short-id: "12e3b7681806bc97"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_13"
-    type: vless
-    server: "45.80.230.2"
-    port: 443
-    uuid: "56cba26b-efcb-40d0-838a-d66df2dd516f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.868001.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_14"
-    type: vless
-    server: "eu-north-sw-1.hanvpn.biz"
-    port: 443
-    uuid: "d9d0f208-d582-41d5-bb7b-742671402810"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eu-north-sw-1.hanvpn.biz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ELFdNdI6NYwuEq5OqCkYwnUInHvIpsUhd4z2ud7pOCM"
-      short-id: "0172b7681806bc97"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_15"
-    type: vless
-    server: "167.104.104.138"
-    port: 8443
-    uuid: "a5194487-9b9a-462f-a047-ac7580d80201"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n.tmkkarss.online"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
   - name: "🇸🇪_16"
     type: vless
     server: "5.157.10.146"
@@ -154,41 +157,38 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "sweb1.loozerp.wiki"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
       short-id: "fb442438e2223836"
     flow: "xtls-rprx-vision"
   - name: "🇸🇪_17"
     type: vless
-    server: "193.148.59.178"
+    server: "84.238.133.188"
     port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
+    uuid: "02f3a6a2-289e-4026-8e26-616d47e0914f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_18"
-    type: vless
-    server: "serr-arnrr-2.blook.network"
-    port: 443
-    uuid: "93fa1107-b1b4-4a45-b4e7-890f7dbac7b3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "serr-arnrr-2.blook.network"
+    servername: "swegen.gaawg.buzz"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "2neBenQDielZoPvaNGMsjWEHOqHRKvSEw0e1NapEmAw"
-      short-id: "5227"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "6aa2d2e950441a9a"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_18"
+    type: trojan
+    server: "77.221.138.199"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

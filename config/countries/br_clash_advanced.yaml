@@ -61,20 +61,6 @@ dns:
 proxies:
   - name: "🇧🇷_3"
     type: vless
-    server: "200.165.231.209"
-    port: 443
-    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "200.165.231.209"
-    network: ws
-    ws-opts:
-      path: "/api/connect"
-      headers:
-        Host: "wstg.datasynctrue.online"
-  - name: "🇧🇷_4"
-    type: vless
     server: "200.165.229.159"
     port: 443
     uuid: "3db8407b-1f96-4b82-bfeb-55258c1e57b4"
@@ -87,6 +73,20 @@ proxies:
       public-key: "HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU"
       short-id: "1067b23f928e7618"
     flow: "xtls-rprx-vision"
+  - name: "🇧🇷_4"
+    type: vless
+    server: "200.165.231.209"
+    port: 443
+    uuid: "ff0b6ba8-bed0-4c4d-bbc9-23af47582615"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "200.165.231.209"
+    network: ws
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "wstg.datasynctrue.online"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

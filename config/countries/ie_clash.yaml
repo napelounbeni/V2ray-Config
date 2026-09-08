@@ -75,33 +75,16 @@ proxies:
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_2"
-    type: ss
-    server: "52.236.93.60"
+    type: trojan
+    server: "54.216.143.197"
     port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "XkY1sUEcHG6B3jTw"
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_3"
-    type: ss
-    server: "52.236.93.60"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "OrkF5D95cuM97Dly"
-    udp: true
-  - name: "🇮🇪_4"
-    type: ss
-    server: "52.236.93.60"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "nIAlNYXDZ4zN5jaP"
-    udp: true
-  - name: "🇮🇪_5"
-    type: ss
-    server: "52.236.93.60"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "XkY1sUEcHG6B3jTw"
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -118,9 +101,6 @@ proxy-groups:
     proxies:
       - "🇮🇪_1"
       - "🇮🇪_2"
-      - "🇮🇪_3"
-      - "🇮🇪_4"
-      - "🇮🇪_5"
 
 
 rules:
