@@ -65,18 +65,19 @@ dns:
 proxies:
   - name: "🇸🇪_1"
     type: vless
-    server: "213.21.250.193"
+    server: "202.155.11.249"
     port: 443
-    uuid: "476d23b8-ab0e-4297-aebf-2c373f7538f0"
+    uuid: "0a2dde28-70da-4863-a06f-35d007d94d35"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "api.sream-rutube.shop"
+    servername: "cf2.rumedia-cdn.com"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "fn0RLpDpJr5BJvYeX8W7OgGYoW4nARJ6jZg-sWIAozA"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/cdn/v3/live"
+      headers:
+        Host: "cf2.rumedia-cdn.com"
   - name: "🇸🇪_2"
     type: vless
     server: "79.141.174.147"
@@ -108,20 +109,6 @@ proxies:
       path: "/"
   - name: "🇸🇪_4"
     type: vless
-    server: "95.85.241.209"
-    port: 443
-    uuid: "14f4be39-cb89-4f2b-8200-704666b6fa4e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_5"
-    type: vless
     server: "193.148.59.178"
     port: 443
     uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
@@ -134,7 +121,37 @@ proxies:
       public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
       short-id: "e3daad69"
     flow: "xtls-rprx-vision"
+  - name: "🇸🇪_5"
+    type: vless
+    server: "213.21.250.193"
+    port: 443
+    uuid: "476d23b8-ab0e-4297-aebf-2c373f7538f0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "api.sream-rutube.shop"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "fn0RLpDpJr5BJvYeX8W7OgGYoW4nARJ6jZg-sWIAozA"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_6"
+    type: vless
+    server: "31.77.111.11"
+    port: 43439
+    uuid: "428e923f-e608-412b-9e51-3b09ffab551f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn.higames.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
+      short-id: "39ad36226f3abec8"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "streaming"
+  - name: "🇸🇪_7"
     type: vless
     server: "193.42.39.10"
     port: 33743
@@ -150,6 +167,19 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
+  - name: "🇸🇪_8"
+    type: trojan
+    server: "77.221.138.199"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -170,6 +200,8 @@ proxy-groups:
       - "🇸🇪_4"
       - "🇸🇪_5"
       - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
 
 
 rules:

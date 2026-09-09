@@ -79,13 +79,13 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_2"
     type: vless
-    server: "50.7.37.154"
+    server: "50.7.36.26"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at1.moritech.net"
+    servername: "at2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_3"
@@ -101,15 +101,28 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
     type: vless
-    server: "50.7.36.26"
+    server: "50.7.37.154"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at2.moritech.net"
+    servername: "at1.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇹_5"
+    type: trojan
+    server: "212.183.88.136"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -128,6 +141,7 @@ proxy-groups:
       - "🇦🇹_2"
       - "🇦🇹_3"
       - "🇦🇹_4"
+      - "🇦🇹_5"
 
 
 rules:

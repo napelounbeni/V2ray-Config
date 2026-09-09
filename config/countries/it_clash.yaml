@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇮🇹_1"
     type: vless
-    server: "204.216.216.23"
-    port: 1114
-    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
-      short-id: "79a1e14b"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇹_2"
-    type: vless
     server: "158.180.231.216"
     port: 443
     uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
@@ -92,7 +78,137 @@ proxies:
       path: "/vws/"
       headers:
         Host: "bab-6.site"
+  - name: "🇮🇹_2"
+    type: vless
+    server: "57.131.32.191"
+    port: 80
+    uuid: "b3051b10-716d-455b-9811-aefcce3d633e"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
   - name: "🇮🇹_3"
+    type: vless
+    server: "2.56.121.43"
+    port: 443
+    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ikea.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM"
+      short-id: "86229a5e3b1e6ef4"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_4"
+    type: vless
+    server: "204.216.216.23"
+    port: 1114
+    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
+      short-id: "79a1e14b"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_5"
+    type: vless
+    server: "milan.adaspoloandco.com"
+    port: 8443
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: ws
+    ws-opts:
+      path: "/RoBeRt"
+  - name: "🇮🇹_6"
+    type: vless
+    server: "OV-Italy1.09vpn.com"
+    port: 80
+    uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_7"
+    type: vless
+    server: "31.77.154.14"
+    port: 8443
+    uuid: "75079a7f-75b5-418b-8a65-f7b2f438cd4a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "swscan.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇮🇹_8"
+    type: vless
+    server: "ov-italy1.09vpn.com"
+    port: 80
+    uuid: "b3051b10-716d-455b-9811-aefcce3d633e"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_9"
+    type: vless
+    server: "57.131.32.191"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "ov-italy1.09vpn.com"
+  - name: "🇮🇹_10"
+    type: vless
+    server: "OV-Italy1.09vpn.com"
+    port: 80
+    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇮🇹_11"
+    type: vless
+    server: "57.131.21.102"
+    port: 8443
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: ws
+    ws-opts:
+      path: "/RoBeRt"
+  - name: "🇮🇹_12"
+    type: vless
+    server: "57.131.32.191"
+    port: 8443
+    uuid: "dc0d0eda-2293-4001-aa03-bd6c9431ed24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ov-italy1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "ov-italy1.09vpn.com"
+  - name: "🇮🇹_13"
     type: vless
     server: "57.131.38.163"
     port: 2053
@@ -105,7 +221,7 @@ proxies:
     reality-opts:
       public-key: "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc"
       short-id: "5b8a942318178e7b"
-  - name: "🇮🇹_4"
+  - name: "🇮🇹_14"
     type: vless
     server: "172.238.232.239"
     port: 32833
@@ -119,9 +235,15 @@ proxies:
       public-key: "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20"
       short-id: "a0a305ccc8e94aa8"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇹_5"
+  - name: "🇮🇹_15"
     type: vless
-    server: "57.131.32.191"
+    server: "204.216.216.23"
+    port: 10086
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    udp: true
+  - name: "🇮🇹_16"
+    type: vless
+    server: "ov-italy1.09vpn.com"
     port: 8443
     uuid: "dc0d0eda-2293-4001-aa03-bd6c9431ed24"
     udp: true
@@ -133,16 +255,7 @@ proxies:
       path: "/vless/"
       headers:
         Host: "ov-italy1.09vpn.com"
-  - name: "🇮🇹_6"
-    type: vless
-    server: "ov-italy1.09vpn.com"
-    port: 80
-    uuid: "1e280316-0408-47c4-b058-05b8f1f17f02"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇮🇹_7"
+  - name: "🇮🇹_17"
     type: vless
     server: "57.131.32.191"
     port: 80
@@ -153,67 +266,28 @@ proxies:
       path: "/vless/"
       headers:
         Host: "OV-Italy1.09vpn.com"
-  - name: "🇮🇹_8"
-    type: vless
-    server: "57.131.21.102"
-    port: 8443
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: ws
-    ws-opts:
-      path: "/RoBeRt"
-  - name: "🇮🇹_9"
-    type: vless
-    server: "204.216.216.23"
-    port: 10086
-    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
-    udp: true
-  - name: "🇮🇹_10"
-    type: vless
-    server: "57.131.32.191"
-    port: 80
-    uuid: "b3051b10-716d-455b-9811-aefcce3d633e"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇮🇹_11"
-    type: vless
-    server: "57.131.32.191"
-    port: 80
-    uuid: "049e56d8-0ba0-49e3-b764-ee04122b9f00"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "ov-italy1.09vpn.com"
-  - name: "🇮🇹_12"
-    type: vless
-    server: "ov-italy1.09vpn.com"
-    port: 8443
-    uuid: "dc0d0eda-2293-4001-aa03-bd6c9431ed24"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ov-italy1.09vpn.com"
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "ov-italy1.09vpn.com"
-  - name: "🇮🇹_13"
+  - name: "🇮🇹_18"
     type: ss
     server: "57.131.48.45"
     port: 8388
     cipher: "aes-256-gcm"
     password: "itzvpn@321"
     udp: true
-  - name: "🇮🇹_14"
+  - name: "🇮🇹_19"
+    type: ss
+    server: "66.245.207.70"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "qMvJmCbMduKUoeHq"
+    udp: true
+  - name: "🇮🇹_20"
+    type: ss
+    server: "66.245.207.70"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "qMvJmCbMduKUoeHq"
+    udp: true
+  - name: "🇮🇹_21"
     type: ss
     server: "57.131.48.45"
     port: 8388
@@ -248,6 +322,13 @@ proxy-groups:
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
+      - "🇮🇹_15"
+      - "🇮🇹_16"
+      - "🇮🇹_17"
+      - "🇮🇹_18"
+      - "🇮🇹_19"
+      - "🇮🇹_20"
+      - "🇮🇹_21"
 
 
 rules:

@@ -63,20 +63,33 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇵🇹_1"
+  - name: "🇨🇭_1"
     type: vless
-    server: "171.22.129.141"
+    server: "45.90.59.15"
     port: 443
-    uuid: "7a97f64d-5fc7-4011-9028-58d2ba751595"
+    uuid: "3950b45e-740d-4dca-ac95-505ec8534592"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "defaultenginedimly.rivetpress.me"
-    client-fingerprint: "firefox"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg"
-      short-id: "7505bfa3b6b933e6"
+      public-key: "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY"
+      short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇭_2"
+    type: trojan
+    server: "91.245.225.79"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +104,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇵🇹_1"
+      - "🇨🇭_1"
+      - "🇨🇭_2"
 
 
 rules:
