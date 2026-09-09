@@ -59,36 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇿_9"
-    type: vless
-    server: "111.88.143.139"
-    port: 51940
-    uuid: "03464802-b517-404b-b15c-7750ffc5e78f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y"
-      short-id: "fd7f"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇰🇿_10"
-    type: vless
-    server: "77.73.232.61"
-    port: 19747
-    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
-      short-id: "2001"
-  - name: "🇰🇿_11"
+  - name: "🇰🇿_6"
     type: vless
     server: "111.88.143.139"
     port: 8443
@@ -102,35 +73,7 @@ proxies:
       public-key: "Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0"
       short-id: "ac4b582e"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇿_12"
-    type: vless
-    server: "109.248.170.119"
-    port: 13447
-    uuid: "b573cefb-7bc7-4a42-b407-b8b534e66773"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE"
-      short-id: "83"
-  - name: "🇰🇿_13"
-    type: vless
-    server: "194.59.5.46"
-    port: 2096
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wild-sky-f384.alvlirm3737.workers.dev"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202"
-      headers:
-        Host: "wild-sky-f384.alvlirm3737.workers.dev"
-  - name: "🇰🇿_14"
+  - name: "🇰🇿_7"
     type: vless
     server: "83.222.23.81"
     port: 38065
@@ -143,7 +86,7 @@ proxies:
     reality-opts:
       public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
       short-id: "fa"
-  - name: "🇰🇿_15"
+  - name: "🇰🇿_8"
     type: vless
     server: "178.236.16.98"
     port: 35728
@@ -156,13 +99,32 @@ proxies:
     reality-opts:
       public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
       short-id: "69a2"
-  - name: "🇰🇿_16"
-    type: ss
-    server: "94.198.220.183"
-    port: 64674
-    cipher: "chacha20-ietf-poly1305"
-    password: "s8LbJCgUiGXeCKVc63tHJP"
+  - name: "🇰🇿_9"
+    type: vless
+    server: "109.248.170.119"
+    port: 13447
+    uuid: "b573cefb-7bc7-4a42-b407-b8b534e66773"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE"
+      short-id: "83"
+  - name: "🇰🇿_10"
+    type: vless
+    server: "77.73.232.61"
+    port: 19747
+    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
+      short-id: "2001"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -205,14 +167,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -222,14 +181,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -239,14 +195,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -255,14 +208,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -272,27 +222,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇰🇿_6"
+      - "🇰🇿_7"
+      - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
-      - "🇰🇿_11"
-      - "🇰🇿_12"
-      - "🇰🇿_13"
-      - "🇰🇿_14"
-      - "🇰🇿_15"
-      - "🇰🇿_16"
 
 rules:
   - MATCH,PROXY-BEST

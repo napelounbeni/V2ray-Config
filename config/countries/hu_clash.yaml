@@ -79,19 +79,6 @@ proxies:
     sni: "hu2.vpnjantit.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇺_3"
-    type: trojan
-    server: "185.225.68.232"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -108,7 +95,6 @@ proxy-groups:
     proxies:
       - "🇭🇺_1"
       - "🇭🇺_2"
-      - "🇭🇺_3"
 
 
 rules:

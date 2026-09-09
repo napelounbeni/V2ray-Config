@@ -59,95 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇪_9"
-    type: vless
-    server: "202.155.11.249"
-    port: 443
-    uuid: "0a2dde28-70da-4863-a06f-35d007d94d35"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cf2.rumedia-cdn.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/cdn/v3/live"
-      headers:
-        Host: "cf2.rumedia-cdn.com"
-  - name: "🇸🇪_10"
-    type: vless
-    server: "79.141.174.147"
-    port: 33743
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇸🇪_11"
-    type: vless
-    server: "167.104.104.138"
-    port: 8443
-    uuid: "a5194487-9b9a-462f-a047-ac7580d80201"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n.tmkkarss.online"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇪_12"
-    type: vless
-    server: "193.148.59.178"
-    port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_13"
-    type: vless
-    server: "213.21.250.193"
-    port: 443
-    uuid: "476d23b8-ab0e-4297-aebf-2c373f7538f0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "api.sream-rutube.shop"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "fn0RLpDpJr5BJvYeX8W7OgGYoW4nARJ6jZg-sWIAozA"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_14"
-    type: vless
-    server: "31.77.111.11"
-    port: 43439
-    uuid: "428e923f-e608-412b-9e51-3b09ffab551f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn.higames.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4"
-      short-id: "39ad36226f3abec8"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "streaming"
-  - name: "🇸🇪_15"
+  - name: "🇸🇪_6"
     type: vless
     server: "193.42.39.10"
     port: 33743
@@ -163,19 +75,64 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇸🇪_16"
-    type: trojan
-    server: "77.221.138.199"
-    port: 8443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+  - name: "🇸🇪_7"
+    type: vless
+    server: "193.148.59.178"
+    port: 443
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_8"
+    type: vless
+    server: "167.104.104.138"
+    port: 8443
+    uuid: "a5194487-9b9a-462f-a047-ac7580d80201"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n.tmkkarss.online"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/"
+  - name: "🇸🇪_9"
+    type: vless
+    server: "79.141.174.147"
+    port: 33743
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇸🇪_10"
+    type: vless
+    server: "202.155.11.249"
+    port: 443
+    uuid: "0a2dde28-70da-4863-a06f-35d007d94d35"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cf2.rumedia-cdn.com"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/cdn/v3/live"
       headers:
-        Host: "www.calmlunch.com"
+        Host: "cf2.rumedia-cdn.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -218,14 +175,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -235,14 +189,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -252,14 +203,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -268,14 +216,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -285,27 +230,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇸🇪_6"
+      - "🇸🇪_7"
+      - "🇸🇪_8"
       - "🇸🇪_9"
       - "🇸🇪_10"
-      - "🇸🇪_11"
-      - "🇸🇪_12"
-      - "🇸🇪_13"
-      - "🇸🇪_14"
-      - "🇸🇪_15"
-      - "🇸🇪_16"
 
 rules:
   - MATCH,PROXY-BEST

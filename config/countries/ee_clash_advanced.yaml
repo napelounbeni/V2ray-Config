@@ -61,6 +61,17 @@ dns:
 proxies:
   - name: "🇪🇪_6"
     type: vless
+    server: "94.183.170.135"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇪🇪_7"
+    type: vless
     server: "95.85.224.51"
     port: 443
     uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
@@ -73,17 +84,6 @@ proxies:
       public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
       short-id: "a696de84963656de"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_7"
-    type: vless
-    server: "94.183.170.135"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
   - name: "🇪🇪_8"
     type: vless
     server: "94.183.170.135"

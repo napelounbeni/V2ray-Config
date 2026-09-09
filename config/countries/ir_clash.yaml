@@ -64,16 +64,18 @@ dns:
 
 proxies:
   - name: "🇮🇷_1"
-    type: trojan
-    server: "45.131.4.118"
+    type: vless
+    server: "ir.dl.stormrp.ir"
     port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    uuid: "2592b640-5060-4cc8-9ad7-bd2834a2d45b"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir.dl.stormrp.ir"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/sync"
+      path: "/api-mp4"
 
 proxy-groups:
   - name: "PROXY"

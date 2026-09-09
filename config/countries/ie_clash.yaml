@@ -74,6 +74,13 @@ proxies:
     servername: "ir-viper.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇪_2"
+    type: ss
+    server: "20.223.154.126"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "Dh8HYFUdlKrOnX9A"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +96,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇪_1"
+      - "🇮🇪_2"
 
 
 rules:
