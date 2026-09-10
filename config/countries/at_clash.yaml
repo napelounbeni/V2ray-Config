@@ -65,52 +65,27 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "at-new.moritech.net"
+    server: "50.7.184.122"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at-new.moritech.net"
-    client-fingerprint: "chrome"
+    servername: "at3.moritech.net"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_2"
     type: vless
-    server: "50.7.37.154"
+    server: "50.7.37.155"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at1.moritech.net"
+    servername: "at-new-ded.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_3"
-    type: vless
-    server: "152.53.1.40"
-    port: 443
-    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at.quattro-tech.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-      short-id: "43dcff53849b81e6"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_4"
-    type: vless
-    server: "at-new-ded2.moritech.net"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at-new-ded2.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_5"
     type: vless
     server: "50.7.36.26"
     port: 443
@@ -121,18 +96,53 @@ proxies:
     servername: "at2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_6"
+  - name: "🇦🇹_4"
     type: vless
-    server: "50.7.184.122"
+    server: "152.53.1.40"
+    port: 443
+    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at.quattro-tech.ru"
+    reality-opts:
+      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+      short-id: "43dcff53849b81e6"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_5"
+    type: vless
+    server: "50.7.37.154"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at3.moritech.net"
+    servername: "at1.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_6"
+    type: vless
+    server: "50.7.36.27"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at-new-ded2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_7"
+    type: vless
+    server: "at-new-ded2.moritech.net"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_8"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -145,7 +155,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇦🇹_8"
+  - name: "🇦🇹_9"
     type: trojan
     server: "46.102.156.144"
     port: 2053
@@ -180,6 +190,7 @@ proxy-groups:
       - "🇦🇹_6"
       - "🇦🇹_7"
       - "🇦🇹_8"
+      - "🇦🇹_9"
 
 
 rules:

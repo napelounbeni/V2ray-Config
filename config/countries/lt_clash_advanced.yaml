@@ -59,59 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_8"
+  - name: "🇱🇹_7"
     type: vless
-    server: "2.56.124.241"
-    port: 443
-    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
-      short-id: "72104d27a0f5f62e"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_9"
-    type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇱🇹_10"
-    type: vless
-    server: "88.119.176.24"
+    server: "lit9.helper-internet.com"
     port: 443
     uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "lit9.helper-internet.com"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
       short-id: "ff776ff77be48b88"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_11"
-    type: vless
-    server: "144.31.243.248"
-    port: 443
-    uuid: "4cec0315-d5d4-4b29-afe4-7f8b8dd94f36"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "x5.ru"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "Snqizwey11Sp7A3JOzYATE-bcWTOPz1uFblMUiZToVY"
-      short-id: "f3836ba5541bdc9e"
-  - name: "🇱🇹_12"
+  - name: "🇱🇹_8"
     type: vless
     server: "144.31.243.220"
     port: 443
@@ -125,7 +86,35 @@ proxies:
       public-key: "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04"
       short-id: "abcd1234"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_13"
+  - name: "🇱🇹_9"
+    type: vless
+    server: "88.119.176.24"
+    port: 443
+    uuid: "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lit9.helper-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_10"
+    type: vless
+    server: "2.56.124.241"
+    port: 443
+    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
+      short-id: "72104d27a0f5f62e"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_11"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -138,7 +127,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇱🇹_14"
+  - name: "🇱🇹_12"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -187,13 +176,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -203,13 +191,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -219,13 +206,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -234,13 +220,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -250,25 +235,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇹_7"
       - "🇱🇹_8"
       - "🇱🇹_9"
       - "🇱🇹_10"
       - "🇱🇹_11"
       - "🇱🇹_12"
-      - "🇱🇹_13"
-      - "🇱🇹_14"
 
 rules:
   - MATCH,PROXY-BEST

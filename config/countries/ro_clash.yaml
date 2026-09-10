@@ -78,26 +78,15 @@ proxies:
       short-id: "d06d78e974491b6e"
     flow: "xtls-rprx-vision"
   - name: "🇷🇴_2"
-    type: vless
-    server: "abvro.moritech.net"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "abvro.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇴_3"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_4"
+  - name: "🇷🇴_3"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -119,7 +108,6 @@ proxy-groups:
       - "🇷🇴_1"
       - "🇷🇴_2"
       - "🇷🇴_3"
-      - "🇷🇴_4"
 
 
 rules:

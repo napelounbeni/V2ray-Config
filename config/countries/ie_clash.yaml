@@ -75,11 +75,22 @@ proxies:
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_2"
+    type: vless
+    server: "50.7.5.164"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_3"
     type: ss
-    server: "20.223.154.126"
+    server: "20.234.82.250"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "Dh8HYFUdlKrOnX9A"
+    password: "9EZNr9H6rhpY69cU"
     udp: true
 
 proxy-groups:
@@ -97,6 +108,7 @@ proxy-groups:
     proxies:
       - "🇮🇪_1"
       - "🇮🇪_2"
+      - "🇮🇪_3"
 
 
 rules:
