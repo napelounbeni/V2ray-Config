@@ -66,6 +66,16 @@ proxies:
   - name: "🇪🇪_1"
     type: vless
     server: "94.183.170.135"
+    port: 8443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "firefox"
+  - name: "🇪🇪_2"
+    type: vless
+    server: "94.183.170.135"
     port: 443
     uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
     udp: true
@@ -74,7 +84,21 @@ proxies:
       path: "/"
       headers:
         Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_2"
+  - name: "🇪🇪_3"
+    type: vless
+    server: "45.80.108.236"
+    port: 443
+    uuid: "ef9d2063-0140-472b-8b17-ba02ba4b4435"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/proxyip"
+      headers:
+        Host: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
+  - name: "🇪🇪_4"
     type: vless
     server: "95.85.224.51"
     port: 443
@@ -88,17 +112,18 @@ proxies:
       public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
       short-id: "a696de84963656de"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_3"
-    type: vless
-    server: "94.183.170.135"
-    port: 8443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    udp: true
-    tls: true
+  - name: "🇪🇪_5"
+    type: trojan
+    server: "185.36.141.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "firefox"
-  - name: "🇪🇪_4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇪🇪_6"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -106,7 +131,7 @@ proxies:
     sni: "russiapower.accesscam.org"
     skip-cert-verify: true
     udp: true
-  - name: "🇪🇪_5"
+  - name: "🇪🇪_7"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -138,6 +163,8 @@ proxy-groups:
       - "🇪🇪_3"
       - "🇪🇪_4"
       - "🇪🇪_5"
+      - "🇪🇪_6"
+      - "🇪🇪_7"
 
 
 rules:

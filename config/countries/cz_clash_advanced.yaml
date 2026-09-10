@@ -61,20 +61,6 @@ dns:
 proxies:
   - name: "🇨🇿_4"
     type: vless
-    server: "78.159.247.123"
-    port: 7444
-    uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "akamai.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_5"
-    type: vless
     server: "78.159.247.213"
     port: 443
     uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
@@ -83,6 +69,20 @@ proxies:
     skip-cert-verify: true
     servername: "on.mcufa.pro"
     client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_5"
+    type: vless
+    server: "78.159.247.123"
+    port: 7444
+    uuid: "0764541b-3e57-4b47-954b-51e996fae5fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "akamai.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "-P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo"
       short-id: ""

@@ -65,14 +65,14 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "50.7.36.26"
+    server: "at-new.moritech.net"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at2.moritech.net"
-    client-fingerprint: "firefox"
+    servername: "at-new.moritech.net"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_2"
     type: vless
@@ -94,11 +94,34 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "at.quattro-tech.ru"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
       short-id: "43dcff53849b81e6"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
+    type: vless
+    server: "at-new-ded2.moritech.net"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_5"
+    type: vless
+    server: "50.7.36.26"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_6"
     type: vless
     server: "50.7.184.122"
     port: 443
@@ -109,10 +132,23 @@ proxies:
     servername: "at3.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_5"
+  - name: "🇦🇹_7"
     type: trojan
     server: "212.183.88.136"
     port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇦🇹_8"
+    type: trojan
+    server: "46.102.156.144"
+    port: 2053
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
@@ -141,6 +177,9 @@ proxy-groups:
       - "🇦🇹_3"
       - "🇦🇹_4"
       - "🇦🇹_5"
+      - "🇦🇹_6"
+      - "🇦🇹_7"
+      - "🇦🇹_8"
 
 
 rules:

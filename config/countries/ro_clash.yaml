@@ -64,13 +64,38 @@ dns:
 
 proxies:
   - name: "🇷🇴_1"
+    type: vless
+    server: "46.28.67.55"
+    port: 443
+    uuid: "d1a6a033-fdbd-46a6-a177-3370ba042b9f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU"
+      short-id: "d06d78e974491b6e"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_2"
+    type: vless
+    server: "abvro.moritech.net"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "abvro.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_3"
     type: ss
     server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_2"
+  - name: "🇷🇴_4"
     type: ss
     server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
@@ -93,6 +118,8 @@ proxy-groups:
     proxies:
       - "🇷🇴_1"
       - "🇷🇴_2"
+      - "🇷🇴_3"
+      - "🇷🇴_4"
 
 
 rules:

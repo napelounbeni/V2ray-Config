@@ -63,19 +63,65 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇷_1"
+  - name: "🇧🇬_1"
     type: vless
-    server: "ir.dl.stormrp.ir"
+    server: "108.165.233.223"
     port: 443
-    uuid: "2592b640-5060-4cc8-9ad7-bd2834a2d45b"
+    uuid: "2388e166-3890-33ae-f77e-efac00000003"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir.dl.stormrp.ir"
+    servername: "netlivpn4813.ddhshhshs.workers.dev"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/api-mp4"
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: "netlivpn4813.ddhshhshs.workers.dev"
+  - name: "🇧🇬_2"
+    type: vless
+    server: "45.142.120.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_3"
+    type: vless
+    server: "89.117.112.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
+  - name: "🇧🇬_4"
+    type: vless
+    server: "45.142.120.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_5"
+    type: trojan
+    server: "193.239.160.134"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +136,11 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇷_1"
+      - "🇧🇬_1"
+      - "🇧🇬_2"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
+      - "🇧🇬_5"
 
 
 rules:
