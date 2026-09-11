@@ -65,7 +65,55 @@ dns:
 proxies:
   - name: "🇦🇪_1"
     type: vless
+    server: "Emirates-sgood.wopd.butnorwa.butter.whooisthebest.ir"
+    port: 33353
+    uuid: "d40a6aad-5fbd-48af-9374-1bbebf09a212"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8"
+      short-id: "ad51aa0889b8da46"
+  - name: "🇦🇪_2"
+    type: vless
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime18.workers.dev"
+  - name: "🇦🇪_3"
+    type: vless
+    server: "emirates-sgood.wopd.butnorwa.butter.whooisthebest.ir"
+    port: 33353
+    uuid: "d40a6aad-5fbd-48af-9374-1bbebf09a212"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lrJShu6JVnQQ54hKEmKWnj5DUcwalnWBbN_HjGFOeB8"
+      short-id: "ad51aa0889b8da46"
+  - name: "🇦🇪_4"
+    type: vless
     server: "84.235.244.108"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_5"
+    type: vless
+    server: "uae.unixzone.us"
     port: 22573
     uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
     udp: true
@@ -89,6 +137,10 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇪_1"
+      - "🇦🇪_2"
+      - "🇦🇪_3"
+      - "🇦🇪_4"
+      - "🇦🇪_5"
 
 
 rules:
