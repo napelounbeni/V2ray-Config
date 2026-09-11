@@ -59,20 +59,35 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇰_52"
+  - name: "🇭🇰_38"
     type: vless
-    server: "71b26306-tl4g00-tl42r3-1o8ak.hk3.hyhuawei.com"
-    port: 443
-    uuid: "8bb68d04-6973-11ee-b518-f23c9164ca5d"
+    server: "207.57.128.138"
+    port: 18493
+    uuid: "0c800379-6d30-4e92-bc92-975870917c6d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "updates.cdn-apple.com"
+    servername: "www.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "ecbBpsjPFcbQjjSqtFO0bR7B_NqkKpXgj41-Q5ZMalA"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_39"
+    type: vless
+    server: "207.57.131.115"
+    port: 45140
+    uuid: "55e38df8-d960-44c2-9fe2-537765304eae"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dash.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+      public-key: "LV22cTxk34mYg42GDbCo1qW1laGh8LX_9mtpZ3P2U3Y"
       short-id: ""
-  - name: "🇭🇰_53"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_40"
     type: vless
     server: "47.238.210.5"
     port: 13779
@@ -85,7 +100,21 @@ proxies:
     reality-opts:
       public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
       short-id: "af1bdd293097b664"
-  - name: "🇭🇰_54"
+  - name: "🇭🇰_41"
+    type: vless
+    server: "207.57.128.241"
+    port: 48256
+    uuid: "c9858759-70bc-4d9d-b43b-b9ce233c0353"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_42"
     type: vless
     server: "68.64.181.175"
     port: 50437
@@ -94,97 +123,124 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.ebay.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "PlDDOZUSEmHeKG43OjxAxUwR_LJCI5ojL1OWHkJRlm0"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_55"
+  - name: "🇭🇰_43"
     type: vless
-    server: "103.192.179.132"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    server: "45.136.15.18"
+    port: 28708
+    uuid: "df766295-facc-4ae9-a3f1-6c48ad5d721f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_56"
+    servername: "www.paypal.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PjK10ZYHB6YOio0IrKYpNkH2mKEabgSvZhOy-hc9TUo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_44"
     type: vless
-    server: "45.192.224.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime17.workers.dev"
-  - name: "🇭🇰_57"
-    type: vless
-    server: "156.224.76.205"
+    server: "162.128.157.164"
     port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    uuid: "5e8e81ac-a1c4-4543-b81e-651bf9872b54"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_58"
+    servername: "www.bing.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
+      short-id: "14156e3ac23212cc"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_45"
     type: vless
-    server: "45.136.14.251"
-    port: 23974
-    uuid: "8aea14f7-5a77-4fa7-9924-f3921abc4cc2"
+    server: "68.64.180.197"
+    port: 7506
+    uuid: "b1f5bbe4-e63c-4c07-a183-8767b2293e59"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.amazon.com"
-    client-fingerprint: "safari"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "hFaO787_gkKJuZYllnq-L0ZMiEqiCY80q2_xbP2CNRA"
+      public-key: "SkF6myFIhvcfSKmogSeBMMldnr54U_4qu-aZEZzEpRk"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_59"
+  - name: "🇭🇰_46"
     type: vless
-    server: "103.219.194.43"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    server: "193.134.209.62"
+    port: 40514
+    uuid: "35360464-29ac-4c06-93aa-f9af6d4964f4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vp10.pages.dev"
+    servername: "www.paypal.com"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_60"
+    reality-opts:
+      public-key: "Tu3JZDib7rpQqzzRbr-8RnG2JoncA2y4g30GT8PBnx8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_47"
     type: vless
-    server: "8.210.29.68"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    server: "207.57.135.123"
+    port: 35621
+    uuid: "6f8acdfd-0ce0-4386-ba02-5040da4c6fea"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vp10.pages.dev"
+    servername: "www.amazon.com"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_61"
+    reality-opts:
+      public-key: "wK6kCgPEjDA7KADag0eZUc8e523kdIOCh8Qavkb15nA"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_48"
+    type: vless
+    server: "47.239.6.251"
+    port: 13779
+    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
+      short-id: "af1bdd293097b664"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_49"
+    type: vless
+    server: "207.57.135.121"
+    port: 45292
+    uuid: "bc643a4e-db20-4f63-bdfa-986975a8f0b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.ebay.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PQx0xZmo6MgfGLxQd2iZeL4j5cjDw4Xm_muffL1MlQ0"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_50"
+    type: vless
+    server: "193.134.211.201"
+    port: 64136
+    uuid: "cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dash.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_51"
     type: vless
     server: "38.207.178.244"
     port: 51895
@@ -198,21 +254,160 @@ proxies:
       public-key: "Uz7IOZjbOsAGGacB7CVE8jkrIDAphwIIzjurkFx5Ckk"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_62"
+  - name: "🇭🇰_52"
     type: vless
-    server: "8.218.22.14"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
+    server: "207.57.134.109"
+    port: 56439
+    uuid: "7a0388fd-2dc9-4af5-8515-d3649ec77d9b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vp10.pages.dev"
+    servername: "www.ebay.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "aPioc-Rwi9TdjorJ0uqg7JXXeqZhaztKagc1eMuC2Dc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_53"
+    type: vless
+    server: "38.147.173.43"
+    port: 32073
+    uuid: "b145ee79-42dd-4399-adcc-044660ad306f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.paypal.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_54"
+    type: vless
+    server: "207.57.135.46"
+    port: 17144
+    uuid: "e1be6b8f-a0f5-45a9-8aa6-634c26793325"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aws.amazon.com"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
+    reality-opts:
+      public-key: "vk8mcF1ox2RdeqR31z1eQp1XAhnDN7lY0Xbt3zMAfSc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_55"
+    type: vless
+    server: "156.226.168.221"
+    port: 35193
+    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
+      short-id: "e8daed2d"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_56"
+    type: vless
+    server: "45.144.137.129"
+    port: 41923
+    uuid: "b28936a7-c11a-4147-8806-b66efd1658a8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dash.cloudflare.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "7YfjX8TsT3HL0ZzvovjEDOLCM142j3bFcorv-Gs-m2Y"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_57"
+    type: vless
+    server: "207.57.133.54"
+    port: 18582
+    uuid: "37b1e31e-0288-49d3-aa93-fe6a848501a3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dash.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "zDedAztDEYmYmjEOnYW8JZIaKG3MFZKov9i9k2BcbDA"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_58"
+    type: vless
+    server: "207.57.131.123"
+    port: 26631
+    uuid: "906f32ff-9293-46ee-a694-a5eee40b8b42"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "x2oZng_IPNINd3JLak1Rtv05OdkwgChhgHzBT7Z3byQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_59"
+    type: vless
+    server: "212.192.13.233"
+    port: 443
+    uuid: "d742752c-4231-4695-801e-f06d77f0f277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cathaypacific.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
+      short-id: "1bc2c1ef1c"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_60"
+    type: vless
+    server: "207.57.133.237"
+    port: 56109
+    uuid: "751b489c-27e6-4bae-b43c-f02fb304d768"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dash.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "WV3fNhuy06svr1ONLWT2t76iDO9lJVonANX5pbBMwic"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_61"
+    type: vless
+    server: "207.57.133.52"
+    port: 13809
+    uuid: "0b95d6b2-f567-4c81-b298-1884c1f6ec27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "QiI98tjdsbG6y94RoptTgUmG-n6qRikKEE8Gpv-5EUo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_62"
+    type: vless
+    server: "68.64.180.228"
+    port: 8797
+    uuid: "7cfc0cb0-f127-4786-9a01-618a7ef064bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.paypal.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "hqZowW3p6zDgy0_dr1kgKt5ZReVnEoAfp8XfuPORHx0"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇭🇰_63"
     type: vless
     server: "207.57.133.49"
@@ -229,6 +424,20 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇭🇰_64"
     type: vless
+    server: "38.147.172.2"
+    port: 18830
+    uuid: "4ca5286a-05f1-476f-a5ff-e522a2f41b95"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8kiQCMpifYMlVORGI8KxqQixS7COb-Sa43Kkxs0kxUQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_65"
+    type: vless
     server: "45.144.137.55"
     port: 10766
     uuid: "2b61c167-5563-43ab-94a0-7d02c0a27ca5"
@@ -241,373 +450,35 @@ proxies:
       public-key: "U9z66G173U5ROhQvuyRf7SmkViqn1juXjvsy88dWtEk"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_65"
-    type: vless
-    server: "219.76.13.177"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
   - name: "🇭🇰_66"
     type: vless
-    server: "104.129.167.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
+    server: "207.57.134.153"
+    port: 38156
+    uuid: "3940f40e-1d33-420c-90ca-1896e4911d2c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=telegram🇨🇳 @azadweb"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YiaOdFKAJD0ktWP_UkvHGGq3P4ZRkwC_k2HrHxDH-zM"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇭🇰_67"
     type: vless
-    server: "193.134.211.201"
-    port: 64136
-    uuid: "cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dash.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_68"
-    type: vless
-    server: "45.144.137.129"
-    port: 41923
-    uuid: "b28936a7-c11a-4147-8806-b66efd1658a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dash.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "7YfjX8TsT3HL0ZzvovjEDOLCM142j3bFcorv-Gs-m2Y"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_69"
-    type: vless
-    server: "47.239.6.251"
-    port: 13779
-    uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tesla.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
-      short-id: "af1bdd293097b664"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_70"
-    type: vless
-    server: "207.57.135.46"
-    port: 17144
-    uuid: "e1be6b8f-a0f5-45a9-8aa6-634c26793325"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vk8mcF1ox2RdeqR31z1eQp1XAhnDN7lY0Xbt3zMAfSc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_71"
-    type: vless
-    server: "38.147.173.43"
-    port: 32073
-    uuid: "b145ee79-42dd-4399-adcc-044660ad306f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.paypal.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_72"
-    type: vless
-    server: "207.57.135.123"
-    port: 35621
-    uuid: "6f8acdfd-0ce0-4386-ba02-5040da4c6fea"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "wK6kCgPEjDA7KADag0eZUc8e523kdIOCh8Qavkb15nA"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_73"
-    type: vless
-    server: "219.76.13.167"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_74"
-    type: vless
-    server: "212.192.13.233"
-    port: 443
-    uuid: "d742752c-4231-4695-801e-f06d77f0f277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cathaypacific.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
-      short-id: "1bc2c1ef1c"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_75"
-    type: vless
-    server: "156.239.245.134"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_76"
-    type: vless
-    server: "193.134.209.62"
-    port: 40514
-    uuid: "35360464-29ac-4c06-93aa-f9af6d4964f4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.paypal.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Tu3JZDib7rpQqzzRbr-8RnG2JoncA2y4g30GT8PBnx8"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_77"
-    type: vless
-    server: "207.57.133.226"
-    port: 45643
-    uuid: "87d6ec62-660b-430a-a89c-dcd85d5aff75"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.paypal.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "iJ-HaZJleNLUNRws14Ud2veIdX8xdX0b97yWFQ0B33M"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_78"
-    type: vless
-    server: "ed49f9f4-tl4g00-tl54l3-luwe.hk3.hyhuawei.com"
-    port: 443
-    uuid: "a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "updates.cdn-apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
-      short-id: ""
-  - name: "🇭🇰_79"
-    type: vless
-    server: "207.57.133.237"
-    port: 56109
-    uuid: "751b489c-27e6-4bae-b43c-f02fb304d768"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dash.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "WV3fNhuy06svr1ONLWT2t76iDO9lJVonANX5pbBMwic"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_80"
-    type: vless
-    server: "219.76.13.169"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_81"
-    type: vless
-    server: "219.76.13.166"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_82"
-    type: vless
-    server: "207.57.133.54"
-    port: 18582
-    uuid: "37b1e31e-0288-49d3-aa93-fe6a848501a3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dash.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "zDedAztDEYmYmjEOnYW8JZIaKG3MFZKov9i9k2BcbDA"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_83"
-    type: vless
-    server: "hk3n.wxgqlfx.vip"
-    port: 35193
-    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
-      short-id: "e8daed2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_84"
-    type: vless
-    server: "proxyip.hk.cmliussss.net"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp10.pages.dev"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "vp10.pages.dev"
-  - name: "🇭🇰_85"
-    type: vless
-    server: "207.57.131.115"
-    port: 45140
-    uuid: "55e38df8-d960-44c2-9fe2-537765304eae"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dash.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "LV22cTxk34mYg42GDbCo1qW1laGh8LX_9mtpZ3P2U3Y"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_86"
-    type: vless
-    server: "27.50.48.8"
-    port: 443
-    uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vless2-8vx.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vless2-8vx.pages.dev"
-  - name: "🇭🇰_87"
-    type: vless
-    server: "162.128.157.164"
-    port: 443
-    uuid: "5e8e81ac-a1c4-4543-b81e-651bf9872b54"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
-      short-id: "14156e3ac23212cc"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_88"
-    type: vless
-    server: "156.226.168.221"
-    port: 35193
-    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
-      short-id: "e8daed2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_89"
-    type: vless
-    server: "38.147.172.2"
-    port: 18830
-    uuid: "4ca5286a-05f1-476f-a5ff-e522a2f41b95"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8kiQCMpifYMlVORGI8KxqQixS7COb-Sa43Kkxs0kxUQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_90"
-    type: vless
-    server: "207.57.134.109"
-    port: 56439
-    uuid: "7a0388fd-2dc9-4af5-8515-d3649ec77d9b"
+    server: "38.207.178.88"
+    port: 5585
+    uuid: "356d377d-2cdf-4a3f-8bc3-44452f9718b7"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.ebay.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "aPioc-Rwi9TdjorJ0uqg7JXXeqZhaztKagc1eMuC2Dc"
+      public-key: "TUZZH3TKQjuwZc20BCT5SHvKbbeSUzAwB75ZDf_Vy3M"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_91"
+  - name: "🇭🇰_68"
     type: vless
     server: "207.57.135.29"
     port: 54785
@@ -621,35 +492,35 @@ proxies:
       public-key: "RqlCAwGrowPZDljm1O3c5jJJQmhwmSPOdgsopGTJMzE"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_92"
+  - name: "🇭🇰_69"
     type: vless
-    server: "68.64.180.228"
-    port: 8797
-    uuid: "7cfc0cb0-f127-4786-9a01-618a7ef064bb"
+    server: "45.136.14.251"
+    port: 23974
+    uuid: "8aea14f7-5a77-4fa7-9924-f3921abc4cc2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.paypal.com"
+    servername: "www.amazon.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "hqZowW3p6zDgy0_dr1kgKt5ZReVnEoAfp8XfuPORHx0"
+      public-key: "hFaO787_gkKJuZYllnq-L0ZMiEqiCY80q2_xbP2CNRA"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_93"
+  - name: "🇭🇰_70"
     type: vless
-    server: "45.136.15.18"
-    port: 28708
-    uuid: "df766295-facc-4ae9-a3f1-6c48ad5d721f"
+    server: "207.57.135.125"
+    port: 31895
+    uuid: "5e483359-08a3-46d9-904b-8f1f469577ac"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.paypal.com"
-    client-fingerprint: "edge"
+    servername: "aws.amazon.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "PjK10ZYHB6YOio0IrKYpNkH2mKEabgSvZhOy-hc9TUo"
+      public-key: "ezDjdoPtdw4-2mZFCLgdlIHD9RoQ7P1MMMVV-pBPuHc"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_94"
+  - name: "🇭🇰_71"
     type: vless
     server: "207.57.131.118"
     port: 36297
@@ -663,70 +534,7 @@ proxies:
       public-key: "rBHsBLrfPPEkm2qmSxaRtTQsIAxhtBel7P1_8ccEAmg"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_95"
-    type: vless
-    server: "207.57.135.125"
-    port: 31895
-    uuid: "5e483359-08a3-46d9-904b-8f1f469577ac"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ezDjdoPtdw4-2mZFCLgdlIHD9RoQ7P1MMMVV-pBPuHc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_96"
-    type: vless
-    server: "207.57.128.241"
-    port: 48256
-    uuid: "c9858759-70bc-4d9d-b43b-b9ce233c0353"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_97"
-    type: vless
-    server: "186b6f53-tla000-tvb36r-1qwom.hk3.hyhuawei.com"
-    port: 443
-    uuid: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "updates.cdn-apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
-      short-id: ""
-  - name: "🇭🇰_98"
-    type: vless
-    server: "68.64.180.197"
-    port: 7506
-    uuid: "b1f5bbe4-e63c-4c07-a183-8767b2293e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SkF6myFIhvcfSKmogSeBMMldnr54U_4qu-aZEZzEpRk"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_99"
-    type: trojan
-    server: "58.152.211.48"
-    port: 52224
-    password: "d742752c-4231-4695-801e-f06d77f0f277"
-    sni: "taobao.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_100"
+  - name: "🇭🇰_72"
     type: trojan
     server: "119.246.1.143"
     port: 443
@@ -734,15 +542,7 @@ proxies:
     sni: "119.246.1.143"
     skip-cert-verify: true
     udp: true
-  - name: "🇭🇰_101"
-    type: trojan
-    server: "hk04.qianmoip.win"
-    port: 52224
-    password: "d742752c-4231-4695-801e-f06d77f0f277"
-    sni: "taobao.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_102"
+  - name: "🇭🇰_73"
     type: trojan
     server: "hk03.qianmoip.win"
     port: 50222
@@ -750,6 +550,19 @@ proxies:
     sni: "taobao.com"
     skip-cert-verify: true
     udp: true
+  - name: "🇭🇰_74"
+    type: trojan
+    server: "8.217.3.125"
+    port: 443
+    password: "humanity"
+    sni: "www.pleadcourt.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.pleadcourt.org"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -792,6 +605,20 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -815,34 +642,6 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
   - name: "LB-CDN"
     type: load-balance
@@ -852,6 +651,20 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -875,34 +688,6 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -912,6 +697,20 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -935,34 +734,6 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
   - name: "FAST-CDN"
     type: url-test
@@ -971,6 +742,20 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -994,34 +779,6 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -1031,6 +788,20 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -1054,39 +825,25 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇭🇰_38"
+      - "🇭🇰_39"
+      - "🇭🇰_40"
+      - "🇭🇰_41"
+      - "🇭🇰_42"
+      - "🇭🇰_43"
+      - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
       - "🇭🇰_52"
       - "🇭🇰_53"
       - "🇭🇰_54"
@@ -1110,34 +867,6 @@ proxy-groups:
       - "🇭🇰_72"
       - "🇭🇰_73"
       - "🇭🇰_74"
-      - "🇭🇰_75"
-      - "🇭🇰_76"
-      - "🇭🇰_77"
-      - "🇭🇰_78"
-      - "🇭🇰_79"
-      - "🇭🇰_80"
-      - "🇭🇰_81"
-      - "🇭🇰_82"
-      - "🇭🇰_83"
-      - "🇭🇰_84"
-      - "🇭🇰_85"
-      - "🇭🇰_86"
-      - "🇭🇰_87"
-      - "🇭🇰_88"
-      - "🇭🇰_89"
-      - "🇭🇰_90"
-      - "🇭🇰_91"
-      - "🇭🇰_92"
-      - "🇭🇰_93"
-      - "🇭🇰_94"
-      - "🇭🇰_95"
-      - "🇭🇰_96"
-      - "🇭🇰_97"
-      - "🇭🇰_98"
-      - "🇭🇰_99"
-      - "🇭🇰_100"
-      - "🇭🇰_101"
-      - "🇭🇰_102"
 
 rules:
   - MATCH,PROXY-BEST

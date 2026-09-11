@@ -67,6 +67,20 @@ proxies:
     type: vless
     server: "151.242.168.125"
     port: 390
+    uuid: "7b363f9c-3df9-4b60-a789-9cd36be0bdfe"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "bowandbead.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8"
+      short-id: "b545fe8c5e22f92d"
+    flow: "xtls-rprx-vision"
+  - name: "🇳🇴_2"
+    type: vless
+    server: "151.242.168.125"
+    port: 390
     uuid: "b02ff150-ee30-46e0-9ea1-adbfd7762a06"
     udp: true
     tls: true
@@ -77,40 +91,7 @@ proxies:
       public-key: "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8"
       short-id: "b545fe8c5e22f92d"
     flow: "xtls-rprx-vision"
-  - name: "🇳🇴_2"
-    type: vless
-    server: "viper-23.moriarty-web.com"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-23.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
   - name: "🇳🇴_3"
-    type: vless
-    server: "31.76.5.3"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-26.moriarty-web.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇳🇴_4"
-    type: vless
-    server: "viper-24.moriarty-web.com"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-24.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇳🇴_5"
     type: vless
     server: "46.29.238.88"
     port: 40443
@@ -123,28 +104,58 @@ proxies:
     reality-opts:
       public-key: "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc"
       short-id: "f7b2"
-  - name: "🇳🇴_6"
+  - name: "🇳🇴_4"
     type: vless
-    server: "151.242.168.125"
-    port: 390
-    uuid: "7b363f9c-3df9-4b60-a789-9cd36be0bdfe"
+    server: "31.76.5.3"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "bowandbead.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8"
-      short-id: "b545fe8c5e22f92d"
+    servername: "viper-26.moriarty-web.com"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇳🇴_5"
+    type: vless
+    server: "viper-23.moriarty-web.com"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-23.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇳🇴_6"
+    type: vless
+    server: "viper-26.moriarty-web.com"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-26.moriarty-web.com"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇳🇴_7"
+    type: vless
+    server: "viper-24.moriarty-web.com"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-24.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇳🇴_8"
     type: ss
     server: "185.213.23.63"
     port: 990
     cipher: "chacha20-ietf-poly1305"
     password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     udp: true
-  - name: "🇳🇴_8"
+  - name: "🇳🇴_9"
     type: ss
     server: "185.213.23.63"
     port: 990
@@ -173,6 +184,7 @@ proxy-groups:
       - "🇳🇴_6"
       - "🇳🇴_7"
       - "🇳🇴_8"
+      - "🇳🇴_9"
 
 
 rules:

@@ -63,34 +63,13 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇷_1"
-    type: vless
-    server: "92.114.24.95"
-    port: 43630
-    uuid: "01a95af3-a2f6-453e-9f88-b2fc011627cc"
+  - name: "🇨🇱_1"
+    type: ss
+    server: "64.176.2.21"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "xBStBEVqvGwHPocc"
     udp: true
-  - name: "🇮🇷_2"
-    type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_3"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,9 +84,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇷_1"
-      - "🇮🇷_2"
-      - "🇮🇷_3"
+      - "🇨🇱_1"
 
 
 rules:
