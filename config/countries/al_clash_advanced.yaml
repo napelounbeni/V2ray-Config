@@ -59,21 +59,13 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇷_2"
-    type: vless
-    server: "190.93.245.176"
-    port: 443
-    uuid: "7493883f-6047-46a7-8d95-f59e137ffaec"
+  - name: "🇦🇱_2"
+    type: ss
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auto-749388.rohawmk.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/?TELEGRAM-TOOTFFARANGI?ed=2560"
-      headers:
-        Host: "auto-749388.rohawmk.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +108,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +118,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +128,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +137,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +147,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇷_2"
+      - "🇦🇱_2"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_7"
+  - name: "🇦🇪_2"
     type: vless
     server: "84.235.244.108"
     port: 22573
@@ -70,62 +70,6 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_8"
-    type: vless
-    server: "89.47.55.8"
-    port: 8443
-    uuid: "3f9f2bda-0b9c-8469-7381-a73de2255619"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.canon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇦🇪_9"
-    type: vless
-    server: "77.232.140.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇦🇪_10"
-    type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime18.workers.dev"
-  - name: "🇦🇪_11"
-    type: vless
-    server: "uae.unixzone.us"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_12"
-    type: ss
-    server: "188.208.110.58"
-    port: 8444
-    cipher: "chacha20-ietf-poly1305"
-    password: "tunnel-astrovpn_official"
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -168,12 +112,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -183,12 +122,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -198,12 +132,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -212,12 +141,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -227,23 +151,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇪_7"
-      - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
+      - "🇦🇪_2"
 
 rules:
   - MATCH,PROXY-BEST

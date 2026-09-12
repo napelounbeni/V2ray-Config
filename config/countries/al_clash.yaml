@@ -63,39 +63,13 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇧🇿_1"
-    type: vless
-    server: "45.131.208.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
+  - name: "🇦🇱_1"
+    type: ss
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram棣冨殮棣冨殾@WangCai2"
-      headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
-  - name: "🇧🇿_2"
-    type: vless
-    server: "45.131.6.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇧🇿_3"
-    type: vless
-    server: "45.131.209.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -110,9 +84,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇧🇿_1"
-      - "🇧🇿_2"
-      - "🇧🇿_3"
+      - "🇦🇱_1"
 
 
 rules:
