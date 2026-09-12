@@ -81,20 +81,15 @@ proxies:
       grpc-service-name: "grpc-tunnel"
   - name: "🇺🇦_2"
     type: vless
-    server: "91.224.87.22"
-    port: 9873
-    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
   - name: "🇺🇦_3"
     type: vless
     server: "91.224.86.107"
@@ -111,6 +106,57 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "ukraine-sgood.wopd.butnorwa.butter.silicore.ir"
+    port: 9000
+    uuid: "b33e4571-de3f-4249-b246-b2acf3db2f36"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sheets.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM"
+      short-id: "cd0a1986719e44c8"
+  - name: "🇺🇦_6"
+    type: vless
+    server: "91.224.87.22"
+    port: 9873
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabb"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_7"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -128,6 +174,10 @@ proxy-groups:
       - "🇺🇦_1"
       - "🇺🇦_2"
       - "🇺🇦_3"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
 
 
 rules:

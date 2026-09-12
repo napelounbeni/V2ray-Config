@@ -59,6 +59,29 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇹🇷_7"
+    type: vless
+    server: "213.156.152.98"
+    port: 8443
+    uuid: "f1505323-ecb6-4152-9a5b-d37b3ae1cacf"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play-apps-features.googleusercontent.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0h-taEebHyMkglCVL878JFgy3OH98A6_ER_Z3_mVKxs"
+      short-id: "e9eb3da9b21742de"
+  - name: "🇹🇷_8"
+    type: vless
+    server: "202.133.90.93"
+    port: 8444
+    uuid: "0b39a009-2a2a-4035-ba87-cc82894f8e21"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "connect3.nyxserver.ir"
+    client-fingerprint: "firefox"
   - name: "🇹🇷_9"
     type: vless
     server: "195.162.69.203"
@@ -68,50 +91,27 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "195-162-69-203.sslip.io"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
   - name: "🇹🇷_10"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "e691b034-dfc9-4f22-80aa-6d4f6404a4df"
+    server: "45.74.178.209"
+    port: 32306
+    uuid: "f1505323-ecb6-4152-9a5b-d37b3ae1cacf"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "play-apps-features.googleusercontent.com"
+    client-fingerprint: "edge"
     reality-opts:
-      public-key: "k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4"
-      short-id: "9bd613c48251f0db"
+      public-key: "SXkGZe1mcU3mqQHdr-8izIYr1YQvsAYf_jgFnO85kW0"
+      short-id: "c03b6ff9e11d0a5d"
   - name: "🇹🇷_11"
     type: vless
-    server: "sinavm.soft10.ir"
-    port: 443
-    uuid: "69768555-bf07-4127-8ce5-eed7a0d0baba"
+    server: "206.1.96.228"
+    port: 8082
+    uuid: "bfb3f06c-e33f-41ac-b101-012c8325a689"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sinavm.soft10.ir"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM"
-      headers:
-        Host: "sinavm.soft10.ir"
   - name: "🇹🇷_12"
-    type: vless
-    server: "212.64.193.13"
-    port: 443
-    uuid: "2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tr.cloudtechone.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo"
-      short-id: "f93c9d5127e622e4"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_13"
     type: vless
     server: "156.67.63.231"
     port: 443
@@ -125,40 +125,6 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_14"
-    type: vless
-    server: "tr.cloudtechone.org"
-    port: 443
-    uuid: "2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tr.cloudtechone.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo"
-      short-id: "f93c9d5127e622e4"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_15"
-    type: vless
-    server: "connect3.nyxserver.ir"
-    port: 8444
-    uuid: "0b39a009-2a2a-4035-ba87-cc82894f8e21"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "connect3.nyxserver.ir"
-    client-fingerprint: "chrome"
-  - name: "🇹🇷_16"
-    type: vless
-    server: "202.133.90.93"
-    port: 8444
-    uuid: "0b39a009-2a2a-4035-ba87-cc82894f8e21"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "connect3.nyxserver.ir"
-    client-fingerprint: "firefox"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -201,14 +167,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -218,14 +182,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -235,14 +197,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -251,14 +211,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -268,27 +226,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_7"
+      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
-      - "🇹🇷_15"
-      - "🇹🇷_16"
 
 rules:
   - MATCH,PROXY-BEST

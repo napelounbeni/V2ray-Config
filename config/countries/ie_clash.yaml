@@ -65,17 +65,6 @@ dns:
 proxies:
   - name: "🇮🇪_1"
     type: vless
-    server: "50.7.5.163"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-viper.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_2"
-    type: vless
     server: "50.7.5.164"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -85,28 +74,18 @@ proxies:
     servername: "ir.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇪_2"
+    type: vless
+    server: "50.7.5.163"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-viper.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇮🇪_3"
-    type: ss
-    server: "20.234.82.250"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "D1VXfiP9b9VeX9ZD"
-    udp: true
-  - name: "🇮🇪_4"
-    type: ss
-    server: "20.234.82.250"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "kYhF4RWqohTpbVau"
-    udp: true
-  - name: "🇮🇪_5"
-    type: ss
-    server: "20.234.82.250"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "R2QvJ9exeq61wfSV"
-    udp: true
-  - name: "🇮🇪_6"
     type: ss
     server: "94.245.92.93"
     port: 443
@@ -130,9 +109,6 @@ proxy-groups:
       - "🇮🇪_1"
       - "🇮🇪_2"
       - "🇮🇪_3"
-      - "🇮🇪_4"
-      - "🇮🇪_5"
-      - "🇮🇪_6"
 
 
 rules:

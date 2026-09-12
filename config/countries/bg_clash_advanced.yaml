@@ -59,7 +59,55 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_2"
+  - name: "🇧🇬_6"
+    type: vless
+    server: "45.142.120.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_7"
+    type: vless
+    server: "45.142.120.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_8"
+    type: vless
+    server: "89.117.112.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
+  - name: "🇧🇬_9"
+    type: vless
+    server: "108.165.233.223"
+    port: 443
+    uuid: "2388e166-3890-33ae-f77e-efac00000003"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "netlivpn4813.ddhshhshs.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
+      headers:
+        Host: "netlivpn4813.ddhshhshs.workers.dev"
+  - name: "🇧🇬_10"
     type: trojan
     server: "193.239.160.134"
     port: 443
@@ -112,7 +160,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -122,7 +174,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -132,7 +188,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -141,7 +201,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -151,13 +215,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇬_2"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
+      - "🇧🇬_9"
+      - "🇧🇬_10"
 
 rules:
   - MATCH,PROXY-BEST

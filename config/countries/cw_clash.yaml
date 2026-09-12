@@ -63,20 +63,50 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇦🇱_1"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "/63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8="
+  - name: "🇨🇼_1"
+    type: vless
+    server: "62.72.166.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-  - name: "🇦🇱_2"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "/63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8="
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime40.workers.dev"
+  - name: "🇨🇼_2"
+    type: vless
+    server: "88.216.66.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
+  - name: "🇨🇼_3"
+    type: vless
+    server: "5.10.246.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
+  - name: "🇨🇼_4"
+    type: vless
+    server: "88.216.67.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime05.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,8 +121,10 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇦🇱_1"
-      - "🇦🇱_2"
+      - "🇨🇼_1"
+      - "🇨🇼_2"
+      - "🇨🇼_3"
+      - "🇨🇼_4"
 
 
 rules:

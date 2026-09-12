@@ -74,6 +74,62 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
+  - name: "🇦🇪_2"
+    type: vless
+    server: "89.47.55.8"
+    port: 8443
+    uuid: "3f9f2bda-0b9c-8469-7381-a73de2255619"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.canon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇦🇪_3"
+    type: vless
+    server: "77.232.140.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
+  - name: "🇦🇪_4"
+    type: vless
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime18.workers.dev"
+  - name: "🇦🇪_5"
+    type: vless
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_6"
+    type: ss
+    server: "188.208.110.58"
+    port: 8444
+    cipher: "chacha20-ietf-poly1305"
+    password: "tunnel-astrovpn_official"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +145,11 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇪_1"
+      - "🇦🇪_2"
+      - "🇦🇪_3"
+      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
 
 
 rules:
