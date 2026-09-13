@@ -100,17 +100,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
     type: vless
-    server: "50.7.184.122"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at3.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_5"
-    type: vless
     server: "50.7.37.154"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -120,7 +109,28 @@ proxies:
     servername: "at1.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇹_5"
+    type: vless
+    server: "50.7.184.122"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at3.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇦🇹_6"
+    type: vless
+    server: "at.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at.failspace.top"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_7"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -153,6 +163,7 @@ proxy-groups:
       - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
+      - "🇦🇹_7"
 
 
 rules:
