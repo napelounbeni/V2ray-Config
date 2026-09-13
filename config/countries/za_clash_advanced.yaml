@@ -59,19 +59,12 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇿🇦_6"
-    type: ss
-    server: "102.37.156.224"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "aduB9HGxQHjA2SBMRjkHX6"
-    udp: true
   - name: "🇿🇦_7"
     type: ss
-    server: "102.37.156.224"
+    server: "102.37.108.75"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "aduB9HGxQHjA2SBMRjkHX6"
+    password: "FYGlWYggB4Akk6HP"
     udp: true
   - name: "🇿🇦_8"
     type: ss
@@ -82,17 +75,31 @@ proxies:
     udp: true
   - name: "🇿🇦_9"
     type: ss
-    server: "102.37.108.75"
+    server: "102.37.156.224"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "FYGlWYggB4Akk6HP"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
     udp: true
   - name: "🇿🇦_10"
+    type: ss
+    server: "102.37.156.224"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
+    udp: true
+  - name: "🇿🇦_11"
     type: ss
     server: "102.133.165.160"
     port: 16233
     cipher: "chacha20-ietf-poly1305"
     password: "Xsy8Ox4yOV3xLlpxtjzs3X"
+    udp: true
+  - name: "🇿🇦_12"
+    type: ss
+    server: "4.168.198.18"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "FYGlWYggB4Akk6HP"
     udp: true
 
 proxy-groups:
@@ -136,11 +143,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -150,11 +158,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -164,11 +173,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -177,11 +187,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -191,21 +202,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
       - "🇿🇦_9"
       - "🇿🇦_10"
+      - "🇿🇦_11"
+      - "🇿🇦_12"
 
 rules:
   - MATCH,PROXY-BEST

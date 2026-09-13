@@ -59,16 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_5"
-    type: vless
-    server: "194.87.59.6"
-    port: 2085
-    uuid: "c9373ff0-c263-4949-885f-366671f3c6a1"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_6"
+  - name: "🇨🇿_4"
     type: vless
     server: "103.119.18.30"
     port: 443
@@ -82,7 +73,21 @@ proxies:
       path: "/proxyip=154.3.33.43"
       headers:
         Host: "mianfei-73q.pages.dev"
-  - name: "🇨🇿_7"
+  - name: "🇨🇿_5"
+    type: vless
+    server: "31.76.7.154"
+    port: 7443
+    uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ya.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
+      short-id: "d2061bb1"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_6"
     type: vless
     server: "78.159.247.246"
     port: 443
@@ -97,20 +102,6 @@ proxies:
       path: "/ws"
       headers:
         Host: "sb2.hat.onl"
-  - name: "🇨🇿_8"
-    type: vless
-    server: "31.76.7.154"
-    port: 7443
-    uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ya.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
-      short-id: "d2061bb1"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -153,10 +144,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -166,10 +156,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -179,10 +168,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -191,10 +179,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -204,19 +191,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇿_4"
       - "🇨🇿_5"
       - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,18 +59,27 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇹_8"
+  - name: "🇦🇹_7"
     type: vless
-    server: "152.53.1.40"
+    server: "50.7.36.27"
     port: 443
-    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at.quattro-tech.ru"
-    reality-opts:
-      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-      short-id: "43dcff53849b81e6"
+    servername: "at-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_8"
+    type: vless
+    server: "50.7.37.154"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at1.moritech.net"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_9"
     type: vless
@@ -85,28 +94,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_10"
     type: vless
-    server: "50.7.36.27"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at-new-ded2.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_11"
-    type: vless
-    server: "50.7.37.154"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at1.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_12"
-    type: vless
     server: "50.7.184.122"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -116,17 +103,20 @@ proxies:
     servername: "at3.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_13"
+  - name: "🇦🇹_11"
     type: vless
-    server: "at.failspace.top"
+    server: "152.53.1.40"
     port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    uuid: "edde565e-41f5-400e-84ea-7b87a3e84488"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at.failspace.top"
+    servername: "at.quattro-tech.ru"
+    reality-opts:
+      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+      short-id: "43dcff53849b81e6"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_14"
+  - name: "🇦🇹_12"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -181,13 +171,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -197,13 +186,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -213,13 +201,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -228,13 +215,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -244,25 +230,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇹_7"
       - "🇦🇹_8"
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
       - "🇦🇹_12"
-      - "🇦🇹_13"
-      - "🇦🇹_14"
 
 rules:
   - MATCH,PROXY-BEST
