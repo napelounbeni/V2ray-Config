@@ -59,56 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_11"
-    type: vless
-    server: "104.143.223.218"
-    port: 2085
-    uuid: "2f3f58c9-7a49-4783-9722-7fcae7e3a203"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_12"
-    type: vless
-    server: "45.135.235.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇺🇦_13"
-    type: vless
-    server: "104.143.223.63"
-    port: 2085
-    uuid: "94248dca-e56b-424a-9232-401178a4f8f9"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_14"
-    type: vless
-    server: "91.224.87.22"
-    port: 9873
-    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabb"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_15"
+  - name: "🇺🇦_4"
     type: vless
     server: "91.224.86.107"
     port: 9830
@@ -124,45 +75,23 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_16"
+  - name: "🇺🇦_5"
     type: vless
-    server: "104.245.242.8"
-    port: 8443
-    uuid: "4350213a-b4e7-262a-0bd7-bd16957cf71a"
+    server: "91.224.87.22"
+    port: 9873
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "download.nvidia.com"
-    client-fingerprint: "chrome"
+    servername: "dl.google.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
-      short-id: ""
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabb"
     network: grpc
     grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇺🇦_17"
-    type: vless
-    server: "104.143.223.65"
-    port: 2085
-    uuid: "2f3f58c9-7a49-4783-9722-7fcae7e3a203"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_18"
-    type: vless
-    server: "45.135.235.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇺🇦_19"
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_6"
     type: vless
     server: "91.224.87.22"
     port: 9882
@@ -178,17 +107,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_20"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -231,16 +149,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -250,16 +161,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -269,16 +173,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -287,16 +184,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -306,31 +196,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_11"
-      - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
 rules:
   - MATCH,PROXY-BEST

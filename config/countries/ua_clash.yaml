@@ -65,38 +65,21 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "104.143.223.218"
-    port: 2085
-    uuid: "2f3f58c9-7a49-4783-9722-7fcae7e3a203"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "45.135.235.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    server: "91.224.86.107"
+    port: 9830
+    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇺🇦_3"
-    type: vless
-    server: "104.143.223.63"
-    port: 2085
-    uuid: "94248dca-e56b-424a-9232-401178a4f8f9"
-    udp: true
+    servername: "dl.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+      short-id: "aabbccdd"
     network: grpc
     grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_4"
+      grpc-service-name: "grpc-tunnel"
+  - name: "🇺🇦_2"
     type: vless
     server: "91.224.87.22"
     port: 9873
@@ -112,61 +95,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_5"
-    type: vless
-    server: "91.224.86.107"
-    port: 9830
-    uuid: "5d16ac22-6eea-426f-b778-6f4c2961faef"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dl.google.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
-      short-id: "aabbccdd"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_6"
-    type: vless
-    server: "104.245.242.8"
-    port: 8443
-    uuid: "4350213a-b4e7-262a-0bd7-bd16957cf71a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "download.nvidia.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇺🇦_7"
-    type: vless
-    server: "104.143.223.65"
-    port: 2085
-    uuid: "2f3f58c9-7a49-4783-9722-7fcae7e3a203"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_8"
-    type: vless
-    server: "45.135.235.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇺🇦_9"
+  - name: "🇺🇦_3"
     type: vless
     server: "91.224.87.22"
     port: 9882
@@ -182,17 +111,6 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-tunnel"
-  - name: "🇺🇦_10"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -210,13 +128,6 @@ proxy-groups:
       - "🇺🇦_1"
       - "🇺🇦_2"
       - "🇺🇦_3"
-      - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
-      - "🇺🇦_7"
-      - "🇺🇦_8"
-      - "🇺🇦_9"
-      - "🇺🇦_10"
 
 
 rules:

@@ -65,17 +65,18 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    server: "156.67.63.231"
+    port: 443
+    uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "sync-bridge.org"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
+      public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
+      short-id: "5606d4a25c99e7af"
+    flow: "xtls-rprx-vision"
   - name: "🇹🇷_2"
     type: vless
     server: "107.161.174.26"
@@ -92,87 +93,22 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_3"
     type: vless
-    server: "156.67.63.231"
-    port: 443
-    uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sync-bridge.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
-      short-id: "5606d4a25c99e7af"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_4"
-    type: vless
-    server: "213.156.152.75"
-    port: 8443
-    uuid: "f1505323-ecb6-4152-9a5b-d37b3ae1cacf"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play-apps-features.googleusercontent.com"
+    servername: "www.apple.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs"
-      short-id: "8dc4f3de3846efa9"
-  - name: "🇹🇷_5"
-    type: vless
-    server: "185.87.24.4"
-    port: 2085
-    uuid: "128314f6-f09a-426f-b758-b8e559c38ddb"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_6"
-    type: vless
-    server: "86.38.214.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇹🇷_7"
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
+  - name: "🇹🇷_4"
     type: vless
     server: "188.132.237.20"
     port: 2095
     uuid: "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
-    udp: true
-  - name: "🇹🇷_8"
-    type: vless
-    server: "158.94.216.50"
-    port: 32306
-    uuid: "f1505323-ecb6-4152-9a5b-d37b3ae1cacf"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play-apps-features.googleusercontent.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA"
-      short-id: "61614f026070554f"
-  - name: "🇹🇷_9"
-    type: ss
-    server: "185.39.204.3"
-    port: 8098
-    cipher: "chacha20-ietf-poly1305"
-    password: "PluSKSrbtxTvlVv7BOUwn4"
-    udp: true
-  - name: "🇹🇷_10"
-    type: ss
-    server: "188.132.174.236"
-    port: 1080
-    cipher: "chacha20-ietf-poly1305"
-    password: "rSeYcig_XBy8q3k33NpK3A"
     udp: true
 
 proxy-groups:
@@ -192,12 +128,6 @@ proxy-groups:
       - "🇹🇷_2"
       - "🇹🇷_3"
       - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
 
 
 rules:

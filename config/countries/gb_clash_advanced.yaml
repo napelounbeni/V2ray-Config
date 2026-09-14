@@ -59,18 +59,70 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇧_109"
+  - name: "🇬🇧_54"
     type: vless
-    server: "57.129.132.223"
-    port: 80
-    uuid: "9e20b04d-5a81-4e16-b421-01e502f0aac6"
+    server: "3.9.135.156"
+    port: 51847
+    uuid: "391a01e9-b664-407b-9158-610fab3f5920"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "google.com"
-  - name: "🇬🇧_110"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tesla.com"
+    reality-opts:
+      public-key: "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc"
+      short-id: "0eec442e7b34d2f2"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_55"
+    type: vless
+    server: "51.89.194.151"
+    port: 2053
+    uuid: "1fd1b8b1-5080-43c6-8564-b825cd783f06"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Erxh845BlP6uy97CL7ferXX3IsEQ-my7EOLI2mZMBHM"
+      short-id: "b3f7e7bbf581f6fc"
+  - name: "🇬🇧_56"
+    type: vless
+    server: "186.190.211.188"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "186.190.211.188"
+  - name: "🇬🇧_57"
+    type: vless
+    server: "138.124.125.211"
+    port: 443
+    uuid: "1996007c-e7bc-464b-999b-cac28cec6c3e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo"
+      short-id: "72cceb78"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_58"
+    type: vless
+    server: "45.152.64.9"
+    port: 11763
+    uuid: "fe564b09-1fd8-4053-934b-3106350e4272"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_59"
     type: vless
     server: "51.38.82.1"
     port: 443
@@ -83,20 +135,149 @@ proxies:
     reality-opts:
       public-key: "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M"
       short-id: "98fa0b00d09419f7"
-  - name: "🇬🇧_111"
+  - name: "🇬🇧_60"
     type: vless
-    server: "46.250.250.149"
-    port: 2053
-    uuid: "b4caaf57-ad77-4948-a6f5-51b3513799bf"
+    server: "82.39.171.142"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
-      public-key: "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M"
-      short-id: "9922313fffed1c63"
-  - name: "🇬🇧_112"
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_61"
+    type: vless
+    server: "78.129.208.44"
+    port: 421
+    uuid: "a9900333-444b-4a36-a2f0-0567946c47cd"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "chistomat.dry.care"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg"
+      short-id: "a1facbc8575701ae"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_62"
+    type: vless
+    server: "78.129.208.44"
+    port: 421
+    uuid: "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "chistomat.dry.care"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg"
+      short-id: "a1facbc8575701ae"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_63"
+    type: vless
+    server: "50.7.226.173"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-21.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_64"
+    type: vless
+    server: "50.7.226.171"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-21.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_65"
+    type: vless
+    server: "83.147.18.3"
+    port: 443
+    uuid: "9f61cdf4-810d-4052-bbc7-2da0c8e20104"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA"
+      short-id: "fd8cf7e1173f0edb"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_66"
+    type: vless
+    server: "57.129.132.223"
+    port: 80
+    uuid: "dbb78c94-9f87-4d7d-b945-2000b60352fd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net"
+  - name: "🇬🇧_67"
+    type: vless
+    server: "45.152.65.157"
+    port: 30521
+    uuid: "e6752712-f10c-4c8c-8308-d80b70a2b87a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_68"
+    type: vless
+    server: "5.152.223.97"
+    port: 443
+    uuid: "be5b6ad6-8184-4b63-82ac-3bc00c09c98c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "strapi.io"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs"
+      short-id: "1aa9f3c9021280c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_69"
+    type: vless
+    server: "50.7.226.174"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "en-new.moriarty-web.com"
+    client-fingerprint: "edge"
+    flow: "xtls-rprx-vision-udp443"
+  - name: "🇬🇧_70"
+    type: vless
+    server: "87.117.234.19"
+    port: 443
+    uuid: "4d583b2c-2f5a-47d0-8181-e95217fe8cd9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "strapi.io"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
+      short-id: "fd55b698ee8c3629"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_71"
     type: vless
     server: "91.193.17.156"
     port: 9460
@@ -112,316 +293,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇬🇧_113"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "ec7f1e33-f34e-451e-b069-0692f0c091e1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-  - name: "🇬🇧_114"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "aef1baec-9f54-4f2b-9120-46bbd850bf63"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-  - name: "🇬🇧_115"
-    type: vless
-    server: "159.65.48.114"
-    port: 74
-    uuid: "587fe27b-aced-4cbf-8283-ad4647f01a8c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-  - name: "🇬🇧_116"
-    type: vless
-    server: "46.101.46.169"
-    port: 486
-    uuid: "16bf3359-e7d8-4de6-86a0-6d65cf793b56"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-  - name: "🇬🇧_117"
-    type: vless
-    server: "57.128.177.198"
-    port: 443
-    uuid: "7b102311-43fd-4e8f-877e-8090623c101d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vp58.cc.cd"
-    network: ws
-    ws-opts:
-      path: "/Telegram🇨🇳 fp=chrome"
-      headers:
-        Host: "vp58.cc.cd"
-  - name: "🇬🇧_118"
-    type: vless
-    server: "82.39.171.12"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_119"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "4c6609bf-8457-4260-b4fa-321379e57a4e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-  - name: "🇬🇧_120"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "112c9db0-af6f-48b0-a59f-7677bed8e2d7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-  - name: "🇬🇧_121"
-    type: vless
-    server: "164.38.155.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_122"
-    type: vless
-    server: "138.124.125.211"
-    port: 443
-    uuid: "1996007c-e7bc-464b-999b-cac28cec6c3e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo"
-      short-id: "72cceb78"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_123"
-    type: vless
-    server: "141.101.121.158"
-    port: 443
-    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/sync"
-      headers:
-        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
-  - name: "🇬🇧_124"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "609b0d70-e2d0-4a48-95b1-02754e9b249a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
-  - name: "🇬🇧_125"
-    type: vless
-    server: "45.152.64.9"
-    port: 11763
-    uuid: "fe564b09-1fd8-4053-934b-3106350e4272"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_126"
-    type: vless
-    server: "186.190.211.188"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "186.190.211.188"
-  - name: "🇬🇧_127"
-    type: vless
-    server: "83.147.18.3"
-    port: 443
-    uuid: "9f61cdf4-810d-4052-bbc7-2da0c8e20104"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA"
-      short-id: "fd8cf7e1173f0edb"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_128"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "982ea9f8-f92f-4fa6-93e6-55892383bc68"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-  - name: "🇬🇧_129"
-    type: vless
-    server: "50.7.226.171"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-21.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_130"
-    type: vless
-    server: "50.7.226.173"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-21.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_131"
-    type: vless
-    server: "141.101.123.76"
-    port: 443
-    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/sync"
-      headers:
-        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
-  - name: "🇬🇧_132"
-    type: vless
-    server: "185.156.19.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_133"
-    type: vless
-    server: "109.176.239.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇬🇧_134"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "af9bbaac-efc1-48d3-ac0e-0b75f4de36ca"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-  - name: "🇬🇧_135"
+  - name: "🇬🇧_72"
     type: vless
     server: "46.250.240.80"
     port: 2053
@@ -434,489 +306,7 @@ proxies:
     reality-opts:
       public-key: "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E"
       short-id: "4cc9dc65f7770115"
-  - name: "🇬🇧_136"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "9b71c9bd-6418-462b-82b4-4a30690e0d47"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-  - name: "🇬🇧_137"
-    type: vless
-    server: "185.162.228.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_138"
-    type: vless
-    server: "149.248.79.235"
-    port: 17301
-    uuid: "3571b127-4b3b-4c01-8249-1684daf586b5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
-    reality-opts:
-      public-key: "nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY"
-      short-id: "5d"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇬🇧_139"
-    type: vless
-    server: "91.193.58.195"
-    port: 443
-    uuid: "9419f782-b18e-4c4b-ae95-a7a279fd021f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jamph131-1228.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/Telegram-WangCai2🇨🇳"
-      headers:
-        Host: "jamph131-1228.pages.dev"
-  - name: "🇬🇧_140"
-    type: vless
-    server: "91.193.58.125"
-    port: 2053
-    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vlso5.1d.mom"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇬🇧_141"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "73f96511-d245-4334-a34f-9d7a8551e656"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-  - name: "🇬🇧_142"
-    type: vless
-    server: "51.194.251.114"
-    port: 61592
-    uuid: "BD1F7E5E-9E0B-4919-A7F1-84BC9E69426D"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "store.storeimages.cdn-apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "jnu0rNHECTe_v7H9Fmgg0iUSepHz4QQQRPW0XpX5URs"
-      short-id: "1359c9bf9f7442e5"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_143"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "5cf5ed7b-6032-44a6-b008-f33fbc82530a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-  - name: "🇬🇧_144"
-    type: vless
-    server: "91.193.17.156"
-    port: 9458
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇬🇧_145"
-    type: vless
-    server: "91.193.59.255"
-    port: 2096
-    uuid: "42c62a5a-cd31-4551-80ef-908732370287"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fq.jp188.dpdns.org"
-    network: ws
-    ws-opts:
-      path: "/proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57"
-      headers:
-        Host: "fq.jp188.dpdns.org"
-  - name: "🇬🇧_146"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "3ab412c8-fe1a-44a2-a1c3-8b6d916cbc29"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-  - name: "🇬🇧_147"
-    type: vless
-    server: "3.9.135.156"
-    port: 51847
-    uuid: "391a01e9-b664-407b-9158-610fab3f5920"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.tesla.com"
-    reality-opts:
-      public-key: "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc"
-      short-id: "0eec442e7b34d2f2"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_148"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "04d2aebd-246f-4348-805f-a8e6840365fc"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-  - name: "🇬🇧_149"
-    type: vless
-    server: "51.89.194.151"
-    port: 2053
-    uuid: "1fd1b8b1-5080-43c6-8564-b825cd783f06"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Erxh845BlP6uy97CL7ferXX3IsEQ-my7EOLI2mZMBHM"
-      short-id: "b3f7e7bbf581f6fc"
-  - name: "🇬🇧_150"
-    type: vless
-    server: "66.90.104.42"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇬🇧_151"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "b30c54d5-315f-428c-80d0-83b4f423abb2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-  - name: "🇬🇧_152"
-    type: vless
-    server: "50.7.226.174"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "en-new.moriarty-web.com"
-    client-fingerprint: "edge"
-    flow: "xtls-rprx-vision-udp443"
-  - name: "🇬🇧_153"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "2c190197-fdb7-41c3-9bd6-76476cfcaa5d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-  - name: "🇬🇧_154"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "d29a700e-ebec-4a3b-af43-eff3c1aaf377"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-  - name: "🇬🇧_155"
-    type: vless
-    server: "51.38.70.192"
-    port: 443
-    uuid: "9343f183-7a16-4bdd-9c65-b0c21feca40b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M"
-      short-id: "98fa0b00d09419f7"
-  - name: "🇬🇧_156"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "98286408-b683-4c0f-96c5-7e00da649d90"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-  - name: "🇬🇧_157"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "afc0b2cb-164a-4311-99c6-2379fa5aab04"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-  - name: "🇬🇧_158"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "ac4f0d22-8032-4932-9d75-3df629d57f42"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-  - name: "🇬🇧_159"
-    type: vless
-    server: "57.129.132.223"
-    port: 80
-    uuid: "dbb78c94-9f87-4d7d-b945-2000b60352fd"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net"
-  - name: "🇬🇧_160"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "e8494262-7032-4d63-bde7-6bae8cdd0fa6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-  - name: "🇬🇧_161"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "7459f61c-00f6-459f-8f36-989674e55d5c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-  - name: "🇬🇧_162"
-    type: vless
-    server: "gr015.techinyab.ir"
-    port: 443
-    uuid: "9343f183-7a16-4bdd-9c65-b0c21feca40b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M"
-      short-id: "98fa0b00d09419f7"
-  - name: "🇬🇧_163"
-    type: vless
-    server: "45.12.30.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_164"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "82fc8761-470b-4022-89da-ce5412e8bb0a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-  - name: "🇬🇧_165"
-    type: vless
-    server: "91.193.59.32"
-    port: 2083
-    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vlsovip.1d.mom"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇬🇧_166"
-    type: vless
-    server: "91.193.59.191"
-    port: 2087
-    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vlso5.1d.mom"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/socks5=888:888@hkip.1d.mom:1080"
-      headers:
-        Host: "vlso5.1d.mom"
-  - name: "🇬🇧_167"
-    type: vless
-    server: "45.152.65.157"
-    port: 30521
-    uuid: "e6752712-f10c-4c8c-8308-d80b70a2b87a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_168"
-    type: vless
-    server: "5.10.215.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_169"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "201e0019-2e79-4147-8a09-e510d630abeb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-  - name: "🇬🇧_170"
+  - name: "🇬🇧_73"
     type: vless
     server: "95.154.196.61"
     port: 443
@@ -930,90 +320,7 @@ proxies:
       public-key: "2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM"
       short-id: "e4a1b53b03eff60d"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇧_171"
-    type: vless
-    server: "78.129.208.44"
-    port: 421
-    uuid: "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "chistomat.dry.care"
-    reality-opts:
-      public-key: "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg"
-      short-id: "a1facbc8575701ae"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_172"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "47ba5dc6-8961-48a0-8b54-f57ec524627a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-  - name: "🇬🇧_173"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "ccaa5bd3-ce49-4188-bf7e-078bbd421712"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-  - name: "🇬🇧_174"
-    type: vless
-    server: "50.7.226.172"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-21.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_175"
-    type: vless
-    server: "5.152.223.97"
-    port: 443
-    uuid: "be5b6ad6-8184-4b63-82ac-3bc00c09c98c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "strapi.io"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs"
-      short-id: "1aa9f3c9021280c0"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_176"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "c290d7f3-8399-43c9-9a1b-4977f380d65b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-  - name: "🇬🇧_177"
+  - name: "🇬🇧_74"
     type: vless
     server: "91.193.17.234"
     port: 9460
@@ -1029,36 +336,58 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇬🇧_178"
+  - name: "🇬🇧_75"
     type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "d4453a50-3fdf-465b-9dd3-5f2eed97ddd5"
+    server: "51.194.251.114"
+    port: 61592
+    uuid: "BD1F7E5E-9E0B-4919-A7F1-84BC9E69426D"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-  - name: "🇬🇧_179"
-    type: vless
-    server: "78.129.208.44"
-    port: 421
-    uuid: "a9900333-444b-4a36-a2f0-0567946c47cd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "chistomat.dry.care"
+    servername: "store.storeimages.cdn-apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg"
-      short-id: "a1facbc8575701ae"
+      public-key: "jnu0rNHECTe_v7H9Fmgg0iUSepHz4QQQRPW0XpX5URs"
+      short-id: "1359c9bf9f7442e5"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇧_180"
+  - name: "🇬🇧_76"
+    type: vless
+    server: "57.129.132.223"
+    port: 80
+    uuid: "9e20b04d-5a81-4e16-b421-01e502f0aac6"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "google.com"
+  - name: "🇬🇧_77"
+    type: vless
+    server: "50.7.226.172"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-21.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_78"
+    type: vless
+    server: "149.248.79.235"
+    port: 17301
+    uuid: "3571b127-4b3b-4c01-8249-1684daf586b5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aws.amazon.com"
+    reality-opts:
+      public-key: "nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY"
+      short-id: "5d"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇬🇧_79"
     type: vless
     server: "141.101.122.147"
     port: 443
@@ -1073,9 +402,18 @@ proxies:
       path: "/ws"
       headers:
         Host: "a.cwvps.eu.org"
-  - name: "🇬🇧_181"
+  - name: "🇬🇧_80"
     type: vless
-    server: "82.39.171.142"
+    server: "66.90.104.42"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇬🇧_81"
+    type: vless
+    server: "82.39.171.12"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -1087,7 +425,63 @@ proxies:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇧_182"
+  - name: "🇬🇧_82"
+    type: vless
+    server: "46.250.250.149"
+    port: 2053
+    uuid: "b4caaf57-ad77-4948-a6f5-51b3513799bf"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M"
+      short-id: "9922313fffed1c63"
+  - name: "🇬🇧_83"
+    type: vless
+    server: "46.33.8.20"
+    port: 443
+    uuid: "6806dc9a-8f5c-4981-b64d-3527b9522b62"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "filesconvert.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs"
+      short-id: "a61d99e920140145"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_84"
+    type: vless
+    server: "91.193.17.156"
+    port: 9458
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇬🇧_85"
+    type: vless
+    server: "51.38.70.192"
+    port: 443
+    uuid: "9343f183-7a16-4bdd-9c65-b0c21feca40b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M"
+      short-id: "98fa0b00d09419f7"
+  - name: "🇬🇧_86"
     type: vless
     server: "66.90.105.210"
     port: 2083
@@ -1096,271 +490,140 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
-  - name: "🇬🇧_183"
-    type: vless
-    server: "129.151.64.169"
-    port: 31867
-    uuid: "a140d049-3016-4ead-aa21-27a41e1de8b1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-  - name: "🇬🇧_184"
-    type: vless
-    server: "91.193.58.217"
-    port: 2053
-    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vlso200.1d.mom"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇬🇧_185"
-    type: vless
-    server: "87.117.234.19"
-    port: 443
-    uuid: "4d583b2c-2f5a-47d0-8181-e95217fe8cd9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "strapi.io"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY"
-      short-id: "fd55b698ee8c3629"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_186"
-    type: vless
-    server: "57.129.130.57"
-    port: 52014
-    uuid: "9befc0d2-22e5-4836-9f8b-92b5b26d6c7d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-  - name: "🇬🇧_187"
-    type: vless
-    server: "91.193.58.10"
-    port: 8880
-    uuid: "bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "yellow-mouse-fcce.400-318.workers.dev"
-  - name: "🇬🇧_188"
-    type: ss
-    server: "149.102.149.207"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
-    udp: true
-  - name: "🇬🇧_189"
-    type: ss
-    server: "149.102.149.207"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
-    udp: true
-  - name: "🇬🇧_190"
-    type: ss
-    server: "149.102.149.207"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
-    udp: true
-  - name: "🇬🇧_191"
+  - name: "🇬🇧_87"
     type: ss
     server: "149.102.132.184"
     port: 443
     cipher: "aes-256-gcm"
     password: "g5h5jleTRSyO3Rk4"
     udp: true
-  - name: "🇬🇧_192"
+  - name: "🇬🇧_88"
     type: ss
     server: "51.38.71.51"
     port: 2083
     cipher: "2022-blake3-aes-256-gcm"
     password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
     udp: true
-  - name: "🇬🇧_193"
+  - name: "🇬🇧_89"
+    type: ss
+    server: "149.102.132.184"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_90"
     type: ss
     server: "51.38.71.51"
     port: 2083
     cipher: "2022-blake3-aes-256-gcm"
     password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
     udp: true
-  - name: "🇬🇧_194"
-    type: ss
-    server: "129.151.66.200"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "BlKPEmE3GG0Bt8kkNySVh6JE8Iqmfs6e4ZB1ndZA4Cg="
-    udp: true
-  - name: "🇬🇧_195"
-    type: ss
-    server: "82.110.60.9"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
-  - name: "🇬🇧_196"
-    type: ss
-    server: "129.151.87.146"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk="
-    udp: true
-  - name: "🇬🇧_197"
-    type: ss
-    server: "185.164.175.81"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    udp: true
-  - name: "🇬🇧_198"
+  - name: "🇬🇧_91"
     type: ss
     server: "141.98.101.181"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "🇬🇧_199"
+  - name: "🇬🇧_92"
     type: ss
-    server: "129.151.70.86"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "rHAKYPBTYlTzr4OjxHmwrHQW2uawHaNcIDbWI1FIrtg="
+    server: "149.102.149.207"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
     udp: true
-  - name: "🇬🇧_200"
-    type: ss
-    server: "51.38.71.51"
-    port: 2083
-    cipher: "2022-blake3-aes-256-gcm"
-    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
-    udp: true
-  - name: "🇬🇧_201"
-    type: ss
-    server: "51.38.71.51"
-    port: 2083
-    cipher: "2022-blake3-aes-256-gcm"
-    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
-    udp: true
-  - name: "🇬🇧_202"
+  - name: "🇬🇧_93"
     type: ss
     server: "82.110.60.9"
     port: 19999
     cipher: "aes-256-gcm"
     password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     udp: true
-  - name: "🇬🇧_203"
+  - name: "🇬🇧_94"
     type: ss
-    server: "158.173.24.73"
+    server: "149.102.132.184"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_95"
+    type: ss
+    server: "82.110.60.9"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_96"
+    type: ss
+    server: "185.164.175.81"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_97"
+    type: ss
+    server: "141.98.101.181"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "🇬🇧_204"
+  - name: "🇬🇧_98"
     type: ss
-    server: "129.151.95.27"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "etWHWAsjCiGbHaessIM5QuQfSZ8qjOUGlo0fyhpFkDw="
-    udp: true
-  - name: "🇬🇧_205"
-    type: ss
-    server: "149.102.132.184"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
-    udp: true
-  - name: "🇬🇧_206"
-    type: ss
-    server: "129.151.87.146"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk="
-    udp: true
-  - name: "🇬🇧_207"
-    type: ss
-    server: "129.151.91.137"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "Lxh65lIS+1ety8niQp7PTqF26SPc5tIoS6a7T0MZRsk="
-    udp: true
-  - name: "🇬🇧_208"
-    type: ss
-    server: "129.151.70.86"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "rHAKYPBTYlTzr4OjxHmwrHQW2uawHaNcIDbWI1FIrtg="
-    udp: true
-  - name: "🇬🇧_209"
-    type: ss
-    server: "149.102.132.184"
+    server: "149.102.149.207"
     port: 80
     cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
+    password: "LXchLsIwtCeUAUgu"
     udp: true
-  - name: "🇬🇧_210"
+  - name: "🇬🇧_99"
     type: ss
-    server: "134.65.57.2"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "lBKlAgyEYxdK5DDBEOu4ETTzm7vEPhaz74VvOn9V4HY="
+    server: "51.38.71.51"
+    port: 2083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
     udp: true
-  - name: "🇬🇧_211"
-    type: ss
-    server: "149.102.132.184"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
-    udp: true
-  - name: "🇬🇧_212"
+  - name: "🇬🇧_100"
     type: ss
     server: "94.156.250.148"
     port: 7001
     cipher: "aes-256-gcm"
     password: "RexnBgU7EV5ADxG"
     udp: true
-  - name: "🇬🇧_213"
+  - name: "🇬🇧_101"
+    type: ss
+    server: "149.102.132.184"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_102"
     type: ss
     server: "149.102.149.207"
     port: 80
     cipher: "aes-256-gcm"
     password: "LXchLsIwtCeUAUgu"
     udp: true
-  - name: "🇬🇧_214"
+  - name: "🇬🇧_103"
+    type: ss
+    server: "149.102.149.207"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
+    udp: true
+  - name: "🇬🇧_104"
     type: ss
     server: "185.164.175.81"
     port: 19999
     cipher: "aes-256-gcm"
     password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     udp: true
-  - name: "🇬🇧_215"
+  - name: "🇬🇧_105"
     type: ss
-    server: "141.98.101.181"
+    server: "158.173.24.73"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "🇬🇧_216"
+  - name: "🇬🇧_106"
     type: ss
     server: "158.173.24.73"
     port: 443
@@ -1409,114 +672,59 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
   - name: "LB-CDN"
     type: load-balance
@@ -1526,114 +734,59 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -1643,114 +796,59 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
   - name: "FAST-CDN"
     type: url-test
@@ -1759,114 +857,59 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -1876,227 +919,117 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇬🇧_109"
-      - "🇬🇧_110"
-      - "🇬🇧_111"
-      - "🇬🇧_112"
-      - "🇬🇧_113"
-      - "🇬🇧_114"
-      - "🇬🇧_115"
-      - "🇬🇧_116"
-      - "🇬🇧_117"
-      - "🇬🇧_118"
-      - "🇬🇧_119"
-      - "🇬🇧_120"
-      - "🇬🇧_121"
-      - "🇬🇧_122"
-      - "🇬🇧_123"
-      - "🇬🇧_124"
-      - "🇬🇧_125"
-      - "🇬🇧_126"
-      - "🇬🇧_127"
-      - "🇬🇧_128"
-      - "🇬🇧_129"
-      - "🇬🇧_130"
-      - "🇬🇧_131"
-      - "🇬🇧_132"
-      - "🇬🇧_133"
-      - "🇬🇧_134"
-      - "🇬🇧_135"
-      - "🇬🇧_136"
-      - "🇬🇧_137"
-      - "🇬🇧_138"
-      - "🇬🇧_139"
-      - "🇬🇧_140"
-      - "🇬🇧_141"
-      - "🇬🇧_142"
-      - "🇬🇧_143"
-      - "🇬🇧_144"
-      - "🇬🇧_145"
-      - "🇬🇧_146"
-      - "🇬🇧_147"
-      - "🇬🇧_148"
-      - "🇬🇧_149"
-      - "🇬🇧_150"
-      - "🇬🇧_151"
-      - "🇬🇧_152"
-      - "🇬🇧_153"
-      - "🇬🇧_154"
-      - "🇬🇧_155"
-      - "🇬🇧_156"
-      - "🇬🇧_157"
-      - "🇬🇧_158"
-      - "🇬🇧_159"
-      - "🇬🇧_160"
-      - "🇬🇧_161"
-      - "🇬🇧_162"
-      - "🇬🇧_163"
-      - "🇬🇧_164"
-      - "🇬🇧_165"
-      - "🇬🇧_166"
-      - "🇬🇧_167"
-      - "🇬🇧_168"
-      - "🇬🇧_169"
-      - "🇬🇧_170"
-      - "🇬🇧_171"
-      - "🇬🇧_172"
-      - "🇬🇧_173"
-      - "🇬🇧_174"
-      - "🇬🇧_175"
-      - "🇬🇧_176"
-      - "🇬🇧_177"
-      - "🇬🇧_178"
-      - "🇬🇧_179"
-      - "🇬🇧_180"
-      - "🇬🇧_181"
-      - "🇬🇧_182"
-      - "🇬🇧_183"
-      - "🇬🇧_184"
-      - "🇬🇧_185"
-      - "🇬🇧_186"
-      - "🇬🇧_187"
-      - "🇬🇧_188"
-      - "🇬🇧_189"
-      - "🇬🇧_190"
-      - "🇬🇧_191"
-      - "🇬🇧_192"
-      - "🇬🇧_193"
-      - "🇬🇧_194"
-      - "🇬🇧_195"
-      - "🇬🇧_196"
-      - "🇬🇧_197"
-      - "🇬🇧_198"
-      - "🇬🇧_199"
-      - "🇬🇧_200"
-      - "🇬🇧_201"
-      - "🇬🇧_202"
-      - "🇬🇧_203"
-      - "🇬🇧_204"
-      - "🇬🇧_205"
-      - "🇬🇧_206"
-      - "🇬🇧_207"
-      - "🇬🇧_208"
-      - "🇬🇧_209"
-      - "🇬🇧_210"
-      - "🇬🇧_211"
-      - "🇬🇧_212"
-      - "🇬🇧_213"
-      - "🇬🇧_214"
-      - "🇬🇧_215"
-      - "🇬🇧_216"
+      - "🇬🇧_54"
+      - "🇬🇧_55"
+      - "🇬🇧_56"
+      - "🇬🇧_57"
+      - "🇬🇧_58"
+      - "🇬🇧_59"
+      - "🇬🇧_60"
+      - "🇬🇧_61"
+      - "🇬🇧_62"
+      - "🇬🇧_63"
+      - "🇬🇧_64"
+      - "🇬🇧_65"
+      - "🇬🇧_66"
+      - "🇬🇧_67"
+      - "🇬🇧_68"
+      - "🇬🇧_69"
+      - "🇬🇧_70"
+      - "🇬🇧_71"
+      - "🇬🇧_72"
+      - "🇬🇧_73"
+      - "🇬🇧_74"
+      - "🇬🇧_75"
+      - "🇬🇧_76"
+      - "🇬🇧_77"
+      - "🇬🇧_78"
+      - "🇬🇧_79"
+      - "🇬🇧_80"
+      - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
+      - "🇬🇧_103"
+      - "🇬🇧_104"
+      - "🇬🇧_105"
+      - "🇬🇧_106"
 
 rules:
   - MATCH,PROXY-BEST
