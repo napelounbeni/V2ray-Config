@@ -59,33 +59,39 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇿_6"
-    type: vless
-    server: "83.222.23.81"
-    port: 38065
-    uuid: "4b9063e0-3288-44e9-9aac-80fbfce323a0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
-      short-id: "fa"
-  - name: "🇰🇿_7"
-    type: vless
-    server: "178.236.16.98"
-    port: 35728
-    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
-      short-id: "69a2"
   - name: "🇰🇿_8"
+    type: vless
+    server: "5.35.81.60"
+    port: 4443
+    uuid: "cabd9303-ae32-4d25-86b9-26b312d0f044"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "maps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM"
+      short-id: "e5f6a1b2"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "snob-grpc-de"
+  - name: "🇰🇿_9"
+    type: vless
+    server: "5.35.81.60"
+    port: 4443
+    uuid: "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "maps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM"
+      short-id: "e5f6a1b2"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "snob-grpc-de"
+  - name: "🇰🇿_10"
     type: vless
     server: "109.248.170.119"
     port: 13447
@@ -98,7 +104,48 @@ proxies:
     reality-opts:
       public-key: "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE"
       short-id: "83"
-  - name: "🇰🇿_9"
+  - name: "🇰🇿_11"
+    type: vless
+    server: "178.236.16.98"
+    port: 35728
+    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
+      short-id: "69a2"
+  - name: "🇰🇿_12"
+    type: vless
+    server: "83.222.23.81"
+    port: 38065
+    uuid: "4b9063e0-3288-44e9-9aac-80fbfce323a0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
+      short-id: "fa"
+  - name: "🇰🇿_13"
+    type: vless
+    server: "194.59.5.46"
+    port: 2096
+    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wild-sky-f384.alvlirm3737.workers.dev"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202"
+      headers:
+        Host: "wild-sky-f384.alvlirm3737.workers.dev"
+  - name: "🇰🇿_14"
     type: vless
     server: "77.73.232.61"
     port: 19747
@@ -111,22 +158,6 @@ proxies:
     reality-opts:
       public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
       short-id: "2001"
-  - name: "🇰🇿_10"
-    type: vless
-    server: "5.35.81.60"
-    port: 4443
-    uuid: "cabd9303-ae32-4d25-86b9-26b312d0f044"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "maps.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM"
-      short-id: "e5f6a1b2"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "snob-grpc-de"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -169,11 +200,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -183,11 +216,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -197,11 +232,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -210,11 +247,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -224,21 +263,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇰🇿_6"
-      - "🇰🇿_7"
       - "🇰🇿_8"
       - "🇰🇿_9"
       - "🇰🇿_10"
+      - "🇰🇿_11"
+      - "🇰🇿_12"
+      - "🇰🇿_13"
+      - "🇰🇿_14"
 
 rules:
   - MATCH,PROXY-BEST

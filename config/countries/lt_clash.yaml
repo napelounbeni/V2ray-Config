@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "ltu-02.node.lumixnet.com"
+    port: 443
+    uuid: "8645697d-51c1-4e90-aca5-ba63a0392f11"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ltu-02.node.lumixnet.com"
+    client-fingerprint: "hellochrome_120"
+    reality-opts:
+      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
+      short-id: "bd8a588cebc3395a"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "144.31.243.220"
     port: 443
     uuid: "c09cfd91-b234-4998-9bed-a0211b7f5c3c"
@@ -77,21 +91,6 @@ proxies:
       public-key: "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04"
       short-id: "abcd1234"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
-    type: vless
-    server: "89.116.250.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
   - name: "🇱🇹_3"
     type: vless
     server: "2.56.124.241"
@@ -107,19 +106,6 @@ proxies:
       short-id: "72104d27a0f5f62e"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_4"
-    type: trojan
-    server: "195.181.244.216"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇱🇹_5"
     type: ss
     server: "144.31.243.2"
     port: 16015
@@ -144,7 +130,6 @@ proxy-groups:
       - "🇱🇹_2"
       - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
 
 
 rules:

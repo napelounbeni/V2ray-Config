@@ -63,12 +63,36 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇦🇿_1"
+  - name: "🇨🇷_1"
     type: vless
-    server: "basalam.horqen.ir"
-    port: 21289
-    uuid: "c12db015-a63c-43e5-a744-6398a90373b5"
+    server: "190.93.245.176"
+    port: 443
+    uuid: "7493883f-6047-46a7-8d95-f59e137ffaec"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auto-749388.rohawmk.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM-TOOTFFARANGI?ed=2560"
+      headers:
+        Host: "auto-749388.rohawmk.workers.dev"
+  - name: "🇨🇷_2"
+    type: vless
+    server: "190.93.245.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -83,7 +107,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇦🇿_1"
+      - "🇨🇷_1"
+      - "🇨🇷_2"
 
 
 rules:

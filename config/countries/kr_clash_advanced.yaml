@@ -59,21 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇷_26"
+  - name: "🇰🇷_24"
     type: vless
-    server: "3.39.4.109"
-    port: 13672
-    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    server: "47.80.14.8"
+    port: 443
+    uuid: "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
+    servername: "www.samsung.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
-      short-id: "48050fab"
+      public-key: "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w"
+      short-id: "71110d3f7ef57760"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_27"
+  - name: "🇰🇷_25"
     type: vless
     server: "3.39.4.109"
     port: 18967
@@ -87,21 +87,21 @@ proxies:
       public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
       short-id: "48050fab"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_28"
+  - name: "🇰🇷_26"
     type: vless
-    server: "47.80.14.8"
+    server: "47.80.62.191"
     port: 443
-    uuid: "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93"
+    uuid: "43e60b75-9920-450a-94ee-8762758ca49c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.samsung.com"
+    servername: "www.logitech.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w"
-      short-id: "71110d3f7ef57760"
+      public-key: "Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE"
+      short-id: "bd0040df20a53b36"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_29"
+  - name: "🇰🇷_27"
     type: vless
     server: "151.245.106.49"
     port: 2053
@@ -114,7 +114,21 @@ proxies:
     reality-opts:
       public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
       short-id: "429499c03d4cc8a0"
-  - name: "🇰🇷_30"
+  - name: "🇰🇷_28"
+    type: vless
+    server: "3.39.4.109"
+    port: 13672
+    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
+      short-id: "48050fab"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇷_29"
     type: vless
     server: "119.28.161.143"
     port: 443
@@ -127,7 +141,7 @@ proxies:
     reality-opts:
       public-key: "pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs"
       short-id: "0a427bc3"
-  - name: "🇰🇷_31"
+  - name: "🇰🇷_30"
     type: trojan
     server: "154.90.62.70"
     port: 56127
@@ -135,82 +149,89 @@ proxies:
     sni: "154.90.62.70"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_32"
-    type: ss
-    server: "141.164.45.187"
-    port: 8008
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
-    udp: true
-  - name: "🇰🇷_33"
-    type: ss
-    server: "141.164.45.187"
-    port: 8119
-    cipher: "aes-256-gcm"
-    password: "cdBIDV42DCwnfIN"
-    udp: true
-  - name: "🇰🇷_34"
-    type: ss
-    server: "141.164.45.187"
-    port: 7001
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
-    udp: true
-  - name: "🇰🇷_35"
-    type: ss
-    server: "141.164.45.187"
-    port: 2376
-    cipher: "aes-256-gcm"
-    password: "faBAoD54k87UJG7"
-    udp: true
-  - name: "🇰🇷_36"
-    type: ss
-    server: "141.164.45.187"
-    port: 8008
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
-    udp: true
-  - name: "🇰🇷_37"
-    type: ss
-    server: "141.164.45.187"
-    port: 5001
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_38"
-    type: ss
-    server: "141.164.45.187"
-    port: 9101
-    cipher: "aes-256-gcm"
-    password: "e4FCWrgpkji3QY"
-    udp: true
-  - name: "🇰🇷_39"
+  - name: "🇰🇷_31"
     type: ss
     server: "141.164.45.187"
     port: 8091
     cipher: "aes-256-gcm"
     password: "PCnnH6SQSnfoS27"
     udp: true
-  - name: "🇰🇷_40"
+  - name: "🇰🇷_32"
     type: ss
     server: "141.164.45.187"
-    port: 5001
+    port: 2376
     cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+    password: "faBAoD54k87UJG7"
     udp: true
-  - name: "🇰🇷_41"
+  - name: "🇰🇷_33"
     type: ss
     server: "141.164.45.187"
     port: 9101
     cipher: "aes-256-gcm"
     password: "e4FCWrgpkji3QY"
     udp: true
-  - name: "🇰🇷_42"
+  - name: "🇰🇷_34"
+    type: ss
+    server: "141.164.45.187"
+    port: 8008
+    cipher: "aes-256-gcm"
+    password: "XKFKl2rULjIp74"
+    udp: true
+  - name: "🇰🇷_35"
+    type: ss
+    server: "141.164.45.187"
+    port: 6679
+    cipher: "aes-256-gcm"
+    password: "TEzjfAYq2IjtuoS"
+    udp: true
+  - name: "🇰🇷_36"
     type: ss
     server: "141.164.45.187"
     port: 6697
     cipher: "aes-256-gcm"
     password: "TEzjfAYq2IjtuoS"
+    udp: true
+  - name: "🇰🇷_37"
+    type: ss
+    server: "141.164.45.187"
+    port: 7002
+    cipher: "aes-256-gcm"
+    password: "RexnBgU7EV5ADxG"
+    udp: true
+  - name: "🇰🇷_38"
+    type: ss
+    server: "141.164.45.187"
+    port: 5001
+    cipher: "aes-256-gcm"
+    password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇰🇷_39"
+    type: ss
+    server: "141.164.45.187"
+    port: 5001
+    cipher: "aes-256-gcm"
+    password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇰🇷_40"
+    type: ss
+    server: "141.164.45.187"
+    port: 9101
+    cipher: "aes-256-gcm"
+    password: "e4FCWrgpkji3QY"
+    udp: true
+  - name: "🇰🇷_41"
+    type: ss
+    server: "141.164.45.187"
+    port: 8119
+    cipher: "aes-256-gcm"
+    password: "cdBIDV42DCwnfIN"
+    udp: true
+  - name: "🇰🇷_42"
+    type: ss
+    server: "141.164.45.187"
+    port: 7001
+    cipher: "aes-256-gcm"
+    password: "RexnBgU7EV5ADxG"
     udp: true
   - name: "🇰🇷_43"
     type: ss
@@ -222,49 +243,21 @@ proxies:
   - name: "🇰🇷_44"
     type: ss
     server: "141.164.45.187"
-    port: 9090
+    port: 8008
     cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+    password: "XKFKl2rULjIp74"
     udp: true
   - name: "🇰🇷_45"
     type: ss
     server: "141.164.45.187"
-    port: 6679
+    port: 8888
     cipher: "aes-256-gcm"
-    password: "TEzjfAYq2IjtuoS"
+    password: "Y6R9pAtvxxzmGC"
     udp: true
   - name: "🇰🇷_46"
     type: ss
     server: "141.164.45.187"
-    port: 8000
-    cipher: "aes-256-gcm"
-    password: "KixLvKzwjekG00rm"
-    udp: true
-  - name: "🇰🇷_47"
-    type: ss
-    server: "141.164.45.187"
     port: 9090
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_48"
-    type: ss
-    server: "141.164.45.187"
-    port: 7002
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
-    udp: true
-  - name: "🇰🇷_49"
-    type: ss
-    server: "141.164.45.187"
-    port: 8000
-    cipher: "aes-256-gcm"
-    password: "KixLvKzwjekG00rm"
-    udp: true
-  - name: "🇰🇷_50"
-    type: ss
-    server: "141.164.45.187"
-    port: 8888
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
@@ -310,6 +303,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -331,10 +326,6 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
   - name: "LB-CDN"
     type: load-balance
@@ -344,6 +335,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -365,10 +358,6 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -378,6 +367,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -399,10 +390,6 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
   - name: "FAST-CDN"
     type: url-test
@@ -411,6 +398,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -432,10 +421,6 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -445,6 +430,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -466,15 +453,13 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇰🇷_24"
+      - "🇰🇷_25"
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
@@ -496,10 +481,6 @@ proxy-groups:
       - "🇰🇷_44"
       - "🇰🇷_45"
       - "🇰🇷_46"
-      - "🇰🇷_47"
-      - "🇰🇷_48"
-      - "🇰🇷_49"
-      - "🇰🇷_50"
 
 rules:
   - MATCH,PROXY-BEST
