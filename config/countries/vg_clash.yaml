@@ -63,13 +63,17 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇱_1"
-    type: ss
-    server: "64.176.2.21"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "xBStBEVqvGwHPocc"
+  - name: "🇻🇬_1"
+    type: vless
+    server: "104.234.239.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -84,7 +88,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇱_1"
+      - "🇻🇬_1"
 
 
 rules:

@@ -59,7 +59,29 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇩_2"
+  - name: "🇮🇩_4"
+    type: vless
+    server: "172.232.240.6"
+    port: 443
+    uuid: "b82330a7-c64a-46a4-b109-e71b63cb26c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇮🇩_5"
+    type: ss
+    server: "103.160.63.199"
+    port: 31348
+    cipher: "chacha20-ietf-poly1305"
+    password: "8C5valhOd8vfwaTXUSZ6Zyb0Ip34lRR5z7P8az"
+    udp: true
+  - name: "🇮🇩_6"
     type: ss
     server: "103.160.63.199"
     port: 31348
@@ -108,7 +130,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -118,7 +142,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -128,7 +154,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -137,7 +165,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -147,13 +177,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇩_2"
+      - "🇮🇩_4"
+      - "🇮🇩_5"
+      - "🇮🇩_6"
 
 rules:
   - MATCH,PROXY-BEST

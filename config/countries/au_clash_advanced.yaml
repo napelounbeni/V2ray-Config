@@ -59,7 +59,31 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_6"
+    type: vless
+    server: "172.105.169.70"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "172.105.169.70"
+  - name: "🇦🇺_7"
+    type: vless
+    server: "206.168.133.137"
+    port: 443
+    uuid: "b82330a7-c64a-46a4-b109-e71b63cb26c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇦🇺_8"
     type: vless
     server: "51.161.204.242"
     port: 443
@@ -73,16 +97,18 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_5"
+  - name: "🇦🇺_9"
     type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
-  - name: "🇦🇺_6"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_10"
     type: vless
     server: "103.75.119.126"
     port: 2087
@@ -133,9 +159,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -145,9 +173,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -157,9 +187,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -168,9 +200,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -180,17 +214,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_4"
-      - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
+      - "🇦🇺_10"
 
 rules:
   - MATCH,PROXY-BEST

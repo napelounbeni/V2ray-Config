@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇭_3"
+  - name: "🇹🇭_6"
+    type: vless
+    server: "45.150.128.159"
+    port: 443
+    uuid: "b82330a7-c64a-46a4-b109-e71b63cb26c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇹🇭_7"
     type: vless
     server: "43.133.110.81"
     port: 443
@@ -74,7 +89,29 @@ proxies:
       path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
       headers:
         Host: "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-  - name: "🇹🇭_4"
+  - name: "🇹🇭_8"
+    type: vless
+    server: "V2rAy.SiMsPeEdUp.CoM"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_9"
+    type: vless
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "v2ray.simspeedup.com"
+  - name: "🇹🇭_10"
     type: vless
     server: "103.86.49.57"
     port: 80
@@ -127,8 +164,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,8 +178,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,8 +192,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -159,8 +205,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -170,15 +219,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇭_3"
-      - "🇹🇭_4"
+      - "🇹🇭_6"
+      - "🇹🇭_7"
+      - "🇹🇭_8"
+      - "🇹🇭_9"
+      - "🇹🇭_10"
 
 rules:
   - MATCH,PROXY-BEST

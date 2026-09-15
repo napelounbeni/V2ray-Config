@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇷_4"
-    type: vless
-    server: "38.54.29.113"
-    port: 8553
-    uuid: "824faea9-cafe-5fa1-90dd-46d975d22ca8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "C41m2OJvTIXOIo9KsTstW-4BggXA0BR3p3B7Ve5jkx8"
-      short-id: "a141e13cdb91e888"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_5"
+  - name: "🇬🇷_3"
     type: vless
     server: "185.126.238.87"
     port: 2083
@@ -82,7 +68,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_6"
+  - name: "🇬🇷_4"
     type: vless
     server: "85.90.197.220"
     port: 443
@@ -138,9 +124,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -150,9 +135,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -162,9 +146,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -173,9 +156,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -185,17 +167,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇬🇷_3"
       - "🇬🇷_4"
-      - "🇬🇷_5"
-      - "🇬🇷_6"
 
 rules:
   - MATCH,PROXY-BEST

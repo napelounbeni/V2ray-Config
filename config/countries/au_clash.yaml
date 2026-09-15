@@ -65,6 +65,30 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
+    server: "172.105.169.70"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "172.105.169.70"
+  - name: "🇦🇺_2"
+    type: vless
+    server: "206.168.133.137"
+    port: 443
+    uuid: "b82330a7-c64a-46a4-b109-e71b63cb26c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇦🇺_3"
+    type: vless
     server: "51.161.204.242"
     port: 443
     uuid: "a14b736b-a92a-48d6-a596-5d31f7378ded"
@@ -77,16 +101,18 @@ proxies:
       public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
       short-id: "d15c17cef9b2e456"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_2"
+  - name: "🇦🇺_4"
     type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
-  - name: "🇦🇺_3"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_5"
     type: vless
     server: "103.75.119.126"
     port: 2087
@@ -112,6 +138,8 @@ proxy-groups:
       - "🇦🇺_1"
       - "🇦🇺_2"
       - "🇦🇺_3"
+      - "🇦🇺_4"
+      - "🇦🇺_5"
 
 
 rules:

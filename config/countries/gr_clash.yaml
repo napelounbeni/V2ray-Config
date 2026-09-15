@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇬🇷_1"
     type: vless
-    server: "38.54.29.113"
-    port: 8553
-    uuid: "824faea9-cafe-5fa1-90dd-46d975d22ca8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "C41m2OJvTIXOIo9KsTstW-4BggXA0BR3p3B7Ve5jkx8"
-      short-id: "a141e13cdb91e888"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_2"
-    type: vless
     server: "185.126.238.87"
     port: 2083
     uuid: "7668f678-faee-40cc-9b56-9c39dc773388"
@@ -86,7 +72,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_3"
+  - name: "🇬🇷_2"
     type: vless
     server: "85.90.197.220"
     port: 443
@@ -116,7 +102,6 @@ proxy-groups:
     proxies:
       - "🇬🇷_1"
       - "🇬🇷_2"
-      - "🇬🇷_3"
 
 
 rules:

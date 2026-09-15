@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇹🇭_1"
     type: vless
+    server: "45.150.128.159"
+    port: 443
+    uuid: "b82330a7-c64a-46a4-b109-e71b63cb26c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇹🇭_2"
+    type: vless
     server: "43.133.110.81"
     port: 443
     uuid: "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
@@ -78,7 +93,29 @@ proxies:
       path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
       headers:
         Host: "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
-  - name: "🇹🇭_2"
+  - name: "🇹🇭_3"
+    type: vless
+    server: "V2rAy.SiMsPeEdUp.CoM"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_4"
+    type: vless
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "v2ray.simspeedup.com"
+  - name: "🇹🇭_5"
     type: vless
     server: "103.86.49.57"
     port: 80
@@ -105,6 +142,9 @@ proxy-groups:
     proxies:
       - "🇹🇭_1"
       - "🇹🇭_2"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
+      - "🇹🇭_5"
 
 
 rules:
