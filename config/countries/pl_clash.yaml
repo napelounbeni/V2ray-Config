@@ -65,7 +65,7 @@ dns:
 proxies:
   - name: "🇵🇱_1"
     type: vless
-    server: "83.168.71.216"
+    server: "tg.riotvpn.eu"
     port: 443
     uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
     udp: true
@@ -78,6 +78,51 @@ proxies:
       short-id: "2f49bccf11150ef2"
   - name: "🇵🇱_2"
     type: vless
+    server: "50.7.249.181"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pl-dedic-2.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision-udp443"
+  - name: "🇵🇱_3"
+    type: vless
+    server: "50.7.248.237"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pl-new-dedic.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision-udp443"
+  - name: "🇵🇱_4"
+    type: vless
+    server: "50.7.249.172"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pl-dedic-3.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision-udp443"
+  - name: "🇵🇱_5"
+    type: vless
+    server: "64.176.64.194"
+    port: 25585
+    uuid: "6eebb521-1844-4c3c-bf54-fb0e19870f80"
+    udp: true
+  - name: "🇵🇱_6"
+    type: vless
+    server: "64.176.64.194"
+    port: 25585
+    uuid: "8b84bbec-9a55-47c2-ac2e-03c41065e572"
+    udp: true
+  - name: "🇵🇱_7"
+    type: vless
     server: "144.31.5.64"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -87,88 +132,33 @@ proxies:
     servername: "pl6.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_3"
-    type: vless
-    server: "141.101.120.129"
-    port: 80
-    uuid: "3087ca05-1a7c-45fa-aec9-805adeaedb1b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "tianshu.kevqwkt451.workers.dev"
-  - name: "🇵🇱_4"
-    type: vless
-    server: "144.31.3.56"
-    port: 443
-    uuid: "4360f941-b541-43d4-8507-2de3763e0cfd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl.convert-flow.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "00a61d55a07de885"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_5"
-    type: vless
-    server: "50.7.249.181"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl-dedic-2.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_6"
-    type: vless
-    server: "141.101.120.73"
-    port: 443
-    uuid: "5d8eb33a-2166-4daf-88fe-4be5799c493b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "noisy-term-e657.airdrop2014aa5168.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "noisy-term-e657.airdrop2014aa5168.workers.dev"
-  - name: "🇵🇱_7"
-    type: vless
-    server: "185.193.30.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
   - name: "🇵🇱_8"
     type: vless
-    server: "178.95.170.115"
-    port: 2087
-    uuid: "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/4bc027a44532"
-  - name: "🇵🇱_9"
-    type: vless
-    server: "50.7.248.234"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "2.26.255.36"
+    port: 8443
+    uuid: "8787dd0a-095a-414e-804f-a7d16a1ae166"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "viper-22.moriarty-web.com"
+    servername: "po1.hys.braidx.tech"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇵🇱_9"
+    type: vless
+    server: "185.223.57.16"
+    port: 33743
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
   - name: "🇵🇱_10"
     type: vless
     server: "185.223.57.10"
@@ -187,74 +177,74 @@ proxies:
       grpc-service-name: "TunService"
   - name: "🇵🇱_11"
     type: vless
-    server: "54.37.136.194"
-    port: 2053
-    uuid: "e8a432c8-5d84-49a5-b822-67ed761a58f9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A"
-      short-id: "50ba05992b05c1c3"
-  - name: "🇵🇱_12"
-    type: vless
-    server: "pl6.moritech.net"
+    server: "pl4.moritech.net"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl6.moritech.net"
-    client-fingerprint: "chrome"
+    servername: "pl4.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_12"
+    type: vless
+    server: "50.7.248.234"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-22.moriarty-web.com"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_13"
     type: vless
-    server: "2.26.255.36"
-    port: 8443
-    uuid: "8787dd0a-095a-414e-804f-a7d16a1ae166"
+    server: "83.168.71.216"
+    port: 443
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "po1.hys.braidx.tech"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    servername: "ads.x5.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
   - name: "🇵🇱_14"
     type: vless
-    server: "50.7.248.237"
+    server: "50.7.249.66"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl-new-dedic.failspace.top"
+    servername: "pl-new-ded2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_15"
     type: vless
-    server: "95.85.227.42"
-    port: 8766
-    uuid: "646302d5-9735-435d-8015-e4c19fb3691c"
+    server: "82.118.22.161"
+    port: 443
+    uuid: "05488656-d4bf-4634-8b2e-e4ff5a56c7e2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cache-93011b.vless.monster"
-    client-fingerprint: "firefox"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "1hgJ-VgoAJku4kzSX_Kw-76L8RcDNH4HdMgrAF458DI"
-      short-id: ""
+      public-key: "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E"
+      short-id: "fa3ea655619a3e78"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_16"
     type: vless
-    server: "144.31.2.33"
+    server: "pl-new-ded2.moritech.net"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl3.moritech.net"
-    client-fingerprint: "chrome"
+    servername: "pl-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_17"
     type: vless
@@ -272,25 +262,34 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_18"
     type: vless
-    server: "178.95.170.98"
-    port: 2087
-    uuid: "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
+    server: "54.37.136.194"
+    port: 2053
+    uuid: "e8a432c8-5d84-49a5-b822-67ed761a58f9"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/4bc027a44532"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    reality-opts:
+      public-key: "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A"
+      short-id: "50ba05992b05c1c3"
   - name: "🇵🇱_19"
     type: vless
-    server: "50.7.249.66"
+    server: "144.31.2.33"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl-new-ded2.moritech.net"
-    client-fingerprint: "firefox"
+    servername: "pl3.moritech.net"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_20"
+    type: vless
+    server: "64.176.64.194"
+    port: 25585
+    uuid: "e4668a2b-66d6-4500-bcef-5ed52414e40a"
+    udp: true
+  - name: "🇵🇱_21"
     type: vless
     server: "144.31.5.3"
     port: 443
@@ -299,73 +298,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "pl4.moritech.net"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_21"
-    type: vless
-    server: "82.118.22.161"
-    port: 443
-    uuid: "05488656-d4bf-4634-8b2e-e4ff5a56c7e2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E"
-      short-id: "fa3ea655619a3e78"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇵🇱_22"
-    type: vless
-    server: "185.223.57.16"
-    port: 33743
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇵🇱_23"
-    type: vless
-    server: "178.95.170.83"
-    port: 2087
-    uuid: "bf443e4a-aa9e-4509-abf0-d0f6828d57be"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/4bc027a44532"
-  - name: "🇵🇱_24"
-    type: vless
-    server: "50.7.249.172"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl-dedic-3.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_25"
     type: ss
     server: "194.61.121.93"
     port: 7538
     cipher: "chacha20-ietf-poly1305"
     password: "U9YAoqBgg5VyGBc6vQv1sN"
     udp: true
-  - name: "🇵🇱_26"
+  - name: "🇵🇱_23"
     type: ss
     server: "51.83.192.80"
     port: 8388
     cipher: "aes-256-gcm"
     password: "itzvpn@321"
     udp: true
-  - name: "🇵🇱_27"
+  - name: "🇵🇱_24"
     type: ss
     server: "51.83.192.80"
     port: 8388
@@ -410,9 +359,6 @@ proxy-groups:
       - "🇵🇱_22"
       - "🇵🇱_23"
       - "🇵🇱_24"
-      - "🇵🇱_25"
-      - "🇵🇱_26"
-      - "🇵🇱_27"
 
 
 rules:
