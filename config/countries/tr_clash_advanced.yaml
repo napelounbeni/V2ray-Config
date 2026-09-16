@@ -59,49 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_6"
-    type: vless
-    server: "ads3.yandex-dev.online"
-    port: 443
-    uuid: "ca83b14f-a1c9-4afd-a1cf-70b1ba76135a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ads3.yandex-dev.online"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
-      short-id: "122218f4c1f172e4"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_7"
-    type: vless
-    server: "tr.curry-load.rutube.info"
-    port: 443
-    uuid: "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dw.b-cdn.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8"
-      short-id: "08"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_8"
-    type: vless
-    server: "156.67.63.231"
-    port: 443
-    uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sync-bridge.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
-      short-id: "5606d4a25c99e7af"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_9"
+  - name: "🇹🇷_3"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -114,19 +72,19 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_10"
+  - name: "🇹🇷_4"
     type: vless
-    server: "31.214.152.140"
+    server: "156.67.63.231"
     port: 443
-    uuid: "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
+    uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dw.b-cdn.net"
-    client-fingerprint: "firefox"
+    servername: "sync-bridge.org"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8"
-      short-id: "08"
+      public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
+      short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -170,11 +128,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -184,11 +139,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -198,11 +150,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -211,11 +160,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -225,21 +171,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_6"
-      - "🇹🇷_7"
-      - "🇹🇷_8"
-      - "🇹🇷_9"
-      - "🇹🇷_10"
+      - "🇹🇷_3"
+      - "🇹🇷_4"
 
 rules:
   - MATCH,PROXY-BEST

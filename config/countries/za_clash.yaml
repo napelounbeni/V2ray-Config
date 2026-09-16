@@ -63,66 +63,41 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇺🇦_1"
-    type: vless
-    server: "45.135.235.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇿🇦_1"
+    type: ss
+    server: "20.87.3.84"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "w0Yff67jxd3zXY9g"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime07.workers.dev"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "104.143.223.81"
-    port: 2085
-    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
+  - name: "🇿🇦_2"
+    type: ss
+    server: "139.84.247.164"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "tfAcRikawhNoZAhu"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_3"
-    type: vless
-    server: "104.143.223.229"
-    port: 2085
-    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
+  - name: "🇿🇦_3"
+    type: ss
+    server: "102.37.156.224"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_4"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇿🇦_4"
+    type: ss
+    server: "102.133.165.160"
+    port: 16233
+    cipher: "chacha20-ietf-poly1305"
+    password: "Xsy8Ox4yOV3xLlpxtjzs3X"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_5"
-    type: vless
-    server: "104.143.223.74"
-    port: 2085
-    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
+  - name: "🇿🇦_5"
+    type: ss
+    server: "102.37.156.224"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_6"
-    type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -137,12 +112,11 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇺🇦_1"
-      - "🇺🇦_2"
-      - "🇺🇦_3"
-      - "🇺🇦_4"
-      - "🇺🇦_5"
-      - "🇺🇦_6"
+      - "🇿🇦_1"
+      - "🇿🇦_2"
+      - "🇿🇦_3"
+      - "🇿🇦_4"
+      - "🇿🇦_5"
 
 
 rules:

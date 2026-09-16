@@ -76,26 +76,29 @@ proxies:
         Host: "uae.unixzone.us"
   - name: "🇦🇪_2"
     type: vless
-    server: "77.232.140.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "ae-tube-01.stre4m.net"
+    port: 443
+    uuid: "98d0fa1b-d778-477e-b897-4e2569c53178"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "mother-earth.fyi"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇦🇪_3"
     type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime18.workers.dev"
+        Host: "uae.unixzone.us"
 
 proxy-groups:
   - name: "PROXY"

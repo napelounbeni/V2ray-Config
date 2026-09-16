@@ -59,18 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_8"
-    type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_9"
+  - name: "🇮🇷_7"
     type: vless
     server: "185.24.151.176"
     port: 50051
@@ -86,6 +75,33 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: ""
+  - name: "🇮🇷_8"
+    type: vless
+    server: "212.16.92.111"
+    port: 443
+    uuid: "32721515-985b-4773-9e70-5d2e1b88a060"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jobinvest.ru"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇷_9"
+    type: vless
+    server: "212.16.92.121"
+    port: 443
+    uuid: "32721515-985b-4773-9e70-5d2e1b88a060"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jobinvest.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇮🇷_10"
     type: vless
     server: "212.16.92.112"
@@ -95,21 +111,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "jobinvest.ru"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
     flow: "xtls-rprx-vision"
   - name: "🇮🇷_11"
     type: vless
-    server: "212.16.92.111"
+    server: "fr-gra-ovh-03.stre4m.net"
     port: 443
-    uuid: "32721515-985b-4773-9e70-5d2e1b88a060"
+    uuid: "98d0fa1b-d778-477e-b897-4e2569c53178"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jobinvest.ru"
-    client-fingerprint: "firefox"
+    servername: "mother-earth.fyi"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: ""
@@ -117,31 +132,6 @@ proxies:
   - name: "🇮🇷_12"
     type: vless
     server: "212.16.92.122"
-    port: 443
-    uuid: "32721515-985b-4773-9e70-5d2e1b88a060"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jobinvest.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇷_13"
-    type: vless
-    server: "45.131.4.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇮🇷_14"
-    type: vless
-    server: "212.16.92.121"
     port: 443
     uuid: "32721515-985b-4773-9e70-5d2e1b88a060"
     udp: true
@@ -195,13 +185,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -211,13 +200,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -227,13 +215,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -242,13 +229,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -258,25 +244,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇷_7"
       - "🇮🇷_8"
       - "🇮🇷_9"
       - "🇮🇷_10"
       - "🇮🇷_11"
       - "🇮🇷_12"
-      - "🇮🇷_13"
-      - "🇮🇷_14"
 
 rules:
   - MATCH,PROXY-BEST

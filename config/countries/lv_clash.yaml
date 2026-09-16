@@ -65,15 +65,18 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "atomic-prase23893.my-vm.work"
-    port: 8088
-    uuid: "tmp_user"
+    server: "195.123.213.28"
+    port: 443
+    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-      headers:
-        Host: "queuev4.vk.com"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
+      short-id: "5c256336e3b673fa"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_2"
     type: vless
     server: "138.124.180.137"
@@ -90,18 +93,26 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_3"
     type: vless
-    server: "195.123.213.28"
-    port: 443
-    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
+    server: "atomic-prase23893.my-vm.work"
+    port: 8088
+    uuid: "tmp_user"
     udp: true
-    tls: true
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: "queuev4.vk.com"
+  - name: "🇱🇻_4"
+    type: trojan
+    server: "84.21.172.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
-      short-id: "5c256336e3b673fa"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -119,6 +130,7 @@ proxy-groups:
       - "🇱🇻_1"
       - "🇱🇻_2"
       - "🇱🇻_3"
+      - "🇱🇻_4"
 
 
 rules:

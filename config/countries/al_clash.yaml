@@ -63,61 +63,33 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇼_1"
+  - name: "🇦🇱_1"
     type: vless
-    server: "88.216.66.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "gyh.manliclouc.ir"
+    port: 44811
+    uuid: "89418511-64f9-4e74-ac6b-ffc1b828106f"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
-  - name: "🇨🇼_2"
-    type: vless
-    server: "5.10.246.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    tls: true
+    skip-cert-verify: true
+    servername: "app.stiga.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM"
+      short-id: "b53a4597ec327aec"
+  - name: "🇦🇱_2"
+    type: ss
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_3"
-    type: vless
-    server: "88.216.67.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇦🇱_3"
+    type: ss
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_4"
-    type: vless
-    server: "88.216.67.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_5"
-    type: vless
-    server: "62.72.166.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime40.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -132,11 +104,9 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇼_1"
-      - "🇨🇼_2"
-      - "🇨🇼_3"
-      - "🇨🇼_4"
-      - "🇨🇼_5"
+      - "🇦🇱_1"
+      - "🇦🇱_2"
+      - "🇦🇱_3"
 
 
 rules:

@@ -63,17 +63,19 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇻🇬_1"
-    type: vless
-    server: "104.234.239.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+  - name: "🇭🇷_1"
+    type: trojan
+    server: "213.182.199.137"
+    port: 443
+    password: "humanity"
+    sni: "www.pleadcourt.org"
+    skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      path: "/assignment"
       headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
+        Host: "www.pleadcourt.org"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +90,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇻🇬_1"
+      - "🇭🇷_1"
 
 
 rules:
