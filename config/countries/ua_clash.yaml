@@ -63,26 +63,66 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇦🇱_1"
+  - name: "🇺🇦_1"
     type: vless
-    server: "alz.chainmark.ir"
-    port: 44811
-    uuid: "dc6d7b88-a771-434f-a43a-ac1b50cf0102"
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "app.stiga.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM"
-      short-id: "b53a4597ec327aec"
-  - name: "🇦🇱_2"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_2"
+    type: vless
+    server: "104.143.223.81"
+    port: 2085
+    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
     udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "104.143.223.229"
+    port: 2085
+    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "104.143.223.74"
+    port: 2085
+    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇺🇦_6"
+    type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -97,8 +137,12 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇦🇱_1"
-      - "🇦🇱_2"
+      - "🇺🇦_1"
+      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
 
 rules:

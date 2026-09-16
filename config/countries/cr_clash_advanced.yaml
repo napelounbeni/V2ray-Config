@@ -59,26 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇱_3"
+  - name: "🇨🇷_2"
     type: vless
-    server: "alz.chainmark.ir"
-    port: 44811
-    uuid: "dc6d7b88-a771-434f-a43a-ac1b50cf0102"
+    server: "190.93.245.176"
+    port: 443
+    uuid: "7493883f-6047-46a7-8d95-f59e137ffaec"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "app.stiga.com"
+    servername: "auto-749388.rohawmk.workers.dev"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM"
-      short-id: "b53a4597ec327aec"
-  - name: "🇦🇱_4"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
+      headers:
+        Host: "auto-749388.rohawmk.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -121,8 +116,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -132,8 +126,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -143,8 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -153,8 +145,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -164,15 +155,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇱_3"
-      - "🇦🇱_4"
+      - "🇨🇷_2"
 
 rules:
   - MATCH,PROXY-BEST

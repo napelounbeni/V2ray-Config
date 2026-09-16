@@ -59,51 +59,61 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇰_23"
+  - name: "🇭🇰_28"
     type: vless
-    server: "156.226.168.221"
-    port: 35193
-    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
+    server: "68.64.179.129"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "cdn8848.776676.xyz"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
-      short-id: "e8daed2d"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_24"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇭🇰_29"
+    type: vless
+    server: "45.192.224.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime17.workers.dev"
+  - name: "🇭🇰_30"
     type: vless
     server: "hk-1.gsafevpnapi.com"
     port: 20270
-    uuid: "e9e24ed8-b007-4e29-b54f-1ece641e60fb"
+    uuid: "fee2c73a-d527-4b3f-9d48-0631168d83e8"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.yahoo.com"
-    client-fingerprint: "ios"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
       short-id: "d5b538acf8a93540"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_25"
+  - name: "🇭🇰_31"
     type: vless
-    server: "hk3n.wxgqlfx.vip"
-    port: 35193
-    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
+    servername: "www.yahoo.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
-      short-id: "e8daed2d"
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_26"
+  - name: "🇭🇰_32"
     type: vless
-    server: "47.239.6.251"
+    server: "47.238.210.5"
     port: 13779
     uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
     udp: true
@@ -114,12 +124,11 @@ proxies:
     reality-opts:
       public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
       short-id: "af1bdd293097b664"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_27"
+  - name: "🇭🇰_33"
     type: vless
     server: "hk-1.gsafevpnapi.com"
     port: 20270
-    uuid: "e016d072-ed97-40d4-a83f-04c00f8df2a5"
+    uuid: "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -129,9 +138,23 @@ proxies:
       public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
       short-id: "d5b538acf8a93540"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_28"
+  - name: "🇭🇰_34"
     type: vless
-    server: "43.159.12.36"
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "1803e6f6-9da1-4b31-8cc5-ffa155771a14"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_35"
+    type: vless
+    server: "209.33.167.234"
     port: 443
     uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
@@ -141,24 +164,37 @@ proxies:
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/file/project/novel?ed=2560"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇭🇰_29"
+      path: "/"
+  - name: "🇭🇰_36"
     type: vless
-    server: "hk-1.gsafevpnapi.com"
-    port: 20270
-    uuid: "8da6f662-e36b-4eff-99f9-43a842911707"
+    server: "185.92.47.93"
+    port: 443
+    uuid: "6e55174c-dc03-4aec-ade0-3e7df74e50ae"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "edge"
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇭🇰_37"
+    type: vless
+    server: "34.92.123.152"
+    port: 443
+    uuid: "5d77df4a-0b55-4597-b0e6-ae3ef70a72c0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
-      short-id: "d5b538acf8a93540"
+      public-key: "aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0"
+      short-id: "56c35a22730a22e5"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_30"
+  - name: "🇭🇰_38"
     type: vless
     server: "38.207.184.202"
     port: 443
@@ -171,34 +207,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇭🇰_31"
-    type: vless
-    server: "212.192.13.233"
-    port: 443
-    uuid: "d742752c-4231-4695-801e-f06d77f0f277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cathaypacific.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
-      short-id: "1bc2c1ef1c"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_32"
-    type: vless
-    server: "43.175.131.30"
-    port: 443
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn8848.776676.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇭🇰_33"
+  - name: "🇭🇰_39"
     type: vless
     server: "162.128.157.164"
     port: 443
@@ -212,49 +221,22 @@ proxies:
       public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
       short-id: "14156e3ac23212cc"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_34"
+  - name: "🇭🇰_40"
     type: vless
-    server: "hk-1.gsafevpnapi.com"
-    port: 20270
-    uuid: "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
-      short-id: "d5b538acf8a93540"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_35"
-    type: vless
-    server: "vj37-1936vtw.fincore.top"
+    server: "27.50.48.8"
     port: 443
-    uuid: "5e8e81ac-a1c4-4543-b81e-651bf9872b54"
+    uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.bing.com"
+    servername: "vless2-8vx.pages.dev"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0"
-      short-id: "14156e3ac23212cc"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_36"
-    type: vless
-    server: "hk-1.gsafevpnapi.com"
-    port: 20270
-    uuid: "257b0378-01c9-4ded-836d-f94df60bd19c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
-      short-id: "d5b538acf8a93540"
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇰_37"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vless2-8vx.pages.dev"
+  - name: "🇭🇰_41"
     type: vless
     server: "hk-1.gsafevpnapi.com"
     port: 20270
@@ -263,14 +245,57 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.yahoo.com"
-    client-fingerprint: "edge"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
       short-id: "d5b538acf8a93540"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_38"
+  - name: "🇭🇰_42"
     type: vless
-    server: "47.238.210.5"
+    server: "43.175.131.30"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn8848.776676.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/article?ed=2560"
+      headers:
+        Host: "cdn8848.776676.xyz"
+  - name: "🇭🇰_43"
+    type: vless
+    server: "156.226.168.221"
+    port: 35193
+    uuid: "35cbae61-ee10-4cb9-abb8-4950b35e9851"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE"
+      short-id: "e8daed2d"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_44"
+    type: vless
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_45"
+    type: vless
+    server: "47.239.6.251"
     port: 13779
     uuid: "928e6cce-8ced-4243-9a48-a6642edd09b0"
     udp: true
@@ -281,25 +306,12 @@ proxies:
     reality-opts:
       public-key: "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg"
       short-id: "af1bdd293097b664"
-  - name: "🇭🇰_39"
-    type: vless
-    server: "47.76.172.190"
-    port: 443
-    uuid: "60baeb19-560d-402d-b9c9-c062c2350e0b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "9nukDgL8dc3PWV07DAwi-_FFj3Y25ifYnnrIp7uV0SI"
-      short-id: "92ddbafbf38306f5"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_40"
+  - name: "🇭🇰_46"
     type: vless
     server: "hk-1.gsafevpnapi.com"
     port: 20270
-    uuid: "fee2c73a-d527-4b3f-9d48-0631168d83e8"
+    uuid: "e9e24ed8-b007-4e29-b54f-1ece641e60fb"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -309,22 +321,90 @@ proxies:
       public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
       short-id: "d5b538acf8a93540"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_41"
+  - name: "🇭🇰_47"
     type: vless
-    server: "68.64.179.129"
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "257b0378-01c9-4ded-836d-f94df60bd19c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_48"
+    type: vless
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "7647b321-4bfe-43f3-b21f-926c5de8f9b6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_49"
+    type: vless
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "8da6f662-e36b-4eff-99f9-43a842911707"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_50"
+    type: vless
+    server: "43.159.12.36"
     port: 443
     uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "cdn8848.776676.xyz"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/code?ed=2560"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇭🇰_42"
+      path: "/"
+  - name: "🇭🇰_51"
+    type: vless
+    server: "hk-1.gsafevpnapi.com"
+    port: 20270
+    uuid: "bd0b6458-917b-4b84-9c21-66b8699f4795"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8"
+      short-id: "d5b538acf8a93540"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_52"
+    type: vless
+    server: "212.192.13.233"
+    port: 443
+    uuid: "d742752c-4231-4695-801e-f06d77f0f277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cathaypacific.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s"
+      short-id: "1bc2c1ef1c"
+    flow: "xtls-rprx-vision"
+  - name: "🇭🇰_53"
     type: vless
     server: "47.238.126.123"
     port: 443
@@ -338,20 +418,12 @@ proxies:
       public-key: "4IeLDkxPTFecGeobLaxV9XaVW7oBgcqwW2dvfFtPQD4"
       short-id: "7771265f0b109528"
     flow: "xtls-rprx-vision"
-  - name: "🇭🇰_43"
+  - name: "🇭🇰_54"
     type: trojan
     server: "hk03.qianmoip.win"
     port: 50222
     password: "d742752c-4231-4695-801e-f06d77f0f277"
     sni: "taobao.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇭🇰_44"
-    type: trojan
-    server: "119.246.1.143"
-    port: 443
-    password: "BxceQaOe"
-    sni: "119.246.1.143"
     skip-cert-verify: true
     udp: true
 
@@ -396,11 +468,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -418,6 +485,16 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
   - name: "LB-CDN"
     type: load-balance
@@ -427,11 +504,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -449,6 +521,16 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -458,11 +540,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -480,6 +557,16 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
   - name: "FAST-CDN"
     type: url-test
@@ -488,11 +575,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -510,6 +592,16 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -519,11 +611,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -541,16 +628,21 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇭🇰_23"
-      - "🇭🇰_24"
-      - "🇭🇰_25"
-      - "🇭🇰_26"
-      - "🇭🇰_27"
       - "🇭🇰_28"
       - "🇭🇰_29"
       - "🇭🇰_30"
@@ -568,6 +660,16 @@ proxy-groups:
       - "🇭🇰_42"
       - "🇭🇰_43"
       - "🇭🇰_44"
+      - "🇭🇰_45"
+      - "🇭🇰_46"
+      - "🇭🇰_47"
+      - "🇭🇰_48"
+      - "🇭🇰_49"
+      - "🇭🇰_50"
+      - "🇭🇰_51"
+      - "🇭🇰_52"
+      - "🇭🇰_53"
+      - "🇭🇰_54"
 
 rules:
   - MATCH,PROXY-BEST

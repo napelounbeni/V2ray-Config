@@ -63,21 +63,17 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇸🇦_1"
+  - name: "🇵🇹_1"
     type: vless
-    server: "sa1.zuoai.cf"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
+      path: "/"
       headers:
-        Host: "nb.lovecf.ggff.net"
+        Host: "vms.lifetime54.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,7 +88,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇸🇦_1"
+      - "🇵🇹_1"
 
 
 rules:

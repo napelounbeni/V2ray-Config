@@ -65,17 +65,37 @@ dns:
 proxies:
   - name: "🇨🇾_1"
     type: vless
-    server: "cy2.zuoai.cf"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    server: "154.92.9.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
+  - name: "🇨🇾_2"
+    type: vless
+    server: "77.75.199.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
     network: ws
     ws-opts:
       path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇨🇾_3"
+    type: vless
+    server: "195.85.59.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime58.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +111,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇾_1"
+      - "🇨🇾_2"
+      - "🇨🇾_3"
 
 
 rules:

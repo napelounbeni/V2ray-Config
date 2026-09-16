@@ -75,6 +75,20 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
+  - name: "🇦🇲_2"
+    type: vless
+    server: "am.c2horizon.app"
+    port: 443
+    uuid: "ca83b14f-a1c9-4afd-a1cf-70b1ba76135a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "am.c2horizon.app"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+      short-id: "122218f4c1f172e4"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,6 +104,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇲_1"
+      - "🇦🇲_2"
 
 
 rules:

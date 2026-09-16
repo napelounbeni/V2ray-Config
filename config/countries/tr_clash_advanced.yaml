@@ -59,6 +59,34 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇹🇷_6"
+    type: vless
+    server: "ads3.yandex-dev.online"
+    port: 443
+    uuid: "ca83b14f-a1c9-4afd-a1cf-70b1ba76135a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ads3.yandex-dev.online"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0"
+      short-id: "122218f4c1f172e4"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_7"
+    type: vless
+    server: "tr.curry-load.rutube.info"
+    port: 443
+    uuid: "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dw.b-cdn.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8"
+      short-id: "08"
+    flow: "xtls-rprx-vision"
   - name: "🇹🇷_8"
     type: vless
     server: "156.67.63.231"
@@ -75,42 +103,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_9"
     type: vless
-    server: "144.225.65.173"
-    port: 443
-    uuid: "35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d"
-    udp: true
-  - name: "🇹🇷_10"
-    type: vless
-    server: "turkyea.vanguardia.ir"
-    port: 33138
-    uuid: "960e6852-9d2b-48bb-b1cf-5cb27ec27473"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "turkyea.vanguardia.ir"
-    client-fingerprint: "chrome"
-  - name: "🇹🇷_11"
-    type: vless
-    server: "turkyea.vanguardia.ir"
-    port: 15055
-    uuid: "960e6852-9d2b-48bb-b1cf-5cb27ec27473"
-    udp: true
-  - name: "🇹🇷_12"
-    type: vless
-    server: "107.161.174.26"
-    port: 443
-    uuid: "069ba4cf-e8af-4561-b11e-18bd07b0dbd3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "books.blackbigdog.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_13"
-    type: vless
     server: "151.241.226.201"
     port: 2053
     uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
@@ -122,12 +114,20 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_10"
     type: vless
-    server: "turkyea.vanguardia.ir"
-    port: 37446
-    uuid: "960e6852-9d2b-48bb-b1cf-5cb27ec27473"
+    server: "31.214.152.140"
+    port: 443
+    uuid: "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dw.b-cdn.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8"
+      short-id: "08"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -170,13 +170,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -186,13 +184,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -202,13 +198,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -217,13 +211,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -233,25 +225,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_6"
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
-      - "🇹🇷_11"
-      - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
 rules:
   - MATCH,PROXY-BEST

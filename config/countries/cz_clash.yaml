@@ -65,28 +65,6 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
-    server: "cz1.zuoai.cf"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇨🇿_2"
-    type: vless
-    server: "153.76.185.190"
-    port: 3090
-    uuid: "056bdf23-ed72-48eb-9a56-83f45965999e"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_3"
-    type: vless
     server: "78.159.247.246"
     port: 443
     uuid: "1852b02c-1828-40eb-81ff-4de3d097cb35"
@@ -100,16 +78,16 @@ proxies:
       path: "/ws"
       headers:
         Host: "sb2.hat.onl"
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_2"
     type: vless
-    server: "194.87.59.6"
+    server: "194.87.59.11"
     port: 2085
-    uuid: "ffa722c8-da3f-4371-a0e0-6afcc9f3f93b"
+    uuid: "79b3dab9-3e6b-415f-9d1c-1b1c6855e354"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
-  - name: "🇨🇿_5"
+  - name: "🇨🇿_3"
     type: vless
     server: "31.76.7.154"
     port: 7443
@@ -123,6 +101,15 @@ proxies:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇿_4"
+    type: vless
+    server: "194.87.59.6"
+    port: 2085
+    uuid: "ffa722c8-da3f-4371-a0e0-6afcc9f3f93b"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   - name: "PROXY"
@@ -141,7 +128,6 @@ proxy-groups:
       - "🇨🇿_2"
       - "🇨🇿_3"
       - "🇨🇿_4"
-      - "🇨🇿_5"
 
 
 rules:
