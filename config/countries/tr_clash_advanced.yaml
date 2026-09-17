@@ -59,7 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_4"
+  - name: "🇹🇷_9"
+    type: vless
+    server: "max.karmatel.ir"
+    port: 55519
+    uuid: "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "play-apps-features.googleusercontent.com"
+  - name: "🇹🇷_10"
     type: vless
     server: "156.67.63.231"
     port: 443
@@ -73,7 +84,16 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_5"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "93.190.8.23"
+    port: 3090
+    uuid: "5ec75cee-a2ff-4f62-9185-4829875da8bf"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_12"
     type: vless
     server: "78.135.73.47"
     port: 443
@@ -87,7 +107,16 @@ proxies:
       public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
       short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_6"
+  - name: "🇹🇷_13"
+    type: vless
+    server: "93.190.9.4"
+    port: 3090
+    uuid: "5ec75cee-a2ff-4f62-9185-4829875da8bf"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_14"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -100,6 +129,27 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
+  - name: "🇹🇷_15"
+    type: vless
+    server: "31.214.152.140"
+    port: 443
+    uuid: "ad297a2b-ae17-4d2d-8fce-e2eafb89b145"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dw.b-cdn.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8"
+      short-id: "08"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_16"
+    type: ss
+    server: "77.92.151.68"
+    port: 13323
+    cipher: "chacha20-ietf-poly1305"
+    password: "3O8eQjWAUVL61ToUKUc9BZk0qnPNfJ7o"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -142,9 +192,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -154,9 +209,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -166,9 +226,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -177,9 +242,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -189,17 +259,27 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_4"
-      - "🇹🇷_5"
-      - "🇹🇷_6"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
 rules:
   - MATCH,PROXY-BEST

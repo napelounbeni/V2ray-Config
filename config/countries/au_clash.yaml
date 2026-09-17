@@ -65,42 +65,6 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_2"
-    type: vless
-    server: "192.65.217.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime37.workers.dev"
-  - name: "🇦🇺_3"
-    type: vless
-    server: "au1.gsafevpnapi.com"
-    port: 20270
-    uuid: "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE"
-      short-id: "e6a5a4a9115456de"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇺_4"
-    type: vless
     server: "103.75.119.126"
     port: 2087
     uuid: "731f177e-00aa-480c-b935-661456139a32"
@@ -108,7 +72,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/7586c69d3dc9"
-  - name: "🇦🇺_5"
+  - name: "🇦🇺_2"
     type: vless
     server: "172.105.169.70"
     port: 443
@@ -133,9 +97,6 @@ proxy-groups:
     proxies:
       - "🇦🇺_1"
       - "🇦🇺_2"
-      - "🇦🇺_3"
-      - "🇦🇺_4"
-      - "🇦🇺_5"
 
 
 rules:

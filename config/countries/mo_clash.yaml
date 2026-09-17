@@ -65,21 +65,6 @@ dns:
 proxies:
   - name: "🇲🇴_1"
     type: vless
-    server: "45.202.247.198"
-    port: 443
-    uuid: "3db635e4-f9ec-42d6-8aba-e23df8b0e6da"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "mia6.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/TG:@MiaChatChannel"
-      headers:
-        Host: "mia6.pages.dev"
-  - name: "🇲🇴_2"
-    type: vless
     server: "45.202.247.152"
     port: 443
     uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
@@ -108,7 +93,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇴_1"
-      - "🇲🇴_2"
 
 
 rules:

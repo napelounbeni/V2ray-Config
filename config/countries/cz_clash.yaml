@@ -65,6 +65,48 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
+    server: "31.76.7.80"
+    port: 443
+    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cze-02.node.lumixnet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
+      short-id: "bd8a588cebc3395a"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_2"
+    type: vless
+    server: "cze-02.node.lumixnet.com"
+    port: 443
+    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cze-02.node.lumixnet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
+      short-id: "bd8a588cebc3395a"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_3"
+    type: vless
+    server: "cz1.zuoai.cf"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_4"
+    type: vless
     server: "31.76.7.154"
     port: 7443
     uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
@@ -72,7 +114,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ya.ru"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
@@ -92,6 +134,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇿_1"
+      - "🇨🇿_2"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
 
 rules:
