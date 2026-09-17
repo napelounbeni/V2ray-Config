@@ -65,19 +65,6 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_2"
-    type: vless
     server: "156.67.63.231"
     port: 443
     uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
@@ -90,6 +77,33 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
+  - name: "🇹🇷_2"
+    type: vless
+    server: "78.135.73.47"
+    port: 443
+    uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.datadoghq.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
+      short-id: "f46cd3ea3d1eb72d"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_3"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
 
 proxy-groups:
   - name: "PROXY"
@@ -106,6 +120,7 @@ proxy-groups:
     proxies:
       - "🇹🇷_1"
       - "🇹🇷_2"
+      - "🇹🇷_3"
 
 
 rules:

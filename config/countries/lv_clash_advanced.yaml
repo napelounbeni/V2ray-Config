@@ -59,7 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_5"
+  - name: "🇱🇻_6"
+    type: vless
+    server: "atomic-prase23893.my-vm.work"
+    port: 8088
+    uuid: "f7c74a35-1da0-5097-9fa7-a20735610ac1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: "queuev4.vk.com"
+  - name: "🇱🇻_7"
     type: vless
     server: "195.123.213.28"
     port: 443
@@ -73,7 +84,18 @@ proxies:
       public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
       short-id: "5c256336e3b673fa"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_6"
+  - name: "🇱🇻_8"
+    type: vless
+    server: "atomic-prase23893.my-vm.work"
+    port: 8088
+    uuid: "tmp_user"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: "queuev4.vk.com"
+  - name: "🇱🇻_9"
     type: vless
     server: "138.124.180.137"
     port: 443
@@ -87,18 +109,7 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_7"
-    type: vless
-    server: "atomic-prase23893.my-vm.work"
-    port: 8088
-    uuid: "tmp_user"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-      headers:
-        Host: "queuev4.vk.com"
-  - name: "🇱🇻_8"
+  - name: "🇱🇻_10"
     type: trojan
     server: "84.21.172.81"
     port: 443
@@ -151,10 +162,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -164,10 +176,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -177,10 +190,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -189,10 +203,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -202,19 +217,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇻_5"
       - "🇱🇻_6"
       - "🇱🇻_7"
       - "🇱🇻_8"
+      - "🇱🇻_9"
+      - "🇱🇻_10"
 
 rules:
   - MATCH,PROXY-BEST

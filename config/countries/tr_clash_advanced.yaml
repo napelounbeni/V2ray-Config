@@ -59,19 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_3"
-    type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
   - name: "🇹🇷_4"
     type: vless
     server: "156.67.63.231"
@@ -86,6 +73,33 @@ proxies:
       public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
       short-id: "5606d4a25c99e7af"
     flow: "xtls-rprx-vision"
+  - name: "🇹🇷_5"
+    type: vless
+    server: "78.135.73.47"
+    port: 443
+    uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.datadoghq.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
+      short-id: "f46cd3ea3d1eb72d"
+    flow: "xtls-rprx-vision"
+  - name: "🇹🇷_6"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -128,8 +142,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +154,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +166,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +177,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +189,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
 
 rules:
   - MATCH,PROXY-BEST
