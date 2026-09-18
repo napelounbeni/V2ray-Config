@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇾_3"
-    type: vless
-    server: "195.26.229.120"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇨🇾_4"
+  - name: "🇨🇾_6"
     type: vless
     server: "195.26.229.222"
     port: 443
@@ -87,6 +73,59 @@ proxies:
       path: "/"
       headers:
         Host: "xi.tbv.ccwu.cc"
+  - name: "🇨🇾_7"
+    type: vless
+    server: "195.26.229.120"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇨🇾_8"
+    type: vless
+    server: "195.26.229.235"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇨🇾_9"
+    type: vless
+    server: "195.26.229.32"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇨🇾_10"
+    type: vless
+    server: "154.92.9.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -129,8 +168,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -140,8 +182,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -151,8 +196,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,8 +209,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,15 +223,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇾_3"
-      - "🇨🇾_4"
+      - "🇨🇾_6"
+      - "🇨🇾_7"
+      - "🇨🇾_8"
+      - "🇨🇾_9"
+      - "🇨🇾_10"
 
 rules:
   - MATCH,PROXY-BEST

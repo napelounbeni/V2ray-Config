@@ -59,49 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_5"
-    type: vless
-    server: "31.76.7.80"
-    port: 443
-    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cze-02.node.lumixnet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
-      short-id: "bd8a588cebc3395a"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_6"
-    type: vless
-    server: "cze-02.node.lumixnet.com"
-    port: 443
-    uuid: "56ae4ec4-6705-43d0-bf3a-bc36ab3b3545"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cze-02.node.lumixnet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "vEXgvoW9iQo6iiKT71cNt1CC3cAB4IWswAn-cScDz1A"
-      short-id: "bd8a588cebc3395a"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_7"
-    type: vless
-    server: "cz1.zuoai.cf"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_8"
+  - name: "🇨🇿_3"
     type: vless
     server: "31.76.7.154"
     port: 7443
@@ -115,6 +73,20 @@ proxies:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇿_4"
+    type: vless
+    server: "cz1.zuoai.cf"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -157,10 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -170,10 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -183,10 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -195,10 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -208,19 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_5"
-      - "🇨🇿_6"
-      - "🇨🇿_7"
-      - "🇨🇿_8"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
 
 rules:
   - MATCH,PROXY-BEST

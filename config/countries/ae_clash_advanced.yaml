@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_5"
+  - name: "🇦🇪_6"
     type: vless
     server: "84.235.244.108"
     port: 22573
@@ -70,31 +70,17 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_6"
-    type: vless
-    server: "188.208.110.238"
-    port: 443
-    uuid: "0c597b0d-99d7-4c27-befe-6c5d339d7dbe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "baeb.edge-static.space"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA"
-      short-id: ""
-    flow: "xtls-rprx-vision"
   - name: "🇦🇪_7"
     type: vless
-    server: "uae.unixzone.us"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "uae.unixzone.us"
+        Host: "vms.lifetime18.workers.dev"
   - name: "🇦🇪_8"
     type: vless
     server: "188.72.103.4"
@@ -110,6 +96,33 @@ proxies:
       path: "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad"
       headers:
         Host: "apicdn.4subnodes.com"
+  - name: "🇦🇪_9"
+    type: vless
+    server: "45.88.13.5"
+    port: 8443
+    uuid: "2bb8b13c-b3f0-2552-da05-d0929bfb36db"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "download.nvidia.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇦🇪_10"
+    type: vless
+    server: "77.232.140.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -152,10 +165,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -165,10 +179,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -178,10 +193,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -190,10 +206,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -203,19 +220,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇪_5"
       - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
+      - "🇦🇪_9"
+      - "🇦🇪_10"
 
 rules:
   - MATCH,PROXY-BEST
