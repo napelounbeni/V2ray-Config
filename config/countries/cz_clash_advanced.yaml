@@ -59,7 +59,44 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_3"
+  - name: "🇨🇿_14"
+    type: vless
+    server: "195.85.23.219"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_15"
+    type: vless
+    server: "153.76.185.89"
+    port: 3090
+    uuid: "4172c2af-6f65-46d0-a3fc-9e5d539c9c76"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_16"
+    type: vless
+    server: "195.85.23.111"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_17"
     type: vless
     server: "31.76.7.154"
     port: 7443
@@ -73,9 +110,9 @@ proxies:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_18"
     type: vless
-    server: "cz1.zuoai.cf"
+    server: "195.85.23.75"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -84,7 +121,114 @@ proxies:
     servername: "nb.lovecf.ggff.net"
     network: ws
     ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_19"
+    type: vless
+    server: "153.76.185.182"
+    port: 3090
+    uuid: "36801b97-1e11-489c-baca-5fcb6653a047"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_20"
+    type: vless
+    server: "195.85.23.47"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_21"
+    type: vless
+    server: "195.85.23.217"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_22"
+    type: vless
+    server: "195.85.23.248"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_23"
+    type: vless
+    server: "195.85.23.29"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_24"
+    type: vless
+    server: "195.85.23.88"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_25"
+    type: vless
+    server: "195.85.23.45"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_26"
+    type: vless
+    server: "195.85.23.252"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
 
@@ -129,8 +273,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -140,8 +295,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -151,8 +317,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,8 +338,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,15 +360,37 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_3"
-      - "🇨🇿_4"
+      - "🇨🇿_14"
+      - "🇨🇿_15"
+      - "🇨🇿_16"
+      - "🇨🇿_17"
+      - "🇨🇿_18"
+      - "🇨🇿_19"
+      - "🇨🇿_20"
+      - "🇨🇿_21"
+      - "🇨🇿_22"
+      - "🇨🇿_23"
+      - "🇨🇿_24"
+      - "🇨🇿_25"
+      - "🇨🇿_26"
 
 rules:
   - MATCH,PROXY-BEST

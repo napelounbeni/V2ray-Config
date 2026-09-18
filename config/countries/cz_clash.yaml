@@ -65,6 +65,43 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
+    server: "195.85.23.219"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_2"
+    type: vless
+    server: "153.76.185.89"
+    port: 3090
+    uuid: "4172c2af-6f65-46d0-a3fc-9e5d539c9c76"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_3"
+    type: vless
+    server: "195.85.23.111"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_4"
+    type: vless
     server: "31.76.7.154"
     port: 7443
     uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
@@ -77,9 +114,9 @@ proxies:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_2"
+  - name: "🇨🇿_5"
     type: vless
-    server: "cz1.zuoai.cf"
+    server: "195.85.23.75"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -88,7 +125,114 @@ proxies:
     servername: "nb.lovecf.ggff.net"
     network: ws
     ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_6"
+    type: vless
+    server: "153.76.185.182"
+    port: 3090
+    uuid: "36801b97-1e11-489c-baca-5fcb6653a047"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_7"
+    type: vless
+    server: "195.85.23.47"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_8"
+    type: vless
+    server: "195.85.23.217"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_9"
+    type: vless
+    server: "195.85.23.248"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_10"
+    type: vless
+    server: "195.85.23.29"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_11"
+    type: vless
+    server: "195.85.23.88"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_12"
+    type: vless
+    server: "195.85.23.45"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_13"
+    type: vless
+    server: "195.85.23.252"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
 
@@ -107,6 +251,17 @@ proxy-groups:
     proxies:
       - "🇨🇿_1"
       - "🇨🇿_2"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
+      - "🇨🇿_9"
+      - "🇨🇿_10"
+      - "🇨🇿_11"
+      - "🇨🇿_12"
+      - "🇨🇿_13"
 
 
 rules:

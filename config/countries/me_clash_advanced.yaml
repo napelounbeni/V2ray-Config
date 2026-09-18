@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇪_3"
+  - name: "🇲🇪_2"
     type: vless
     server: "147.90.26.37"
     port: 443
@@ -71,24 +71,7 @@ proxies:
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/web"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇲🇪_4"
-    type: vless
-    server: "178.83.110.32"
-    port: 7443
-    uuid: "9bb71136-2380-4b6a-97be-1d4ba11d5a55"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -131,8 +114,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -142,8 +124,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -153,8 +134,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -163,8 +143,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -174,15 +153,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇪_3"
-      - "🇲🇪_4"
+      - "🇲🇪_2"
 
 rules:
   - MATCH,PROXY-BEST

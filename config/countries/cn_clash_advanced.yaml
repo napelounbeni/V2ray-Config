@@ -59,32 +59,48 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇳_3"
+  - name: "🇨🇳_4"
     type: vless
-    server: "171.83.48.117"
-    port: 8443
-    uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a"
+    server: "36.151.187.225"
+    port: 12887
+    uuid: "16b3793b-3335-4832-b1fd-877b2c5e15d6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "kkkk-xcd.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "kkkk-xcd.pages.dev"
-  - name: "🇨🇳_4"
+    servername: "www.spotify.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "a3H5ffQkcW4xELeJEGQ8FsaXLG4sGomkB7_ms0d5xzc"
+      short-id: "b48d22a492"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇳_5"
     type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "36.151.187.225"
+    port: 12885
+    uuid: "16b3793b-3335-4832-b1fd-877b2c5e15d6"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.spotify.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "p3Js5Ly_moYS1waMGNmkTw0qt9BR582kqi4O7P9m1jQ"
+      short-id: "4670b4cec8c4569c"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇳_6"
+    type: vless
+    server: "36.151.187.225"
+    port: 12884
+    uuid: "16b3793b-3335-4832-b1fd-877b2c5e15d6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.spotify.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "PZId4C7clCYYpoK4vHV9hJ7BNEz4J4tHxGicMeasriQ"
+      short-id: "1b6028"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -127,8 +143,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,8 +155,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,8 +167,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -159,8 +178,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -170,15 +190,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇳_3"
       - "🇨🇳_4"
+      - "🇨🇳_5"
+      - "🇨🇳_6"
 
 rules:
   - MATCH,PROXY-BEST

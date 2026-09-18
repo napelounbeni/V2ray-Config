@@ -65,32 +65,6 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "206.1.97.61"
-    port: 443
-    uuid: "103f65b2-c4a7-4afc-aa00-dd67b6904036"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "Miro.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE"
-      short-id: "d7397feef49deef9"
-  - name: "🇹🇷_2"
-    type: vless
-    server: "213.156.152.234"
-    port: 443
-    uuid: "c26fe2f0-5c69-0015-8a1a-bf116ceb9215"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "numpy.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc"
-      short-id: "f373df45a687eaff"
-  - name: "🇹🇷_3"
-    type: vless
     server: "151.241.226.201"
     port: 2053
     uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
@@ -102,21 +76,45 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
+  - name: "🇹🇷_2"
+    type: vless
+    server: "93.190.9.27"
+    port: 3090
+    uuid: "340bc985-c98b-46f7-a01b-05fc45010fc1"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_3"
+    type: vless
+    server: "167.104.219.66"
+    port: 18361
+    uuid: "My-chanel-Telegram-ATOVPN "
+    udp: true
   - name: "🇹🇷_4"
     type: vless
-    server: "156.67.63.231"
+    server: "185.87.24.8"
+    port: 2085
+    uuid: "6483241e-1102-470c-91d8-bb260e431960"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_5"
+    type: vless
+    server: "78.135.73.47"
     port: 443
-    uuid: "b052df40-d51c-456c-9bd6-57af01a87e4e"
+    uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sync-bridge.org"
-    client-fingerprint: "chrome"
+    servername: "www.datadoghq.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI"
-      short-id: "5606d4a25c99e7af"
+      public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
+      short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_5"
+  - name: "🇹🇷_6"
     type: ss
     server: "153.52.92.81"
     port: 1080
@@ -142,6 +140,7 @@ proxy-groups:
       - "🇹🇷_3"
       - "🇹🇷_4"
       - "🇹🇷_5"
+      - "🇹🇷_6"
 
 
 rules:

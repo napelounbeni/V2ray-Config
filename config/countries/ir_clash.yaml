@@ -65,66 +65,32 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "5.202.4.207"
+    server: "45.131.4.181"
     port: 443
-    uuid: "c26fe2f0-5c69-11f1-8a1a-bf116ceb9215"
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "aparat.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc"
-      short-id: "f373df45a687eaff"
-  - name: "🇮🇷_2"
-    type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
+    servername: "xi.tbv.ccwu.cc"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_3"
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇮🇷_2"
     type: vless
-    server: "g1.kxpqus.bestxau.ir"
-    port: 36171
-    uuid: "d65a82af-a403-405e-8b7b-27a68b830511"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn-apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "NMbNnf_5ef8NzcvuN6McTRCNT3UozSjPKU7BeH9XwGU"
-      short-id: "445e71ae7a0dae95"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇷_4"
-    type: vless
-    server: "g1.haxat.bestvbest.ir"
-    port: 20610
-    uuid: "d65a82af-a403-405e-8b7b-27a68b830511"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "doctor-yab.ir"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI"
-      short-id: "1d1a8f9fefeff5e6"
-  - name: "🇮🇷_5"
-    type: trojan
-    server: "45.131.4.118"
+    server: "45.131.4.41"
     port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
     network: ws
     ws-opts:
-      path: "/sync"
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"
@@ -141,9 +107,6 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
-      - "🇮🇷_3"
-      - "🇮🇷_4"
-      - "🇮🇷_5"
 
 
 rules:
