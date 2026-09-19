@@ -59,20 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇱_4"
-    type: vless
-    server: "130.49.189.158"
-    port: 45433
-    uuid: "4ea67585-c211-4358-9173-cbdff7a6aede"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c"
-      short-id: "5e101cd5"
-    flow: "xtls-rprx-vision"
   - name: "🇦🇱_5"
     type: vless
     server: "144.31.131.38"
@@ -88,6 +74,34 @@ proxies:
       short-id: "db04ce8bdb8900f1"
     flow: "xtls-rprx-vision"
   - name: "🇦🇱_6"
+    type: vless
+    server: "130.49.189.158"
+    port: 45433
+    uuid: "4ea67585-c211-4358-9173-cbdff7a6aede"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "addons.mozilla.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c"
+      short-id: "5e101cd5"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_7"
+    type: vless
+    server: "alda1.thewalkingded.life"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "alda1.thewalkingded.life"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "2IBUcPHOhFulmJaICe_xuRBJVgjDqVXB8fjHVdbdOQA"
+      short-id: "e114ca996877ce3a"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇱_8"
     type: ss
     server: "130.49.189.158"
     port: 43558
@@ -136,9 +150,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -148,9 +163,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -160,9 +176,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -171,9 +188,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -183,17 +201,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇱_4"
       - "🇦🇱_5"
       - "🇦🇱_6"
+      - "🇦🇱_7"
+      - "🇦🇱_8"
 
 rules:
   - MATCH,PROXY-BEST

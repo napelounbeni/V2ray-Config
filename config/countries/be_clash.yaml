@@ -1,0 +1,141 @@
+name: "Standard"
+mixed-port: 7890
+socks-port: 7891
+port: 7892
+allow-lan: true
+bind-address: '*'
+mode: global
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+secret: ""
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+keep-alive-interval: 15
+
+profile:
+  store-selected: true
+  store-fake-ip: false
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:5353
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.local'
+    - '*.lan'
+    - '*.localhost'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - 'time.*'
+    - 'time.*.com'
+    - 'connectivitycheck.gstatic.com'
+    - 'detectportal.firefox.com'
+    - 'captive.apple.com'
+    - 'www.msftncsi.com'
+    - 'cp.cloudflare.com'
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 94.140.14.14
+    - 64.6.64.6
+    - 84.200.69.80
+    - 76.76.19.19
+    - 8.26.56.26
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://doh.comodo.com/dns-query
+    - https://doh.mullvad.net/dns-query
+    - https://doh.dns.mullvad.net/dns-query
+    - https://freedns.controld.com/p0
+    - https://freedns.controld.com/family
+
+proxies:
+  - name: "🇧🇪_1"
+    type: vless
+    server: "35.195.122.169"
+    port: 443
+    uuid: "e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs"
+      short-id: "68e97022627fa882"
+  - name: "🇧🇪_2"
+    type: vless
+    server: "141.227.137.177"
+    port: 2053
+    uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kkkk-xcd.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "kkkk-xcd.pages.dev"
+  - name: "🇧🇪_3"
+    type: vless
+    server: "34.38.82.200"
+    port: 443
+    uuid: "6d341f6e-7b9d-4ae3-999b-00333de7bdfb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws"
+      short-id: "31f187650d9530bb"
+  - name: "🇧🇪_4"
+    type: vless
+    server: "207.175.190.56"
+    port: 443
+    uuid: "51e493d4-b275-45e0-a714-e014f40b3c32"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA"
+      short-id: "95ae4a39d3933191"
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Auto"
+
+  - name: "Auto"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 30
+    lazy: true
+    proxies:
+      - "🇧🇪_1"
+      - "🇧🇪_2"
+      - "🇧🇪_3"
+      - "🇧🇪_4"
+
+
+rules:
+  - MATCH,PROXY

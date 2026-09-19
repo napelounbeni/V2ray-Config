@@ -65,27 +65,19 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
-    server: "atomic-prase23893.my-vm.work"
-    port: 8088
-    uuid: "tmp_user"
+    server: "lv.ghostnode.lol"
+    port: 443
+    uuid: "e27d2295-9fba-4a70-9a66-c45d724355a9"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-      headers:
-        Host: "queuev4.vk.com"
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.ghostnode.lol"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "0wF4BXZs_sxNpjopV6A7SeXksJ1brk6F-3-cUirb624"
+      short-id: "924ffc672d8ddf1a"
+    flow: "xtls-rprx-vision"
   - name: "🇱🇻_2"
-    type: vless
-    server: "188.220.205.16"
-    port: 8088
-    uuid: "f7c74a35-1da0-5097-9fa7-a20735610ac1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-      headers:
-        Host: "queuev4.vk.com"
-  - name: "🇱🇻_3"
     type: vless
     server: "138.124.180.137"
     port: 443
@@ -99,19 +91,28 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_4"
+  - name: "🇱🇻_3"
     type: vless
-    server: "195.123.213.28"
-    port: 443
-    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
+    server: "atomic-prase23893.my-vm.work"
+    port: 8088
+    uuid: "tmp_user"
     udp: true
-    tls: true
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: "queuev4.vk.com"
+  - name: "🇱🇻_4"
+    type: trojan
+    server: "84.21.172.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    reality-opts:
-      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
-      short-id: "5c256336e3b673fa"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"

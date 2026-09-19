@@ -65,20 +65,18 @@ dns:
 proxies:
   - name: "🇪🇪_1"
     type: vless
-    server: "94.183.170.147"
-    port: 8443
-    uuid: "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1"
+    server: "45.80.108.236"
+    port: 443
+    uuid: "ef9d2063-0140-472b-8b17-ba02ba4b4435"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg"
-      short-id: "72ccd4a7563c2953"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "9d30d49278"
+    servername: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/proxyip"
+      headers:
+        Host: "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
   - name: "🇪🇪_2"
     type: vless
     server: "95.85.224.51"
@@ -95,38 +93,27 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_3"
     type: vless
-    server: "94.183.170.135"
-    port: 443
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    server: "45.80.110.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "estproxy4.lockdwn.com"
+        Host: "vms.lifetime51.workers.dev"
   - name: "🇪🇪_4"
     type: vless
-    server: "212.87.190.124"
-    port: 3
-    uuid: "6049e972-419e-43bc-932c-4032be6d1b5b"
+    server: "45.80.110.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime51.workers.dev"
   - name: "🇪🇪_5"
-    type: vless
-    server: "94.183.170.147"
-    port: 8443
-    uuid: "66ac188b-bd8d-4218-b9ba-0bad0e152cd0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg"
-      short-id: "72ccd4a7563c2953"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "9d30d49278"
-  - name: "🇪🇪_6"
     type: vless
     server: "94.183.170.135"
     port: 8443
@@ -136,6 +123,17 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy4.lockdwn.com"
     client-fingerprint: "firefox"
+  - name: "🇪🇪_6"
+    type: vless
+    server: "94.183.170.135"
+    port: 443
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
   - name: "🇪🇪_7"
     type: vless
     server: "95.85.224.17"
@@ -151,6 +149,46 @@ proxies:
       short-id: ""
     flow: "xtls-rprx-vision"
   - name: "🇪🇪_8"
+    type: vless
+    server: "94.183.170.147"
+    port: 8443
+    uuid: "66ac188b-bd8d-4218-b9ba-0bad0e152cd0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg"
+      short-id: "72ccd4a7563c2953"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "9d30d49278"
+  - name: "🇪🇪_9"
+    type: trojan
+    server: "80.77.25.142"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇪_10"
+    type: trojan
+    server: "185.36.141.81"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇪🇪_11"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -180,6 +218,9 @@ proxy-groups:
       - "🇪🇪_6"
       - "🇪🇪_7"
       - "🇪🇪_8"
+      - "🇪🇪_9"
+      - "🇪🇪_10"
+      - "🇪🇪_11"
 
 
 rules:
