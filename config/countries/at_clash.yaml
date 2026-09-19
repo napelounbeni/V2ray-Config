@@ -65,30 +65,16 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "132.243.203.207"
-    port: 8443
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn8848.776676.xyz"
-    network: ws
-    ws-opts:
-      path: "/lives"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇦🇹_2"
-    type: vless
-    server: "50.7.37.154"
+    server: "50.7.36.29"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at1.moritech.net"
+    servername: "at-dedic-2.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_3"
+  - name: "🇦🇹_2"
     type: vless
     server: "152.53.1.40"
     port: 443
@@ -101,40 +87,43 @@ proxies:
       public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
       short-id: "43dcff53849b81e6"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇹_3"
+    type: vless
+    server: "132.243.203.207"
+    port: 8443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn8848.776676.xyz"
+    network: ws
+    ws-opts:
+      path: "/lives"
+      headers:
+        Host: "cdn8848.776676.xyz"
   - name: "🇦🇹_4"
     type: vless
-    server: "50.7.184.122"
+    server: "50.7.36.26"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at3.moritech.net"
+    servername: "at2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_5"
     type: vless
-    server: "50.7.36.27"
+    server: "50.7.37.154"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at-new-ded2.moritech.net"
+    servername: "at1.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_6"
-    type: vless
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at-dedic-2.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_7"
     type: vless
     server: "50.7.36.28"
     port: 443
@@ -145,7 +134,29 @@ proxies:
     servername: "at-new-ded.failspace.top"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision-udp443"
+  - name: "🇦🇹_7"
+    type: vless
+    server: "50.7.184.122"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at3.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇦🇹_8"
+    type: vless
+    server: "50.7.36.27"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_9"
     type: vless
     server: "132.243.203.218"
     port: 8443
@@ -160,29 +171,7 @@ proxies:
       path: "/v?ed=2560"
       headers:
         Host: "cdn8848.776676.xyz"
-  - name: "🇦🇹_9"
-    type: vless
-    server: "50.7.36.26"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at2.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
   - name: "🇦🇹_10"
-    type: trojan
-    server: "46.102.156.144"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇦🇹_11"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -195,6 +184,17 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
+  - name: "🇦🇹_11"
+    type: trojan
+    server: "46.102.156.144"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"

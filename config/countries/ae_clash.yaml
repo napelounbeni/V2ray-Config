@@ -72,7 +72,6 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "apicdn.4subnodes.com"
-    client-fingerprint: "firefox"
     network: ws
     ws-opts:
       path: "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad"
@@ -91,21 +90,6 @@ proxies:
         Host: "uae.unixzone.us"
   - name: "🇦🇪_3"
     type: vless
-    server: "apicdn.4subnodes.com"
-    port: 443
-    uuid: "1f959100-a98b-47fb-84fa-359246dc458a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "apicdn.4subnodes.com"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad"
-      headers:
-        Host: "apicdn.4subnodes.com"
-  - name: "🇦🇪_4"
-    type: vless
     server: "uae.unixzone.us"
     port: 22573
     uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
@@ -115,17 +99,21 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_5"
+  - name: "🇦🇪_4"
     type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "apicdn.4subnodes.com"
+    port: 443
+    uuid: "1f959100-a98b-47fb-84fa-359246dc458a"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "apicdn.4subnodes.com"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad"
       headers:
-        Host: "vms.lifetime18.workers.dev"
+        Host: "apicdn.4subnodes.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -144,7 +132,6 @@ proxy-groups:
       - "🇦🇪_2"
       - "🇦🇪_3"
       - "🇦🇪_4"
-      - "🇦🇪_5"
 
 
 rules:

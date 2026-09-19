@@ -59,32 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇶🇦_3"
+  - name: "🇻🇳_2"
     type: vless
-    server: "34.18.212.19"
+    server: "160.30.54.63"
     port: 443
-    uuid: "b6f775c2-70fd-4247-8d12-82cac46fdd50"
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "cdn8848.776676.xyz"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ"
-      short-id: "c5426331173ca15c"
-  - name: "🇶🇦_4"
-    type: vless
-    server: "34.18.31.5"
-    port: 443
-    uuid: "bd82d5e7-4395-40e1-b34e-2974eb0c8555"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4"
-      short-id: "9c8748aa3f7d4219"
+    network: ws
+    ws-opts:
+      path: "/channel?ed=2560"
+      headers:
+        Host: "cdn8848.776676.xyz"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -127,8 +116,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,8 +126,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,8 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -159,8 +145,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -170,15 +155,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇶🇦_3"
-      - "🇶🇦_4"
+      - "🇻🇳_2"
 
 rules:
   - MATCH,PROXY-BEST

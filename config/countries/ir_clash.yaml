@@ -65,31 +65,6 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_2"
-    type: vless
-    server: "45.131.4.41"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇮🇷_3"
-    type: vless
     server: "45.131.4.181"
     port: 443
     uuid: "b2593749-691c-428c-9481-14979cba3446"
@@ -102,19 +77,48 @@ proxies:
       path: "/"
       headers:
         Host: "xi.tbv.ccwu.cc"
-  - name: "🇮🇷_4"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+  - name: "🇮🇷_2"
+    type: vless
+    server: "g2.kxpqus.bestxau.ir"
+    port: 36171
+    uuid: "ccc252f4-7f23-43b4-a8d5-6c0aee8633f0"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play-apps-features.googleusercontent.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "IYhfI8lsuJrFV8zzp1XXbh9sPkvBlBNOTtJwBubhxxw"
+      short-id: "e4eb3ada03de9e92"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇷_3"
+    type: vless
+    server: "freeman.curtvip.ir"
+    port: 20410
+    uuid: "ccc252f4-7f23-43b4-a8d5-6c0aee8633f0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amp-api-edge.apps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI"
+      short-id: "e2ce3e050232978c"
+  - name: "🇮🇷_4"
+    type: vless
+    server: "45.131.4.41"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/sync"
+      path: "/"
       headers:
-        Host: "0403.infinityconfig4.workers.dev"
+        Host: "xi.tbv.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"
