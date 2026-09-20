@@ -61,7 +61,33 @@ dns:
 proxies:
   - name: "🇰🇿_15"
     type: vless
-    server: "31.43.179.170"
+    server: "178.236.16.98"
+    port: 35728
+    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
+      short-id: "69a2"
+  - name: "🇰🇿_16"
+    type: vless
+    server: "77.73.232.61"
+    port: 19747
+    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
+      short-id: "2001"
+  - name: "🇰🇿_17"
+    type: vless
+    server: "31.43.179.109"
     port: 443
     uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
@@ -72,7 +98,60 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇰🇿_16"
+  - name: "🇰🇿_18"
+    type: vless
+    server: "31.43.179.200"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇰🇿_19"
+    type: vless
+    server: "31.43.179.170"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+  - name: "🇰🇿_20"
+    type: vless
+    server: "31.43.179.137"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇰🇿_21"
+    type: vless
+    server: "31.43.179.87"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇰🇿_22"
     type: vless
     server: "31.43.179.8"
     port: 443
@@ -86,20 +165,7 @@ proxies:
       path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "xi.tbv.ccwu.cc"
-  - name: "🇰🇿_17"
-    type: vless
-    server: "109.248.170.119"
-    port: 13447
-    uuid: "b573cefb-7bc7-4a42-b407-b8b534e66773"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE"
-      short-id: "83"
-  - name: "🇰🇿_18"
+  - name: "🇰🇿_23"
     type: vless
     server: "83.222.23.81"
     port: 38065
@@ -112,113 +178,9 @@ proxies:
     reality-opts:
       public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
       short-id: "fa"
-  - name: "🇰🇿_19"
-    type: vless
-    server: "31.43.179.106"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇰🇿_20"
-    type: vless
-    server: "31.43.179.36"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇰🇿_21"
-    type: vless
-    server: "77.73.232.61"
-    port: 19747
-    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
-      short-id: "2001"
-  - name: "🇰🇿_22"
-    type: vless
-    server: "31.43.179.20"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-  - name: "🇰🇿_23"
-    type: vless
-    server: "178.236.16.98"
-    port: 35728
-    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
-      short-id: "69a2"
   - name: "🇰🇿_24"
     type: vless
-    server: "31.43.179.87"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇰🇿_25"
-    type: vless
-    server: "31.43.179.137"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-  - name: "🇰🇿_26"
-    type: vless
-    server: "31.43.179.200"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-  - name: "🇰🇿_27"
-    type: vless
-    server: "31.43.179.109"
+    server: "31.43.179.36"
     port: 443
     uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
@@ -229,7 +191,20 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇰🇿_28"
+  - name: "🇰🇿_25"
+    type: vless
+    server: "109.248.170.119"
+    port: 13447
+    uuid: "b573cefb-7bc7-4a42-b407-b8b534e66773"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE"
+      short-id: "83"
+  - name: "🇰🇿_26"
     type: vless
     server: "31.43.179.25"
     port: 443
@@ -242,6 +217,33 @@ proxies:
     network: ws
     ws-opts:
       path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇰🇿_27"
+    type: vless
+    server: "31.43.179.106"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇰🇿_28"
+    type: vless
+    server: "31.43.179.20"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
       headers:
         Host: "xi.tbv.ccwu.cc"
 

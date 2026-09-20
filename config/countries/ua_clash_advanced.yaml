@@ -61,26 +61,22 @@ dns:
 proxies:
   - name: "🇺🇦_3"
     type: vless
-    server: "194.152.44.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    server: "104.143.223.80"
+    port: 2085
+    uuid: "38ffee35-b305-41ba-89e0-78e62d95b99c"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇺🇦_4"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    type: vless
+    server: "104.143.223.50"
+    port: 2089
+    uuid: "d144d943-46bd-41ce-af2c-06358c845616"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

@@ -59,6 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇷🇴_6"
+    type: vless
+    server: "146.70.124.85"
+    port: 443
+    uuid: "40abbe13-f02e-4da2-9b19-966c2c3eb4ee"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.datadoghq.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE"
+      short-id: "fe24f8a0a560056e"
+    flow: "xtls-rprx-vision"
   - name: "🇷🇴_7"
     type: vless
     server: "46.28.67.55"
@@ -74,50 +88,22 @@ proxies:
       short-id: "d06d78e974491b6e"
     flow: "xtls-rprx-vision"
   - name: "🇷🇴_8"
-    type: vless
-    server: "146.70.124.85"
+    type: ss
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
-    uuid: "40abbe13-f02e-4da2-9b19-966c2c3eb4ee"
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.datadoghq.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE"
-      short-id: "fe24f8a0a560056e"
-    flow: "xtls-rprx-vision"
   - name: "🇷🇴_9"
-    type: vless
-    server: "45.43.166.56"
+    type: ss
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
-    uuid: "4CD55C5_trial"
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "travel.yandex.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "sEzXu5KZcPPaT5ZKj8gBIOa4ana3Jq75-iZSMQPW9BY"
-      short-id: "8c3f17a4d92be560"
-    flow: "xtls-rprx-vision"
   - name: "🇷🇴_10"
     type: ss
     server: "154.46.31.106"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
-    udp: true
-  - name: "🇷🇴_11"
-    type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
-    udp: true
-  - name: "🇷🇴_12"
-    type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -164,12 +150,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -179,12 +164,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -194,12 +178,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -208,12 +191,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -223,23 +205,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇷🇴_6"
       - "🇷🇴_7"
       - "🇷🇴_8"
       - "🇷🇴_9"
       - "🇷🇴_10"
-      - "🇷🇴_11"
-      - "🇷🇴_12"
 
 rules:
   - MATCH,PROXY-BEST

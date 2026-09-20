@@ -59,97 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇿_10"
-    type: vless
-    server: "45.131.5.33"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_11"
-    type: vless
-    server: "45.131.6.205"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_12"
-    type: vless
-    server: "45.131.6.249"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_13"
-    type: vless
-    server: "45.131.5.35"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_14"
-    type: vless
-    server: "45.131.7.162"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_15"
-    type: vless
-    server: "45.131.5.248"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_16"
+  - name: "🇧🇿_5"
     type: vless
     server: "45.131.5.241"
     port: 443
@@ -163,7 +73,21 @@ proxies:
       path: "/"
       headers:
         Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_17"
+  - name: "🇧🇿_6"
+    type: vless
+    server: "nl4.zuoai.cf"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
+  - name: "🇧🇿_7"
     type: vless
     server: "45.131.5.80"
     port: 443
@@ -175,20 +99,23 @@ proxies:
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "xi.tbv.ccwu.cc"
-  - name: "🇧🇿_18"
+  - name: "🇧🇿_8"
     type: vless
-    server: "45.131.208.4"
-    port: 80
-    uuid: "424fa201-3f94-479e-b533-d5257cf9a207"
+    server: "45.131.6.205"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/proxyip=us.xiabibi.cf"
       headers:
-        Host: "floral-thunder-10d3.82-67d.workers.dev"
+        Host: "xi.tbv.ccwu.cc"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -231,15 +158,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -249,15 +171,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -267,15 +184,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -284,15 +196,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -302,29 +209,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇿_10"
-      - "🇧🇿_11"
-      - "🇧🇿_12"
-      - "🇧🇿_13"
-      - "🇧🇿_14"
-      - "🇧🇿_15"
-      - "🇧🇿_16"
-      - "🇧🇿_17"
-      - "🇧🇿_18"
+      - "🇧🇿_5"
+      - "🇧🇿_6"
+      - "🇧🇿_7"
+      - "🇧🇿_8"
 
 rules:
   - MATCH,PROXY-BEST

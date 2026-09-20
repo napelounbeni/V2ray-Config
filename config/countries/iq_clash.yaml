@@ -63,17 +63,20 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇳_1"
+  - name: "🇮🇶_1"
     type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "193.56.135.212"
+    port: 9543
+    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandexcloud.net"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
+      short-id: "123abcde"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +91,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇳_1"
+      - "🇮🇶_1"
 
 
 rules:
