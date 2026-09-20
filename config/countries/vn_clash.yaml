@@ -78,6 +78,21 @@ proxies:
       path: "/channel?ed=2560"
       headers:
         Host: "cdn8848.776676.xyz"
+  - name: "🇻🇳_2"
+    type: vless
+    server: "160.30.50.48"
+    port: 443
+    uuid: "3b3d3966-59db-4145-8d61-08d2ad559ced"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +108,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇻🇳_1"
+      - "🇻🇳_2"
 
 
 rules:

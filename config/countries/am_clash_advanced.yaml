@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇲_4"
+  - name: "🇦🇲_2"
     type: vless
     server: "77.91.68.70"
     port: 55983
@@ -71,34 +71,6 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
-  - name: "🇦🇲_5"
-    type: vless
-    server: "aotocon.ggisopi.su"
-    port: 443
-    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aotocon.ggisopi.su"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇲_6"
-    type: vless
-    server: "87.121.47.179"
-    port: 443
-    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aotocon.ggisopi.su"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +113,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +123,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +133,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +142,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +152,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇲_4"
-      - "🇦🇲_5"
-      - "🇦🇲_6"
+      - "🇦🇲_2"
 
 rules:
   - MATCH,PROXY-BEST

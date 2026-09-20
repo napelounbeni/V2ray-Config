@@ -61,6 +61,17 @@ dns:
 proxies:
   - name: "🇱🇻_4"
     type: vless
+    server: "188.220.205.16"
+    port: 8088
+    uuid: "f7c74a35-1da0-5097-9fa7-a20735610ac1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api"
+      headers:
+        Host: "queuev4.vk.com"
+  - name: "🇱🇻_5"
+    type: vless
     server: "138.124.180.137"
     port: 443
     uuid: "5234b2b7-5e07-422c-8159-d62a676c00c6"
@@ -73,17 +84,6 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_5"
-    type: vless
-    server: "atomic-prase23893.my-vm.work"
-    port: 8088
-    uuid: "tmp_user"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-      headers:
-        Host: "queuev4.vk.com"
   - name: "🇱🇻_6"
     type: vless
     server: "195.123.213.28"

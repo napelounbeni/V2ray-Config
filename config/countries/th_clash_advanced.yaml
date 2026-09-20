@@ -76,6 +76,17 @@ proxies:
         Host: "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
   - name: "🇹🇭_7"
     type: vless
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "v2ray.simspeedup.com"
+  - name: "🇹🇭_8"
+    type: vless
     server: "34.15.162.1"
     port: 443
     uuid: "2b1d0c2a-9c80-4b72-892e-93d0500b9210"
@@ -87,31 +98,24 @@ proxies:
     reality-opts:
       public-key: "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw"
       short-id: "ca672c53fbbac555"
-  - name: "🇹🇭_8"
-    type: vless
-    server: "103.86.49.57"
-    port: 80
-    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "aIs.SpEeDtEsT.nEt"
   - name: "🇹🇭_9"
     type: vless
-    server: "v2ray.simspeedup.com"
-    port: 80
-    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    server: "103.224.84.70"
+    port: 443
+    uuid: "3b3d3966-59db-4145-8d61-08d2ad559ced"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/t.me/daily_free_vpn"
       headers:
-        Host: "v2ray.simspeedup.com"
+        Host: "thus-k.netnode.cc.cd"
   - name: "🇹🇭_10"
     type: vless
-    server: "V2rAy.SiMsPeEdUp.CoM"
+    server: "103.86.49.57"
     port: 80
     uuid: "3c52e091-6714-4915-949f-2149fe69951b"
     udp: true
