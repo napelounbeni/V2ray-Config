@@ -59,18 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇹_4"
-    type: vless
-    server: "156.243.83.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime54.workers.dev"
-  - name: "🇵🇹_5"
+  - name: "🇵🇹_2"
     type: vless
     server: "195.133.92.20"
     port: 443
@@ -85,20 +74,6 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇵🇹_6"
-    type: vless
-    server: "171.22.129.27"
-    port: 443
-    uuid: "f07d9192-9d39-49fc-ba70-610fcb7fb176"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "siennacedarantler.tealbutton.one"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "VE90NqtKCg1Kqc8XCYjLIFmcpOnQDtbMIjtBHbtfHwQ"
-      short-id: "9c4a1ec4ae97eb29"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +116,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +126,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +145,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +155,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇵🇹_2"
 
 rules:
   - MATCH,PROXY-BEST

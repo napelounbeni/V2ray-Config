@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇸🇦_1"
     type: vless
+    server: "91.209.253.68"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_2"
+    type: vless
     server: "91.209.253.42"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
@@ -72,13 +86,14 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇸🇦_2"
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_3"
     type: vless
-    server: "91.209.253.244"
+    server: "91.209.253.243"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -88,8 +103,39 @@ proxies:
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇸🇦_3"
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_4"
+    type: vless
+    server: "91.209.253.216"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_5"
+    type: vless
+    server: "91.209.253.25"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_6"
     type: vless
     server: "91.209.253.250"
     port: 443
@@ -103,7 +149,7 @@ proxies:
       path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇸🇦_4"
+  - name: "🇸🇦_7"
     type: vless
     server: "91.209.253.229"
     port: 443
@@ -112,54 +158,15 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇸🇦_5"
-    type: vless
-    server: "91.209.253.109"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
-  - name: "🇸🇦_6"
-    type: vless
-    server: "91.209.253.68"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇦_7"
-    type: vless
-    server: "91.209.253.119"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
+      path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_8"
     type: vless
-    server: "91.209.253.216"
+    server: "91.209.253.244"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -174,13 +181,14 @@ proxies:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_9"
     type: vless
-    server: "91.209.253.25"
+    server: "91.209.253.109"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/proxyip=us.xiabibi.cf"
@@ -188,7 +196,7 @@ proxies:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_10"
     type: vless
-    server: "91.209.253.243"
+    server: "91.209.253.119"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
