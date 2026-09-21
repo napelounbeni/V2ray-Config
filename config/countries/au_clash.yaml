@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
+    server: "123.51.23.113"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn8848.776676.xyz"
+    network: ws
+    ws-opts:
+      path: "/event/link?ed=2560fp=chrome"
+      headers:
+        Host: "cdn8848.776676.xyz"
+  - name: "🇦🇺_2"
+    type: vless
     server: "34.87.244.111"
     port: 443
     uuid: "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd"
@@ -76,10 +90,10 @@ proxies:
     reality-opts:
       public-key: "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E"
       short-id: "d725f0dd8cce210f"
-  - name: "🇦🇺_2"
+  - name: "🇦🇺_3"
     type: vless
-    server: "103.136.146.73"
-    port: 443
+    server: "152.67.101.72"
+    port: 23010
     uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
     tls: true
@@ -87,32 +101,20 @@ proxies:
     servername: "cdn8848.776676.xyz"
     network: ws
     ws-opts:
-      path: "/url/archives?ed=2560fp=chrome"
+      path: "/books?ed=2560fp=chrome"
       headers:
         Host: "cdn8848.776676.xyz"
-  - name: "🇦🇺_3"
-    type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
   - name: "🇦🇺_4"
     type: vless
-    server: "51.161.204.244"
-    port: 443
-    uuid: "36e89875-9c53-482b-bc41-d3890e9da176"
+    server: "192.65.217.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk"
-      short-id: "0ad08b47f498efd2"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime37.workers.dev"
   - name: "🇦🇺_5"
     type: vless
     server: "34.87.229.148"
@@ -126,6 +128,54 @@ proxies:
     reality-opts:
       public-key: "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4"
       short-id: "8a7d5e0248cdb1b1"
+  - name: "🇦🇺_6"
+    type: vless
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_7"
+    type: vless
+    server: "51.161.204.244"
+    port: 443
+    uuid: "36e89875-9c53-482b-bc41-d3890e9da176"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk"
+      short-id: "0ad08b47f498efd2"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇺_8"
+    type: vless
+    server: "172.105.169.70"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "172.105.169.70"
+  - name: "🇦🇺_9"
+    type: vless
+    server: "103.136.146.73"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn8848.776676.xyz"
+    network: ws
+    ws-opts:
+      path: "/url/archives?ed=2560fp=chrome"
+      headers:
+        Host: "cdn8848.776676.xyz"
 
 proxy-groups:
   - name: "PROXY"
@@ -145,6 +195,10 @@ proxy-groups:
       - "🇦🇺_3"
       - "🇦🇺_4"
       - "🇦🇺_5"
+      - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
+      - "🇦🇺_9"
 
 
 rules:

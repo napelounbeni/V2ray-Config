@@ -91,34 +91,6 @@ proxies:
       public-key: "2IBUcPHOhFulmJaICe_xuRBJVgjDqVXB8fjHVdbdOQA"
       short-id: "e114ca996877ce3a"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇱_3"
-    type: vless
-    server: "130.49.189.158"
-    port: 45433
-    uuid: "4ea67585-c211-4358-9173-cbdff7a6aede"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c"
-      short-id: "5e101cd5"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇱_4"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
-    udp: true
-  - name: "🇦🇱_5"
-    type: ss
-    server: "130.49.189.158"
-    port: 43558
-    cipher: "chacha20-ietf-poly1305"
-    password: "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -135,9 +107,6 @@ proxy-groups:
     proxies:
       - "🇦🇱_1"
       - "🇦🇱_2"
-      - "🇦🇱_3"
-      - "🇦🇱_4"
-      - "🇦🇱_5"
 
 
 rules:

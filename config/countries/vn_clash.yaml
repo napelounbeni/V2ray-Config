@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇻🇳_1"
     type: vless
+    server: "160.25.75.40"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn8848.776676.xyz"
+    network: ws
+    ws-opts:
+      path: "/html?ed=2560fp=chrome"
+      headers:
+        Host: "cdn8848.776676.xyz"
+  - name: "🇻🇳_2"
+    type: vless
     server: "160.30.54.63"
     port: 443
     uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
@@ -78,6 +92,21 @@ proxies:
       path: "/channel?ed=2560"
       headers:
         Host: "cdn8848.776676.xyz"
+  - name: "🇻🇳_3"
+    type: vless
+    server: "160.25.75.40"
+    port: 443
+    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +122,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇻🇳_1"
+      - "🇻🇳_2"
+      - "🇻🇳_3"
 
 
 rules:

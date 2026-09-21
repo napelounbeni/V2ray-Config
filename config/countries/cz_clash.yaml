@@ -65,42 +65,14 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
-    server: "31.76.7.227"
-    port: 443
-    uuid: "d0e771c5-024e-4393-bb90-4a3e3c561656"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "origin.vpnoodles.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "nIL5EeUo2XUkCaLJGbzgRm6zhF-96kWvV2VmhEt3CX4"
-      short-id: "4af4102cb26e59"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_2"
-    type: vless
-    server: "194.58.43.245"
-    port: 2089
-    uuid: "d144d943-46bd-41ce-af2c-06358c845616"
+    server: "153.76.185.188"
+    port: 3090
+    uuid: "9912a5ca-3ee1-45ac-b182-46fec2610ee0"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
-  - name: "🇨🇿_3"
-    type: vless
-    server: "31.76.7.154"
-    port: 7443
-    uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ya.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
-      short-id: "d2061bb1"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_2"
     type: vless
     server: "195.85.23.29"
     port: 443
@@ -114,25 +86,7 @@ proxies:
       path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_5"
-    type: vless
-    server: "153.76.185.179"
-    port: 3090
-    uuid: "a536ca9e-53b2-459b-ba25-654e62b3b326"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_6"
-    type: vless
-    server: "153.76.185.80"
-    port: 3090
-    uuid: "a536ca9e-53b2-459b-ba25-654e62b3b326"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_7"
+  - name: "🇨🇿_3"
     type: vless
     server: "195.85.23.88"
     port: 443
@@ -146,91 +100,40 @@ proxies:
       path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_8"
+  - name: "🇨🇿_4"
     type: vless
-    server: "195.85.23.219"
+    server: "109.172.8.37"
     port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_9"
+        Host: "shuma.ccwu.cc"
+  - name: "🇨🇿_5"
     type: vless
-    server: "195.85.23.47"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    server: "153.76.185.82"
+    port: 3090
+    uuid: "585fdc07-0305-427c-abfb-7c94dc83466e"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_10"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_6"
     type: vless
-    server: "195.85.23.248"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    server: "153.76.185.186"
+    port: 3090
+    uuid: "9912a5ca-3ee1-45ac-b182-46fec2610ee0"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_11"
-    type: vless
-    server: "195.85.23.111"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_12"
-    type: vless
-    server: "195.85.23.217"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_13"
-    type: vless
-    server: "195.85.23.75"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_14"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_7"
     type: vless
     server: "195.85.23.252"
     port: 443
@@ -244,9 +147,9 @@ proxies:
       path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_15"
+  - name: "🇨🇿_8"
     type: vless
-    server: "cz1.zuoai.cf"
+    server: "195.85.23.75"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -258,7 +161,35 @@ proxies:
       path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_16"
+  - name: "🇨🇿_9"
+    type: vless
+    server: "195.85.23.217"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_10"
+    type: vless
+    server: "195.85.23.111"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_11"
     type: vless
     server: "195.85.23.45"
     port: 443
@@ -272,15 +203,100 @@ proxies:
       path: "/"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇨🇿_17"
+  - name: "🇨🇿_12"
     type: vless
-    server: "153.76.185.144"
+    server: "195.85.23.47"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_13"
+    type: vless
+    server: "31.76.7.154"
+    port: 7443
+    uuid: "d7cad038-0c3f-4cce-8f8a-36464aaf66c0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ya.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
+      short-id: "d2061bb1"
+    flow: "xtls-rprx-vision"
+  - name: "🇨🇿_14"
+    type: vless
+    server: "103.200.28.113"
+    port: 8443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇨🇿_15"
+    type: vless
+    server: "153.76.185.189"
     port: 3090
-    uuid: "a9a813b7-13ea-45f4-b8de-922b9bdd2db2"
+    uuid: "5ebdc9ee-8b41-4487-93af-231cb0b47d60"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
+  - name: "🇨🇿_16"
+    type: vless
+    server: "195.85.23.248"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_17"
+    type: vless
+    server: "195.85.23.219"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇨🇿_18"
+    type: vless
+    server: "cz1.zuoai.cf"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
 
 proxy-groups:
   - name: "PROXY"
@@ -312,6 +328,7 @@ proxy-groups:
       - "🇨🇿_15"
       - "🇨🇿_16"
       - "🇨🇿_17"
+      - "🇨🇿_18"
 
 
 rules:

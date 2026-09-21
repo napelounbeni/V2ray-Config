@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇷🇴_1"
     type: vless
-    server: "146.70.124.85"
-    port: 443
-    uuid: "40abbe13-f02e-4da2-9b19-966c2c3eb4ee"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.datadoghq.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE"
-      short-id: "fe24f8a0a560056e"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇴_2"
-    type: vless
     server: "46.28.67.55"
     port: 443
     uuid: "d1a6a033-fdbd-46a6-a177-3370ba042b9f"
@@ -91,13 +77,35 @@ proxies:
       public-key: "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU"
       short-id: "d06d78e974491b6e"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇴_3"
-    type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+  - name: "🇷🇴_2"
+    type: vless
+    server: "146.70.124.85"
     port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
+    uuid: "40abbe13-f02e-4da2-9b19-966c2c3eb4ee"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.datadoghq.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE"
+      short-id: "fe24f8a0a560056e"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_3"
+    type: vless
+    server: "154.46.31.118"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
   - name: "🇷🇴_4"
     type: ss
     server: "bogging-eyeteeth-fly.freesocks.work"
@@ -106,6 +114,13 @@ proxies:
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
   - name: "🇷🇴_5"
+    type: ss
+    server: "bogging-eyeteeth-fly.freesocks.work"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
+    udp: true
+  - name: "🇷🇴_6"
     type: ss
     server: "154.46.31.106"
     port: 443
@@ -131,6 +146,7 @@ proxy-groups:
       - "🇷🇴_3"
       - "🇷🇴_4"
       - "🇷🇴_5"
+      - "🇷🇴_6"
 
 
 rules:

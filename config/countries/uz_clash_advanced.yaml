@@ -61,22 +61,34 @@ dns:
 proxies:
   - name: "🇺🇿_3"
     type: vless
-    server: "189.74.97.47"
-    port: 2087
-    uuid: "894fe9f0-b998-49c0-8003-a5007de921e1"
+    server: "46.8.194.76"
+    port: 2053
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/755276b33b6f"
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
   - name: "🇺🇿_4"
     type: vless
-    server: "189.74.97.43"
-    port: 2087
-    uuid: "10f7eb2d-d96d-4778-9d36-aff11e9d6629"
+    server: "46.8.194.76"
+    port: 8443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/73b6faea2d00"
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

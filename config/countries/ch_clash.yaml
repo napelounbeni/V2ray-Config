@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇨🇭_1"
     type: vless
-    server: "45.140.205.2"
-    port: 443
-    uuid: "c795bdd5-0460-42bd-927b-fbff154d2ab5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "promo.ch.iki-servers.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_2"
-    type: vless
     server: "131.123.34.145"
     port: 8081
     uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
@@ -86,21 +72,21 @@ proxies:
     network: ws
     ws-opts:
       path: "/vless-test"
-  - name: "🇨🇭_3"
+  - name: "🇨🇭_2"
     type: vless
-    server: "45.90.56.101"
+    server: "ch.cache-4d8a.com"
     port: 443
-    uuid: "rGinWTRwYI6JdY"
+    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.icloud.com"
+    servername: "ch.cache-4d8a.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Afp-zSDm7jmmT3KaKqmVyafpsPfNGKNzGPoWe97Sf3M"
-      short-id: "61c6594c"
+      public-key: "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY"
+      short-id: "9d84de9d9f7b85e9"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_4"
+  - name: "🇨🇭_3"
     type: vless
     server: "179.43.162.252"
     port: 443
@@ -114,7 +100,7 @@ proxies:
       public-key: "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY"
       short-id: "9d84de9d9f7b85e9"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_5"
+  - name: "🇨🇭_4"
     type: vless
     server: "45.90.59.15"
     port: 443
@@ -128,18 +114,33 @@ proxies:
       public-key: "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY"
       short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
+  - name: "🇨🇭_5"
     type: vless
-    server: "ch.cache-4d8a.com"
-    port: 443
-    uuid: "ddf09ad0-02dc-485b-9048-1038de5bebf0"
+    server: "194.154.29.139"
+    port: 8443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ch.cache-4d8a.com"
+    servername: "cdn8848.776676.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/retrieve/txt?ed=2560"
+      headers:
+        Host: "cdn8848.776676.xyz"
+  - name: "🇨🇭_6"
+    type: vless
+    server: "45.140.205.2"
+    port: 443
+    uuid: "c795bdd5-0460-42bd-927b-fbff154d2ab5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "promo.ch.iki-servers.com"
     reality-opts:
-      public-key: "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY"
-      short-id: "9d84de9d9f7b85e9"
+      public-key: "he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg"
+      short-id: ""
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_7"
     type: trojan

@@ -59,20 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇦_12"
+  - name: "🇸🇦_11"
     type: vless
-    server: "91.209.253.119"
+    server: "91.209.253.42"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_12"
+    type: vless
+    server: "91.209.253.244"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇸🇦_13"
     type: vless
     server: "91.209.253.250"
@@ -89,48 +101,19 @@ proxies:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_14"
     type: vless
-    server: "91.209.253.216"
+    server: "91.209.253.229"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇸🇦_15"
-    type: vless
-    server: "91.209.253.42"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇸🇦_16"
-    type: vless
-    server: "91.209.253.243"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "nb.lovecf.ggff.net"
-  - name: "🇸🇦_17"
+  - name: "🇸🇦_15"
     type: vless
     server: "91.209.253.109"
     port: 443
@@ -143,9 +126,22 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
-  - name: "🇸🇦_18"
+  - name: "🇸🇦_16"
     type: vless
-    server: "91.209.253.229"
+    server: "91.209.253.68"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇸🇦_17"
+    type: vless
+    server: "91.209.253.119"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -155,6 +151,21 @@ proxies:
     network: ws
     ws-opts:
       path: "/"
+      headers:
+        Host: "nb.lovecf.ggff.net"
+  - name: "🇸🇦_18"
+    type: vless
+    server: "91.209.253.216"
+    port: 443
+    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nb.lovecf.ggff.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_19"
@@ -173,35 +184,7 @@ proxies:
         Host: "nb.lovecf.ggff.net"
   - name: "🇸🇦_20"
     type: vless
-    server: "91.209.253.68"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇸🇦_21"
-    type: vless
-    server: "sa1.zuoai.cf"
-    port: 443
-    uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nb.lovecf.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "nb.lovecf.ggff.net"
-  - name: "🇸🇦_22"
-    type: vless
-    server: "91.209.253.244"
+    server: "91.209.253.243"
     port: 443
     uuid: "b09dfed1-90fa-4353-8bdf-de1edb2e2d79"
     udp: true
@@ -256,6 +239,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -265,8 +249,6 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
   - name: "LB-CDN"
     type: load-balance
@@ -276,6 +258,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -285,8 +268,6 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -296,6 +277,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -305,8 +287,6 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
   - name: "FAST-CDN"
     type: url-test
@@ -315,6 +295,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -324,8 +305,6 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -335,6 +314,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -344,13 +324,12 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇸🇦_11"
       - "🇸🇦_12"
       - "🇸🇦_13"
       - "🇸🇦_14"
@@ -360,8 +339,6 @@ proxy-groups:
       - "🇸🇦_18"
       - "🇸🇦_19"
       - "🇸🇦_20"
-      - "🇸🇦_21"
-      - "🇸🇦_22"
 
 rules:
   - MATCH,PROXY-BEST

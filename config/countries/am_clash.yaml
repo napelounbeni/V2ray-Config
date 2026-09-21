@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇦🇲_1"
     type: vless
+    server: "2.56.204.183"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇦🇲_2"
+    type: vless
     server: "77.91.68.70"
     port: 55983
     uuid: "f667a096-5231-4cfb-8759-92bb32473139"
@@ -75,6 +90,19 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
+  - name: "🇦🇲_3"
+    type: trojan
+    server: "de2.x8lab.org"
+    port: 9433
+    password: "TAJhE0BC0_S1JDm9EmQxyLS64uC8ekbr"
+    sni: "de2.x8lab.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/chatbot"
+      headers:
+        Host: "de2.x8lab.org"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,6 +118,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇲_1"
+      - "🇦🇲_2"
+      - "🇦🇲_3"
 
 
 rules:

@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇲_2"
+  - name: "🇦🇲_4"
+    type: vless
+    server: "2.56.204.183"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇦🇲_5"
     type: vless
     server: "77.91.68.70"
     port: 55983
@@ -71,6 +86,19 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
+  - name: "🇦🇲_6"
+    type: trojan
+    server: "de2.x8lab.org"
+    port: 9433
+    password: "TAJhE0BC0_S1JDm9EmQxyLS64uC8ekbr"
+    sni: "de2.x8lab.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/chatbot"
+      headers:
+        Host: "de2.x8lab.org"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -113,7 +141,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -123,7 +153,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -133,7 +165,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -142,7 +176,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -152,13 +188,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_4"
+      - "🇦🇲_5"
+      - "🇦🇲_6"
 
 rules:
   - MATCH,PROXY-BEST

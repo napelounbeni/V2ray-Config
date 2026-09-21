@@ -77,6 +77,20 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇻_2"
+    type: vless
+    server: "195.123.213.28"
+    port: 443
+    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
+      short-id: "5c256336e3b673fa"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇱🇻_1"
+      - "🇱🇻_2"
 
 
 rules:

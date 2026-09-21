@@ -65,22 +65,72 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "104.143.223.80"
+    server: "104.143.223.56"
     port: 2085
-    uuid: "38ffee35-b305-41ba-89e0-78e62d95b99c"
+    uuid: "9912a5ca-3ee1-45ac-b182-46fec2610ee0"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
   - name: "🇺🇦_2"
     type: vless
-    server: "104.143.223.50"
-    port: 2089
-    uuid: "d144d943-46bd-41ce-af2c-06358c845616"
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "213.111.148.137"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_6"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -97,6 +147,10 @@ proxy-groups:
     proxies:
       - "🇺🇦_1"
       - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
 
 
 rules:

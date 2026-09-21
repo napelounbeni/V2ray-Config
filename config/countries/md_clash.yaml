@@ -65,18 +65,19 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
-    server: "moldova.cdn-europe.org"
-    port: 4443
-    uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
+    server: "185.153.198.86"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "moldova.cdn-europe.org"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
-      short-id: "694ee64512cfcbef"
-    flow: "xtls-rprx-vision"
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"

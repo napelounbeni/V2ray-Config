@@ -77,6 +77,39 @@ proxies:
       path: "/"
       headers:
         Host: "xi.tbv.ccwu.cc"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
+  - name: "🇮🇷_3"
+    type: vless
+    server: "45.131.4.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇮🇷_4"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +125,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇮🇷_1"
+      - "🇮🇷_2"
+      - "🇮🇷_3"
+      - "🇮🇷_4"
 
 
 rules:
