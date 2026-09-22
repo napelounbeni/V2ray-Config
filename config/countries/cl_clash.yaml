@@ -78,33 +78,15 @@ proxies:
       short-id: "d7676b6a468a03b3"
   - name: "🇨🇱_2"
     type: vless
-    server: "platform109.golnamakcert.top"
+    server: "platform118.golnamakcert.top"
     port: 80
     uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
     network: ws
     ws-opts:
-      path: "/platform109"
+      path: "/platform118"
       headers:
-        Host: "platform109.halalkhor.info"
-  - name: "🇨🇱_3"
-    type: vless
-    server: "platform117.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform117"
-      headers:
-        Host: "platform117.halalkhor.info"
-  - name: "🇨🇱_4"
-    type: ss
-    server: "64.176.2.21"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "xBStBEVqvGwHPocc"
-    udp: true
+        Host: "platform118.halalkhor.info"
 
 proxy-groups:
   - name: "PROXY"
@@ -121,8 +103,6 @@ proxy-groups:
     proxies:
       - "🇨🇱_1"
       - "🇨🇱_2"
-      - "🇨🇱_3"
-      - "🇨🇱_4"
 
 
 rules:

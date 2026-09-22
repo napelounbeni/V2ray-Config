@@ -63,20 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇱_1"
+  - name: "🇪🇬_1"
     type: vless
-    server: "isr.accessgate.link"
-    port: 8080
-    uuid: "38eb3e71-4349-4bd6-9baf-9740e1896495"
+    server: "166.1.228.218"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "unpkg.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko"
-      short-id: "b0d8c9a285c70f6f"
-    flow: "xtls-rprx-vision"
+    servername: "shuma.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇱_1"
+      - "🇪🇬_1"
 
 
 rules:

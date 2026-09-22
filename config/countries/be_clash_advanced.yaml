@@ -59,20 +59,34 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇪_6"
+  - name: "🇧🇪_5"
     type: vless
-    server: "bel.accessgate.link"
-    port: 8080
-    uuid: "38eb3e71-4349-4bd6-9baf-9740e1896495"
+    server: "141.227.186.38"
+    port: 2053
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "unpkg.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko"
-      short-id: "b0d8c9a285c70f6f"
-    flow: "xtls-rprx-vision"
+    servername: "shuma.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇧🇪_6"
+    type: vless
+    server: "194.71.227.213"
+    port: 443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
   - name: "🇧🇪_7"
     type: vless
     server: "141.98.233.6"
@@ -97,36 +111,6 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇧🇪_9"
-    type: vless
-    server: "141.227.186.38"
-    port: 2053
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇧🇪_10"
-    type: vless
-    server: "194.71.227.213"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
@@ -174,11 +158,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -188,11 +171,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -202,11 +184,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -215,11 +196,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -229,21 +209,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇧🇪_5"
       - "🇧🇪_6"
       - "🇧🇪_7"
       - "🇧🇪_8"
-      - "🇧🇪_9"
-      - "🇧🇪_10"
 
 rules:
   - MATCH,PROXY-BEST

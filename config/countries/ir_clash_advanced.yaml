@@ -59,9 +59,9 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇷_4"
+  - name: "🇮🇷_3"
     type: vless
-    server: "45.131.4.181"
+    server: "45.131.4.41"
     port: 443
     uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
@@ -70,23 +70,12 @@ proxies:
     servername: "xi.tbv.ccwu.cc"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/proxyip=us.xiabibi.cf"
       headers:
         Host: "xi.tbv.ccwu.cc"
-  - name: "🇮🇷_5"
+  - name: "🇮🇷_4"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_6"
-    type: vless
-    server: "45.131.4.41"
+    server: "45.131.4.181"
     port: 443
     uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
@@ -140,9 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -152,9 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -164,9 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -175,9 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -187,17 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇷_3"
       - "🇮🇷_4"
-      - "🇮🇷_5"
-      - "🇮🇷_6"
 
 rules:
   - MATCH,PROXY-BEST

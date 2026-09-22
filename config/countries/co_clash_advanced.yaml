@@ -59,20 +59,12 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇱_2"
+  - name: "🇨🇴_2"
     type: vless
-    server: "isr.accessgate.link"
-    port: 8080
-    uuid: "38eb3e71-4349-4bd6-9baf-9740e1896495"
+    server: "157.137.212.178"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "unpkg.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko"
-      short-id: "b0d8c9a285c70f6f"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -115,7 +107,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +127,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +146,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇱_2"
+      - "🇨🇴_2"
 
 rules:
   - MATCH,PROXY-BEST

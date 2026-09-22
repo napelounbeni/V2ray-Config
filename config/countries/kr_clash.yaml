@@ -65,6 +65,34 @@ dns:
 proxies:
   - name: "🇰🇷_1"
     type: vless
+    server: "3.39.4.109"
+    port: 18967
+    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
+      short-id: "48050fab"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇷_2"
+    type: vless
+    server: "47.80.14.8"
+    port: 443
+    uuid: "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.samsung.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w"
+      short-id: "71110d3f7ef57760"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇷_3"
+    type: vless
     server: "47.80.62.71"
     port: 443
     uuid: "0d4cb711-c030-4f13-adf5-6a72dab4121c"
@@ -77,35 +105,21 @@ proxies:
       public-key: "AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ"
       short-id: "0b674631d5fc6b93"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_2"
+  - name: "🇰🇷_4"
     type: vless
-    server: "34.64.149.137"
+    server: "47.80.62.188"
     port: 443
-    uuid: "700a7a0e-3f27-406c-81d1-aa1abe411af8"
+    uuid: "e85ca8bc-21a5-418d-a639-00236f0c3d81"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "www.nvidia.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8"
-      short-id: "3fd0a8ddef3ae5c6"
-  - name: "🇰🇷_3"
-    type: vless
-    server: "47.80.57.116"
-    port: 443
-    uuid: "3db635e4-f9ec-42d6-8aba-e23df8b0e6da"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "mia6.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/TG:@MiaChatChannel"
-      headers:
-        Host: "mia6.pages.dev"
-  - name: "🇰🇷_4"
+      public-key: "an8lRnGRbCvX-GW3zuc5woB6hrTxEhfyrGCv-7_QyVo"
+      short-id: "b229991df62826cc"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇷_5"
     type: vless
     server: "3.39.4.109"
     port: 13672
@@ -119,21 +133,20 @@ proxies:
       public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
       short-id: "48050fab"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_5"
+  - name: "🇰🇷_6"
     type: vless
-    server: "3.39.4.109"
-    port: 18967
-    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    server: "151.245.106.49"
+    port: 2053
+    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
-      short-id: "48050fab"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇷_6"
+      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
+      short-id: "429499c03d4cc8a0"
+  - name: "🇰🇷_7"
     type: vless
     server: "123.111.169.70"
     port: 2083
@@ -148,70 +161,40 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇰🇷_7"
+  - name: "🇰🇷_8"
     type: vless
-    server: "151.245.106.49"
-    port: 2053
-    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
+    server: "34.64.149.137"
+    port: 443
+    uuid: "700a7a0e-3f27-406c-81d1-aa1abe411af8"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
-      short-id: "429499c03d4cc8a0"
-  - name: "🇰🇷_8"
-    type: vless
-    server: "47.80.14.8"
-    port: 443
-    uuid: "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.samsung.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w"
-      short-id: "71110d3f7ef57760"
-    flow: "xtls-rprx-vision"
+      public-key: "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8"
+      short-id: "3fd0a8ddef3ae5c6"
   - name: "🇰🇷_9"
-    type: vless
-    server: "43.155.208.254"
-    port: 443
-    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "thus-k.netnode.cc.cd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/t.me/daily_free_vpn"
-      headers:
-        Host: "thus-k.netnode.cc.cd"
-  - name: "🇰🇷_10"
-    type: vless
-    server: "13.124.169.29"
-    port: 443
-    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "thus-k.netnode.cc.cd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/t.me/daily_free_vpn"
-      headers:
-        Host: "thus-k.netnode.cc.cd"
-  - name: "🇰🇷_11"
     type: trojan
     server: "154.90.62.70"
     port: 56127
     password: "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B"
     sni: "154.90.62.70"
     skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_10"
+    type: ss
+    server: "141.164.45.187"
+    port: 5001
+    cipher: "aes-256-gcm"
+    password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇰🇷_11"
+    type: ss
+    server: "141.164.45.187"
+    port: 8000
+    cipher: "aes-256-gcm"
+    password: "KixLvKzwjekG00rm"
     udp: true
   - name: "🇰🇷_12"
     type: ss
@@ -223,37 +206,37 @@ proxies:
   - name: "🇰🇷_13"
     type: ss
     server: "141.164.45.187"
-    port: 9101
+    port: 5001
     cipher: "aes-256-gcm"
-    password: "e4FCWrgpkji3QY"
+    password: "Y6R9pAtvxxzmGC"
     udp: true
   - name: "🇰🇷_14"
     type: ss
     server: "141.164.45.187"
-    port: 8091
+    port: 9101
     cipher: "aes-256-gcm"
-    password: "PCnnH6SQSnfoS27"
+    password: "e4FCWrgpkji3QY"
     udp: true
   - name: "🇰🇷_15"
     type: ss
     server: "141.164.45.187"
-    port: 7001
+    port: 7002
     cipher: "aes-256-gcm"
     password: "RexnBgU7EV5ADxG"
     udp: true
   - name: "🇰🇷_16"
     type: ss
     server: "141.164.45.187"
-    port: 5001
+    port: 9090
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
   - name: "🇰🇷_17"
     type: ss
     server: "141.164.45.187"
-    port: 8119
+    port: 9090
     cipher: "aes-256-gcm"
-    password: "cdBIDV42DCwnfIN"
+    password: "Y6R9pAtvxxzmGC"
     udp: true
   - name: "🇰🇷_18"
     type: ss
@@ -265,65 +248,65 @@ proxies:
   - name: "🇰🇷_19"
     type: ss
     server: "141.164.45.187"
-    port: 2376
-    cipher: "aes-256-gcm"
-    password: "faBAoD54k87UJG7"
-    udp: true
-  - name: "🇰🇷_20"
-    type: ss
-    server: "141.164.45.187"
-    port: 6697
-    cipher: "aes-256-gcm"
-    password: "TEzjfAYq2IjtuoS"
-    udp: true
-  - name: "🇰🇷_21"
-    type: ss
-    server: "141.164.45.187"
-    port: 7002
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
-    udp: true
-  - name: "🇰🇷_22"
-    type: ss
-    server: "141.164.45.187"
-    port: 5001
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_23"
-    type: ss
-    server: "141.164.45.187"
     port: 9101
     cipher: "aes-256-gcm"
     password: "e4FCWrgpkji3QY"
     udp: true
-  - name: "🇰🇷_24"
-    type: ss
-    server: "141.164.45.187"
-    port: 8888
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_25"
+  - name: "🇰🇷_20"
     type: ss
     server: "141.164.45.187"
     port: 5498
     cipher: "aes-256-gcm"
     password: "lGqs95QkFHo2NV"
     udp: true
+  - name: "🇰🇷_21"
+    type: ss
+    server: "141.164.45.187"
+    port: 8888
+    cipher: "aes-256-gcm"
+    password: "Y6R9pAtvxxzmGC"
+    udp: true
+  - name: "🇰🇷_22"
+    type: ss
+    server: "141.164.45.187"
+    port: 6679
+    cipher: "aes-256-gcm"
+    password: "TEzjfAYq2IjtuoS"
+    udp: true
+  - name: "🇰🇷_23"
+    type: ss
+    server: "141.164.45.187"
+    port: 8091
+    cipher: "aes-256-gcm"
+    password: "PCnnH6SQSnfoS27"
+    udp: true
+  - name: "🇰🇷_24"
+    type: ss
+    server: "141.164.45.187"
+    port: 2376
+    cipher: "aes-256-gcm"
+    password: "faBAoD54k87UJG7"
+    udp: true
+  - name: "🇰🇷_25"
+    type: ss
+    server: "141.164.45.187"
+    port: 7001
+    cipher: "aes-256-gcm"
+    password: "RexnBgU7EV5ADxG"
+    udp: true
   - name: "🇰🇷_26"
     type: ss
     server: "141.164.45.187"
-    port: 9090
+    port: 6697
     cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+    password: "TEzjfAYq2IjtuoS"
     udp: true
   - name: "🇰🇷_27"
     type: ss
     server: "141.164.45.187"
-    port: 8000
+    port: 8888
     cipher: "aes-256-gcm"
-    password: "KixLvKzwjekG00rm"
+    password: "Y6R9pAtvxxzmGC"
     udp: true
   - name: "🇰🇷_28"
     type: ss
@@ -331,20 +314,6 @@ proxies:
     port: 5498
     cipher: "aes-256-gcm"
     password: "lGqs95QkFHo2NV"
-    udp: true
-  - name: "🇰🇷_29"
-    type: ss
-    server: "141.164.45.187"
-    port: 8888
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_30"
-    type: ss
-    server: "141.164.45.187"
-    port: 9090
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
     udp: true
 
 proxy-groups:
@@ -388,8 +357,6 @@ proxy-groups:
       - "🇰🇷_26"
       - "🇰🇷_27"
       - "🇰🇷_28"
-      - "🇰🇷_29"
-      - "🇰🇷_30"
 
 
 rules:

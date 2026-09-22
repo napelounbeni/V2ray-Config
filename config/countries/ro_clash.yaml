@@ -107,26 +107,15 @@ proxies:
       headers:
         Host: "shuma.ccwu.cc"
   - name: "🇷🇴_4"
-    type: ss
-    server: "154.46.31.106"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
+    type: vless
+    server: "de1.pg.fastlanehosting.ru"
+    port: 2096
+    uuid: "b7434ec7-659f-40c8-8ae9-a59f9296ddd1"
     udp: true
-  - name: "🇷🇴_5"
-    type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
-    udp: true
-  - name: "🇷🇴_6"
-    type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
-    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "de1.pg.fastlanehosting.ru"
+    client-fingerprint: "firefox"
 
 proxy-groups:
   - name: "PROXY"
@@ -145,8 +134,6 @@ proxy-groups:
       - "🇷🇴_2"
       - "🇷🇴_3"
       - "🇷🇴_4"
-      - "🇷🇴_5"
-      - "🇷🇴_6"
 
 
 rules:
