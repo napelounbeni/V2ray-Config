@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇮🇪_1"
     type: vless
+    server: "50.7.5.163"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-viper.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_2"
+    type: vless
     server: "50.7.5.166"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -74,10 +85,10 @@ proxies:
     servername: "ir-new.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_2"
+  - name: "🇮🇪_3"
     type: vless
-    server: "107.150.20.112"
-    port: 8443
+    server: "198.55.102.68"
+    port: 2083
     uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
@@ -89,29 +100,7 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_3"
-    type: vless
-    server: "ir-new.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
   - name: "🇮🇪_4"
-    type: vless
-    server: "ireland-new.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ireland-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_5"
     type: vless
     server: "50.7.5.164"
     port: 443
@@ -122,7 +111,32 @@ proxies:
     servername: "ir.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇪_5"
+    type: vless
+    server: "107.150.20.112"
+    port: 8443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
   - name: "🇮🇪_6"
+    type: vless
+    server: "ir-new.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_7"
     type: vless
     server: "167.160.177.68"
     port: 2096
@@ -137,32 +151,6 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_7"
-    type: vless
-    server: "198.55.102.68"
-    port: 2083
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_8"
-    type: vless
-    server: "50.7.5.163"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-viper.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -184,7 +172,6 @@ proxy-groups:
       - "🇮🇪_5"
       - "🇮🇪_6"
       - "🇮🇪_7"
-      - "🇮🇪_8"
 
 
 rules:

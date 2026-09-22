@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇩_3"
+  - name: "🇲🇩_4"
     type: vless
     server: "moldova.cdn-europe.org"
     port: 4443
@@ -73,7 +73,7 @@ proxies:
       public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
       short-id: "694ee64512cfcbef"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇩_4"
+  - name: "🇲🇩_5"
     type: vless
     server: "185.153.198.86"
     port: 443
@@ -88,6 +88,17 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
+  - name: "🇲🇩_6"
+    type: vless
+    server: "80.96.109.15"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "moldova.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -130,8 +141,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -141,8 +153,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -152,8 +165,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -162,8 +176,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -173,15 +188,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇩_3"
       - "🇲🇩_4"
+      - "🇲🇩_5"
+      - "🇲🇩_6"
 
 rules:
   - MATCH,PROXY-BEST

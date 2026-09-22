@@ -87,12 +87,24 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
+  - name: "🇭🇺_3"
+    type: trojan
+    server: "185.225.68.232"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -109,6 +121,7 @@ proxy-groups:
     proxies:
       - "🇭🇺_1"
       - "🇭🇺_2"
+      - "🇭🇺_3"
 
 
 rules:

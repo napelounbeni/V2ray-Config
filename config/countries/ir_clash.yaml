@@ -78,19 +78,30 @@ proxies:
       headers:
         Host: "xi.tbv.ccwu.cc"
   - name: "🇮🇷_2"
-    type: ss
-    server: "p1tun3.greewebservices.ir"
-    port: 2070
-    cipher: "chacha20-ietf-poly1305"
-    password: "pq5tDNa9qEEjN9EM4ArxQw"
+    type: vless
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
   - name: "🇮🇷_3"
-    type: ss
-    server: "p1tun2.greewebservices.ir"
-    port: 2060
-    cipher: "chacha20-ietf-poly1305"
-    password: "pq5tDNa9qEEjN9EM4ArxQw"
+    type: vless
+    server: "45.131.4.41"
+    port: 443
+    uuid: "b2593749-691c-428c-9481-14979cba3446"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "xi.tbv.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/proxyip=us.xiabibi.cf"
+      headers:
+        Host: "xi.tbv.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"

@@ -65,36 +65,6 @@ dns:
 proxies:
   - name: "🇩🇰_1"
     type: vless
-    server: "45.148.30.11"
-    port: 443
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn8848.776676.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/season/classify?ed=2560"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇩🇰_2"
-    type: vless
-    server: "193.181.216.117"
-    port: 2053
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn8848.776676.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/payment?ed=2560"
-      headers:
-        Host: "cdn8848.776676.xyz"
-  - name: "🇩🇰_3"
-    type: vless
     server: "193.180.208.169"
     port: 8443
     uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
@@ -108,14 +78,28 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇩🇰_4"
+  - name: "🇩🇰_2"
+    type: vless
+    server: "dnk.accessgate.link"
+    port: 8080
+    uuid: "38eb3e71-4349-4bd6-9baf-9740e1896495"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "unpkg.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko"
+      short-id: "b0d8c9a285c70f6f"
+    flow: "xtls-rprx-vision"
+  - name: "🇩🇰_3"
     type: ss
     server: "38.180.214.110"
     port: 5600
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
-  - name: "🇩🇰_5"
+  - name: "🇩🇰_4"
     type: ss
     server: "38.180.214.110"
     port: 5600
@@ -140,7 +124,6 @@ proxy-groups:
       - "🇩🇰_2"
       - "🇩🇰_3"
       - "🇩🇰_4"
-      - "🇩🇰_5"
 
 
 rules:
