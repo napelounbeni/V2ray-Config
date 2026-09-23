@@ -65,21 +65,6 @@ dns:
 proxies:
   - name: "🇩🇰_1"
     type: vless
-    server: "193.180.208.169"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇩🇰_2"
-    type: vless
     server: "92.113.149.59"
     port: 443
     uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
@@ -93,56 +78,29 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇩🇰_3"
+  - name: "🇩🇰_2"
     type: vless
-    server: "den-khad-nxt.ramzshadi.ir"
-    port: 43312
-    uuid: "8124ddbb-bf22-49d9-945d-2e72c554deb2"
+    server: "193.180.208.169"
+    port: 8443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
+    servername: "shuma.ccwu.cc"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "06vBWFA7tgljTVI9N1pY6L6Ls88me171hrKzeH9-7EQ"
-      short-id: "194eb312877c9c35"
-    flow: "xtls-rprx-vision"
-  - name: "🇩🇰_4"
-    type: vless
-    server: "den-khad-nxt.ramzshadi.ir"
-    port: 31770
-    uuid: "8124ddbb-bf22-49d9-945d-2e72c554deb2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sheets.google.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "GZqmhFHyMfIyRUi1k-2UDeJtjUakgZRhyXLhGLfL3Ws"
-      short-id: "6a2a03e809012832"
-    flow: "xtls-rprx-vision"
-  - name: "🇩🇰_5"
-    type: vless
-    server: "130.49.188.4"
-    port: 443
-    uuid: "c795bdd5-0460-42bd-927b-fbff154d2ab5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lk.s.dn.iki-servers.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "GW-DWwk3vtXtXBEqQxY_Cf83JIisyyk34rUrtkMZ90g"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇩🇰_6"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇩🇰_3"
     type: ss
     server: "38.180.214.110"
     port: 5600
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
-  - name: "🇩🇰_7"
+  - name: "🇩🇰_4"
     type: ss
     server: "38.180.214.110"
     port: 5600
@@ -167,9 +125,6 @@ proxy-groups:
       - "🇩🇰_2"
       - "🇩🇰_3"
       - "🇩🇰_4"
-      - "🇩🇰_5"
-      - "🇩🇰_6"
-      - "🇩🇰_7"
 
 
 rules:

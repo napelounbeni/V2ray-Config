@@ -78,6 +78,33 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
+  - name: "🇵🇹_2"
+    type: vless
+    server: "171.22.129.3"
+    port: 2053
+    uuid: "5413edfb-08d6-4fba-b51c-809c04feb127"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tagesschau.de"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "o_HrloEGeJF7j3RChs2gC7YzyezRMLlguh7Zqbh1WhY"
+      short-id: "01dd4a1b292c6177"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "de2262268grpc"
+  - name: "🇵🇹_3"
+    type: vless
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime54.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +120,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇵🇹_1"
+      - "🇵🇹_2"
+      - "🇵🇹_3"
 
 
 rules:

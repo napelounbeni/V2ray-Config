@@ -59,7 +59,54 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_8"
+  - name: "🇮🇪_9"
+    type: vless
+    server: "50.7.5.166"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_10"
+    type: vless
+    server: "50.7.5.164"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_11"
+    type: vless
+    server: "50.7.5.163"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-viper.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_12"
+    type: vless
+    server: "107.150.20.112"
+    port: 8443
+    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shuma.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shuma.ccwu.cc"
+  - name: "🇮🇪_13"
     type: vless
     server: "167.160.177.68"
     port: 2096
@@ -74,32 +121,7 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_9"
-    type: vless
-    server: "107.150.20.112"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_10"
-    type: vless
-    server: "50.7.5.164"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_11"
+  - name: "🇮🇪_14"
     type: vless
     server: "198.55.102.68"
     port: 2083
@@ -114,18 +136,7 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
-  - name: "🇮🇪_12"
-    type: vless
-    server: "50.7.5.166"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_13"
+  - name: "🇮🇪_15"
     type: vless
     server: "50.7.5.165"
     port: 443
@@ -135,15 +146,15 @@ proxies:
     skip-cert-verify: true
     servername: "ir-new1.failspace.top"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_14"
+  - name: "🇮🇪_16"
     type: vless
-    server: "50.7.5.163"
+    server: "ir-new.failspace.top"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir-viper.failspace.top"
+    servername: "ir-new.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
 
@@ -188,13 +199,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -204,13 +216,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -220,13 +233,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -235,13 +249,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -251,25 +266,27 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
 
 rules:
   - MATCH,PROXY-BEST

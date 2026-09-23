@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇹_2"
+  - name: "🇵🇹_4"
     type: vless
     server: "195.133.92.20"
     port: 443
@@ -74,6 +74,33 @@ proxies:
       path: "/"
       headers:
         Host: "shuma.ccwu.cc"
+  - name: "🇵🇹_5"
+    type: vless
+    server: "171.22.129.3"
+    port: 2053
+    uuid: "5413edfb-08d6-4fba-b51c-809c04feb127"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tagesschau.de"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "o_HrloEGeJF7j3RChs2gC7YzyezRMLlguh7Zqbh1WhY"
+      short-id: "01dd4a1b292c6177"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "de2262268grpc"
+  - name: "🇵🇹_6"
+    type: vless
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime54.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +143,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +155,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +167,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +178,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +190,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇵🇹_2"
+      - "🇵🇹_4"
+      - "🇵🇹_5"
+      - "🇵🇹_6"
 
 rules:
   - MATCH,PROXY-BEST
