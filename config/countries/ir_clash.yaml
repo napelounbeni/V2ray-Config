@@ -64,58 +64,19 @@ dns:
 
 proxies:
   - name: "🇮🇷_1"
-    type: vless
-    server: "45.131.4.41"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    type: ss
+    server: "p1tun4.greewebservices.ir"
+    port: 1080
+    cipher: "chacha20-ietf-poly1305"
+    password: "LMnotcv4RdaEOBXT-LdtfA"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
   - name: "🇮🇷_2"
-    type: vless
-    server: "nl4.zuoai.cf"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
+    type: ss
+    server: "p1tun3.greewebservices.ir"
+    port: 2070
+    cipher: "chacha20-ietf-poly1305"
+    password: "LMnotcv4RdaEOBXT-LdtfA"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cffp=chrome"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇮🇷_3"
-    type: vless
-    server: "45.131.4.181"
-    port: 443
-    uuid: "b2593749-691c-428c-9481-14979cba3446"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "xi.tbv.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/proxyip=us.xiabibi.cf"
-      headers:
-        Host: "xi.tbv.ccwu.cc"
-  - name: "🇮🇷_4"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -132,8 +93,6 @@ proxy-groups:
     proxies:
       - "🇮🇷_1"
       - "🇮🇷_2"
-      - "🇮🇷_3"
-      - "🇮🇷_4"
 
 
 rules:

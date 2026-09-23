@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇬_10"
+  - name: "🇧🇬_5"
     type: vless
     server: "131.123.41.18"
     port: 443
@@ -68,38 +68,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "sheetpeek.com"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo"
       short-id: "84be686ea1d16478"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_11"
-    type: vless
-    server: "45.142.120.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime08.workers.dev"
-  - name: "🇧🇬_12"
-    type: vless
-    server: "108.165.233.223"
-    port: 443
-    uuid: "2388e166-3890-33ae-f77e-efac00000001"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "netlivpn4813.ddhshhshs.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "netlivpn4813.ddhshhshs.workers.dev"
-  - name: "🇧🇬_13"
+  - name: "🇧🇬_6"
     type: vless
     server: "131.123.37.199"
     port: 8081
@@ -108,22 +81,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/vless-test"
-  - name: "🇧🇬_14"
-    type: vless
-    server: "108.165.233.223"
-    port: 443
-    uuid: "2388e166-3890-33ae-f77e-efac00000003"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "netlivpn4813.ddhshhshs.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN"
-      headers:
-        Host: "netlivpn4813.ddhshhshs.workers.dev"
-  - name: "🇧🇬_15"
+  - name: "🇧🇬_7"
     type: vless
     server: "136.175.82.85"
     port: 18775
@@ -132,44 +90,21 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_16"
-    type: vless
-    server: "89.117.112.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+  - name: "🇧🇬_8"
+    type: trojan
+    server: "193.239.160.134"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
-  - name: "🇧🇬_17"
-    type: vless
-    server: "89.117.112.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
-  - name: "🇧🇬_18"
-    type: vless
-    server: "45.142.120.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime08.workers.dev"
+      path: "/assignment"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -212,15 +147,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -230,15 +160,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -248,15 +173,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -265,15 +185,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -283,29 +198,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇬_10"
-      - "🇧🇬_11"
-      - "🇧🇬_12"
-      - "🇧🇬_13"
-      - "🇧🇬_14"
-      - "🇧🇬_15"
-      - "🇧🇬_16"
-      - "🇧🇬_17"
-      - "🇧🇬_18"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
 rules:
   - MATCH,PROXY-BEST

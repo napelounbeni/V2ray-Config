@@ -59,62 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇫🇷_44"
+  - name: "🇫🇷_28"
     type: vless
-    server: "145.223.70.129"
-    port: 9443
-    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+    server: "143.246.209.46"
+    port: 8081
+    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless-test"
+  - name: "🇫🇷_29"
+    type: vless
+    server: "152.228.139.33"
+    port: 51671
+    uuid: "75cc7568-abb0-46a8-88be-8137d3c647d4"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandexcloud.net"
-    client-fingerprint: "safari"
+    servername: "www.sony.com"
     reality-opts:
-      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
-      short-id: "ad20d2bc"
+      public-key: "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU"
+      short-id: "2fed44d8c59f7e71"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc_common3"
+  - name: "🇫🇷_30"
+    type: vless
+    server: "162.19.10.99"
+    port: 443
+    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_45"
-    type: vless
-    server: "138.124.58.31"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_46"
-    type: vless
-    server: "194.76.154.31"
-    port: 40443
-    uuid: "9f0baff8-bdee-4de9-9515-bcc4932b41fa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ"
-      short-id: "a8ae"
-  - name: "🇫🇷_47"
-    type: vless
-    server: "147.45.42.73"
-    port: 20443
-    uuid: "fcbb9617-7b3c-4b21-8a91-a57350a75222"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
-  - name: "🇫🇷_48"
+  - name: "🇫🇷_31"
     type: vless
     server: "149.202.58.99"
     port: 443
@@ -129,9 +109,189 @@ proxies:
       path: "/vws/"
       headers:
         Host: "bab-6.site"
-  - name: "🇫🇷_49"
+  - name: "🇫🇷_32"
     type: vless
-    server: "62.210.91.2"
+    server: "194.76.154.31"
+    port: 40443
+    uuid: "9f0baff8-bdee-4de9-9515-bcc4932b41fa"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ"
+      short-id: "a8ae"
+  - name: "🇫🇷_33"
+    type: vless
+    server: "145.223.70.129"
+    port: 9443
+    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandexcloud.net"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
+      short-id: "ad20d2bc"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_34"
+    type: vless
+    server: "nasnet-162191099-direct.mbghalibaf.com"
+    port: 443
+    uuid: "nasnet"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_35"
+    type: vless
+    server: "34.155.10.226"
+    port: 443
+    uuid: "d619964d-26d6-452d-9860-6f058f03ba8e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk"
+      short-id: "ae682368818bd6c5"
+  - name: "🇫🇷_36"
+    type: vless
+    server: "162.19.10.99"
+    port: 443
+    uuid: "nasnet"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_37"
+    type: vless
+    server: "144.31.214.172"
+    port: 9443
+    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandexcloud.net"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
+      short-id: "ad20d2bc"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_38"
+    type: vless
+    server: "145.223.68.58"
+    port: 443
+    uuid: "edb50d20-2d3e-4c1e-8a75-a17168a89aa5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg"
+      short-id: "a44ff7d2e80213c2"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_39"
+    type: vless
+    server: "nasnet-162191099-direct.mbghalibaf.com"
+    port: 443
+    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nasnet-162191099-direct.mbghalibaf.com"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_40"
+    type: vless
+    server: "185.171.202.105"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fra.loozerp.wiki"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_41"
+    type: vless
+    server: "20.33.23.66"
+    port: 443
+    uuid: "79863d42-9f1c-4e8e-a65b-1003090871c1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "coNFIghayE.moKhaBeraTebInZON.workErS.deV"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiUHVXcXFjYTJGVGI3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
+      headers:
+        Host: "confighaye.mokhaberatebinzon.workers.dev"
+  - name: "🇫🇷_42"
+    type: vless
+    server: "195.154.118.134"
+    port: 443
+    uuid: "3c48b5f5-7766-4896-874e-b3ba1860e83a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "w-mebel.pro"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "YhT24GkuI1r7Fwo8pxIYH3CmTtbRlYs5X7fWtYp3vTY"
+      short-id: "05f4f85fdc6c1379"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_43"
+    type: vless
+    server: "51.77.217.70"
+    port: 2053
+    uuid: "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w"
+      short-id: "bfe58beb41f1d09f"
+  - name: "🇫🇷_44"
+    type: vless
+    server: "fra.loozerp.wiki"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fra.loozerp.wiki"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk"
+      short-id: "ff776ff77be48b88"
+    flow: "xtls-rprx-vision"
+  - name: "🇫🇷_45"
+    type: vless
+    server: "152.228.162.19"
+    port: 80
+    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇫🇷_46"
+    type: vless
+    server: "62.210.91.10"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -143,27 +303,7 @@ proxies:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_50"
-    type: vless
-    server: "15.188.95.192"
-    port: 22223
-    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    udp: true
-  - name: "🇫🇷_51"
-    type: vless
-    server: "92.119.126.189"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_52"
+  - name: "🇫🇷_47"
     type: vless
     server: "152.228.139.33"
     port: 35108
@@ -179,271 +319,9 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc-common3"
-  - name: "🇫🇷_53"
+  - name: "🇫🇷_48"
     type: vless
-    server: "20.33.23.66"
-    port: 443
-    uuid: "79863d42-9f1c-4e8e-a65b-1003090871c1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "coNFIghayE.moKhaBeraTebInZON.workErS.deV"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiUHVXcXFjYTJGVGI3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560"
-      headers:
-        Host: "confighaye.mokhaberatebinzon.workers.dev"
-  - name: "🇫🇷_54"
-    type: vless
-    server: "34.155.10.226"
-    port: 443
-    uuid: "d619964d-26d6-452d-9860-6f058f03ba8e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk"
-      short-id: "ae682368818bd6c5"
-  - name: "🇫🇷_55"
-    type: vless
-    server: "45.155.169.170"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_56"
-    type: vless
-    server: "108.61.123.140"
-    port: 8735
-    uuid: "b5172efe-cf5e-4484-971d-2860bdb95ab1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "delivery.mp.microsoft.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs"
-      short-id: "9e3f5e25c17d2615"
-  - name: "🇫🇷_57"
-    type: vless
-    server: "nasnet-162191099-direct.mbghalibaf.com"
-    port: 443
-    uuid: "nasnet"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_58"
-    type: vless
-    server: "185.193.29.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime08.workers.dev"
-  - name: "🇫🇷_59"
-    type: vless
-    server: "152.228.162.19"
-    port: 80
-    uuid: "5ce84688-f535-46ad-a512-37b17becf6ea"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "akamaized.net"
-  - name: "🇫🇷_60"
-    type: vless
-    server: "62.60.248.205"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_61"
-    type: vless
-    server: "217.60.252.115"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_62"
-    type: vless
-    server: "162.19.10.99"
-    port: 443
-    uuid: "e8b1500b-e9e8-5492-8312-f4eadf7d0767"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_63"
-    type: vless
-    server: "185.193.29.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime08.workers.dev"
-  - name: "🇫🇷_64"
-    type: vless
-    server: "162.19.10.99"
-    port: 443
-    uuid: "nasnet"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nasnet-162191099-direct.mbghalibaf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_65"
-    type: vless
-    server: "195.154.118.134"
-    port: 443
-    uuid: "3c48b5f5-7766-4896-874e-b3ba1860e83a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "w-mebel.pro"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "YhT24GkuI1r7Fwo8pxIYH3CmTtbRlYs5X7fWtYp3vTY"
-      short-id: "05f4f85fdc6c1379"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_66"
-    type: vless
-    server: "OV-France1.09vpn.com"
-    port: 80
-    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_67"
-    type: vless
-    server: "147.45.42.73"
-    port: 20443
-    uuid: "f293db4d-7ab1-4faf-bb15-89540d8709cb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-  - name: "🇫🇷_68"
-    type: vless
-    server: "15.188.95.192"
-    port: 22222
-    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    udp: true
-  - name: "🇫🇷_69"
-    type: vless
-    server: "51.77.217.70"
-    port: 2053
-    uuid: "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w"
-      short-id: "bfe58beb41f1d09f"
-  - name: "🇫🇷_70"
-    type: vless
-    server: "95.182.82.191"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_71"
-    type: vless
-    server: "152.228.162.19"
-    port: 80
-    uuid: "25f86cb1-2140-4085-abcb-c3a0ea7a4be0"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇫🇷_72"
-    type: vless
-    server: "152.228.139.33"
-    port: 51671
-    uuid: "75cc7568-abb0-46a8-88be-8137d3c647d4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sony.com"
-    reality-opts:
-      public-key: "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU"
-      short-id: "2fed44d8c59f7e71"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc_common3"
-  - name: "🇫🇷_73"
-    type: vless
-    server: "15.188.230.69"
-    port: 22224
-    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    udp: true
-  - name: "🇫🇷_74"
-    type: vless
-    server: "130.49.218.208"
-    port: 5432
-    uuid: "cc01f435-d561-4525-bf1f-7a9876d33207"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "130.49.218.208"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_75"
-    type: vless
-    server: "62.210.91.10"
+    server: "62.210.91.2"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -455,13 +333,7 @@ proxies:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
     flow: "xtls-rprx-vision"
-  - name: "🇫🇷_76"
-    type: vless
-    server: "15.188.230.69"
-    port: 22222
-    uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    udp: true
-  - name: "🇫🇷_77"
+  - name: "🇫🇷_49"
     type: vless
     server: "OV-France1.09vpn.com"
     port: 80
@@ -470,95 +342,39 @@ proxies:
     network: ws
     ws-opts:
       path: "/vless/"
-  - name: "🇫🇷_78"
+  - name: "🇫🇷_50"
     type: vless
-    server: "15.188.95.192"
-    port: 22224
+    server: "13.36.123.107"
+    port: 22223
     uuid: "e4514801-0d5a-42ba-869f-39bd605aef9e"
     udp: true
-  - name: "🇫🇷_79"
-    type: vless
-    server: "144.31.214.172"
-    port: 9443
-    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandexcloud.net"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
-      short-id: "ad20d2bc"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_80"
-    type: vless
-    server: "217.60.37.28"
-    port: 8443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇫🇷_81"
-    type: vless
-    server: "145.223.68.58"
-    port: 443
-    uuid: "edb50d20-2d3e-4c1e-8a75-a17168a89aa5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg"
-      short-id: "a44ff7d2e80213c2"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_82"
-    type: vless
-    server: "195.58.140.146"
-    port: 443
-    uuid: "d7790b85-9659-4558-a405-e0ab57d32984"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d1-fr.cloud-cdn.xyz"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI"
-      short-id: "dc927a04e8572c61"
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇷_83"
-    type: ss
-    server: "158.173.221.214"
-    port: 11001
-    cipher: "chacha20-ietf-poly1305"
-    password: "c58d16e593d44f42"
-    udp: true
-  - name: "🇫🇷_84"
-    type: ss
-    server: "158.173.221.214"
-    port: 11001
-    cipher: "chacha20-ietf-poly1305"
-    password: "c58d16e593d44f42"
-    udp: true
-  - name: "🇫🇷_85"
+  - name: "🇫🇷_51"
     type: ss
     server: "51.255.13.232"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "BqnqToih0PbU"
     udp: true
-  - name: "🇫🇷_86"
+  - name: "🇫🇷_52"
     type: ss
     server: "51.255.13.232"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "BqnqToih0PbU"
+    udp: true
+  - name: "🇫🇷_53"
+    type: ss
+    server: "158.173.221.214"
+    port: 11001
+    cipher: "chacha20-ietf-poly1305"
+    password: "c58d16e593d44f42"
+    udp: true
+  - name: "🇫🇷_54"
+    type: ss
+    server: "158.173.221.214"
+    port: 11001
+    cipher: "chacha20-ietf-poly1305"
+    password: "c58d16e593d44f42"
     udp: true
 
 proxy-groups:
@@ -602,6 +418,22 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -613,38 +445,6 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
   - name: "LB-CDN"
     type: load-balance
@@ -654,6 +454,22 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -665,38 +481,6 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -706,6 +490,22 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -717,38 +517,6 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
   - name: "FAST-CDN"
     type: url-test
@@ -757,6 +525,22 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -768,38 +552,6 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -809,6 +561,22 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -820,43 +588,27 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇫🇷_28"
+      - "🇫🇷_29"
+      - "🇫🇷_30"
+      - "🇫🇷_31"
+      - "🇫🇷_32"
+      - "🇫🇷_33"
+      - "🇫🇷_34"
+      - "🇫🇷_35"
+      - "🇫🇷_36"
+      - "🇫🇷_37"
+      - "🇫🇷_38"
+      - "🇫🇷_39"
+      - "🇫🇷_40"
+      - "🇫🇷_41"
+      - "🇫🇷_42"
+      - "🇫🇷_43"
       - "🇫🇷_44"
       - "🇫🇷_45"
       - "🇫🇷_46"
@@ -868,38 +620,6 @@ proxy-groups:
       - "🇫🇷_52"
       - "🇫🇷_53"
       - "🇫🇷_54"
-      - "🇫🇷_55"
-      - "🇫🇷_56"
-      - "🇫🇷_57"
-      - "🇫🇷_58"
-      - "🇫🇷_59"
-      - "🇫🇷_60"
-      - "🇫🇷_61"
-      - "🇫🇷_62"
-      - "🇫🇷_63"
-      - "🇫🇷_64"
-      - "🇫🇷_65"
-      - "🇫🇷_66"
-      - "🇫🇷_67"
-      - "🇫🇷_68"
-      - "🇫🇷_69"
-      - "🇫🇷_70"
-      - "🇫🇷_71"
-      - "🇫🇷_72"
-      - "🇫🇷_73"
-      - "🇫🇷_74"
-      - "🇫🇷_75"
-      - "🇫🇷_76"
-      - "🇫🇷_77"
-      - "🇫🇷_78"
-      - "🇫🇷_79"
-      - "🇫🇷_80"
-      - "🇫🇷_81"
-      - "🇫🇷_82"
-      - "🇫🇷_83"
-      - "🇫🇷_84"
-      - "🇫🇷_85"
-      - "🇫🇷_86"
 
 rules:
   - MATCH,PROXY-BEST

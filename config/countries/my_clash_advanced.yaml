@@ -59,67 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇾_6"
-    type: vless
-    server: "47.254.251.37"
-    port: 443
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "edg-2oo.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/archives?ed=2560"
-      headers:
-        Host: "edg-2oo.pages.dev"
-  - name: "🇲🇾_7"
-    type: vless
-    server: "216.173.67.144"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇲🇾_8"
-    type: vless
-    server: "216.173.67.159"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇲🇾_9"
-    type: vless
-    server: "216.173.67.119"
-    port: 443
-    uuid: "c18b978e-1c4e-415c-8bea-07942b563a64"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shuma.ccwu.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shuma.ccwu.cc"
-  - name: "🇲🇾_10"
+  - name: "🇲🇾_2"
     type: trojan
     server: "47.250.84.25"
     port: 443
@@ -169,11 +109,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -183,11 +119,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -197,11 +129,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -210,11 +138,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -224,21 +148,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇾_6"
-      - "🇲🇾_7"
-      - "🇲🇾_8"
-      - "🇲🇾_9"
-      - "🇲🇾_10"
+      - "🇲🇾_2"
 
 rules:
   - MATCH,PROXY-BEST
