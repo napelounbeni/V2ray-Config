@@ -66,7 +66,7 @@ proxies:
   - name: "🇰🇷_1"
     type: vless
     server: "3.39.4.109"
-    port: 13672
+    port: 18967
     uuid: "814bd064-544d-4255-a070-5705c03f6da9"
     udp: true
     tls: true
@@ -79,73 +79,20 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇰🇷_2"
     type: vless
-    server: "151.245.106.49"
-    port: 2053
-    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
+    server: "134.185.99.52"
+    port: 443
+    uuid: "3db635e4-f9ec-42d6-8aba-e23df8b0e6da"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
-      short-id: "429499c03d4cc8a0"
+    servername: "mia9.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/TG:@MiaChatChannel"
+      headers:
+        Host: "mia9.pages.dev"
   - name: "🇰🇷_3"
-    type: vless
-    server: "47.80.62.71"
-    port: 443
-    uuid: "0d4cb711-c030-4f13-adf5-6a72dab4121c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.nvidia.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "AT4sr3XkuNa7QewDoScx7NnPTCa-Z6o_7ccPgivVDSQ"
-      short-id: "0b674631d5fc6b93"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇷_4"
-    type: vless
-    server: "47.80.62.191"
-    port: 443
-    uuid: "43e60b75-9920-450a-94ee-8762758ca49c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.logitech.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE"
-      short-id: "bd0040df20a53b36"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇷_5"
-    type: vless
-    server: "34.64.149.137"
-    port: 443
-    uuid: "700a7a0e-3f27-406c-81d1-aa1abe411af8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8"
-      short-id: "3fd0a8ddef3ae5c6"
-  - name: "🇰🇷_6"
-    type: vless
-    server: "3.39.4.109"
-    port: 18967
-    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
-      short-id: "48050fab"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇷_7"
     type: vless
     server: "34.22.64.72"
     port: 443
@@ -158,7 +105,47 @@ proxies:
     reality-opts:
       public-key: "M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA"
       short-id: "8685f8b4d9f4f51e"
-  - name: "🇰🇷_8"
+  - name: "🇰🇷_4"
+    type: vless
+    server: "34.64.149.137"
+    port: 443
+    uuid: "700a7a0e-3f27-406c-81d1-aa1abe411af8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8"
+      short-id: "3fd0a8ddef3ae5c6"
+  - name: "🇰🇷_5"
+    type: vless
+    server: "151.245.106.49"
+    port: 2053
+    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
+      short-id: "429499c03d4cc8a0"
+  - name: "🇰🇷_6"
+    type: vless
+    server: "3.39.4.109"
+    port: 13672
+    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
+      short-id: "48050fab"
+    flow: "xtls-rprx-vision"
+  - name: "🇰🇷_7"
     type: trojan
     server: "154.90.62.70"
     port: 56127
@@ -187,7 +174,6 @@ proxy-groups:
       - "🇰🇷_5"
       - "🇰🇷_6"
       - "🇰🇷_7"
-      - "🇰🇷_8"
 
 
 rules:

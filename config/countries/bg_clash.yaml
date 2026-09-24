@@ -65,6 +65,48 @@ dns:
 proxies:
   - name: "🇧🇬_1"
     type: vless
+    server: "45.142.120.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_2"
+    type: vless
+    server: "45.142.120.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime08.workers.dev"
+  - name: "🇧🇬_3"
+    type: vless
+    server: "131.123.37.199"
+    port: 8081
+    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless-test"
+  - name: "🇧🇬_4"
+    type: vless
+    server: "89.117.112.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
+  - name: "🇧🇬_5"
+    type: vless
     server: "131.123.41.18"
     port: 443
     uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
@@ -76,16 +118,7 @@ proxies:
       public-key: "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo"
       short-id: "84be686ea1d16478"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_2"
-    type: vless
-    server: "131.123.37.199"
-    port: 8081
-    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless-test"
-  - name: "🇧🇬_3"
+  - name: "🇧🇬_6"
     type: vless
     server: "136.175.82.85"
     port: 18775
@@ -98,7 +131,18 @@ proxies:
       public-key: "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_4"
+  - name: "🇧🇬_7"
+    type: vless
+    server: "89.117.112.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
+  - name: "🇧🇬_8"
     type: trojan
     server: "193.239.160.134"
     port: 443
@@ -127,6 +171,10 @@ proxy-groups:
       - "🇧🇬_2"
       - "🇧🇬_3"
       - "🇧🇬_4"
+      - "🇧🇬_5"
+      - "🇧🇬_6"
+      - "🇧🇬_7"
+      - "🇧🇬_8"
 
 
 rules:

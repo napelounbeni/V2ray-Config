@@ -65,28 +65,6 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
-    server: "80.96.109.15"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "moldova.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇩_2"
-    type: vless
-    server: "moldova.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "moldova.failspace.top"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇩_3"
-    type: vless
     server: "185.103.167.76"
     port: 4443
     uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
@@ -99,19 +77,27 @@ proxies:
       public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
       short-id: "694ee64512cfcbef"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇩_4"
+  - name: "🇲🇩_2"
     type: vless
-    server: "94.103.2.151"
+    server: "80.96.109.15"
     port: 443
-    uuid: "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a"
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ruffia2.thewalkingded.life"
+    servername: "moldova.failspace.top"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "j4M7_0Tl0UdSe4zYziALrPp_4F-QiSkyrUnOS6saQ1g"
-      short-id: "a7162d100ab90645"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_3"
+    type: vless
+    server: "moldova.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "moldova.failspace.top"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -130,7 +116,6 @@ proxy-groups:
       - "🇲🇩_1"
       - "🇲🇩_2"
       - "🇲🇩_3"
-      - "🇲🇩_4"
 
 
 rules:
