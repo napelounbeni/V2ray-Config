@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇩_4"
+  - name: "🇲🇩_5"
+    type: vless
+    server: "moldova.cdn-europe.org"
+    port: 4443
+    uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "moldova.cdn-europe.org"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
+      short-id: "694ee64512cfcbef"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_6"
     type: vless
     server: "185.103.167.76"
     port: 4443
@@ -73,7 +87,21 @@ proxies:
       public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
       short-id: "694ee64512cfcbef"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇩_5"
+  - name: "🇲🇩_7"
+    type: vless
+    server: "185.103.167.223"
+    port: 4443
+    uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "moldova.cdn-europe.org"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8"
+      short-id: "694ee64512cfcbef"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_8"
     type: vless
     server: "80.96.109.15"
     port: 443
@@ -83,17 +111,6 @@ proxies:
     skip-cert-verify: true
     servername: "moldova.failspace.top"
     client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇩_6"
-    type: vless
-    server: "moldova.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "moldova.failspace.top"
-    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -137,9 +154,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -149,9 +167,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -161,9 +180,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -172,9 +192,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -184,17 +205,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇩_4"
       - "🇲🇩_5"
       - "🇲🇩_6"
+      - "🇲🇩_7"
+      - "🇲🇩_8"
 
 rules:
   - MATCH,PROXY-BEST

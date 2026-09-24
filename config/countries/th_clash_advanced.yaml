@@ -59,44 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇭_5"
-    type: vless
-    server: "103.86.49.57"
-    port: 80
-    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "aIs.SpEeDtEsT.nEt"
-  - name: "🇹🇭_6"
-    type: vless
-    server: "34.15.176.240"
-    port: 443
-    uuid: "742dc674-a491-4a42-a551-b3ea6dd2f447"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U"
-      short-id: "856c0a3cd1426a5c"
-  - name: "🇹🇭_7"
-    type: vless
-    server: "34.15.162.1"
-    port: 443
-    uuid: "2b1d0c2a-9c80-4b72-892e-93d0500b9210"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw"
-      short-id: "ca672c53fbbac555"
-  - name: "🇹🇭_8"
+  - name: "🇹🇭_3"
     type: vless
     server: "v2ray.simspeedup.com"
     port: 80
@@ -107,6 +70,17 @@ proxies:
       path: "/ws"
       headers:
         Host: "v2ray.simspeedup.com"
+  - name: "🇹🇭_4"
+    type: vless
+    server: "103.86.49.57"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "aIs.SpEeDtEsT.nEt"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -149,10 +123,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -162,10 +134,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -175,10 +145,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -187,10 +155,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -200,19 +166,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇭_5"
-      - "🇹🇭_6"
-      - "🇹🇭_7"
-      - "🇹🇭_8"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
 rules:
   - MATCH,PROXY-BEST
