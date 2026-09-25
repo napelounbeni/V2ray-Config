@@ -59,83 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇪_18"
-    type: vless
-    server: "132.243.231.23"
-    port: 443
-    uuid: "17f388d7-1fa2-440f-a8f4-720b72d19195"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "se.global-cdn.org"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q"
-      short-id: "2d6d073dc88f22a8"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_19"
-    type: vless
-    server: "5.157.10.148"
-    port: 443
-    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "surstreming.vvzzkontaktezzvv.garden"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
-      short-id: "fb442438e2223836"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_20"
-    type: vless
-    server: "193.148.59.178"
-    port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_21"
-    type: vless
-    server: "143.246.194.60"
-    port: 8081
-    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless-test"
-  - name: "🇸🇪_22"
-    type: vless
-    server: "143.246.195.98"
-    port: 8081
-    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless-test"
   - name: "🇸🇪_23"
-    type: vless
-    server: "79.141.174.147"
-    port: 33743
-    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "TunService"
-  - name: "🇸🇪_24"
     type: vless
     server: "62.60.152.1"
     port: 56328
@@ -149,7 +73,49 @@ proxies:
       public-key: "iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M"
       short-id: "f3a9c21e8b6d4571"
     flow: "xtls-rprx-vision"
+  - name: "🇸🇪_24"
+    type: vless
+    server: "193.148.59.178"
+    port: 443
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_25"
+    type: vless
+    server: "89.22.224.146"
+    port: 43788
+    uuid: "acc10ba5-a222-44b3-8a1a-4f247ffc6466"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+  - name: "🇸🇪_26"
+    type: vless
+    server: "143.246.193.215"
+    port: 443
+    uuid: "77da6e30-ad4e-11f1-94d5-525400d1d4f7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.blocket.se"
+    client-fingerprint: "randomized"
+    reality-opts:
+      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_27"
     type: vless
     server: "143.246.195.138"
     port: 8081
@@ -158,22 +124,128 @@ proxies:
     network: ws
     ws-opts:
       path: "/vless-test"
-  - name: "🇸🇪_26"
+  - name: "🇸🇪_28"
     type: vless
-    server: "91.186.218.227"
-    port: 4443
-    uuid: "3d2b2b36-19fc-4e19-9ac2-9de48afdbd73"
+    server: "surstreming.vvzzkontaktezzvv.garden"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
+    servername: "surstreming.vvzzkontaktezzvv.garden"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_29"
+    type: vless
+    server: "5.157.10.148"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "surstreming.vvzzkontaktezzvv.garden"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_30"
+    type: vless
+    server: "79.141.174.147"
+    port: 33743
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇸🇪_31"
+    type: vless
+    server: "143.246.194.60"
+    port: 8081
+    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless-test"
+  - name: "🇸🇪_32"
+    type: vless
+    server: "no.cnd.sweden.myfilecdn.com"
+    port: 443
+    uuid: "0d628b17-8ac4-49b9-a422-6b99077bfdf6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tradingview.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM"
+      short-id: "8a2b3c4d5e6f7012"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_33"
+    type: vless
+    server: "193.42.39.10"
+    port: 33743
+    uuid: "b3a11068-1a7e-4643-85de-7c82cce46943"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇸🇪_34"
+    type: vless
+    server: "143.246.195.98"
+    port: 8081
+    uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless-test"
+  - name: "🇸🇪_35"
+    type: vless
+    server: "109.120.155.155"
+    port: 444
+    uuid: "99ab6748-3d57-4562-9451-843c15960b9b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/@Marisa_kristi"
       headers:
-        Host: "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
-  - name: "🇸🇪_27"
+        Host: "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+  - name: "🇸🇪_36"
+    type: vless
+    server: "31.76.3.34"
+    port: 443
+    uuid: "0d628b17-8ac4-49b9-a422-6b99077bfdf6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tradingview.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM"
+      short-id: "8a2b3c4d5e6f7012"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_37"
     type: trojan
     server: "77.221.138.199"
     port: 8443
@@ -186,49 +258,49 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇸🇪_28"
-    type: ss
-    server: "70.34.212.124"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "AxIYWtskJWIIaefW"
-    udp: true
-  - name: "🇸🇪_29"
-    type: ss
-    server: "70.34.212.124"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "AxIYWtskJWIIaefW"
-    udp: true
-  - name: "🇸🇪_30"
-    type: ss
-    server: "se1.auronvpn.site"
-    port: 1443
-    cipher: "chacha20-ietf-poly1305"
-    password: "N2YzM"
-    udp: true
-  - name: "🇸🇪_31"
+  - name: "🇸🇪_38"
     type: ss
     server: "172.238.244.13"
     port: 17000
     cipher: "aes-256-gcm"
     password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     udp: true
-  - name: "🇸🇪_32"
+  - name: "🇸🇪_39"
     type: ss
-    server: "172.238.244.13"
-    port: 17000
+    server: "70.34.212.124"
+    port: 8388
     cipher: "aes-256-gcm"
-    password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    password: "AxIYWtskJWIIaefW"
     udp: true
-  - name: "🇸🇪_33"
+  - name: "🇸🇪_40"
     type: ss
     server: "45.138.103.4"
     port: 1443
     cipher: "chacha20-ietf-poly1305"
     password: "N2YzM"
     udp: true
-  - name: "🇸🇪_34"
+  - name: "🇸🇪_41"
+    type: ss
+    server: "se1.auronvpn.site"
+    port: 1443
+    cipher: "chacha20-ietf-poly1305"
+    password: "N2YzM"
+    udp: true
+  - name: "🇸🇪_42"
+    type: ss
+    server: "70.34.212.124"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "AxIYWtskJWIIaefW"
+    udp: true
+  - name: "🇸🇪_43"
+    type: ss
+    server: "172.238.244.13"
+    port: 17000
+    cipher: "aes-256-gcm"
+    password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    udp: true
+  - name: "🇸🇪_44"
     type: ss
     server: "se1.auronvpn.site"
     port: 1443
@@ -277,11 +349,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -294,6 +361,16 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
   - name: "LB-CDN"
     type: load-balance
@@ -303,11 +380,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -320,6 +392,16 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -329,11 +411,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -346,6 +423,16 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
   - name: "FAST-CDN"
     type: url-test
@@ -354,11 +441,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -371,6 +453,16 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -380,11 +472,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -397,16 +484,21 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇪_18"
-      - "🇸🇪_19"
-      - "🇸🇪_20"
-      - "🇸🇪_21"
-      - "🇸🇪_22"
       - "🇸🇪_23"
       - "🇸🇪_24"
       - "🇸🇪_25"
@@ -419,6 +511,16 @@ proxy-groups:
       - "🇸🇪_32"
       - "🇸🇪_33"
       - "🇸🇪_34"
+      - "🇸🇪_35"
+      - "🇸🇪_36"
+      - "🇸🇪_37"
+      - "🇸🇪_38"
+      - "🇸🇪_39"
+      - "🇸🇪_40"
+      - "🇸🇪_41"
+      - "🇸🇪_42"
+      - "🇸🇪_43"
+      - "🇸🇪_44"
 
 rules:
   - MATCH,PROXY-BEST

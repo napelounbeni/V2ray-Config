@@ -65,19 +65,33 @@ dns:
 proxies:
   - name: "🇹🇼_1"
     type: vless
-    server: "104.199.134.231"
-    port: 28364
-    uuid: "3a62a0c2-ba80-43a9-b757-9aca88b0552e"
+    server: "35.194.157.16"
+    port: 43450
+    uuid: "64d77a12-ad6b-4d85-a349-bd287535af1c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.sony.com"
+    servername: "www.amd.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I"
-      short-id: "7241c359c2dfab"
+      public-key: "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o"
+      short-id: "e65d010354bdad73"
     flow: "xtls-rprx-vision"
   - name: "🇹🇼_2"
+    type: vless
+    server: "60.248.219.78"
+    port: 443
+    uuid: "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_3"
     type: vless
     server: "35.201.163.218"
     port: 30837
@@ -91,49 +105,21 @@ proxies:
       public-key: "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo"
       short-id: "97101ba788915e5a"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇼_3"
-    type: vless
-    server: "35.194.157.16"
-    port: 43450
-    uuid: "64d77a12-ad6b-4d85-a349-bd287535af1c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o"
-      short-id: "e65d010354bdad73"
-    flow: "xtls-rprx-vision"
   - name: "🇹🇼_4"
     type: vless
-    server: "60.248.219.54"
-    port: 443
-    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    server: "104.199.134.231"
+    port: 28364
+    uuid: "3a62a0c2-ba80-43a9-b757-9aca88b0552e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
+    servername: "www.sony.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I"
+      short-id: "7241c359c2dfab"
+    flow: "xtls-rprx-vision"
   - name: "🇹🇼_5"
-    type: vless
-    server: "59.125.69.24"
-    port: 443
-    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_6"
     type: vless
     server: "35.221.158.209"
     port: 32981
@@ -147,9 +133,37 @@ proxies:
       public-key: "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E"
       short-id: "70f4b7a4c40636"
     flow: "xtls-rprx-vision"
+  - name: "🇹🇼_6"
+    type: vless
+    server: "60.248.219.54"
+    port: 443
+    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
   - name: "🇹🇼_7"
     type: vless
-    server: "118.167.206.152"
+    server: "59.125.69.24"
+    port: 443
+    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_8"
+    type: vless
+    server: "118.167.230.191"
     port: 24215
     uuid: "19d5a678-8396-4e3b-93da-ece618d0e83a"
     udp: true
@@ -160,6 +174,34 @@ proxies:
     reality-opts:
       public-key: "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
       short-id: ""
+  - name: "🇹🇼_9"
+    type: ss
+    server: "36.224.141.124"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "🇹🇼_10"
+    type: ss
+    server: "r3mrcg001286ek2.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "🇹🇼_11"
+    type: ss
+    server: "36.224.141.124"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "🇹🇼_12"
+    type: ss
+    server: "r3mrcg001286ek2.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -181,6 +223,11 @@ proxy-groups:
       - "🇹🇼_5"
       - "🇹🇼_6"
       - "🇹🇼_7"
+      - "🇹🇼_8"
+      - "🇹🇼_9"
+      - "🇹🇼_10"
+      - "🇹🇼_11"
+      - "🇹🇼_12"
 
 
 rules:
