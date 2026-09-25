@@ -59,29 +59,28 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_6"
-    type: vless
-    server: "50.7.5.164"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
   - name: "🇮🇪_7"
     type: vless
-    server: "50.7.5.166"
+    server: "50.7.5.165"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
+    servername: "ir-new1.failspace.top"
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_8"
+    type: vless
+    server: "ireland-new-ded1.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ireland-new-ded1.failspace.top"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_9"
     type: vless
     server: "ir-new.failspace.top"
     port: 443
@@ -92,17 +91,18 @@ proxies:
     servername: "ir-new.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_9"
+  - name: "🇮🇪_10"
     type: vless
-    server: "50.7.5.165"
+    server: "50.7.5.166"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir-new1.failspace.top"
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_10"
+  - name: "🇮🇪_11"
     type: vless
     server: "50.7.5.163"
     port: 443
@@ -111,6 +111,17 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ir-viper.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_12"
+    type: vless
+    server: "50.7.5.164"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
 
@@ -155,11 +166,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -169,11 +181,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -183,11 +196,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -196,11 +210,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -210,21 +225,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_6"
       - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
 
 rules:
   - MATCH,PROXY-BEST

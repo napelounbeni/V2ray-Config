@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_9"
+  - name: "🇨🇿_5"
     type: vless
     server: "31.76.7.154"
     port: 7443
@@ -73,64 +73,23 @@ proxies:
       public-key: "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ"
       short-id: "d2061bb1"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_10"
+  - name: "🇨🇿_6"
     type: vless
-    server: "153.76.185.98"
+    server: "153.76.185.102"
     port: 3090
-    uuid: "a44b015b-1b2b-4f3e-b236-79634f674b2d"
+    uuid: "89e7af8e-3d93-4307-be22-3aa8d4a3fcfa"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
-  - name: "🇨🇿_11"
-    type: vless
-    server: "153.76.185.187"
-    port: 3090
-    uuid: "8a258586-34ed-461c-bc95-26dfb49a7aa9"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_12"
-    type: vless
-    server: "31.76.7.227"
-    port: 443
-    uuid: "d0e771c5-024e-4393-bb90-4a3e3c561656"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "origin.vpnoodles.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "nIL5EeUo2XUkCaLJGbzgRm6zhF-96kWvV2VmhEt3CX4"
-      short-id: "4af4102cb26e59"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇿_13"
-    type: vless
-    server: "153.76.185.99"
-    port: 3090
-    uuid: "8a258586-34ed-461c-bc95-26dfb49a7aa9"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_14"
-    type: vless
-    server: "153.76.185.154"
-    port: 3090
-    uuid: "caa8d499-c303-4aa7-96a0-45a07bb47de5"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_15"
+  - name: "🇨🇿_7"
     type: ss
     server: "141.227.134.63"
     port: 17000
     cipher: "aes-256-gcm"
     password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     udp: true
-  - name: "🇨🇿_16"
+  - name: "🇨🇿_8"
     type: ss
     server: "141.227.134.63"
     port: 17000
@@ -179,14 +138,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -196,14 +151,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -213,14 +164,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -229,14 +176,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -246,27 +189,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_9"
-      - "🇨🇿_10"
-      - "🇨🇿_11"
-      - "🇨🇿_12"
-      - "🇨🇿_13"
-      - "🇨🇿_14"
-      - "🇨🇿_15"
-      - "🇨🇿_16"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
 rules:
   - MATCH,PROXY-BEST

@@ -74,42 +74,6 @@ proxies:
       path: "/"
       headers:
         Host: "llm-api.sofurry.dpdns.org"
-  - name: "🇨🇾_2"
-    type: vless
-    server: "185.249.153.108"
-    port: 443
-    uuid: "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.nordivablog.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw"
-      short-id: "73c9e31ccafda20e"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇾_3"
-    type: vless
-    server: "77.75.199.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇨🇾_4"
-    type: vless
-    server: "154.92.9.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -125,9 +89,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇾_1"
-      - "🇨🇾_2"
-      - "🇨🇾_3"
-      - "🇨🇾_4"
 
 
 rules:

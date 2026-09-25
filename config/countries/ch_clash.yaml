@@ -79,20 +79,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
     type: vless
-    server: "82.21.4.149"
-    port: 443
-    uuid: "b1b4f2c7-2a5b-4b46-8cef-c8e853919eeb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ch2.responsiblecare.uk"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
-      short-id: "356a70f0d72b4e80"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_3"
-    type: vless
     server: "131.123.34.145"
     port: 8081
     uuid: "54ee5e59-55a3-4599-83ff-0c67b3f411b2"
@@ -100,7 +86,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/vless-test"
-  - name: "🇨🇭_4"
+  - name: "🇨🇭_3"
     type: trojan
     server: "91.245.225.79"
     port: 2053
@@ -113,14 +99,14 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇨🇭_5"
+  - name: "🇨🇭_4"
     type: ss
     server: "132.243.175.144"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     udp: true
-  - name: "🇨🇭_6"
+  - name: "🇨🇭_5"
     type: ss
     server: "132.243.175.144"
     port: 8388
@@ -146,7 +132,6 @@ proxy-groups:
       - "🇨🇭_3"
       - "🇨🇭_4"
       - "🇨🇭_5"
-      - "🇨🇭_6"
 
 
 rules:
