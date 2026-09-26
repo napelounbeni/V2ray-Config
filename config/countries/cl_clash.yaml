@@ -65,26 +65,59 @@ dns:
 proxies:
   - name: "🇨🇱_1"
     type: vless
-    server: "platform103.golnamakcert.top"
+    server: "platform102.golnamakcert.top"
     port: 80
     uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
     network: ws
     ws-opts:
-      path: "/platform103"
+      path: "/platform102"
       headers:
-        Host: "platform103.halalkhor.info"
+        Host: "platform102.halalkhor.info"
   - name: "🇨🇱_2"
     type: vless
-    server: "platform109.golnamakcert.top"
+    server: "platform117.golnamakcert.top"
     port: 80
     uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
     network: ws
     ws-opts:
-      path: "/platform109"
+      path: "/platform117"
       headers:
-        Host: "platform109.halalkhor.info"
+        Host: "platform117.halalkhor.info"
+  - name: "🇨🇱_3"
+    type: vless
+    server: "platform113.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform113"
+      headers:
+        Host: "platform113.halalkhor.info"
+  - name: "🇨🇱_4"
+    type: vless
+    server: "platform101.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform101"
+      headers:
+        Host: "platform101.halalkhor.info"
+  - name: "🇨🇱_5"
+    type: vless
+    server: "platform108.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform108"
+      headers:
+        Host: "platform108.halalkhor.info"
 
 proxy-groups:
   - name: "PROXY"
@@ -101,6 +134,9 @@ proxy-groups:
     proxies:
       - "🇨🇱_1"
       - "🇨🇱_2"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
+      - "🇨🇱_5"
 
 
 rules:

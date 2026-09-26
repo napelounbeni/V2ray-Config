@@ -65,29 +65,14 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
-    server: "192.65.217.123"
+    server: "172.105.169.70"
     port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
+    servername: "172.105.169.70"
   - name: "🇦🇺_2"
-    type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_3"
     type: vless
     server: "51.161.204.244"
     port: 443
@@ -101,15 +86,6 @@ proxies:
       public-key: "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk"
       short-id: "0ad08b47f498efd2"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_4"
-    type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
 
 proxy-groups:
   - name: "PROXY"
@@ -126,8 +102,6 @@ proxy-groups:
     proxies:
       - "🇦🇺_1"
       - "🇦🇺_2"
-      - "🇦🇺_3"
-      - "🇦🇺_4"
 
 
 rules:

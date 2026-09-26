@@ -59,73 +59,63 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_9"
+  - name: "🇺🇦_7"
     type: vless
-    server: "104.143.223.79"
-    port: 2085
-    uuid: "74759f4e-c127-4da4-93fd-543539ce8cc7"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_10"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_11"
-    type: vless
-    server: "194.152.44.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/pyip=Telegram🇨🇳 @WangCai2"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
-  - name: "🇺🇦_12"
-    type: vless
-    server: "nl2.gursub.com"
+    server: "13.143.161.69"
     port: 443
-    uuid: "02bd8b5a-170b-4a79-8e68-9cec710272c7"
+    uuid: "deea5046-3543-4b1b-a17f-3d08a65db91d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "nl2.gursub.com"
+    servername: "nl5.mcloud.mov"
+    client-fingerprint: "safari"
     reality-opts:
-      public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
-      short-id: "a1b2c3d4e5f6a1b2"
+      public-key: "fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0"
+      short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_13"
+  - name: "🇺🇦_8"
     type: vless
-    server: "45.135.235.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "cosw.ggisopi.su"
+    port: 443
+    uuid: "d0f0a880-0df1-0003-bdf1-5669fb9483ce"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime07.workers.dev"
-  - name: "🇺🇦_14"
+    tls: true
+    skip-cert-verify: true
+    servername: "cosw.ggisopi.su"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_9"
     type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "179.254.109.54"
+    port: 443
+    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_15"
+    tls: true
+    skip-cert-verify: true
+    servername: "cosw.ggisopi.su"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_10"
+    type: vless
+    server: "179.254.109.54"
+    port: 443
+    uuid: "d0f0a880-0df1-0003-bdf1-5669fb9483ce"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cosw.ggisopi.su"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_11"
     type: vless
     server: "13.143.193.156"
     port: 443
@@ -139,17 +129,20 @@ proxies:
       public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
       short-id: "a1b2c3d4e5f6a1b2"
     flow: "xtls-rprx-vision"
-  - name: "🇺🇦_16"
-    type: trojan
-    server: "89.116.180.49"
+  - name: "🇺🇦_12"
+    type: vless
+    server: "nl2.gursub.com"
     port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    uuid: "02bd8b5a-170b-4a79-8e68-9cec710272c7"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    tls: true
+    skip-cert-verify: true
+    servername: "nl2.gursub.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
+      short-id: "a1b2c3d4e5f6a1b2"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -192,14 +185,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -209,14 +200,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -226,14 +215,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -242,14 +229,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -259,27 +244,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇺🇦_7"
+      - "🇺🇦_8"
       - "🇺🇦_9"
       - "🇺🇦_10"
       - "🇺🇦_11"
       - "🇺🇦_12"
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
 
 rules:
   - MATCH,PROXY-BEST

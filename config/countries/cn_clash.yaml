@@ -65,15 +65,34 @@ dns:
 proxies:
   - name: "🇨🇳_1"
     type: vless
-    server: "176.124.223.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "122.8.45.2"
+    port: 8443
+    uuid: "3ae00194-1bc0-0bf4-9564-3c55b1c6d485"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "download.nvidia.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇨🇳_2"
+    type: ss
+    server: "124.151.25.50"
+    port: 8020
+    cipher: "aes-128-gcm"
+    password: "2wsxcde3"
+    udp: true
+  - name: "🇨🇳_3"
+    type: ss
+    server: "124.151.25.50"
+    port: 8024
+    cipher: "aes-128-gcm"
+    password: "2wsxcde4"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +108,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇳_1"
+      - "🇨🇳_2"
+      - "🇨🇳_3"
 
 
 rules:

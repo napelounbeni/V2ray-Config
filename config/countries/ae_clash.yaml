@@ -65,17 +65,6 @@ dns:
 proxies:
   - name: "🇦🇪_1"
     type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime18.workers.dev"
-  - name: "🇦🇪_2"
-    type: vless
     server: "84.235.244.108"
     port: 22573
     uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
@@ -85,18 +74,7 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_3"
-    type: vless
-    server: "94.140.0.100"
-    port: 8880
-    uuid: "78e6619e-e82a-cd8d-b482-0973d8498305"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-pine-a674.jfadwkglaugul.workers.dev"
-  - name: "🇦🇪_4"
+  - name: "🇦🇪_2"
     type: vless
     server: "146.70.102.82"
     port: 443
@@ -109,31 +87,6 @@ proxies:
     reality-opts:
       public-key: "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k"
       short-id: "002fb4ec7b3088cc"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇪_5"
-    type: vless
-    server: "77.232.140.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇦🇪_6"
-    type: vless
-    server: "139.185.44.42"
-    port: 8443
-    uuid: "b0fa80ad-d759-4bcc-a0fd-f802d53b5a88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.microsoft.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w"
-      short-id: "855834d3b002ad21"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -151,10 +104,6 @@ proxy-groups:
     proxies:
       - "🇦🇪_1"
       - "🇦🇪_2"
-      - "🇦🇪_3"
-      - "🇦🇪_4"
-      - "🇦🇪_5"
-      - "🇦🇪_6"
 
 
 rules:
