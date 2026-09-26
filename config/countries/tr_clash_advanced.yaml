@@ -59,24 +59,11 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇷_8"
-    type: vless
-    server: "37.221.79.226"
-    port: 18443
-    uuid: "6933bb34-cb01-4605-88c3-f335e4307d23"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sony.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "9hnmqap98ULg2y1fk4aqAtQEtPLQPIypZNmnrb42VWs"
-      short-id: "50d9ee91"
   - name: "🇹🇷_9"
     type: vless
-    server: "93.190.9.54"
+    server: "93.190.9.111"
     port: 3090
-    uuid: "e1b355ac-cb94-42f3-8617-6c9c131f2652"
+    uuid: "74759f4e-c127-4da4-93fd-543539ce8cc7"
     udp: true
     network: grpc
     grpc-opts:
@@ -97,32 +84,26 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_11"
     type: vless
-    server: "aguguiucftgvbj.adidasm10.ir"
-    port: 45000
-    uuid: "056e4454-3eb4-4796-9c1a-6fa52db383ab"
+    server: "37.221.79.226"
+    port: 18443
+    uuid: "6933bb34-cb01-4605-88c3-f335e4307d23"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
+    servername: "www.sony.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "K_eKlbzI4jFbOPiJV1GQDqF8y_Hqua0zw6ewf-cxJWc"
-      short-id: "c1ae335b825dd69e"
-    flow: "xtls-rprx-vision"
+      public-key: "9hnmqap98ULg2y1fk4aqAtQEtPLQPIypZNmnrb42VWs"
+      short-id: "50d9ee91"
   - name: "🇹🇷_12"
     type: vless
-    server: "aguguiucftgvbj.adidasm10.ir"
-    port: 45000
-    uuid: "f2907bf1-f89b-406d-aee5-b6b534c145e5"
+    server: "93.190.8.82"
+    port: 3090
+    uuid: "74759f4e-c127-4da4-93fd-543539ce8cc7"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "K_eKlbzI4jFbOPiJV1GQDqF8y_Hqua0zw6ewf-cxJWc"
-      short-id: "c1ae335b825dd69e"
-    flow: "xtls-rprx-vision"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇹🇷_13"
     type: vless
     server: "151.241.226.201"
@@ -132,26 +113,37 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
   - name: "🇹🇷_14"
     type: vless
-    server: "206.1.98.86"
-    port: 18443
-    uuid: "33e40dec-442b-46b2-b9b3-be1848ce7df8"
+    server: "185.87.24.173"
+    port: 2085
+    uuid: "720814fb-e38e-4570-97a7-c5df60352d37"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_15"
+    type: vless
+    server: "93.190.9.191"
+    port: 3090
+    uuid: "74759f4e-c127-4da4-93fd-543539ce8cc7"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_16"
+    type: vless
+    server: "93.114.98.221"
+    port: 443
+    uuid: "552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.bing.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bYVNm1Huc5MMhVUBDAO5O7O7mjZXjxESWUQzVPIoqjM"
-      short-id: "ca"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "@tunelm2mvpn@tunelm2mvpn@tunelm2mvpn"
+    servername: "00iwuafi1019.dopgangster.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -194,13 +186,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -210,13 +203,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -226,13 +220,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -241,13 +236,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -257,25 +253,27 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
       - "🇹🇷_13"
       - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
 
 rules:
   - MATCH,PROXY-BEST

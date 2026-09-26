@@ -63,20 +63,30 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇸🇮_1"
+  - name: "🇧🇷_1"
     type: vless
-    server: "node-slo01.rkitman.ru"
+    server: "45.194.53.123"
     port: 443
-    uuid: "322710c4-eef9-45ea-ad10-1efa1c6767d0"
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "node-slo01.rkitman.ru"
+    servername: "notls.lukongtou.eu.org"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU"
-      short-id: "88d9dc52ef39c8bd"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇧🇷_2"
+    type: vless
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +101,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇸🇮_1"
+      - "🇧🇷_1"
+      - "🇧🇷_2"
 
 
 rules:

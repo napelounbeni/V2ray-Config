@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
+    server: "50.7.36.27"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "at-new-ded2.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_2"
+    type: vless
     server: "50.7.36.30"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -74,7 +85,7 @@ proxies:
     servername: "ad-dedic-3.failspace.top"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision-udp443"
-  - name: "🇦🇹_2"
+  - name: "🇦🇹_3"
     type: vless
     server: "50.7.36.28"
     port: 443
@@ -85,17 +96,6 @@ proxies:
     servername: "at-new-ded.failspace.top"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_3"
-    type: vless
-    server: "ad-dedic-3.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ad-dedic-3.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
   - name: "🇦🇹_4"
     type: vless
     server: "at-at-at.failspace.top"
@@ -105,18 +105,19 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "at-at-at.failspace.top"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_5"
     type: vless
-    server: "50.7.36.29"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "212.183.88.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "at-dedic-2.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime23.workers.dev"
   - name: "🇦🇹_6"
     type: vless
     server: "50.7.36.26"
@@ -130,13 +131,13 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_7"
     type: vless
-    server: "50.7.37.154"
+    server: "50.7.36.29"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at1.moritech.net"
+    servername: "at-dedic-2.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_8"
@@ -165,29 +166,39 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_10"
     type: vless
-    server: "50.7.36.27"
+    server: "50.7.37.154"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "at-new-ded2.moritech.net"
+    servername: "at1.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇦🇹_11"
-    type: vless
-    server: "zcsagftt.selqora.ir"
-    port: 51595
-    uuid: "82f2dfe6-4ef5-484f-8b7d-94f682a88b00"
-    udp: true
-    tls: true
+    type: trojan
+    server: "46.102.156.144"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw"
-      short-id: "913175efbe9ddb1d"
-    flow: "xtls-rprx-vision"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "🇦🇹_12"
+    type: trojan
+    server: "212.183.88.136"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -213,6 +224,7 @@ proxy-groups:
       - "🇦🇹_9"
       - "🇦🇹_10"
       - "🇦🇹_11"
+      - "🇦🇹_12"
 
 
 rules:

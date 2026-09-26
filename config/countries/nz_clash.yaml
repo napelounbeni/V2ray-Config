@@ -63,72 +63,30 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇱_1"
+  - name: "🇳🇿_1"
     type: vless
-    server: "platform101.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    server: "114.129.43.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
-      path: "/platform101"
+      path: "/"
       headers:
-        Host: "platform101.halalkhor.info"
-  - name: "🇮🇱_2"
+        Host: "vms.lifetime04.workers.dev"
+  - name: "🇳🇿_2"
     type: vless
-    server: "platform115.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    server: "114.129.43.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/platform115"
-      headers:
-        Host: "platform115.halalkhor.info"
-  - name: "🇮🇱_3"
-    type: vless
-    server: "platform113.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform113"
-      headers:
-        Host: "platform113.halalkhor.info"
-  - name: "🇮🇱_4"
-    type: vless
-    server: "platform117.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform117"
-      headers:
-        Host: "platform117.halalkhor.info"
-  - name: "🇮🇱_5"
-    type: vless
-    server: "platform118.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform118"
-      headers:
-        Host: "platform118.halalkhor.info"
-  - name: "🇮🇱_6"
-    type: vless
-    server: "platform102.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform102"
-      headers:
-        Host: "platform102.halalkhor.info"
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -143,12 +101,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇱_1"
-      - "🇮🇱_2"
-      - "🇮🇱_3"
-      - "🇮🇱_4"
-      - "🇮🇱_5"
-      - "🇮🇱_6"
+      - "🇳🇿_1"
+      - "🇳🇿_2"
 
 
 rules:

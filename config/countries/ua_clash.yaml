@@ -65,19 +65,36 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "13.143.193.156"
-    port: 443
-    uuid: "02bd8b5a-170b-4a79-8e68-9cec710272c7"
+    server: "104.143.223.79"
+    port: 2085
+    uuid: "74759f4e-c127-4da4-93fd-543539ce8cc7"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nl2.gursub.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
-      short-id: "a1b2c3d4e5f6a1b2"
-    flow: "xtls-rprx-vision"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇺🇦_2"
+    type: vless
+    server: "89.116.180.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "194.152.44.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
+  - name: "🇺🇦_4"
     type: vless
     server: "nl2.gursub.com"
     port: 443
@@ -90,6 +107,53 @@ proxies:
       public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
       short-id: "a1b2c3d4e5f6a1b2"
     flow: "xtls-rprx-vision"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "45.135.235.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime07.workers.dev"
+  - name: "🇺🇦_6"
+    type: vless
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_7"
+    type: vless
+    server: "13.143.193.156"
+    port: 443
+    uuid: "02bd8b5a-170b-4a79-8e68-9cec710272c7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nl2.gursub.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk"
+      short-id: "a1b2c3d4e5f6a1b2"
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_8"
+    type: trojan
+    server: "89.116.180.49"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/sync"
 
 proxy-groups:
   - name: "PROXY"
@@ -106,6 +170,12 @@ proxy-groups:
     proxies:
       - "🇺🇦_1"
       - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
 
 rules:
