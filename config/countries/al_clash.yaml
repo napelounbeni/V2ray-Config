@@ -77,6 +77,13 @@ proxies:
       public-key: "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI"
       short-id: "db04ce8bdb8900f1"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇱_2"
+    type: ss
+    server: "130.49.189.158"
+    port: 43558
+    cipher: "chacha20-ietf-poly1305"
+    password: "ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +99,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇱_1"
+      - "🇦🇱_2"
 
 
 rules:

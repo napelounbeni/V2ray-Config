@@ -59,6 +59,12 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇲🇽_5"
+    type: vless
+    server: "45.164.20.114"
+    port: 10226
+    uuid: "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
+    udp: true
   - name: "🇲🇽_6"
     type: vless
     server: "45.134.9.133"
@@ -79,12 +85,6 @@ proxies:
     udp: true
   - name: "🇲🇽_8"
     type: vless
-    server: "45.164.20.114"
-    port: 10226
-    uuid: "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
-    udp: true
-  - name: "🇲🇽_9"
-    type: vless
     server: "ul-mexico1.09vpn.com"
     port: 8443
     uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
@@ -98,13 +98,6 @@ proxies:
       path: "/vless/"
       headers:
         Host: "ul-mexico1.09vpn.com"
-  - name: "🇲🇽_10"
-    type: ss
-    server: "64.177.90.30"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "BWyPPTusFKhGgzKh"
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -147,11 +140,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -161,11 +153,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -175,11 +166,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -188,11 +178,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -202,21 +191,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇲🇽_5"
       - "🇲🇽_6"
       - "🇲🇽_7"
       - "🇲🇽_8"
-      - "🇲🇽_9"
-      - "🇲🇽_10"
 
 rules:
   - MATCH,PROXY-BEST

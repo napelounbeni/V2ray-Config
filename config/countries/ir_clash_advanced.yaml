@@ -61,16 +61,33 @@ dns:
 proxies:
   - name: "🇮🇷_5"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    server: "bg.masterpgd.com"
+    port: 6016
+    uuid: "d207c6c8-a278-487c-b06e-f1fc89304e6d"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
+      short-id: "1779b108c9eb4da7"
+    flow: "xtls-rprx-vision"
   - name: "🇮🇷_6"
+    type: vless
+    server: "bg.masterpgd.com"
+    port: 6016
+    uuid: "e19f406e-0f0f-4abd-9861-a3d2d213b650"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
+      short-id: "1779b108c9eb4da7"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇷_7"
     type: vless
     server: "freeman.curtvip.ir"
     port: 20410
@@ -83,30 +100,13 @@ proxies:
     reality-opts:
       public-key: "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI"
       short-id: "e2ce3e050232978c"
-  - name: "🇮🇷_7"
-    type: vless
-    server: "panel.syscorea.info"
-    port: 9443
-    uuid: "39eb7019-be3d-4400-80d9-3e8815554c21"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ue-author.semiconductor.samsung.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "BbG7ujN1PZHI9FniAhoVxTbLSaVXkliFDLmY30e50Gc"
-      short-id: "a5155626"
   - name: "🇮🇷_8"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    type: ss
+    server: "p1tun2.greewebservices.ir"
+    port: 2060
+    cipher: "chacha20-ietf-poly1305"
+    password: "3Q1UUZhdMJ1Xi4V_348v2g"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

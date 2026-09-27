@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇭_5"
+  - name: "🇨🇭_4"
     type: vless
     server: "45.90.59.15"
     port: 443
@@ -73,27 +73,14 @@ proxies:
       public-key: "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY"
       short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
-    type: trojan
-    server: "91.245.225.79"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇭_7"
+  - name: "🇨🇭_5"
     type: ss
     server: "132.243.175.144"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     udp: true
-  - name: "🇨🇭_8"
+  - name: "🇨🇭_6"
     type: ss
     server: "132.243.175.144"
     port: 8388
@@ -142,10 +129,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -155,10 +141,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -168,10 +153,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -180,10 +164,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -193,19 +176,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇨🇭_4"
       - "🇨🇭_5"
       - "🇨🇭_6"
-      - "🇨🇭_7"
-      - "🇨🇭_8"
 
 rules:
   - MATCH,PROXY-BEST

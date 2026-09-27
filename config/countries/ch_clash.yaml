@@ -78,26 +78,13 @@ proxies:
       short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
   - name: "🇨🇭_2"
-    type: trojan
-    server: "91.245.225.79"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇭_3"
     type: ss
     server: "132.243.175.144"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     udp: true
-  - name: "🇨🇭_4"
+  - name: "🇨🇭_3"
     type: ss
     server: "132.243.175.144"
     port: 8388
@@ -121,7 +108,6 @@ proxy-groups:
       - "🇨🇭_1"
       - "🇨🇭_2"
       - "🇨🇭_3"
-      - "🇨🇭_4"
 
 
 rules:
