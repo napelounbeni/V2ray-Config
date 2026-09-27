@@ -63,34 +63,30 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇶_1"
+  - name: "🇳🇿_1"
     type: vless
-    server: "193.56.135.137"
-    port: 9543
-    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+    server: "114.129.43.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
+  - name: "🇳🇿_2"
+    type: vless
+    server: "114.129.43.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandexcloud.net"
+    servername: "notls.lukongtou.eu.org"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
-      short-id: "123abcde"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇶_2"
-    type: vless
-    server: "193.56.135.212"
-    port: 9543
-    uuid: "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandexcloud.net"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc"
-      short-id: "123abcde"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,8 +101,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇶_1"
-      - "🇮🇶_2"
+      - "🇳🇿_1"
+      - "🇳🇿_2"
 
 
 rules:

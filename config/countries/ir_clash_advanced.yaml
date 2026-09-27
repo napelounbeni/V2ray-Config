@@ -61,31 +61,16 @@ dns:
 proxies:
   - name: "🇮🇷_5"
     type: vless
-    server: "91.216.171.174"
-    port: 9626
-    uuid: "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c"
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Z8SkRvKJ3W8K6qn0qRskWval4QwcU0-N1YCQfETy4zY"
-      short-id: "c87c994259508b41"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
   - name: "🇮🇷_6"
-    type: vless
-    server: "91.216.171.174"
-    port: 1120
-    uuid: "280e6d2e-b93e-4f51-bc9e-bf2bb709c81c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "wY4XRBEsMudbgXC0W1jH2E9QmTbYy1FTWwXhXvKFAnw"
-      short-id: "a38e9aba6a2056c8"
-  - name: "🇮🇷_7"
     type: vless
     server: "freeman.curtvip.ir"
     port: 20410
@@ -98,17 +83,30 @@ proxies:
     reality-opts:
       public-key: "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI"
       short-id: "e2ce3e050232978c"
-  - name: "🇮🇷_8"
+  - name: "🇮🇷_7"
     type: vless
-    server: "tarane.2drive.sbs"
-    port: 80
-    uuid: "02572fe7-a220-4554-a4f8-6854a4287e83"
+    server: "panel.syscorea.info"
+    port: 9443
+    uuid: "39eb7019-be3d-4400-80d9-3e8815554c21"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ue-author.semiconductor.samsung.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "BbG7ujN1PZHI9FniAhoVxTbLSaVXkliFDLmY30e50Gc"
+      short-id: "a5155626"
+  - name: "🇮🇷_8"
+    type: trojan
+    server: "45.131.4.118"
+    port: 443
+    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
+    sni: "0403.infinityconfig4.workers.dev"
+    skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/arvancloud.ir"
-      headers:
-        Host: "tarane.2drive.sbs"
+      path: "/sync"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

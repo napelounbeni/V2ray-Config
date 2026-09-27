@@ -61,20 +61,6 @@ dns:
 proxies:
   - name: "🇨🇭_5"
     type: vless
-    server: "45.90.56.101"
-    port: 443
-    uuid: "Ui7dxZ3RQAcVuL"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.icloud.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Afp-zSDm7jmmT3KaKqmVyafpsPfNGKNzGPoWe97Sf3M"
-      short-id: "61c6594c"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_6"
-    type: vless
     server: "45.90.59.15"
     port: 443
     uuid: "3950b45e-740d-4dca-ac95-505ec8534592"
@@ -87,6 +73,19 @@ proxies:
       public-key: "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY"
       short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇭_6"
+    type: trojan
+    server: "91.245.225.79"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "🇨🇭_7"
     type: ss
     server: "132.243.175.144"

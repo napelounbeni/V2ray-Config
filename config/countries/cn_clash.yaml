@@ -80,18 +80,22 @@ proxies:
     grpc-opts:
       grpc-service-name: "TunService"
   - name: "🇨🇳_2"
+    type: vless
+    server: "176.124.223.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇨🇳_3"
     type: ss
     server: "124.151.25.50"
     port: 8020
     cipher: "aes-128-gcm"
     password: "2wsxcde3"
-    udp: true
-  - name: "🇨🇳_3"
-    type: ss
-    server: "124.151.25.50"
-    port: 8024
-    cipher: "aes-128-gcm"
-    password: "2wsxcde4"
     udp: true
 
 proxy-groups:

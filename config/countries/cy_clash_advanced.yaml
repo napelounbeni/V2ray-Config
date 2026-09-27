@@ -59,7 +59,51 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇾_6"
+  - name: "🇨🇾_8"
+    type: vless
+    server: "77.75.199.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime59.workers.dev"
+  - name: "🇨🇾_9"
+    type: vless
+    server: "195.85.59.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime58.workers.dev"
+  - name: "🇨🇾_10"
+    type: vless
+    server: "154.92.9.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
+  - name: "🇨🇾_11"
+    type: vless
+    server: "195.85.59.69"
+    port: 2095
+    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "llm-api.sofurry.dpdns.org"
+  - name: "🇨🇾_12"
     type: vless
     server: "195.85.59.187"
     port: 2095
@@ -70,7 +114,18 @@ proxies:
       path: "/"
       headers:
         Host: "llm-api.sofurry.dpdns.org"
-  - name: "🇨🇾_7"
+  - name: "🇨🇾_13"
+    type: vless
+    server: "www.csgo.net"
+    port: 2095
+    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "llm-api.sofurry.dpdns.org"
+  - name: "🇨🇾_14"
     type: vless
     server: "185.249.153.108"
     port: 443
@@ -83,45 +138,6 @@ proxies:
     reality-opts:
       public-key: "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw"
       short-id: "73c9e31ccafda20e"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇾_8"
-    type: vless
-    server: "195.85.59.69"
-    port: 2095
-    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "llm-api.sofurry.dpdns.org"
-  - name: "🇨🇾_9"
-    type: vless
-    server: "2.56.123.131"
-    port: 443
-    uuid: "0a975d79-6930-4861-a105-dc50793456de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "contact.yump.online"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "wDAQ_iQ_vv6lQiB9nCxIJviEhARWOQOPyhzos8EJW3o"
-      short-id: "9da47879658f9f25"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇾_10"
-    type: vless
-    server: "2.56.123.227"
-    port: 443
-    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
-      short-id: "72104d27a0f5f62e"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -165,11 +181,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -179,11 +197,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -193,11 +213,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -206,11 +228,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -220,21 +244,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇾_6"
-      - "🇨🇾_7"
       - "🇨🇾_8"
       - "🇨🇾_9"
       - "🇨🇾_10"
+      - "🇨🇾_11"
+      - "🇨🇾_12"
+      - "🇨🇾_13"
+      - "🇨🇾_14"
 
 rules:
   - MATCH,PROXY-BEST

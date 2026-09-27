@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇹🇭_1"
     type: vless
+    server: "V2rAy.SiMsPeEdUp.CoM"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_2"
+    type: vless
     server: "103.86.49.57"
     port: 80
     uuid: "3c52e091-6714-4915-949f-2149fe69951b"
@@ -74,6 +85,17 @@ proxies:
       path: "/ws"
       headers:
         Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_3"
+    type: vless
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "v2ray.simspeedup.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -89,6 +111,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇹🇭_1"
+      - "🇹🇭_2"
+      - "🇹🇭_3"
 
 
 rules:

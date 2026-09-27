@@ -59,40 +59,132 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇿🇦_6"
-    type: ss
-    server: "102.37.156.224"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "aduB9HGxQHjA2SBMRjkHX6"
+  - name: "🇿🇦_14"
+    type: vless
+    server: "platform101.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
-  - name: "🇿🇦_7"
-    type: ss
-    server: "102.37.156.224"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "aduB9HGxQHjA2SBMRjkHX6"
+    network: ws
+    ws-opts:
+      path: "/platform101"
+      headers:
+        Host: "platform101.halalkhor.info"
+  - name: "🇿🇦_15"
+    type: vless
+    server: "platform117.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
-  - name: "🇿🇦_8"
-    type: ss
-    server: "139.84.247.164"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "tfAcRikawhNoZAhu"
+    network: ws
+    ws-opts:
+      path: "/platform117"
+      headers:
+        Host: "platform117.halalkhor.info"
+  - name: "🇿🇦_16"
+    type: vless
+    server: "platform102.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
-  - name: "🇿🇦_9"
+    network: ws
+    ws-opts:
+      path: "/platform102"
+      headers:
+        Host: "platform102.halalkhor.info"
+  - name: "🇿🇦_17"
+    type: vless
+    server: "platform107.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform107"
+      headers:
+        Host: "platform107.halalkhor.info"
+  - name: "🇿🇦_18"
+    type: vless
+    server: "platform109.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform109"
+      headers:
+        Host: "platform109.halalkhor.info"
+  - name: "🇿🇦_19"
+    type: vless
+    server: "platform118.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform118"
+      headers:
+        Host: "platform118.halalkhor.info"
+  - name: "🇿🇦_20"
+    type: vless
+    server: "platform115.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform115"
+      headers:
+        Host: "platform115.halalkhor.info"
+  - name: "🇿🇦_21"
+    type: vless
+    server: "platform103.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform103"
+      headers:
+        Host: "platform103.halalkhor.info"
+  - name: "🇿🇦_22"
+    type: vless
+    server: "platform106.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform106"
+      headers:
+        Host: "platform106.halalkhor.info"
+  - name: "🇿🇦_23"
     type: ss
     server: "102.133.165.160"
     port: 16233
     cipher: "chacha20-ietf-poly1305"
     password: "Xsy8Ox4yOV3xLlpxtjzs3X"
     udp: true
-  - name: "🇿🇦_10"
+  - name: "🇿🇦_24"
     type: ss
-    server: "20.164.220.82"
+    server: "102.37.156.224"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "Qy7KyMo4epSCiluJ"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
+    udp: true
+  - name: "🇿🇦_25"
+    type: ss
+    server: "102.37.156.224"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
+    udp: true
+  - name: "🇿🇦_26"
+    type: ss
+    server: "139.84.247.164"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "tfAcRikawhNoZAhu"
     udp: true
 
 proxy-groups:
@@ -136,11 +228,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
   - name: "LB-CDN"
     type: load-balance
@@ -150,11 +250,19 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -164,11 +272,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
   - name: "FAST-CDN"
     type: url-test
@@ -177,11 +293,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -191,21 +315,37 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇿🇦_6"
-      - "🇿🇦_7"
-      - "🇿🇦_8"
-      - "🇿🇦_9"
-      - "🇿🇦_10"
+      - "🇿🇦_14"
+      - "🇿🇦_15"
+      - "🇿🇦_16"
+      - "🇿🇦_17"
+      - "🇿🇦_18"
+      - "🇿🇦_19"
+      - "🇿🇦_20"
+      - "🇿🇦_21"
+      - "🇿🇦_22"
+      - "🇿🇦_23"
+      - "🇿🇦_24"
+      - "🇿🇦_25"
+      - "🇿🇦_26"
 
 rules:
   - MATCH,PROXY-BEST
