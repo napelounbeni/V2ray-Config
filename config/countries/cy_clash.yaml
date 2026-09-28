@@ -65,6 +65,28 @@ dns:
 proxies:
   - name: "🇨🇾_1"
     type: vless
+    server: "154.92.9.2"
+    port: 8880
+    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "old-violet-a5ce.29-440.workers.dev"
+  - name: "🇨🇾_2"
+    type: vless
+    server: "195.85.59.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime58.workers.dev"
+  - name: "🇨🇾_3"
+    type: vless
     server: "185.249.153.108"
     port: 443
     uuid: "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5"
@@ -92,6 +114,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇾_1"
+      - "🇨🇾_2"
+      - "🇨🇾_3"
 
 
 rules:

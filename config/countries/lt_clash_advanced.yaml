@@ -59,21 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_4"
-    type: vless
-    server: "144.31.243.120"
-    port: 8443
-    uuid: "97532b08-357e-4140-a6f0-8e07f2ed3327"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yf.962456.xyz"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/proxyip=kr.william.us.ci"
-      headers:
-        Host: "yf.962456.xyz"
   - name: "🇱🇹_5"
     type: vless
     server: "94.176.234.161"
@@ -89,6 +74,32 @@ proxies:
       short-id: "dbb2ef1c7c"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_6"
+    type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_7"
+    type: vless
+    server: "88.216.69.144"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+    client-fingerprint: "ios"
+    network: ws
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
+      headers:
+        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+  - name: "🇱🇹_8"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -143,9 +154,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -155,9 +167,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -167,9 +180,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -178,9 +192,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -190,17 +205,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇹_4"
       - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
 
 rules:
   - MATCH,PROXY-BEST

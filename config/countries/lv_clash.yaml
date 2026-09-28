@@ -91,6 +91,20 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
+  - name: "🇱🇻_3"
+    type: ss
+    server: "109.248.148.139"
+    port: 11469
+    cipher: "aes-128-gcm"
+    password: "ce45b16adec66e4a199d92b9689eae9f"
+    udp: true
+  - name: "🇱🇻_4"
+    type: ss
+    server: "109.248.148.139"
+    port: 11469
+    cipher: "aes-128-gcm"
+    password: "ce45b16adec66e4a199d92b9689eae9f"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -107,6 +121,8 @@ proxy-groups:
     proxies:
       - "🇱🇻_1"
       - "🇱🇻_2"
+      - "🇱🇻_3"
+      - "🇱🇻_4"
 
 
 rules:

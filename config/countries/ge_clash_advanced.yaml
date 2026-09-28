@@ -59,21 +59,34 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇷🇸_2"
+  - name: "🇬🇪_3"
     type: vless
-    server: "38.180.100.80"
+    server: "147.45.46.3"
     port: 443
-    uuid: "97532b08-357e-4140-a6f0-8e07f2ed3327"
+    uuid: "ce5949b7-5137-4007-8a0a-063aad88b920"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "yf.962456.xyz"
+    servername: "sellflow.org"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/proxyip=kr.william.us.ci"
-      headers:
-        Host: "yf.962456.xyz"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇪_4"
+    type: vless
+    server: "147.45.46.11"
+    port: 443
+    uuid: "e1d17eb6-e577-4520-8631-92d68ee675cb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "abuse.sellflow.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +129,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +140,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +161,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +172,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇷🇸_2"
+      - "🇬🇪_3"
+      - "🇬🇪_4"
 
 rules:
   - MATCH,PROXY-BEST

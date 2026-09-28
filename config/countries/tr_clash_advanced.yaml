@@ -59,7 +59,43 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇹🇷_9"
+    type: vless
+    server: "93.190.9.55"
+    port: 3090
+    uuid: "73649cdf-0f29-4d1c-8a4d-95163688f93f"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇹🇷_10"
+    type: vless
+    server: "93.190.9.49"
+    port: 3090
+    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "93.190.9.171"
+    port: 3090
+    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_12"
+    type: vless
+    server: "93.190.8.86"
+    port: 3090
+    uuid: "73649cdf-0f29-4d1c-8a4d-95163688f93f"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_13"
     type: vless
     server: "78.135.73.47"
     port: 443
@@ -73,61 +109,16 @@ proxies:
       public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
       short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_11"
-    type: vless
-    server: "93.190.9.131"
-    port: 3090
-    uuid: "8ac4b519-287e-4ac0-8c95-4c1721c1ab76"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_12"
-    type: vless
-    server: "93.190.9.15"
-    port: 3090
-    uuid: "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_13"
-    type: vless
-    server: "93.190.8.83"
-    port: 3090
-    uuid: "8ac4b519-287e-4ac0-8c95-4c1721c1ab76"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
   - name: "🇹🇷_14"
     type: vless
-    server: "93.190.9.59"
+    server: "93.190.8.26"
     port: 3090
-    uuid: "8ac4b519-287e-4ac0-8c95-4c1721c1ab76"
+    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
   - name: "🇹🇷_15"
-    type: vless
-    server: "93.190.8.86"
-    port: 3090
-    uuid: "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_16"
-    type: vless
-    server: "93.190.9.35"
-    port: 3090
-    uuid: "b55a33d7-83ee-416a-971e-eaaa0c928043"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_17"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -140,11 +131,11 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_18"
+  - name: "🇹🇷_16"
     type: vless
-    server: "93.190.9.52"
+    server: "93.190.8.81"
     port: 3090
-    uuid: "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa"
+    uuid: "df95425f-b822-4279-bd97-3699361293dd"
     udp: true
     network: grpc
     grpc-opts:
@@ -191,6 +182,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -198,8 +190,6 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -209,6 +199,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -216,8 +207,6 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -227,6 +216,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -234,8 +224,6 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -244,6 +232,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -251,8 +240,6 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -262,6 +249,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -269,13 +257,12 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
@@ -283,8 +270,6 @@ proxy-groups:
       - "🇹🇷_14"
       - "🇹🇷_15"
       - "🇹🇷_16"
-      - "🇹🇷_17"
-      - "🇹🇷_18"
 
 rules:
   - MATCH,PROXY-BEST

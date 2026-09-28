@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
+  - name: "🇮🇷_2"
+    type: vless
     server: "bg.masterpgd.com"
     port: 6016
     uuid: "d207c6c8-a278-487c-b06e-f1fc89304e6d"
@@ -77,11 +88,11 @@ proxies:
       public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
       short-id: "1779b108c9eb4da7"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇷_2"
+  - name: "🇮🇷_3"
     type: vless
     server: "bg.masterpgd.com"
     port: 6016
-    uuid: "e19f406e-0f0f-4abd-9861-a3d2d213b650"
+    uuid: "1cc6bd10-e414-4171-9220-09aaba23a6fa"
     udp: true
     tls: true
     skip-cert-verify: true
@@ -91,26 +102,6 @@ proxies:
       public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
       short-id: "1779b108c9eb4da7"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇷_3"
-    type: vless
-    server: "freeman.curtvip.ir"
-    port: 20410
-    uuid: "442581ff-646e-4e99-af3e-a9d9a636a44b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "secureconnect-pa.mtls.clients6.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI"
-      short-id: "e2ce3e050232978c"
-  - name: "🇮🇷_4"
-    type: ss
-    server: "p1tun2.greewebservices.ir"
-    port: 2060
-    cipher: "chacha20-ietf-poly1305"
-    password: "3Q1UUZhdMJ1Xi4V_348v2g"
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -128,7 +119,6 @@ proxy-groups:
       - "🇮🇷_1"
       - "🇮🇷_2"
       - "🇮🇷_3"
-      - "🇮🇷_4"
 
 
 rules:
