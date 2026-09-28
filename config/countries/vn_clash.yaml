@@ -63,20 +63,36 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇸_1"
+  - name: "🇻🇳_1"
     type: vless
-    server: "144.31.128.84"
-    port: 24531
-    uuid: "9a3d5f36-fa72-4ced-94d3-7f6f046ec085"
+    server: "160.187.1.101"
+    port: 443
+    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.aviasales.com"
+    servername: "thus-k.netnode.cc.cd"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
+  - name: "🇻🇳_2"
+    type: vless
+    server: "160.25.75.40"
+    port: 443
+    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "thus-k.netnode.cc.cd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/t.me/daily_free_vpn"
+      headers:
+        Host: "thus-k.netnode.cc.cd"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,7 +107,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇸_1"
+      - "🇻🇳_1"
+      - "🇻🇳_2"
 
 
 rules:

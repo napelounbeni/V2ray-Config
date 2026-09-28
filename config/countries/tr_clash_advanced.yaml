@@ -61,42 +61,6 @@ dns:
 proxies:
   - name: "🇹🇷_9"
     type: vless
-    server: "93.190.9.55"
-    port: 3090
-    uuid: "73649cdf-0f29-4d1c-8a4d-95163688f93f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_10"
-    type: vless
-    server: "93.190.9.49"
-    port: 3090
-    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_11"
-    type: vless
-    server: "93.190.9.171"
-    port: 3090
-    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_12"
-    type: vless
-    server: "93.190.8.86"
-    port: 3090
-    uuid: "73649cdf-0f29-4d1c-8a4d-95163688f93f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_13"
-    type: vless
     server: "78.135.73.47"
     port: 443
     uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
@@ -109,16 +73,7 @@ proxies:
       public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
       short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_14"
-    type: vless
-    server: "93.190.8.26"
-    port: 3090
-    uuid: "4533a4e1-46ff-42d8-92b3-24c273481025"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇹🇷_15"
+  - name: "🇹🇷_10"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -131,15 +86,58 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_16"
+  - name: "🇹🇷_11"
     type: vless
-    server: "93.190.8.81"
+    server: "130.94.0.228"
+    port: 443
+    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edgetunnel-4uw.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edgetunnel-4uw.pages.dev"
+  - name: "🇹🇷_12"
+    type: vless
+    server: "93.190.9.60"
     port: 3090
-    uuid: "df95425f-b822-4279-bd97-3699361293dd"
+    uuid: "cbbc93ef-6d35-463a-a856-64265c42e66d"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
+  - name: "🇹🇷_13"
+    type: ss
+    server: "213.142.150.136"
+    port: 1468
+    cipher: "aes-128-gcm"
+    password: "_j2fKtUJpe_fwdFPt_Ilpg"
+    udp: true
+  - name: "🇹🇷_14"
+    type: ss
+    server: "istan17.zavqeron.ir"
+    port: 8389
+    cipher: "chacha20-ietf-poly1305"
+    password: "Gc9jTDnPAeTz4Z8jDbqI2A"
+    udp: true
+  - name: "🇹🇷_15"
+    type: ss
+    server: "213.142.150.136"
+    port: 1468
+    cipher: "aes-128-gcm"
+    password: "_j2fKtUJpe_fwdFPt_Ilpg"
+    udp: true
+  - name: "🇹🇷_16"
+    type: ss
+    server: "tur17.velqixa.ir"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "Gc9jTDnPAeTz4Z8jDbqI2A"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

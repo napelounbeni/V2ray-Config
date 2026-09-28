@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
+    server: "217.156.64.204"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "md.dendiboss.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PQm4_ELMk_t2_-78lisq7Pt3aal3IVaC519prE_-Fh8"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
     server: "80.96.109.15"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -73,6 +87,31 @@ proxies:
     skip-cert-verify: true
     servername: "moldova.failspace.top"
     client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_3"
+    type: vless
+    server: "md.dendiboss.org"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "md.dendiboss.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "PQm4_ELMk_t2_-78lisq7Pt3aal3IVaC519prE_-Fh8"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_4"
+    type: vless
+    server: "moldova.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "moldova.failspace.top"
+    client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -89,6 +128,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
+      - "🇲🇩_3"
+      - "🇲🇩_4"
 
 
 rules:

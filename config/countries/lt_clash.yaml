@@ -65,6 +65,35 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "144.31.243.120"
+    port: 8443
+    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edgetunnel-4uw.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edgetunnel-4uw.pages.dev"
+  - name: "🇱🇹_2"
+    type: vless
+    server: "84.32.97.14"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lt.denditop.site"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_3"
+    type: vless
     server: "94.176.234.161"
     port: 443
     uuid: "d448490d-4ee6-442f-80e1-5e1c186c4ce1"
@@ -77,33 +106,21 @@ proxies:
       public-key: "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8"
       short-id: "dbb2ef1c7c"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
+  - name: "🇱🇹_4"
     type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇱🇹_3"
-    type: vless
-    server: "88.216.69.144"
+    server: "88.216.127.237"
     port: 443
-    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
+    uuid: "ae0d0211-b7dc-461d-9d41-1eb224876f30"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
-      headers:
-        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
-  - name: "🇱🇹_4"
+    servername: "westcostlt.responsiblecare.uk"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
+      short-id: "9dbdad98826e0fe8"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_5"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -134,6 +151,7 @@ proxy-groups:
       - "🇱🇹_2"
       - "🇱🇹_3"
       - "🇱🇹_4"
+      - "🇱🇹_5"
 
 
 rules:

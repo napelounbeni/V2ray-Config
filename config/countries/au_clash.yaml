@@ -86,43 +86,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA"
       short-id: "6df42a2c"
     flow: "xtls-rprx-vision"
   - name: "🇦🇺_3"
-    type: vless
-    server: "172.105.169.70"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "172.105.169.70"
-  - name: "🇦🇺_4"
-    type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_5"
-    type: vless
-    server: "192.65.217.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime37.workers.dev"
-  - name: "🇦🇺_6"
     type: vless
     server: "51.161.204.244"
     port: 443
@@ -136,6 +105,15 @@ proxies:
       public-key: "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk"
       short-id: "0ad08b47f498efd2"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇺_4"
+    type: vless
+    server: "172.105.169.70"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "172.105.169.70"
 
 proxy-groups:
   - name: "PROXY"
@@ -154,8 +132,6 @@ proxy-groups:
       - "🇦🇺_2"
       - "🇦🇺_3"
       - "🇦🇺_4"
-      - "🇦🇺_5"
-      - "🇦🇺_6"
 
 
 rules:

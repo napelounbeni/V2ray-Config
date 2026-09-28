@@ -59,27 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇱_25"
+  - name: "🇵🇱_21"
     type: vless
-    server: "64.176.77.202"
-    port: 80
-    uuid: "2a12a637-2724-4789-a64d-64ebc1b9bbf3"
+    server: "83.168.71.216"
+    port: 443
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇵🇱_26"
+    tls: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
+  - name: "🇵🇱_22"
     type: vless
-    server: "50.7.249.66"
+    server: "144.31.2.33"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pl-new-ded2.moritech.net"
+    servername: "pl3.moritech.net"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_23"
+    type: vless
+    server: "144.31.5.3"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pl4.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_27"
+  - name: "🇵🇱_24"
     type: vless
     server: "2.59.253.251"
     port: 443
@@ -93,57 +108,13 @@ proxies:
       public-key: "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI"
       short-id: "db04ce8bdb8900f1"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_28"
+  - name: "🇵🇱_25"
     type: vless
-    server: "141.101.120.231"
-    port: 443
-    uuid: "3bb6fd82-3a15-eaea-6168-4dac2b70079e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nahan-fog-af01.dfghttr2012.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/sync"
-      headers:
-        Host: "nahan-fog-af01.dfghttr2012.workers.dev"
-  - name: "🇵🇱_29"
-    type: vless
-    server: "144.31.2.33"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl3.moritech.net"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_30"
-    type: vless
-    server: "54.37.136.194"
+    server: "145.239.30.17"
     port: 2053
-    uuid: "e8a432c8-5d84-49a5-b822-67ed761a58f9"
+    uuid: "9ef61079-6f7d-4911-9608-943da85d8e6f"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A"
-      short-id: "50ba05992b05c1c3"
-  - name: "🇵🇱_31"
-    type: vless
-    server: "185.193.30.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇵🇱_32"
+  - name: "🇵🇱_26"
     type: vless
     server: "82.118.22.161"
     port: 443
@@ -152,11 +123,58 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E"
       short-id: "fa3ea655619a3e78"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_33"
+  - name: "🇵🇱_27"
+    type: vless
+    server: "50.7.248.234"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-22.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_28"
+    type: vless
+    server: "193.34.213.10"
+    port: 443
+    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "plfsdd.dendiboss.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_29"
+    type: vless
+    server: "polka-dot.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "polka-dot.failspace.top"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_30"
+    type: vless
+    server: "pl4.moritech.net"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pl4.moritech.net"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇵🇱_31"
     type: vless
     server: "185.223.57.16"
     port: 33743
@@ -172,31 +190,18 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇵🇱_34"
+  - name: "🇵🇱_32"
     type: vless
-    server: "50.7.248.234"
+    server: "50.7.249.66"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "viper-22.moriarty-web.com"
+    servername: "pl-new-ded2.moritech.net"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_35"
-    type: vless
-    server: "83.168.71.216"
-    port: 443
-    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ads.x5.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
-      short-id: "2f49bccf11150ef2"
-  - name: "🇵🇱_36"
+  - name: "🇵🇱_33"
     type: vless
     server: "185.223.57.10"
     port: 33743
@@ -212,32 +217,34 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇵🇱_37"
+  - name: "🇵🇱_34"
     type: vless
-    server: "50.7.249.198"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "54.37.136.194"
+    port: 2053
+    uuid: "e8a432c8-5d84-49a5-b822-67ed761a58f9"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "polka.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_38"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A"
+      short-id: "50ba05992b05c1c3"
+  - name: "🇵🇱_35"
     type: vless
-    server: "222.167.248.156"
+    server: "cdn.oculon.online"
     port: 443
-    uuid: "7013d889-14f4-4475-a5ff-a5ecd992b522"
+    uuid: "5dff1842-c02f-4dd4-b1ad-2e597b99dc31"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.google.com"
+    servername: "cdn.oculon.online"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU"
-      short-id: ""
+      public-key: "LoNdOt7VfAYaPYIIZVqRb8ZkZf1PwKZOiJ93kn5SlTM"
+      short-id: "503f1935"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_39"
+  - name: "🇵🇱_36"
     type: vless
     server: "150.251.113.34"
     port: 443
@@ -251,88 +258,33 @@ proxies:
       public-key: "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8"
       short-id: "150a627d15154cf2"
     flow: "xtls-rprx-vision"
-  - name: "🇵🇱_40"
-    type: vless
-    server: "222.167.248.157"
+  - name: "🇵🇱_37"
+    type: ss
+    server: "54.36.174.140"
     port: 443
-    uuid: "7013d889-14f4-4475-a5ff-a5ecd992b522"
+    cipher: "chacha20-ietf-poly1305"
+    password: "mrs2e9a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_41"
-    type: vless
-    server: "141.101.120.129"
-    port: 80
-    uuid: "3087ca05-1a7c-45fa-aec9-805adeaedb1b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "tianshu.kevqwkt451.workers.dev"
-  - name: "🇵🇱_42"
-    type: vless
-    server: "polka.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "polka.failspace.top"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_43"
-    type: vless
-    server: "144.31.5.3"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pl4.moritech.net"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇵🇱_44"
-    type: trojan
-    server: "arianet.on1a.com"
-    port: 22445
-    password: "kkn5qxbfabmm5pko"
-    sni: "arianet.on1a.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇵🇱_45"
+  - name: "🇵🇱_38"
     type: ss
     server: "54.36.174.134"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "mrs2e9a"
     udp: true
-  - name: "🇵🇱_46"
+  - name: "🇵🇱_39"
     type: ss
     server: "146.59.116.19"
     port: 17000
     cipher: "aes-256-gcm"
     password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     udp: true
-  - name: "🇵🇱_47"
+  - name: "🇵🇱_40"
     type: ss
     server: "146.59.116.19"
     port: 17000
     cipher: "aes-256-gcm"
     password: "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    udp: true
-  - name: "🇵🇱_48"
-    type: ss
-    server: "54.36.174.140"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "mrs2e9a"
     udp: true
 
 proxy-groups:
@@ -376,6 +328,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -392,14 +348,6 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
   - name: "LB-CDN"
     type: load-balance
@@ -409,6 +357,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -425,14 +377,6 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -442,6 +386,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -458,14 +406,6 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
   - name: "FAST-CDN"
     type: url-test
@@ -474,6 +414,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -490,14 +434,6 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -507,6 +443,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -523,19 +463,15 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇵🇱_21"
+      - "🇵🇱_22"
+      - "🇵🇱_23"
+      - "🇵🇱_24"
       - "🇵🇱_25"
       - "🇵🇱_26"
       - "🇵🇱_27"
@@ -552,14 +488,6 @@ proxy-groups:
       - "🇵🇱_38"
       - "🇵🇱_39"
       - "🇵🇱_40"
-      - "🇵🇱_41"
-      - "🇵🇱_42"
-      - "🇵🇱_43"
-      - "🇵🇱_44"
-      - "🇵🇱_45"
-      - "🇵🇱_46"
-      - "🇵🇱_47"
-      - "🇵🇱_48"
 
 rules:
   - MATCH,PROXY-BEST

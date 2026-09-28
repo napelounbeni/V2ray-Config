@@ -63,45 +63,36 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇮🇷_1"
+  - name: "🇸🇰_1"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    server: "185.112.249.201"
+    port: 2053
+    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edgetunnel-4uw.pages.dev"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_2"
+        Host: "edgetunnel-4uw.pages.dev"
+  - name: "🇸🇰_2"
     type: vless
-    server: "bg.masterpgd.com"
-    port: 6016
-    uuid: "d207c6c8-a278-487c-b06e-f1fc89304e6d"
+    server: "185.112.249.201"
+    port: 8443
+    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
+    servername: "edgetunnel-4uw.pages.dev"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
-      short-id: "1779b108c9eb4da7"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇷_3"
-    type: vless
-    server: "bg.masterpgd.com"
-    port: 6016
-    uuid: "1cc6bd10-e414-4171-9220-09aaba23a6fa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk"
-      short-id: "1779b108c9eb4da7"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edgetunnel-4uw.pages.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -116,9 +107,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇮🇷_1"
-      - "🇮🇷_2"
-      - "🇮🇷_3"
+      - "🇸🇰_1"
+      - "🇸🇰_2"
 
 
 rules:
