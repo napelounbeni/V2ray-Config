@@ -63,74 +63,28 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇼_1"
+  - name: "🇹🇭_1"
     type: vless
-    server: "5.10.246.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/ws"
       headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_2"
+        Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_2"
     type: vless
-    server: "88.216.67.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "103.86.49.57"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
     udp: true
     network: ws
     ws-opts:
-      path: "/?ed=2560"
+      path: "/ws"
       headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_3"
-    type: vless
-    server: "88.216.66.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
-  - name: "🇨🇼_4"
-    type: vless
-    server: "88.216.67.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime05.workers.dev"
-  - name: "🇨🇼_5"
-    type: vless
-    server: "92.60.74.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇨🇼_6"
-    type: vless
-    server: "62.72.166.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime40.workers.dev"
+        Host: "aIs.SpEeDtEsT.nEt"
 
 proxy-groups:
   - name: "PROXY"
@@ -145,12 +99,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇼_1"
-      - "🇨🇼_2"
-      - "🇨🇼_3"
-      - "🇨🇼_4"
-      - "🇨🇼_5"
-      - "🇨🇼_6"
+      - "🇹🇭_1"
+      - "🇹🇭_2"
 
 
 rules:

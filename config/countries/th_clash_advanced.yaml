@@ -59,29 +59,28 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇾_3"
+  - name: "🇹🇭_3"
     type: vless
-    server: "47.254.251.37"
-    port: 443
-    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    server: "v2ray.simspeedup.com"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "edg-2oo.pages.dev"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/archives?ed=2560"
+      path: "/ws"
       headers:
-        Host: "edg-2oo.pages.dev"
-  - name: "🇲🇾_4"
-    type: trojan
-    server: "47.250.84.25"
-    port: 443
-    password: "5931134d1cde66bf83a54acdfebe7ab2"
-    sni: "moltbot.doctoroyy.net"
-    skip-cert-verify: true
+        Host: "aIs.SpEeDtEsT.nEt"
+  - name: "🇹🇭_4"
+    type: vless
+    server: "103.86.49.57"
+    port: 80
+    uuid: "3c52e091-6714-4915-949f-2149fe69951b"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "aIs.SpEeDtEsT.nEt"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -124,8 +123,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -135,8 +134,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -146,8 +145,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -156,8 +155,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -167,15 +166,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇾_3"
-      - "🇲🇾_4"
+      - "🇹🇭_3"
+      - "🇹🇭_4"
 
 rules:
   - MATCH,PROXY-BEST

@@ -78,20 +78,6 @@ proxies:
       short-id: "ad86e2d52ff40ebd"
   - name: "🇨🇭_2"
     type: vless
-    server: "179.43.152.211"
-    port: 443
-    uuid: "5acfdc39-5eb8-4c11-b92d-3e0f10c15abe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sw.denditop.site"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
-      short-id: "9c2378562188c3cb"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇭_3"
-    type: vless
     server: "45.90.59.15"
     port: 443
     uuid: "3950b45e-740d-4dca-ac95-505ec8534592"
@@ -104,27 +90,14 @@ proxies:
       public-key: "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY"
       short-id: "19253fae84102271"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇭_4"
-    type: trojan
-    server: "91.245.225.79"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇨🇭_5"
+  - name: "🇨🇭_3"
     type: ss
     server: "132.243.175.144"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     udp: true
-  - name: "🇨🇭_6"
+  - name: "🇨🇭_4"
     type: ss
     server: "132.243.175.144"
     port: 8388
@@ -149,8 +122,6 @@ proxy-groups:
       - "🇨🇭_2"
       - "🇨🇭_3"
       - "🇨🇭_4"
-      - "🇨🇭_5"
-      - "🇨🇭_6"
 
 
 rules:

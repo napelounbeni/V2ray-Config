@@ -77,6 +77,20 @@ proxies:
       public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
       short-id: ""
     flow: "xtls-rprx-vision"
+  - name: "🇦🇩_2"
+    type: vless
+    server: "conge.ggisopi.su"
+    port: 443
+    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "conge.ggisopi.su"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇩_1"
+      - "🇦🇩_2"
 
 
 rules:

@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_13"
+  - name: "🇺🇦_5"
+    type: vless
+    server: "179.254.109.54"
+    port: 443
+    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cosw.ggisopi.su"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇺🇦_6"
     type: vless
     server: "173.242.63.235"
     port: 8443
@@ -74,103 +88,7 @@ proxies:
       path: "/"
       headers:
         Host: "edgetunnel-4uw.pages.dev"
-  - name: "🇺🇦_14"
-    type: vless
-    server: "194.152.44.2"
-    port: 8880
-    uuid: "fb5058f5-a9ed-424e-9ed7-33d455438286"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "old-violet-a5ce.29-440.workers.dev"
-  - name: "🇺🇦_15"
-    type: vless
-    server: "104.143.223.82"
-    port: 2085
-    uuid: "86f50dfb-b153-4aef-a723-d77bc4cf8ee3"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_16"
-    type: vless
-    server: "179.254.109.54"
-    port: 443
-    uuid: "d0f0a880-0df1-0003-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cosw.ggisopi.su"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_17"
-    type: vless
-    server: "104.143.223.83"
-    port: 2085
-    uuid: "d0054d2b-3fea-486e-9592-ea6ce8d7b380"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_18"
-    type: vless
-    server: "13.143.186.29"
-    port: 443
-    uuid: "3e2591b2-4739-4c59-b540-344f0b6505ac"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "st2.megabitvpn.org"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "YTO2eLUPj_pLJijheLCvxg3d53o5BTNSjRSpJKCAa3k"
-      short-id: "f54ec8b46381247f"
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_19"
-    type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_20"
-    type: vless
-    server: "179.254.109.54"
-    port: 443
-    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cosw.ggisopi.su"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_21"
-    type: vless
-    server: "cosw.ggisopi.su"
-    port: 443
-    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cosw.ggisopi.su"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_22"
+  - name: "🇺🇦_7"
     type: vless
     server: "103.71.23.247"
     port: 443
@@ -185,28 +103,20 @@ proxies:
       path: "/cdn/packages/runtime-core.tar.gz"
       headers:
         Host: "hk.152568.xyz"
-  - name: "🇺🇦_23"
+  - name: "🇺🇦_8"
     type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_24"
-    type: trojan
-    server: "89.116.180.49"
+    server: "13.143.186.29"
     port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
+    uuid: "3e2591b2-4739-4c59-b540-344f0b6505ac"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    tls: true
+    skip-cert-verify: true
+    servername: "st2.megabitvpn.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "YTO2eLUPj_pLJijheLCvxg3d53o5BTNSjRSpJKCAa3k"
+      short-id: "f54ec8b46381247f"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -249,18 +159,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -270,18 +172,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -291,18 +185,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -311,18 +197,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -332,35 +210,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_13"
-      - "🇺🇦_14"
-      - "🇺🇦_15"
-      - "🇺🇦_16"
-      - "🇺🇦_17"
-      - "🇺🇦_18"
-      - "🇺🇦_19"
-      - "🇺🇦_20"
-      - "🇺🇦_21"
-      - "🇺🇦_22"
-      - "🇺🇦_23"
-      - "🇺🇦_24"
+      - "🇺🇦_5"
+      - "🇺🇦_6"
+      - "🇺🇦_7"
+      - "🇺🇦_8"
 
 rules:
   - MATCH,PROXY-BEST
