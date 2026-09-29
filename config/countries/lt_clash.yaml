@@ -65,6 +65,49 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "88.216.69.144"
+    port: 443
+    uuid: "50414e45-4c5f-5a45-5553-4d64f1370eeb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+    client-fingerprint: "ios"
+    network: ws
+    ws-opts:
+      path: "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0"
+      headers:
+        Host: "r5zenrelur2s.pqzdileiu8es.workers.dev"
+  - name: "🇱🇹_2"
+    type: vless
+    server: "62.77.158.1"
+    port: 443
+    uuid: "2eceaf2b-a775-5a9c-9990-dad2b3660fb6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "online.1c.ru"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs"
+      short-id: "6a"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_3"
+    type: vless
+    server: "94.176.234.161"
+    port: 443
+    uuid: "d448490d-4ee6-442f-80e1-5e1c186c4ce1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.intel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8"
+      short-id: "dbb2ef1c7c"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_4"
+    type: vless
     server: "144.31.243.120"
     port: 8443
     uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
@@ -78,35 +121,7 @@ proxies:
       path: "/"
       headers:
         Host: "edgetunnel-4uw.pages.dev"
-  - name: "🇱🇹_2"
-    type: vless
-    server: "84.32.97.14"
-    port: 443
-    uuid: "8d2341a3-13b8-4e5e-84e1-da1c4923149a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lt.denditop.site"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
-      short-id: "9c2378562188c3cb"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_3"
-    type: vless
-    server: "94.176.234.161"
-    port: 443
-    uuid: "d448490d-4ee6-442f-80e1-5e1c186c4ce1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.intel.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8"
-      short-id: "dbb2ef1c7c"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_4"
+  - name: "🇱🇹_5"
     type: vless
     server: "88.216.127.237"
     port: 443
@@ -120,7 +135,7 @@ proxies:
       public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
       short-id: "9dbdad98826e0fe8"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_5"
+  - name: "🇱🇹_6"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -152,6 +167,7 @@ proxy-groups:
       - "🇱🇹_3"
       - "🇱🇹_4"
       - "🇱🇹_5"
+      - "🇱🇹_6"
 
 
 rules:

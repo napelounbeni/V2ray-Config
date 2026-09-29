@@ -65,20 +65,6 @@ dns:
 proxies:
   - name: "🇭🇺_1"
     type: vless
-    server: "45.9.168.211"
-    port: 443
-    uuid: "7de5e70d-b95e-4019-affb-636151647b52"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "mzone.hu.3cloudhost.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇺_2"
-    type: vless
     server: "37.221.210.113"
     port: 443
     uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
@@ -92,7 +78,34 @@ proxies:
       path: "/cdn/packages/runtime-core.tar.gz"
       headers:
         Host: "hk.152568.xyz"
+  - name: "🇭🇺_2"
+    type: vless
+    server: "45.9.168.211"
+    port: 443
+    uuid: "7de5e70d-b95e-4019-affb-636151647b52"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "mzone.hu.3cloudhost.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇭🇺_3"
+    type: vless
+    server: "141.11.202.123"
+    port: 443
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇭🇺_4"
     type: trojan
     server: "185.225.68.232"
     port: 443
@@ -122,6 +135,7 @@ proxy-groups:
       - "🇭🇺_1"
       - "🇭🇺_2"
       - "🇭🇺_3"
+      - "🇭🇺_4"
 
 
 rules:

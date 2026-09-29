@@ -112,6 +112,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_5"
     type: vless
+    server: "87.192.47.10"
+    port: 52006
+    uuid: "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "grok.setlisting.ru"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_6"
+    type: vless
     server: "50.7.5.163"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -140,6 +151,7 @@ proxy-groups:
       - "🇮🇪_3"
       - "🇮🇪_4"
       - "🇮🇪_5"
+      - "🇮🇪_6"
 
 
 rules:

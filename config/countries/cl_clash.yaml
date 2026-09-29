@@ -63,36 +63,13 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇻🇳_1"
-    type: vless
-    server: "160.187.1.101"
-    port: 443
-    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
+  - name: "🇨🇱_1"
+    type: ss
+    server: "64.176.2.21"
+    port: 8388
+    cipher: "aes-256-gcm"
+    password: "xBStBEVqvGwHPocc"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "thus-k.netnode.cc.cd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/t.me/daily_free_vpn"
-      headers:
-        Host: "thus-k.netnode.cc.cd"
-  - name: "🇻🇳_2"
-    type: vless
-    server: "160.25.75.40"
-    port: 443
-    uuid: "c92e12ca-ea66-4785-8675-652b35134117"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "thus-k.netnode.cc.cd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/t.me/daily_free_vpn"
-      headers:
-        Host: "thus-k.netnode.cc.cd"
 
 proxy-groups:
   - name: "PROXY"
@@ -107,8 +84,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇻🇳_1"
-      - "🇻🇳_2"
+      - "🇨🇱_1"
 
 
 rules:

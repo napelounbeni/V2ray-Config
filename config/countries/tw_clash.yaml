@@ -65,7 +65,7 @@ dns:
 proxies:
   - name: "🇹🇼_1"
     type: vless
-    server: "59.125.69.24"
+    server: "60.248.219.54"
     port: 443
     uuid: "06e177f7-240d-4687-bd85-235505801a5e"
     udp: true
@@ -75,8 +75,6 @@ proxies:
     network: ws
     ws-opts:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
   - name: "🇹🇼_2"
     type: vless
     server: "60.248.219.78"
@@ -93,6 +91,20 @@ proxies:
         Host: "ty986gfazs.cainiaohub.xyz"
   - name: "🇹🇼_3"
     type: vless
+    server: "59.125.69.24"
+    port: 443
+    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_4"
+    type: vless
     server: "141.11.87.48"
     port: 8443
     uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
@@ -106,7 +118,7 @@ proxies:
       path: "/"
       headers:
         Host: "edgetunnel-4uw.pages.dev"
-  - name: "🇹🇼_4"
+  - name: "🇹🇼_5"
     type: vless
     server: "35.201.181.122"
     port: 443
@@ -119,20 +131,19 @@ proxies:
     reality-opts:
       public-key: "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0"
       short-id: "32f66f37df3f58d2"
-  - name: "🇹🇼_5"
+  - name: "🇹🇼_6"
     type: vless
-    server: "60.248.219.54"
-    port: 443
-    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    server: "118.167.207.194"
+    port: 24215
+    uuid: "19d5a678-8396-4e3b-93da-ece618d0e83a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
+    servername: "addons.mozilla.org"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
+      short-id: ""
 
 proxy-groups:
   - name: "PROXY"
@@ -152,6 +163,7 @@ proxy-groups:
       - "🇹🇼_3"
       - "🇹🇼_4"
       - "🇹🇼_5"
+      - "🇹🇼_6"
 
 
 rules:

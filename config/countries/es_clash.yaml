@@ -65,41 +65,42 @@ dns:
 proxies:
   - name: "🇪🇸_1"
     type: vless
-    server: "196.245.52.148"
-    port: 25155
-    uuid: "441a29b2-d9aa-47d5-9209-0a9191479f9f"
+    server: "46.28.71.247"
+    port: 443
+    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "safari"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "zZb_VVAbcGA7TeSMUBuD8MB2O3yAwpDSPGEfSEIUsX4"
-      short-id: "e4ba91df34fc3318"
+      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
+      short-id: "0dfc23fe80778c00"
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_2"
     type: vless
-    server: "185.232.205.66"
-    port: 443
-    uuid: "5dff1842-c02f-4dd4-b1ad-2e597b99dc31"
+    server: "185.18.250.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sp66.mech-pro.online"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
-      short-id: "16e0f049"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime47.workers.dev"
   - name: "🇪🇸_3"
     type: vless
-    server: "85.90.217.42"
+    server: "185.18.250.123"
     port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "85.90.217.42"
+    servername: "notls.lukongtou.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇪🇸_4"
     type: vless
     server: "212.227.235.66"
@@ -115,19 +116,31 @@ proxies:
       short-id: "29e8dcd2b37aaa7f"
   - name: "🇪🇸_5"
     type: vless
-    server: "46.28.71.247"
-    port: 443
-    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
+    server: "196.245.52.148"
+    port: 25535
+    uuid: "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "www.microsoft.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
-      short-id: "0dfc23fe80778c00"
-    flow: "xtls-rprx-vision"
+      public-key: "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4"
+      short-id: "7642ce57308852e7"
   - name: "🇪🇸_6"
+    type: vless
+    server: "es2.h1cloud.net"
+    port: 25535
+    uuid: "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.microsoft.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4"
+      short-id: "7642ce57308852e7"
+  - name: "🇪🇸_7"
     type: vless
     server: "193.238.154.5"
     port: 443
@@ -140,7 +153,63 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "cdn.v1.AssetService"
-  - name: "🇪🇸_7"
+  - name: "🇪🇸_8"
+    type: vless
+    server: "92.118.127.16"
+    port: 443
+    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sp1.extremumnews.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg"
+      short-id: "908563a721d9bdcd"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_9"
+    type: vless
+    server: "141.253.194.63"
+    port: 443
+    uuid: "9e3132b8-b595-444a-833a-2de44789f9d7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shephe.dpdns.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shephe.dpdns.org"
+  - name: "🇪🇸_10"
+    type: vless
+    server: "196.245.52.148"
+    port: 25155
+    uuid: "441a29b2-d9aa-47d5-9209-0a9191479f9f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "zZb_VVAbcGA7TeSMUBuD8MB2O3yAwpDSPGEfSEIUsX4"
+      short-id: "e4ba91df34fc3318"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_11"
+    type: trojan
+    server: "185.114.72.31"
+    port: 2053
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_12"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -153,7 +222,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_8"
+  - name: "🇪🇸_13"
     type: trojan
     server: "185.18.250.245"
     port: 443
@@ -166,35 +235,48 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_9"
+  - name: "🇪🇸_14"
+    type: trojan
+    server: "212.227.144.37"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "🇪🇸_15"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_10"
+  - name: "🇪🇸_16"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
-  - name: "🇪🇸_11"
-    type: ss
-    server: "108.181.121.226"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_12"
+  - name: "🇪🇸_17"
     type: ss
     server: "140.174.184.5"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "qItG8SueYQcP"
     udp: true
-  - name: "🇪🇸_13"
+  - name: "🇪🇸_18"
+    type: ss
+    server: "108.181.121.226"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_19"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -228,6 +310,12 @@ proxy-groups:
       - "🇪🇸_11"
       - "🇪🇸_12"
       - "🇪🇸_13"
+      - "🇪🇸_14"
+      - "🇪🇸_15"
+      - "🇪🇸_16"
+      - "🇪🇸_17"
+      - "🇪🇸_18"
+      - "🇪🇸_19"
 
 
 rules:

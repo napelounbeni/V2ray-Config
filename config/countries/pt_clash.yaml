@@ -72,11 +72,22 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ae93.layer.tel"
-    client-fingerprint: "safari"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "1mbH_m6yUCtJzgC_f25LOE7nexg7uTQMaUAgIbo_-2s"
       short-id: "eaf543e7ff60ea78"
     flow: "xtls-rprx-vision"
+  - name: "🇵🇹_2"
+    type: vless
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime54.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +103,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇵🇹_1"
+      - "🇵🇹_2"
 
 
 rules:
