@@ -1,0 +1,203 @@
+name: "Standard"
+mixed-port: 7890
+socks-port: 7891
+port: 7892
+allow-lan: true
+bind-address: '*'
+mode: global
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+secret: ""
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+keep-alive-interval: 15
+
+profile:
+  store-selected: true
+  store-fake-ip: false
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:5353
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.local'
+    - '*.lan'
+    - '*.localhost'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - 'time.*'
+    - 'time.*.com'
+    - 'connectivitycheck.gstatic.com'
+    - 'detectportal.firefox.com'
+    - 'captive.apple.com'
+    - 'www.msftncsi.com'
+    - 'cp.cloudflare.com'
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 94.140.14.14
+    - 64.6.64.6
+    - 84.200.69.80
+    - 76.76.19.19
+    - 8.26.56.26
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://doh.comodo.com/dns-query
+    - https://doh.mullvad.net/dns-query
+    - https://doh.dns.mullvad.net/dns-query
+    - https://freedns.controld.com/p0
+    - https://freedns.controld.com/family
+
+proxies:
+  - name: "🇻🇳_1"
+    type: vless
+    server: "node1.csnety.com"
+    port: 16932
+    uuid: "a8845dc9-40e0-4e85-818b-94574868944b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "VEU0MYsq_M-7zGhdZblxy6F4-S5MJC5CjVBsPyODln8"
+      short-id: "33b3cf8cfc2bc55d"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_2"
+    type: vless
+    server: "123.30.210.61"
+    port: 443
+    uuid: "d09411a6-7bbf-5da7-a856-3e425d7751ee"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "peer.pan.baidu.com"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "QbZBeFzqbP3XfrldMaIkdu-tr91zqBUIQ-WIkXM2p14"
+      short-id: "96e03e0f184639ef"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_3"
+    type: vless
+    server: "node1.csnety.com"
+    port: 37515
+    uuid: "689c6e4f-8974-4fdb-8a35-cf2959277448"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "amd.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "jIEVpWXN25gLetq-CuYXAVoerb7iHR0zqpu9xY_NRlE"
+      short-id: "b99cb140"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_4"
+    type: vless
+    server: "node1.csnety.com"
+    port: 17009
+    uuid: "a8845dc9-40e0-4e85-818b-94574868944b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4"
+      short-id: "c832c0"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_5"
+    type: vless
+    server: "node1.csnety.com"
+    port: 16934
+    uuid: "689c6e4f-8974-4fdb-8a35-cf2959277448"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "qnpbUyX8SEBJ-ztUYjVrdkNrb_FeKVC1mbFhga8kewk"
+      short-id: "ca026ad8d3"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_6"
+    type: vless
+    server: "node1.csnety.com"
+    port: 16933
+    uuid: "689c6e4f-8974-4fdb-8a35-cf2959277448"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ugdJ8G53iQM3omst-L-nWAA6ji4HyV71h9vQz-k_MSY"
+      short-id: "30899e403b"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_7"
+    type: vless
+    server: "node1.csnety.com"
+    port: 42607
+    uuid: "a8845dc9-40e0-4e85-818b-94574868944b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "WhgN8psbJxjHfvKVbQFc3L49JeWtobfxWmlmOzSalyk"
+      short-id: "9480e6a5"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_8"
+    type: vless
+    server: "node1.csnety.com"
+    port: 62697
+    uuid: "a8845dc9-40e0-4e85-818b-94574868944b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "JF9fbvgfWRuH7mq6quBM-tlNwCK5FzaBSwkiqZ-G6wU"
+      short-id: "b91c3c"
+    flow: "xtls-rprx-vision"
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Auto"
+
+  - name: "Auto"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 30
+    lazy: true
+    proxies:
+      - "🇻🇳_1"
+      - "🇻🇳_2"
+      - "🇻🇳_3"
+      - "🇻🇳_4"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
+
+
+rules:
+  - MATCH,PROXY

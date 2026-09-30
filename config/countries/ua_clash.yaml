@@ -79,29 +79,34 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇺🇦_2"
     type: vless
-    server: "cosw.ggisopi.su"
+    server: "103.71.23.247"
     port: 443
-    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
+    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cosw.ggisopi.su"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇺🇦_3"
-    type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
+    servername: "hk.152568.xyz"
+    client-fingerprint: "edge"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/cdn/packages/runtime-core.tar.gz"
       headers:
-        Host: "vms.lifetime09.workers.dev"
+        Host: "hk.152568.xyz"
+  - name: "🇺🇦_3"
+    type: vless
+    server: "45.135.235.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
   - name: "🇺🇦_4"
     type: vless
     server: "173.242.63.235"
@@ -119,50 +124,18 @@ proxies:
         Host: "edgetunnel-4uw.pages.dev"
   - name: "🇺🇦_5"
     type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_6"
-    type: vless
-    server: "103.71.23.247"
+    server: "cosw.ggisopi.su"
     port: 443
-    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
+    uuid: "d0f0a880-0df1-0005-bdf1-5669fb9483ce"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "hk.152568.xyz"
-    client-fingerprint: "edge"
-    network: ws
-    ws-opts:
-      path: "/cdn/packages/runtime-core.tar.gz"
-      headers:
-        Host: "hk.152568.xyz"
-  - name: "🇺🇦_7"
-    type: vless
-    server: "104.143.223.60"
-    port: 2085
-    uuid: "60f70a3c-6d58-4929-9b64-6bdf38eb5c95"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇺🇦_8"
-    type: trojan
-    server: "89.116.180.49"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    servername: "cosw.ggisopi.su"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -182,9 +155,6 @@ proxy-groups:
       - "🇺🇦_3"
       - "🇺🇦_4"
       - "🇺🇦_5"
-      - "🇺🇦_6"
-      - "🇺🇦_7"
-      - "🇺🇦_8"
 
 
 rules:

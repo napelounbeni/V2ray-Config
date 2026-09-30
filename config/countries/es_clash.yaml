@@ -72,34 +72,65 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "assets-es.pleiades.codes"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     network: grpc
     grpc-opts:
       grpc-service-name: "cdn.v1.AssetService"
   - name: "🇪🇸_2"
     type: vless
-    server: "46.28.71.247"
+    server: "34.175.107.233"
     port: 443
-    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
+    uuid: "c55c9880-2f9c-4ad6-bfc2-5054516bf613"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
-      short-id: "0dfc23fe80778c00"
-    flow: "xtls-rprx-vision"
+      public-key: "lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4"
+      short-id: "1c9e101e99bf86bb"
   - name: "🇪🇸_3"
     type: vless
-    server: "85.90.217.42"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    server: "185.18.250.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "85.90.217.42"
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
   - name: "🇪🇸_4"
+    type: vless
+    server: "34.175.19.8"
+    port: 443
+    uuid: "0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0"
+      short-id: "fe85cb6a5c84e64c"
+  - name: "🇪🇸_5"
+    type: vless
+    server: "212.227.235.66"
+    port: 2053
+    uuid: "ead0dd61-d398-40ad-80d6-a0e1e516d7d3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk"
+      short-id: "29e8dcd2b37aaa7f"
+  - name: "🇪🇸_6"
     type: vless
     server: "196.245.52.146"
     port: 25535
@@ -112,7 +143,34 @@ proxies:
     reality-opts:
       public-key: "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4"
       short-id: "7642ce57308852e7"
-  - name: "🇪🇸_5"
+  - name: "🇪🇸_7"
+    type: vless
+    server: "es2.h1cloud.net"
+    port: 25535
+    uuid: "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.microsoft.com"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4"
+      short-id: "7642ce57308852e7"
+  - name: "🇪🇸_8"
+    type: vless
+    server: "196.245.52.146"
+    port: 25185
+    uuid: "ab0d6441-912b-4ddd-b769-2199e1d4be7d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.samsung.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "mOn332qJ19UmQnNbIb7x8fljpahQLrKYSJOj2Ox9p24"
+      short-id: "4af6a8bd159ccb50"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_9"
     type: vless
     server: "141.253.194.63"
     port: 443
@@ -127,59 +185,35 @@ proxies:
       path: "/"
       headers:
         Host: "shephe.dpdns.org"
-  - name: "🇪🇸_6"
+  - name: "🇪🇸_10"
     type: vless
-    server: "212.227.235.66"
-    port: 2053
-    uuid: "ead0dd61-d398-40ad-80d6-a0e1e516d7d3"
+    server: "es2.h1cloud.net"
+    port: 25185
+    uuid: "ab0d6441-912b-4ddd-b769-2199e1d4be7d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
+    servername: "www.samsung.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk"
-      short-id: "29e8dcd2b37aaa7f"
-  - name: "🇪🇸_7"
-    type: trojan
-    server: "185.18.250.245"
+      public-key: "mOn332qJ19UmQnNbIb7x8fljpahQLrKYSJOj2Ox9p24"
+      short-id: "4af6a8bd159ccb50"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_11"
+    type: vless
+    server: "46.28.71.247"
     port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_8"
-    type: trojan
-    server: "185.114.72.31"
-    port: 2053
-    password: "humanity"
-    sni: "www.calmlunch.com"
+    tls: true
     skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_9"
-    type: trojan
-    server: "212.227.144.37"
-    port: 8443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_10"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
+      short-id: "0dfc23fe80778c00"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_12"
     type: trojan
     server: "185.18.250.252"
     port: 443
@@ -192,26 +226,12 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_11"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_12"
+  - name: "🇪🇸_13"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
-    udp: true
-  - name: "🇪🇸_13"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
     udp: true
   - name: "🇪🇸_14"
     type: ss
@@ -226,6 +246,20 @@ proxies:
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
+    udp: true
+  - name: "🇪🇸_16"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
+    udp: true
+  - name: "🇪🇸_17"
+    type: ss
+    server: "140.174.184.5"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "qItG8SueYQcP"
     udp: true
 
 proxy-groups:
@@ -256,6 +290,8 @@ proxy-groups:
       - "🇪🇸_13"
       - "🇪🇸_14"
       - "🇪🇸_15"
+      - "🇪🇸_16"
+      - "🇪🇸_17"
 
 
 rules:

@@ -63,21 +63,19 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇺🇿_1"
+  - name: "🇶🇦_1"
     type: vless
-    server: "94.154.128.132"
+    server: "34.18.161.225"
     port: 443
-    uuid: "04c808e2-0b59-47b0-a54b-32fc7ef1c902"
+    uuid: "b6f775c2-70fd-4247-8d12-82cac46fdd50"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "free.cndyw.ggff.net"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "pyip=bpb.yousef.isegaro.com"
-      headers:
-        Host: "free.cndyw.ggff.net"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ"
+      short-id: "c5426331173ca15c"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,7 +90,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇺🇿_1"
+      - "🇶🇦_1"
 
 
 rules:

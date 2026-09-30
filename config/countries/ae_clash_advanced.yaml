@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_8"
-    type: vless
-    server: "139.185.44.42"
-    port: 8443
-    uuid: "1a246091-937d-4e23-8e54-dd47da8360e1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.microsoft.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w"
-      short-id: "855834d3b002ad21"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇪_9"
+  - name: "🇦🇪_5"
     type: vless
     server: "146.70.102.82"
     port: 443
@@ -87,32 +73,7 @@ proxies:
       public-key: "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k"
       short-id: "002fb4ec7b3088cc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇪_10"
-    type: vless
-    server: "139.185.44.42"
-    port: 8443
-    uuid: "b0fa80ad-d759-4bcc-a0fd-f802d53b5a88"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.microsoft.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w"
-      short-id: "855834d3b002ad21"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇪_11"
-    type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime18.workers.dev"
-  - name: "🇦🇪_12"
+  - name: "🇦🇪_6"
     type: vless
     server: "84.235.244.108"
     port: 22573
@@ -123,31 +84,31 @@ proxies:
       path: "/"
       headers:
         Host: "uae.unixzone.us"
-  - name: "🇦🇪_13"
+  - name: "🇦🇪_7"
     type: vless
-    server: "157.228.155.198"
-    port: 443
-    uuid: "06d44c57-8e1a-41f4-b9c4-65d35869e078"
+    server: "139.185.44.42"
+    port: 8443
+    uuid: "1a246091-937d-4e23-8e54-dd47da8360e1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vimeo.com"
+    servername: "www.microsoft.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "GYuzgp3g96ka0Z2_qGCzFl-ueHyAr7HCc3SV5ZdXa00"
-      short-id: "ec8febd05ca880a0"
+      public-key: "VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w"
+      short-id: "855834d3b002ad21"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇪_14"
+  - name: "🇦🇪_8"
     type: vless
-    server: "77.232.140.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
     udp: true
     network: ws
     ws-opts:
-      path: "/?ed"
+      path: "/"
       headers:
-        Host: "vms.lifetime61.workers.dev"
+        Host: "uae.unixzone.us"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -190,13 +151,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -206,13 +164,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -222,13 +177,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -237,13 +189,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -253,25 +202,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
-      - "🇦🇪_13"
-      - "🇦🇪_14"
 
 rules:
   - MATCH,PROXY-BEST

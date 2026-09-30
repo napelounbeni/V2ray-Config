@@ -65,26 +65,30 @@ dns:
 proxies:
   - name: "🇮🇷_1"
     type: vless
-    server: "45.131.4.192"
-    port: 80
-    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    server: "109.122.251.253"
+    port: 12345
+    uuid: "d02fcca7-e77f-42f1-94bf-5545eec68f0a"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "silent-paper-fa57.fipiyag989.workers.dev"
-  - name: "🇮🇷_2"
-    type: trojan
-    server: "45.131.4.118"
-    port: 443
-    password: "f18d6149-e214-8554-e737-f7523c8b2eea"
-    sni: "0403.infinityconfig4.workers.dev"
+    tls: true
     skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "no5OXXraenpTo6GxibdtA4fOFTMOmt4d6Dn2HPfUiAQ"
+      short-id: "129faa21c67fd282"
+  - name: "🇮🇷_2"
+    type: vless
+    server: "g4.haxat.bestvbest.ir"
+    port: 56126
+    uuid: "ce4b2104-f1fe-4216-ad67-8c21869b9118"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/sync"
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk"
+      short-id: "228b68f87a662053"
 
 proxy-groups:
   - name: "PROXY"

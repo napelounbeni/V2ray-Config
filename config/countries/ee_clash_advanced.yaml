@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇪_9"
+  - name: "🇪🇪_7"
+    type: vless
+    server: "95.85.224.51"
+    port: 443
+    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
+      short-id: "a696de84963656de"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_8"
     type: vless
     server: "201.7.25.126"
     port: 24446
@@ -75,21 +89,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "telegram-bridge"
-  - name: "🇪🇪_10"
-    type: vless
-    server: "179.254.126.173"
-    port: 443
-    uuid: "7013d889-14f4-4475-a5ff-a5ecd992b522"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_11"
+  - name: "🇪🇪_9"
     type: vless
     server: "94.183.170.135"
     port: 8443
@@ -99,21 +99,7 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy4.lockdwn.com"
     client-fingerprint: "firefox"
-  - name: "🇪🇪_12"
-    type: vless
-    server: "95.85.224.51"
-    port: 443
-    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "max.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
-      short-id: "a696de84963656de"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_13"
+  - name: "🇪🇪_10"
     type: vless
     server: "94.183.170.135"
     port: 443
@@ -124,7 +110,21 @@ proxies:
       path: "/"
       headers:
         Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_14"
+  - name: "🇪🇪_11"
+    type: vless
+    server: "45.80.108.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2fp=chrome"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇪🇪_12"
     type: trojan
     server: "109.206.241.10"
     port: 449
@@ -132,30 +132,6 @@ proxies:
     sni: "russiapower.accesscam.org"
     skip-cert-verify: true
     udp: true
-  - name: "🇪🇪_15"
-    type: trojan
-    server: "185.36.141.81"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "🇪🇪_16"
-    type: trojan
-    server: "80.77.25.142"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -198,14 +174,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -215,14 +189,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -232,14 +204,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -248,14 +218,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -265,27 +233,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇪_7"
+      - "🇪🇪_8"
       - "🇪🇪_9"
       - "🇪🇪_10"
       - "🇪🇪_11"
       - "🇪🇪_12"
-      - "🇪🇪_13"
-      - "🇪🇪_14"
-      - "🇪🇪_15"
-      - "🇪🇪_16"
 
 rules:
   - MATCH,PROXY-BEST
