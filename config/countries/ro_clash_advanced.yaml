@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇷🇴_6"
-    type: vless
-    server: "185.100.85.72"
-    port: 10443
-    uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "romania.cdn-europe.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "oTSZ8s1btblYQ-19eX0u8wQePodvAld45JfSEwnfHR0"
-      short-id: "624ef62512cfcbef"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇴_7"
+  - name: "🇷🇴_12"
     type: vless
     server: "146.70.124.85"
     port: 443
@@ -87,21 +73,7 @@ proxies:
       public-key: "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE"
       short-id: "fe24f8a0a560056e"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇴_8"
-    type: vless
-    server: "romania.cdn-europe.org"
-    port: 10443
-    uuid: "d7c94b82-657a-4bb7-9b24-2ae566669835"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "romania.cdn-europe.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "oTSZ8s1btblYQ-19eX0u8wQePodvAld45JfSEwnfHR0"
-      short-id: "624ef62512cfcbef"
-    flow: "xtls-rprx-vision"
-  - name: "🇷🇴_9"
+  - name: "🇷🇴_13"
     type: vless
     server: "46.28.67.55"
     port: 443
@@ -115,13 +87,68 @@ proxies:
       public-key: "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU"
       short-id: "d06d78e974491b6e"
     flow: "xtls-rprx-vision"
-  - name: "🇷🇴_10"
-    type: trojan
-    server: "38.180.35.145"
+  - name: "🇷🇴_14"
+    type: ss
+    server: "80.97.27.52"
+    port: 112
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_15"
+    type: ss
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
-    password: "600421cf-11d7-429f-a65b-c30397f1bc03"
-    sni: "bu2.freeguard.org"
-    skip-cert-verify: true
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
+    udp: true
+  - name: "🇷🇴_16"
+    type: ss
+    server: "80.97.27.52"
+    port: 113
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_17"
+    type: ss
+    server: "80.97.27.52"
+    port: 116
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_18"
+    type: ss
+    server: "80.97.27.52"
+    port: 114
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_19"
+    type: ss
+    server: "80.97.27.52"
+    port: 111
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_20"
+    type: ss
+    server: "154.46.31.106"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
+    udp: true
+  - name: "🇷🇴_21"
+    type: ss
+    server: "80.97.27.52"
+    port: 115
+    cipher: "chacha20-ietf-poly1305"
+    password: "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    udp: true
+  - name: "🇷🇴_22"
+    type: ss
+    server: "bogging-eyeteeth-fly.freesocks.work"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
 
 proxy-groups:
@@ -165,11 +192,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
   - name: "LB-CDN"
     type: load-balance
@@ -179,11 +212,17 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -193,11 +232,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
   - name: "FAST-CDN"
     type: url-test
@@ -206,11 +251,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -220,21 +271,33 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇷🇴_6"
-      - "🇷🇴_7"
-      - "🇷🇴_8"
-      - "🇷🇴_9"
-      - "🇷🇴_10"
+      - "🇷🇴_12"
+      - "🇷🇴_13"
+      - "🇷🇴_14"
+      - "🇷🇴_15"
+      - "🇷🇴_16"
+      - "🇷🇴_17"
+      - "🇷🇴_18"
+      - "🇷🇴_19"
+      - "🇷🇴_20"
+      - "🇷🇴_21"
+      - "🇷🇴_22"
 
 rules:
   - MATCH,PROXY-BEST

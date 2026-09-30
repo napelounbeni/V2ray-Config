@@ -78,21 +78,6 @@ proxies:
       path: "/"
       headers:
         Host: "edgetunnel-4uw.pages.dev"
-  - name: "🇸🇰_2"
-    type: vless
-    server: "185.112.249.201"
-    port: 2053
-    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "edgetunnel-4uw.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "edgetunnel-4uw.pages.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -108,7 +93,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇸🇰_1"
-      - "🇸🇰_2"
 
 
 rules:

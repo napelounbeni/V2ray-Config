@@ -65,6 +65,21 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
+    server: "185.163.45.40"
+    port: 443
+    uuid: "8344360f-0349-4784-a19f-33fd92e89389"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "api.w2m.ink"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/v2"
+      headers:
+        Host: "api.w2m.ink"
+  - name: "🇲🇩_2"
+    type: vless
     server: "80.96.109.15"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -89,6 +104,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
 
 
 rules:

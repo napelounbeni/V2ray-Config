@@ -65,18 +65,41 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    server: "93.190.9.36"
+    port: 3090
+    uuid: "64777aa1-39e7-4133-a682-8c2dc67c0a93"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇹🇷_2"
+    type: vless
+    server: "93.190.9.33"
+    port: 3090
+    uuid: "60f70a3c-6d58-4929-9b64-6bdf38eb5c95"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_3"
+    type: vless
+    server: "93.190.8.143"
+    port: 3090
+    uuid: "64777aa1-39e7-4133-a682-8c2dc67c0a93"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_4"
+    type: vless
+    server: "93.190.9.162"
+    port: 3090
+    uuid: "0436b522-fba1-4424-8881-808594916247"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_5"
     type: vless
     server: "78.135.73.47"
     port: 443
@@ -90,7 +113,100 @@ proxies:
       public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
       short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_3"
+  - name: "🇹🇷_6"
+    type: vless
+    server: "19990ed1bb252449.ironly4l.ir"
+    port: 443
+    uuid: "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage-p2.googleapis.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew"
+      short-id: "37d86205006fe1fb"
+  - name: "🇹🇷_7"
+    type: vless
+    server: "93.190.9.223"
+    port: 3090
+    uuid: "08f0b2a1-b213-4d03-8309-d7c766cfca84"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_8"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
+  - name: "🇹🇷_9"
+    type: vless
+    server: "93.190.8.92"
+    port: 3090
+    uuid: "08f0b2a1-b213-4d03-8309-d7c766cfca84"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_10"
+    type: vless
+    server: "93.190.9.135"
+    port: 3090
+    uuid: "0436b522-fba1-4424-8881-808594916247"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_11"
+    type: vless
+    server: "93.114.98.247"
+    port: 443
+    uuid: "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage-p2.googleapis.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew"
+      short-id: "37d86205006fe1fb"
+  - name: "🇹🇷_12"
+    type: vless
+    server: "93.190.8.165"
+    port: 3090
+    uuid: "64777aa1-39e7-4133-a682-8c2dc67c0a93"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_13"
+    type: vless
+    server: "93.190.9.175"
+    port: 3090
+    uuid: "b538aad1-d748-42a9-b761-005ceb3dd643"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_14"
+    type: vless
+    server: "93.190.8.162"
+    port: 3090
+    uuid: "b538aad1-d748-42a9-b761-005ceb3dd643"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_15"
     type: vless
     server: "19990ed1bb252449.IROnlY4l.Ir"
     port: 443
@@ -103,21 +219,64 @@ proxies:
     reality-opts:
       public-key: "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew"
       short-id: "37d86205006fe1fb"
-  - name: "🇹🇷_4"
+  - name: "🇹🇷_16"
     type: vless
-    server: "130.94.0.228"
+    server: "93.190.9.160"
+    port: 3090
+    uuid: "b538aad1-d748-42a9-b761-005ceb3dd643"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_17"
+    type: vless
+    server: "93.190.9.27"
+    port: 3090
+    uuid: "b538aad1-d748-42a9-b761-005ceb3dd643"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_18"
+    type: vless
+    server: "93.190.8.92"
+    port: 3090
+    uuid: "0436b522-fba1-4424-8881-808594916247"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_19"
+    type: vless
+    server: "87.120.106.175"
     port: 443
-    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    uuid: "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "edgetunnel-4uw.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "edgetunnel-4uw.pages.dev"
+    servername: "storage-p2.googleapis.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew"
+      short-id: "37d86205006fe1fb"
+  - name: "🇹🇷_20"
+    type: vless
+    server: "93.190.8.145"
+    port: 3090
+    uuid: "64777aa1-39e7-4133-a682-8c2dc67c0a93"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_21"
+    type: vless
+    server: "93.190.9.33"
+    port: 3090
+    uuid: "64777aa1-39e7-4133-a682-8c2dc67c0a93"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   - name: "PROXY"
@@ -136,6 +295,23 @@ proxy-groups:
       - "🇹🇷_2"
       - "🇹🇷_3"
       - "🇹🇷_4"
+      - "🇹🇷_5"
+      - "🇹🇷_6"
+      - "🇹🇷_7"
+      - "🇹🇷_8"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
+      - "🇹🇷_11"
+      - "🇹🇷_12"
+      - "🇹🇷_13"
+      - "🇹🇷_14"
+      - "🇹🇷_15"
+      - "🇹🇷_16"
+      - "🇹🇷_17"
+      - "🇹🇷_18"
+      - "🇹🇷_19"
+      - "🇹🇷_20"
+      - "🇹🇷_21"
 
 
 rules:

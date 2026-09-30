@@ -59,15 +59,47 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_2"
+  - name: "🇨🇿_5"
     type: vless
-    server: "153.76.185.155"
+    server: "153.76.185.179"
     port: 3090
-    uuid: "43b15d01-8cc5-40ea-b42a-cb1a727224dc"
+    uuid: "08f0b2a1-b213-4d03-8309-d7c766cfca84"
     udp: true
     network: grpc
     grpc-opts:
       grpc-service-name: "vless"
+  - name: "🇨🇿_6"
+    type: vless
+    server: "153.76.185.106"
+    port: 3090
+    uuid: "08f0b2a1-b213-4d03-8309-d7c766cfca84"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_7"
+    type: vless
+    server: "194.87.59.21"
+    port: 2085
+    uuid: "b538aad1-d748-42a9-b761-005ceb3dd643"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_8"
+    type: vless
+    server: "45.146.90.85"
+    port: 443
+    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
+      short-id: "72104d27a0f5f62e"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -110,7 +142,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -120,7 +155,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -130,7 +168,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -139,7 +180,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -149,13 +193,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_2"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
 
 rules:
   - MATCH,PROXY-BEST

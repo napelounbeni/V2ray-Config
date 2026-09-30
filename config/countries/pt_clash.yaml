@@ -65,18 +65,15 @@ dns:
 proxies:
   - name: "🇵🇹_1"
     type: vless
-    server: "171.22.129.93"
-    port: 443
-    uuid: "87838381-724e-4637-935a-3c74ad655991"
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ae93.layer.tel"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "1mbH_m6yUCtJzgC_f25LOE7nexg7uTQMaUAgIbo_-2s"
-      short-id: "eaf543e7ff60ea78"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime54.workers.dev"
 
 proxy-groups:
   - name: "PROXY"

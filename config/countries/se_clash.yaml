@@ -65,83 +65,19 @@ dns:
 proxies:
   - name: "🇸🇪_1"
     type: vless
-    server: "31.207.7.74"
+    server: "31.76.3.34"
     port: 443
-    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    uuid: "0d628b17-8ac4-49b9-a422-6b99077bfdf6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pkg.go.dev"
-    client-fingerprint: "firefox"
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
-      short-id: "457ae5b8bef4d1b3"
+      public-key: "CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM"
+      short-id: "8a2b3c4d5e6f7012"
     flow: "xtls-rprx-vision"
   - name: "🇸🇪_2"
-    type: vless
-    server: "62.60.159.81"
-    port: 2053
-    uuid: "fc00adfb-232a-46ce-8b93-0c70e516aa8a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.samsung.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw"
-      short-id: "d0ea1847066af5a6"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpce5bb9e71"
-  - name: "🇸🇪_3"
-    type: vless
-    server: "212.147.245.198"
-    port: 443
-    uuid: "042d2d08-2973-5d10-97ad-3b75f16bbe54"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "online.1c.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI"
-      short-id: "330a464a00000000"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_4"
-    type: vless
-    server: "5.157.10.148"
-    port: 443
-    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "surstreming.vvzzkontaktezzvv.garden"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
-      short-id: "fb442438e2223836"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_5"
-    type: vless
-    server: "193.148.59.178"
-    port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_6"
-    type: vless
-    server: "51.170.181.33"
-    port: 62145
-    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-    udp: true
-  - name: "🇸🇪_7"
     type: vless
     server: "79.141.174.147"
     port: 33743
@@ -157,7 +93,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
-  - name: "🇸🇪_8"
+  - name: "🇸🇪_3"
     type: vless
     server: "surstreming.vvzzkontaktezzvv.garden"
     port: 443
@@ -171,7 +107,65 @@ proxies:
       public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
       short-id: "fb442438e2223836"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_9"
+  - name: "🇸🇪_4"
+    type: vless
+    server: "62.60.159.81"
+    port: 2053
+    uuid: "fc00adfb-232a-46ce-8b93-0c70e516aa8a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.samsung.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw"
+      short-id: "d0ea1847066af5a6"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpce5bb9e71"
+  - name: "🇸🇪_5"
+    type: vless
+    server: "31.207.7.74"
+    port: 443
+    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pkg.go.dev"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
+      short-id: "457ae5b8bef4d1b3"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_6"
+    type: vless
+    server: "212.147.245.198"
+    port: 443
+    uuid: "042d2d08-2973-5d10-97ad-3b75f16bbe54"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "online.1c.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI"
+      short-id: "330a464a00000000"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_7"
+    type: vless
+    server: "5.157.10.148"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "surstreming.vvzzkontaktezzvv.garden"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
+      short-id: "fb442438e2223836"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_8"
     type: vless
     server: "193.42.39.10"
     port: 33743
@@ -187,6 +181,20 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "TunService"
+  - name: "🇸🇪_9"
+    type: vless
+    server: "193.148.59.178"
+    port: 443
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
+    flow: "xtls-rprx-vision"
   - name: "🇸🇪_10"
     type: trojan
     server: "77.221.138.199"
