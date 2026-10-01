@@ -65,183 +65,29 @@ dns:
 proxies:
   - name: "🇬🇧_1"
     type: vless
-    server: "66.90.104.42"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "45.12.30.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime28.workers.dev"
   - name: "🇬🇧_2"
     type: vless
-    server: "50.7.227.251"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "91.193.59.32"
+    port: 2083
+    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "uk-dedic-new-1.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    servername: "vlsovip.1d.mom"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "🇬🇧_3"
-    type: vless
-    server: "91.193.58.218"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_4"
-    type: vless
-    server: "91.193.58.132"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_5"
-    type: vless
-    server: "91.193.58.37"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_6"
-    type: vless
-    server: "91.193.58.80"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_7"
-    type: vless
-    server: "91.193.58.99"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_8"
-    type: vless
-    server: "186.190.211.188"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "186.190.211.188"
-  - name: "🇬🇧_9"
-    type: vless
-    server: "45.85.118.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_10"
-    type: vless
-    server: "213.178.141.33"
-    port: 443
-    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "germa12.ggisopi.su"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_11"
-    type: vless
-    server: "91.193.58.57"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_12"
-    type: vless
-    server: "91.193.58.118"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_13"
-    type: vless
-    server: "91.193.58.15"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_14"
     type: vless
     server: "91.193.58.45"
     port: 2096
@@ -256,47 +102,9 @@ proxies:
       path: "/free-server.techsonic.dev"
       headers:
         Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_15"
+  - name: "🇬🇧_4"
     type: vless
-    server: "3.9.135.156"
-    port: 51847
-    uuid: "391a01e9-b664-407b-9158-610fab3f5920"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.tesla.com"
-    reality-opts:
-      public-key: "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc"
-      short-id: "0eec442e7b34d2f2"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_16"
-    type: vless
-    server: "57.129.132.223"
-    port: 80
-    uuid: "9e20b04d-5a81-4e16-b421-01e502f0aac6"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "google.com"
-  - name: "🇬🇧_17"
-    type: vless
-    server: "83.147.18.3"
-    port: 443
-    uuid: "9f61cdf4-810d-4052-bbc7-2da0c8e20104"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA"
-      short-id: "fd8cf7e1173f0edb"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_18"
-    type: vless
-    server: "5.10.215.7"
+    server: "45.85.118.7"
     port: 8443
     uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
@@ -309,408 +117,7 @@ proxies:
       path: "/dula?Telegram-WangCai2"
       headers:
         Host: "speed.dulacloud.store"
-  - name: "🇬🇧_19"
-    type: vless
-    server: "91.193.58.157"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_20"
-    type: vless
-    server: "23.81.34.204"
-    port: 443
-    uuid: "99955907-9070-46f0-a200-9c7a0b9d74fe"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s"
-      short-id: "b19b017d6f453873"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_21"
-    type: vless
-    server: "66.90.105.211"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇬🇧_22"
-    type: vless
-    server: "5.254.8.148"
-    port: 443
-    uuid: "7b93e3f1-c5bf-43cd-8fcd-e0e745c92d10"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "finporkzov.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "_0N3gACBkKvGKTh0q5-dmt-XqSHB3xfEHSANRXu-U0I"
-      short-id: "f00f58383241c807"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_23"
-    type: vless
-    server: "91.193.58.198"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_24"
-    type: vless
-    server: "50.7.226.174"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "en-new.moriarty-web.com"
-    client-fingerprint: "edge"
-    flow: "xtls-rprx-vision-udp443"
-  - name: "🇬🇧_25"
-    type: vless
-    server: "46.250.240.80"
-    port: 2053
-    uuid: "948df76f-505d-4608-9c76-a933ee3ccc76"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E"
-      short-id: "4cc9dc65f7770115"
-  - name: "🇬🇧_26"
-    type: vless
-    server: "166.1.155.83"
-    port: 443
-    uuid: "f1bae2c1-f354-49d6-8ec2-43ea1cc2cd95"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "UDlM3OadeskS_9U-bhn4HWiH0BijsT22otsv-FzJERU"
-      short-id: "90980caa18ed"
-  - name: "🇬🇧_27"
-    type: vless
-    server: "66.90.104.43"
-    port: 2083
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇬🇧_28"
-    type: vless
-    server: "91.193.58.122"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_29"
-    type: vless
-    server: "82.39.171.12"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_30"
-    type: vless
-    server: "185.156.19.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_31"
-    type: vless
-    server: "45.152.65.100"
-    port: 443
-    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "edgetunnel-4uw.pages.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "edgetunnel-4uw.pages.dev"
-  - name: "🇬🇧_32"
-    type: vless
-    server: "91.193.58.108"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_33"
-    type: vless
-    server: "185.162.228.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_34"
-    type: vless
-    server: "91.193.58.250"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_35"
-    type: vless
-    server: "91.193.58.61"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_36"
-    type: vless
-    server: "45.12.30.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2fp=chrome"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇬🇧_37"
-    type: vless
-    server: "91.193.58.5"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_38"
-    type: vless
-    server: "91.193.58.131"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_39"
-    type: vless
-    server: "51.89.194.151"
-    port: 2053
-    uuid: "8e790f25-1d71-4601-9fb0-d503931dcfca"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0"
-      short-id: "d051f678212f9d54"
-  - name: "🇬🇧_40"
-    type: vless
-    server: "91.193.58.140"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_41"
-    type: vless
-    server: "179.254.163.11"
-    port: 6443
-    uuid: "aef06aad-8e97-4452-9257-6142b5b1ceb7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "decemberfest.elfhost.ru"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "uBO1mns4uGeh76lQ5uDYIOSf3kU2mCxxpIWcZ0Z7uG8"
-      short-id: "c94d1df67d60bd29"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇬🇧_42"
-    type: vless
-    server: "50.7.226.171"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "viper-21.moriarty-web.com"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_43"
-    type: vless
-    server: "91.193.58.249"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_44"
-    type: vless
-    server: "91.193.58.52"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_45"
-    type: vless
-    server: "82.39.171.142"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_46"
-    type: vless
-    server: "46.250.250.149"
-    port: 2053
-    uuid: "b4caaf57-ad77-4948-a6f5-51b3513799bf"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M"
-      short-id: "9922313fffed1c63"
-  - name: "🇬🇧_47"
-    type: vless
-    server: "164.37.100.195"
-    port: 443
-    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tomaz1337shellbuy.vvzzkontaktezzvv.garden"
-    reality-opts:
-      public-key: "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk"
-      short-id: "2e124af254a65e7c"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇧_48"
+  - name: "🇬🇧_5"
     type: vless
     server: "141.101.122.147"
     port: 443
@@ -725,28 +132,61 @@ proxies:
       path: "/ws"
       headers:
         Host: "a.cwvps.eu.org"
-  - name: "🇬🇧_49"
+  - name: "🇬🇧_6"
     type: vless
-    server: "91.193.58.231"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    server: "164.38.155.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
+    servername: "speed.dulacloud.store"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/free-server.techsonic.dev"
+      path: "/dula?Telegram-WangCai2"
       headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_50"
+        Host: "speed.dulacloud.store"
+  - name: "🇬🇧_7"
     type: vless
-    server: "164.37.111.117"
-    port: 2020
-    uuid: "0dbacd35-9159-4648-89ac-c38b741567a8"
+    server: "91.193.58.23"
+    port: 80
+    uuid: "f2d55510-fa3c-4e3b-adfc-2d96fa399c19"
     udp: true
-  - name: "🇬🇧_51"
+    network: ws
+    ws-opts:
+      path: "/pyip=Telegram🇨🇳 @WangCai2"
+      headers:
+        Host: "plain-darkness-90ea.259.workers.dev"
+  - name: "🇬🇧_8"
+    type: vless
+    server: "5.254.8.148"
+    port: 443
+    uuid: "7b93e3f1-c5bf-43cd-8fcd-e0e745c92d10"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "finporkzov.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "_0N3gACBkKvGKTh0q5-dmt-XqSHB3xfEHSANRXu-U0I"
+      short-id: "f00f58383241c807"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_9"
+    type: vless
+    server: "217.179.221.82"
+    port: 443
+    uuid: "ee78dc0c-fcf8-4651-92a5-a7ae1476f2a4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ve.cishosts.org"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "W7zjZJiEbAN6b-KkXWtk5dJ513BFDeKMSxgdiCUOWBo"
+      short-id: "a1ab5a56bcca"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_10"
     type: vless
     server: "50.7.226.172"
     port: 443
@@ -757,9 +197,9 @@ proxies:
     servername: "viper-21.moriarty-web.com"
     client-fingerprint: "chrome"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇧_52"
+  - name: "🇬🇧_11"
     type: vless
-    server: "91.193.58.31"
+    server: "91.193.58.250"
     port: 2096
     uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
@@ -772,54 +212,9 @@ proxies:
       path: "/free-server.techsonic.dev"
       headers:
         Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_53"
+  - name: "🇬🇧_12"
     type: vless
-    server: "91.193.58.136"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_54"
-    type: vless
-    server: "91.193.58.255"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_55"
-    type: vless
-    server: "91.193.58.27"
-    port: 2096
-    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "free-server.techsonic.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/free-server.techsonic.dev"
-      headers:
-        Host: "free-server.techsonic.dev"
-  - name: "🇬🇧_56"
-    type: vless
-    server: "50.7.226.173"
+    server: "50.7.226.171"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
@@ -828,7 +223,142 @@ proxies:
     servername: "viper-21.moriarty-web.com"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇧_57"
+  - name: "🇬🇧_13"
+    type: vless
+    server: "91.193.58.157"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_14"
+    type: vless
+    server: "3.9.135.156"
+    port: 51847
+    uuid: "391a01e9-b664-407b-9158-610fab3f5920"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.tesla.com"
+    reality-opts:
+      public-key: "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc"
+      short-id: "0eec442e7b34d2f2"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_15"
+    type: vless
+    server: "57.129.132.223"
+    port: 80
+    uuid: "dbb78c94-9f87-4d7d-b945-2000b60352fd"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net"
+  - name: "🇬🇧_16"
+    type: vless
+    server: "91.193.58.93"
+    port: 443
+    uuid: "9419f782-b18e-4c4b-ae95-a7a279fd021f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jamph131-1228.pages.dev"
+    network: ws
+    ws-opts:
+      path: "Telegram-WangCai2🇨🇳"
+      headers:
+        Host: "jamph131-1228.pages.dev"
+  - name: "🇬🇧_17"
+    type: vless
+    server: "91.193.58.52"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_18"
+    type: vless
+    server: "45.152.65.100"
+    port: 443
+    uuid: "fdc48be3-a615-41ac-8bd1-ed844c931048"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "edgetunnel-4uw.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edgetunnel-4uw.pages.dev"
+  - name: "🇬🇧_19"
+    type: vless
+    server: "185.162.229.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
+  - name: "🇬🇧_20"
+    type: vless
+    server: "91.193.58.5"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_21"
+    type: vless
+    server: "57.129.130.57"
+    port: 52014
+    uuid: "db353feb-c115-4f29-9562-64c2e479bbfa"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+  - name: "🇬🇧_22"
+    type: vless
+    server: "185.162.229.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
+  - name: "🇬🇧_23"
     type: vless
     server: "91.193.58.85"
     port: 2096
@@ -843,168 +373,928 @@ proxies:
       path: "/free-server.techsonic.dev"
       headers:
         Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_24"
+    type: vless
+    server: "91.193.58.140"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_25"
+    type: vless
+    server: "164.37.100.195"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tomaz1337shellbuy.vvzzkontaktezzvv.garden"
+    reality-opts:
+      public-key: "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk"
+      short-id: "2e124af254a65e7c"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_26"
+    type: vless
+    server: "91.193.58.118"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_27"
+    type: vless
+    server: "66.90.105.211"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇬🇧_28"
+    type: vless
+    server: "91.193.58.249"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_29"
+    type: vless
+    server: "91.193.58.131"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_30"
+    type: vless
+    server: "91.193.58.108"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_31"
+    type: vless
+    server: "179.254.163.11"
+    port: 443
+    uuid: "aef06aad-8e97-4452-9257-6142b5b1ceb7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "decemberfest.elfhost.ru"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "FvxhTol6CtmTv7BQZANpoRGBRMUIrNSsLbTUe4x8JG8"
+      short-id: "a4b32f5132c11d9b"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_32"
+    type: vless
+    server: "50.7.226.174"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "en-new.moriarty-web.com"
+    client-fingerprint: "edge"
+    flow: "xtls-rprx-vision-udp443"
+  - name: "🇬🇧_33"
+    type: vless
+    server: "129.151.64.169"
+    port: 31867
+    uuid: "141f747a-7c73-4b13-ae63-a20b56ae7f97"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+  - name: "🇬🇧_34"
+    type: vless
+    server: "91.193.58.31"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_35"
+    type: vless
+    server: "5.10.215.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2fp=chrome"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇬🇧_36"
+    type: vless
+    server: "46.250.250.149"
+    port: 2053
+    uuid: "b4caaf57-ad77-4948-a6f5-51b3513799bf"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M"
+      short-id: "9922313fffed1c63"
+  - name: "🇬🇧_37"
+    type: vless
+    server: "186.190.211.188"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "186.190.211.188"
+  - name: "🇬🇧_38"
+    type: vless
+    server: "91.193.58.37"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_39"
+    type: vless
+    server: "91.193.58.141"
+    port: 443
+    uuid: "9419f782-b18e-4c4b-ae95-a7a279fd021f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jamph131-1228.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "Telegram-WangCai2🇨🇳"
+      headers:
+        Host: "jamph131-1228.pages.dev"
+  - name: "🇬🇧_40"
+    type: vless
+    server: "91.193.58.99"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_41"
+    type: vless
+    server: "91.193.58.61"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_42"
+    type: vless
+    server: "uk-dedic-new-1.failspace.top"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "uk-dedic-new-1.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_43"
+    type: vless
+    server: "nl-ded.gamma-kvn.com"
+    port: 443
+    uuid: "e37b223d-c602-4be9-8ce0-eca27841ec8b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nl-ded.gamma-kvn.com"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_44"
+    type: vless
+    server: "82.39.171.142"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_45"
+    type: vless
+    server: "91.193.58.122"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_46"
+    type: vless
+    server: "tomaz1337shellbuy.vvzzkontaktezzvv.garden"
+    port: 443
+    uuid: "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tomaz1337shellbuy.vvzzkontaktezzvv.garden"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk"
+      short-id: "2e124af254a65e7c"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_47"
+    type: vless
+    server: "83.147.18.3"
+    port: 443
+    uuid: "9f61cdf4-810d-4052-bbc7-2da0c8e20104"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA"
+      short-id: "fd8cf7e1173f0edb"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_48"
+    type: vless
+    server: "50.7.227.251"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "uk-dedic-new-1.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_49"
+    type: vless
+    server: "91.193.58.132"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_50"
+    type: vless
+    server: "213.178.141.33"
+    port: 443
+    uuid: "d0f0a880-0df1-48c9-bdf1-5669fb9483ce"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "germa12.ggisopi.su"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_51"
+    type: vless
+    server: "185.156.19.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇬🇧_52"
+    type: vless
+    server: "23.81.34.204"
+    port: 443
+    uuid: "99955907-9070-46f0-a200-9c7a0b9d74fe"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s"
+      short-id: "b19b017d6f453873"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇧_53"
+    type: vless
+    server: "57.129.130.10"
+    port: 52014
+    uuid: "bca740c6-6704-48ba-99da-7d7a31768d73"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+  - name: "🇬🇧_54"
+    type: vless
+    server: "91.193.58.136"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_55"
+    type: vless
+    server: "91.193.58.57"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
+  - name: "🇬🇧_56"
+    type: vless
+    server: "45.12.30.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇬🇧_57"
+    type: vless
+    server: "91.193.58.255"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_58"
-    type: ss
-    server: "51.77.225.200"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "zRZNBszYyWo5"
+    type: vless
+    server: "66.90.104.42"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇬🇧_59"
-    type: ss
-    server: "141.98.101.181"
-    port: 443
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
+    type: vless
+    server: "45.85.118.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime55.workers.dev"
   - name: "🇬🇧_60"
-    type: ss
-    server: "149.102.132.184"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
+    type: vless
+    server: "50.7.226.173"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "viper-21.moriarty-web.com"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇬🇧_61"
-    type: ss
-    server: "149.102.149.207"
+    type: vless
+    server: "91.193.58.195"
     port: 443
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
+    uuid: "9419f782-b18e-4c4b-ae95-a7a279fd021f"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jamph131-1228.pages.dev"
+    network: ws
+    ws-opts:
+      path: "Telegram-WangCai2🇨🇳"
+      headers:
+        Host: "jamph131-1228.pages.dev"
   - name: "🇬🇧_62"
-    type: ss
-    server: "185.164.175.81"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    type: vless
+    server: "91.193.58.218"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_63"
-    type: ss
-    server: "51.38.71.51"
-    port: 2083
-    cipher: "2022-blake3-aes-256-gcm"
-    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+    type: vless
+    server: "91.193.58.198"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_64"
-    type: ss
-    server: "94.156.250.148"
-    port: 7001
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
+    type: vless
+    server: "57.129.130.57"
+    port: 52014
+    uuid: "c0b73211-908d-4340-95bf-3d3735794946"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
   - name: "🇬🇧_65"
-    type: ss
-    server: "185.164.175.81"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    type: vless
+    server: "57.129.130.57"
+    port: 52014
+    uuid: "201e0019-2e79-4147-8a09-e510d630abeb"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
   - name: "🇬🇧_66"
-    type: ss
-    server: "144.24.231.47"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "IS32OF3tLm5aphxvlM/79EAcIjV2Jry7tmTuO7F4Uew="
+    type: vless
+    server: "91.193.58.27"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_67"
-    type: ss
-    server: "51.38.71.51"
-    port: 2083
-    cipher: "2022-blake3-aes-256-gcm"
-    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+    type: vless
+    server: "57.129.130.57"
+    port: 52014
+    uuid: "a351220c-f8dc-4c52-8a2d-f4470f886a53"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
   - name: "🇬🇧_68"
-    type: ss
-    server: "51.77.225.200"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "zRZNBszYyWo5"
+    type: vless
+    server: "91.193.58.15"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_69"
-    type: ss
-    server: "149.102.149.207"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
+    type: vless
+    server: "91.193.58.80"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_70"
-    type: ss
-    server: "141.98.101.181"
-    port: 443
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
+    type: vless
+    server: "91.193.58.231"
+    port: 2096
+    uuid: "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "free-server.techsonic.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/free-server.techsonic.dev"
+      headers:
+        Host: "free-server.techsonic.dev"
   - name: "🇬🇧_71"
-    type: ss
-    server: "149.102.132.184"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
+    type: vless
+    server: "45.12.30.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime28.workers.dev"
   - name: "🇬🇧_72"
-    type: ss
-    server: "149.102.149.207"
-    port: 80
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
+    type: vless
+    server: "82.39.171.12"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+    flow: "xtls-rprx-vision"
   - name: "🇬🇧_73"
-    type: ss
-    server: "82.110.60.9"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    type: vless
+    server: "185.162.229.50"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
   - name: "🇬🇧_74"
-    type: ss
-    server: "149.102.149.207"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "LXchLsIwtCeUAUgu"
+    type: vless
+    server: "46.250.240.80"
+    port: 2053
+    uuid: "948df76f-505d-4608-9c76-a933ee3ccc76"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E"
+      short-id: "4cc9dc65f7770115"
   - name: "🇬🇧_75"
-    type: ss
-    server: "144.24.231.47"
-    port: 61312
-    cipher: "2022-blake3-chacha20-poly1305"
-    password: "IS32OF3tLm5aphxvlM/79EAcIjV2Jry7tmTuO7F4Uew="
+    type: vless
+    server: "51.89.194.151"
+    port: 2053
+    uuid: "8e790f25-1d71-4601-9fb0-d503931dcfca"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0"
+      short-id: "d051f678212f9d54"
   - name: "🇬🇧_76"
-    type: ss
-    server: "149.102.132.184"
-    port: 443
-    cipher: "aes-256-gcm"
-    password: "g5h5jleTRSyO3Rk4"
+    type: vless
+    server: "185.162.228.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
   - name: "🇬🇧_77"
-    type: ss
-    server: "82.110.60.9"
-    port: 19999
-    cipher: "aes-256-gcm"
-    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    type: vless
+    server: "66.90.104.43"
+    port: 2083
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
   - name: "🇬🇧_78"
+    type: vless
+    server: "91.193.59.191"
+    port: 2087
+    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vlso5.1d.mom"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇬🇧_79"
+    type: vless
+    server: "91.193.58.125"
+    port: 2053
+    uuid: "a1de0630-5786-48a0-84f6-dc6f2de10d6d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vlso5.1d.mom"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇬🇧_80"
+    type: vless
+    server: "57.129.132.223"
+    port: 80
+    uuid: "9e20b04d-5a81-4e16-b421-01e502f0aac6"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "google.com"
+  - name: "🇬🇧_81"
     type: ss
     server: "149.102.132.184"
     port: 443
     cipher: "aes-256-gcm"
     password: "g5h5jleTRSyO3Rk4"
     udp: true
-  - name: "🇬🇧_79"
-    type: ss
-    server: "51.38.71.51"
-    port: 2083
-    cipher: "2022-blake3-aes-256-gcm"
-    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
-    udp: true
-  - name: "🇬🇧_80"
+  - name: "🇬🇧_82"
     type: ss
     server: "158.173.24.73"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "🇬🇧_81"
+  - name: "🇬🇧_83"
+    type: ss
+    server: "149.102.132.184"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_84"
+    type: ss
+    server: "149.102.149.207"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
+    udp: true
+  - name: "🇬🇧_85"
+    type: ss
+    server: "149.102.149.207"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
+    udp: true
+  - name: "🇬🇧_86"
+    type: ss
+    server: "141.98.101.181"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "🇬🇧_87"
+    type: ss
+    server: "149.102.132.184"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_88"
+    type: ss
+    server: "51.77.225.200"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "zRZNBszYyWo5"
+    udp: true
+  - name: "🇬🇧_89"
+    type: ss
+    server: "51.38.71.51"
+    port: 2083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+    udp: true
+  - name: "🇬🇧_90"
+    type: ss
+    server: "51.38.71.51"
+    port: 2083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+    udp: true
+  - name: "🇬🇧_91"
+    type: ss
+    server: "149.102.132.184"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "g5h5jleTRSyO3Rk4"
+    udp: true
+  - name: "🇬🇧_92"
+    type: ss
+    server: "141.98.101.181"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "🇬🇧_93"
+    type: ss
+    server: "51.77.225.200"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "zRZNBszYyWo5"
+    udp: true
+  - name: "🇬🇧_94"
+    type: ss
+    server: "149.102.149.207"
+    port: 80
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
+    udp: true
+  - name: "🇬🇧_95"
+    type: ss
+    server: "185.164.175.81"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_96"
+    type: ss
+    server: "51.38.71.51"
+    port: 2083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+    udp: true
+  - name: "🇬🇧_97"
+    type: ss
+    server: "82.110.60.9"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_98"
+    type: ss
+    server: "94.156.250.148"
+    port: 7001
+    cipher: "aes-256-gcm"
+    password: "RexnBgU7EV5ADxG"
+    udp: true
+  - name: "🇬🇧_99"
+    type: ss
+    server: "149.102.149.207"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "LXchLsIwtCeUAUgu"
+    udp: true
+  - name: "🇬🇧_100"
+    type: ss
+    server: "82.110.60.9"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_101"
+    type: ss
+    server: "185.164.175.81"
+    port: 19999
+    cipher: "aes-256-gcm"
+    password: "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    udp: true
+  - name: "🇬🇧_102"
     type: ss
     server: "158.173.24.73"
     port: 443
@@ -1106,6 +1396,27 @@ proxy-groups:
       - "🇬🇧_79"
       - "🇬🇧_80"
       - "🇬🇧_81"
+      - "🇬🇧_82"
+      - "🇬🇧_83"
+      - "🇬🇧_84"
+      - "🇬🇧_85"
+      - "🇬🇧_86"
+      - "🇬🇧_87"
+      - "🇬🇧_88"
+      - "🇬🇧_89"
+      - "🇬🇧_90"
+      - "🇬🇧_91"
+      - "🇬🇧_92"
+      - "🇬🇧_93"
+      - "🇬🇧_94"
+      - "🇬🇧_95"
+      - "🇬🇧_96"
+      - "🇬🇧_97"
+      - "🇬🇧_98"
+      - "🇬🇧_99"
+      - "🇬🇧_100"
+      - "🇬🇧_101"
+      - "🇬🇧_102"
 
 
 rules:

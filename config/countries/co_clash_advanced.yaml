@@ -59,20 +59,12 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇪_2"
+  - name: "🇨🇴_2"
     type: vless
-    server: "185.143.179.179"
-    port: 25026
-    uuid: "441a29b2-d9aa-47d5-9209-0a9191479f9f"
+    server: "158.247.125.162"
+    port: 62145
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "RVh0D446O5pKnOqlNkJNxSGGbmzl8swn4YBXYce1HSw"
-      short-id: "34c465417d7ebca0"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -115,7 +107,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +127,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +146,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇬🇪_2"
+      - "🇨🇴_2"
 
 rules:
   - MATCH,PROXY-BEST

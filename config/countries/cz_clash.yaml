@@ -65,6 +65,69 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
+    server: "153.76.185.159"
+    port: 3090
+    uuid: "ea723504-e8df-4f23-b35f-c93961d5128a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_2"
+    type: vless
+    server: "194.87.59.29"
+    port: 2085
+    uuid: "ea723504-e8df-4f23-b35f-c93961d5128a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_3"
+    type: vless
+    server: "153.76.185.163"
+    port: 3090
+    uuid: "ea723504-e8df-4f23-b35f-c93961d5128a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_4"
+    type: vless
+    server: "153.76.185.162"
+    port: 3090
+    uuid: "ea723504-e8df-4f23-b35f-c93961d5128a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_5"
+    type: vless
+    server: "153.76.185.101"
+    port: 3090
+    uuid: "74aed07d-280c-4e14-aa20-cbb815214af8"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_6"
+    type: vless
+    server: "194.87.59.5"
+    port: 2085
+    uuid: "ea723504-e8df-4f23-b35f-c93961d5128a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_7"
+    type: vless
+    server: "153.76.185.108"
+    port: 3090
+    uuid: "14e227c3-5a83-4b4d-a41a-e5f499c79415"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇨🇿_8"
+    type: vless
     server: "45.146.90.85"
     port: 443
     uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
@@ -72,11 +135,20 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.amazon.com"
-    client-fingerprint: "safari"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
       short-id: "72104d27a0f5f62e"
     flow: "xtls-rprx-vision"
+  - name: "🇨🇿_9"
+    type: vless
+    server: "194.87.59.20"
+    port: 2085
+    uuid: "a641fd38-0ad7-40bf-9a56-6715c1787be3"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +164,14 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇿_1"
+      - "🇨🇿_2"
+      - "🇨🇿_3"
+      - "🇨🇿_4"
+      - "🇨🇿_5"
+      - "🇨🇿_6"
+      - "🇨🇿_7"
+      - "🇨🇿_8"
+      - "🇨🇿_9"
 
 
 rules:

@@ -61,30 +61,31 @@ dns:
 proxies:
   - name: "🇮🇷_3"
     type: vless
-    server: "109.122.251.253"
-    port: 12345
-    uuid: "d02fcca7-e77f-42f1-94bf-5545eec68f0a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "no5OXXraenpTo6GxibdtA4fOFTMOmt4d6Dn2HPfUiAQ"
-      short-id: "129faa21c67fd282"
-  - name: "🇮🇷_4"
-    type: vless
-    server: "g4.haxat.bestvbest.ir"
-    port: 56126
+    server: "iranibestv.pingxoxo.info"
+    port: 10210
     uuid: "ce4b2104-f1fe-4216-ad67-8c21869b9118"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
+    servername: "firebaseperusertopics-pa.googleapis.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk"
-      short-id: "228b68f87a662053"
+      public-key: "twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc"
+      short-id: "13121b7150ad7fc6"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇮🇷_4"
+    type: vless
+    server: "45.131.4.192"
+    port: 80
+    uuid: "5f4845b4-11dc-41d6-9508-4ff6a02e36c1"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "silent-paper-fa57.fipiyag989.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

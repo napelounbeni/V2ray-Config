@@ -65,18 +65,6 @@ dns:
 proxies:
   - name: "🇲🇽_1"
     type: vless
-    server: "45.134.9.133"
-    port: 8443
-    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ul-mexico1.09vpn.com"
-    network: ws
-    ws-opts:
-      path: "/vless/"
-  - name: "🇲🇽_2"
-    type: vless
     server: "34.51.119.243"
     port: 443
     uuid: "79bc7b01-6e4e-4365-a120-fefac8182bd9"
@@ -84,19 +72,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "ios"
     reality-opts:
       public-key: "vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI"
       short-id: "65f01b4b99e52015"
-  - name: "🇲🇽_3"
-    type: trojan
-    server: "mx.tronsg.com"
-    port: 443
-    password: "Trojan@82164024"
-    sni: "mx.tronsg.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇲🇽_4"
+  - name: "🇲🇽_2"
     type: ss
     server: "64.177.90.30"
     port: 8388
@@ -119,8 +99,6 @@ proxy-groups:
     proxies:
       - "🇲🇽_1"
       - "🇲🇽_2"
-      - "🇲🇽_3"
-      - "🇲🇽_4"
 
 
 rules:
