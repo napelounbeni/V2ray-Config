@@ -59,7 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇲_2"
+  - name: "🇦🇲_3"
+    type: vless
+    server: "usa2.armageddons.xyz"
+    port: 443
+    uuid: "e86ba41f-f2c4-4773-a6da-6534f12163bb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usa2.armageddons.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/gbV2rcwZ?ed=2560"
+      headers:
+        Host: "usa2.armageddons.xyz"
+  - name: "🇦🇲_4"
     type: vless
     server: "77.91.68.70"
     port: 55983
@@ -113,7 +128,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -123,7 +139,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -133,7 +150,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -142,7 +160,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -152,13 +171,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇲_2"
+      - "🇦🇲_3"
+      - "🇦🇲_4"
 
 rules:
   - MATCH,PROXY-BEST

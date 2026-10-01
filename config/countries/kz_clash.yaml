@@ -65,19 +65,6 @@ dns:
 proxies:
   - name: "🇰🇿_1"
     type: vless
-    server: "178.236.16.98"
-    port: 35728
-    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
-      short-id: "69a2"
-  - name: "🇰🇿_2"
-    type: vless
     server: "83.222.23.81"
     port: 38065
     uuid: "4b9063e0-3288-44e9-9aac-80fbfce323a0"
@@ -89,6 +76,19 @@ proxies:
     reality-opts:
       public-key: "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo"
       short-id: "fa"
+  - name: "🇰🇿_2"
+    type: vless
+    server: "178.236.16.98"
+    port: 35728
+    uuid: "a00d89f6-ab7e-4e30-a5e5-54c701d62c93"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng"
+      short-id: "69a2"
   - name: "🇰🇿_3"
     type: vless
     server: "109.248.170.119"
@@ -104,18 +104,18 @@ proxies:
       short-id: "83"
   - name: "🇰🇿_4"
     type: vless
-    server: "89.218.15.90"
-    port: 10002
-    uuid: "392fcc7e-b995-11f1-a6b7-1b2272a86bd5"
+    server: "45.136.57.28"
+    port: 43000
+    uuid: "dd1fa083-8b36-41f6-ae09-e7fe33a3be4e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "kz1.vpnjantit.com"
-    network: ws
-    ws-opts:
-      path: "/vpnjantit"
-      headers:
-        Host: "kz1.vpnjantit.com"
+    servername: "45.136.57.28"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Jsz8nO5H9QEL7w7bXaXhS0sel3EAThuWOCh-jVDuYxE"
+      short-id: "57057263"
+    flow: "xtls-rprx-vision"
   - name: "🇰🇿_5"
     type: vless
     server: "77.73.232.61"
@@ -129,6 +129,20 @@ proxies:
     reality-opts:
       public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
       short-id: "2001"
+  - name: "🇰🇿_6"
+    type: vless
+    server: "89.218.15.90"
+    port: 10002
+    uuid: "392fcc7e-b995-11f1-a6b7-1b2272a86bd5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kz1.vpnjantit.com"
+    network: ws
+    ws-opts:
+      path: "/vpnjantit"
+      headers:
+        Host: "kz1.vpnjantit.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -148,6 +162,7 @@ proxy-groups:
       - "🇰🇿_3"
       - "🇰🇿_4"
       - "🇰🇿_5"
+      - "🇰🇿_6"
 
 
 rules:
