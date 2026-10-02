@@ -59,7 +59,49 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇽_3"
+  - name: "🇲🇽_7"
+    type: vless
+    server: "131.196.252.97"
+    port: 443
+    uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.nihaoyun.top"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "www.nihaoyun.top"
+  - name: "🇲🇽_8"
+    type: vless
+    server: "131.196.252.66"
+    port: 443
+    uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.nihaoyun.top"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "www.nihaoyun.top"
+  - name: "🇲🇽_9"
+    type: vless
+    server: "45.134.9.133"
+    port: 8443
+    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ul-mexico1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇲🇽_10"
     type: vless
     server: "34.51.23.2"
     port: 443
@@ -72,7 +114,19 @@ proxies:
     reality-opts:
       public-key: "vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI"
       short-id: "65f01b4b99e52015"
-  - name: "🇲🇽_4"
+  - name: "🇲🇽_11"
+    type: vless
+    server: "UL-Mexico1.09vpn.com"
+    port: 8443
+    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "UL-Mexico1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "🇲🇽_12"
     type: ss
     server: "64.177.90.30"
     port: 8388
@@ -121,8 +175,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -132,8 +190,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -143,8 +205,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -153,8 +219,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -164,15 +234,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇽_3"
-      - "🇲🇽_4"
+      - "🇲🇽_7"
+      - "🇲🇽_8"
+      - "🇲🇽_9"
+      - "🇲🇽_10"
+      - "🇲🇽_11"
+      - "🇲🇽_12"
 
 rules:
   - MATCH,PROXY-BEST

@@ -63,17 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇨🇾_1"
+  - name: "🇲🇪_1"
     type: vless
-    server: "195.85.59.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "31.57.190.62"
+    port: 443
+    uuid: "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.nihaoyun.top"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime58.workers.dev"
+        Host: "www.nihaoyun.top"
 
 proxy-groups:
   - name: "PROXY"
@@ -88,7 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇨🇾_1"
+      - "🇲🇪_1"
 
 
 rules:

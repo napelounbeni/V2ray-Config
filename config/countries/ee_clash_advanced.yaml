@@ -59,50 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇪_13"
+  - name: "🇪🇪_12"
     type: vless
-    server: "us51.mech-pro.online"
+    server: "212.87.190.36"
     port: 443
     uuid: "a15d1b88-e3f4-4f4d-9c04-462a2965a60a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "us51.mech-pro.online"
+    servername: "ee174.mech-pro.online"
     client-fingerprint: "firefox"
     reality-opts:
       public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
       short-id: "16e0f049"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_14"
-    type: vless
-    server: "ee10.zazazuza.ru"
-    port: 8443
-    uuid: "6c713691-3ca2-4446-ad25-113d1bed6b03"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "fdghyt.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vpn-wss/fluxor/59011/"
-      headers:
-        Host: "fdghyt.com"
-  - name: "🇪🇪_15"
-    type: vless
-    server: "93.89.220.37"
-    port: 443
-    uuid: "185e2bb3-2934-48d0-bbd5-dd20d16e83ee"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ibm.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g"
-      short-id: "e88cb983f3c97528"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_16"
+  - name: "🇪🇪_13"
     type: vless
     server: "140.150.227.51"
     port: 443
@@ -111,25 +82,12 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "us51.mech-pro.online"
-    client-fingerprint: "firefox"
+    client-fingerprint: "ios"
     reality-opts:
       public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
       short-id: "16e0f049"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_17"
-    type: vless
-    server: "141.0.187.16"
-    port: 2083
-    uuid: "fba73f98-777a-42a6-83c0-7d1f6f070e8d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "crt.dodopanel.biz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vless-ws"
-  - name: "🇪🇪_18"
+  - name: "🇪🇪_14"
     type: vless
     server: "194.26.141.148"
     port: 8443
@@ -144,7 +102,7 @@ proxies:
       path: "/vpn-wss/fluxor/59011/"
       headers:
         Host: "fdghyt.com"
-  - name: "🇪🇪_19"
+  - name: "🇪🇪_15"
     type: vless
     server: "94.183.170.135"
     port: 443
@@ -155,7 +113,7 @@ proxies:
       path: "/"
       headers:
         Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_20"
+  - name: "🇪🇪_16"
     type: vless
     server: "94.183.170.135"
     port: 8443
@@ -165,7 +123,48 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy4.lockdwn.com"
     client-fingerprint: "firefox"
-  - name: "🇪🇪_21"
+  - name: "🇪🇪_17"
+    type: vless
+    server: "93.89.220.37"
+    port: 443
+    uuid: "185e2bb3-2934-48d0-bbd5-dd20d16e83ee"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ibm.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g"
+      short-id: "e88cb983f3c97528"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_18"
+    type: vless
+    server: "77.72.85.246"
+    port: 8443
+    uuid: "6c713691-3ca2-4446-ad25-113d1bed6b03"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fdghyt.com"
+    network: ws
+    ws-opts:
+      path: "/vpn-wss/fluxor/59011/"
+      headers:
+        Host: "fdghyt.com"
+  - name: "🇪🇪_19"
+    type: vless
+    server: "141.0.187.16"
+    port: 2083
+    uuid: "fba73f98-777a-42a6-83c0-7d1f6f070e8d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "crt.dodopanel.biz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/vless-ws"
+  - name: "🇪🇪_20"
     type: vless
     server: "95.85.224.51"
     port: 443
@@ -179,28 +178,7 @@ proxies:
       public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
       short-id: "a696de84963656de"
     flow: "xtls-rprx-vision"
-  - name: "🇪🇪_22"
-    type: trojan
-    server: "109.206.241.10"
-    port: 449
-    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
-    sni: "russiapower.accesscam.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇪🇪_23"
-    type: trojan
-    server: "80.77.25.142"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇪_24"
+  - name: "🇪🇪_21"
     type: trojan
     server: "185.36.141.81"
     port: 443
@@ -211,6 +189,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+  - name: "🇪🇪_22"
+    type: trojan
+    server: "109.206.241.10"
+    port: 449
+    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
+    sni: "russiapower.accesscam.org"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -253,6 +239,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -263,8 +250,6 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
   - name: "LB-CDN"
     type: load-balance
@@ -274,6 +259,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -284,8 +270,6 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -295,6 +279,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -305,8 +290,6 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
   - name: "FAST-CDN"
     type: url-test
@@ -315,6 +298,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -325,8 +309,6 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -336,6 +318,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -346,13 +329,12 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇪_12"
       - "🇪🇪_13"
       - "🇪🇪_14"
       - "🇪🇪_15"
@@ -363,8 +345,6 @@ proxy-groups:
       - "🇪🇪_20"
       - "🇪🇪_21"
       - "🇪🇪_22"
-      - "🇪🇪_23"
-      - "🇪🇪_24"
 
 rules:
   - MATCH,PROXY-BEST

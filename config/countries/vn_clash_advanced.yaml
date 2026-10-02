@@ -59,31 +59,62 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇵🇹_4"
+  - name: "🇻🇳_5"
     type: vless
-    server: "156.243.83.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "node1.csnety.com"
+    port: 16932
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime54.workers.dev"
-  - name: "🇵🇹_5"
-    type: ss
-    server: "185.231.233.91"
-    port: 17167
-    cipher: "aes-128-gcm"
-    password: "ca438054771821250089399a2f33275e"
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "VEU0MYsq_M-7zGhdZblxy6F4-S5MJC5CjVBsPyODln8"
+      short-id: "33b3cf8cfc2bc55d"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_6"
+    type: vless
+    server: "node1.csnety.com"
+    port: 58111
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
-  - name: "🇵🇹_6"
-    type: ss
-    server: "185.231.233.91"
-    port: 17167
-    cipher: "aes-128-gcm"
-    password: "ca438054771821250089399a2f33275e"
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "9_-DFaGV2WwmOpZO5DZd2Ue3FlPGKjJ2BsKQmBDPREc"
+      short-id: "09"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_7"
+    type: vless
+    server: "node1.csnety.com"
+    port: 16933
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ugdJ8G53iQM3omst-L-nWAA6ji4HyV71h9vQz-k_MSY"
+      short-id: "30899e403b"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_8"
+    type: vless
+    server: "node1.csnety.com"
+    port: 17009
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4"
+      short-id: "c832c0"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -126,9 +157,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -138,9 +170,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,9 +183,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,9 +195,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -173,17 +208,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇵🇹_4"
-      - "🇵🇹_5"
-      - "🇵🇹_6"
+      - "🇻🇳_5"
+      - "🇻🇳_6"
+      - "🇻🇳_7"
+      - "🇻🇳_8"
 
 rules:
   - MATCH,PROXY-BEST

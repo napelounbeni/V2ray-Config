@@ -77,39 +77,6 @@ proxies:
       public-key: "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
-  - name: "🇧🇬_2"
-    type: vless
-    server: "45.142.120.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime08.workers.dev"
-  - name: "🇧🇬_3"
-    type: vless
-    server: "89.117.112.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
-  - name: "🇧🇬_4"
-    type: vless
-    server: "89.117.112.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime11.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -125,9 +92,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇬_1"
-      - "🇧🇬_2"
-      - "🇧🇬_3"
-      - "🇧🇬_4"
 
 
 rules:

@@ -59,17 +59,19 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇳🇿_2"
+  - name: "🇮🇱_2"
     type: vless
-    server: "114.129.43.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "34.165.56.30"
+    port: 443
+    uuid: "0c40bce9-8710-4820-8f22-0742b61df999"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc"
+      short-id: "fffff8acddadcac3"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -112,7 +114,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -122,7 +124,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -132,7 +134,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -141,7 +143,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -151,13 +153,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇳🇿_2"
+      - "🇮🇱_2"
 
 rules:
   - MATCH,PROXY-BEST

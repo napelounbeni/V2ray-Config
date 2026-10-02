@@ -63,31 +63,62 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇵🇹_1"
+  - name: "🇻🇳_1"
     type: vless
-    server: "156.243.83.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "node1.csnety.com"
+    port: 16932
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime54.workers.dev"
-  - name: "🇵🇹_2"
-    type: ss
-    server: "185.231.233.91"
-    port: 17167
-    cipher: "aes-128-gcm"
-    password: "ca438054771821250089399a2f33275e"
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "VEU0MYsq_M-7zGhdZblxy6F4-S5MJC5CjVBsPyODln8"
+      short-id: "33b3cf8cfc2bc55d"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_2"
+    type: vless
+    server: "node1.csnety.com"
+    port: 58111
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
-  - name: "🇵🇹_3"
-    type: ss
-    server: "185.231.233.91"
-    port: 17167
-    cipher: "aes-128-gcm"
-    password: "ca438054771821250089399a2f33275e"
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "9_-DFaGV2WwmOpZO5DZd2Ue3FlPGKjJ2BsKQmBDPREc"
+      short-id: "09"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_3"
+    type: vless
+    server: "node1.csnety.com"
+    port: 16933
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ugdJ8G53iQM3omst-L-nWAA6ji4HyV71h9vQz-k_MSY"
+      short-id: "30899e403b"
+    flow: "xtls-rprx-vision"
+  - name: "🇻🇳_4"
+    type: vless
+    server: "node1.csnety.com"
+    port: 17009
+    uuid: "80772a5c-88f3-4877-8e50-4a92b5ef443e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v1-dy.ixigua.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "VQzP1a61WGBDjvaocSLNcKRX6A6TOvYN0euwg48owT4"
+      short-id: "c832c0"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -102,9 +133,10 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇵🇹_1"
-      - "🇵🇹_2"
-      - "🇵🇹_3"
+      - "🇻🇳_1"
+      - "🇻🇳_2"
+      - "🇻🇳_3"
+      - "🇻🇳_4"
 
 
 rules:
