@@ -65,6 +65,20 @@ dns:
 proxies:
   - name: "🇱🇹_1"
     type: vless
+    server: "84.32.248.146"
+    port: 443
+    uuid: "5786d86f-7731-4174-b1a3-84297e54b015"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "litva.ali-bard.online"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_2"
+    type: vless
     server: "62.77.158.1"
     port: 443
     uuid: "2eceaf2b-a775-5a9c-9990-dad2b3660fb6"
@@ -77,7 +91,7 @@ proxies:
       public-key: "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs"
       short-id: "6a"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_2"
+  - name: "🇱🇹_3"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -106,6 +120,7 @@ proxy-groups:
     proxies:
       - "🇱🇹_1"
       - "🇱🇹_2"
+      - "🇱🇹_3"
 
 
 rules:

@@ -59,35 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇹🇼_8"
-    type: vless
-    server: "60.248.219.54"
-    port: 443
-    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_9"
-    type: vless
-    server: "59.125.69.24"
-    port: 443
-    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ty986gfazs.cainiaohub.xyz"
-    network: ws
-    ws-opts:
-      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      headers:
-        Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_10"
+  - name: "🇹🇼_6"
     type: vless
     server: "60.248.219.78"
     port: 443
@@ -101,7 +73,7 @@ proxies:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       headers:
         Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_11"
+  - name: "🇹🇼_7"
     type: vless
     server: "59.125.69.23"
     port: 443
@@ -115,22 +87,37 @@ proxies:
       path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       headers:
         Host: "ty986gfazs.cainiaohub.xyz"
-  - name: "🇹🇼_12"
+  - name: "🇹🇼_8"
     type: vless
-    server: "hinet1.2yly.com"
-    port: 24215
-    uuid: "19d5a678-8396-4e3b-93da-ece618d0e83a"
+    server: "59.125.69.24"
+    port: 443
+    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
-      short-id: ""
-  - name: "🇹🇼_13"
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_9"
     type: vless
-    server: "118.167.207.194"
+    server: "60.248.219.54"
+    port: 443
+    uuid: "06e177f7-240d-4687-bd85-235505801a5e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    network: ws
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers:
+        Host: "ty986gfazs.cainiaohub.xyz"
+  - name: "🇹🇼_10"
+    type: vless
+    server: "118.167.235.241"
     port: 24215
     uuid: "19d5a678-8396-4e3b-93da-ece618d0e83a"
     udp: true
@@ -141,17 +128,6 @@ proxies:
     reality-opts:
       public-key: "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE"
       short-id: ""
-  - name: "🇹🇼_14"
-    type: trojan
-    server: "zhilegelian1.bpca2026.top"
-    port: 443
-    password: "9efd3f19-c7cb-4fa9-8d66-0598043597dc"
-    sni: "zhilegelian1.bpca2026.top"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/images"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -194,13 +170,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -210,13 +184,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -226,13 +198,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -241,13 +211,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -257,25 +225,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇼_6"
+      - "🇹🇼_7"
       - "🇹🇼_8"
       - "🇹🇼_9"
       - "🇹🇼_10"
-      - "🇹🇼_11"
-      - "🇹🇼_12"
-      - "🇹🇼_13"
-      - "🇹🇼_14"
 
 rules:
   - MATCH,PROXY-BEST

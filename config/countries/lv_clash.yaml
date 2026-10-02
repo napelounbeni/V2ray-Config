@@ -65,6 +65,49 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
+    server: "195.123.213.28"
+    port: 443
+    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
+      short-id: "5c256336e3b673fa"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_2"
+    type: vless
+    server: "2.26.88.52"
+    port: 443
+    uuid: "f0a52dd3-4377-4402-a450-210bc81bcf25"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sh-lv-01.mintrocket.org"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "gcx8FNkRv0rdkd0kRhgSLWDXqVc7KgAw4rnYaYx9JgE"
+      short-id: "338e250284b889ba"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_3"
+    type: vless
+    server: "91.108.189.38"
+    port: 443
+    uuid: "8d42d29a-ed53-4684-a9ff-6b33826149de"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aio.eth0.dpdns.org"
+    client-fingerprint: "unsafe"
+    network: ws
+    ws-opts:
+      path: "/aioproxybot/94.23.144.99-2053"
+      headers:
+        Host: "aio.eth0.dpdns.org"
+  - name: "🇱🇻_4"
+    type: vless
     server: "138.124.180.137"
     port: 443
     uuid: "5234b2b7-5e07-422c-8159-d62a676c00c6"
@@ -76,48 +119,6 @@ proxies:
     reality-opts:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_2"
-    type: vless
-    server: "2.26.88.52"
-    port: 443
-    uuid: "f0a52dd3-4377-4402-a450-210bc81bcf25"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sh-lv-01.mintrocket.org"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "gcx8FNkRv0rdkd0kRhgSLWDXqVc7KgAw4rnYaYx9JgE"
-      short-id: "338e250284b889ba"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_3"
-    type: vless
-    server: "31.56.197.149"
-    port: 443
-    uuid: "26524cce-d514-4014-a426-365fb266a14d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "qcswhj2.edge-cache.danfeng4.xyz"
-    client-fingerprint: "android"
-    network: ws
-    ws-opts:
-      path: "/danfeng-pw8lj2-nzliwt-h23l-978coeve"
-      headers:
-        Host: "qcswhj2.edge-cache.danfeng4.xyz"
-  - name: "🇱🇻_4"
-    type: vless
-    server: "195.123.213.28"
-    port: 443
-    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    reality-opts:
-      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
-      short-id: "5c256336e3b673fa"
     flow: "xtls-rprx-vision"
 
 proxy-groups:

@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_8"
+  - name: "🇮🇪_7"
     type: vless
     server: "50.7.5.164"
     port: 443
@@ -70,7 +70,7 @@ proxies:
     servername: "ir.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_9"
+  - name: "🇮🇪_8"
     type: vless
     server: "50.7.5.165"
     port: 443
@@ -79,6 +79,17 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ir-new1.failspace.top"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_9"
+    type: vless
+    server: "50.7.5.166"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_10"
     type: vless
@@ -93,17 +104,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_11"
     type: vless
-    server: "50.7.5.166"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_12"
-    type: vless
     server: "87.192.47.10"
     port: 52006
     uuid: "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f"
@@ -112,20 +112,13 @@ proxies:
     skip-cert-verify: true
     servername: "grok.setlisting.ru"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_13"
+  - name: "🇮🇪_12"
     type: trojan
     server: "ie.tronsg.com"
     port: 443
     password: "Trojan@82164024"
     sni: "ie.tronsg.com"
     skip-cert-verify: true
-    udp: true
-  - name: "🇮🇪_14"
-    type: ss
-    server: "20.166.59.119"
-    port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "gJe7umStIck5Mieg"
     udp: true
 
 proxy-groups:
@@ -169,13 +162,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -185,13 +177,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -201,13 +192,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -216,13 +206,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -232,25 +221,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇪_7"
       - "🇮🇪_8"
       - "🇮🇪_9"
       - "🇮🇪_10"
       - "🇮🇪_11"
       - "🇮🇪_12"
-      - "🇮🇪_13"
-      - "🇮🇪_14"
 
 rules:
   - MATCH,PROXY-BEST

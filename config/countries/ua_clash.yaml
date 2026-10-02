@@ -65,19 +65,30 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "103.71.23.247"
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_2"
+    type: vless
+    server: "103.71.23.244"
     port: 443
-    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
+    uuid: "817b61c8-9bf0-4365-8a52-e43dfad274a6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "hk.152568.xyz"
-    client-fingerprint: "edge"
+    servername: "shin-ra.ccwu.cc"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/cdn/packages/runtime-core.tar.gz"
+      path: "/"
       headers:
-        Host: "hk.152568.xyz"
+        Host: "shin-ra.ccwu.cc"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +104,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇺🇦_1"
+      - "🇺🇦_2"
 
 
 rules:

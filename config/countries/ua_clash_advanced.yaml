@@ -59,21 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇺🇦_2"
+  - name: "🇺🇦_3"
     type: vless
-    server: "103.71.23.247"
+    server: "89.116.180.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime09.workers.dev"
+  - name: "🇺🇦_4"
+    type: vless
+    server: "103.71.23.244"
     port: 443
-    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
+    uuid: "817b61c8-9bf0-4365-8a52-e43dfad274a6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "hk.152568.xyz"
-    client-fingerprint: "edge"
+    servername: "shin-ra.ccwu.cc"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/cdn/packages/runtime-core.tar.gz"
+      path: "/"
       headers:
-        Host: "hk.152568.xyz"
+        Host: "shin-ra.ccwu.cc"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +127,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +138,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +149,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +159,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +170,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇺🇦_2"
+      - "🇺🇦_3"
+      - "🇺🇦_4"
 
 rules:
   - MATCH,PROXY-BEST

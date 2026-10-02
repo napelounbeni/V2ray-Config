@@ -61,21 +61,6 @@ dns:
 proxies:
   - name: "🇦🇲_3"
     type: vless
-    server: "usa2.armageddons.xyz"
-    port: 443
-    uuid: "e86ba41f-f2c4-4773-a6da-6534f12163bb"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usa2.armageddons.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/gbV2rcwZ?ed=2560"
-      headers:
-        Host: "usa2.armageddons.xyz"
-  - name: "🇦🇲_4"
-    type: vless
     server: "77.91.68.70"
     port: 55983
     uuid: "f667a096-5231-4cfb-8759-92bb32473139"
@@ -86,6 +71,13 @@ proxies:
     reality-opts:
       public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
       short-id: "0e"
+  - name: "🇦🇲_4"
+    type: ss
+    server: "86.107.50.160"
+    port: 20998
+    cipher: "aes-256-gcm"
+    password: "78235e7dc55e9ad1"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

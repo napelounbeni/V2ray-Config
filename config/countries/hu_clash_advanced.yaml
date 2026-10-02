@@ -59,22 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇭🇺_4"
-    type: vless
-    server: "37.221.210.113"
-    port: 443
-    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hk.152568.xyz"
-    client-fingerprint: "edge"
-    network: ws
-    ws-opts:
-      path: "/cdn/packages/runtime-core.tar.gz"
-      headers:
-        Host: "hk.152568.xyz"
-  - name: "🇭🇺_5"
+  - name: "🇭🇺_3"
     type: vless
     server: "31.76.249.87"
     port: 443
@@ -88,7 +73,7 @@ proxies:
       public-key: "gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇺_6"
+  - name: "🇭🇺_4"
     type: trojan
     server: "185.225.68.232"
     port: 443
@@ -143,9 +128,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -155,9 +139,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -167,9 +150,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -178,9 +160,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -190,17 +171,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇭🇺_3"
       - "🇭🇺_4"
-      - "🇭🇺_5"
-      - "🇭🇺_6"
 
 rules:
   - MATCH,PROXY-BEST

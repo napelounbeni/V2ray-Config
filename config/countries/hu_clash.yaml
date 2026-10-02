@@ -65,21 +65,6 @@ dns:
 proxies:
   - name: "🇭🇺_1"
     type: vless
-    server: "37.221.210.113"
-    port: 443
-    uuid: "0250424c-ae75-4b6b-890f-3fe26fae36c3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hk.152568.xyz"
-    client-fingerprint: "edge"
-    network: ws
-    ws-opts:
-      path: "/cdn/packages/runtime-core.tar.gz"
-      headers:
-        Host: "hk.152568.xyz"
-  - name: "🇭🇺_2"
-    type: vless
     server: "31.76.249.87"
     port: 443
     uuid: "dc9e93bc-b53a-11f1-91d3-52540030ba36"
@@ -92,7 +77,7 @@ proxies:
       public-key: "gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "🇭🇺_3"
+  - name: "🇭🇺_2"
     type: trojan
     server: "185.225.68.232"
     port: 443
@@ -121,7 +106,6 @@ proxy-groups:
     proxies:
       - "🇭🇺_1"
       - "🇭🇺_2"
-      - "🇭🇺_3"
 
 
 rules:
