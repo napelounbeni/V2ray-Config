@@ -72,10 +72,24 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "www.akamai.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ"
       short-id: ""
     flow: "xtls-rprx-vision"
+  - name: "🇭🇺_2"
+    type: trojan
+    server: "185.225.68.232"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -91,6 +105,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇭🇺_1"
+      - "🇭🇺_2"
 
 
 rules:

@@ -79,17 +79,17 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇷🇴_2"
     type: vless
-    server: "82.152.132.195"
+    server: "109.104.106.15"
     port: 443
-    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.wikipedia.org"
-    client-fingerprint: "chrome"
+    servername: "d3-ro.cloud-cdn.xyz"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "tbQ_5ZgBOwC63hLOYKQkYKBKIuTgJ13oxtWblB2pjGo"
-      short-id: "ddeed294"
+      public-key: "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw"
+      short-id: "87709fed663228e5"
     flow: "xtls-rprx-vision"
   - name: "🇷🇴_3"
     type: vless
@@ -106,15 +106,43 @@ proxies:
       short-id: "d06d78e974491b6e"
     flow: "xtls-rprx-vision"
   - name: "🇷🇴_4"
+    type: vless
+    server: "109.104.106.149"
+    port: 443
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d3-ro.cloud-cdn.xyz"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw"
+      short-id: "87709fed663228e5"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_5"
+    type: vless
+    server: "82.152.132.195"
+    port: 443
+    uuid: "f1c496bf-d2ab-45be-bc13-051d60d227b7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.wikipedia.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "tbQ_5ZgBOwC63hLOYKQkYKBKIuTgJ13oxtWblB2pjGo"
+      short-id: "ddeed294"
+    flow: "xtls-rprx-vision"
+  - name: "🇷🇴_6"
     type: ss
-    server: "154.46.31.106"
+    server: "bogging-eyeteeth-fly.freesocks.work"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
     udp: true
-  - name: "🇷🇴_5"
+  - name: "🇷🇴_7"
     type: ss
-    server: "bogging-eyeteeth-fly.freesocks.work"
+    server: "154.46.31.106"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "QFWzCw2uX9B9i6qAYeFBIE"
@@ -138,6 +166,8 @@ proxy-groups:
       - "🇷🇴_3"
       - "🇷🇴_4"
       - "🇷🇴_5"
+      - "🇷🇴_6"
+      - "🇷🇴_7"
 
 
 rules:

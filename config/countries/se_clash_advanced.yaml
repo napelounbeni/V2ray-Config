@@ -59,34 +59,48 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇸🇪_11"
+  - name: "🇸🇪_13"
     type: vless
-    server: "34.51.231.250"
+    server: "132.243.231.12"
     port: 443
-    uuid: "e4be912f-68e8-4d51-80a4-1342b646f8e0"
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
+    servername: "d3-se1.cloud-cdn.xyz"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM"
+      short-id: "5efa80b939612291"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_14"
+    type: vless
+    server: "143.246.196.207"
+    port: 443
+    uuid: "ac0c2945-b758-11f1-8181-54db13ea7d40"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.blocket.se"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_15"
+    type: vless
+    server: "199.68.198.13"
+    port: 443
+    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "example.org"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg"
-      short-id: "79ff7d51e3c56323"
-  - name: "🇸🇪_12"
-    type: vless
-    server: "193.148.59.178"
-    port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_13"
+      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
+      short-id: ""
+  - name: "🇸🇪_16"
     type: vless
     server: "5.157.10.148"
     port: 443
@@ -100,21 +114,62 @@ proxies:
       public-key: "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA"
       short-id: "fb442438e2223836"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_14"
+  - name: "🇸🇪_17"
     type: vless
-    server: "191.44.114.148"
+    server: "177.3.209.165"
     port: 443
-    uuid: "21d0929a-ba27-4822-9b50-bda9ee54a494"
+    uuid: "a5dd2dd9-0995-449e-be67-4a409890dc42"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "n20.himoy.space"
+    servername: "owkd.pashalloh.org"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "swS-7W4UwMZ-4jVy3RjVBP1KW9K45VrFgS8ikW1puDY"
-      short-id: "cdcc5730da8c2622"
+      public-key: "mYtQrGiR9EkOpUsvsI7E18AWnFZZqfOPXUdpzE3luz8"
+      short-id: "da4d87fa"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_15"
+  - name: "🇸🇪_18"
+    type: vless
+    server: "31.207.7.74"
+    port: 443
+    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pkg.go.dev"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
+      short-id: "457ae5b8bef4d1b3"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_19"
+    type: vless
+    server: "132.243.231.4"
+    port: 443
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d3-se1.cloud-cdn.xyz"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM"
+      short-id: "5efa80b939612291"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_20"
+    type: vless
+    server: "34.51.231.250"
+    port: 443
+    uuid: "e4be912f-68e8-4d51-80a4-1342b646f8e0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg"
+      short-id: "79ff7d51e3c56323"
+  - name: "🇸🇪_21"
     type: vless
     server: "62.60.159.81"
     port: 2053
@@ -130,62 +185,35 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpce5bb9e71"
-  - name: "🇸🇪_16"
+  - name: "🇸🇪_22"
     type: vless
-    server: "31.207.7.74"
+    server: "144.31.235.214"
     port: 443
-    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "pkg.go.dev"
+    servername: "swed4.o4ka-internet.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
-      short-id: "457ae5b8bef4d1b3"
+      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+      short-id: "5629431325884ff0"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_17"
+  - name: "🇸🇪_23"
     type: vless
-    server: "150.241.74.79"
+    server: "193.148.59.178"
     port: 443
-    uuid: "f0a52dd3-4377-4402-a450-210bc81bcf25"
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sh-ee-01.mintrocket.org"
-    client-fingerprint: "safari"
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "TJ3ltW_Xa1x5bn7bY3jx2mpirm0GHOskSSG88Ft68CA"
-      short-id: "46641eff6d03ffb1"
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_18"
-    type: vless
-    server: "143.246.196.207"
-    port: 443
-    uuid: "ac0c2945-b758-11f1-8181-54db13ea7d40"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.blocket.se"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_19"
-    type: vless
-    server: "199.68.198.13"
-    port: 443
-    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "example.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
-      short-id: ""
-  - name: "🇸🇪_20"
+  - name: "🇸🇪_24"
     type: trojan
     server: "77.221.138.199"
     port: 8443
@@ -240,8 +268,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -250,6 +276,10 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
   - name: "LB-CDN"
     type: load-balance
@@ -259,8 +289,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -269,6 +297,10 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -278,8 +310,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -288,6 +318,10 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
   - name: "FAST-CDN"
     type: url-test
@@ -296,8 +330,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -306,6 +338,10 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -315,8 +351,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -325,13 +359,15 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇸🇪_11"
-      - "🇸🇪_12"
       - "🇸🇪_13"
       - "🇸🇪_14"
       - "🇸🇪_15"
@@ -340,6 +376,10 @@ proxy-groups:
       - "🇸🇪_18"
       - "🇸🇪_19"
       - "🇸🇪_20"
+      - "🇸🇪_21"
+      - "🇸🇪_22"
+      - "🇸🇪_23"
+      - "🇸🇪_24"
 
 rules:
   - MATCH,PROXY-BEST

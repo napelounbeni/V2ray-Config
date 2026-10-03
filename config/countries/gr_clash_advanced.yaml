@@ -59,7 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇷_3"
+  - name: "🇬🇷_4"
+    type: vless
+    server: "85.90.197.146"
+    port: 443
+    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "greeeeeek.pumpkinpie.study"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0"
+      short-id: "9fa5c0092361b848"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_5"
     type: vless
     server: "185.126.238.87"
     port: 2083
@@ -68,7 +82,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_4"
+  - name: "🇬🇷_6"
     type: vless
     server: "85.90.197.220"
     port: 443
@@ -123,8 +137,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -134,8 +149,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -145,8 +161,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -155,8 +172,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -166,15 +184,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇬🇷_3"
       - "🇬🇷_4"
+      - "🇬🇷_5"
+      - "🇬🇷_6"
 
 rules:
   - MATCH,PROXY-BEST

@@ -65,6 +65,32 @@ dns:
 proxies:
   - name: "🇧🇷_1"
     type: vless
+    server: "45.194.53.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime19.workers.dev"
+  - name: "🇧🇷_2"
+    type: vless
+    server: "146.235.59.153"
+    port: 2053
+    uuid: "817b61c8-9bf0-4365-8a52-e43dfad274a6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shin-ra.ccwu.cc"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "shin-ra.ccwu.cc"
+  - name: "🇧🇷_3"
+    type: vless
     server: "147.45.116.19"
     port: 443
     uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
@@ -91,6 +117,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇷_1"
+      - "🇧🇷_2"
+      - "🇧🇷_3"
 
 
 rules:

@@ -65,18 +65,38 @@ dns:
 proxies:
   - name: "🇨🇱_1"
     type: vless
-    server: "34.176.137.90"
-    port: 443
-    uuid: "ad5325f8-f0b3-41c4-a561-113529b60e70"
+    server: "platform109.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc"
-      short-id: "2c2d919f5183d0b7"
+    network: ws
+    ws-opts:
+      path: "/platform109"
+      headers:
+        Host: "platform109.halalkhor.info"
   - name: "🇨🇱_2"
+    type: vless
+    server: "platform101.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform101"
+      headers:
+        Host: "platform101.halalkhor.info"
+  - name: "🇨🇱_3"
+    type: vless
+    server: "platform106.golnamakcert.top"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform106"
+      headers:
+        Host: "platform106.halalkhor.info"
+  - name: "🇨🇱_4"
     type: ss
     server: "64.176.2.21"
     port: 8388
@@ -99,6 +119,8 @@ proxy-groups:
     proxies:
       - "🇨🇱_1"
       - "🇨🇱_2"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
 
 rules:
