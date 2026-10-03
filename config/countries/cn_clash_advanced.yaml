@@ -59,46 +59,16 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_4"
+  - name: "🇨🇳_2"
     type: vless
-    server: "45.146.90.85"
-    port: 443
-    uuid: "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27"
+    server: "27.44.143.169"
+    port: 33102
+    uuid: "0f47a872-b140-46f5-aef8-f46993f5fc01"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw"
-      short-id: "72104d27a0f5f62e"
+    servername: "sgg.knhqf.com"
     flow: "xtls-rprx-vision"
-  - name: "🇨🇿_5"
-    type: vless
-    server: "86.54.82.184"
-    port: 443
-    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "example.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
-      short-id: ""
-  - name: "🇨🇿_6"
-    type: vless
-    server: "cz.monkora.org"
-    port: 443
-    uuid: "454431fc-71e2-42b1-b375-5b55dd06666a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "example.org"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU"
-      short-id: ""
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +111,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +121,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +131,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +140,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +150,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇳_2"
 
 rules:
   - MATCH,PROXY-BEST

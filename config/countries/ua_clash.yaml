@@ -65,41 +65,35 @@ dns:
 proxies:
   - name: "🇺🇦_1"
     type: vless
-    server: "89.116.180.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime09.workers.dev"
-  - name: "🇺🇦_2"
-    type: vless
-    server: "103.71.23.244"
-    port: 443
-    uuid: "817b61c8-9bf0-4365-8a52-e43dfad274a6"
+    server: "104.245.240.2"
+    port: 8443
+    uuid: "c0acd42e-bf36-4747-90a0-a4a3a8774fdc"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "shin-ra.ccwu.cc"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shin-ra.ccwu.cc"
-  - name: "🇺🇦_3"
+    servername: "cdn.steamstatic.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
+  - name: "🇺🇦_2"
     type: vless
-    server: "89.116.180.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "45.135.235.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/dula?Telegram-WangCai2"
       headers:
-        Host: "vms.lifetime09.workers.dev"
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -116,7 +110,6 @@ proxy-groups:
     proxies:
       - "🇺🇦_1"
       - "🇺🇦_2"
-      - "🇺🇦_3"
 
 
 rules:

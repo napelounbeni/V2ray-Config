@@ -59,7 +59,36 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇹🇷_7"
+    type: vless
+    server: "78.135.73.47"
+    port: 443
+    uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.datadoghq.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
+      short-id: "f46cd3ea3d1eb72d"
+    flow: "xtls-rprx-vision"
   - name: "🇹🇷_8"
+    type: vless
+    server: "86.38.214.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "speed.dulacloud.store"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
+  - name: "🇹🇷_9"
     type: vless
     server: "151.241.226.201"
     port: 2053
@@ -72,20 +101,6 @@ proxies:
     reality-opts:
       public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
       short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_9"
-    type: vless
-    server: "194.135.34.223"
-    port: 443
-    uuid: "4deb9957-e037-4ae2-8892-da357cc6f99f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "baltic.cendora.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
-      short-id: "4a46213c935e2ee4"
-    flow: "xtls-rprx-vision"
   - name: "🇹🇷_10"
     type: vless
     server: "81.177.215.175"
@@ -102,43 +117,19 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_11"
     type: vless
-    server: "155.103.70.53"
-    port: 30303
-    uuid: "d18c6897-2849-456a-8c46-d7ecece47c20"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wzs.echo.net.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg=="
-      headers:
-        Host: "wzs.echo.net.eu.org"
-  - name: "🇹🇷_12"
-    type: vless
-    server: "176.96.131.251"
-    port: 1280
-    uuid: "c0e8fb58-a60f-4c15-9444-4e7c109797a8"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇹🇷_13"
-    type: vless
-    server: "78.135.73.47"
+    server: "194.135.34.223"
     port: 443
-    uuid: "25e16692-d097-4e69-9e2d-8415609c1968"
+    uuid: "4deb9957-e037-4ae2-8892-da357cc6f99f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.datadoghq.com"
-    client-fingerprint: "firefox"
+    servername: "baltic.cendora.ru"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
-      short-id: "f46cd3ea3d1eb72d"
+      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
+      short-id: "4a46213c935e2ee4"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_12"
     type: ss
     server: "bale.xv98.ir"
     port: 5051
@@ -187,13 +178,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   - name: "LB-CDN"
     type: load-balance
@@ -203,13 +193,12 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -219,13 +208,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   - name: "FAST-CDN"
     type: url-test
@@ -234,13 +222,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -250,25 +237,23 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇹🇷_7"
       - "🇹🇷_8"
       - "🇹🇷_9"
       - "🇹🇷_10"
       - "🇹🇷_11"
       - "🇹🇷_12"
-      - "🇹🇷_13"
-      - "🇹🇷_14"
 
 rules:
   - MATCH,PROXY-BEST

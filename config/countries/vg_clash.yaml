@@ -63,22 +63,21 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇱🇺_1"
+  - name: "🇻🇬_1"
     type: vless
-    server: "193.57.88.7"
-    port: 443
-    uuid: "8325bd97-b77c-4917-acaa-2446e9e8cc03"
+    server: "45.142.120.7"
+    port: 8443
+    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vk.com"
+    servername: "speed.dulacloud.store"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY"
-      short-id: "79651ae525860543"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "haknewhpjmv"
+    network: ws
+    ws-opts:
+      path: "/dula?Telegram-WangCai2"
+      headers:
+        Host: "speed.dulacloud.store"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,7 +92,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇱🇺_1"
+      - "🇻🇬_1"
 
 
 rules:

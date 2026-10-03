@@ -65,21 +65,7 @@ dns:
 proxies:
   - name: "🇿🇦_1"
     type: vless
-    server: "102.208.217.201"
-    port: 443
-    uuid: "a15d1b88-e3f4-4f4d-9c04-462a2965a60a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sa201.mech-pro.online"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI"
-      short-id: "16e0f049"
-    flow: "xtls-rprx-vision"
-  - name: "🇿🇦_2"
-    type: vless
-    server: "34.35.174.143"
+    server: "34.35.174.85"
     port: 443
     uuid: "4758aee6-6d1a-4306-b460-2398b5af4e35"
     udp: true
@@ -90,7 +76,7 @@ proxies:
     reality-opts:
       public-key: "dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4"
       short-id: "5ced03e42cc31aab"
-  - name: "🇿🇦_3"
+  - name: "🇿🇦_2"
     type: vless
     server: "34.35.58.153"
     port: 443
@@ -103,12 +89,19 @@ proxies:
     reality-opts:
       public-key: "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE"
       short-id: "89b3a20484eb43ec"
-  - name: "🇿🇦_4"
+  - name: "🇿🇦_3"
     type: ss
     server: "102.37.156.224"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "aduB9HGxQHjA2SBMRjkHX6"
+    udp: true
+  - name: "🇿🇦_4"
+    type: ss
+    server: "139.84.247.164"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "tfAcRikawhNoZAhu"
     udp: true
   - name: "🇿🇦_5"
     type: ss
@@ -119,26 +112,19 @@ proxies:
     udp: true
   - name: "🇿🇦_6"
     type: ss
-    server: "102.133.165.160"
-    port: 16233
-    cipher: "chacha20-ietf-poly1305"
-    password: "Xsy8Ox4yOV3xLlpxtjzs3X"
-    udp: true
-  - name: "🇿🇦_7"
-    type: ss
-    server: "139.84.247.164"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "tfAcRikawhNoZAhu"
-    udp: true
-  - name: "🇿🇦_8"
-    type: ss
     server: "102.37.156.224"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "aduB9HGxQHjA2SBMRjkHX6"
     udp: true
-  - name: "🇿🇦_9"
+  - name: "🇿🇦_7"
+    type: ss
+    server: "102.133.165.160"
+    port: 16233
+    cipher: "chacha20-ietf-poly1305"
+    password: "Xsy8Ox4yOV3xLlpxtjzs3X"
+    udp: true
+  - name: "🇿🇦_8"
     type: ss
     server: "102.133.165.160"
     port: 16233
@@ -167,7 +153,6 @@ proxy-groups:
       - "🇿🇦_6"
       - "🇿🇦_7"
       - "🇿🇦_8"
-      - "🇿🇦_9"
 
 
 rules:

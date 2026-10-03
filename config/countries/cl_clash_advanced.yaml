@@ -59,40 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇱_5"
+  - name: "🇨🇱_3"
     type: vless
-    server: "platform109.golnamakcert.top"
+    server: "platform115.golnamakcert.top"
     port: 80
     uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
     udp: true
     network: ws
     ws-opts:
-      path: "/platform109"
+      path: "/platform115"
       headers:
-        Host: "platform109.halalkhor.info"
-  - name: "🇨🇱_6"
-    type: vless
-    server: "platform101.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform101"
-      headers:
-        Host: "platform101.halalkhor.info"
-  - name: "🇨🇱_7"
-    type: vless
-    server: "platform106.golnamakcert.top"
-    port: 80
-    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/platform106"
-      headers:
-        Host: "platform106.halalkhor.info"
-  - name: "🇨🇱_8"
+        Host: "platform115.halalkhor.info"
+  - name: "🇨🇱_4"
     type: ss
     server: "64.176.2.21"
     port: 8388
@@ -141,10 +119,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
   - name: "LB-CDN"
     type: load-balance
@@ -154,10 +130,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -167,10 +141,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
   - name: "FAST-CDN"
     type: url-test
@@ -179,10 +151,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -192,19 +162,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇱_5"
-      - "🇨🇱_6"
-      - "🇨🇱_7"
-      - "🇨🇱_8"
+      - "🇨🇱_3"
+      - "🇨🇱_4"
 
 rules:
   - MATCH,PROXY-BEST

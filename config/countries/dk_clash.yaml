@@ -63,32 +63,20 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇳🇿_1"
+  - name: "🇩🇰_1"
     type: vless
-    server: "114.23.136.104"
+    server: "81.17.159.115"
     port: 443
-    uuid: "817b61c8-9bf0-4365-8a52-e43dfad274a6"
+    uuid: "d3179449-2988-40ec-b08f-dcfe6e66ba63"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "shin-ra.ccwu.cc"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shin-ra.ccwu.cc"
-  - name: "🇳🇿_2"
-    type: vless
-    server: "114.129.43.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
+    servername: "dk88.sonicsonic.icu"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,8 +91,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇳🇿_1"
-      - "🇳🇿_2"
+      - "🇩🇰_1"
 
 
 rules:
