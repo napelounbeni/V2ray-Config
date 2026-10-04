@@ -59,18 +59,17 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_12"
+  - name: "🇮🇪_13"
     type: vless
-    server: "50.7.5.163"
+    server: "50.7.5.165"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir-viper.failspace.top"
-    client-fingerprint: "firefox"
+    servername: "ir-new1.failspace.top"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_13"
+  - name: "🇮🇪_14"
     type: vless
     server: "198.55.102.59"
     port: 4443
@@ -84,27 +83,21 @@ proxies:
       public-key: "9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8"
       short-id: "ce6767c3f1"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_14"
-    type: vless
-    server: "50.7.5.165"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-new1.failspace.top"
-    flow: "xtls-rprx-vision"
   - name: "🇮🇪_15"
     type: vless
-    server: "50.7.5.166"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    server: "23.95.225.10"
+    port: 8443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    servername: "ccc.010304.xyz"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ccc.010304.xyz"
   - name: "🇮🇪_16"
     type: vless
     server: "50.7.5.164"
@@ -118,30 +111,29 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_17"
     type: vless
-    server: "85.159.229.122"
+    server: "50.7.5.166"
     port: 443
-    uuid: "4b21fbc7-00c2-4665-9788-02153832f9e5"
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "v2ray.aizgl.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/xray-ws"
-      headers:
-        Host: "v2ray.aizgl.com"
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇮🇪_18"
-    type: trojan
-    server: "3.255.76.207"
+    type: vless
+    server: "50.7.5.163"
     port: 443
-    password: "Trojan@82164024"
-    sni: "ie.tronsg.com"
-    skip-cert-verify: true
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-viper.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
   - name: "🇮🇪_19"
     type: trojan
-    server: "3.253.106.233"
+    server: "loved-shark.rooster465.autos"
     port: 443
     password: "UX82473651"
     sni: "loved-shark.rooster465.autos"
@@ -157,13 +149,29 @@ proxies:
     udp: true
   - name: "🇮🇪_21"
     type: trojan
-    server: "loved-shark.rooster465.autos"
+    server: "sacred-anemone.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "sacred-anemone.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_22"
+    type: trojan
+    server: "3.255.76.207"
+    port: 443
+    password: "Trojan@82164024"
+    sni: "ie.tronsg.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_23"
+    type: trojan
+    server: "3.253.106.233"
     port: 443
     password: "UX82473651"
     sni: "loved-shark.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_22"
+  - name: "🇮🇪_24"
     type: ss
     server: "20.107.219.181"
     port: 443
@@ -212,7 +220,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -223,6 +230,8 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
   - name: "LB-CDN"
     type: load-balance
@@ -232,7 +241,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -243,6 +251,8 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -252,7 +262,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -263,6 +272,8 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
   - name: "FAST-CDN"
     type: url-test
@@ -271,7 +282,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -282,6 +292,8 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -291,7 +303,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -302,12 +313,13 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_12"
       - "🇮🇪_13"
       - "🇮🇪_14"
       - "🇮🇪_15"
@@ -318,6 +330,8 @@ proxy-groups:
       - "🇮🇪_20"
       - "🇮🇪_21"
       - "🇮🇪_22"
+      - "🇮🇪_23"
+      - "🇮🇪_24"
 
 rules:
   - MATCH,PROXY-BEST

@@ -61,6 +61,19 @@ dns:
 proxies:
   - name: "🇱🇺_3"
     type: vless
+    server: "107.189.7.176"
+    port: 32752
+    uuid: "d72045ad-9c37-4768-89c1-88fe6ae7f9fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA"
+      short-id: "d758a643034ad90e"
+  - name: "🇱🇺_4"
+    type: vless
     server: "lbeiggdz.smart-cats.ru"
     port: 443
     uuid: "8325bd97-b77c-4917-acaa-2446e9e8cc03"
@@ -69,22 +82,6 @@ proxies:
     skip-cert-verify: true
     servername: "vk.com"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY"
-      short-id: "79651ae525860543"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "haknewhpjmv"
-  - name: "🇱🇺_4"
-    type: vless
-    server: "193.57.88.7"
-    port: 443
-    uuid: "8325bd97-b77c-4917-acaa-2446e9e8cc03"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vk.com"
-    client-fingerprint: "random"
     reality-opts:
       public-key: "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY"
       short-id: "79651ae525860543"

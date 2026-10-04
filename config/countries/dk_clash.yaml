@@ -63,34 +63,20 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇧🇾_1"
+  - name: "🇩🇰_1"
     type: vless
-    server: "95.130.84.36"
-    port: 8443
-    uuid: "8d42d29a-ed53-4684-a9ff-6b33826149de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aio.eth0.dpdns.org"
-    client-fingerprint: "unsafe"
-    network: ws
-    ws-opts:
-      path: "/aioproxybot/94.23.144.99-2053"
-      headers:
-        Host: "aio.eth0.dpdns.org"
-  - name: "🇧🇾_2"
-    type: vless
-    server: "178.172.235.73"
+    server: "81.17.159.115"
     port: 443
-    uuid: "0c4e0fa4-d16e-47a2-8325-39a1a8fb04d8"
+    uuid: "3aef55f1-4824-432e-82ce-6f8a9e8b2700"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "gfgfdgdfg.apruxdomain.online"
+    servername: "dk88.sonicsonic.icu"
     client-fingerprint: "firefox"
-    network: httpupgrade
-    httpupgrade-opts:
-      path: "/"
+    reality-opts:
+      public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,8 +91,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇧🇾_1"
-      - "🇧🇾_2"
+      - "🇩🇰_1"
 
 
 rules:

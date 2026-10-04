@@ -65,15 +65,6 @@ dns:
 proxies:
   - name: "🇬🇷_1"
     type: vless
-    server: "185.126.238.87"
-    port: 2083
-    uuid: "7668f678-faee-40cc-9b56-9c39dc773388"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "security.debian.org"
-  - name: "🇬🇷_2"
-    type: vless
     server: "85.90.197.220"
     port: 443
     uuid: "8f704ed6-9a1a-4d04-94dd-1bff501716de"
@@ -85,34 +76,15 @@ proxies:
       public-key: "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4"
       short-id: "94acb54627612d43"
     flow: "xtls-rprx-vision"
-  - name: "🇬🇷_3"
+  - name: "🇬🇷_2"
     type: vless
-    server: "greeeeeek.pumpkinpie.study"
-    port: 443
-    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
+    server: "185.126.238.87"
+    port: 2083
+    uuid: "7668f678-faee-40cc-9b56-9c39dc773388"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "greeeeeek.pumpkinpie.study"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0"
-      short-id: "9fa5c0092361b848"
-    flow: "xtls-rprx-vision"
-  - name: "🇬🇷_4"
-    type: vless
-    server: "85.90.197.146"
-    port: 443
-    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "greeeeeek.pumpkinpie.study"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0"
-      short-id: "9fa5c0092361b848"
-    flow: "xtls-rprx-vision"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "security.debian.org"
 
 proxy-groups:
   - name: "PROXY"
@@ -129,8 +101,6 @@ proxy-groups:
     proxies:
       - "🇬🇷_1"
       - "🇬🇷_2"
-      - "🇬🇷_3"
-      - "🇬🇷_4"
 
 
 rules:

@@ -59,20 +59,48 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇪🇪_19"
+  - name: "🇪🇪_15"
     type: vless
-    server: "141.0.187.16"
-    port: 2083
-    uuid: "fba73f98-777a-42a6-83c0-7d1f6f070e8d"
+    server: "143.246.41.23"
+    port: 25895
+    uuid: "f90b7d43-69e2-4b46-a672-8029bc6796a2"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "crt.dodopanel.biz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/vless-ws"
-  - name: "🇪🇪_20"
+    servername: "www.samsung.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k"
+      short-id: "a73f0410d728c823"
+  - name: "🇪🇪_16"
+    type: vless
+    server: "95.85.224.51"
+    port: 443
+    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
+      short-id: "a696de84963656de"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_17"
+    type: vless
+    server: "89.125.13.202"
+    port: 443
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d3-ee1.cloud-cdn.xyz"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ"
+      short-id: "ad6e08b22389abd2"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_18"
     type: vless
     server: "94.183.170.135"
     port: 8443
@@ -82,7 +110,7 @@ proxies:
     skip-cert-verify: true
     servername: "estproxy4.lockdwn.com"
     client-fingerprint: "firefox"
-  - name: "🇪🇪_21"
+  - name: "🇪🇪_19"
     type: vless
     server: "194.26.141.148"
     port: 8443
@@ -97,34 +125,21 @@ proxies:
       path: "/vpn-wss/fluxor/59011/"
       headers:
         Host: "fdghyt.com"
-  - name: "🇪🇪_22"
+  - name: "🇪🇪_20"
     type: vless
-    server: "143.246.41.23"
-    port: 25895
-    uuid: "f90b7d43-69e2-4b46-a672-8029bc6796a2"
+    server: "77.72.85.247"
+    port: 8443
+    uuid: "6c713691-3ca2-4446-ad25-113d1bed6b03"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.samsung.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k"
-      short-id: "a73f0410d728c823"
-  - name: "🇪🇪_23"
-    type: vless
-    server: "89.125.13.202"
-    port: 443
-    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d3-ee1.cloud-cdn.xyz"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ"
-      short-id: "ad6e08b22389abd2"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_24"
+    servername: "fdghyt.com"
+    network: ws
+    ws-opts:
+      path: "/vpn-wss/fluxor/59011/"
+      headers:
+        Host: "fdghyt.com"
+  - name: "🇪🇪_21"
     type: vless
     server: "94.183.170.135"
     port: 443
@@ -135,115 +150,20 @@ proxies:
       path: "/"
       headers:
         Host: "estproxy4.lockdwn.com"
-  - name: "🇪🇪_25"
+  - name: "🇪🇪_22"
     type: vless
-    server: "93.89.220.37"
-    port: 443
-    uuid: "185e2bb3-2934-48d0-bbd5-dd20d16e83ee"
+    server: "141.0.187.16"
+    port: 2083
+    uuid: "fba73f98-777a-42a6-83c0-7d1f6f070e8d"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ibm.com"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g"
-      short-id: "e88cb983f3c97528"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_26"
-    type: vless
-    server: "163.245.52.91"
-    port: 443
-    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "d3-ee1.cloud-cdn.xyz"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ"
-      short-id: "ad6e08b22389abd2"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_27"
-    type: vless
-    server: "eston3.o4ka-internet.com"
-    port: 443
-    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eston3.o4ka-internet.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
-      short-id: "5629431325884ff0"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_28"
-    type: vless
-    server: "185.159.247.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
+    servername: "crt.dodopanel.biz"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime59.workers.dev"
-  - name: "🇪🇪_29"
-    type: vless
-    server: "5.181.202.58"
-    port: 443
-    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "eston3.o4ka-internet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
-      short-id: "5629431325884ff0"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_30"
-    type: vless
-    server: "ee.h1cloud.net"
-    port: 25895
-    uuid: "f90b7d43-69e2-4b46-a672-8029bc6796a2"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.samsung.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k"
-      short-id: "a73f0410d728c823"
-  - name: "🇪🇪_31"
-    type: vless
-    server: "95.85.224.51"
-    port: 443
-    uuid: "342ab7e4-5a89-0001-8809-304120d4aa83"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "max.ru"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc"
-      short-id: "a696de84963656de"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇪_32"
-    type: vless
-    server: "45.80.108.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "speed.dulacloud.store"
-    network: ws
-    ws-opts:
-      path: "/dula?Telegram-WangCai2fp=chrome"
-      headers:
-        Host: "speed.dulacloud.store"
-  - name: "🇪🇪_33"
+      path: "/vless-ws"
+  - name: "🇪🇪_23"
     type: vless
     server: "77.72.85.246"
     port: 8443
@@ -257,7 +177,35 @@ proxies:
       path: "/vpn-wss/fluxor/59011/"
       headers:
         Host: "fdghyt.com"
-  - name: "🇪🇪_34"
+  - name: "🇪🇪_24"
+    type: vless
+    server: "93.89.220.37"
+    port: 443
+    uuid: "185e2bb3-2934-48d0-bbd5-dd20d16e83ee"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ibm.com"
+    client-fingerprint: "edge"
+    reality-opts:
+      public-key: "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g"
+      short-id: "e88cb983f3c97528"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_25"
+    type: vless
+    server: "163.245.52.91"
+    port: 443
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d3-ee1.cloud-cdn.xyz"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ"
+      short-id: "ad6e08b22389abd2"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇪_26"
     type: trojan
     server: "80.77.25.142"
     port: 443
@@ -268,17 +216,7 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇪_35"
-    type: trojan
-    server: "109.206.241.10"
-    port: 449
-    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
-    sni: "russiapower.accesscam.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇪🇪_36"
+  - name: "🇪🇪_27"
     type: trojan
     server: "185.36.141.81"
     port: 443
@@ -289,6 +227,14 @@ proxies:
     network: ws
     ws-opts:
       path: "/assignment"
+  - name: "🇪🇪_28"
+    type: trojan
+    server: "109.206.241.10"
+    port: 449
+    password: "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1"
+    sni: "russiapower.accesscam.org"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -331,6 +277,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -341,14 +291,6 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
   - name: "LB-CDN"
     type: load-balance
@@ -358,6 +300,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -368,14 +314,6 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -385,6 +323,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -395,14 +337,6 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
   - name: "FAST-CDN"
     type: url-test
@@ -411,6 +345,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -421,14 +359,6 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -438,6 +368,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -448,19 +382,15 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇪🇪_15"
+      - "🇪🇪_16"
+      - "🇪🇪_17"
+      - "🇪🇪_18"
       - "🇪🇪_19"
       - "🇪🇪_20"
       - "🇪🇪_21"
@@ -471,14 +401,6 @@ proxy-groups:
       - "🇪🇪_26"
       - "🇪🇪_27"
       - "🇪🇪_28"
-      - "🇪🇪_29"
-      - "🇪🇪_30"
-      - "🇪🇪_31"
-      - "🇪🇪_32"
-      - "🇪🇪_33"
-      - "🇪🇪_34"
-      - "🇪🇪_35"
-      - "🇪🇪_36"
 
 rules:
   - MATCH,PROXY-BEST

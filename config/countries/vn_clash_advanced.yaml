@@ -59,34 +59,12 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇧🇾_3"
+  - name: "🇻🇳_2"
     type: vless
-    server: "95.130.84.36"
-    port: 8443
-    uuid: "8d42d29a-ed53-4684-a9ff-6b33826149de"
+    server: "150.95.109.109"
+    port: 2086
+    uuid: "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aio.eth0.dpdns.org"
-    client-fingerprint: "unsafe"
-    network: ws
-    ws-opts:
-      path: "/aioproxybot/94.23.144.99-2053"
-      headers:
-        Host: "aio.eth0.dpdns.org"
-  - name: "🇧🇾_4"
-    type: vless
-    server: "178.172.235.73"
-    port: 443
-    uuid: "0c4e0fa4-d16e-47a2-8325-39a1a8fb04d8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "gfgfdgdfg.apruxdomain.online"
-    client-fingerprint: "firefox"
-    network: httpupgrade
-    httpupgrade-opts:
-      path: "/"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -129,8 +107,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -140,8 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -151,8 +127,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,8 +136,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,15 +146,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇧🇾_3"
-      - "🇧🇾_4"
+      - "🇻🇳_2"
 
 rules:
   - MATCH,PROXY-BEST
