@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
+    server: "80.96.109.155"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "mori-md.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
     server: "80.96.109.15"
     port: 443
     uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
@@ -74,28 +85,6 @@ proxies:
     servername: "moldova.failspace.top"
     client-fingerprint: "firefox"
     flow: "xtls-rprx-vision"
-  - name: "🇲🇩_2"
-    type: vless
-    server: "mori-md.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "mori-md.failspace.top"
-    client-fingerprint: "safari"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇩_3"
-    type: vless
-    server: "md-new.failspace.top"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "md-new.failspace.top"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision-udp443"
 
 proxy-groups:
   - name: "PROXY"
@@ -112,7 +101,6 @@ proxy-groups:
     proxies:
       - "🇲🇩_1"
       - "🇲🇩_2"
-      - "🇲🇩_3"
 
 
 rules:

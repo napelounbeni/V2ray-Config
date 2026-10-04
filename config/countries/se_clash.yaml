@@ -79,6 +79,34 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇸🇪_2"
     type: vless
+    server: "132.243.231.12"
+    port: 443
+    uuid: "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "d3-se1.cloud-cdn.xyz"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM"
+      short-id: "5efa80b939612291"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_3"
+    type: vless
+    server: "143.246.196.207"
+    port: 443
+    uuid: "ac0c2945-b758-11f1-8181-54db13ea7d40"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.blocket.se"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_4"
+    type: vless
     server: "swed4.o4ka-internet.com"
     port: 443
     uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
@@ -91,7 +119,49 @@ proxies:
       public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
       short-id: "5629431325884ff0"
     flow: "xtls-rprx-vision"
-  - name: "🇸🇪_3"
+  - name: "🇸🇪_5"
+    type: vless
+    server: "31.207.7.74"
+    port: 443
+    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pkg.go.dev"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
+      short-id: "457ae5b8bef4d1b3"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_6"
+    type: vless
+    server: "144.31.235.214"
+    port: 443
+    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "swed4.o4ka-internet.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
+      short-id: "5629431325884ff0"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_7"
+    type: vless
+    server: "193.148.59.178"
+    port: 443
+    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
+      short-id: "e3daad69"
+    flow: "xtls-rprx-vision"
+  - name: "🇸🇪_8"
     type: vless
     server: "62.60.159.81"
     port: 2053
@@ -107,76 +177,19 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpce5bb9e71"
-  - name: "🇸🇪_4"
-    type: vless
-    server: "144.31.235.214"
-    port: 443
-    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
-    udp: true
-    tls: true
+  - name: "🇸🇪_9"
+    type: trojan
+    server: "77.221.138.199"
+    port: 8443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "swed4.o4ka-internet.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8"
-      short-id: "5629431325884ff0"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_5"
-    type: vless
-    server: "143.246.196.207"
-    port: 443
-    uuid: "ac0c2945-b758-11f1-8181-54db13ea7d40"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.blocket.se"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_6"
-    type: vless
-    server: "193.148.59.178"
-    port: 443
-    uuid: "20d7c485-5d24-49b5-a5cc-bb7a7daf9908"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE"
-      short-id: "e3daad69"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_7"
-    type: vless
-    server: "177.3.209.165"
-    port: 443
-    uuid: "a5dd2dd9-0995-449e-be67-4a409890dc42"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "owkd.pashalloh.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "mYtQrGiR9EkOpUsvsI7E18AWnFZZqfOPXUdpzE3luz8"
-      short-id: "da4d87fa"
-    flow: "xtls-rprx-vision"
-  - name: "🇸🇪_8"
-    type: vless
-    server: "31.207.7.74"
-    port: 443
-    uuid: "2412bd96-925b-43f2-81d1-0ed4f0793699"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pkg.go.dev"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s"
-      short-id: "457ae5b8bef4d1b3"
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   - name: "PROXY"
@@ -199,6 +212,7 @@ proxy-groups:
       - "🇸🇪_6"
       - "🇸🇪_7"
       - "🇸🇪_8"
+      - "🇸🇪_9"
 
 
 rules:

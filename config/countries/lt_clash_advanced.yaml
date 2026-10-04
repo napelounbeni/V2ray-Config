@@ -59,7 +59,32 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_4"
+  - name: "🇱🇹_6"
+    type: vless
+    server: "130.78.190.5"
+    port: 443
+    uuid: "6db6b948-655f-4f68-a9e7-865050e05b31"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "play.murka.fun"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "S4zHOXTm7KrQCl98pFNjYZu3VOK15zqOZNekYlFGfTQ"
+      short-id: "1f82ac"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_7"
+    type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_8"
     type: vless
     server: "62.77.158.1"
     port: 443
@@ -73,35 +98,33 @@ proxies:
       public-key: "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs"
       short-id: "6a"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_5"
+  - name: "🇱🇹_9"
     type: vless
-    server: "84.32.151.226"
+    server: "play.murka.fun"
     port: 443
-    uuid: "3e35758a-911b-4e30-bc1a-8985323df6f7"
+    uuid: "6db6b948-655f-4f68-a9e7-865050e05b31"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "workspace.cloudnativecontrol.com"
+    servername: "play.murka.fun"
+    client-fingerprint: "random"
     reality-opts:
-      public-key: "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4"
-      short-id: "4a7d3e9f2b8c6a1d"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "moktana.net.v1.StreamService"
-  - name: "🇱🇹_6"
-    type: vless
-    server: "89.116.250.7"
-    port: 8443
-    uuid: "7967bf59-57e3-4cde-9898-527b0fe60022"
-    udp: true
-    tls: true
+      public-key: "S4zHOXTm7KrQCl98pFNjYZu3VOK15zqOZNekYlFGfTQ"
+      short-id: "1f82ac"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_10"
+    type: trojan
+    server: "195.181.244.216"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
-    servername: "speed.dulacloud.store"
+    udp: true
     network: ws
     ws-opts:
-      path: "/dula?Telegram-WangCai2fp=chrome"
+      path: "/assignment"
       headers:
-        Host: "speed.dulacloud.store"
+        Host: "www.calmlunch.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -144,9 +167,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   - name: "LB-CDN"
     type: load-balance
@@ -156,9 +181,11 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -168,9 +195,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   - name: "FAST-CDN"
     type: url-test
@@ -179,9 +208,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -191,17 +222,21 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇹_4"
-      - "🇱🇹_5"
       - "🇱🇹_6"
+      - "🇱🇹_7"
+      - "🇱🇹_8"
+      - "🇱🇹_9"
+      - "🇱🇹_10"
 
 rules:
   - MATCH,PROXY-BEST

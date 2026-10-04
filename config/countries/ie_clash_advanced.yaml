@@ -72,28 +72,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇪_13"
     type: vless
-    server: "50.7.5.166"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir-new.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_14"
-    type: vless
-    server: "50.7.5.164"
-    port: 443
-    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ir.failspace.top"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇪_15"
-    type: vless
     server: "198.55.102.59"
     port: 4443
     uuid: "7f86f371-5a85-48be-babc-7af1ae7ffb75"
@@ -106,7 +84,7 @@ proxies:
       public-key: "9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8"
       short-id: "ce6767c3f1"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_16"
+  - name: "🇮🇪_14"
     type: vless
     server: "50.7.5.165"
     port: 443
@@ -116,14 +94,43 @@ proxies:
     skip-cert-verify: true
     servername: "ir-new1.failspace.top"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_17"
-    type: trojan
-    server: "ie.tronsg.com"
+  - name: "🇮🇪_15"
+    type: vless
+    server: "50.7.5.166"
     port: 443
-    password: "Trojan@82164024"
-    sni: "ie.tronsg.com"
-    skip-cert-verify: true
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir-new.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_16"
+    type: vless
+    server: "50.7.5.164"
+    port: 443
+    uuid: "cd3bb7d9-7df3-4644-ac05-c260990ac277"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ir.failspace.top"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇪_17"
+    type: vless
+    server: "85.159.229.122"
+    port: 443
+    uuid: "4b21fbc7-00c2-4665-9788-02153832f9e5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray.aizgl.com"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/xray-ws"
+      headers:
+        Host: "v2ray.aizgl.com"
   - name: "🇮🇪_18"
     type: trojan
     server: "3.255.76.207"
@@ -134,32 +141,34 @@ proxies:
     udp: true
   - name: "🇮🇪_19"
     type: trojan
-    server: "loved-shark.rooster465.autos"
+    server: "3.253.106.233"
     port: 443
     password: "UX82473651"
     sni: "loved-shark.rooster465.autos"
     skip-cert-verify: true
     udp: true
   - name: "🇮🇪_20"
-    type: ss
-    server: "20.238.125.195"
+    type: trojan
+    server: "ie.tronsg.com"
     port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "Qr3RLHJLngbplPWd"
+    password: "Trojan@82164024"
+    sni: "ie.tronsg.com"
+    skip-cert-verify: true
     udp: true
   - name: "🇮🇪_21"
-    type: ss
-    server: "20.238.125.195"
+    type: trojan
+    server: "loved-shark.rooster465.autos"
     port: 443
-    cipher: "chacha20-ietf-poly1305"
-    password: "jUg9wluj5iOiY9sI"
+    password: "UX82473651"
+    sni: "loved-shark.rooster465.autos"
+    skip-cert-verify: true
     udp: true
   - name: "🇮🇪_22"
     type: ss
-    server: "20.238.125.195"
+    server: "20.107.219.181"
     port: 443
     cipher: "chacha20-ietf-poly1305"
-    password: "ng0XTChgbJJ3Sv2d"
+    password: "2fGnKgP8k8EHFuvj"
     udp: true
 
 proxy-groups:

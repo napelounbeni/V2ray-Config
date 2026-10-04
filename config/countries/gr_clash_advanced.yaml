@@ -59,20 +59,6 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇬🇷_4"
-    type: vless
-    server: "85.90.197.220"
-    port: 443
-    uuid: "8f704ed6-9a1a-4d04-94dd-1bff501716de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4"
-      short-id: "94acb54627612d43"
-    flow: "xtls-rprx-vision"
   - name: "🇬🇷_5"
     type: vless
     server: "185.126.238.87"
@@ -84,6 +70,33 @@ proxies:
       grpc-service-name: "security.debian.org"
   - name: "🇬🇷_6"
     type: vless
+    server: "85.90.197.220"
+    port: 443
+    uuid: "8f704ed6-9a1a-4d04-94dd-1bff501716de"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    reality-opts:
+      public-key: "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4"
+      short-id: "94acb54627612d43"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_7"
+    type: vless
+    server: "greeeeeek.pumpkinpie.study"
+    port: 443
+    uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "greeeeeek.pumpkinpie.study"
+    client-fingerprint: "random"
+    reality-opts:
+      public-key: "lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0"
+      short-id: "9fa5c0092361b848"
+    flow: "xtls-rprx-vision"
+  - name: "🇬🇷_8"
+    type: vless
     server: "85.90.197.146"
     port: 443
     uuid: "8f6e49e6-7f03-4f10-9da9-1716158d80ed"
@@ -91,7 +104,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "greeeeeek.pumpkinpie.study"
-    client-fingerprint: "qq"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "lza1anie-lqVSKrFdfSzq4XLd8Ge2qyCDkgZb1xr1k0"
       short-id: "9fa5c0092361b848"
@@ -138,9 +151,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -150,9 +164,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -162,9 +177,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -173,9 +189,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -185,17 +202,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇬🇷_4"
       - "🇬🇷_5"
       - "🇬🇷_6"
+      - "🇬🇷_7"
+      - "🇬🇷_8"
 
 rules:
   - MATCH,PROXY-BEST

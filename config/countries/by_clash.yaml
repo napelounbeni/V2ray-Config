@@ -63,28 +63,34 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇲🇾_1"
+  - name: "🇧🇾_1"
     type: vless
-    server: "149.33.30.176"
-    port: 443
-    uuid: "5fffad1b-10f0-41ff-abe7-e5a92696d5ef"
+    server: "95.130.84.36"
+    port: 8443
+    uuid: "8d42d29a-ed53-4684-a9ff-6b33826149de"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "rk_iTiKEWYK02oF8lCIXrVlM7pWMSYX-Iuaz6Eat5lI"
-      short-id: "4b26322b354bd74e"
-    flow: "xtls-rprx-vision"
-  - name: "🇲🇾_2"
-    type: trojan
-    server: "47.250.84.25"
+    servername: "aio.eth0.dpdns.org"
+    client-fingerprint: "unsafe"
+    network: ws
+    ws-opts:
+      path: "/aioproxybot/94.23.144.99-2053"
+      headers:
+        Host: "aio.eth0.dpdns.org"
+  - name: "🇧🇾_2"
+    type: vless
+    server: "178.172.235.73"
     port: 443
-    password: "5931134d1cde66bf83a54acdfebe7ab2"
-    sni: "moltbot.doctoroyy.net"
-    skip-cert-verify: true
+    uuid: "0c4e0fa4-d16e-47a2-8325-39a1a8fb04d8"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "gfgfdgdfg.apruxdomain.online"
+    client-fingerprint: "firefox"
+    network: httpupgrade
+    httpupgrade-opts:
+      path: "/"
 
 proxy-groups:
   - name: "PROXY"
@@ -99,8 +105,8 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇲🇾_1"
-      - "🇲🇾_2"
+      - "🇧🇾_1"
+      - "🇧🇾_2"
 
 
 rules:
