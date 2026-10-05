@@ -59,21 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇰🇷_50"
+  - name: "🇰🇷_32"
     type: vless
-    server: "47.80.14.8"
-    port: 443
-    uuid: "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93"
+    server: "151.245.106.49"
+    port: 2053
+    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.samsung.com"
-    client-fingerprint: "chrome"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w"
-      short-id: "71110d3f7ef57760"
-    flow: "xtls-rprx-vision"
-  - name: "🇰🇷_51"
+      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
+      short-id: "429499c03d4cc8a0"
+  - name: "🇰🇷_33"
     type: vless
     server: "3.39.4.109"
     port: 13672
@@ -87,7 +86,22 @@ proxies:
       public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
       short-id: "48050fab"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_52"
+  - name: "🇰🇷_34"
+    type: vless
+    server: "161.118.153.136"
+    port: 443
+    uuid: "f49d04d6-aaa7-4013-b323-bc35b78230db"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "s4ws.ragingbull.de5.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/wsrb7k2m"
+      headers:
+        Host: "s4ws.ragingbull.de5.net"
+  - name: "🇰🇷_35"
     type: vless
     server: "3.39.4.109"
     port: 18967
@@ -101,76 +115,7 @@ proxies:
       public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
       short-id: "48050fab"
     flow: "xtls-rprx-vision"
-  - name: "🇰🇷_53"
-    type: vless
-    server: "151.245.106.49"
-    port: 2053
-    uuid: "a2de9567-9646-45a9-a410-7303a43bdb6c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo"
-      short-id: "429499c03d4cc8a0"
-  - name: "🇰🇷_54"
-    type: trojan
-    server: "43.201.252.164"
-    port: 443
-    password: "UX82473651"
-    sni: "balanced-stag.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_55"
-    type: trojan
-    server: "3.35.207.188"
-    port: 443
-    password: "UX82473651"
-    sni: "main-fawn.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_56"
-    type: trojan
-    server: "balanced-stag.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "balanced-stag.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_57"
-    type: trojan
-    server: "154.90.62.70"
-    port: 56127
-    password: "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B"
-    sni: "154.90.62.70"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_58"
-    type: trojan
-    server: "54.180.236.195"
-    port: 443
-    password: "UX82473651"
-    sni: "evolving-ewe.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_59"
-    type: trojan
-    server: "13.125.69.162"
-    port: 443
-    password: "UX82473651"
-    sni: "engaging-toucan.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_60"
-    type: trojan
-    server: "pretty-rat.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "pretty-rat.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_61"
+  - name: "🇰🇷_36"
     type: trojan
     server: "13.125.197.117"
     port: 443
@@ -178,79 +123,7 @@ proxies:
     sni: "liked-eft.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_62"
-    type: trojan
-    server: "main-fawn.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "main-fawn.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_63"
-    type: trojan
-    server: "3.35.168.225"
-    port: 443
-    password: "UX82473651"
-    sni: "noted-cougar.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_64"
-    type: trojan
-    server: "evolving-ewe.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "evolving-ewe.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_65"
-    type: trojan
-    server: "kind-stork.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "kind-stork.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_66"
-    type: trojan
-    server: "delicate-buck.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "delicate-buck.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_67"
-    type: trojan
-    server: "3.39.225.215"
-    port: 443
-    password: "UX82473651"
-    sni: "kind-stork.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_68"
-    type: trojan
-    server: "43.201.100.203"
-    port: 443
-    password: "UX82473651"
-    sni: "optimum-snapper.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_69"
-    type: trojan
-    server: "amazing-peacock.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "amazing-peacock.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_70"
-    type: trojan
-    server: "optimum-snapper.rooster465.autos"
-    port: 443
-    password: "UX82473651"
-    sni: "optimum-snapper.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇰🇷_71"
+  - name: "🇰🇷_37"
     type: trojan
     server: "3.34.131.153"
     port: 443
@@ -258,15 +131,15 @@ proxies:
     sni: "pretty-rat.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_72"
+  - name: "🇰🇷_38"
     type: trojan
-    server: "liked-eft.rooster465.autos"
+    server: "3.35.207.188"
     port: 443
     password: "UX82473651"
-    sni: "liked-eft.rooster465.autos"
+    sni: "main-fawn.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_73"
+  - name: "🇰🇷_39"
     type: trojan
     server: "engaging-toucan.rooster465.autos"
     port: 443
@@ -274,7 +147,63 @@ proxies:
     sni: "engaging-toucan.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_74"
+  - name: "🇰🇷_40"
+    type: trojan
+    server: "154.90.62.70"
+    port: 56127
+    password: "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B"
+    sni: "154.90.62.70"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_41"
+    type: trojan
+    server: "kind-stork.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "kind-stork.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_42"
+    type: trojan
+    server: "delicate-buck.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "delicate-buck.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_43"
+    type: trojan
+    server: "3.35.168.225"
+    port: 443
+    password: "UX82473651"
+    sni: "noted-cougar.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_44"
+    type: trojan
+    server: "balanced-stag.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "balanced-stag.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_45"
+    type: trojan
+    server: "main-fawn.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "main-fawn.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_46"
+    type: trojan
+    server: "amazing-peacock.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "amazing-peacock.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇰🇷_47"
     type: trojan
     server: "noted-cougar.rooster465.autos"
     port: 443
@@ -282,173 +211,118 @@ proxies:
     sni: "noted-cougar.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_75"
-    type: ss
-    server: "141.164.45.187"
-    port: 2376
-    cipher: "aes-256-gcm"
-    password: "faBAoD54k87UJG7"
+  - name: "🇰🇷_48"
+    type: trojan
+    server: "3.39.225.215"
+    port: 443
+    password: "UX82473651"
+    sni: "kind-stork.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_76"
-    type: ss
-    server: "141.164.45.187"
-    port: 8119
-    cipher: "aes-256-gcm"
-    password: "cdBIDV42DCwnfIN"
+  - name: "🇰🇷_49"
+    type: trojan
+    server: "43.201.100.203"
+    port: 443
+    password: "UX82473651"
+    sni: "optimum-snapper.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_77"
-    type: ss
-    server: "ce1fc2d8.krkt.hkssip.com"
-    port: 49642
-    cipher: "aes-256-gcm"
-    password: "ac9c0a7b"
+  - name: "🇰🇷_50"
+    type: trojan
+    server: "13.125.69.162"
+    port: 443
+    password: "UX82473651"
+    sni: "engaging-toucan.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_78"
-    type: ss
-    server: "141.164.45.187"
-    port: 8000
-    cipher: "aes-256-gcm"
-    password: "KixLvKzwjekG00rm"
+  - name: "🇰🇷_51"
+    type: trojan
+    server: "liked-eft.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "liked-eft.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_79"
-    type: ss
-    server: "141.164.45.187"
-    port: 9090
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+  - name: "🇰🇷_52"
+    type: trojan
+    server: "pretty-rat.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "pretty-rat.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_80"
-    type: ss
-    server: "141.164.45.187"
-    port: 5498
-    cipher: "aes-256-gcm"
-    password: "lGqs95QkFHo2NV"
+  - name: "🇰🇷_53"
+    type: trojan
+    server: "43.201.252.164"
+    port: 443
+    password: "UX82473651"
+    sni: "balanced-stag.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_81"
-    type: ss
-    server: "141.164.45.187"
-    port: 6679
-    cipher: "aes-256-gcm"
-    password: "TEzjfAYq2IjtuoS"
+  - name: "🇰🇷_54"
+    type: trojan
+    server: "optimum-snapper.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "optimum-snapper.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_82"
-    type: ss
-    server: "141.164.45.187"
-    port: 9090
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
+  - name: "🇰🇷_55"
+    type: trojan
+    server: "neutral-quail.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "neutral-quail.rooster465.autos"
+    skip-cert-verify: true
     udp: true
-  - name: "🇰🇷_83"
-    type: ss
-    server: "ce1fc2d8.krkt.hkssip.com"
-    port: 49642
-    cipher: "aes-256-gcm"
-    password: "ac9c0a7b"
-    udp: true
-  - name: "🇰🇷_84"
-    type: ss
-    server: "141.164.45.187"
-    port: 9101
-    cipher: "aes-256-gcm"
-    password: "e4FCWrgpkji3QY"
-    udp: true
-  - name: "🇰🇷_85"
-    type: ss
-    server: "141.164.45.187"
-    port: 7001
-    cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
-    udp: true
-  - name: "🇰🇷_86"
-    type: ss
-    server: "141.164.45.187"
-    port: 8888
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_87"
-    type: ss
-    server: "141.164.45.187"
-    port: 9101
-    cipher: "aes-256-gcm"
-    password: "e4FCWrgpkji3QY"
-    udp: true
-  - name: "🇰🇷_88"
+  - name: "🇰🇷_56"
     type: ss
     server: "211.174.113.172"
     port: 49642
     cipher: "aes-256-gcm"
     password: "ac9c0a7b"
     udp: true
-  - name: "🇰🇷_89"
-    type: ss
-    server: "141.164.45.187"
-    port: 5498
-    cipher: "aes-256-gcm"
-    password: "lGqs95QkFHo2NV"
-    udp: true
-  - name: "🇰🇷_90"
-    type: ss
-    server: "141.164.45.187"
-    port: 8888
-    cipher: "aes-256-gcm"
-    password: "Y6R9pAtvxxzmGC"
-    udp: true
-  - name: "🇰🇷_91"
-    type: ss
-    server: "141.164.45.187"
-    port: 8008
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
-    udp: true
-  - name: "🇰🇷_92"
-    type: ss
-    server: "141.164.45.187"
-    port: 8091
-    cipher: "aes-256-gcm"
-    password: "PCnnH6SQSnfoS27"
-    udp: true
-  - name: "🇰🇷_93"
-    type: ss
-    server: "141.164.45.187"
-    port: 8008
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
-    udp: true
-  - name: "🇰🇷_94"
+  - name: "🇰🇷_57"
     type: ss
     server: "211.174.113.172"
     port: 49642
     cipher: "aes-256-gcm"
     password: "ac9c0a7b"
     udp: true
-  - name: "🇰🇷_95"
+  - name: "🇰🇷_58"
     type: ss
-    server: "141.164.45.187"
-    port: 7002
+    server: "ce1fc2d8.krkt.hkssip.com"
+    port: 49642
     cipher: "aes-256-gcm"
-    password: "RexnBgU7EV5ADxG"
+    password: "ac9c0a7b"
     udp: true
-  - name: "🇰🇷_96"
+  - name: "🇰🇷_59"
     type: ss
-    server: "141.164.45.187"
-    port: 6697
+    server: "ce1fc2d8.krkt.hkssip.com"
+    port: 49642
     cipher: "aes-256-gcm"
-    password: "TEzjfAYq2IjtuoS"
+    password: "ac9c0a7b"
     udp: true
-  - name: "🇰🇷_97"
+  - name: "🇰🇷_60"
     type: ss
     server: "141.164.45.187"
     port: 5001
     cipher: "aes-256-gcm"
     password: "Y6R9pAtvxxzmGC"
     udp: true
-  - name: "🇰🇷_98"
+  - name: "🇰🇷_61"
     type: ss
     server: "141.164.45.187"
-    port: 8000
+    port: 7002
     cipher: "aes-256-gcm"
-    password: "KixLvKzwjekG00rm"
+    password: "RexnBgU7EV5ADxG"
+    udp: true
+  - name: "🇰🇷_62"
+    type: ss
+    server: "141.164.45.187"
+    port: 2376
+    cipher: "aes-256-gcm"
+    password: "faBAoD54k87UJG7"
     udp: true
 
 proxy-groups:
@@ -492,6 +366,24 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -505,42 +397,6 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
   - name: "LB-CDN"
     type: load-balance
@@ -550,6 +406,24 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -563,42 +437,6 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -608,6 +446,24 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -621,42 +477,6 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
   - name: "FAST-CDN"
     type: url-test
@@ -665,6 +485,24 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -678,42 +516,6 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -723,6 +525,24 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -736,47 +556,29 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇰🇷_32"
+      - "🇰🇷_33"
+      - "🇰🇷_34"
+      - "🇰🇷_35"
+      - "🇰🇷_36"
+      - "🇰🇷_37"
+      - "🇰🇷_38"
+      - "🇰🇷_39"
+      - "🇰🇷_40"
+      - "🇰🇷_41"
+      - "🇰🇷_42"
+      - "🇰🇷_43"
+      - "🇰🇷_44"
+      - "🇰🇷_45"
+      - "🇰🇷_46"
+      - "🇰🇷_47"
+      - "🇰🇷_48"
+      - "🇰🇷_49"
       - "🇰🇷_50"
       - "🇰🇷_51"
       - "🇰🇷_52"
@@ -790,42 +592,6 @@ proxy-groups:
       - "🇰🇷_60"
       - "🇰🇷_61"
       - "🇰🇷_62"
-      - "🇰🇷_63"
-      - "🇰🇷_64"
-      - "🇰🇷_65"
-      - "🇰🇷_66"
-      - "🇰🇷_67"
-      - "🇰🇷_68"
-      - "🇰🇷_69"
-      - "🇰🇷_70"
-      - "🇰🇷_71"
-      - "🇰🇷_72"
-      - "🇰🇷_73"
-      - "🇰🇷_74"
-      - "🇰🇷_75"
-      - "🇰🇷_76"
-      - "🇰🇷_77"
-      - "🇰🇷_78"
-      - "🇰🇷_79"
-      - "🇰🇷_80"
-      - "🇰🇷_81"
-      - "🇰🇷_82"
-      - "🇰🇷_83"
-      - "🇰🇷_84"
-      - "🇰🇷_85"
-      - "🇰🇷_86"
-      - "🇰🇷_87"
-      - "🇰🇷_88"
-      - "🇰🇷_89"
-      - "🇰🇷_90"
-      - "🇰🇷_91"
-      - "🇰🇷_92"
-      - "🇰🇷_93"
-      - "🇰🇷_94"
-      - "🇰🇷_95"
-      - "🇰🇷_96"
-      - "🇰🇷_97"
-      - "🇰🇷_98"
 
 rules:
   - MATCH,PROXY-BEST

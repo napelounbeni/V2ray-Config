@@ -72,10 +72,9 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "ccc.010304.xyz"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
 

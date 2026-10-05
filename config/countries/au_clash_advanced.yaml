@@ -59,42 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_5"
-    type: vless
-    server: "192.65.217.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime37.workers.dev"
-  - name: "🇦🇺_6"
-    type: vless
-    server: "103.169.142.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime38.workers.dev"
-  - name: "🇦🇺_7"
-    type: vless
-    server: "34.87.244.111"
-    port: 443
-    uuid: "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E"
-      short-id: "d725f0dd8cce210f"
-  - name: "🇦🇺_8"
+  - name: "🇦🇺_2"
     type: vless
     server: "51.161.204.244"
     port: 443
@@ -150,10 +115,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -163,10 +125,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -176,10 +135,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -188,10 +144,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -201,19 +154,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_5"
-      - "🇦🇺_6"
-      - "🇦🇺_7"
-      - "🇦🇺_8"
+      - "🇦🇺_2"
 
 rules:
   - MATCH,PROXY-BEST
