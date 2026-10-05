@@ -65,6 +65,19 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
+  - name: "🇹🇷_2"
+    type: vless
     server: "81.177.215.175"
     port: 443
     uuid: "1c5ed2e1-56da-41ab-9a78-159d9892ec17"
@@ -77,32 +90,19 @@ proxies:
       public-key: "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q"
       short-id: "9e4eced6e98ed4d4"
     flow: "xtls-rprx-vision"
-  - name: "🇹🇷_2"
-    type: vless
-    server: "tr.xelnivo.ir"
-    port: 5589
-    uuid: "688fcedc-c730-47fb-9fc0-b5962a38788e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014"
-      short-id: "8f798d413a5dbf01"
   - name: "🇹🇷_3"
     type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    server: "206.1.100.211"
+    port: 34417
+    uuid: "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "timeline.www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
+      public-key: "U1P07BbfuNbqxUjItxSMEvHtpyf-DfhHEL9vcSy5Kmc"
+      short-id: "99a7726cf144"
   - name: "🇹🇷_4"
     type: vless
     server: "78.135.73.47"
@@ -119,18 +119,68 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇹🇷_5"
     type: vless
-    server: "194.135.34.223"
-    port: 443
-    uuid: "4deb9957-e037-4ae2-8892-da357cc6f99f"
+    server: "155.103.70.53"
+    port: 30303
+    uuid: "d18c6897-2849-456a-8c46-d7ecece47c20"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "baltic.cendora.ru"
-    client-fingerprint: "firefox"
+    servername: "wzs.echo.net.eu.org"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg=="
+      headers:
+        Host: "wzs.echo.net.eu.org"
+  - name: "🇹🇷_6"
+    type: vless
+    server: "cookie.wookshop.ir"
+    port: 48372
+    uuid: "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "urchin.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik"
-      short-id: "4a46213c935e2ee4"
-    flow: "xtls-rprx-vision"
+      public-key: "TlHpZ8aTX6O16TrqRmYN6GP051W3PErHuYxtLxf4nAE"
+      short-id: "aa7738adec"
+  - name: "🇹🇷_7"
+    type: vless
+    server: "cookie.wookshop.ir"
+    port: 16328
+    uuid: "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.epicgames.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Mq4kcFmH5e0ttW-i3WkNMDxx0MmnpQ55fa7QroCmNHA"
+      short-id: "7dda83c53e"
+  - name: "🇹🇷_8"
+    type: vless
+    server: "185.87.24.179"
+    port: 2085
+    uuid: "2f322254-c1e3-4ec1-80ac-822d44a2238a"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
+  - name: "🇹🇷_9"
+    type: ss
+    server: "206.1.103.221"
+    port: 14074
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "gc24/luU7zbPhMS6GH6mUzT1qZBjCXhKbAvgUjM4Yno=:NOerjaqxVAGVMkJfw/LwtWwz27auvlL0MNKBrjlTeV0="
+    udp: true
+  - name: "🇹🇷_10"
+    type: ss
+    server: "206.1.100.83"
+    port: 25178
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -150,6 +200,11 @@ proxy-groups:
       - "🇹🇷_3"
       - "🇹🇷_4"
       - "🇹🇷_5"
+      - "🇹🇷_6"
+      - "🇹🇷_7"
+      - "🇹🇷_8"
+      - "🇹🇷_9"
+      - "🇹🇷_10"
 
 
 rules:

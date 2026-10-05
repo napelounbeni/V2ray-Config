@@ -64,20 +64,6 @@ dns:
 
 proxies:
   - name: "🇭🇺_1"
-    type: vless
-    server: "37.221.210.188"
-    port: 443
-    uuid: "3aef55f1-4824-432e-82ce-6f8a9e8b2700"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hu888.bearbeer.digital"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "🇭🇺_2"
     type: trojan
     server: "185.225.68.232"
     port: 443
@@ -105,7 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇭🇺_1"
-      - "🇭🇺_2"
 
 
 rules:

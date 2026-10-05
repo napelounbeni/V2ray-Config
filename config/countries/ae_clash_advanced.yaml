@@ -59,18 +59,29 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_3"
+  - name: "🇦🇪_5"
     type: vless
-    server: "84.235.244.108"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_4"
+        Host: "vms.lifetime18.workers.dev"
+  - name: "🇦🇪_6"
+    type: vless
+    server: "77.232.140.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
+  - name: "🇦🇪_7"
     type: vless
     server: "146.70.102.82"
     port: 443
@@ -84,6 +95,17 @@ proxies:
       public-key: "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k"
       short-id: "002fb4ec7b3088cc"
     flow: "xtls-rprx-vision"
+  - name: "🇦🇪_8"
+    type: vless
+    server: "84.235.244.108"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "uae.unixzone.us"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -126,8 +148,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -137,8 +161,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -148,8 +174,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -158,8 +186,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -169,15 +199,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇪_3"
-      - "🇦🇪_4"
+      - "🇦🇪_5"
+      - "🇦🇪_6"
+      - "🇦🇪_7"
+      - "🇦🇪_8"
 
 rules:
   - MATCH,PROXY-BEST

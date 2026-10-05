@@ -59,18 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇳_3"
-    type: vless
-    server: "112.49.63.11"
-    port: 33102
-    uuid: "0f47a872-b140-46f5-aef8-f46993f5fc01"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sgg.knhqf.com"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇳_4"
+  - name: "🇨🇳_2"
     type: vless
     server: "122.8.45.4"
     port: 8443
@@ -128,8 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -139,8 +127,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -150,8 +137,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,8 +146,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -171,15 +156,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇳_3"
-      - "🇨🇳_4"
+      - "🇨🇳_2"
 
 rules:
   - MATCH,PROXY-BEST

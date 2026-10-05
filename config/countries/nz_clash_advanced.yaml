@@ -59,20 +59,17 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇩🇰_2"
+  - name: "🇳🇿_2"
     type: vless
-    server: "81.17.159.115"
-    port: 443
-    uuid: "3aef55f1-4824-432e-82ce-6f8a9e8b2700"
+    server: "114.129.43.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dk88.sonicsonic.icu"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime04.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -115,7 +112,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -125,7 +122,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -135,7 +132,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -144,7 +141,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -154,13 +151,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇩🇰_2"
+      - "🇳🇿_2"
 
 rules:
   - MATCH,PROXY-BEST

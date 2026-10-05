@@ -63,19 +63,15 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇦🇿_1"
+  - name: "🇬🇪_1"
     type: vless
-    server: "az.xelnivo.ir"
-    port: 45642
-    uuid: "688fcedc-c730-47fb-9fc0-b5962a38788e"
+    server: "93.190.8.158"
+    port: 3090
+    uuid: "2f322254-c1e3-4ec1-80ac-822d44a2238a"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014"
-      short-id: "8f798d413a5dbf01"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "vless"
 
 proxy-groups:
   - name: "PROXY"
@@ -90,7 +86,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇦🇿_1"
+      - "🇬🇪_1"
 
 
 rules:

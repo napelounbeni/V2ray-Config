@@ -59,20 +59,42 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_5"
     type: vless
-    server: "34.87.229.148"
+    server: "192.65.217.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime37.workers.dev"
+  - name: "🇦🇺_6"
+    type: vless
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_7"
+    type: vless
+    server: "34.87.244.111"
     port: 443
-    uuid: "4f865f35-cf47-4e7f-a7e6-8882511a1b36"
+    uuid: "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4"
-      short-id: "8a7d5e0248cdb1b1"
-  - name: "🇦🇺_5"
+      public-key: "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E"
+      short-id: "d725f0dd8cce210f"
+  - name: "🇦🇺_8"
     type: vless
     server: "51.161.204.244"
     port: 443
@@ -86,19 +108,6 @@ proxies:
       public-key: "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk"
       short-id: "0ad08b47f498efd2"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇺_6"
-    type: vless
-    server: "34.40.217.165"
-    port: 443
-    uuid: "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E"
-      short-id: "d725f0dd8cce210f"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -141,9 +150,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -153,9 +163,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -165,9 +176,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -176,9 +188,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -188,17 +201,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_4"
       - "🇦🇺_5"
       - "🇦🇺_6"
+      - "🇦🇺_7"
+      - "🇦🇺_8"
 
 rules:
   - MATCH,PROXY-BEST
