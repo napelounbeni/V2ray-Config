@@ -59,33 +59,20 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇿_4"
+  - name: "🇨🇿_2"
     type: vless
-    server: "153.76.185.167"
-    port: 3090
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
+    server: "188.124.59.124"
+    port: 8443
+    uuid: "c3369c07-f0d2-4a2c-97ab-0d3d47803912"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_5"
-    type: vless
-    server: "194.87.59.27"
-    port: 2085
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_6"
-    type: vless
-    server: "194.87.59.28"
-    port: 2085
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
+    tls: true
+    skip-cert-verify: true
+    servername: "github.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "1KY_jqa2yPLBEBa-3TG77zs4ak2zQLGul4eexxCueyI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -128,9 +115,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -140,9 +125,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -152,9 +135,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -163,9 +144,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -175,17 +154,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇿_4"
-      - "🇨🇿_5"
-      - "🇨🇿_6"
+      - "🇨🇿_2"
 
 rules:
   - MATCH,PROXY-BEST

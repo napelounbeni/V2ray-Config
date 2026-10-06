@@ -65,6 +65,16 @@ dns:
 proxies:
   - name: "🇱🇻_1"
     type: vless
+    server: "87.192.47.10"
+    port: 52006
+    uuid: "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "grok.setlisting.ru"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_2"
+    type: vless
     server: "138.124.180.137"
     port: 443
     uuid: "5234b2b7-5e07-422c-8159-d62a676c00c6"
@@ -77,34 +87,19 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_2"
-    type: vless
-    server: "217.60.6.103"
-    port: 443
-    uuid: "489f1717-d3c7-4940-ad68-bdbdbab857f4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "x.m-90.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "t.me/TEAMNETGRATISCOL"
-      headers:
-        Host: "x.m-90.xyz"
   - name: "🇱🇻_3"
     type: vless
-    server: "216.173.71.43"
+    server: "195.123.213.28"
     port: 443
-    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
+    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "lv.nztvpn.com"
-    client-fingerprint: "safari"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
-      short-id: "0da7e14db353e7d0"
+      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
+      short-id: "5c256336e3b673fa"
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_4"
     type: vless
@@ -123,43 +118,32 @@ proxies:
         Host: "bab-6.site"
   - name: "🇱🇻_5"
     type: vless
-    server: "195.123.213.28"
+    server: "31.76.62.32"
     port: 443
-    uuid: "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24"
+    uuid: "8e66d40e-6f62-4243-a7d8-ebe83e4c2e77"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    servername: "lv-rix-1.koolb.org"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
-      short-id: "5c256336e3b673fa"
+      public-key: "C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo"
+      short-id: "84341e3e"
     flow: "xtls-rprx-vision"
   - name: "🇱🇻_6"
     type: vless
-    server: "87.192.47.10"
-    port: 52006
-    uuid: "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "grok.setlisting.ru"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_7"
-    type: vless
-    server: "94.183.189.154"
+    server: "216.173.71.43"
     port: 443
-    uuid: "489f1717-d3c7-4940-ad68-bdbdbab857f4"
+    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "x.m-90.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "t.me/TEAMNETGRATISCOL"
-      headers:
-        Host: "x.m-90.xyz"
+    servername: "lv.nztvpn.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
+      short-id: "0da7e14db353e7d0"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -180,7 +164,6 @@ proxy-groups:
       - "🇱🇻_4"
       - "🇱🇻_5"
       - "🇱🇻_6"
-      - "🇱🇻_7"
 
 
 rules:

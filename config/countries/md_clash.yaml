@@ -65,19 +65,32 @@ dns:
 proxies:
   - name: "🇲🇩_1"
     type: vless
-    server: "80.96.113.48"
+    server: "85.121.5.242"
     port: 443
-    uuid: "489f1717-d3c7-4940-ad68-bdbdbab857f4"
+    uuid: "e59382e1-eee1-45e8-a360-a595a5f045ba"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "x.m-90.xyz"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "t.me/TEAMNETGRATISCOL"
-      headers:
-        Host: "x.m-90.xyz"
+    servername: "eeulnknm.scroogethebest.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "Ij47UmBW1LAB4pANpAG9_m8j3wNzqcCE61cbgN-EHD8"
+      short-id: "05efc9ea5e2be49b"
+    flow: "xtls-rprx-vision"
+  - name: "🇲🇩_2"
+    type: vless
+    server: "80.96.108.232"
+    port: 443
+    uuid: "e59382e1-eee1-45e8-a360-a595a5f045ba"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "kbqvgn4a.scroogethebest.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "49UUO42yZ_vlQETT_wsvBeVcsKD4aECKiu5hjUjGVkk"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -93,6 +106,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇲🇩_1"
+      - "🇲🇩_2"
 
 
 rules:

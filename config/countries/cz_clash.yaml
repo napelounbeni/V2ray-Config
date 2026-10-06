@@ -65,31 +65,18 @@ dns:
 proxies:
   - name: "🇨🇿_1"
     type: vless
-    server: "153.76.185.167"
-    port: 3090
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
+    server: "188.124.59.124"
+    port: 8443
+    uuid: "c3369c07-f0d2-4a2c-97ab-0d3d47803912"
     udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_2"
-    type: vless
-    server: "194.87.59.27"
-    port: 2085
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
-  - name: "🇨🇿_3"
-    type: vless
-    server: "194.87.59.28"
-    port: 2085
-    uuid: "755d2e25-9b0c-41ae-a27c-bd45318c7a4f"
-    udp: true
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless"
+    tls: true
+    skip-cert-verify: true
+    servername: "github.com"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "1KY_jqa2yPLBEBa-3TG77zs4ak2zQLGul4eexxCueyI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -105,8 +92,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇨🇿_1"
-      - "🇨🇿_2"
-      - "🇨🇿_3"
 
 
 rules:

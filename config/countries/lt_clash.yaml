@@ -78,6 +78,20 @@ proxies:
       short-id: "6a"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_2"
+    type: vless
+    server: "93.115.28.18"
+    port: 443
+    uuid: "05d980a4-a539-4d5f-9ea6-889cacbe659d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "media.responsiblecare.uk"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
+      short-id: "bf26e6b6021935c6"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇹_3"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -106,6 +120,7 @@ proxy-groups:
     proxies:
       - "🇱🇹_1"
       - "🇱🇹_2"
+      - "🇱🇹_3"
 
 
 rules:
