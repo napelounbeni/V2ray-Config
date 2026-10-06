@@ -65,6 +65,32 @@ dns:
 proxies:
   - name: "🇧🇬_1"
     type: vless
+    server: "89.117.112.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
+  - name: "🇧🇬_2"
+    type: vless
+    server: "193.37.215.75"
+    port: 443
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
+  - name: "🇧🇬_3"
+    type: vless
     server: "136.175.82.85"
     port: 18775
     uuid: "9ae5940b-0278-403d-a1e1-9dddc47bdcf6"
@@ -77,6 +103,17 @@ proxies:
       public-key: "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
+  - name: "🇧🇬_4"
+    type: vless
+    server: "89.117.112.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime11.workers.dev"
 
 proxy-groups:
   - name: "PROXY"
@@ -92,6 +129,9 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇧🇬_1"
+      - "🇧🇬_2"
+      - "🇧🇬_3"
+      - "🇧🇬_4"
 
 
 rules:

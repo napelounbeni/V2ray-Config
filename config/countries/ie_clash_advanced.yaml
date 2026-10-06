@@ -61,20 +61,6 @@ dns:
 proxies:
   - name: "🇮🇪_9"
     type: vless
-    server: "23.95.225.10"
-    port: 8443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ccc.010304.xyz"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "ccc.010304.xyz"
-  - name: "🇮🇪_10"
-    type: vless
     server: "198.55.102.59"
     port: 4443
     uuid: "7f86f371-5a85-48be-babc-7af1ae7ffb75"
@@ -87,7 +73,29 @@ proxies:
       public-key: "9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8"
       short-id: "ce6767c3f1"
     flow: "xtls-rprx-vision"
+  - name: "🇮🇪_10"
+    type: vless
+    server: "23.95.225.10"
+    port: 8443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ccc.010304.xyz"
+    network: ws
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ccc.010304.xyz"
   - name: "🇮🇪_11"
+    type: trojan
+    server: "loved-shark.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "loved-shark.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_12"
     type: trojan
     server: "3.255.76.207"
     port: 443
@@ -95,23 +103,7 @@ proxies:
     sni: "ie.tronsg.com"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_12"
-    type: trojan
-    server: "ie.tronsg.com"
-    port: 443
-    password: "Trojan@82164024"
-    sni: "ie.tronsg.com"
-    skip-cert-verify: true
-    udp: true
   - name: "🇮🇪_13"
-    type: trojan
-    server: "3.253.106.233"
-    port: 443
-    password: "UX82473651"
-    sni: "loved-shark.rooster465.autos"
-    skip-cert-verify: true
-    udp: true
-  - name: "🇮🇪_14"
     type: trojan
     server: "sacred-anemone.rooster465.autos"
     port: 443
@@ -119,9 +111,17 @@ proxies:
     sni: "sacred-anemone.rooster465.autos"
     skip-cert-verify: true
     udp: true
+  - name: "🇮🇪_14"
+    type: trojan
+    server: "ie.tronsg.com"
+    port: 443
+    password: "Trojan@82164024"
+    sni: "ie.tronsg.com"
+    skip-cert-verify: true
+    udp: true
   - name: "🇮🇪_15"
     type: trojan
-    server: "loved-shark.rooster465.autos"
+    server: "3.253.106.233"
     port: 443
     password: "UX82473651"
     sni: "loved-shark.rooster465.autos"
