@@ -74,16 +74,20 @@ proxies:
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
   - name: "🇧🇬_4"
-    type: trojan
-    server: "193.239.160.134"
+    type: vless
+    server: "193.37.215.75"
     port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────

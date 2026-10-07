@@ -65,31 +65,6 @@ dns:
 proxies:
   - name: "🇦🇹_1"
     type: vless
-    server: "212.183.88.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime23.workers.dev"
-  - name: "🇦🇹_2"
-    type: vless
-    server: "loop.rehan-zyra.ir"
-    port: 443
-    uuid: "eee029dc-9b76-fa35-1ab9-5d9e938b5578"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "0cc0f6a1.vless-reality-sni.staticedge-delivery.net"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "fDkv9CcfWRW4SsuS5Ka7I0ISdiIfMZvhC1lYedbQemw"
-      short-id: "49d6fd10"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_3"
-    type: vless
     server: "193.233.232.96"
     port: 443
     uuid: "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
@@ -97,12 +72,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg"
       short-id: "fa764ccf"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_4"
+  - name: "🇦🇹_2"
+    type: vless
+    server: "195.133.88.122"
+    port: 443
+    uuid: "5b5e4cbf-2366-499a-8327-0cd9918c687d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "music.surfweb.club"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_3"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -132,7 +118,6 @@ proxy-groups:
       - "🇦🇹_1"
       - "🇦🇹_2"
       - "🇦🇹_3"
-      - "🇦🇹_4"
 
 
 rules:

@@ -59,32 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇹_5"
-    type: vless
-    server: "212.183.88.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime23.workers.dev"
-  - name: "🇦🇹_6"
-    type: vless
-    server: "loop.rehan-zyra.ir"
-    port: 443
-    uuid: "eee029dc-9b76-fa35-1ab9-5d9e938b5578"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "0cc0f6a1.vless-reality-sni.staticedge-delivery.net"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "fDkv9CcfWRW4SsuS5Ka7I0ISdiIfMZvhC1lYedbQemw"
-      short-id: "49d6fd10"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_7"
+  - name: "🇦🇹_4"
     type: vless
     server: "193.233.232.96"
     port: 443
@@ -93,12 +68,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "addons.mozilla.org"
-    client-fingerprint: "randomized"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg"
       short-id: "fa764ccf"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇹_8"
+  - name: "🇦🇹_5"
+    type: vless
+    server: "195.133.88.122"
+    port: 443
+    uuid: "5b5e4cbf-2366-499a-8327-0cd9918c687d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "music.surfweb.club"
+    client-fingerprint: "firefox"
+    flow: "xtls-rprx-vision"
+  - name: "🇦🇹_6"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -153,10 +139,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -166,10 +151,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -179,10 +163,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -191,10 +174,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -204,19 +186,17 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇹_4"
       - "🇦🇹_5"
       - "🇦🇹_6"
-      - "🇦🇹_7"
-      - "🇦🇹_8"
 
 rules:
   - MATCH,PROXY-BEST

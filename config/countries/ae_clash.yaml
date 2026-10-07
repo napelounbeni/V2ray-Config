@@ -65,41 +65,27 @@ dns:
 proxies:
   - name: "🇦🇪_1"
     type: vless
-    server: "77.232.140.40"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime61.workers.dev"
-  - name: "🇦🇪_2"
-    type: vless
-    server: "185.225.195.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    server: "uae.unixzone.us"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vms.lifetime18.workers.dev"
-  - name: "🇦🇪_3"
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_2"
     type: vless
-    server: "95.182.95.178"
-    port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
+    server: "84.235.244.108"
+    port: 22573
+    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ccc.010304.xyz"
     network: ws
     ws-opts:
-      path: "/fp=chrome"
+      path: "/"
       headers:
-        Host: "ccc.010304.xyz"
-  - name: "🇦🇪_4"
+        Host: "uae.unixzone.us"
+  - name: "🇦🇪_3"
     type: vless
     server: "146.70.102.82"
     port: 443
@@ -113,18 +99,21 @@ proxies:
       public-key: "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k"
       short-id: "002fb4ec7b3088cc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇪_5"
+  - name: "🇦🇪_4"
     type: vless
-    server: "84.235.244.108"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    server: "95.182.95.178"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ccc.010304.xyz"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/fp=chrome"
       headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_6"
+        Host: "ccc.010304.xyz"
+  - name: "🇦🇪_5"
     type: trojan
     server: "46.8.100.93"
     port: 443
@@ -132,7 +121,7 @@ proxies:
     sni: "nl.zhabulik.ru"
     skip-cert-verify: true
     udp: true
-  - name: "🇦🇪_7"
+  - name: "🇦🇪_6"
     type: trojan
     server: "nl.zhabulik.ru"
     port: 443
@@ -160,7 +149,6 @@ proxy-groups:
       - "🇦🇪_4"
       - "🇦🇪_5"
       - "🇦🇪_6"
-      - "🇦🇪_7"
 
 
 rules:

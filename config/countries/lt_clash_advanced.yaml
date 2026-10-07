@@ -59,18 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇹_4"
-    type: vless
-    server: "88.216.69.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime06.workers.dev"
-  - name: "🇱🇹_5"
+  - name: "🇱🇹_3"
     type: vless
     server: "62.77.158.1"
     port: 443
@@ -84,7 +73,7 @@ proxies:
       public-key: "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs"
       short-id: "6a"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇹_6"
+  - name: "🇱🇹_4"
     type: trojan
     server: "195.181.244.216"
     port: 443
@@ -139,9 +128,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
   - name: "LB-CDN"
     type: load-balance
@@ -151,9 +139,8 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -163,9 +150,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
   - name: "FAST-CDN"
     type: url-test
@@ -174,9 +160,8 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -186,17 +171,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇱🇹_3"
       - "🇱🇹_4"
-      - "🇱🇹_5"
-      - "🇱🇹_6"
 
 rules:
   - MATCH,PROXY-BEST
