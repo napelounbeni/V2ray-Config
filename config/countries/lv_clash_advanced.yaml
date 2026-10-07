@@ -59,17 +59,21 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇱🇻_7"
+  - name: "🇱🇻_9"
     type: vless
-    server: "87.192.47.10"
-    port: 52006
-    uuid: "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f"
+    server: "138.124.63.94"
+    port: 443
+    uuid: "2b781b4a-5942-0018-a7f3-5a07b7b488c1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "grok.setlisting.ru"
+    servername: "lv-root.sworkingvpn.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_8"
+  - name: "🇱🇻_10"
     type: vless
     server: "138.124.180.137"
     port: 443
@@ -83,7 +87,21 @@ proxies:
       public-key: "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c"
       short-id: "33acba1b"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_9"
+  - name: "🇱🇻_11"
+    type: vless
+    server: "138.124.63.94"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_12"
     type: vless
     server: "195.123.213.28"
     port: 443
@@ -97,7 +115,35 @@ proxies:
       public-key: "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo"
       short-id: "5c256336e3b673fa"
     flow: "xtls-rprx-vision"
-  - name: "🇱🇻_10"
+  - name: "🇱🇻_13"
+    type: vless
+    server: "31.57.106.241"
+    port: 443
+    uuid: "a4801105-c0c7-4cab-87c6-f257ff2afc09"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.lmt.lv"
+    client-fingerprint: "safari"
+    reality-opts:
+      public-key: "4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o"
+      short-id: "44f7c5615039ae1b"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_14"
+    type: vless
+    server: "216.173.71.43"
+    port: 443
+    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "lv.nztvpn.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
+      short-id: "0da7e14db353e7d0"
+    flow: "xtls-rprx-vision"
+  - name: "🇱🇻_15"
     type: vless
     server: "217.19.4.61"
     port: 443
@@ -112,33 +158,19 @@ proxies:
       path: "/vws/"
       headers:
         Host: "bab-6.site"
-  - name: "🇱🇻_11"
+  - name: "🇱🇻_16"
     type: vless
-    server: "31.76.62.32"
+    server: "138.124.63.93"
     port: 443
-    uuid: "8e66d40e-6f62-4243-a7d8-ebe83e4c2e77"
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "lv-rix-1.koolb.org"
+    servername: "lv-root.sworkingvpn.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo"
-      short-id: "84341e3e"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇻_12"
-    type: vless
-    server: "216.173.71.43"
-    port: 443
-    uuid: "ee18d188-14cc-417e-beb1-70e4add6d023"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "lv.nztvpn.com"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08"
-      short-id: "0da7e14db353e7d0"
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
     flow: "xtls-rprx-vision"
 
 proxy-groups:
@@ -182,12 +214,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   - name: "LB-CDN"
     type: load-balance
@@ -197,12 +231,14 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -212,12 +248,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   - name: "FAST-CDN"
     type: url-test
@@ -226,12 +264,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -241,23 +281,27 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇱🇻_7"
-      - "🇱🇻_8"
       - "🇱🇻_9"
       - "🇱🇻_10"
       - "🇱🇻_11"
       - "🇱🇻_12"
+      - "🇱🇻_13"
+      - "🇱🇻_14"
+      - "🇱🇻_15"
+      - "🇱🇻_16"
 
 rules:
   - MATCH,PROXY-BEST

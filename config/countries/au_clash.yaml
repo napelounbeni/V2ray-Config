@@ -65,6 +65,28 @@ dns:
 proxies:
   - name: "🇦🇺_1"
     type: vless
+    server: "103.169.142.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime38.workers.dev"
+  - name: "🇦🇺_2"
+    type: vless
+    server: "192.65.217.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime37.workers.dev"
+  - name: "🇦🇺_3"
+    type: vless
     server: "51.161.204.244"
     port: 443
     uuid: "36e89875-9c53-482b-bc41-d3890e9da176"
@@ -92,6 +114,8 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇺_1"
+      - "🇦🇺_2"
+      - "🇦🇺_3"
 
 
 rules:

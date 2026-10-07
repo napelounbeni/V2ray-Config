@@ -61,6 +61,17 @@ dns:
 proxies:
   - name: "🇱🇹_4"
     type: vless
+    server: "88.216.69.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime06.workers.dev"
+  - name: "🇱🇹_5"
+    type: vless
     server: "62.77.158.1"
     port: 443
     uuid: "2eceaf2b-a775-5a9c-9990-dad2b3660fb6"
@@ -72,20 +83,6 @@ proxies:
     reality-opts:
       public-key: "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs"
       short-id: "6a"
-    flow: "xtls-rprx-vision"
-  - name: "🇱🇹_5"
-    type: vless
-    server: "93.115.28.18"
-    port: 443
-    uuid: "05d980a4-a539-4d5f-9ea6-889cacbe659d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "media.responsiblecare.uk"
-    client-fingerprint: "safari"
-    reality-opts:
-      public-key: "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg"
-      short-id: "bf26e6b6021935c6"
     flow: "xtls-rprx-vision"
   - name: "🇱🇹_6"
     type: trojan

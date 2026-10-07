@@ -59,7 +59,66 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
+  - name: "🇮🇹_8"
+    type: vless
+    server: "204.216.216.23"
+    port: 10086
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    udp: true
+  - name: "🇮🇹_9"
+    type: vless
+    server: "milan.adaspoloandco.com"
+    port: 8443
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: ws
+    ws-opts:
+      path: "/RoBeRt"
+  - name: "🇮🇹_10"
+    type: vless
+    server: "57.131.21.102"
+    port: 8443
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: ws
+    ws-opts:
+      path: "/RoBeRt"
   - name: "🇮🇹_11"
+    type: vless
+    server: "82.118.16.187"
+    port: 443
+    uuid: "dc2259c4-388e-4285-ba18-df619b6672b6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU"
+      short-id: "cd6065902eea7a02"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_12"
+    type: vless
+    server: "204.216.216.23"
+    port: 1114
+    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
+      short-id: "79a1e14b"
+    flow: "xtls-rprx-vision"
+  - name: "🇮🇹_13"
     type: vless
     server: "158.180.231.216"
     port: 443
@@ -74,7 +133,7 @@ proxies:
       path: "/vws/"
       headers:
         Host: "bab-6.site"
-  - name: "🇮🇹_12"
+  - name: "🇮🇹_14"
     type: vless
     server: "57.131.38.163"
     port: 2053
@@ -87,93 +146,6 @@ proxies:
     reality-opts:
       public-key: "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc"
       short-id: "5b8a942318178e7b"
-  - name: "🇮🇹_13"
-    type: vless
-    server: "57.131.21.102"
-    port: 8443
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: ws
-    ws-opts:
-      path: "/RoBeRt"
-  - name: "🇮🇹_14"
-    type: vless
-    server: "milan.adaspoloandco.com"
-    port: 8443
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: ws
-    ws-opts:
-      path: "/RoBeRt"
-  - name: "🇮🇹_15"
-    type: vless
-    server: "204.216.216.23"
-    port: 10086
-    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
-    udp: true
-  - name: "🇮🇹_16"
-    type: vless
-    server: "82.118.16.187"
-    port: 443
-    uuid: "dc2259c4-388e-4285-ba18-df619b6672b6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU"
-      short-id: "cd6065902eea7a02"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇹_17"
-    type: vless
-    server: "204.216.216.23"
-    port: 1114
-    uuid: "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    reality-opts:
-      public-key: "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ"
-      short-id: "79a1e14b"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇹_18"
-    type: vless
-    server: "82.118.16.189"
-    port: 443
-    uuid: "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY"
-      short-id: "37fbf155c7a9f3ff"
-    flow: "xtls-rprx-vision"
-  - name: "🇮🇹_19"
-    type: ss
-    server: "57.131.48.45"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "itzvpn@321"
-    udp: true
-  - name: "🇮🇹_20"
-    type: ss
-    server: "57.131.48.45"
-    port: 8388
-    cipher: "aes-256-gcm"
-    password: "itzvpn@321"
-    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -216,16 +188,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
   - name: "LB-CDN"
     type: load-balance
@@ -235,16 +204,13 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -254,16 +220,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
   - name: "FAST-CDN"
     type: url-test
@@ -272,16 +235,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -291,31 +251,25 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇮🇹_8"
+      - "🇮🇹_9"
+      - "🇮🇹_10"
       - "🇮🇹_11"
       - "🇮🇹_12"
       - "🇮🇹_13"
       - "🇮🇹_14"
-      - "🇮🇹_15"
-      - "🇮🇹_16"
-      - "🇮🇹_17"
-      - "🇮🇹_18"
-      - "🇮🇹_19"
-      - "🇮🇹_20"
 
 rules:
   - MATCH,PROXY-BEST

@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇮🇪_5"
+  - name: "🇮🇪_10"
     type: vless
     server: "23.95.225.10"
     port: 8443
@@ -73,7 +73,7 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
-  - name: "🇮🇪_6"
+  - name: "🇮🇪_11"
     type: vless
     server: "198.55.102.59"
     port: 4443
@@ -87,7 +87,7 @@ proxies:
       public-key: "9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8"
       short-id: "ce6767c3f1"
     flow: "xtls-rprx-vision"
-  - name: "🇮🇪_7"
+  - name: "🇮🇪_12"
     type: trojan
     server: "3.253.106.233"
     port: 443
@@ -95,13 +95,52 @@ proxies:
     sni: "loved-shark.rooster465.autos"
     skip-cert-verify: true
     udp: true
-  - name: "🇮🇪_8"
+  - name: "🇮🇪_13"
     type: trojan
     server: "3.255.76.207"
     port: 443
     password: "Trojan@82164024"
     sni: "ie.tronsg.com"
     skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_14"
+    type: trojan
+    server: "ie.tronsg.com"
+    port: 443
+    password: "Trojan@82164024"
+    sni: "ie.tronsg.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_15"
+    type: trojan
+    server: "sacred-anemone.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "sacred-anemone.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_16"
+    type: trojan
+    server: "34.242.77.118"
+    port: 443
+    password: "UX82473651"
+    sni: "sacred-anemone.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_17"
+    type: trojan
+    server: "loved-shark.rooster465.autos"
+    port: 443
+    password: "UX82473651"
+    sni: "loved-shark.rooster465.autos"
+    skip-cert-verify: true
+    udp: true
+  - name: "🇮🇪_18"
+    type: ss
+    server: "20.223.236.165"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "CNL3mxdfZKiPKizL"
     udp: true
 
 proxy-groups:
@@ -145,10 +184,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   - name: "LB-CDN"
     type: load-balance
@@ -158,10 +202,15 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -171,10 +220,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   - name: "FAST-CDN"
     type: url-test
@@ -183,10 +237,15 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -196,19 +255,29 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇮🇪_5"
-      - "🇮🇪_6"
-      - "🇮🇪_7"
-      - "🇮🇪_8"
+      - "🇮🇪_10"
+      - "🇮🇪_11"
+      - "🇮🇪_12"
+      - "🇮🇪_13"
+      - "🇮🇪_14"
+      - "🇮🇪_15"
+      - "🇮🇪_16"
+      - "🇮🇪_17"
+      - "🇮🇪_18"
 
 rules:
   - MATCH,PROXY-BEST
