@@ -65,6 +65,17 @@ dns:
 proxies:
   - name: "🇵🇹_1"
     type: vless
+    server: "156.243.83.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vms.lifetime54.workers.dev"
+  - name: "🇵🇹_2"
+    type: vless
     server: "31.129.22.141"
     port: 443
     uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
@@ -92,6 +103,7 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇵🇹_1"
+      - "🇵🇹_2"
 
 
 rules:

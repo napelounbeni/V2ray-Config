@@ -59,21 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇺_3"
-    type: vless
-    server: "51.161.204.242"
-    port: 443
-    uuid: "a14b736b-a92a-48d6-a596-5d31f7378ded"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE"
-      short-id: "d15c17cef9b2e456"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇺_4"
+  - name: "🇦🇺_2"
     type: vless
     server: "51.161.204.244"
     port: 443
@@ -129,8 +115,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -140,8 +125,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -151,8 +135,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -161,8 +144,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,15 +154,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇦🇺_3"
-      - "🇦🇺_4"
+      - "🇦🇺_2"
 
 rules:
   - MATCH,PROXY-BEST

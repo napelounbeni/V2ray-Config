@@ -59,29 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇦🇪_7"
+  - name: "🇦🇪_5"
     type: vless
-    server: "uae.unixzone.us"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
+    server: "185.225.195.30"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_8"
-    type: vless
-    server: "84.235.244.108"
-    port: 22573
-    uuid: "39947382-3212-41c9-bc3a-589574ac8b23"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "uae.unixzone.us"
-  - name: "🇦🇪_9"
+        Host: "vms.lifetime18.workers.dev"
+  - name: "🇦🇪_6"
     type: vless
     server: "146.70.102.82"
     port: 443
@@ -95,36 +84,32 @@ proxies:
       public-key: "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k"
       short-id: "002fb4ec7b3088cc"
     flow: "xtls-rprx-vision"
-  - name: "🇦🇪_10"
+  - name: "🇦🇪_7"
     type: vless
-    server: "95.182.95.178"
+    server: "146.70.37.253"
     port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
+    uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ccc.010304.xyz"
+    servername: "kkkk-xcd.pages.dev"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/fp=chrome"
+      path: "/?ed=2048"
       headers:
-        Host: "ccc.010304.xyz"
-  - name: "🇦🇪_11"
-    type: trojan
-    server: "46.8.100.93"
-    port: 443
-    password: "WFer-5gN21nfHbVB2N8s71Z74EPUfzVj"
-    sni: "nl.zhabulik.ru"
-    skip-cert-verify: true
+        Host: "kkkk-xcd.pages.dev"
+  - name: "🇦🇪_8"
+    type: vless
+    server: "77.232.140.40"
+    port: 8880
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
-  - name: "🇦🇪_12"
-    type: trojan
-    server: "nl.zhabulik.ru"
-    port: 443
-    password: "WFer-5gN21nfHbVB2N8s71Z74EPUfzVj"
-    sni: "nl.zhabulik.ru"
-    skip-cert-verify: true
-    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vms.lifetime61.workers.dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -167,12 +152,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
   - name: "LB-CDN"
     type: load-balance
@@ -182,12 +165,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -197,12 +178,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
   - name: "FAST-CDN"
     type: url-test
@@ -211,12 +190,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -226,23 +203,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "🇦🇪_5"
+      - "🇦🇪_6"
       - "🇦🇪_7"
       - "🇦🇪_8"
-      - "🇦🇪_9"
-      - "🇦🇪_10"
-      - "🇦🇪_11"
-      - "🇦🇪_12"
 
 rules:
   - MATCH,PROXY-BEST

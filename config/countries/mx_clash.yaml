@@ -65,16 +65,19 @@ dns:
 proxies:
   - name: "🇲🇽_1"
     type: vless
-    server: "UL-Mexico1.09vpn.com"
-    port: 8443
-    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
+    server: "131.196.253.141"
+    port: 443
+    uuid: "0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "UL-Mexico1.09vpn.com"
+    servername: "kclx.eu.org"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/vless/"
+      path: "/154.16.10.34-8080"
+      headers:
+        Host: "kclx.eu.org"
   - name: "🇲🇽_2"
     type: vless
     server: "45.134.9.133"

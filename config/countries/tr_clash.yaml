@@ -65,44 +65,33 @@ dns:
 proxies:
   - name: "🇹🇷_1"
     type: vless
-    server: "helllo.com.tr"
-    port: 2114
-    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
+    server: "81.177.215.175"
+    port: 443
+    uuid: "1c5ed2e1-56da-41ab-9a78-159d9892ec17"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
+    servername: "github.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
-      short-id: "ddaaf1630788aeac"
+      public-key: "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q"
+      short-id: "9e4eced6e98ed4d4"
+    flow: "xtls-rprx-vision"
   - name: "🇹🇷_2"
     type: vless
-    server: "helllo.com.tr"
-    port: 2113
-    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
+    server: "155.103.71.142"
+    port: 443
+    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
-      short-id: "68c328105c"
+    servername: "a.cwvps.eu.org"
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "a.cwvps.eu.org"
   - name: "🇹🇷_3"
-    type: vless
-    server: "helllo.com.tr"
-    port: 2216
-    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
-      short-id: "ddaaf1630788aeac"
-  - name: "🇹🇷_4"
     type: vless
     server: "78.135.73.47"
     port: 443
@@ -116,7 +105,33 @@ proxies:
       public-key: "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8"
       short-id: "f46cd3ea3d1eb72d"
     flow: "xtls-rprx-vision"
+  - name: "🇹🇷_4"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
+      short-id: "9e419c0759b54d6f"
   - name: "🇹🇷_5"
+    type: vless
+    server: "helllo.com.tr"
+    port: 2114
+    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
+      short-id: "ddaaf1630788aeac"
+  - name: "🇹🇷_6"
     type: vless
     server: "155.103.71.142"
     port: 443
@@ -130,7 +145,42 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
-  - name: "🇹🇷_6"
+  - name: "🇹🇷_7"
+    type: vless
+    server: "helllo.com.tr"
+    port: 2216
+    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
+      short-id: "ddaaf1630788aeac"
+  - name: "🇹🇷_8"
+    type: vless
+    server: "87.120.106.133"
+    port: 443
+    uuid: "d9fbf9a7-1f88-428b-bb3e-3074681e44c9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "es3siwxee705.dx4x.com"
+  - name: "🇹🇷_9"
+    type: vless
+    server: "helllo.com.tr"
+    port: 2113
+    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
+      short-id: "68c328105c"
+  - name: "🇹🇷_10"
     type: vless
     server: "helllo.com.tr"
     port: 2104
@@ -143,69 +193,7 @@ proxies:
     reality-opts:
       public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
       short-id: "23deadc2f71ea0"
-  - name: "🇹🇷_7"
-    type: vless
-    server: "helllo.com.tr"
-    port: 2112
-    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
-      short-id: "06"
-  - name: "🇹🇷_8"
-    type: vless
-    server: "81.177.215.175"
-    port: 443
-    uuid: "1c5ed2e1-56da-41ab-9a78-159d9892ec17"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "github.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q"
-      short-id: "9e4eced6e98ed4d4"
-    flow: "xtls-rprx-vision"
-  - name: "🇹🇷_9"
-    type: vless
-    server: "87.120.106.133"
-    port: 443
-    uuid: "d9fbf9a7-1f88-428b-bb3e-3074681e44c9"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "es3siwxee705.dx4x.com"
-  - name: "🇹🇷_10"
-    type: vless
-    server: "helllo.com.tr"
-    port: 2102
-    uuid: "4476ca08-bdb4-41c1-bae4-a960bdb28c19"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bWIOrQAqUWCrz6BGdwaG42xaV-HEo8sUdGqVktUh0XU"
-      short-id: "cc80ef"
   - name: "🇹🇷_11"
-    type: vless
-    server: "151.241.226.201"
-    port: 2053
-    uuid: "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104"
-      short-id: "9e419c0759b54d6f"
-  - name: "🇹🇷_12"
     type: vless
     server: "203.202.232.211"
     port: 443
@@ -219,7 +207,7 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
-  - name: "🇹🇷_13"
+  - name: "🇹🇷_12"
     type: trojan
     server: "203.202.232.211"
     port: 443
@@ -232,21 +220,21 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.volumeroot.com"
-  - name: "🇹🇷_14"
+  - name: "🇹🇷_13"
     type: ss
     server: "bale.xv98.ir"
     port: 5051
     cipher: "chacha20-ietf-poly1305"
     password: "68mL2QkZEBlxWa3hcslGDw"
     udp: true
-  - name: "🇹🇷_15"
+  - name: "🇹🇷_14"
     type: ss
     server: "206.1.100.83"
     port: 25178
     cipher: "2022-blake3-aes-256-gcm"
     password: "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
     udp: true
-  - name: "🇹🇷_16"
+  - name: "🇹🇷_15"
     type: ss
     server: "206.1.100.83"
     port: 25178
@@ -282,7 +270,6 @@ proxy-groups:
       - "🇹🇷_13"
       - "🇹🇷_14"
       - "🇹🇷_15"
-      - "🇹🇷_16"
 
 
 rules:

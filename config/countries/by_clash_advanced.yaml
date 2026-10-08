@@ -61,15 +61,19 @@ dns:
 proxies:
   - name: "🇧🇾_2"
     type: vless
-    server: "189.74.124.83"
-    port: 443
-    uuid: "5b5e4cbf-2366-499a-8327-0cd9918c687d"
+    server: "95.130.84.36"
+    port: 8443
+    uuid: "8d42d29a-ed53-4684-a9ff-6b33826149de"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "console.surfweb.club"
-    client-fingerprint: "firefox"
-    flow: "xtls-rprx-vision"
+    servername: "aio.eth0.dpdns.org"
+    client-fingerprint: "unsafe"
+    network: ws
+    ws-opts:
+      path: "/aioproxybot/94.23.144.99-2053"
+      headers:
+        Host: "aio.eth0.dpdns.org"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
