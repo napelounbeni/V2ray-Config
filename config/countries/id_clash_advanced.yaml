@@ -61,19 +61,18 @@ dns:
 proxies:
   - name: "🇮🇩_6"
     type: vless
-    server: "43.173.1.153"
-    port: 8443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
+    server: "103.172.197.2"
+    port: 29172
+    uuid: "3977434d-6a9b-4858-8ced-80326ba5e367"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ccc.010304.xyz"
+    servername: "aws.amazon.com"
     client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "ccc.010304.xyz"
+    reality-opts:
+      public-key: "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ"
+      short-id: ""
+    flow: "xtls-rprx-vision"
   - name: "🇮🇩_7"
     type: vless
     server: "103.172.197.3"
@@ -90,18 +89,19 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇮🇩_8"
     type: vless
-    server: "103.172.197.2"
-    port: 29172
-    uuid: "3977434d-6a9b-4858-8ced-80326ba5e367"
+    server: "43.173.1.153"
+    port: 8443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "aws.amazon.com"
+    servername: "ccc.010304.xyz"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ccc.010304.xyz"
   - name: "🇮🇩_9"
     type: ss
     server: "103.160.63.199"

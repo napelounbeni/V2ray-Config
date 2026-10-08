@@ -63,32 +63,16 @@ dns:
     - https://freedns.controld.com/family
 
 proxies:
-  - name: "🇳🇿_1"
+  - name: "🇻🇳_1"
     type: vless
-    server: "114.129.43.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime04.workers.dev"
-  - name: "🇳🇿_2"
-    type: vless
-    server: "114.129.43.123"
+    server: "160.25.74.91"
     port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
+    uuid: "30e52776-55ac-3cb4-8d36-e2910f07e2c3"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "notls.lukongtou.eu.org"
+    servername: "u695098ue79dbcd4s783.gogocs.xyz"
+    flow: "xtls-rprx-vision"
 
 proxy-groups:
   - name: "PROXY"
@@ -103,8 +87,7 @@ proxy-groups:
     tolerance: 30
     lazy: true
     proxies:
-      - "🇳🇿_1"
-      - "🇳🇿_2"
+      - "🇻🇳_1"
 
 
 rules:

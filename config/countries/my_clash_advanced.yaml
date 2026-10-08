@@ -59,7 +59,18 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇲🇾_2"
+  - name: "🇲🇾_5"
+    type: vless
+    server: "45.194.27.124"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform101"
+      headers:
+        Host: "platform101.halalkhor.info"
+  - name: "🇲🇾_6"
     type: vless
     server: "216.173.67.59"
     port: 443
@@ -71,9 +82,28 @@ proxies:
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
       headers:
         Host: "ccc.010304.xyz"
+  - name: "🇲🇾_7"
+    type: vless
+    server: "166.88.35.199"
+    port: 80
+    uuid: "e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/platform102"
+      headers:
+        Host: "platform102.halalkhor.info"
+  - name: "🇲🇾_8"
+    type: trojan
+    server: "47.250.84.25"
+    port: 443
+    password: "5931134d1cde66bf83a54acdfebe7ab2"
+    sni: "moltbot.doctoroyy.net"
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +146,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +159,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +172,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +184,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +197,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇲🇾_2"
+      - "🇲🇾_5"
+      - "🇲🇾_6"
+      - "🇲🇾_7"
+      - "🇲🇾_8"
 
 rules:
   - MATCH,PROXY-BEST

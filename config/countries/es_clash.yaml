@@ -65,6 +65,34 @@ dns:
 proxies:
   - name: "🇪🇸_1"
     type: vless
+    server: "138.124.62.158"
+    port: 443
+    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "es-root.sworkingvpn.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
+      short-id: "15bcc0a77c3cacdf"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_2"
+    type: vless
+    server: "46.28.71.247"
+    port: 443
+    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
+      short-id: "0dfc23fe80778c00"
+    flow: "xtls-rprx-vision"
+  - name: "🇪🇸_3"
+    type: vless
     server: "85.90.217.42"
     port: 443
     uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
@@ -72,30 +100,6 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "85.90.217.42"
-  - name: "🇪🇸_2"
-    type: vless
-    server: "185.18.250.123"
-    port: 443
-    uuid: "1d16c6e0-1bbe-435b-b661-90043fee999c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "notls.lukongtou.eu.org"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "🇪🇸_3"
-    type: vless
-    server: "185.18.250.50"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "vms.lifetime47.workers.dev"
   - name: "🇪🇸_4"
     type: vless
     server: "103.240.146.87"
@@ -112,45 +116,6 @@ proxies:
     flow: "xtls-rprx-vision"
   - name: "🇪🇸_5"
     type: vless
-    server: "46.28.71.247"
-    port: 443
-    uuid: "12c53e32-e589-47d6-b857-e4132294f767"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE"
-      short-id: "0dfc23fe80778c00"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_6"
-    type: vless
-    server: "138.124.62.158"
-    port: 443
-    uuid: "2b781b4a-5942-48e0-a7f3-5a07b7b488c1"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "es-root.sworkingvpn.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI"
-      short-id: "15bcc0a77c3cacdf"
-    flow: "xtls-rprx-vision"
-  - name: "🇪🇸_7"
-    type: vless
-    server: "185.18.250.30"
-    port: 8880
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vms.lifetime47.workers.dev"
-  - name: "🇪🇸_8"
-    type: vless
     server: "212.227.235.66"
     port: 2053
     uuid: "ead0dd61-d398-40ad-80d6-a0e1e516d7d3"
@@ -162,33 +127,7 @@ proxies:
     reality-opts:
       public-key: "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk"
       short-id: "29e8dcd2b37aaa7f"
-  - name: "🇪🇸_9"
-    type: trojan
-    server: "212.227.144.37"
-    port: 8443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_10"
-    type: trojan
-    server: "185.18.250.252"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "🇪🇸_11"
+  - name: "🇪🇸_6"
     type: trojan
     server: "185.114.72.31"
     port: 2053
@@ -201,9 +140,9 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_12"
+  - name: "🇪🇸_7"
     type: trojan
-    server: "185.18.250.245"
+    server: "185.18.250.252"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -214,35 +153,21 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "🇪🇸_13"
+  - name: "🇪🇸_8"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
-  - name: "🇪🇸_14"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_15"
-    type: ss
-    server: "140.174.184.5"
-    port: 8388
-    cipher: "chacha20-ietf-poly1305"
-    password: "qItG8SueYQcP"
-    udp: true
-  - name: "🇪🇸_16"
+  - name: "🇪🇸_9"
     type: ss
     server: "108.181.121.226"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
     password: "WSyL4XTwNsdv"
     udp: true
-  - name: "🇪🇸_17"
+  - name: "🇪🇸_10"
     type: ss
     server: "108.181.121.226"
     port: 8388
@@ -273,13 +198,6 @@ proxy-groups:
       - "🇪🇸_8"
       - "🇪🇸_9"
       - "🇪🇸_10"
-      - "🇪🇸_11"
-      - "🇪🇸_12"
-      - "🇪🇸_13"
-      - "🇪🇸_14"
-      - "🇪🇸_15"
-      - "🇪🇸_16"
-      - "🇪🇸_17"
 
 
 rules:

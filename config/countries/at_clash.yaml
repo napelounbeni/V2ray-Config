@@ -64,35 +64,6 @@ dns:
 
 proxies:
   - name: "🇦🇹_1"
-    type: vless
-    server: "193.233.232.96"
-    port: 443
-    uuid: "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "addons.mozilla.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg"
-      short-id: "fa764ccf"
-    flow: "xtls-rprx-vision"
-  - name: "🇦🇹_2"
-    type: vless
-    server: "85.192.42.29"
-    port: 8444
-    uuid: "0342921f-1cad-4555-b9fa-7aa6caa4bfa6"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-  - name: "🇦🇹_3"
     type: trojan
     server: "212.183.88.136"
     port: 443
@@ -120,8 +91,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "🇦🇹_1"
-      - "🇦🇹_2"
-      - "🇦🇹_3"
 
 
 rules:

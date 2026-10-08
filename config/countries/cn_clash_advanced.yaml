@@ -59,21 +59,22 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "🇨🇷_2"
+  - name: "🇨🇳_2"
     type: vless
-    server: "190.93.245.176"
-    port: 443
-    uuid: "7493883f-6047-46a7-8d95-f59e137ffaec"
+    server: "122.8.45.3"
+    port: 8443
+    uuid: "af0e5264-d1ea-1f5a-92e6-f727bdb675d6"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auto-749388.rohawmk.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "?TELEGRAM-TOOTFFARANGI?ed=2560"
-      headers:
-        Host: "auto-749388.rohawmk.workers.dev"
+    servername: "www.hp.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo"
+      short-id: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "TunService"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -116,7 +117,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
   - name: "LB-CDN"
     type: load-balance
@@ -126,7 +127,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -136,7 +137,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
   - name: "FAST-CDN"
     type: url-test
@@ -145,7 +146,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -155,13 +156,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "🇨🇷_2"
+      - "🇨🇳_2"
 
 rules:
   - MATCH,PROXY-BEST
